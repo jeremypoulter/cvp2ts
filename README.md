@@ -30,7 +30,7 @@ cvp2ts
 
 Commercial Video Player 2 Test Suite
 
-The 'cvp2ts' tool provides a test suite for performing signature and feature presence testing on a candidate Commercial Video Player 2 (CVP2) user agent (browser).
+The `cvp2ts` tool provides a test suite for performing signature and feature presence testing on a candidate Commercial Video Player 2 (CVP2) user agent (browser).
 
 ## Build Dependencies
 
@@ -49,6 +49,6 @@ The 'cvp2ts' tool provides a test suite for performing signature and feature pre
     $ npm --version
     1.4.3
 
-    $ npm ls --parseable true --long true cheerio
-    /Users/glenn/node_modules/cheerio:cheerio@0.14.0
+    $ npm ls --parseable true --long true cheerio | awk -F: '{print $2}'
+    cheerio@0.14.0
 </pre>
