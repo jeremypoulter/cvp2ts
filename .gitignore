@@ -1,0 +1,6 @@
+# ignored directories
+.cache
+
+# ignored files
+*~
+*.orig
