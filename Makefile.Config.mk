@@ -42,5 +42,6 @@ TESTDIR		= $(TOP)/tests
 
 # configuration file name
 CONFIG    	= config.json
+CONFIGSUFFIX	= $(CONFIG)
 
 include $(TOP)/Makefile.Specs.mk

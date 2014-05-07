@@ -1,0 +1,32 @@
+{
+    "spec": "dom4",
+    "source": "http://w3c.github.io/dom/",
+    "local": "dom4.html",
+    "instances": {
+        "Attr": "document.getElementById('idl').attributes[0]",
+        "CharacterData": "document.createTextNode('text')",
+        "Comment": "document.createComment('comment')",
+        "CustomEvent": "new CustomEvent('custom')",
+        "DOMError": "new DOMError('error')",
+        "DOMImplementation": "document.implementation",
+        "DOMSettableTokenList": "",
+        "DOMTokenList": "document.body.classList",
+        "Document": "document",
+        "DocumentFragment": "new DocumentFragment()",
+        "DocumentType": "document.implementation.createDocumentType('html','','')",
+        "Element": "document.documentElement",
+        "Event": "document.createEvent('Event')",
+        "EventTarget": "document",
+        "HTMLCollection": "document.body.children",
+        "MutationObserver": "new MutationObserver(function(mutations, observer){})",
+        "MutationRecord": "",
+        "Node": "document",
+        "NodeIterator": "document.createNodeIterator(document.body, NodeFilter.SHOW_ALL, null, false)",
+        "NodeList": "document.body.childNodes",
+        "ProcessingInstruction": "document.createProcessingInstruction('target', 'data')",
+        "Range": "document.createRange()",
+        "Text": "document.createTextNode('text')",
+        "TreeWalker": "document.createTreeWalker(document.body, NodeFilter.SHOW_ALL, null, false)",
+        "XMLDocument": "document.implementation.createDocument(null, '', null)"
+    }
+}

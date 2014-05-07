@@ -28,12 +28,14 @@ TOP		= ../../..
 include $(TOP)/Makefile.Config.mk
 
 TOOL		= parse.js
-outfiles	:= $(foreach spec, $(SPECS), $(SPECDIR)/$(spec)/$(spec).idl.json)
+INSUFFIX	= idl
+OUTSUFFIX	= idl.json
+outfiles	:= $(foreach spec, $(SPECS), $(SPECDIR)/$(spec)/$(spec).$(OUTSUFFIX))
 
 all: $(outfiles)
 
-%.idl.json: %.idl
-	@$(NODE) $(TOOL) $(TOOLFLAGS) $(PARSEFLAGS) --config $(@D)/$(CONFIG) $< $@
+%.$(OUTSUFFIX): %.$(INSUFFIX) %.$(CONFIGSUFFIX)
+	@$(NODE) $(TOOL) $(TOOLFLAGS) $(PARSEFLAGS) --config $(@D)/$(*F).$(CONFIGSUFFIX) $< $@
 
 clean:
 	@$(RM) $(outfiles)

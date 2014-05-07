@@ -28,12 +28,14 @@ TOP		= ../../..
 include $(TOP)/Makefile.Config.mk
 
 TOOL		= extract.js
-outfiles	:= $(foreach spec, $(SPECS), $(SPECDIR)/$(spec)/$(spec).idl)
+INSUFFIX	= html
+OUTSUFFIX	= idl
+outfiles	:= $(foreach spec, $(SPECS), $(SPECDIR)/$(spec)/$(spec).$(OUTSUFFIX))
 
 all: $(outfiles)
 
-%.idl: %.html
-	@$(NODE) $(TOOL) $(TOOLFLAGS) $(EXTRACTFLAGS) --config $(@D)/$(CONFIG) $< $@
+%.$(OUTSUFFIX): %.$(INSUFFIX) %.$(CONFIGSUFFIX)
+	@$(NODE) $(TOOL) $(TOOLFLAGS) $(EXTRACTFLAGS) --config $(@D)/$(*F).$(CONFIGSUFFIX) $< $@
 
 clean:
 	@$(RM) $(outfiles)

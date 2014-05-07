@@ -28,15 +28,18 @@ TOP		= ../../..
 include $(TOP)/Makefile.Config.mk
 
 TOOL		= generate.js
-outfiles	:= $(foreach spec, $(SPECS), $(SPECDIR)/$(spec)/$(spec).test.ts)
+INSUFFIX	= idl.json
+OUTSUFFIX	= test.ts
+outfiles	:= $(foreach spec, $(SPECS), $(SPECDIR)/$(spec)/$(spec).$(OUTSUFFIX))
 
 all: $(outfiles)
 
-%.test.ts: %.idl.json
+%.$(OUTSUFFIX): %.$(INSUFFIX) %.$(CONFIGSUFFIX)
 	@if [ ! -d $(TESTDIR)/$(*F) ]; then mkdir -p $(TESTDIR)/$(*F); fi;
-	@$(NODE) $(TOOL) $(TOOLFLAGS) $(GENERATEFLAGS) --config $(@D)/$(CONFIG) --testDirectory $(TESTDIR)/$(*F) $< $@
+	@$(NODE) $(TOOL) $(TOOLFLAGS) $(GENERATEFLAGS) --config $(@D)/$(*F).$(CONFIGSUFFIX) --testDirectory $(TESTDIR)/$(*F) $< $@
 
 clean:
 	@$(RM) $(outfiles)
+	@$(RM) -r $(foreach spec, $(SPECS), $(TESTDIR)/$(spec))
 
 .PHONY: all clean

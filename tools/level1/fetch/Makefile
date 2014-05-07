@@ -28,17 +28,18 @@ TOP		= ../../..
 include $(TOP)/Makefile.Config.mk
 
 TOOL		= fetch.js
-outfiles	:= $(foreach spec, $(SPECS), $(SPECDIR)/$(spec)/$(spec).html)
+OUTSUFFIX	= html
+outfiles	:= $(foreach spec, $(SPECS), $(SPECDIR)/$(spec)/$(spec).$(OUTSUFFIX))
 
 all: $(outfiles)
 
-%.html: FORCE
-	@$(NODE) $(TOOL) $(TOOLFLAGS) $(FETCHFLAGS) --config $(@D)/$(CONFIG) $@.lm $@
+%.$(OUTSUFFIX): FORCE %.$(CONFIGSUFFIX)
+	@$(NODE) $(TOOL) $(TOOLFLAGS) $(FETCHFLAGS) --config $(@D)/$(*F).$(CONFIGSUFFIX) $@.lm $@
 
 FORCE:
 
 clean:
-	@$(RM) $(outfiles) $(patsubst %.html, %.html.lm, $(outfiles))
+	@$(RM) $(outfiles) $(patsubst %.$(OUTSUFFIX), %.$(OUTSUFFIX).lm, $(outfiles))
 
 .PHONY: all clean
 

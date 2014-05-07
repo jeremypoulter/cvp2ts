@@ -180,7 +180,7 @@
         var testFile = path.normalize(path.join(options['testDirectory'], [spec, type, name].join('-') + '.html'));
         var testOutput = fs.createWriteStream(testFile, {encoding: options['outputFileEncoding']});
         var instanceGetters = options['instances'];
-        var instanceGetter = 'undefined';
+        var instanceGetter;
         if (!!instanceGetters && !!instanceGetters[name])
             instanceGetter = instanceGetters[name];
         testOutput.getContent = function() { return buildTest(spec, name, type, def, instanceGetter); };
@@ -207,7 +207,12 @@
         html += "<h1>Test " + type + " " + name + " Signature</h1>\n";
         html += "<div id='log'></div>\n";
         html += "<script>\n";
-        html += "level1('" + spec + "', JSON.parse(document.getElementById('idl').textContent), function() { return " + getInstance + "; });\n";
+        var instanceGetter;
+        if (!!getInstance)
+            instanceGetter = "function() { return " + getInstance + "; }";
+        else
+            instanceGetter = "undefined";
+        html += "level1('" + spec + "', JSON.parse(document.getElementById('idl').textContent), " + instanceGetter + ");\n";
         html += "</script>\n";
         return html;
     }

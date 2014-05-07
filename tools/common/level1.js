@@ -54,7 +54,7 @@
             test(function() {
                 instance = getInstance();
                 assert_true(!!instance, 'Is ' + idlName + ' instance present?');
-            }, idlDefinedName + '-instance');
+            }, idlDefinedName + '-instance-present');
             if (!!instance) {
                 for (var i in idl.members) {
                     var member = idl.members[i];
@@ -63,7 +63,7 @@
                         test(function() {
                                 assert_true(instance[memberName] !== undefined, 'Does ' + idlName + ' instance have ' + memberName + ' attribute?');
                             }, idlDefinedName + '-instance-has-' + memberName + '-attribute');
-                    } else if (member.type == 'operation') {
+                    } else if (member.type == 'operation' && !member.stringifier) {
                         test(function() {
                                 assert_true(instance[memberName] !== undefined, 'Does ' + idlName + ' instance have ' + memberName + ' operation?');
                             }, idlDefinedName + '-instance-has-' + memberName + '-operation');
