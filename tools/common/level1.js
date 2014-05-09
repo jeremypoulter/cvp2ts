@@ -25,6 +25,7 @@
 
 "use strict";
 (function() {
+    var global = window;
     function hasExtAttr(idl, attr) {
         var eas = idl.extAttrs || [];
         for (var i in eas) {
@@ -90,7 +91,6 @@
         return xmlDocument;
     }
     function expose(name, value) {
-        var global = window;
         global[name] = value;
     }
     expose('level1', level1);
