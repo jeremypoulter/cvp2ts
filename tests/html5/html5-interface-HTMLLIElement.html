@@ -12,7 +12,7 @@
 <h1>Test Interface HTMLLIElement Signature</h1>
 <div id='log'></div>
 <script>
-level1('html5', JSON.parse(document.getElementById('idl').textContent), undefined);
+level1('html5', JSON.parse(document.getElementById('idl').textContent), function() { return getTestHTMLDocument().createElement('li'); });
 </script>
-), undefined);
+ent('li'); });
 </script>

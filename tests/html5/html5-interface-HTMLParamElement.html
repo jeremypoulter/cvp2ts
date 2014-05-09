@@ -12,7 +12,7 @@
 <h1>Test Interface HTMLParamElement Signature</h1>
 <div id='log'></div>
 <script>
-level1('html5', JSON.parse(document.getElementById('idl').textContent), undefined);
+level1('html5', JSON.parse(document.getElementById('idl').textContent), function() { return getTestHTMLDocument().createElement('param'); });
 </script>
-), undefined);
+('param'); });
 </script>

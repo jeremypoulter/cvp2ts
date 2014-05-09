@@ -2,7 +2,7 @@
     "spec": "html5",
     "source": "http://www.w3.org/html/wg/drafts/html/CR/single-page.html",
     "local": "html5.html",
-    "interfaces": {
+    "instances": {
         "ApplicationCache": "",
         "AudioTrack": "",
         "AudioTrackList": "",
