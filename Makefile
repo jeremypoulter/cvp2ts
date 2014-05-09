@@ -36,5 +36,8 @@ subdirs: $(SUBDIRS)
 $(SUBDIRS):
 	@$(MAKE) -C $@ $(MAKECMDGOALS)
 
-.PHONY: all clean subdirs $(SUBDIRS)
+manifest: $(SUBDIRS)
+        $(PYTHON) tools/w3c/scripts/manifest.py
+
+.PHONY: all manifest clean subdirs $(SUBDIRS)
 

@@ -26,6 +26,7 @@
 # commands
 ECHO		= echo
 NODE		= node
+PYTHON		= python
 
 # tool flags
 TOOLFLAGS	= -v

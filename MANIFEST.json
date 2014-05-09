@@ -116,9 +116,493 @@
       {
         "url": "/tests/dom4/dom4-interface-XMLDocument.html", 
         "path": "tests/dom4/dom4-interface-XMLDocument.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-ApplicationCache.html", 
+        "path": "tests/html5/html5-interface-ApplicationCache.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-AudioTrack.html", 
+        "path": "tests/html5/html5-interface-AudioTrack.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-AudioTrackList.html", 
+        "path": "tests/html5/html5-interface-AudioTrackList.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-BarProp.html", 
+        "path": "tests/html5/html5-interface-BarProp.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-BeforeUnloadEvent.html", 
+        "path": "tests/html5/html5-interface-BeforeUnloadEvent.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-DOMStringMap.html", 
+        "path": "tests/html5/html5-interface-DOMStringMap.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-DataCue.html", 
+        "path": "tests/html5/html5-interface-DataCue.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-DataTransfer.html", 
+        "path": "tests/html5/html5-interface-DataTransfer.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-DataTransferItem.html", 
+        "path": "tests/html5/html5-interface-DataTransferItem.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-DataTransferItemList.html", 
+        "path": "tests/html5/html5-interface-DataTransferItemList.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-Document.html", 
+        "path": "tests/html5/html5-interface-Document.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-DragEvent.html", 
+        "path": "tests/html5/html5-interface-DragEvent.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-ErrorEvent.html", 
+        "path": "tests/html5/html5-interface-ErrorEvent.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-External.html", 
+        "path": "tests/html5/html5-interface-External.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-GlobalEventHandlers.html", 
+        "path": "tests/html5/html5-interface-GlobalEventHandlers.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLAllCollection.html", 
+        "path": "tests/html5/html5-interface-HTMLAllCollection.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLAnchorElement.html", 
+        "path": "tests/html5/html5-interface-HTMLAnchorElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLAppletElement.html", 
+        "path": "tests/html5/html5-interface-HTMLAppletElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLAreaElement.html", 
+        "path": "tests/html5/html5-interface-HTMLAreaElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLAudioElement.html", 
+        "path": "tests/html5/html5-interface-HTMLAudioElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLBRElement.html", 
+        "path": "tests/html5/html5-interface-HTMLBRElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLBaseElement.html", 
+        "path": "tests/html5/html5-interface-HTMLBaseElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLBodyElement.html", 
+        "path": "tests/html5/html5-interface-HTMLBodyElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLButtonElement.html", 
+        "path": "tests/html5/html5-interface-HTMLButtonElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLCanvasElement.html", 
+        "path": "tests/html5/html5-interface-HTMLCanvasElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLDListElement.html", 
+        "path": "tests/html5/html5-interface-HTMLDListElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLDataElement.html", 
+        "path": "tests/html5/html5-interface-HTMLDataElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLDataListElement.html", 
+        "path": "tests/html5/html5-interface-HTMLDataListElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLDirectoryElement.html", 
+        "path": "tests/html5/html5-interface-HTMLDirectoryElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLDivElement.html", 
+        "path": "tests/html5/html5-interface-HTMLDivElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLElement.html", 
+        "path": "tests/html5/html5-interface-HTMLElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLEmbedElement.html", 
+        "path": "tests/html5/html5-interface-HTMLEmbedElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLFieldSetElement.html", 
+        "path": "tests/html5/html5-interface-HTMLFieldSetElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLFontElement.html", 
+        "path": "tests/html5/html5-interface-HTMLFontElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLFormControlsCollection.html", 
+        "path": "tests/html5/html5-interface-HTMLFormControlsCollection.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLFormElement.html", 
+        "path": "tests/html5/html5-interface-HTMLFormElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLFrameElement.html", 
+        "path": "tests/html5/html5-interface-HTMLFrameElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLFrameSetElement.html", 
+        "path": "tests/html5/html5-interface-HTMLFrameSetElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLHRElement.html", 
+        "path": "tests/html5/html5-interface-HTMLHRElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLHeadElement.html", 
+        "path": "tests/html5/html5-interface-HTMLHeadElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLHeadingElement.html", 
+        "path": "tests/html5/html5-interface-HTMLHeadingElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLHtmlElement.html", 
+        "path": "tests/html5/html5-interface-HTMLHtmlElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLIFrameElement.html", 
+        "path": "tests/html5/html5-interface-HTMLIFrameElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLImageElement.html", 
+        "path": "tests/html5/html5-interface-HTMLImageElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLInputElement.html", 
+        "path": "tests/html5/html5-interface-HTMLInputElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLKeygenElement.html", 
+        "path": "tests/html5/html5-interface-HTMLKeygenElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLLIElement.html", 
+        "path": "tests/html5/html5-interface-HTMLLIElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLLabelElement.html", 
+        "path": "tests/html5/html5-interface-HTMLLabelElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLLegendElement.html", 
+        "path": "tests/html5/html5-interface-HTMLLegendElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLLinkElement.html", 
+        "path": "tests/html5/html5-interface-HTMLLinkElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLMapElement.html", 
+        "path": "tests/html5/html5-interface-HTMLMapElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLMarqueeElement.html", 
+        "path": "tests/html5/html5-interface-HTMLMarqueeElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLMediaElement.html", 
+        "path": "tests/html5/html5-interface-HTMLMediaElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLMetaElement.html", 
+        "path": "tests/html5/html5-interface-HTMLMetaElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLMeterElement.html", 
+        "path": "tests/html5/html5-interface-HTMLMeterElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLModElement.html", 
+        "path": "tests/html5/html5-interface-HTMLModElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLOListElement.html", 
+        "path": "tests/html5/html5-interface-HTMLOListElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLObjectElement.html", 
+        "path": "tests/html5/html5-interface-HTMLObjectElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLOptGroupElement.html", 
+        "path": "tests/html5/html5-interface-HTMLOptGroupElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLOptionElement.html", 
+        "path": "tests/html5/html5-interface-HTMLOptionElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLOptionsCollection.html", 
+        "path": "tests/html5/html5-interface-HTMLOptionsCollection.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLOutputElement.html", 
+        "path": "tests/html5/html5-interface-HTMLOutputElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLParagraphElement.html", 
+        "path": "tests/html5/html5-interface-HTMLParagraphElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLParamElement.html", 
+        "path": "tests/html5/html5-interface-HTMLParamElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLPreElement.html", 
+        "path": "tests/html5/html5-interface-HTMLPreElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLProgressElement.html", 
+        "path": "tests/html5/html5-interface-HTMLProgressElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLQuoteElement.html", 
+        "path": "tests/html5/html5-interface-HTMLQuoteElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLScriptElement.html", 
+        "path": "tests/html5/html5-interface-HTMLScriptElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLSelectElement.html", 
+        "path": "tests/html5/html5-interface-HTMLSelectElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLSourceElement.html", 
+        "path": "tests/html5/html5-interface-HTMLSourceElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLSpanElement.html", 
+        "path": "tests/html5/html5-interface-HTMLSpanElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLStyleElement.html", 
+        "path": "tests/html5/html5-interface-HTMLStyleElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLTableCaptionElement.html", 
+        "path": "tests/html5/html5-interface-HTMLTableCaptionElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLTableCellElement.html", 
+        "path": "tests/html5/html5-interface-HTMLTableCellElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLTableColElement.html", 
+        "path": "tests/html5/html5-interface-HTMLTableColElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLTableDataCellElement.html", 
+        "path": "tests/html5/html5-interface-HTMLTableDataCellElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLTableElement.html", 
+        "path": "tests/html5/html5-interface-HTMLTableElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLTableHeaderCellElement.html", 
+        "path": "tests/html5/html5-interface-HTMLTableHeaderCellElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLTableRowElement.html", 
+        "path": "tests/html5/html5-interface-HTMLTableRowElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLTableSectionElement.html", 
+        "path": "tests/html5/html5-interface-HTMLTableSectionElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLTemplateElement.html", 
+        "path": "tests/html5/html5-interface-HTMLTemplateElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLTextAreaElement.html", 
+        "path": "tests/html5/html5-interface-HTMLTextAreaElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLTimeElement.html", 
+        "path": "tests/html5/html5-interface-HTMLTimeElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLTitleElement.html", 
+        "path": "tests/html5/html5-interface-HTMLTitleElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLTrackElement.html", 
+        "path": "tests/html5/html5-interface-HTMLTrackElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLUListElement.html", 
+        "path": "tests/html5/html5-interface-HTMLUListElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLUnknownElement.html", 
+        "path": "tests/html5/html5-interface-HTMLUnknownElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLVideoElement.html", 
+        "path": "tests/html5/html5-interface-HTMLVideoElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HashChangeEvent.html", 
+        "path": "tests/html5/html5-interface-HashChangeEvent.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-History.html", 
+        "path": "tests/html5/html5-interface-History.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-Location.html", 
+        "path": "tests/html5/html5-interface-Location.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-MediaController.html", 
+        "path": "tests/html5/html5-interface-MediaController.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-MediaError.html", 
+        "path": "tests/html5/html5-interface-MediaError.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-MimeType.html", 
+        "path": "tests/html5/html5-interface-MimeType.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-MimeTypeArray.html", 
+        "path": "tests/html5/html5-interface-MimeTypeArray.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-Navigator.html", 
+        "path": "tests/html5/html5-interface-Navigator.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-NavigatorContentUtils.html", 
+        "path": "tests/html5/html5-interface-NavigatorContentUtils.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-NavigatorID.html", 
+        "path": "tests/html5/html5-interface-NavigatorID.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-NavigatorLanguage.html", 
+        "path": "tests/html5/html5-interface-NavigatorLanguage.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-NavigatorOnLine.html", 
+        "path": "tests/html5/html5-interface-NavigatorOnLine.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-NavigatorPlugins.html", 
+        "path": "tests/html5/html5-interface-NavigatorPlugins.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-NavigatorStorageUtils.html", 
+        "path": "tests/html5/html5-interface-NavigatorStorageUtils.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-PageTransitionEvent.html", 
+        "path": "tests/html5/html5-interface-PageTransitionEvent.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-Plugin.html", 
+        "path": "tests/html5/html5-interface-Plugin.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-PluginArray.html", 
+        "path": "tests/html5/html5-interface-PluginArray.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-PopStateEvent.html", 
+        "path": "tests/html5/html5-interface-PopStateEvent.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-RadioNodeList.html", 
+        "path": "tests/html5/html5-interface-RadioNodeList.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-TextTrack.html", 
+        "path": "tests/html5/html5-interface-TextTrack.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-TextTrackCue.html", 
+        "path": "tests/html5/html5-interface-TextTrackCue.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-TextTrackCueList.html", 
+        "path": "tests/html5/html5-interface-TextTrackCueList.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-TextTrackList.html", 
+        "path": "tests/html5/html5-interface-TextTrackList.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-TimeRanges.html", 
+        "path": "tests/html5/html5-interface-TimeRanges.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-TrackEvent.html", 
+        "path": "tests/html5/html5-interface-TrackEvent.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-Transferable.html", 
+        "path": "tests/html5/html5-interface-Transferable.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-ValidityState.html", 
+        "path": "tests/html5/html5-interface-ValidityState.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-VideoTrack.html", 
+        "path": "tests/html5/html5-interface-VideoTrack.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-VideoTrackList.html", 
+        "path": "tests/html5/html5-interface-VideoTrackList.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-Window.html", 
+        "path": "tests/html5/html5-interface-Window.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-WindowBase64.html", 
+        "path": "tests/html5/html5-interface-WindowBase64.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-WindowEventHandlers.html", 
+        "path": "tests/html5/html5-interface-WindowEventHandlers.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-WindowTimers.html", 
+        "path": "tests/html5/html5-interface-WindowTimers.html"
       }
     ]
   }, 
   "local_changes": [], 
-  "rev": "7e46c4432588a70dfb711ec9ffc381435b6c3adc"
+  "rev": "2c471d52fc50360c1dfa313d13e39f6be9f1e666"
 }
