@@ -3,7 +3,7 @@
     "source": "http://w3c.github.io/dom/",
     "local": "dom4.html",
     "instances": {
-        "Attr": "getTestXMLDocument().getElementById('idl').attributes[0]",
+        "Attr": "document.getElementById('idl').attributes[0]",
         "CharacterData": "getTestXMLDocument().createTextNode('text')",
         "ChildNode": "getTestXMLDocument().createTextNode('text')",
         "Comment": "getTestXMLDocument().createComment('comment')",
@@ -15,14 +15,14 @@
         "Document": "getTestXMLDocument()",
         "DocumentFragment": "new DocumentFragment()",
         "DocumentType": "getTestDocumentType()",
-        "Element": "getTestXMLDocument().documentElement",
+        "Element": "document.documentElement",
         "Event": "getTestXMLDocument().createEvent('Event')",
         "EventTarget": "getTestXMLDocument()",
         "HTMLCollection": "getTestHTMLDocument().body.children",
         "MutationObserver": "new MutationObserver(function(mutations, observer){})",
         "MutationRecord": "",
         "Node": "getTestXMLDocument()",
-        "NodeIterator": "getTestXMLDocument().createNodeIterator(getTestXMLDocument().documentElement, NodeFilter.SHOW_ALL, null, false)",
+        "NodeIterator": "document.createNodeIterator(document.documentElement, NodeFilter.SHOW_ALL, null, false)",
         "NodeList": "getTestXMLDocument().body.childNodes",
         "NonDocumentTypeChildNode": "getTestXMLDocument().createTextNode('text')",
         "NonElementParentNode": "getTestXMLDocument()",
@@ -30,7 +30,7 @@
         "ProcessingInstruction": "getTestXMLDocument().createProcessingInstruction('target', 'data')",
         "Range": "getTestXMLDocument().createRange()",
         "Text": "getTestXMLDocument().createTextNode('text')",
-        "TreeWalker": "getTestXMLDocument().createTreeWalker(getTestXMLDocument().documentElement, NodeFilter.SHOW_ALL, null, false)",
+        "TreeWalker": "document.createTreeWalker(document.documentElement, NodeFilter.SHOW_ALL, null, false)",
         "XMLDocument": "getTestXMLDocument()"
     }
 }
