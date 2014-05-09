@@ -29,15 +29,19 @@ include $(TOP)/Makefile.Config.mk
 
 SUBDIRS		= tools
 
-all clean: subdirs
+all manifest clean: subdirs
 
 subdirs: $(SUBDIRS)
 
 $(SUBDIRS):
 	@$(MAKE) -C $@ $(MAKECMDGOALS)
 
-manifest: $(SUBDIRS)
-        $(PYTHON) tools/w3c/scripts/manifest.py
+manifest: MANIFEST.json
+
+MANIFEST.json: FORCE
+	@$(PYTHON) tools/w3c/scripts/manifest.py
+
+FORCE:
 
 .PHONY: all manifest clean subdirs $(SUBDIRS)
 
