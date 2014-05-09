@@ -5,6 +5,7 @@
     "instances": {
         "Attr": "document.getElementById('idl').attributes[0]",
         "CharacterData": "document.createTextNode('text')",
+        "ChildNode": "document.createTextNode('text')",
         "Comment": "document.createComment('comment')",
         "CustomEvent": "new CustomEvent('custom')",
         "DOMError": "new DOMError('error')",
@@ -23,6 +24,9 @@
         "Node": "document",
         "NodeIterator": "document.createNodeIterator(document.body, NodeFilter.SHOW_ALL, null, false)",
         "NodeList": "document.body.childNodes",
+        "NonDocumentTypeChildNode": "document.createTextNode('text')",
+        "NonElementParentNode": "document",
+        "ParentNode": "document",
         "ProcessingInstruction": "document.createProcessingInstruction('target', 'data')",
         "Range": "document.createRange()",
         "Text": "document.createTextNode('text')",

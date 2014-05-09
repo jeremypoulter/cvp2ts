@@ -47,7 +47,7 @@
         if (!hasExtAttr(idl, 'NoInterfaceObject')) {
             test(function() {
                 assert_true(!!global[idlName], 'Is ' + idlName + ' bound at global scope?');
-            }, idlDefinedName + '-bound');
+            }, idlDefinedName + '-bound-at-global-scope');
         }
         if (!!getInstance) {
             var instance;
