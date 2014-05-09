@@ -33,7 +33,7 @@
         "HTMLDataListElement": "getTestHTMLDocument().createElement('datalist')",
         "HTMLDirectoryElement": "getTestHTMLDocument().createElement('dir')",
         "HTMLDivElement": "getTestHTMLDocument().createElement('div')",
-        "HTMLElement": "getTestHTMLDocument().documentElement",
+        "HTMLElement": "document.documentElement",
         "HTMLEmbedElement": "getTestHTMLDocument().createElement('embed')",
         "HTMLFieldSetElement": "getTestHTMLDocument().createElement('fieldset')",
         "HTMLFontElement": "getTestHTMLDocument().createElement('font')",
