@@ -72,5 +72,23 @@
             }
         }
     };
+    var htmlDocument;
+    function getTestHTMLDocument() {
+        if (!htmlDocument)
+            htmlDocument = document.implementation.createHTMLDocument('');
+        return htmlDocument;
+    }
+    var xmlDocument;
+    function getTestXMLDocument() {
+        if (!xmlDocument)
+            xmlDocument = document.implementation.createDocument(null, '', null);
+        return xmlDocument;
+    }
+    var documentType;
+    function getTestDocumentType(qn) {
+        if (!documentType)
+            documentType = document.implementation.createDocumentType(qn || 'none', '', '');
+        return documentType;
+    }
     global['level1'] = level1;
 })();
