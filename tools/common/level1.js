@@ -25,7 +25,6 @@
 
 "use strict";
 (function() {
-    var global = window;
     function hasExtAttr(idl, attr) {
         var eas = idl.extAttrs || [];
         for (var i in eas) {
@@ -72,6 +71,12 @@
             }
         }
     };
+    var documentType;
+    function getTestDocumentType(qn) {
+        if (!documentType)
+            documentType = document.implementation.createDocumentType(qn || 'none', '', '');
+        return documentType;
+    }
     var htmlDocument;
     function getTestHTMLDocument() {
         if (!htmlDocument)
@@ -84,11 +89,12 @@
             xmlDocument = document.implementation.createDocument(null, '', null);
         return xmlDocument;
     }
-    var documentType;
-    function getTestDocumentType(qn) {
-        if (!documentType)
-            documentType = document.implementation.createDocumentType(qn || 'none', '', '');
-        return documentType;
+    function expose(name, value) {
+        var global = window;
+        global[name] = value;
     }
-    global['level1'] = level1;
+    expose('level1', level1);
+    expose('getTestDocumentType', getTestDocumentType);
+    expose('getTestHTMLDocument', getTestHTMLDocument);
+    expose('getTestXMLDocument', getTestXMLDocument);
 })();
