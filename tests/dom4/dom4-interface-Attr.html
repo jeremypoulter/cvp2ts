@@ -12,5 +12,5 @@
 <h1>Test Interface Attr Signature</h1>
 <div id='log'></div>
 <script>
-level1('dom4', JSON.parse(document.getElementById('idl').textContent), function() { return getTestXMLDocument().getElementById('idl').attributes[0]; });
+level1('dom4', JSON.parse(document.getElementById('idl').textContent), function() { return document.getElementById('idl').attributes[0]; });
 </script>
