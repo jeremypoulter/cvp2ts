@@ -600,9 +600,35 @@
       {
         "url": "/tests/html5/html5-interface-WindowTimers.html", 
         "path": "tests/html5/html5-interface-WindowTimers.html"
+      }, 
+      {
+        "url": "/tests/xhr/xhr-interface-FormData.html", 
+        "path": "tests/xhr/xhr-interface-FormData.html"
+      }, 
+      {
+        "url": "/tests/xhr/xhr-interface-XMLHttpRequest.html", 
+        "path": "tests/xhr/xhr-interface-XMLHttpRequest.html"
+      }, 
+      {
+        "url": "/tests/xhr/xhr-interface-XMLHttpRequestEventTarget.html", 
+        "path": "tests/xhr/xhr-interface-XMLHttpRequestEventTarget.html"
+      }, 
+      {
+        "url": "/tests/xhr/xhr-interface-XMLHttpRequestUpload.html", 
+        "path": "tests/xhr/xhr-interface-XMLHttpRequestUpload.html"
+      }
+    ], 
+    "helper": [
+      {
+        "url": "/tests/dom4/helpers/MutationRecord.js", 
+        "path": "tests/dom4/helpers/MutationRecord.js"
+      }, 
+      {
+        "url": "/tests/html5/helpers/MediaError.js", 
+        "path": "tests/html5/helpers/MediaError.js"
       }
     ]
   }, 
   "local_changes": [], 
-  "rev": "efb9023da2ef85749cd895949113d33768292af6"
+  "rev": "ed47449bbcb44678db1b3485d1cf0483948543fc"
 }
