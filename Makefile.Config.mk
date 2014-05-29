@@ -46,3 +46,4 @@ CONFIG    	= config.json
 CONFIGSUFFIX	= $(CONFIG)
 
 include $(TOP)/Makefile.Specs.mk
+include $(TOP)/Makefile.Tools.mk

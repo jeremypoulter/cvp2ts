@@ -37,6 +37,10 @@ all: $(outfiles)
 %.$(OUTSUFFIX): %.$(INSUFFIX) %.$(CONFIGSUFFIX)
 	@if [ ! -d $(TESTDIR)/$(*F) ]; then mkdir -p $(TESTDIR)/$(*F); fi;
 	@$(NODE) $(TOOL) $(TOOLFLAGS) $(GENERATEFLAGS) --config $(@D)/$(*F).$(CONFIGSUFFIX) --testDirectory $(TESTDIR)/$(*F) $< $@
+	@if [ -d $(SPECDIR)/$(*F)/helpers ]; then \
+	    if [ ! -d $(TESTDIR)/$(*F)/helpers ]; then mkdir -p $(TESTDIR)/$(*F)/helpers; fi ; \
+	    cp $(SPECDIR)/$(*F)/helpers/*.js $(TESTDIR)/$(*F)/helpers ; \
+	fi;
 
 clean:
 	@$(RM) $(outfiles)

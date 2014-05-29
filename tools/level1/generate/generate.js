@@ -36,8 +36,11 @@
     var defaults        = {
         configFile : undefined,
         configFileEncoding : 'utf8',
+        helpers : undefined,
         inputFileEncoding : 'utf8',
         inputFile : undefined,
+        instances : {},
+        instancesAsync : {},
         local : undefined,
         other : [],
         outputFile : undefined,
@@ -47,8 +50,11 @@
         spec : 'unknown',
         specDirectory : undefined,
         testDirectory : undefined,
-        verbose : false
+        verbose : false,
+        warnOnMissingInstanceGetter : true,
+        warnOnUndefinedInstanceGetter : true
     };
+    var chunkSize       = 16384;
     var $               = {
         /* state */
         options : {},
@@ -56,7 +62,6 @@
         inputData : '',
         document : null,
         output : null,
-        numTestStreams : 0,
         /* callbacks */
         onFatalException : function(e) {
             util.error(util.inspect(e));
@@ -83,29 +88,13 @@
                     processInterfaces(doc);
                     processImplements(doc);
                 }
+                setTimeout(function() { $.onOutputDone(); }, 0);
             } catch(e) {
                 setTimeout(function() { $.onFatalException(e); }, 0);
             }
         },
-        onTestOutputOpen : function() {
-            var s = this;
-            $.numTestStreams++;
-            s.on('finish', $.onTestOutputDone);
-            s.end(s.getContent());
-        },
-        onTestOutputDone : function() {
-            if (--$.numTestStreams < 1)
-                processOutput();
-        },
-        onTestOutputError : function(e) {
-            if (--$.numTestStreams < 1)
-                processOutput();
-        },
         onOutputDone : function() {
-            if ($.numTestStreams < 1)
-                process.exit(0);
-            else
-                setTimeout(function() { $.onOutputDone(); }, 0);
+            process.exit(0);
         },
         processInputFileOption : function(options, other, defaults) {
             if (!options['inputFile']) {
@@ -150,7 +139,7 @@
                     throw "Test directory does not exist!";
                 $.options = options;
                 if (options['verbose'])
-                    console.warn('Generating tests from ' + ((input !== process.stdin) ? options['inputFile'] : 'STDIN') + ' ...');
+                    console.warn('[I]: ' + 'Generating tests from ' + ((input !== process.stdin) ? options['inputFile'] : 'STDIN') + ' ...');
             } catch(e) {
                 setTimeout(function() { $.onFatalException(e); }, 0);
             }
@@ -177,20 +166,27 @@
         var spec = options['spec'];
         var name = def.name;
         var type = def.type;
+        var getInstance;
+        var async;
+        if (!!options['instances'] && !!options['instances'][name]) {
+            getInstance = options['instances'][name];
+            async = false;
+        } else if (!!options['instancesAsync'] && !!options['instancesAsync'][name]) {
+            getInstance = options['instancesAsync'][name];
+            async = true;
+        } else {
+            if ($.options['warnOnMissingInstanceGetter'])
+                console.warn('[W]: ' + 'Missing instance getter for ' + type + ' ' + name + '.');
+            return;
+        }
+        var hasHelpers = !!options['helpers'] && (options['helpers'].indexOf(name) >= 0);
+        var testContent = buildTest(spec, name, type, def, getInstance, async, hasHelpers);
         var testFile = path.normalize(path.join(options['testDirectory'], [spec, type, name].join('-') + '.html'));
-        var testOutput = fs.createWriteStream(testFile, {encoding: options['outputFileEncoding']});
-        var instanceGetters = options['instances'];
-        var instanceGetter;
-        if (!!instanceGetters && !!instanceGetters[name])
-            instanceGetter = instanceGetters[name];
-        testOutput.getContent = function() { return buildTest(spec, name, type, def, instanceGetter); };
-        testOutput.on('open', $.onTestOutputOpen);
-        testOutput.on('error', $.onTestOutputError);
-        
+        fs.writeFileSync(testFile, testContent, {encoding: options['outputFileEncoding']});
     }
     function processImplements(doc) {
     }
-    function buildTest(spec, name, type, idl, getInstance) {
+    function buildTest(spec, name, type, idl, getInstance, async, hasHelpers) {
         var type = capitalize(type);
         var html = "";
         html += "<!-- Copyright (C) 2014, Cable Television Laboratories, Inc. & Skynav, Inc. -->\n";
@@ -206,13 +202,23 @@
         html += "</script>\n";
         html += "<h1>Test " + type + " " + name + " Signature</h1>\n";
         html += "<div id='log'></div>\n";
+        if (hasHelpers)
+            html += "<script src='./helpers/" + name + ".js'></script>\n";
         html += "<script>\n";
+        var driverName = async ? 'level1Async' : 'level1';
         var instanceGetter;
-        if (!!getInstance)
-            instanceGetter = "function() { return " + getInstance + "; }";
-        else
+        if (!!getInstance) {
+            if (getInstance != 'undefined') {
+                instanceGetter = "function(test){return " + getInstance + ";}";
+            } else {
+                if ($.options['warnOnUndefinedInstanceGetter'])
+                    console.warn('[W]: ' + 'Undefined instance getter for ' + type + ' ' + name + '.');
+                instanceGetter = "undefined";
+            }
+        } else {
             instanceGetter = "undefined";
-        html += "level1('" + spec + "', JSON.parse(document.getElementById('idl').textContent), " + instanceGetter + ");\n";
+        }
+        html += driverName + "('" + spec + "', JSON.parse(document.getElementById('idl').textContent), " + instanceGetter + ");\n";
         html += "</script>\n";
         return html;
     }

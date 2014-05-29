@@ -26,7 +26,41 @@
 "use strict";
 (function() {
     var global = window;
-    function hasExtAttr(idl, attr) {
+    function level1(spec, idl, getInstance) {
+        level1Test(spec, idl, getInstance, false);
+    }
+    function level1Async(spec, idl, getInstance) {
+        level1Test(spec, idl, getInstance, true);
+    }
+    function level1Test(spec, idl, getInstance, async) {
+        var idlType = idl.type || 'definition';
+        var idlName = idl.name || 'missing';
+        var idlProperties = {
+            idl: idl,
+            type: idlType,
+            name: idlName,
+            expandedName: spec + '-' + idlType + '-' + idlName.toLowerCase()
+        };
+        test(function() {
+            assert_true(!!idl, 'Is IDL defined?');
+        }, idlProperties.expandedName + '-idl-defined');
+        if (!idl)
+            return;
+        if (!hasExtendedAttribute(idl, 'NoInterfaceObject')) {
+            test(function() {
+                assert_true(!!global[idlName], 'Is ' + idlProperties.name + ' bound at global scope?');
+            }, idlProperties.expandedName + '-bound-at-global-scope');
+        }
+        if (!!getInstance && (getInstance != 'undefined')) {
+            if (typeof getInstance === 'function') {
+                if (!async)
+                    testInstance(getInstance(), idlProperties);
+                else
+                    async_test(getInstance, idlProperties.expandedName + '-get-instance-async', {idl: idlProperties});
+            }
+        }
+    };
+    function hasExtendedAttribute(idl, attr) {
         var eas = idl.extAttrs || [];
         for (var i in eas) {
             var ea = eas[i];
@@ -35,66 +69,61 @@
         }
         return false;
     }
-    function level1(spec, idl, getInstance) {
-        var idlType = idl.type || 'definition';
-        var idlName = idl.name || 'missing';
-        var idlDefinedName = spec + '-' + idlType + '-' + idlName.toLowerCase();;
+    function testInstance(instance, idlProperties) {
         test(function() {
-            assert_true(!!idl, 'Is IDL defined?');
-        }, idlDefinedName + '-idl-defined');
-        if (!idl)
+            assert_true(!!instance, 'Is ' + idlProperties.name + ' instance present?');
+        }, idlProperties.expandedName + '-instance-present');
+        if (!instance)
             return;
-        if (!hasExtAttr(idl, 'NoInterfaceObject')) {
-            test(function() {
-                assert_true(!!global[idlName], 'Is ' + idlName + ' bound at global scope?');
-            }, idlDefinedName + '-bound-at-global-scope');
-        }
-        if (!!getInstance) {
-            var instance;
-            test(function() {
-                instance = getInstance();
-                assert_true(!!instance, 'Is ' + idlName + ' instance present?');
-            }, idlDefinedName + '-instance-present');
-            if (!!instance) {
-                for (var i in idl.members) {
-                    var member = idl.members[i];
-                    var memberName = member.name;
-                    if (member.type == 'attribute') {
-                        test(function() {
-                                assert_true(instance[memberName] !== undefined, 'Does ' + idlName + ' instance have ' + memberName + ' attribute?');
-                            }, idlDefinedName + '-instance-has-' + memberName + '-attribute');
-                    } else if (member.type == 'operation' && !member.stringifier) {
-                        test(function() {
-                                assert_true(instance[memberName] !== undefined, 'Does ' + idlName + ' instance have ' + memberName + ' operation?');
-                            }, idlDefinedName + '-instance-has-' + memberName + '-operation');
-                    }
+        for (var i in idlProperties.idl.members) {
+            var member = idlProperties.idl.members[i];
+            var memberName = member.name;
+            var overloadIndex = getOverloadIndex(member, i);
+            if (overloadIndex < 1) {
+                if (member.type == 'attribute') {
+                    test(function() {
+                        assert_true(instance[memberName] !== undefined, 'Does ' + idlProperties.name + ' instance have ' + memberName + ' attribute?');
+                    }, idlProperties.expandedName + '-instance-has-' + memberName + '-attribute');
+                } else if (member.type == 'operation' && !isSpecialOperation(member)) {
+                    test(function() {
+                        assert_true(instance[memberName] !== undefined, 'Does ' + idlProperties.name + ' instance have ' + memberName + ' operation?');
+                    }, idlProperties.expandedName + '-instance-has-' + memberName + '-operation');
                 }
             }
         }
-    };
-    var documentType;
-    function getTestDocumentType(qn) {
-        if (!documentType)
-            documentType = document.implementation.createDocumentType(qn || 'none', '', '');
-        return documentType;
     }
-    var htmlDocument;
-    function getTestHTMLDocument() {
-        if (!htmlDocument)
-            htmlDocument = document.implementation.createHTMLDocument('');
-        return htmlDocument;
+    function isSpecialOperation(member) {
+        if (member.getter)
+            return true;
+        else if (member.setter)
+            return true;
+        else if (member.creator)
+            return true;
+        else if (member.deleter)
+            return true;
+        else if (member.legacycaller)
+            return true;
+        else if (member.stringifier)
+            return true;
+        else
+            return false;
     }
-    var xmlDocument;
-    function getTestXMLDocument() {
-        if (!xmlDocument)
-            xmlDocument = document.implementation.createDocument(null, '', null);
-        return xmlDocument;
+    var overloads = {};
+    function getOverloadIndex(member, i) {
+        var memberName = member.name;
+        var memberOverloads = overloads[memberName];
+        if (memberOverloads === undefined)
+            memberOverloads = [ 1 ];
+        else
+            memberOverloads[0] = memberOverloads[0] + 1;
+        overloads[memberName] = memberOverloads;
+        return memberOverloads[0] - 1;
     }
     function expose(name, value) {
         global[name] = value;
     }
+    expose('expose', expose);
     expose('level1', level1);
-    expose('getTestDocumentType', getTestDocumentType);
-    expose('getTestHTMLDocument', getTestHTMLDocument);
-    expose('getTestXMLDocument', getTestXMLDocument);
+    expose('level1Async', level1Async);
+    expose('level1TestInstance', testInstance);
 })();

@@ -12,5 +12,5 @@
 <h1>Test Interface HTMLOptionElement Signature</h1>
 <div id='log'></div>
 <script>
-level1('html5', JSON.parse(document.getElementById('idl').textContent), function() { return getTestHTMLDocument().createElement('option'); });
+level1('html5', JSON.parse(document.getElementById('idl').textContent), function(test){return document.createElement('option');});
 </script>

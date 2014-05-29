@@ -127,7 +127,7 @@
                 } else
                     throw "No output stream!";
                 if (options['verbose'])
-                    console.warn('Parsing IDL from ' + ((input !== process.stdin) ? options['inputFile'] : 'STDIN') + ' ...');
+                    console.warn('[I]: ' + 'Parsing IDL from ' + ((input !== process.stdin) ? options['inputFile'] : 'STDIN') + ' ...');
             } catch(e) {
                 setTimeout(function() { $.onFatalException(e); }, 0);
             }

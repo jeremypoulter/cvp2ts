@@ -27,7 +27,7 @@ TOP		= ../..
 
 include $(TOP)/Makefile.Config.mk
 
-SUBDIRS		= fetch extract parse generate
+SUBDIRS		= $(TOOLS)
 
 all clean: subdirs
 

@@ -12,5 +12,5 @@
 <h1>Test Interface HTMLHRElement Signature</h1>
 <div id='log'></div>
 <script>
-level1('html5', JSON.parse(document.getElementById('idl').textContent), function() { return getTestHTMLDocument().createElement('hr'); });
+level1('html5', JSON.parse(document.getElementById('idl').textContent), function(test){return document.createElement('hr');});
 </script>

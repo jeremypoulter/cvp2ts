@@ -134,11 +134,11 @@
             }
             if (fetchRequired) {
                 if ($.options['verbose'])
-                    console.warn('Fetching spec from ' + url.format($.url) + ' ...');
+                    console.warn('[I]: ' + 'Fetching spec from ' + url.format($.url) + ' ...');
                 setTimeout(function() { $.onFetch('GET'); }, 0);
             } else {
                 if ($.options['verbose'])
-                    console.warn('Fetch not required, last modified on ' + new Date($.lastModifiedCurrent).toUTCString() + '.');
+                    console.warn('[I]: ' + 'Fetch not required, last modified on ' + new Date($.lastModifiedCurrent).toUTCString() + '.');
                 setTimeout(function() { $.onOutputLastModifiedDone(); }, 0);
             }
         },

@@ -12,12 +12,5 @@
 <h1>Test Interface HTMLImageElement Signature</h1>
 <div id='log'></div>
 <script>
-level1('html5', JSON.parse(document.getElementById('idl').textContent), function() { return getTestHTMLDocument().createElement('img'); });
-</script>
-:false,"array":false,"union":false,"idlType":"unsigned long"},"name":"naturalHeight","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"nullable":false,"array":false,"union":false,"idlType":"boolean"},"name":"complete","extAttrs":[]}],"inheritance":"HTMLElement","extAttrs":[{"name":"NamedConstructor","arguments":[{"optional":true,"variadic":false,"extAttrs":[],"idlType":{"sequence":false,"nullable":false,"array":false,"union":false,"idlType":"unsigned long"},"name":"width"},{"optional":true,"variadic":false,"extAttrs":[],"idlType":{"sequence":false,"nullable":false,"array":false,"union":false,"idlType":"unsigned long"},"name":"height"}],"rhs":{"type":"identifier","value":"Image"}}]}
-</script>
-<h1>Test Interface HTMLImageElement Signature</h1>
-<div id='log'></div>
-<script>
-level1('html5', JSON.parse(document.getElementById('idl').textContent), function() { return getTestHTMLDocument().createElement('img'); });
+level1('html5', JSON.parse(document.getElementById('idl').textContent), function(test){return document.createElement('img');});
 </script>

@@ -11,6 +11,7 @@
 </script>
 <h1>Test Interface MutationRecord Signature</h1>
 <div id='log'></div>
+<script src='./helpers/MutationRecord.js'></script>
 <script>
-level1('dom4', JSON.parse(document.getElementById('idl').textContent), undefined);
+level1Async('dom4', JSON.parse(document.getElementById('idl').textContent), function(test){return getMutationRecordAsync(test);});
 </script>

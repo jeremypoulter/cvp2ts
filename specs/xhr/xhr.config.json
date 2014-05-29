@@ -1,5 +1,11 @@
 {
     "spec": "xhr",
     "source": "https://dvcs.w3.org/hg/xhr/raw-file/default/xhr-1/Overview.html",
-    "local": "spec.html"
+    "local": "spec.html",
+    "instances": {
+        "XMLHttpRequestEventTarget": "!!window['XMLHttpRequest'] && new XMLHttpRequest()",
+        "XMLHttpRequestUpload": "!!window['XMLHttpRequest'] && new XMLHttpRequest().upload",
+        "XMLHttpRequest": "!!window['XMLHttpRequest'] && new XMLHttpRequest()",
+        "FormData": "!!window['FormData'] && new FormData()"
+    }
 }
