@@ -53,9 +53,11 @@
         }
         if (!!getInstance && (getInstance != 'undefined')) {
             if (typeof getInstance === 'function') {
-                if (!async)
-                    testInstance(getInstance(), idlProperties);
-                else
+                if (!async) {
+                    test(function() {
+                        testInstance(getInstance(), idlProperties);
+                    }, idlProperties.expandedName + '-get-instance-sync', {idl: idlProperties});
+                } else
                     async_test(getInstance, idlProperties.expandedName + '-get-instance-async', {idl: idlProperties});
             }
         }
@@ -78,46 +80,47 @@
         for (var i in idlProperties.idl.members) {
             var member = idlProperties.idl.members[i];
             var memberName = member.name;
-            var overloadIndex = getOverloadIndex(member, i);
+            if (!memberName) {
+                if (member.type == 'operation') {
+                    if (member.stringifier) {
+                        memberName = 'toString';
+                    }
+                } else if (member.type == 'serializer')
+                    memberName = 'toJSON';
+            }
+            if (!memberName)
+                continue;
+            var overloadIndex = getOverloadIndex(memberName);
             if (overloadIndex < 1) {
                 if (member.type == 'attribute') {
                     test(function() {
                         assert_true(instance[memberName] !== undefined, 'Does ' + idlProperties.name + ' instance have ' + memberName + ' attribute?');
                     }, idlProperties.expandedName + '-instance-has-' + memberName + '-attribute');
-                } else if (member.type == 'operation' && !isSpecialOperation(member)) {
+                } else if (member.type == 'operation') {
                     test(function() {
                         assert_true(instance[memberName] !== undefined, 'Does ' + idlProperties.name + ' instance have ' + memberName + ' operation?');
                     }, idlProperties.expandedName + '-instance-has-' + memberName + '-operation');
+                } else if (member.type == 'serializer') {
+                    test(function() {
+                        assert_true(instance[memberName] !== undefined, 'Does ' + idlProperties.name + ' instance have ' + memberName + ' serializer?');
+                    }, idlProperties.expandedName + '-instance-has-' + memberName + '-serializer');
                 }
             }
         }
     }
-    function isSpecialOperation(member) {
-        if (member.getter)
-            return true;
-        else if (member.setter)
-            return true;
-        else if (member.creator)
-            return true;
-        else if (member.deleter)
-            return true;
-        else if (member.legacycaller)
-            return true;
-        else if (member.stringifier)
-            return true;
-        else
-            return false;
-    }
-    var overloads = {};
-    function getOverloadIndex(member, i) {
-        var memberName = member.name;
-        var memberOverloads = overloads[memberName];
-        if (memberOverloads === undefined)
-            memberOverloads = [ 1 ];
-        else
-            memberOverloads[0] = memberOverloads[0] + 1;
-        overloads[memberName] = memberOverloads;
-        return memberOverloads[0] - 1;
+    var overloads = { names: [], counts: [] };
+    function getOverloadIndex(memberName) {
+        var names = overloads.names;
+        var counts = overloads.counts;
+        var i = names.indexOf(memberName);
+        if (i < 0) {
+            i = names.length;
+            names[i] = memberName;
+            counts[i] = 1;
+        } else {
+            counts[i] = counts[i] + 1;
+        }
+        return counts[i] - 1;
     }
     function expose(name, value) {
         global[name] = value;

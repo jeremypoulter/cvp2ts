@@ -19,7 +19,7 @@
         "DocumentFragment": "!!window['DocumentFragment'] && new DocumentFragment()",
         "DocumentType": "document.implementation.createDocumentType('none', '', '')",
         "Element": "document.documentElement",
-        "Event": "document.implementation.createDocument(null, '', null).createEvent('Event')",
+        "Event": "document.createEvent('Event')",
         "EventTarget": "document.implementation.createDocument(null, '', null)",
         "HTMLCollection": "document.implementation.createHTMLDocument('').body.children",
         "MutationObserver": "!!window['MutationObserver'] && new MutationObserver(function(mutations, observer){})",
