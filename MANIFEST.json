@@ -2,6 +2,38 @@
   "items": {
     "testharness": [
       {
+        "url": "/tests/canvas2d/canvas2d-interface-CanvasDrawingStyles.html", 
+        "path": "tests/canvas2d/canvas2d-interface-CanvasDrawingStyles.html"
+      }, 
+      {
+        "url": "/tests/canvas2d/canvas2d-interface-CanvasGradient.html", 
+        "path": "tests/canvas2d/canvas2d-interface-CanvasGradient.html"
+      }, 
+      {
+        "url": "/tests/canvas2d/canvas2d-interface-CanvasPathMethods.html", 
+        "path": "tests/canvas2d/canvas2d-interface-CanvasPathMethods.html"
+      }, 
+      {
+        "url": "/tests/canvas2d/canvas2d-interface-CanvasPattern.html", 
+        "path": "tests/canvas2d/canvas2d-interface-CanvasPattern.html"
+      }, 
+      {
+        "url": "/tests/canvas2d/canvas2d-interface-CanvasRenderingContext2D.html", 
+        "path": "tests/canvas2d/canvas2d-interface-CanvasRenderingContext2D.html"
+      }, 
+      {
+        "url": "/tests/canvas2d/canvas2d-interface-ImageData.html", 
+        "path": "tests/canvas2d/canvas2d-interface-ImageData.html"
+      }, 
+      {
+        "url": "/tests/canvas2d/canvas2d-interface-MouseEvent.html", 
+        "path": "tests/canvas2d/canvas2d-interface-MouseEvent.html"
+      }, 
+      {
+        "url": "/tests/canvas2d/canvas2d-interface-TextMetrics.html", 
+        "path": "tests/canvas2d/canvas2d-interface-TextMetrics.html"
+      }, 
+      {
         "url": "/tests/dom4/dom4-interface-Attr.html", 
         "path": "tests/dom4/dom4-interface-Attr.html"
       }, 
@@ -620,6 +652,10 @@
     ], 
     "helper": [
       {
+        "url": "/tests/canvas2d/helpers/CanvasPattern.js", 
+        "path": "tests/canvas2d/helpers/CanvasPattern.js"
+      }, 
+      {
         "url": "/tests/dom4/helpers/MutationRecord.js", 
         "path": "tests/dom4/helpers/MutationRecord.js"
       }, 
@@ -630,5 +666,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "ed47449bbcb44678db1b3485d1cf0483948543fc"
+  "rev": "a4203d5f74973ef3d80be88c51cbc2aca8db3cf0"
 }
