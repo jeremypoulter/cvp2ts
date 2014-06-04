@@ -634,6 +634,46 @@
         "path": "tests/html5/html5-interface-WindowTimers.html"
       }, 
       {
+        "url": "/tests/webmessage/webmessage-interface-MessageChannel.html", 
+        "path": "tests/webmessage/webmessage-interface-MessageChannel.html"
+      }, 
+      {
+        "url": "/tests/webmessage/webmessage-interface-MessageEvent.html", 
+        "path": "tests/webmessage/webmessage-interface-MessageEvent.html"
+      }, 
+      {
+        "url": "/tests/webmessage/webmessage-interface-MessagePort.html", 
+        "path": "tests/webmessage/webmessage-interface-MessagePort.html"
+      }, 
+      {
+        "url": "/tests/webmessage/webmessage-interface-PortCollection.html", 
+        "path": "tests/webmessage/webmessage-interface-PortCollection.html"
+      }, 
+      {
+        "url": "/tests/websocket/websocket-interface-CloseEvent.html", 
+        "path": "tests/websocket/websocket-interface-CloseEvent.html"
+      }, 
+      {
+        "url": "/tests/websocket/websocket-interface-WebSocket.html", 
+        "path": "tests/websocket/websocket-interface-WebSocket.html"
+      }, 
+      {
+        "url": "/tests/webstorage/webstorage-interface-Storage.html", 
+        "path": "tests/webstorage/webstorage-interface-Storage.html"
+      }, 
+      {
+        "url": "/tests/webstorage/webstorage-interface-StorageEvent.html", 
+        "path": "tests/webstorage/webstorage-interface-StorageEvent.html"
+      }, 
+      {
+        "url": "/tests/webstorage/webstorage-interface-WindowLocalStorage.html", 
+        "path": "tests/webstorage/webstorage-interface-WindowLocalStorage.html"
+      }, 
+      {
+        "url": "/tests/webstorage/webstorage-interface-WindowSessionStorage.html", 
+        "path": "tests/webstorage/webstorage-interface-WindowSessionStorage.html"
+      }, 
+      {
         "url": "/tests/xhr/xhr-interface-FormData.html", 
         "path": "tests/xhr/xhr-interface-FormData.html"
       }, 
@@ -666,5 +706,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "a4203d5f74973ef3d80be88c51cbc2aca8db3cf0"
+  "rev": "54f254f64ee8f8a4fad49a11113f25d504c253a4"
 }
