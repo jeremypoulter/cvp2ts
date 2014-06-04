@@ -1,0 +1,619 @@
+[
+  {
+    "type": "interface",
+    "name": "MessageEvent",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "any"
+        },
+        "name": "data",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "origin",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "lastEventId",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": true,
+          "array": false,
+          "union": true,
+          "idlType": [
+            {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "WindowProxy"
+            },
+            {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "MessagePort"
+            }
+          ]
+        },
+        "name": "source",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": true,
+          "array": 1,
+          "union": false,
+          "idlType": "MessagePort",
+          "nullableArray": [
+            false
+          ]
+        },
+        "name": "ports",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Event",
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "type"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "MessageEventInit"
+            },
+            "name": "eventInitDict"
+          }
+        ]
+      },
+      {
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": {
+          "type": "identifier",
+          "value": "Window"
+        }
+      },
+      {
+        "name": "Worker",
+        "arguments": null
+      }
+    ]
+  },
+  {
+    "type": "dictionary",
+    "name": "MessageEventInit",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "data",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "any"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "origin",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "lastEventId",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "channel",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "source",
+        "idlType": {
+          "sequence": false,
+          "nullable": true,
+          "array": false,
+          "union": true,
+          "idlType": [
+            {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "WindowProxy"
+            },
+            {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "MessagePort"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "ports",
+        "idlType": {
+          "sequence": true,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "MessagePort"
+          }
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "EventInit",
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "MessageChannel",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "MessagePort"
+        },
+        "name": "port1",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "MessagePort"
+        },
+        "name": "port2",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": null
+      },
+      {
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": {
+          "type": "identifier",
+          "value": "Window"
+        }
+      },
+      {
+        "name": "Worker",
+        "arguments": null
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "MessagePort",
+    "partial": false,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "postMessage",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "message"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": true,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": {
+                "sequence": false,
+                "nullable": false,
+                "array": false,
+                "union": false,
+                "idlType": "Transferable"
+              }
+            },
+            "name": "transfer"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "start",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "close",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "EventHandler"
+        },
+        "name": "onmessage",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "EventTarget",
+    "extAttrs": [
+      {
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": {
+          "type": "identifier",
+          "value": "Window"
+        }
+      },
+      {
+        "name": "Worker",
+        "arguments": null
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "PortCollection",
+    "partial": false,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "add",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "MessagePort"
+            },
+            "name": "port"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "remove",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "MessagePort"
+            },
+            "name": "port"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "clear",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "iterate",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "PortCollectionCallback"
+            },
+            "name": "callback"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": null
+      },
+      {
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": {
+          "type": "identifier",
+          "value": "Window"
+        }
+      },
+      {
+        "name": "Worker",
+        "arguments": null
+      }
+    ]
+  },
+  {
+    "type": "callback",
+    "name": "PortCollectionCallback",
+    "idlType": {
+      "sequence": false,
+      "nullable": false,
+      "array": false,
+      "union": false,
+      "idlType": "void"
+    },
+    "arguments": [
+      {
+        "optional": false,
+        "variadic": false,
+        "extAttrs": [],
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "MessagePort"
+        },
+        "name": "port"
+      }
+    ],
+    "extAttrs": []
+  }
+]

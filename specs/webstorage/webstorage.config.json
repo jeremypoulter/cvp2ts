@@ -1,0 +1,11 @@
+{
+    "spec": "webstorage",
+    "source": "http://www.w3.org/TR/2013/REC-webstorage-20130730/",
+    "local": "webstorage.html",
+    "instances": {
+        "Storage": "window.localStorage",
+        "StorageEvent": "document.createEvent('StorageEvent')",
+        "WindowLocalStorage": "window",
+        "WindowSessionStorage": "window"
+    }
+}

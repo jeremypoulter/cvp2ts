@@ -1,0 +1,9 @@
+{
+    "spec": "websocket",
+    "source": "http://dev.w3.org/html5/websockets/",
+    "local": "websocket.html",
+    "instances": {
+        "CloseEvent": "!!window['CloseEvent'] && new CloseEvent('close')",
+        "WebSocket": "!!window['WebSocket'] && new WebSocket('ws://web-platform.test:8000/echo')"
+    }
+}

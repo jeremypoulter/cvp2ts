@@ -1,0 +1,11 @@
+{
+    "spec": "webmessage",
+    "source": "http://dev.w3.org/html5/postmsg/",
+    "local": "webmessage.html",
+    "instances": {
+        "MessageChannel": "!!window['MessageChannel'] && new MessageChannel()",
+        "MessageEvent": "document.createEvent('MessageEvent')",
+        "MessagePort": "!!window['MessageChannel'] && new MessageChannel().port1",
+        "PortCollection": "!!window['PortCollection'] && new PortCollection()"
+    }
+}

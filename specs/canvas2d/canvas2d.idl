@@ -57,7 +57,7 @@ interface CanvasRenderingContext2D {
 
   // hit regions
   void addHitRegion(HitRegionOptions options);
-  void removeHitRegion(HitRegionOptions options);
+  void removeHitRegion(DOMString id);
   void clearHitRegions();
   
   // pixel manipulation

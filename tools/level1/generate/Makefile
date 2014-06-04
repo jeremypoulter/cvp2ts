@@ -38,8 +38,10 @@ all: $(outfiles)
 	@if [ ! -d $(TESTDIR)/$(*F) ]; then mkdir -p $(TESTDIR)/$(*F); fi;
 	@$(NODE) $(TOOL) $(TOOLFLAGS) $(GENERATEFLAGS) --config $(@D)/$(*F).$(CONFIGSUFFIX) --testDirectory $(TESTDIR)/$(*F) $< $@
 	@if [ -d $(SPECDIR)/$(*F)/helpers ]; then \
-	    if [ ! -d $(TESTDIR)/$(*F)/helpers ]; then mkdir -p $(TESTDIR)/$(*F)/helpers; fi ; \
-	    cp $(SPECDIR)/$(*F)/helpers/*.js $(TESTDIR)/$(*F)/helpers ; \
+	    $(CP) -R $(SPECDIR)/$(*F)/helpers $(TESTDIR)/$(*F) ; \
+	fi;
+	@if [ -d $(SPECDIR)/$(*F)/resources ]; then \
+	    $(CP) -R $(SPECDIR)/$(*F)/resources $(TESTDIR)/$(*F) ; \
 	fi;
 
 clean:

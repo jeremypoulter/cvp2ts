@@ -24,6 +24,7 @@
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # commands
+CP		= cp
 ECHO		= echo
 NODE		= node
 PYTHON		= python
