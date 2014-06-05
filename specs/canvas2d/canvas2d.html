@@ -180,8 +180,9 @@
        h1, h2, h3, h4, h5, h6 { page-break-after: avoid; }
        h1 + h2, hr + h2.no-toc { page-break-before: auto; }
 
-       p  > span:not([title=""]):not([class="XXX"]):not([class="impl"]):not([class="note"]),
-       li > span:not([title=""]):not([class="XXX"]):not([class="impl"]):not([class="note"]) { border-bottom: solid #9999CC; }
+       p  > span:not([title=""]):not([class="XXX"]):not([class="impl"]):not([class="note"]):not([class="t2"]):not([id]):not([lang]),
+       li > span:not([title=""]):not([class="XXX"]):not([class="impl"]):not([class="note"]):not([class="t2"]):not([id]):not([lang])
+       { border-bottom: solid #9999CC; }
 
        div.head { margin: 0 0 1em; padding: 1em 0 0 0; }
        div.head p { margin: 0; }
@@ -344,7 +345,7 @@
 
     <h1>HTML Canvas 2D Context</h1>
     <h2 class="no-num no-toc" id="generatedID"></h2>
-   <p class="no-num no-toc subline">Editor's Draft 4 June 2014</p>
+   <p class="no-num no-toc subline">Editor's Draft 5 June 2014</p>
    </header>
 <dl>
     <dt>Latest Published Version:</dt>
@@ -458,7 +459,7 @@
   <p>The W3C <a href="http://www.w3.org/html/wg/">HTML Working
   Group</a> is the W3C working group responsible for this
   specification's progress.
-  This specification is the 4 June 2014 Editor's Draft.
+  This specification is the 5 June 2014 Editor's Draft.
         This specification is intended to become a W3C Recommendation.
       </p>
   
@@ -4786,7 +4787,7 @@ function AddCloud(data, x, y) { ... }</pre>
 
    <dt id="refsCSS">[CSS]</dt>
    <dd><cite><a href="http://www.w3.org/TR/CSS/">Cascading Style Sheets Level 2
-   Revision 1</a></cite>, B. Bos, T. Çelik, I.
+   Revision 1</a> (URL: <a href="http://www.w3.org/TR/CSS/">http://www.w3.org/TR/CSS/</a>)</cite>, B. Bos, T. Çelik, I.
    Hickson, H. Lie. W3C.</dd>
 
    <dt id="refsCSSCOLOR">[CSSCOLOR]</dt>
@@ -4796,21 +4797,21 @@ function AddCloud(data, x, y) { ... }</pre>
    Baron. W3C.</dd>
    -->
    <dd><cite><a href="http://dev.w3.org/csswg/css3-color/">CSS Color
-   Module Level 3</a></cite>, T. Çelik, C. Lilley, L.
+   Module Level 3</a> (URL: <a href="http://dev.w3.org/csswg/css3-color/">http://dev.w3.org/csswg/css3-color/</a>)</cite>, T. Çelik, C. Lilley, L.
    Baron. W3C.</dd>
 
    <dt id="refsCSSFONTS">[CSSFONTS]</dt>
    <dd><cite><a href="http://www.w3.org/TR/css3-fonts/">CSS Fonts
-   Module Level 3</a></cite>, J. Daggett. W3C.</dd>
+   Module Level 3</a> (URL: <a href="http://www.w3.org/TR/css3-fonts/">http://www.w3.org/TR/css3-fonts/</a>)</cite>, J. Daggett. W3C.</dd>
 
    <dt id="refsCSSIMAGES">[CSSIMAGES]</dt>
    <dd><cite><a href="http://dev.w3.org/csswg/css3-images/">CSS Image
-   Values and Replaced Content Module Level 3</a></cite>, E. Etemad,
+   Values and Replaced Content Module Level 3</a> (URL: <a href="http://dev.w3.org/csswg/css3-images/">http://dev.w3.org/csswg/css3-images/</a>)</cite>, E. Etemad,
    T. Atkins. W3C.</dd>
 
    <dt id="refsCSSOM">[CSSOM]</dt>
    <dd><cite><a href="http://dev.w3.org/csswg/cssom/">Cascading Style Sheets
-   Object Model (CSSOM)</a></cite>, S. Pieters, G. Adams. W3C.</dd>
+   Object Model (CSSOM)</a> (URL: <a href="http://dev.w3.org/csswg/cssom/">http://dev.w3.org/csswg/cssom/</a>)</cite>, S. Pieters, G. Adams. W3C.</dd>
 
    <!--
    <dd><cite><a
@@ -4834,7 +4835,7 @@ function AddCloud(data, x, y) { ... }</pre>
 
    <dt id="refsHTML5">[HTML5]</dt>
    <dd>
-   <cite><a href="http://dev.w3.org/html5/spec/">HTML5</a></cite>,
+   <cite><a href="http://dev.w3.org/html5/spec/">HTML5</a> (URL: <a href="http://dev.w3.org/html5/spec/">http://dev.w3.org/html5/spec/</a>)</cite>,
     R. Berjon, S. Faulkner, T. Leithead, E. Navara, E. O'Connor, S. Pfeiffer. W3C.</dd>
 
    <!--
@@ -4849,7 +4850,7 @@ function AddCloud(data, x, y) { ... }</pre>
    -->
    <dt id="refsPORTERDUFF">[PORTERDUFF]</dt>
    <dd><cite><a href="http://keithp.com/~keithp/porterduff/p253-porter.pdf">Compositing
-   Digital Images</a></cite>, T. Porter, T. Duff. In <cite>Computer
+   Digital Images</a> (URL: <a href="http://keithp.com/~keithp/porterduff/p253-porter.pdf">http://keithp.com/~keithp/porterduff/p253-porter.pdf</a>)</cite>, T. Porter, T. Duff. In <cite>Computer
    graphics</cite>, volume 18, number 3, pp. 253-259. ACM Press, July
    1984.</dd>
 
@@ -4857,7 +4858,7 @@ function AddCloud(data, x, y) { ... }</pre>
    "Internet Media type"; not for definition of "valid MIME type". -->
 
    <dt id="refsTYPEDARRAY">[TYPEDARRAY]</dt>
-   <dd><cite><a href="http://www.khronos.org/registry/typedarray/specs/latest/">Typed Array Specification</a></cite>, D. Herman, K. Russell. Khronos.</dd>
+   <dd><cite><a href="http://www.khronos.org/registry/typedarray/specs/latest/">Typed Array Specification</a> (URL: <a href="http://www.khronos.org/registry/typedarray/specs/latest/">http://www.khronos.org/registry/typedarray/specs/latest/</a>)</cite>, D. Herman, K. Russell. Khronos.</dd>
 
    <dt id="refsWEBIDL">[WEBIDL]</dt>
    <!--
@@ -4865,7 +4866,7 @@ function AddCloud(data, x, y) { ... }</pre>
    IDL</a></cite>, C. McCormack. W3C.</dd>
    -->
    <dd><cite><a href="http://dev.w3.org/2006/webapi/WebIDL/">Web
-   IDL</a></cite>, C. McCormack. W3C.</dd>
+   IDL</a> (URL: <a href="http://dev.w3.org/2006/webapi/WebIDL/">http://dev.w3.org/2006/webapi/WebIDL/</a>)</cite>, C. McCormack. W3C.</dd>
 
    <!--
    <dd><cite><a href="http://www.w3.org/TR/XMLHttpRequest/">The XMLHttpRequest

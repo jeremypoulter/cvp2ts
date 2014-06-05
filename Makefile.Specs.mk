@@ -24,4 +24,4 @@
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # specifications
-SPECS		= canvas2d dom4 html5 webmessage websocket webstorage xhr
+SPECS		= canvas2d cssom dom4 html5 webmessage websocket webstorage xhr

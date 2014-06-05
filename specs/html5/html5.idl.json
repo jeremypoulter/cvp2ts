@@ -2025,6 +2025,22 @@
         "static": false,
         "stringifier": false,
         "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "rev",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
         "readonly": true,
         "idlType": {
           "sequence": false,
@@ -2467,6 +2483,22 @@
           "idlType": "DOMString"
         },
         "name": "rel",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "rev",
         "extAttrs": []
       },
       {
@@ -14464,22 +14496,6 @@
           "union": false,
           "idlType": "EventHandler"
         },
-        "name": "onclose",
-        "extAttrs": []
-      },
-      {
-        "type": "attribute",
-        "static": false,
-        "stringifier": false,
-        "inherit": false,
-        "readonly": false,
-        "idlType": {
-          "sequence": false,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "EventHandler"
-        },
         "name": "oncuechange",
         "extAttrs": []
       },
@@ -18402,22 +18418,6 @@
           "union": false,
           "idlType": "DOMString"
         },
-        "name": "rev",
-        "extAttrs": []
-      },
-      {
-        "type": "attribute",
-        "static": false,
-        "stringifier": false,
-        "inherit": false,
-        "readonly": false,
-        "idlType": {
-          "sequence": false,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "DOMString"
-        },
         "name": "shape",
         "extAttrs": []
       }
@@ -19406,22 +19406,6 @@
           "idlType": "DOMString"
         },
         "name": "charset",
-        "extAttrs": []
-      },
-      {
-        "type": "attribute",
-        "static": false,
-        "stringifier": false,
-        "inherit": false,
-        "readonly": false,
-        "idlType": {
-          "sequence": false,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "DOMString"
-        },
-        "name": "rev",
         "extAttrs": []
       },
       {

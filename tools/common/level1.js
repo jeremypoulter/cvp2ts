@@ -51,14 +51,21 @@
                 assert_true(!!global[idlName], 'Is ' + idlProperties.name + ' bound at global scope?');
             }, idlProperties.expandedName + '-bound-at-global-scope');
         }
-        if (!!getInstance && (getInstance != 'undefined')) {
-            if (typeof getInstance === 'function') {
-                if (!async) {
-                    test(function() {
-                        testInstance(getInstance(), idlProperties);
-                    }, idlProperties.expandedName + '-get-instance-sync', {idl: idlProperties});
-                } else
-                    async_test(getInstance, idlProperties.expandedName + '-get-instance-async', {idl: idlProperties});
+        if (hasStaticMember(idl)) {
+            test(function() {
+                testStaticMembers(global[idlName], idlProperties);
+            }, idlProperties.expandedName + '-has-statics', {idl: idlProperties});
+        }
+        if (hasInstanceMember(idl)) {
+            if (!!getInstance && (getInstance != 'undefined')) {
+                if (typeof getInstance === 'function') {
+                    if (!async) {
+                        test(function() {
+                            testInstance(getInstance(), idlProperties);
+                        }, idlProperties.expandedName + '-get-instance-sync', {idl: idlProperties});
+                    } else
+                        async_test(getInstance, idlProperties.expandedName + '-get-instance-async', {idl: idlProperties});
+                }
             }
         }
     };
@@ -67,6 +74,49 @@
         for (var i in eas) {
             var ea = eas[i];
             if (ea.name === attr)
+                return true;
+        }
+        return false;
+    }
+    function hasStaticMember(idl) {
+        for (var i in idl.members) {
+            var member = idl.members[i];
+            if (member.static)
+                return true;
+        }
+        return false;
+    }
+    function testStaticMembers(interfaceInstance, idlProperties) {
+        test(function() {
+            assert_true(!!interfaceInstance, 'Is ' + idlProperties.name + ' interface present?');
+        }, idlProperties.expandedName + '-interface-present');
+        if (!interfaceInstance)
+            return;
+        for (var i in idlProperties.idl.members) {
+            var member = idlProperties.idl.members[i];
+            if (!member.static)
+                continue;
+            var memberName = member.name;
+            if (!memberName)
+                continue;
+            var overloadIndex = getOverloadIndex(memberName);
+            if (overloadIndex < 1) {
+                if (member.type == 'attribute') {
+                    test(function() {
+                        assert_true(interfaceInstance[memberName] !== undefined, 'Does ' + idlProperties.name + ' interface have static ' + memberName + ' attribute?');
+                    }, idlProperties.expandedName + '-interface-has-static-' + memberName + '-attribute');
+                } else if (member.type == 'operation') {
+                    test(function() {
+                        assert_true(interfaceInstance[memberName] !== undefined, 'Does ' + idlProperties.name + ' interface have static ' + memberName + ' operation?');
+                    }, idlProperties.expandedName + '-interfac-has-static-' + memberName + '-operation');
+                }
+            }
+        }
+    }
+    function hasInstanceMember(idl) {
+        for (var i in idl.members) {
+            var member = idl.members[i];
+            if (!member.static)
                 return true;
         }
         return false;
@@ -122,6 +172,24 @@
         }
         return counts[i] - 1;
     }
+    /* debug only */
+    function dumpProps(o) {
+        var s = '';
+        for (var pn in o) {
+            if (s.length > 0)
+                s += ',\n';
+            s += pn + ':' + o[pn];
+        }
+        return s;
+    }
+    function InstantiationError(message)
+    {
+        this.message = 'InstantiationError: ' + message;
+    }
+    InstantiationError.prototype.toString = function() {
+        return this.message;
+    };
+    /* globalizers */
     function expose(name, value) {
         global[name] = value;
     }
@@ -129,4 +197,7 @@
     expose('level1', level1);
     expose('level1Async', level1Async);
     expose('level1TestInstance', testInstance);
+    expose('InstantiationError', InstantiationError);
+    /* debug only */
+    expose('dumpProps', dumpProps);
 })();

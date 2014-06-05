@@ -134,6 +134,7 @@ interface HTMLLinkElement : HTMLElement {
            attribute DOMString href;
            attribute DOMString crossOrigin;
            attribute DOMString rel;
+           attribute DOMString rev;
   readonly attribute DOMTokenList relList;
            attribute DOMString media;
            attribute DOMString hreflang;
@@ -192,6 +193,7 @@ interface HTMLAnchorElement : HTMLElement {
            attribute DOMString download;
 
            attribute DOMString rel;
+           attribute DOMString rev;
   readonly attribute DOMTokenList relList;
            attribute DOMString hreflang;
            attribute DOMString type;
@@ -1094,7 +1096,6 @@ interface GlobalEventHandlers {
            attribute EventHandler oncanplaythrough;
            attribute EventHandler onchange;
            attribute EventHandler onclick;
-           attribute EventHandler onclose;
            attribute EventHandler oncuechange;
            attribute EventHandler ondblclick;
            attribute EventHandler ondrag;
@@ -1366,7 +1367,6 @@ partial interface HTMLAnchorElement {
            attribute DOMString coords;
            attribute DOMString charset;
            attribute DOMString name;
-           attribute DOMString rev;
            attribute DOMString shape;
 };
 
@@ -1474,7 +1474,6 @@ partial interface HTMLLIElement {
 
 partial interface HTMLLinkElement {
            attribute DOMString charset;
-           attribute DOMString rev;
            attribute DOMString target;
 };
 
