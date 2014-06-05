@@ -242,6 +242,30 @@
         "path": "tests/dom4/dom4-interface-XMLDocument.html"
       }, 
       {
+        "url": "/tests/file/file-interface-Blob.html", 
+        "path": "tests/file/file-interface-Blob.html"
+      }, 
+      {
+        "url": "/tests/file/file-interface-File.html", 
+        "path": "tests/file/file-interface-File.html"
+      }, 
+      {
+        "url": "/tests/file/file-interface-FileList.html", 
+        "path": "tests/file/file-interface-FileList.html"
+      }, 
+      {
+        "url": "/tests/file/file-interface-FileReader.html", 
+        "path": "tests/file/file-interface-FileReader.html"
+      }, 
+      {
+        "url": "/tests/file/file-interface-FileReaderSync.html", 
+        "path": "tests/file/file-interface-FileReaderSync.html"
+      }, 
+      {
+        "url": "/tests/file/file-interface-URL.html", 
+        "path": "tests/file/file-interface-URL.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-ApplicationCache.html", 
         "path": "tests/html5/html5-interface-ApplicationCache.html"
       }, 
@@ -868,6 +892,34 @@
         "path": "tests/dom4/helpers/MutationRecord.js"
       }, 
       {
+        "url": "/tests/file/helpers/Blob.js", 
+        "path": "tests/file/helpers/Blob.js"
+      }, 
+      {
+        "url": "/tests/file/helpers/File.js", 
+        "path": "tests/file/helpers/File.js"
+      }, 
+      {
+        "url": "/tests/file/helpers/FileList.js", 
+        "path": "tests/file/helpers/FileList.js"
+      }, 
+      {
+        "url": "/tests/file/helpers/FileReader.js", 
+        "path": "tests/file/helpers/FileReader.js"
+      }, 
+      {
+        "url": "/tests/file/helpers/FileReaderSync.js", 
+        "path": "tests/file/helpers/FileReaderSync.js"
+      }, 
+      {
+        "url": "/tests/file/helpers/URL.js", 
+        "path": "tests/file/helpers/URL.js"
+      }, 
+      {
+        "url": "/tests/file/resources/empty.dat", 
+        "path": "tests/file/resources/empty.dat"
+      }, 
+      {
         "url": "/tests/html5/helpers/MediaError.js", 
         "path": "tests/html5/helpers/MediaError.js"
       }, 
@@ -882,5 +934,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "73968f6036bc2f0221d910da0b42678f6b826652"
+  "rev": "e4d642ca4c91dd9d161c7709abab0797711795db"
 }
