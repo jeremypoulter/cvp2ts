@@ -726,6 +726,10 @@
         "path": "tests/html5/html5-interface-WindowTimers.html"
       }, 
       {
+        "url": "/tests/sse/sse-interface-EventSource.html", 
+        "path": "tests/sse/sse-interface-EventSource.html"
+      }, 
+      {
         "url": "/tests/webmessage/webmessage-interface-MessageChannel.html", 
         "path": "tests/webmessage/webmessage-interface-MessageChannel.html"
       }, 
@@ -866,9 +870,17 @@
       {
         "url": "/tests/html5/helpers/MediaError.js", 
         "path": "tests/html5/helpers/MediaError.js"
+      }, 
+      {
+        "url": "/tests/sse/helpers/EventSource.js", 
+        "path": "tests/sse/helpers/EventSource.js"
+      }, 
+      {
+        "url": "/tests/sse/resources/simple.txt", 
+        "path": "tests/sse/resources/simple.txt"
       }
     ]
   }, 
   "local_changes": [], 
-  "rev": "84878f85f3b8e2a018391de1dbdb48b3c9083756"
+  "rev": "73968f6036bc2f0221d910da0b42678f6b826652"
 }
