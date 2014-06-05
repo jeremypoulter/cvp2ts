@@ -1,0 +1,11 @@
+{
+    "spec": "sse",
+    "source": "http://dev.w3.org/html5/eventsource/",
+    "local": "sse.html",
+    "helpers": [
+        "EventSource"
+    ],
+    "instances": {
+        "EventSource": "getEventSource()"
+    }
+}

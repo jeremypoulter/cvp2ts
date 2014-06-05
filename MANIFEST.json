@@ -34,6 +34,98 @@
         "path": "tests/canvas2d/canvas2d-interface-TextMetrics.html"
       }, 
       {
+        "url": "/tests/cssom/cssom-interface-CSS.html", 
+        "path": "tests/cssom/cssom-interface-CSS.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-CSSCharsetRule.html", 
+        "path": "tests/cssom/cssom-interface-CSSCharsetRule.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-CSSGroupingRule.html", 
+        "path": "tests/cssom/cssom-interface-CSSGroupingRule.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-CSSImportRule.html", 
+        "path": "tests/cssom/cssom-interface-CSSImportRule.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-CSSMarginRule.html", 
+        "path": "tests/cssom/cssom-interface-CSSMarginRule.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-CSSMediaRule.html", 
+        "path": "tests/cssom/cssom-interface-CSSMediaRule.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-CSSNamespaceRule.html", 
+        "path": "tests/cssom/cssom-interface-CSSNamespaceRule.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-CSSPageRule.html", 
+        "path": "tests/cssom/cssom-interface-CSSPageRule.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-CSSRule.html", 
+        "path": "tests/cssom/cssom-interface-CSSRule.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-CSSRuleList.html", 
+        "path": "tests/cssom/cssom-interface-CSSRuleList.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-CSSStyleDeclaration.html", 
+        "path": "tests/cssom/cssom-interface-CSSStyleDeclaration.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-CSSStyleRule.html", 
+        "path": "tests/cssom/cssom-interface-CSSStyleRule.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-CSSStyleSheet.html", 
+        "path": "tests/cssom/cssom-interface-CSSStyleSheet.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-Document.html", 
+        "path": "tests/cssom/cssom-interface-Document.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-Element.html", 
+        "path": "tests/cssom/cssom-interface-Element.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-ElementCSSInlineStyle.html", 
+        "path": "tests/cssom/cssom-interface-ElementCSSInlineStyle.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-GetStyleUtils.html", 
+        "path": "tests/cssom/cssom-interface-GetStyleUtils.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-LinkStyle.html", 
+        "path": "tests/cssom/cssom-interface-LinkStyle.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-MediaList.html", 
+        "path": "tests/cssom/cssom-interface-MediaList.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-PseudoElement.html", 
+        "path": "tests/cssom/cssom-interface-PseudoElement.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-StyleSheet.html", 
+        "path": "tests/cssom/cssom-interface-StyleSheet.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-StyleSheetList.html", 
+        "path": "tests/cssom/cssom-interface-StyleSheetList.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-Window.html", 
+        "path": "tests/cssom/cssom-interface-Window.html"
+      }, 
+      {
         "url": "/tests/dom4/dom4-interface-Attr.html", 
         "path": "tests/dom4/dom4-interface-Attr.html"
       }, 
@@ -696,6 +788,78 @@
         "path": "tests/canvas2d/helpers/CanvasPattern.js"
       }, 
       {
+        "url": "/tests/cssom/helpers/CSSCharsetRule.js", 
+        "path": "tests/cssom/helpers/CSSCharsetRule.js"
+      }, 
+      {
+        "url": "/tests/cssom/helpers/CSSGroupingRule.js", 
+        "path": "tests/cssom/helpers/CSSGroupingRule.js"
+      }, 
+      {
+        "url": "/tests/cssom/helpers/CSSImportRule.js", 
+        "path": "tests/cssom/helpers/CSSImportRule.js"
+      }, 
+      {
+        "url": "/tests/cssom/helpers/CSSMarginRule.js", 
+        "path": "tests/cssom/helpers/CSSMarginRule.js"
+      }, 
+      {
+        "url": "/tests/cssom/helpers/CSSMediaRule.js", 
+        "path": "tests/cssom/helpers/CSSMediaRule.js"
+      }, 
+      {
+        "url": "/tests/cssom/helpers/CSSNamespaceRule.js", 
+        "path": "tests/cssom/helpers/CSSNamespaceRule.js"
+      }, 
+      {
+        "url": "/tests/cssom/helpers/CSSPageRule.js", 
+        "path": "tests/cssom/helpers/CSSPageRule.js"
+      }, 
+      {
+        "url": "/tests/cssom/helpers/CSSRule.js", 
+        "path": "tests/cssom/helpers/CSSRule.js"
+      }, 
+      {
+        "url": "/tests/cssom/helpers/CSSRuleList.js", 
+        "path": "tests/cssom/helpers/CSSRuleList.js"
+      }, 
+      {
+        "url": "/tests/cssom/helpers/CSSStyleDeclaration.js", 
+        "path": "tests/cssom/helpers/CSSStyleDeclaration.js"
+      }, 
+      {
+        "url": "/tests/cssom/helpers/CSSStyleRule.js", 
+        "path": "tests/cssom/helpers/CSSStyleRule.js"
+      }, 
+      {
+        "url": "/tests/cssom/helpers/CSSStyleSheet.js", 
+        "path": "tests/cssom/helpers/CSSStyleSheet.js"
+      }, 
+      {
+        "url": "/tests/cssom/helpers/LinkStyle.js", 
+        "path": "tests/cssom/helpers/LinkStyle.js"
+      }, 
+      {
+        "url": "/tests/cssom/helpers/MediaList.js", 
+        "path": "tests/cssom/helpers/MediaList.js"
+      }, 
+      {
+        "url": "/tests/cssom/helpers/PseudoElement.js", 
+        "path": "tests/cssom/helpers/PseudoElement.js"
+      }, 
+      {
+        "url": "/tests/cssom/helpers/StyleSheet.js", 
+        "path": "tests/cssom/helpers/StyleSheet.js"
+      }, 
+      {
+        "url": "/tests/cssom/helpers/StyleSheetList.js", 
+        "path": "tests/cssom/helpers/StyleSheetList.js"
+      }, 
+      {
+        "url": "/tests/cssom/resources/empty.css", 
+        "path": "tests/cssom/resources/empty.css"
+      }, 
+      {
         "url": "/tests/dom4/helpers/MutationRecord.js", 
         "path": "tests/dom4/helpers/MutationRecord.js"
       }, 
@@ -706,5 +870,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "54f254f64ee8f8a4fad49a11113f25d504c253a4"
+  "rev": "84878f85f3b8e2a018391de1dbdb48b3c9083756"
 }
