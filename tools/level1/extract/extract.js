@@ -36,6 +36,7 @@
     var defaults        = {
         configFile : undefined,
         configFileEncoding : 'utf8',
+        dontExtract : false,
         inputFileEncoding : 'utf8',
         inputFile : undefined,
         local : undefined,
@@ -73,11 +74,23 @@
         onProcessDocument : function() {
             var doc = $.document;
             if (!!doc) {
-                doc('.idl').filter(':not(.extract)').each(
-                    function(i, e) {
-                        $.output.write('\n' + doc(e).text() + '\n');
-                    }
-                );
+                var idlCount = 0;
+                if (!idlCount) {
+                    doc('.idl').filter(':not(.extract)').each(
+                        function(i, e) {
+                            $.output.write('\n' + doc(e).text() + '\n');
+                            ++idlCount;
+                        }
+                    );
+                }
+                if (!idlCount) {
+                    doc('.idl-code').filter(':not(.extract)').each(
+                        function(i, e) {
+                            $.output.write('\n' + doc(e).text() + '\n');
+                            ++idlCount;
+                        }
+                    );
+                }
             }
             $.output.end();
         },
@@ -109,6 +122,11 @@
         run : function(argv) {
             try {
                 var options = commonOptions.readOptions(argv, defaultOptions(), $);
+                if (!!options['dontExtract']) {
+                    if (options['verbose'])
+                        console.warn('[I]: ' + 'Skipping ' + options['spec'] + ' IDL extraction.');
+                    return;
+                }
                 var input;
                 if (!!options['inputFile'])
                     input = fs.createReadStream(options['inputFile'], {encoding: options['inputFileEncoding']});

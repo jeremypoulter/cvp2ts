@@ -40,6 +40,7 @@
     var defaults        = {
         configFile : undefined,
         configFileEncoding : 'utf8',
+        dontFetch : false,
         force : false,
         inputFileEncoding : 'utf8',
         inputFile : undefined,
@@ -234,6 +235,11 @@
         run : function(argv) {
             try {
                 var options = commonOptions.readOptions(argv, defaultOptions(), $);
+                if (!!options['dontFetch']) {
+                    if (options['verbose'])
+                        console.warn('[I]: ' + 'Skipping ' + options['spec'] + ' specification fetch.');
+                    return;
+                }
                 var input;
                 if (!!options['source'])
                     $.url = url.parse(options['source']);

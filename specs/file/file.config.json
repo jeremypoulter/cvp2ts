@@ -1,0 +1,23 @@
+{
+    "spec": "file",
+    "source": "http://dev.w3.org/2006/webapi/FileAPI/",
+    "local": "file.html",
+    "dontFetch": true,
+    "dontExtract": true,
+    "helpers": [
+        "Blob",
+        "File",
+        "FileList",
+        "FileReader",
+        "FileReaderAsync",
+        "URL"
+    ],
+    "instances": {
+        "Blob": "getBlob()",
+        "File": "getFile()",
+        "FileList": "getFileList()",
+        "FileReader": "getFileReader()",
+        "FileReaderSync": "getFileReaderSync()",
+        "URL": "getURL()"
+    }
+}
