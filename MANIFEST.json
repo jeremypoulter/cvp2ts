@@ -126,6 +126,42 @@
         "path": "tests/cssom/cssom-interface-Window.html"
       }, 
       {
+        "url": "/tests/dom3events/dom3events-interface-CompositionEvent.html", 
+        "path": "tests/dom3events/dom3events-interface-CompositionEvent.html"
+      }, 
+      {
+        "url": "/tests/dom3events/dom3events-interface-CustomEvent.html", 
+        "path": "tests/dom3events/dom3events-interface-CustomEvent.html"
+      }, 
+      {
+        "url": "/tests/dom3events/dom3events-interface-FocusEvent.html", 
+        "path": "tests/dom3events/dom3events-interface-FocusEvent.html"
+      }, 
+      {
+        "url": "/tests/dom3events/dom3events-interface-InputEvent.html", 
+        "path": "tests/dom3events/dom3events-interface-InputEvent.html"
+      }, 
+      {
+        "url": "/tests/dom3events/dom3events-interface-KeyboardEvent.html", 
+        "path": "tests/dom3events/dom3events-interface-KeyboardEvent.html"
+      }, 
+      {
+        "url": "/tests/dom3events/dom3events-interface-MouseEvent.html", 
+        "path": "tests/dom3events/dom3events-interface-MouseEvent.html"
+      }, 
+      {
+        "url": "/tests/dom3events/dom3events-interface-MutationEvent.html", 
+        "path": "tests/dom3events/dom3events-interface-MutationEvent.html"
+      }, 
+      {
+        "url": "/tests/dom3events/dom3events-interface-UIEvent.html", 
+        "path": "tests/dom3events/dom3events-interface-UIEvent.html"
+      }, 
+      {
+        "url": "/tests/dom3events/dom3events-interface-WheelEvent.html", 
+        "path": "tests/dom3events/dom3events-interface-WheelEvent.html"
+      }, 
+      {
         "url": "/tests/dom4/dom4-interface-Attr.html", 
         "path": "tests/dom4/dom4-interface-Attr.html"
       }, 
@@ -916,10 +952,6 @@
         "path": "tests/file/helpers/URL.js"
       }, 
       {
-        "url": "/tests/file/resources/empty.dat", 
-        "path": "tests/file/resources/empty.dat"
-      }, 
-      {
         "url": "/tests/html5/helpers/MediaError.js", 
         "path": "tests/html5/helpers/MediaError.js"
       }, 
@@ -934,5 +966,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "e4d642ca4c91dd9d161c7709abab0797711795db"
+  "rev": "d6d99521c691a1e553ad85c2b6eee843b8b121c5"
 }
