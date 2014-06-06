@@ -126,6 +126,10 @@
         "path": "tests/cssom/cssom-interface-Window.html"
       }, 
       {
+        "url": "/tests/custom/custom-interface-Document.html", 
+        "path": "tests/custom/custom-interface-Document.html"
+      }, 
+      {
         "url": "/tests/dom3events/dom3events-interface-CompositionEvent.html", 
         "path": "tests/dom3events/dom3events-interface-CompositionEvent.html"
       }, 
@@ -276,6 +280,22 @@
       {
         "url": "/tests/dom4/dom4-interface-XMLDocument.html", 
         "path": "tests/dom4/dom4-interface-XMLDocument.html"
+      }, 
+      {
+        "url": "/tests/domps/domps-interface-DOMParser.html", 
+        "path": "tests/domps/domps-interface-DOMParser.html"
+      }, 
+      {
+        "url": "/tests/domps/domps-interface-Element.html", 
+        "path": "tests/domps/domps-interface-Element.html"
+      }, 
+      {
+        "url": "/tests/domps/domps-interface-Range.html", 
+        "path": "tests/domps/domps-interface-Range.html"
+      }, 
+      {
+        "url": "/tests/domps/domps-interface-XMLSerializer.html", 
+        "path": "tests/domps/domps-interface-XMLSerializer.html"
       }, 
       {
         "url": "/tests/file/file-interface-Blob.html", 
@@ -966,5 +986,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "d6d99521c691a1e553ad85c2b6eee843b8b121c5"
+  "rev": "8bf4e900c38434b1a038000e2d66b241f0316fc2"
 }
