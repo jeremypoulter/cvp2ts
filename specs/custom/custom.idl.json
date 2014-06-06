@@ -1,0 +1,96 @@
+[
+  {
+    "type": "interface",
+    "name": "Document",
+    "partial": true,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Function"
+        },
+        "name": "registerElement",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "type"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ElementRegistrationOptions"
+            },
+            "name": "options"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "extAttrs": []
+  },
+  {
+    "type": "dictionary",
+    "name": "ElementRegistrationOptions",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "prototype",
+        "idlType": {
+          "sequence": false,
+          "nullable": true,
+          "array": false,
+          "union": false,
+          "idlType": "object"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "null"
+        }
+      },
+      {
+        "type": "field",
+        "name": "extends",
+        "idlType": {
+          "sequence": false,
+          "nullable": true,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "null"
+        }
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": []
+  }
+]

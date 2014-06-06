@@ -1,0 +1,9 @@
+{
+    "spec": "custom",
+    "source": "http://w3c.github.io/webcomponents/spec/custom/",
+    "local": "custom.html",
+    "dontFetch": true,
+    "instances": {
+        "Document": "document"
+    }
+}

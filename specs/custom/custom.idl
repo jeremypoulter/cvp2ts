@@ -1,0 +1,12 @@
+
+
+partial interface Document {
+    Function registerElement(DOMString type, optional ElementRegistrationOptions options);
+};
+
+dictionary ElementRegistrationOptions {
+     object? prototype = null;
+     DOMString? extends = null;
+};
+
+

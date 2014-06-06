@@ -1,0 +1,268 @@
+[
+  {
+    "type": "interface",
+    "name": "DOMParser",
+    "partial": false,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Document"
+        },
+        "name": "parseFromString",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "str"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "SupportedType"
+            },
+            "name": "type"
+          }
+        ],
+        "extAttrs": [
+          {
+            "name": "NewObject",
+            "arguments": null
+          }
+        ]
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": null
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "XMLSerializer",
+    "partial": false,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "serializeToString",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Node"
+            },
+            "name": "root"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": null
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "Element",
+    "partial": true,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "innerHTML",
+        "extAttrs": [
+          {
+            "name": "TreatNullAs",
+            "arguments": null,
+            "rhs": {
+              "type": "identifier",
+              "value": "EmptyString"
+            }
+          }
+        ]
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "outerHTML",
+        "extAttrs": [
+          {
+            "name": "TreatNullAs",
+            "arguments": null,
+            "rhs": {
+              "type": "identifier",
+              "value": "EmptyString"
+            }
+          }
+        ]
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "insertAdjacentHTML",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "position"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "text"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "Range",
+    "partial": true,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DocumentFragment"
+        },
+        "name": "createContextualFragment",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "fragment"
+          }
+        ],
+        "extAttrs": [
+          {
+            "name": "NewObject",
+            "arguments": null
+          }
+        ]
+      }
+    ],
+    "extAttrs": []
+  }
+]

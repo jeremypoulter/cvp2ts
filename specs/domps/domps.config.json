@@ -1,0 +1,12 @@
+{
+    "spec": "domps",
+    "source": "https://dvcs.w3.org/hg/innerhtml/raw-file/tip/index.html",
+    "local": "domps.html",
+    "dontFetch": true,
+    "instances": {
+        "DOMParser": "!!window['DOMParser'] && new DOMParser()",
+        "XMLSerializer": "!!window['XMLSerializer'] && new XMLSerializer()",
+        "Element": "document.documentElement",
+        "Range": "document.createRange()"
+    }
+}
