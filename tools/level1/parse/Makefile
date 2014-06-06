@@ -38,6 +38,6 @@ all: $(outfiles)
 	@$(NODE) $(TOOL) $(TOOLFLAGS) $(PARSEFLAGS) --config $(@D)/$(*F).$(CONFIGSUFFIX) $< $@
 
 clean:
-	@$(RM) $(outfiles)
+	@$(CLEANTOOL) --phase parse $(outfiles)
 
 .PHONY: all clean

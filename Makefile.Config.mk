@@ -35,6 +35,10 @@ FETCHFLAGS	=
 EXTRACTFLAGS	=
 PARSEFLAGS	=
 GENERATEFLAGS	=
+CLEANFLAGS	=
+
+# common tools directory
+COMMONDIR	= $(TOP)/tools/common
 
 # specifications directory
 SPECDIR		= $(TOP)/specs
@@ -45,6 +49,10 @@ TESTDIR		= $(TOP)/tests
 # configuration file name
 CONFIG    	= config.json
 CONFIGSUFFIX	= $(CONFIG)
+
+# tool macros
+GETOPTION	= $(NODE) $(COMMONDIR)/getoption.js
+CLEANTOOL	= $(NODE) $(COMMONDIR)/clean.js $(TOOLFLAGS) $(CLEANFLAGS)
 
 include $(TOP)/Makefile.Specs.mk
 include $(TOP)/Makefile.Tools.mk

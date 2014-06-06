@@ -76,10 +76,16 @@ function processSpecDirectoryOption(options, defaults) {
     return options;
 }
 function processInputFileOption(options, other, defaults, handler) {
-    return handler.processInputFileOption(options, other, defaults);
+    if (!!handler && !!handler['processInputFileOption'])
+        return handler.processInputFileOption(options, other, defaults);
+    else
+        return options;
 }
 function processOutputFileOption(options, other, defaults, handler) {
-    return handler.processOutputFileOption(options, other, defaults);
+    if (!!handler && !!handler['processOutputFileOption'])
+        return handler.processOutputFileOption(options, other, defaults);
+    else
+        return options;
 }
 function processOptions(options, defaults, handler) {
     // merge configuration

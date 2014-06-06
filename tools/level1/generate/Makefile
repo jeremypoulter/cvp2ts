@@ -45,7 +45,6 @@ all: $(outfiles)
 	fi;
 
 clean:
-	@$(RM) $(outfiles)
-	@$(RM) -r $(foreach spec, $(SPECS), $(TESTDIR)/$(spec))
+	@$(CLEANTOOL) --phase generate --testDirectoryRoot $(TESTDIR) $(outfiles)
 
 .PHONY: all clean

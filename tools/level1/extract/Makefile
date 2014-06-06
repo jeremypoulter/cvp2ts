@@ -38,6 +38,6 @@ all: $(outfiles)
 	@$(NODE) $(TOOL) $(TOOLFLAGS) $(EXTRACTFLAGS) --config $(@D)/$(*F).$(CONFIGSUFFIX) $< $@
 
 clean:
-	@$(RM) $(outfiles)
+	@$(CLEANTOOL) --phase extract $(outfiles)
 
 .PHONY: all clean

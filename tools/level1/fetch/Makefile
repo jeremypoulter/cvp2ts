@@ -39,7 +39,7 @@ all: $(outfiles)
 FORCE:
 
 clean:
-	@$(RM) $(outfiles) $(patsubst %.$(OUTSUFFIX), %.$(OUTSUFFIX).lm, $(outfiles))
+	@$(CLEANTOOL) --phase fetch $(outfiles)
 
 .PHONY: all clean
 
