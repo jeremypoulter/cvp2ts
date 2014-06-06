@@ -1,0 +1,17 @@
+{
+    "spec": "dom3events",
+    "source": "https://dvcs.w3.org/hg/dom3events/raw-file/tip/html/DOM3-Events.html",
+    "local": "dom3events.html",
+    "dontFetch": true,
+    "instances": {
+        "CompositionEvent": "document.createEvent('CompositionEvent')",
+        "CustomEvent": "document.createEvent('CustomEvent')",
+        "FocusEvent": "document.createEvent('FocusEvent')",
+        "InputEvent": "document.createEvent('InputEvent')",
+        "KeyboardEvent": "document.createEvent('KeyboardEvent')",
+        "MouseEvent": "document.createEvent('MouseEvent')",
+        "MutationEvent": "document.createEvent('MutationEvent')",
+        "UIEvent": "document.createEvent('UIEvent')",
+        "WheelEvent": "document.createEvent('WheelEvent')"
+    }
+}

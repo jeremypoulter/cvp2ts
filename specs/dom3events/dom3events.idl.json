@@ -1,0 +1,2809 @@
+[
+  {
+    "type": "interface",
+    "name": "UIEvent",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": true,
+          "array": false,
+          "union": false,
+          "idlType": "WindowProxy"
+        },
+        "name": "view",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "long"
+        },
+        "name": "detail",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Event",
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "type"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "UIEventInit"
+            },
+            "name": "eventInitDict"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "dictionary",
+    "name": "UIEventInit",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "view",
+        "idlType": {
+          "sequence": false,
+          "nullable": true,
+          "array": false,
+          "union": false,
+          "idlType": "WindowProxy"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "null"
+        }
+      },
+      {
+        "type": "field",
+        "name": "detail",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "long"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    ],
+    "inheritance": "EventInit",
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "FocusEvent",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": true,
+          "array": false,
+          "union": false,
+          "idlType": "EventTarget"
+        },
+        "name": "relatedTarget",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "UIEvent",
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "typeArg"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "FocusEventInit"
+            },
+            "name": "focusEventInitDict"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "dictionary",
+    "name": "FocusEventInit",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "relatedTarget",
+        "idlType": {
+          "sequence": false,
+          "nullable": true,
+          "array": false,
+          "union": false,
+          "idlType": "EventTarget"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "null"
+        }
+      }
+    ],
+    "inheritance": "UIEventInit",
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "MouseEvent",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "long"
+        },
+        "name": "screenX",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "long"
+        },
+        "name": "screenY",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "long"
+        },
+        "name": "clientX",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "long"
+        },
+        "name": "clientY",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "ctrlKey",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "shiftKey",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "altKey",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "metaKey",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "short"
+        },
+        "name": "button",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": true,
+          "array": false,
+          "union": false,
+          "idlType": "EventTarget"
+        },
+        "name": "relatedTarget",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned short"
+        },
+        "name": "buttons",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "getModifierState",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "keyArg"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "UIEvent",
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "typeArg"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "MouseEventInit"
+            },
+            "name": "mouseEventInitDict"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "dictionary",
+    "name": "MouseEventInit",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "screenX",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "long"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      {
+        "type": "field",
+        "name": "screenY",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "long"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      {
+        "type": "field",
+        "name": "clientX",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "long"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      {
+        "type": "field",
+        "name": "clientY",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "long"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      {
+        "type": "field",
+        "name": "ctrlKey",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "boolean",
+          "value": false
+        }
+      },
+      {
+        "type": "field",
+        "name": "shiftKey",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "boolean",
+          "value": false
+        }
+      },
+      {
+        "type": "field",
+        "name": "altKey",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "boolean",
+          "value": false
+        }
+      },
+      {
+        "type": "field",
+        "name": "metaKey",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "boolean",
+          "value": false
+        }
+      },
+      {
+        "type": "field",
+        "name": "button",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "short"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      {
+        "type": "field",
+        "name": "buttons",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned short"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      {
+        "type": "field",
+        "name": "relatedTarget",
+        "idlType": {
+          "sequence": false,
+          "nullable": true,
+          "array": false,
+          "union": false,
+          "idlType": "EventTarget"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "null"
+        }
+      }
+    ],
+    "inheritance": "UIEventInit",
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "WheelEvent",
+    "partial": false,
+    "members": [
+      {
+        "type": "const",
+        "nullable": false,
+        "idlType": "unsigned long",
+        "name": "DOM_DELTA_PIXEL",
+        "value": {
+          "type": "number",
+          "value": 0
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "const",
+        "nullable": false,
+        "idlType": "unsigned long",
+        "name": "DOM_DELTA_LINE",
+        "value": {
+          "type": "number",
+          "value": 1
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "const",
+        "nullable": false,
+        "idlType": "unsigned long",
+        "name": "DOM_DELTA_PAGE",
+        "value": {
+          "type": "number",
+          "value": 2
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "double"
+        },
+        "name": "deltaX",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "double"
+        },
+        "name": "deltaY",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "double"
+        },
+        "name": "deltaZ",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "name": "deltaMode",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "MouseEvent",
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "typeArg"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "WheelEventInit"
+            },
+            "name": "wheelEventInitDict"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "dictionary",
+    "name": "WheelEventInit",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "deltaX",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "double"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      {
+        "type": "field",
+        "name": "deltaY",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "double"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      {
+        "type": "field",
+        "name": "deltaZ",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "double"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      {
+        "type": "field",
+        "name": "deltaMode",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    ],
+    "inheritance": "MouseEventInit",
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "InputEvent",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "data",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "isComposing",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "UIEvent",
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "typeArg"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "InputEventInit"
+            },
+            "name": "inputEventInitDict"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "dictionary",
+    "name": "InputEventInit",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "data",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "string",
+          "value": ""
+        }
+      },
+      {
+        "type": "field",
+        "name": "isComposing",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "boolean",
+          "value": false
+        }
+      }
+    ],
+    "inheritance": "UIEventInit",
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "KeyboardEvent",
+    "partial": false,
+    "members": [
+      {
+        "type": "const",
+        "nullable": false,
+        "idlType": "unsigned long",
+        "name": "DOM_KEY_LOCATION_STANDARD",
+        "value": {
+          "type": "number",
+          "value": 0
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "const",
+        "nullable": false,
+        "idlType": "unsigned long",
+        "name": "DOM_KEY_LOCATION_LEFT",
+        "value": {
+          "type": "number",
+          "value": 1
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "const",
+        "nullable": false,
+        "idlType": "unsigned long",
+        "name": "DOM_KEY_LOCATION_RIGHT",
+        "value": {
+          "type": "number",
+          "value": 2
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "const",
+        "nullable": false,
+        "idlType": "unsigned long",
+        "name": "DOM_KEY_LOCATION_NUMPAD",
+        "value": {
+          "type": "number",
+          "value": 3
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "key",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "code",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "name": "location",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "ctrlKey",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "shiftKey",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "altKey",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "metaKey",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "repeat",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "isComposing",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "getModifierState",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "keyArg"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "UIEvent",
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "typeArg"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "KeyboardEventInit"
+            },
+            "name": "keyboardEventInitDict"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "dictionary",
+    "name": "KeyboardEventInit",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "key",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "string",
+          "value": ""
+        }
+      },
+      {
+        "type": "field",
+        "name": "code",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "string",
+          "value": ""
+        }
+      },
+      {
+        "type": "field",
+        "name": "location",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      {
+        "type": "field",
+        "name": "ctrlKey",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "boolean",
+          "value": false
+        }
+      },
+      {
+        "type": "field",
+        "name": "shiftKey",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "boolean",
+          "value": false
+        }
+      },
+      {
+        "type": "field",
+        "name": "altKey",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "boolean",
+          "value": false
+        }
+      },
+      {
+        "type": "field",
+        "name": "metaKey",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "boolean",
+          "value": false
+        }
+      },
+      {
+        "type": "field",
+        "name": "repeat",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "boolean",
+          "value": false
+        }
+      },
+      {
+        "type": "field",
+        "name": "isComposing",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "boolean",
+          "value": false
+        }
+      }
+    ],
+    "inheritance": "UIEventInit",
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "CompositionEvent",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "data",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "UIEvent",
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "typeArg"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "CompositionEventInit"
+            },
+            "name": "compositionEventInitDict"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "dictionary",
+    "name": "CompositionEventInit",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "data",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "string",
+          "value": ""
+        }
+      }
+    ],
+    "inheritance": "UIEventInit",
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "CustomEvent",
+    "partial": true,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "initCustomEvent",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "typeArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "bubblesArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "cancelableArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "detailArg"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "UIEvent",
+    "partial": true,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "initUIEvent",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "typeArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "bubblesArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "cancelableArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": true,
+              "array": false,
+              "union": false,
+              "idlType": "Window"
+            },
+            "name": "viewArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "name": "detailArg"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "FocusEvent",
+    "partial": true,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "initFocusEvent",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "typeArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "bubblesArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "cancelableArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": true,
+              "array": false,
+              "union": false,
+              "idlType": "Window"
+            },
+            "name": "viewArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "name": "detailArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": true,
+              "array": false,
+              "union": false,
+              "idlType": "EventTarget"
+            },
+            "name": "relatedTargetArg"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "MouseEvent",
+    "partial": true,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "initMouseEvent",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "typeArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "bubblesArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "cancelableArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": true,
+              "array": false,
+              "union": false,
+              "idlType": "Window"
+            },
+            "name": "viewArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "name": "detailArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "name": "screenXArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "name": "screenYArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "name": "clientXArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "name": "clientYArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "ctrlKeyArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "altKeyArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "shiftKeyArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "metaKeyArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "short"
+            },
+            "name": "buttonArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": true,
+              "array": false,
+              "union": false,
+              "idlType": "EventTarget"
+            },
+            "name": "relatedTargetArg"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "WheelEvent",
+    "partial": true,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "initWheelEvent",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "typeArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "bubblesArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "cancelableArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": true,
+              "array": false,
+              "union": false,
+              "idlType": "Window"
+            },
+            "name": "viewArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "name": "detailArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "name": "screenXArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "name": "screenYArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "name": "clientXArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "name": "clientYArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "short"
+            },
+            "name": "buttonArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": true,
+              "array": false,
+              "union": false,
+              "idlType": "EventTarget"
+            },
+            "name": "relatedTargetArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "modifiersListArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "name": "deltaXArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "name": "deltaYArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "name": "deltaZArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "name": "deltaMode"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "KeyboardEvent",
+    "partial": true,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "initKeyboardEvent",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "typeArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "bubblesArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "cancelableArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": true,
+              "array": false,
+              "union": false,
+              "idlType": "Window"
+            },
+            "name": "viewArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "keyArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "name": "locationArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "modifiersListArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "repeat"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "locale"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "CompositionEvent",
+    "partial": true,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "initCompositionEvent",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "typeArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "bubblesArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "cancelableArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": true,
+              "array": false,
+              "union": false,
+              "idlType": "Window"
+            },
+            "name": "viewArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "dataArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "locale"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "KeyboardEvent",
+    "partial": true,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "name": "charCode",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "name": "keyCode",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "name": "which",
+        "extAttrs": []
+      }
+    ],
+    "extAttrs": []
+  },
+  {
+    "type": "dictionary",
+    "name": "KeyboardEventInit",
+    "partial": true,
+    "members": [
+      {
+        "type": "field",
+        "name": "charCode",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      {
+        "type": "field",
+        "name": "keyCode",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      {
+        "type": "field",
+        "name": "which",
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    ],
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "MutationEvent",
+    "partial": false,
+    "members": [
+      {
+        "type": "const",
+        "nullable": false,
+        "idlType": "unsigned short",
+        "name": "MODIFICATION",
+        "value": {
+          "type": "number",
+          "value": 1
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "const",
+        "nullable": false,
+        "idlType": "unsigned short",
+        "name": "ADDITION",
+        "value": {
+          "type": "number",
+          "value": 2
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "const",
+        "nullable": false,
+        "idlType": "unsigned short",
+        "name": "REMOVAL",
+        "value": {
+          "type": "number",
+          "value": 3
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": true,
+          "array": false,
+          "union": false,
+          "idlType": "Node"
+        },
+        "name": "relatedNode",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "prevValue",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "newValue",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "attrName",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned short"
+        },
+        "name": "attrChange",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "initMutationEvent",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "typeArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "bubblesArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "cancelableArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": true,
+              "array": false,
+              "union": false,
+              "idlType": "Node"
+            },
+            "name": "relatedNodeArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "prevValueArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "newValueArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "attrNameArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "name": "attrChangeArg"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Event",
+    "extAttrs": []
+  }
+]
