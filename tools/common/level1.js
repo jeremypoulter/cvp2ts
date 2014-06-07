@@ -134,6 +134,10 @@
         }
         var inheritance = idlProperties.idl.inheritance;
         if (!!inheritance) {
+            // TODO: the following is producing false negatives in the case that the inherited interface is marked as [NoInterfaceObject],
+            // in which case we can't determine inheritance using instanceof operator; to fix this, we need a list of all IDL interfaces (defined in any spec)
+            // that are marked as [NoInterfaceObject]; we will need to compute that table by indexing all parsed IDL definitions between the parse phase and the
+            // generate phase
             test(function() {
                 assert_true(!!global[inheritance] && instance instanceof global[inheritance], 'Does instance object inherit from ' + inheritance + '?');
             }, idlProperties.expandedName + '-does-instance-inherit-from-' + inheritance);
