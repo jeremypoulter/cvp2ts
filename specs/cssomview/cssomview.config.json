@@ -1,0 +1,23 @@
+{
+    "spec": "cssomview",
+    "source": "http://dev.w3.org/csswg/cssom-view/",
+    "local": "cssomview.html",
+    "helpers": [
+        "CaretPosition",
+        "MediaQueryList"
+    ],
+    "instances": {
+        "Window": "window",
+        "MediaQueryList": "getMediaQueryList()",
+        "MediaQueryListEvent": "document.createEvent('MediaQueryListEvent')",
+        "Screen": "!!window['screen'] && window.screen",
+        "Document": "document",
+        "CaretPosition": "getCaretPosition()",
+        "Element": "document.documentElement",
+        "HTMLElement": "document.documentElement",
+        "HTMLImageElement": "document.createElement('img')",
+        "Range": "document.createRange()",
+        "MouseEvent": "document.createEvent('MouseEvent')",
+        "GeometryUtils": "document"
+    }
+}
