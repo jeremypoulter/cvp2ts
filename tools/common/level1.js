@@ -127,6 +127,11 @@
         }, idlProperties.expandedName + '-instance-present');
         if (!instance)
             return;
+        if (!hasExtendedAttribute(idlProperties.idl, 'NoInterfaceObject')) {
+            test(function() {
+                    assert_true(instance instanceof global[idlProperties.name], 'Is instance object an instance of ' + idlProperties.name + '?');
+            }, idlProperties.expandedName + '-is-instance-instanceof-' + idlProperties.name);
+        }
         for (var i in idlProperties.idl.members) {
             var member = idlProperties.idl.members[i];
             var memberName = member.name;
