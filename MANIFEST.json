@@ -126,6 +126,54 @@
         "path": "tests/cssom/cssom-interface-Window.html"
       }, 
       {
+        "url": "/tests/cssomview/cssomview-interface-CaretPosition.html", 
+        "path": "tests/cssomview/cssomview-interface-CaretPosition.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-Document.html", 
+        "path": "tests/cssomview/cssomview-interface-Document.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-Element.html", 
+        "path": "tests/cssomview/cssomview-interface-Element.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-GeometryUtils.html", 
+        "path": "tests/cssomview/cssomview-interface-GeometryUtils.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-HTMLElement.html", 
+        "path": "tests/cssomview/cssomview-interface-HTMLElement.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-HTMLImageElement.html", 
+        "path": "tests/cssomview/cssomview-interface-HTMLImageElement.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-MediaQueryList.html", 
+        "path": "tests/cssomview/cssomview-interface-MediaQueryList.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-MediaQueryListEvent.html", 
+        "path": "tests/cssomview/cssomview-interface-MediaQueryListEvent.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-MouseEvent.html", 
+        "path": "tests/cssomview/cssomview-interface-MouseEvent.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-Range.html", 
+        "path": "tests/cssomview/cssomview-interface-Range.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-Screen.html", 
+        "path": "tests/cssomview/cssomview-interface-Screen.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-Window.html", 
+        "path": "tests/cssomview/cssomview-interface-Window.html"
+      }, 
+      {
         "url": "/tests/custom/custom-interface-Document.html", 
         "path": "tests/custom/custom-interface-Document.html"
       }, 
@@ -320,6 +368,14 @@
       {
         "url": "/tests/file/file-interface-URL.html", 
         "path": "tests/file/file-interface-URL.html"
+      }, 
+      {
+        "url": "/tests/fullscreen/fullscreen-interface-Document.html", 
+        "path": "tests/fullscreen/fullscreen-interface-Document.html"
+      }, 
+      {
+        "url": "/tests/fullscreen/fullscreen-interface-Element.html", 
+        "path": "tests/fullscreen/fullscreen-interface-Element.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-ApplicationCache.html", 
@@ -944,6 +1000,14 @@
         "path": "tests/cssom/resources/empty.css"
       }, 
       {
+        "url": "/tests/cssomview/helpers/CaretPosition.js", 
+        "path": "tests/cssomview/helpers/CaretPosition.js"
+      }, 
+      {
+        "url": "/tests/cssomview/helpers/MediaQueryList.js", 
+        "path": "tests/cssomview/helpers/MediaQueryList.js"
+      }, 
+      {
         "url": "/tests/dom4/helpers/MutationRecord.js", 
         "path": "tests/dom4/helpers/MutationRecord.js"
       }, 
@@ -986,5 +1050,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "8bf4e900c38434b1a038000e2d66b241f0316fc2"
+  "rev": "ca9d2966782d9e193d9fd8fe396127270ff0747f"
 }
