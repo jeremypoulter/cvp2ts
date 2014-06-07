@@ -129,8 +129,14 @@
             return;
         if (!hasExtendedAttribute(idlProperties.idl, 'NoInterfaceObject')) {
             test(function() {
-                    assert_true(instance instanceof global[idlProperties.name], 'Is instance object an instance of ' + idlProperties.name + '?');
+                assert_true(instance instanceof global[idlProperties.name], 'Is instance object an instance of ' + idlProperties.name + '?');
             }, idlProperties.expandedName + '-is-instance-instanceof-' + idlProperties.name);
+        }
+        var inheritance = idlProperties.idl.inheritance;
+        if (!!inheritance) {
+            test(function() {
+                assert_true(!!global[inheritance] && instance instanceof global[inheritance], 'Does instance object inherit from ' + inheritance + '?');
+            }, idlProperties.expandedName + '-does-instance-inherit-from-' + inheritance);
         }
         for (var i in idlProperties.idl.members) {
             var member = idlProperties.idl.members[i];
