@@ -129,7 +129,7 @@
             return;
         if (!hasExtendedAttribute(idlProperties.idl, 'NoInterfaceObject')) {
             test(function() {
-                assert_true(instance instanceof global[idlProperties.name], 'Is instance object an instance of ' + idlProperties.name + '?');
+                assert_true(!!global[idlProperties.name] && instance instanceof global[idlProperties.name], 'Is instance object an instance of ' + idlProperties.name + '?');
             }, idlProperties.expandedName + '-is-instance-instanceof-' + idlProperties.name);
         }
         var inheritance = idlProperties.idl.inheritance;
