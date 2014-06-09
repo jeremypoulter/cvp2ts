@@ -878,6 +878,18 @@
         "path": "tests/html5/html5-interface-WindowTimers.html"
       }, 
       {
+        "url": "/tests/selectors1/selectors1-interface-Document.html", 
+        "path": "tests/selectors1/selectors1-interface-Document.html"
+      }, 
+      {
+        "url": "/tests/selectors1/selectors1-interface-DocumentFragment.html", 
+        "path": "tests/selectors1/selectors1-interface-DocumentFragment.html"
+      }, 
+      {
+        "url": "/tests/selectors1/selectors1-interface-Element.html", 
+        "path": "tests/selectors1/selectors1-interface-Element.html"
+      }, 
+      {
         "url": "/tests/sse/sse-interface-EventSource.html", 
         "path": "tests/sse/sse-interface-EventSource.html"
       }, 
@@ -1066,5 +1078,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "2132ccbb622f50f09b205336bb93ab57e53d0b22"
+  "rev": "de213a63baf2d6c0beb5f90c03c09a529dba669d"
 }
