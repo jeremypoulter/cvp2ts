@@ -4,8 +4,6 @@
     "local": "cssfontload.html",
     "dontFetch": true,
     "dontExtract": true,
-    "helpers": [
-    ],
     "instances": {
         "FontFace": "undefined",
         "CSSFontFaceLoadEvent": "document.createEvent('CSSFontFaceLoadEvent')",

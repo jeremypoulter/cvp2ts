@@ -16,7 +16,7 @@
         "DOMSettableTokenList": "undefined",
         "DOMTokenList": "document.body.classList",
         "Document": "document",
-        "DocumentFragment": "!!window['DocumentFragment'] && new DocumentFragment()",
+        "DocumentFragment": "document.createDocumentFragment()",
         "DocumentType": "document.implementation.createDocumentType('none', '', '')",
         "Element": "document.documentElement",
         "Event": "document.createEvent('Event')",
