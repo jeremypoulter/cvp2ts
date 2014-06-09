@@ -34,6 +34,22 @@
         "path": "tests/canvas2d/canvas2d-interface-TextMetrics.html"
       }, 
       {
+        "url": "/tests/cssfontload/cssfontload-interface-CSSFontFaceLoadEvent.html", 
+        "path": "tests/cssfontload/cssfontload-interface-CSSFontFaceLoadEvent.html"
+      }, 
+      {
+        "url": "/tests/cssfontload/cssfontload-interface-FontFace.html", 
+        "path": "tests/cssfontload/cssfontload-interface-FontFace.html"
+      }, 
+      {
+        "url": "/tests/cssfontload/cssfontload-interface-FontFaceSet.html", 
+        "path": "tests/cssfontload/cssfontload-interface-FontFaceSet.html"
+      }, 
+      {
+        "url": "/tests/cssfontload/cssfontload-interface-FontFaceSource.html", 
+        "path": "tests/cssfontload/cssfontload-interface-FontFaceSource.html"
+      }, 
+      {
         "url": "/tests/cssom/cssom-interface-CSS.html", 
         "path": "tests/cssom/cssom-interface-CSS.html"
       }, 
@@ -1050,5 +1066,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "ca9d2966782d9e193d9fd8fe396127270ff0747f"
+  "rev": "2132ccbb622f50f09b205336bb93ab57e53d0b22"
 }
