@@ -1,0 +1,15 @@
+{
+    "spec": "cssfontload",
+    "source": "http://dev.w3.org/csswg/css-font-loading/",
+    "local": "cssfontload.html",
+    "dontFetch": true,
+    "dontExtract": true,
+    "helpers": [
+    ],
+    "instances": {
+        "FontFace": "undefined",
+        "CSSFontFaceLoadEvent": "document.createEvent('CSSFontFaceLoadEvent')",
+        "FontFaceSet": "!!document['fonts'] && document.fonts",
+        "FontFaceSource": "document"
+    }
+}

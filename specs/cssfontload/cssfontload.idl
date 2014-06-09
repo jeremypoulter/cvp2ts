@@ -1,0 +1,95 @@
+//
+// [GA] The IDL extracted from the source specification has been manually edited to
+// permit parsing by the webidl2 npm module, which does not yet support the following constructs:
+//
+//   * Promise<T>
+//   * attribute sequence<T>
+//   * [SetClass(...)]
+//
+// For the purpose of simple, level 1 signature (presence) testing, these details can be removed
+// without loss of semantics.
+//
+// Last Edited: 2014-06-09 03:19:00
+//
+
+typedef (ArrayBuffer or ArrayBufferView) BinaryData;
+
+  dictionary FontFaceDescriptors {
+    DOMString style = "normal";
+    DOMString weight = "normal";
+    DOMString stretch = "normal";
+    DOMString unicodeRange = "U+0-10FFFF";
+    DOMString variant = "normal";
+    DOMString featureSettings = "normal";
+  };
+
+  enum FontFaceLoadStatus { "unloaded", "loading", "loaded", "error" };
+
+  [Constructor(DOMString family, (DOMString or BinaryData) source,
+             FontFaceDescriptors descriptors)]
+  interface FontFace {
+    attribute DOMString family;
+    attribute DOMString style;
+    attribute DOMString weight;
+    attribute DOMString stretch;
+    attribute DOMString unicodeRange;
+    attribute DOMString variant;
+    attribute DOMString featureSettings;
+
+    readonly attribute FontFaceLoadStatus status;
+
+    // Promise<FontFace> load();
+    FontFace load();
+    // attribute Promise<boolean> loaded;
+    attribute boolean loaded;
+  };
+
+
+dictionary CSSFontFaceLoadEventInit : EventInit {
+    sequence<CSSFontFaceRule> fontfaces = null;
+  };
+
+  [Constructor(DOMString type, optional CSSFontFaceLoadEventInit eventInitDict)]
+  interface CSSFontFaceLoadEvent : Event {
+    // readonly attribute sequence<CSSFontFaceRule> fontfaces;
+    readonly attribute any fontfaces;
+  };
+
+  enum FontFaceSetLoadStatus { "loading", "loaded" };
+
+  // [SetClass(FontFace)]
+  interface FontFaceSet {
+
+    // -- events for when loading state changes
+    attribute EventHandler onloading;
+    attribute EventHandler onloadingdone;
+    attribute EventHandler onloadingerror;
+
+    // check and start loads if appropriate
+    // and fulfill promise when all loads complete
+    // Promise<sequence<FontFace>> load(DOMString font, optional DOMString text = " ");
+    sequence<FontFace> load(DOMString font, optional DOMString text = " ");
+
+    // return whether all fonts in the fontlist are loaded
+    // (does not initiate load if not available)
+    boolean check(DOMString font, optional DOMString text = " ");
+
+    // async notification that font loading and layout operations are done
+    // Promise<FontFaceSet> ready();
+    FontFaceSet ready();
+
+    // loading state, "loading" while one or more fonts loading, "loaded" otherwise
+    readonly attribute FontFaceLoadStatus status;
+  };
+
+  FontFaceSet implements EventTarget;
+
+
+[NoInterfaceObject]
+  interface FontFaceSource {
+    readonly attribute FontFaceSet fonts;
+  };
+
+  Document implements FontFaceSource;
+  WorkerGlobalScope implements FontFaceSource;
+
