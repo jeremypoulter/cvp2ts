@@ -37,6 +37,7 @@
         configFile : undefined,
         configFileEncoding : 'utf8',
         dontExtract : false,
+        dontExtractReason : undefined,
         inputFileEncoding : 'utf8',
         inputFile : undefined,
         local : undefined,
@@ -124,7 +125,7 @@
                 var options = commonOptions.readOptions(argv, defaultOptions(), $);
                 if (!!options['dontExtract']) {
                     if (options['verbose'])
-                        console.warn('[I]: ' + 'Skipping ' + options['spec'] + ' IDL extraction.');
+                        console.warn('[I]: ' + 'Skipping spec ' + options['spec'] + ' extraction' + (!!options['dontExtractReason'] ? ': ' + options['dontExtractReason'] : '') + '.');
                     return;
                 }
                 var input;

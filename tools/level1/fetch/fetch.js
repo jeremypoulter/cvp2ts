@@ -41,6 +41,7 @@
         configFile : undefined,
         configFileEncoding : 'utf8',
         dontFetch : false,
+        dontFetchReason : undefined,
         force : false,
         inputFileEncoding : 'utf8',
         inputFile : undefined,
@@ -139,7 +140,7 @@
                 setTimeout(function() { $.onFetch('GET'); }, 0);
             } else {
                 if ($.options['verbose'])
-                    console.warn('[I]: ' + 'Fetch not required, last modified on ' + new Date($.lastModifiedCurrent).toUTCString() + '.');
+                    console.warn('[I]: ' + 'Fetching spec ' + $.options['spec'] + ' not required, last modified on ' + new Date($.lastModifiedCurrent).toUTCString() + '.');
                 setTimeout(function() { $.onOutputLastModifiedDone(); }, 0);
             }
         },
@@ -237,7 +238,7 @@
                 var options = commonOptions.readOptions(argv, defaultOptions(), $);
                 if (!!options['dontFetch']) {
                     if (options['verbose'])
-                        console.warn('[I]: ' + 'Skipping ' + options['spec'] + ' specification fetch.');
+                        console.warn('[I]: ' + 'Skipping spec ' + options['spec'] + ' fetch' + (!!options['dontFetchReason'] ? ': ' + options['dontFetchReason'] : '') + '.');
                     return;
                 }
                 var input;

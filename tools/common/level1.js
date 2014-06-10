@@ -48,7 +48,7 @@
             return;
         if (!hasExtendedAttribute(idl, 'NoInterfaceObject')) {
             test(function() {
-                assert_true(!!global[idlName], 'Is ' + idlProperties.name + ' bound at global scope?');
+                assert_true(idlName in global, 'Is ' + idlProperties.name + ' bound at global scope?');
             }, idlProperties.expandedName + '-bound-at-global-scope');
         }
         if (hasStaticMember(idl)) {
@@ -56,16 +56,14 @@
                 testStaticMembers(global[idlName], idlProperties);
             }, idlProperties.expandedName + '-has-statics', {idl: idlProperties});
         }
-        if (hasInstanceMember(idl)) {
-            if (!!getInstance && (getInstance != 'undefined')) {
-                if (typeof getInstance === 'function') {
-                    if (!async) {
-                        test(function() {
-                            testInstance(getInstance(), idlProperties);
-                        }, idlProperties.expandedName + '-get-instance-sync', {idl: idlProperties});
-                    } else
-                        async_test(getInstance, idlProperties.expandedName + '-get-instance-async', {idl: idlProperties});
-                }
+        if (!!getInstance && (getInstance != 'undefined')) {
+            if (typeof getInstance === 'function') {
+                if (!async) {
+                    test(function() {
+                        testInstance(getInstance(), idlProperties);
+                    }, idlProperties.expandedName + '-get-instance-sync', {idl: idlProperties});
+                } else
+                    async_test(getInstance, idlProperties.expandedName + '-get-instance-async', {idl: idlProperties});
             }
         }
     };
@@ -103,11 +101,11 @@
             if (overloadIndex < 1) {
                 if (member.type == 'attribute') {
                     test(function() {
-                        assert_true(interfaceInstance[memberName] !== undefined, 'Does ' + idlProperties.name + ' interface have static ' + memberName + ' attribute?');
+                        assert_true(memberName in interfaceInstance, 'Does ' + idlProperties.name + ' interface have static ' + memberName + ' attribute?');
                     }, idlProperties.expandedName + '-interface-has-static-' + memberName + '-attribute');
                 } else if (member.type == 'operation') {
                     test(function() {
-                        assert_true(interfaceInstance[memberName] !== undefined, 'Does ' + idlProperties.name + ' interface have static ' + memberName + ' operation?');
+                        assert_true(memberName in interfaceInstance, 'Does ' + idlProperties.name + ' interface have static ' + memberName + ' operation?');
                     }, idlProperties.expandedName + '-interfac-has-static-' + memberName + '-operation');
                 }
             }
@@ -122,15 +120,16 @@
         return false;
     }
     function testInstance(instance, idlProperties) {
+        var idlName = idlProperties.name;
         test(function() {
-            assert_true(!!instance, 'Is ' + idlProperties.name + ' instance present?');
+            assert_true(!!instance, 'Is ' + idlName + ' instance present?');
         }, idlProperties.expandedName + '-instance-present');
         if (!instance)
             return;
         if (!hasExtendedAttribute(idlProperties.idl, 'NoInterfaceObject')) {
             test(function() {
-                assert_true(!!global[idlProperties.name] && instance instanceof global[idlProperties.name], 'Is instance object an instance of ' + idlProperties.name + '?');
-            }, idlProperties.expandedName + '-is-instance-instanceof-' + idlProperties.name);
+                assert_true(idlName in global && instance instanceof global[idlName], 'Is instance object an instance of ' + idlName + '?');
+            }, idlProperties.expandedName + '-is-instance-instanceof-' + idlName);
         }
         var inheritance = idlProperties.idl.inheritance;
         if (!!inheritance) {
@@ -139,7 +138,7 @@
             // that are marked as [NoInterfaceObject]; we will need to compute that table by indexing all parsed IDL definitions between the parse phase and the
             // generate phase
             test(function() {
-                assert_true(!!global[inheritance] && instance instanceof global[inheritance], 'Does instance object inherit from ' + inheritance + '?');
+                assert_true(inheritance in global && instance instanceof global[inheritance], 'Does instance object inherit from ' + inheritance + '?');
             }, idlProperties.expandedName + '-does-instance-inherit-from-' + inheritance);
         }
         for (var i in idlProperties.idl.members) {
@@ -159,15 +158,15 @@
             if (overloadIndex < 1) {
                 if (member.type == 'attribute') {
                     test(function() {
-                        assert_true(instance[memberName] !== undefined, 'Does ' + idlProperties.name + ' instance have ' + memberName + ' attribute?');
+                        assert_true(memberName in instance, 'Does ' + idlName + ' instance have ' + memberName + ' attribute?');
                     }, idlProperties.expandedName + '-instance-has-' + memberName + '-attribute');
                 } else if (member.type == 'operation') {
                     test(function() {
-                        assert_true(instance[memberName] !== undefined, 'Does ' + idlProperties.name + ' instance have ' + memberName + ' operation?');
+                        assert_true(memberName in instance, 'Does ' + idlName + ' instance have ' + memberName + ' operation?');
                     }, idlProperties.expandedName + '-instance-has-' + memberName + '-operation');
                 } else if (member.type == 'serializer') {
                     test(function() {
-                        assert_true(instance[memberName] !== undefined, 'Does ' + idlProperties.name + ' instance have ' + memberName + ' serializer?');
+                        assert_true(memberName in instance, 'Does ' + idlName + ' instance have ' + memberName + ' serializer?');
                     }, idlProperties.expandedName + '-instance-has-' + memberName + '-serializer');
                 }
             }

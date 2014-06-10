@@ -2,14 +2,14 @@
 // [GA] The IDL extracted from the source specification has been manually edited to
 // permit parsing by the webidl2 npm module, which does not yet support the following constructs:
 //
-//   * Promise<T>
-//   * attribute sequence<T>
-//   * [SetClass(...)]
+// (1) Promise<T>
+// (2) attribute sequence<T>
+// (3) [SetClass(...)]
 //
 // For the purpose of simple, level 1 signature (presence) testing, these details can be removed
 // without loss of semantics.
 //
-// Last Edited: 2014-06-09 03:19:00
+// Last Edited: Tue Jun 10 16:05:14 UTC 2014
 //
 
 typedef (ArrayBuffer or ArrayBufferView) BinaryData;
