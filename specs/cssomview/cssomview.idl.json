@@ -836,18 +836,6 @@
             "name": "eventInitDict"
           }
         ]
-      },
-      {
-        "name": "Exposed",
-        "arguments": null,
-        "rhs": {
-          "type": "identifier",
-          "value": "Window"
-        }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
       }
     ]
   },
