@@ -894,6 +894,154 @@
         "path": "tests/sse/sse-interface-EventSource.html"
       }, 
       {
+        "url": "/tests/svg12tiny/svg12tiny-interface-AbstractView.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-AbstractView.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-AsyncURLStatus.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-AsyncURLStatus.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-Document.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-Document.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-DocumentView.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-DocumentView.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-Element.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-Element.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-ElementTimeControl.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-ElementTimeControl.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-ElementTraversal.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-ElementTraversal.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-Event.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-Event.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-EventTarget.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-EventTarget.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-KeyboardEvent.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-KeyboardEvent.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-Location.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-Location.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-MouseEvent.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-MouseEvent.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-MouseWheelEvent.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-MouseWheelEvent.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-Node.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-Node.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-ProgressEvent.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-ProgressEvent.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGAnimationElement.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGAnimationElement.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGDocument.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGDocument.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGElement.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGElement.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGElementInstance.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGElementInstance.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGGlobal.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGGlobal.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGLocatable.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGLocatable.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGLocatableElement.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGLocatableElement.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGMatrix.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGMatrix.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGPath.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGPath.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGPoint.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGPoint.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGRGBColor.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGRGBColor.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGRect.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGRect.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGSVGElement.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGSVGElement.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGTimedElement.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGTimedElement.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGTimer.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGTimer.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGUseElement.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGUseElement.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGVisualMediaElement.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGVisualMediaElement.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-TextEvent.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-TextEvent.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-TimeEvent.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-TimeEvent.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-TraitAccess.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-TraitAccess.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-UIEvent.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-UIEvent.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-Window.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-Window.html"
+      }, 
+      {
         "url": "/tests/webmessage/webmessage-interface-MessageChannel.html", 
         "path": "tests/webmessage/webmessage-interface-MessageChannel.html"
       }, 
@@ -1074,9 +1222,53 @@
       {
         "url": "/tests/sse/resources/simple.txt", 
         "path": "tests/sse/resources/simple.txt"
+      }, 
+      {
+        "url": "/tests/svg12tiny/helpers/Document.js", 
+        "path": "tests/svg12tiny/helpers/Document.js"
+      }, 
+      {
+        "url": "/tests/svg12tiny/helpers/DocumentView.js", 
+        "path": "tests/svg12tiny/helpers/DocumentView.js"
+      }, 
+      {
+        "url": "/tests/svg12tiny/helpers/Event.js", 
+        "path": "tests/svg12tiny/helpers/Event.js"
+      }, 
+      {
+        "url": "/tests/svg12tiny/helpers/KeyboardEvent.js", 
+        "path": "tests/svg12tiny/helpers/KeyboardEvent.js"
+      }, 
+      {
+        "url": "/tests/svg12tiny/helpers/MouseEvent.js", 
+        "path": "tests/svg12tiny/helpers/MouseEvent.js"
+      }, 
+      {
+        "url": "/tests/svg12tiny/helpers/MouseWheelEvent.js", 
+        "path": "tests/svg12tiny/helpers/MouseWheelEvent.js"
+      }, 
+      {
+        "url": "/tests/svg12tiny/helpers/ProgressEvent.js", 
+        "path": "tests/svg12tiny/helpers/ProgressEvent.js"
+      }, 
+      {
+        "url": "/tests/svg12tiny/helpers/SVGDocument.js", 
+        "path": "tests/svg12tiny/helpers/SVGDocument.js"
+      }, 
+      {
+        "url": "/tests/svg12tiny/helpers/TextEvent.js", 
+        "path": "tests/svg12tiny/helpers/TextEvent.js"
+      }, 
+      {
+        "url": "/tests/svg12tiny/helpers/TimeEvent.js", 
+        "path": "tests/svg12tiny/helpers/TimeEvent.js"
+      }, 
+      {
+        "url": "/tests/svg12tiny/helpers/UIEvent.js", 
+        "path": "tests/svg12tiny/helpers/UIEvent.js"
       }
     ]
   }, 
   "local_changes": [], 
-  "rev": "de213a63baf2d6c0beb5f90c03c09a529dba669d"
+  "rev": "fe7e3b52a2651691b1b9377585650f30c8240213"
 }
