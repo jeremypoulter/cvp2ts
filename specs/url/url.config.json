@@ -1,0 +1,11 @@
+{
+    "spec": "url",
+    "source": "http://url.spec.whatwg.org/",
+    "local": "url.html",
+    "instances": {
+        "URL": "'URL' in window && new URL('http://example.org/')",
+        "URLUtils": "'URL' in window && new URL('http://example.org/')",
+        "URLUtilsReadOnly": "'URL' in window && new URL('http://example.org/')",
+        "URLSearchParams": "'URLSearchParams' in window && new URLSearchPararms()"
+    }
+}

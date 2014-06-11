@@ -1,0 +1,803 @@
+[
+  {
+    "type": "interface",
+    "name": "URL",
+    "partial": false,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "domainToASCII",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ScalarValueString"
+            },
+            "name": "domain"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "domainToUnicode",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ScalarValueString"
+            },
+            "name": "domain"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ScalarValueString"
+            },
+            "name": "url"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ScalarValueString"
+            },
+            "name": "base",
+            "default": {
+              "type": "string",
+              "value": "about:blank"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": {
+          "type": "identifier",
+          "value": "Window"
+        }
+      },
+      {
+        "name": "Worker",
+        "arguments": null
+      }
+    ]
+  },
+  {
+    "type": "implements",
+    "target": "URL",
+    "implements": "URLUtils",
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "URLUtils",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": true,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "href",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "origin",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "protocol",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "username",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "password",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "host",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "hostname",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "port",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "pathname",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "search",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "URLSearchParams"
+        },
+        "name": "searchParams",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "hash",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "NoInterfaceObject",
+        "arguments": null
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "URLUtilsReadOnly",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": true,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "href",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "origin",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "protocol",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "host",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "hostname",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "port",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "pathname",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "search",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "hash",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "NoInterfaceObject",
+        "arguments": null
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "URLSearchParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "append",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ScalarValueString"
+            },
+            "name": "name"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ScalarValueString"
+            },
+            "name": "value"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "delete",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ScalarValueString"
+            },
+            "name": "name"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": true,
+          "array": false,
+          "union": false,
+          "idlType": "ScalarValueString"
+        },
+        "name": "get",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ScalarValueString"
+            },
+            "name": "name"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": true,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "ScalarValueString"
+          }
+        },
+        "name": "getAll",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ScalarValueString"
+            },
+            "name": "name"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "has",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ScalarValueString"
+            },
+            "name": "name"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "set",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ScalarValueString"
+            },
+            "name": "name"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ScalarValueString"
+            },
+            "name": "value"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": true,
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": true,
+              "idlType": [
+                {
+                  "sequence": false,
+                  "nullable": false,
+                  "array": false,
+                  "union": false,
+                  "idlType": "ScalarValueString"
+                },
+                {
+                  "sequence": false,
+                  "nullable": false,
+                  "array": false,
+                  "union": false,
+                  "idlType": "URLSearchParams"
+                }
+              ]
+            },
+            "name": "init",
+            "default": {
+              "type": "string",
+              "value": ""
+            }
+          }
+        ]
+      },
+      {
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": {
+          "type": "identifier",
+          "value": "Window"
+        }
+      },
+      {
+        "name": "Worker",
+        "arguments": null
+      }
+    ]
+  }
+]

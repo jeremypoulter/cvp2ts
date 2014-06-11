@@ -1,0 +1,51 @@
+
+[Constructor(ScalarValueString url, optional ScalarValueString base = "about:blank"),
+ Exposed=Window,Worker]
+interface URL {
+  static ScalarValueString domainToASCII(ScalarValueString domain);
+  static ScalarValueString domainToUnicode(ScalarValueString domain);
+};
+URL implements URLUtils;
+
+[NoInterfaceObject]
+interface URLUtils {
+  stringifier attribute ScalarValueString href;
+  readonly attribute ScalarValueString origin;
+
+           attribute ScalarValueString protocol;
+           attribute ScalarValueString username;
+           attribute ScalarValueString password;
+           attribute ScalarValueString host;
+           attribute ScalarValueString hostname;
+           attribute ScalarValueString port;
+           attribute ScalarValueString pathname;
+           attribute ScalarValueString search;
+           attribute URLSearchParams searchParams;
+           attribute ScalarValueString hash;
+};
+
+[NoInterfaceObject]
+interface URLUtilsReadOnly {
+  stringifier readonly attribute ScalarValueString href;
+  readonly attribute ScalarValueString origin;
+
+  readonly attribute ScalarValueString protocol;
+  readonly attribute ScalarValueString host;
+  readonly attribute ScalarValueString hostname;
+  readonly attribute ScalarValueString port;
+  readonly attribute ScalarValueString pathname;
+  readonly attribute ScalarValueString search;
+  readonly attribute ScalarValueString hash;
+};
+
+[Constructor(optional (ScalarValueString or URLSearchParams) init = ""),
+ Exposed=Window,Worker]
+interface URLSearchParams {
+  void append(ScalarValueString name, ScalarValueString value);
+  void delete(ScalarValueString name);
+  ScalarValueString? get(ScalarValueString name);
+  sequence<ScalarValueString> getAll(ScalarValueString name);
+  boolean has(ScalarValueString name);
+  void set(ScalarValueString name, ScalarValueString value);
+  stringifier;
+};
