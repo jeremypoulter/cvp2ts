@@ -1090,6 +1090,22 @@
         "path": "tests/typedarray/typedarray-interface-Uint8ClampedArray.html"
       }, 
       {
+        "url": "/tests/url/url-interface-URL.html", 
+        "path": "tests/url/url-interface-URL.html"
+      }, 
+      {
+        "url": "/tests/url/url-interface-URLSearchParams.html", 
+        "path": "tests/url/url-interface-URLSearchParams.html"
+      }, 
+      {
+        "url": "/tests/url/url-interface-URLUtils.html", 
+        "path": "tests/url/url-interface-URLUtils.html"
+      }, 
+      {
+        "url": "/tests/url/url-interface-URLUtilsReadOnly.html", 
+        "path": "tests/url/url-interface-URLUtilsReadOnly.html"
+      }, 
+      {
         "url": "/tests/webmessage/webmessage-interface-MessageChannel.html", 
         "path": "tests/webmessage/webmessage-interface-MessageChannel.html"
       }, 
@@ -1318,5 +1334,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "b758ea60b4dcc6ccc2df921455f7b298505cedfd"
+  "rev": "a698ed07545a32ee7658a4529aed90fa56f72e5d"
 }
