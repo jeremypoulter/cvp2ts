@@ -1042,6 +1042,54 @@
         "path": "tests/svg12tiny/svg12tiny-interface-Window.html"
       }, 
       {
+        "url": "/tests/typedarray/typedarray-interface-ArrayBuffer.html", 
+        "path": "tests/typedarray/typedarray-interface-ArrayBuffer.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-ArrayBufferView.html", 
+        "path": "tests/typedarray/typedarray-interface-ArrayBufferView.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-DataView.html", 
+        "path": "tests/typedarray/typedarray-interface-DataView.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-Float32Array.html", 
+        "path": "tests/typedarray/typedarray-interface-Float32Array.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-Float64Array.html", 
+        "path": "tests/typedarray/typedarray-interface-Float64Array.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-Int16Array.html", 
+        "path": "tests/typedarray/typedarray-interface-Int16Array.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-Int32Array.html", 
+        "path": "tests/typedarray/typedarray-interface-Int32Array.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-Int8Array.html", 
+        "path": "tests/typedarray/typedarray-interface-Int8Array.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-Uint16Array.html", 
+        "path": "tests/typedarray/typedarray-interface-Uint16Array.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-Uint32Array.html", 
+        "path": "tests/typedarray/typedarray-interface-Uint32Array.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-Uint8Array.html", 
+        "path": "tests/typedarray/typedarray-interface-Uint8Array.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-Uint8ClampedArray.html", 
+        "path": "tests/typedarray/typedarray-interface-Uint8ClampedArray.html"
+      }, 
+      {
         "url": "/tests/webmessage/webmessage-interface-MessageChannel.html", 
         "path": "tests/webmessage/webmessage-interface-MessageChannel.html"
       }, 
@@ -1270,5 +1318,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "3094ff4109dc713c20f90c35a5aa7b8689a8aa54"
+  "rev": "b758ea60b4dcc6ccc2df921455f7b298505cedfd"
 }
