@@ -106,7 +106,7 @@
                 } else if (member.type == 'operation') {
                     test(function() {
                         assert_true(memberName in interfaceInstance, 'Does ' + idlProperties.name + ' interface have static ' + memberName + ' operation?');
-                    }, idlProperties.expandedName + '-interfac-has-static-' + memberName + '-operation');
+                    }, idlProperties.expandedName + '-interface-has-static-' + memberName + '-operation');
                 }
             }
         }
