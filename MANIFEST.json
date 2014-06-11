@@ -1106,6 +1106,58 @@
         "path": "tests/url/url-interface-URLUtilsReadOnly.html"
       }, 
       {
+        "url": "/tests/webgl/webgl-interface-WebGLActiveInfo.html", 
+        "path": "tests/webgl/webgl-interface-WebGLActiveInfo.html"
+      }, 
+      {
+        "url": "/tests/webgl/webgl-interface-WebGLBuffer.html", 
+        "path": "tests/webgl/webgl-interface-WebGLBuffer.html"
+      }, 
+      {
+        "url": "/tests/webgl/webgl-interface-WebGLContextEvent.html", 
+        "path": "tests/webgl/webgl-interface-WebGLContextEvent.html"
+      }, 
+      {
+        "url": "/tests/webgl/webgl-interface-WebGLFramebuffer.html", 
+        "path": "tests/webgl/webgl-interface-WebGLFramebuffer.html"
+      }, 
+      {
+        "url": "/tests/webgl/webgl-interface-WebGLObject.html", 
+        "path": "tests/webgl/webgl-interface-WebGLObject.html"
+      }, 
+      {
+        "url": "/tests/webgl/webgl-interface-WebGLProgram.html", 
+        "path": "tests/webgl/webgl-interface-WebGLProgram.html"
+      }, 
+      {
+        "url": "/tests/webgl/webgl-interface-WebGLRenderbuffer.html", 
+        "path": "tests/webgl/webgl-interface-WebGLRenderbuffer.html"
+      }, 
+      {
+        "url": "/tests/webgl/webgl-interface-WebGLRenderingContext.html", 
+        "path": "tests/webgl/webgl-interface-WebGLRenderingContext.html"
+      }, 
+      {
+        "url": "/tests/webgl/webgl-interface-WebGLRenderingContextBase.html", 
+        "path": "tests/webgl/webgl-interface-WebGLRenderingContextBase.html"
+      }, 
+      {
+        "url": "/tests/webgl/webgl-interface-WebGLShader.html", 
+        "path": "tests/webgl/webgl-interface-WebGLShader.html"
+      }, 
+      {
+        "url": "/tests/webgl/webgl-interface-WebGLShaderPrecisionFormat.html", 
+        "path": "tests/webgl/webgl-interface-WebGLShaderPrecisionFormat.html"
+      }, 
+      {
+        "url": "/tests/webgl/webgl-interface-WebGLTexture.html", 
+        "path": "tests/webgl/webgl-interface-WebGLTexture.html"
+      }, 
+      {
+        "url": "/tests/webgl/webgl-interface-WebGLUniformLocation.html", 
+        "path": "tests/webgl/webgl-interface-WebGLUniformLocation.html"
+      }, 
+      {
         "url": "/tests/webmessage/webmessage-interface-MessageChannel.html", 
         "path": "tests/webmessage/webmessage-interface-MessageChannel.html"
       }, 
@@ -1330,9 +1382,53 @@
       {
         "url": "/tests/svg12tiny/helpers/UIEvent.js", 
         "path": "tests/svg12tiny/helpers/UIEvent.js"
+      }, 
+      {
+        "url": "/tests/webgl/helpers/WebGLActiveInfo.js", 
+        "path": "tests/webgl/helpers/WebGLActiveInfo.js"
+      }, 
+      {
+        "url": "/tests/webgl/helpers/WebGLBuffer.js", 
+        "path": "tests/webgl/helpers/WebGLBuffer.js"
+      }, 
+      {
+        "url": "/tests/webgl/helpers/WebGLFramebuffer.js", 
+        "path": "tests/webgl/helpers/WebGLFramebuffer.js"
+      }, 
+      {
+        "url": "/tests/webgl/helpers/WebGLObject.js", 
+        "path": "tests/webgl/helpers/WebGLObject.js"
+      }, 
+      {
+        "url": "/tests/webgl/helpers/WebGLProgram.js", 
+        "path": "tests/webgl/helpers/WebGLProgram.js"
+      }, 
+      {
+        "url": "/tests/webgl/helpers/WebGLRenderbuffer.js", 
+        "path": "tests/webgl/helpers/WebGLRenderbuffer.js"
+      }, 
+      {
+        "url": "/tests/webgl/helpers/WebGLShader.js", 
+        "path": "tests/webgl/helpers/WebGLShader.js"
+      }, 
+      {
+        "url": "/tests/webgl/helpers/WebGLShaderPrecisionFormat.js", 
+        "path": "tests/webgl/helpers/WebGLShaderPrecisionFormat.js"
+      }, 
+      {
+        "url": "/tests/webgl/helpers/WebGLTexture.js", 
+        "path": "tests/webgl/helpers/WebGLTexture.js"
+      }, 
+      {
+        "url": "/tests/webgl/helpers/WebGLUniformLocation.js", 
+        "path": "tests/webgl/helpers/WebGLUniformLocation.js"
+      }, 
+      {
+        "url": "/tests/webgl/helpers/WebTLTexture.js", 
+        "path": "tests/webgl/helpers/WebTLTexture.js"
       }
     ]
   }, 
   "local_changes": [], 
-  "rev": "a698ed07545a32ee7658a4529aed90fa56f72e5d"
+  "rev": "09405bb42b5989da48a79da8c6875da2f25ee125"
 }
