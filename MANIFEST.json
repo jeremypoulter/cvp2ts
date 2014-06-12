@@ -30,10 +30,6 @@
         "path": "tests/canvas2d/canvas2d-interface-MouseEvent-partial-1.html"
       }, 
       {
-        "url": "/tests/canvas2d/canvas2d-interface-MouseEvent.html", 
-        "path": "tests/canvas2d/canvas2d-interface-MouseEvent.html"
-      }, 
-      {
         "url": "/tests/canvas2d/canvas2d-interface-TextMetrics.html", 
         "path": "tests/canvas2d/canvas2d-interface-TextMetrics.html"
       }, 
@@ -56,10 +52,6 @@
       {
         "url": "/tests/cssom/cssom-interface-CSS-partial-1.html", 
         "path": "tests/cssom/cssom-interface-CSS-partial-1.html"
-      }, 
-      {
-        "url": "/tests/cssom/cssom-interface-CSS.html", 
-        "path": "tests/cssom/cssom-interface-CSS.html"
       }, 
       {
         "url": "/tests/cssom/cssom-interface-CSSCharsetRule.html", 
@@ -114,16 +106,8 @@
         "path": "tests/cssom/cssom-interface-Document-partial-1.html"
       }, 
       {
-        "url": "/tests/cssom/cssom-interface-Document.html", 
-        "path": "tests/cssom/cssom-interface-Document.html"
-      }, 
-      {
         "url": "/tests/cssom/cssom-interface-Element-partial-1.html", 
         "path": "tests/cssom/cssom-interface-Element-partial-1.html"
-      }, 
-      {
-        "url": "/tests/cssom/cssom-interface-Element.html", 
-        "path": "tests/cssom/cssom-interface-Element.html"
       }, 
       {
         "url": "/tests/cssom/cssom-interface-ElementCSSInlineStyle.html", 
@@ -158,10 +142,6 @@
         "path": "tests/cssom/cssom-interface-Window-partial-1.html"
       }, 
       {
-        "url": "/tests/cssom/cssom-interface-Window.html", 
-        "path": "tests/cssom/cssom-interface-Window.html"
-      }, 
-      {
         "url": "/tests/cssomview/cssomview-interface-CaretPosition.html", 
         "path": "tests/cssomview/cssomview-interface-CaretPosition.html"
       }, 
@@ -170,16 +150,8 @@
         "path": "tests/cssomview/cssomview-interface-Document-partial-1.html"
       }, 
       {
-        "url": "/tests/cssomview/cssomview-interface-Document.html", 
-        "path": "tests/cssomview/cssomview-interface-Document.html"
-      }, 
-      {
         "url": "/tests/cssomview/cssomview-interface-Element-partial-1.html", 
         "path": "tests/cssomview/cssomview-interface-Element-partial-1.html"
-      }, 
-      {
-        "url": "/tests/cssomview/cssomview-interface-Element.html", 
-        "path": "tests/cssomview/cssomview-interface-Element.html"
       }, 
       {
         "url": "/tests/cssomview/cssomview-interface-GeometryUtils.html", 
@@ -190,16 +162,8 @@
         "path": "tests/cssomview/cssomview-interface-HTMLElement-partial-1.html"
       }, 
       {
-        "url": "/tests/cssomview/cssomview-interface-HTMLElement.html", 
-        "path": "tests/cssomview/cssomview-interface-HTMLElement.html"
-      }, 
-      {
         "url": "/tests/cssomview/cssomview-interface-HTMLImageElement-partial-1.html", 
         "path": "tests/cssomview/cssomview-interface-HTMLImageElement-partial-1.html"
-      }, 
-      {
-        "url": "/tests/cssomview/cssomview-interface-HTMLImageElement.html", 
-        "path": "tests/cssomview/cssomview-interface-HTMLImageElement.html"
       }, 
       {
         "url": "/tests/cssomview/cssomview-interface-MediaQueryList.html", 
@@ -214,16 +178,8 @@
         "path": "tests/cssomview/cssomview-interface-MouseEvent-partial-1.html"
       }, 
       {
-        "url": "/tests/cssomview/cssomview-interface-MouseEvent.html", 
-        "path": "tests/cssomview/cssomview-interface-MouseEvent.html"
-      }, 
-      {
         "url": "/tests/cssomview/cssomview-interface-Range-partial-1.html", 
         "path": "tests/cssomview/cssomview-interface-Range-partial-1.html"
-      }, 
-      {
-        "url": "/tests/cssomview/cssomview-interface-Range.html", 
-        "path": "tests/cssomview/cssomview-interface-Range.html"
       }, 
       {
         "url": "/tests/cssomview/cssomview-interface-Screen.html", 
@@ -234,16 +190,8 @@
         "path": "tests/cssomview/cssomview-interface-Window-partial-1.html"
       }, 
       {
-        "url": "/tests/cssomview/cssomview-interface-Window.html", 
-        "path": "tests/cssomview/cssomview-interface-Window.html"
-      }, 
-      {
         "url": "/tests/custom/custom-interface-Document-partial-1.html", 
         "path": "tests/custom/custom-interface-Document-partial-1.html"
-      }, 
-      {
-        "url": "/tests/custom/custom-interface-Document.html", 
-        "path": "tests/custom/custom-interface-Document.html"
       }, 
       {
         "url": "/tests/dom3events/dom3events-interface-CompositionEvent-partial-1.html", 
@@ -256,10 +204,6 @@
       {
         "url": "/tests/dom3events/dom3events-interface-CustomEvent-partial-1.html", 
         "path": "tests/dom3events/dom3events-interface-CustomEvent-partial-1.html"
-      }, 
-      {
-        "url": "/tests/dom3events/dom3events-interface-CustomEvent.html", 
-        "path": "tests/dom3events/dom3events-interface-CustomEvent.html"
       }, 
       {
         "url": "/tests/dom3events/dom3events-interface-FocusEvent-partial-1.html", 
@@ -434,16 +378,8 @@
         "path": "tests/domps/domps-interface-Element-partial-1.html"
       }, 
       {
-        "url": "/tests/domps/domps-interface-Element.html", 
-        "path": "tests/domps/domps-interface-Element.html"
-      }, 
-      {
         "url": "/tests/domps/domps-interface-Range-partial-1.html", 
         "path": "tests/domps/domps-interface-Range-partial-1.html"
-      }, 
-      {
-        "url": "/tests/domps/domps-interface-Range.html", 
-        "path": "tests/domps/domps-interface-Range.html"
       }, 
       {
         "url": "/tests/domps/domps-interface-XMLSerializer.html", 
@@ -546,24 +482,12 @@
         "path": "tests/file/file-interface-URL-partial-1.html"
       }, 
       {
-        "url": "/tests/file/file-interface-URL.html", 
-        "path": "tests/file/file-interface-URL.html"
-      }, 
-      {
         "url": "/tests/fullscreen/fullscreen-interface-Document-partial-1.html", 
         "path": "tests/fullscreen/fullscreen-interface-Document-partial-1.html"
       }, 
       {
-        "url": "/tests/fullscreen/fullscreen-interface-Document.html", 
-        "path": "tests/fullscreen/fullscreen-interface-Document.html"
-      }, 
-      {
         "url": "/tests/fullscreen/fullscreen-interface-Element-partial-1.html", 
         "path": "tests/fullscreen/fullscreen-interface-Element-partial-1.html"
-      }, 
-      {
-        "url": "/tests/fullscreen/fullscreen-interface-Element.html", 
-        "path": "tests/fullscreen/fullscreen-interface-Element.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-ApplicationCache.html", 
@@ -608,10 +532,6 @@
       {
         "url": "/tests/html5/html5-interface-Document-partial-1.html", 
         "path": "tests/html5/html5-interface-Document-partial-1.html"
-      }, 
-      {
-        "url": "/tests/html5/html5-interface-Document.html", 
-        "path": "tests/html5/html5-interface-Document.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-DragEvent.html", 
@@ -1186,24 +1106,12 @@
         "path": "tests/selectors1/selectors1-interface-Document-partial-1.html"
       }, 
       {
-        "url": "/tests/selectors1/selectors1-interface-Document.html", 
-        "path": "tests/selectors1/selectors1-interface-Document.html"
-      }, 
-      {
         "url": "/tests/selectors1/selectors1-interface-DocumentFragment-partial-1.html", 
         "path": "tests/selectors1/selectors1-interface-DocumentFragment-partial-1.html"
       }, 
       {
-        "url": "/tests/selectors1/selectors1-interface-DocumentFragment.html", 
-        "path": "tests/selectors1/selectors1-interface-DocumentFragment.html"
-      }, 
-      {
         "url": "/tests/selectors1/selectors1-interface-Element-partial-1.html", 
         "path": "tests/selectors1/selectors1-interface-Element-partial-1.html"
-      }, 
-      {
-        "url": "/tests/selectors1/selectors1-interface-Element.html", 
-        "path": "tests/selectors1/selectors1-interface-Element.html"
       }, 
       {
         "url": "/tests/sse/sse-interface-EventSource.html", 
@@ -1656,10 +1564,6 @@
         "path": "tests/html5/helpers/DataCue.js"
       }, 
       {
-        "url": "/tests/html5/helpers/DataTranserItemList.js", 
-        "path": "tests/html5/helpers/DataTranserItemList.js"
-      }, 
-      {
         "url": "/tests/html5/helpers/DataTransfer.js", 
         "path": "tests/html5/helpers/DataTransfer.js"
       }, 
@@ -1798,13 +1702,9 @@
       {
         "url": "/tests/webgl/helpers/WebGLUniformLocation.js", 
         "path": "tests/webgl/helpers/WebGLUniformLocation.js"
-      }, 
-      {
-        "url": "/tests/webgl/helpers/WebTLTexture.js", 
-        "path": "tests/webgl/helpers/WebTLTexture.js"
       }
     ]
   }, 
   "local_changes": [], 
-  "rev": "ed7506ebe917314c3b174043bda7055750dca6ba"
+  "rev": "0f428b2f8bb74976dc8bcbceefbe756d10577543"
 }
