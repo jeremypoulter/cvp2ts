@@ -156,7 +156,21 @@
                 continue;
             var overloadIndex = getOverloadIndex(memberName);
             if (overloadIndex < 1) {
-                if (member.type == 'attribute') {
+                if (member.type == 'const') {
+                    test(function() {
+                        assert_true(memberName in instance, 'Does ' + idlName + ' instance have ' + memberName + ' constant?');
+                    }, idlProperties.expandedName + '-instance-has-' + memberName + '-constant');
+                    if (memberName in instance) {
+                        var value = member.value;
+                        if (!!member.value) {
+                            if (value.type == 'number') {
+                                test(function() {
+                                    assert_equals(instance[memberName], value.value, 'Does ' + idlName + ' instance constant have value ' + value.value + '?');
+                                }, idlProperties.expandedName + '-instance-' + memberName + '-constant-has-value-' + value.value);
+                            }
+                        }
+                    }
+                } if (member.type == 'attribute') {
                     test(function() {
                         assert_true(memberName in instance, 'Does ' + idlName + ' instance have ' + memberName + ' attribute?');
                     }, idlProperties.expandedName + '-instance-has-' + memberName + '-attribute');
