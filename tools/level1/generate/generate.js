@@ -154,6 +154,11 @@
     function processDictionaries(doc) {
     }
     function processExceptions(doc) {
+        _(doc).filter(function (def) {
+            return def.type == 'exception';
+        }).forEach(function (def) {
+            processInterface(def, doc);
+        });
     }
     function processInterfaces(doc) {
         _(doc).filter(function (def) {

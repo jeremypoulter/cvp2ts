@@ -170,7 +170,11 @@
                             }
                         }
                     }
-                } if (member.type == 'attribute') {
+                } else if (member.type == 'field') {
+                    test(function() {
+                        assert_true(memberName in instance, 'Does ' + idlName + ' instance have ' + memberName + ' field?');
+                    }, idlProperties.expandedName + '-instance-has-' + memberName + '-field');
+                } else if (member.type == 'attribute') {
                     test(function() {
                         assert_true(memberName in instance, 'Does ' + idlName + ' instance have ' + memberName + ' attribute?');
                     }, idlProperties.expandedName + '-instance-has-' + memberName + '-attribute');

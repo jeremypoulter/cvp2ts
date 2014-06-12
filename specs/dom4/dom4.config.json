@@ -3,6 +3,8 @@
     "source": "http://w3c.github.io/dom/",
     "local": "dom4.html",
     "helpers": [
+        "DOMException",
+        "DOMSettableTokenList",
         "MutationRecord"
     ],
     "instances": {
@@ -12,8 +14,9 @@
         "Comment": "document.createComment('comment')",
         "CustomEvent": "!!window['CustomEvent'] && new CustomEvent('custom')",
         "DOMError": "!!window['DOMError'] && new DOMError('error')",
+        "DOMException": "getDOMException()",
         "DOMImplementation": "document.implementation",
-        "DOMSettableTokenList": "undefined",
+        "DOMSettableTokenList": "getDOMSettableTokenList()",
         "DOMTokenList": "document.body.classList",
         "Document": "document",
         "DocumentFragment": "document.createDocumentFragment()",
