@@ -254,6 +254,10 @@
         "path": "tests/dom3events/dom3events-interface-WheelEvent.html"
       }, 
       {
+        "url": "/tests/dom4/dom4-exception-DOMException.html", 
+        "path": "tests/dom4/dom4-exception-DOMException.html"
+      }, 
+      {
         "url": "/tests/dom4/dom4-interface-Attr.html", 
         "path": "tests/dom4/dom4-interface-Attr.html"
       }, 
@@ -1524,6 +1528,14 @@
         "path": "tests/cssomview/helpers/MediaQueryList.js"
       }, 
       {
+        "url": "/tests/dom4/helpers/DOMException.js", 
+        "path": "tests/dom4/helpers/DOMException.js"
+      }, 
+      {
+        "url": "/tests/dom4/helpers/DOMSettableTokenList.js", 
+        "path": "tests/dom4/helpers/DOMSettableTokenList.js"
+      }, 
+      {
         "url": "/tests/dom4/helpers/MutationRecord.js", 
         "path": "tests/dom4/helpers/MutationRecord.js"
       }, 
@@ -1706,5 +1718,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "0f428b2f8bb74976dc8bcbceefbe756d10577543"
+  "rev": "6a6498d26353b3df44231fecb19289bdcdcf8fc2"
 }
