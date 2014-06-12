@@ -26,6 +26,10 @@
         "path": "tests/canvas2d/canvas2d-interface-ImageData.html"
       }, 
       {
+        "url": "/tests/canvas2d/canvas2d-interface-MouseEvent-partial-1.html", 
+        "path": "tests/canvas2d/canvas2d-interface-MouseEvent-partial-1.html"
+      }, 
+      {
         "url": "/tests/canvas2d/canvas2d-interface-MouseEvent.html", 
         "path": "tests/canvas2d/canvas2d-interface-MouseEvent.html"
       }, 
@@ -48,6 +52,10 @@
       {
         "url": "/tests/cssfontload/cssfontload-interface-FontFaceSource.html", 
         "path": "tests/cssfontload/cssfontload-interface-FontFaceSource.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-CSS-partial-1.html", 
+        "path": "tests/cssom/cssom-interface-CSS-partial-1.html"
       }, 
       {
         "url": "/tests/cssom/cssom-interface-CSS.html", 
@@ -102,8 +110,16 @@
         "path": "tests/cssom/cssom-interface-CSSStyleSheet.html"
       }, 
       {
+        "url": "/tests/cssom/cssom-interface-Document-partial-1.html", 
+        "path": "tests/cssom/cssom-interface-Document-partial-1.html"
+      }, 
+      {
         "url": "/tests/cssom/cssom-interface-Document.html", 
         "path": "tests/cssom/cssom-interface-Document.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-Element-partial-1.html", 
+        "path": "tests/cssom/cssom-interface-Element-partial-1.html"
       }, 
       {
         "url": "/tests/cssom/cssom-interface-Element.html", 
@@ -138,6 +154,10 @@
         "path": "tests/cssom/cssom-interface-StyleSheetList.html"
       }, 
       {
+        "url": "/tests/cssom/cssom-interface-Window-partial-1.html", 
+        "path": "tests/cssom/cssom-interface-Window-partial-1.html"
+      }, 
+      {
         "url": "/tests/cssom/cssom-interface-Window.html", 
         "path": "tests/cssom/cssom-interface-Window.html"
       }, 
@@ -146,8 +166,16 @@
         "path": "tests/cssomview/cssomview-interface-CaretPosition.html"
       }, 
       {
+        "url": "/tests/cssomview/cssomview-interface-Document-partial-1.html", 
+        "path": "tests/cssomview/cssomview-interface-Document-partial-1.html"
+      }, 
+      {
         "url": "/tests/cssomview/cssomview-interface-Document.html", 
         "path": "tests/cssomview/cssomview-interface-Document.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-Element-partial-1.html", 
+        "path": "tests/cssomview/cssomview-interface-Element-partial-1.html"
       }, 
       {
         "url": "/tests/cssomview/cssomview-interface-Element.html", 
@@ -158,8 +186,16 @@
         "path": "tests/cssomview/cssomview-interface-GeometryUtils.html"
       }, 
       {
+        "url": "/tests/cssomview/cssomview-interface-HTMLElement-partial-1.html", 
+        "path": "tests/cssomview/cssomview-interface-HTMLElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/cssomview/cssomview-interface-HTMLElement.html", 
         "path": "tests/cssomview/cssomview-interface-HTMLElement.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-HTMLImageElement-partial-1.html", 
+        "path": "tests/cssomview/cssomview-interface-HTMLImageElement-partial-1.html"
       }, 
       {
         "url": "/tests/cssomview/cssomview-interface-HTMLImageElement.html", 
@@ -174,8 +210,16 @@
         "path": "tests/cssomview/cssomview-interface-MediaQueryListEvent.html"
       }, 
       {
+        "url": "/tests/cssomview/cssomview-interface-MouseEvent-partial-1.html", 
+        "path": "tests/cssomview/cssomview-interface-MouseEvent-partial-1.html"
+      }, 
+      {
         "url": "/tests/cssomview/cssomview-interface-MouseEvent.html", 
         "path": "tests/cssomview/cssomview-interface-MouseEvent.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-Range-partial-1.html", 
+        "path": "tests/cssomview/cssomview-interface-Range-partial-1.html"
       }, 
       {
         "url": "/tests/cssomview/cssomview-interface-Range.html", 
@@ -186,20 +230,40 @@
         "path": "tests/cssomview/cssomview-interface-Screen.html"
       }, 
       {
+        "url": "/tests/cssomview/cssomview-interface-Window-partial-1.html", 
+        "path": "tests/cssomview/cssomview-interface-Window-partial-1.html"
+      }, 
+      {
         "url": "/tests/cssomview/cssomview-interface-Window.html", 
         "path": "tests/cssomview/cssomview-interface-Window.html"
+      }, 
+      {
+        "url": "/tests/custom/custom-interface-Document-partial-1.html", 
+        "path": "tests/custom/custom-interface-Document-partial-1.html"
       }, 
       {
         "url": "/tests/custom/custom-interface-Document.html", 
         "path": "tests/custom/custom-interface-Document.html"
       }, 
       {
+        "url": "/tests/dom3events/dom3events-interface-CompositionEvent-partial-1.html", 
+        "path": "tests/dom3events/dom3events-interface-CompositionEvent-partial-1.html"
+      }, 
+      {
         "url": "/tests/dom3events/dom3events-interface-CompositionEvent.html", 
         "path": "tests/dom3events/dom3events-interface-CompositionEvent.html"
       }, 
       {
+        "url": "/tests/dom3events/dom3events-interface-CustomEvent-partial-1.html", 
+        "path": "tests/dom3events/dom3events-interface-CustomEvent-partial-1.html"
+      }, 
+      {
         "url": "/tests/dom3events/dom3events-interface-CustomEvent.html", 
         "path": "tests/dom3events/dom3events-interface-CustomEvent.html"
+      }, 
+      {
+        "url": "/tests/dom3events/dom3events-interface-FocusEvent-partial-1.html", 
+        "path": "tests/dom3events/dom3events-interface-FocusEvent-partial-1.html"
       }, 
       {
         "url": "/tests/dom3events/dom3events-interface-FocusEvent.html", 
@@ -210,8 +274,16 @@
         "path": "tests/dom3events/dom3events-interface-InputEvent.html"
       }, 
       {
+        "url": "/tests/dom3events/dom3events-interface-KeyboardEvent-partial-1.html", 
+        "path": "tests/dom3events/dom3events-interface-KeyboardEvent-partial-1.html"
+      }, 
+      {
         "url": "/tests/dom3events/dom3events-interface-KeyboardEvent.html", 
         "path": "tests/dom3events/dom3events-interface-KeyboardEvent.html"
+      }, 
+      {
+        "url": "/tests/dom3events/dom3events-interface-MouseEvent-partial-1.html", 
+        "path": "tests/dom3events/dom3events-interface-MouseEvent-partial-1.html"
       }, 
       {
         "url": "/tests/dom3events/dom3events-interface-MouseEvent.html", 
@@ -222,8 +294,16 @@
         "path": "tests/dom3events/dom3events-interface-MutationEvent.html"
       }, 
       {
+        "url": "/tests/dom3events/dom3events-interface-UIEvent-partial-1.html", 
+        "path": "tests/dom3events/dom3events-interface-UIEvent-partial-1.html"
+      }, 
+      {
         "url": "/tests/dom3events/dom3events-interface-UIEvent.html", 
         "path": "tests/dom3events/dom3events-interface-UIEvent.html"
+      }, 
+      {
+        "url": "/tests/dom3events/dom3events-interface-WheelEvent-partial-1.html", 
+        "path": "tests/dom3events/dom3events-interface-WheelEvent-partial-1.html"
       }, 
       {
         "url": "/tests/dom3events/dom3events-interface-WheelEvent.html", 
@@ -350,8 +430,16 @@
         "path": "tests/domps/domps-interface-DOMParser.html"
       }, 
       {
+        "url": "/tests/domps/domps-interface-Element-partial-1.html", 
+        "path": "tests/domps/domps-interface-Element-partial-1.html"
+      }, 
+      {
         "url": "/tests/domps/domps-interface-Element.html", 
         "path": "tests/domps/domps-interface-Element.html"
+      }, 
+      {
+        "url": "/tests/domps/domps-interface-Range-partial-1.html", 
+        "path": "tests/domps/domps-interface-Range-partial-1.html"
       }, 
       {
         "url": "/tests/domps/domps-interface-Range.html", 
@@ -454,12 +542,24 @@
         "path": "tests/file/file-interface-FileReaderSync.html"
       }, 
       {
+        "url": "/tests/file/file-interface-URL-partial-1.html", 
+        "path": "tests/file/file-interface-URL-partial-1.html"
+      }, 
+      {
         "url": "/tests/file/file-interface-URL.html", 
         "path": "tests/file/file-interface-URL.html"
       }, 
       {
+        "url": "/tests/fullscreen/fullscreen-interface-Document-partial-1.html", 
+        "path": "tests/fullscreen/fullscreen-interface-Document-partial-1.html"
+      }, 
+      {
         "url": "/tests/fullscreen/fullscreen-interface-Document.html", 
         "path": "tests/fullscreen/fullscreen-interface-Document.html"
+      }, 
+      {
+        "url": "/tests/fullscreen/fullscreen-interface-Element-partial-1.html", 
+        "path": "tests/fullscreen/fullscreen-interface-Element-partial-1.html"
       }, 
       {
         "url": "/tests/fullscreen/fullscreen-interface-Element.html", 
@@ -506,6 +606,10 @@
         "path": "tests/html5/html5-interface-DataTransferItemList.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-Document-partial-1.html", 
+        "path": "tests/html5/html5-interface-Document-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-Document.html", 
         "path": "tests/html5/html5-interface-Document.html"
       }, 
@@ -530,12 +634,20 @@
         "path": "tests/html5/html5-interface-HTMLAllCollection.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-HTMLAnchorElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLAnchorElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-HTMLAnchorElement.html", 
         "path": "tests/html5/html5-interface-HTMLAnchorElement.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-HTMLAppletElement.html", 
         "path": "tests/html5/html5-interface-HTMLAppletElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLAreaElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLAreaElement-partial-1.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-HTMLAreaElement.html", 
@@ -546,12 +658,20 @@
         "path": "tests/html5/html5-interface-HTMLAudioElement.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-HTMLBRElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLBRElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-HTMLBRElement.html", 
         "path": "tests/html5/html5-interface-HTMLBRElement.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-HTMLBaseElement.html", 
         "path": "tests/html5/html5-interface-HTMLBaseElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLBodyElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLBodyElement-partial-1.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-HTMLBodyElement.html", 
@@ -564,6 +684,10 @@
       {
         "url": "/tests/html5/html5-interface-HTMLCanvasElement.html", 
         "path": "tests/html5/html5-interface-HTMLCanvasElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLDListElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLDListElement-partial-1.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-HTMLDListElement.html", 
@@ -582,12 +706,20 @@
         "path": "tests/html5/html5-interface-HTMLDirectoryElement.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-HTMLDivElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLDivElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-HTMLDivElement.html", 
         "path": "tests/html5/html5-interface-HTMLDivElement.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-HTMLElement.html", 
         "path": "tests/html5/html5-interface-HTMLElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLEmbedElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLEmbedElement-partial-1.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-HTMLEmbedElement.html", 
@@ -618,6 +750,10 @@
         "path": "tests/html5/html5-interface-HTMLFrameSetElement.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-HTMLHRElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLHRElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-HTMLHRElement.html", 
         "path": "tests/html5/html5-interface-HTMLHRElement.html"
       }, 
@@ -626,20 +762,40 @@
         "path": "tests/html5/html5-interface-HTMLHeadElement.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-HTMLHeadingElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLHeadingElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-HTMLHeadingElement.html", 
         "path": "tests/html5/html5-interface-HTMLHeadingElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLHtmlElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLHtmlElement-partial-1.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-HTMLHtmlElement.html", 
         "path": "tests/html5/html5-interface-HTMLHtmlElement.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-HTMLIFrameElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLIFrameElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-HTMLIFrameElement.html", 
         "path": "tests/html5/html5-interface-HTMLIFrameElement.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-HTMLImageElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLImageElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-HTMLImageElement.html", 
         "path": "tests/html5/html5-interface-HTMLImageElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLInputElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLInputElement-partial-1.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-HTMLInputElement.html", 
@@ -650,6 +806,10 @@
         "path": "tests/html5/html5-interface-HTMLKeygenElement.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-HTMLLIElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLLIElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-HTMLLIElement.html", 
         "path": "tests/html5/html5-interface-HTMLLIElement.html"
       }, 
@@ -658,8 +818,16 @@
         "path": "tests/html5/html5-interface-HTMLLabelElement.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-HTMLLegendElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLLegendElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-HTMLLegendElement.html", 
         "path": "tests/html5/html5-interface-HTMLLegendElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLLinkElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLLinkElement-partial-1.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-HTMLLinkElement.html", 
@@ -678,6 +846,10 @@
         "path": "tests/html5/html5-interface-HTMLMediaElement.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-HTMLMetaElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLMetaElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-HTMLMetaElement.html", 
         "path": "tests/html5/html5-interface-HTMLMetaElement.html"
       }, 
@@ -690,8 +862,16 @@
         "path": "tests/html5/html5-interface-HTMLModElement.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-HTMLOListElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLOListElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-HTMLOListElement.html", 
         "path": "tests/html5/html5-interface-HTMLOListElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLObjectElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLObjectElement-partial-1.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-HTMLObjectElement.html", 
@@ -714,12 +894,24 @@
         "path": "tests/html5/html5-interface-HTMLOutputElement.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-HTMLParagraphElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLParagraphElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-HTMLParagraphElement.html", 
         "path": "tests/html5/html5-interface-HTMLParagraphElement.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-HTMLParamElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLParamElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-HTMLParamElement.html", 
         "path": "tests/html5/html5-interface-HTMLParamElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLPreElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLPreElement-partial-1.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-HTMLPreElement.html", 
@@ -732,6 +924,10 @@
       {
         "url": "/tests/html5/html5-interface-HTMLQuoteElement.html", 
         "path": "tests/html5/html5-interface-HTMLQuoteElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLScriptElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLScriptElement-partial-1.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-HTMLScriptElement.html", 
@@ -754,20 +950,40 @@
         "path": "tests/html5/html5-interface-HTMLStyleElement.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-HTMLTableCaptionElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLTableCaptionElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-HTMLTableCaptionElement.html", 
         "path": "tests/html5/html5-interface-HTMLTableCaptionElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLTableCellElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLTableCellElement-partial-1.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-HTMLTableCellElement.html", 
         "path": "tests/html5/html5-interface-HTMLTableCellElement.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-HTMLTableColElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLTableColElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-HTMLTableColElement.html", 
         "path": "tests/html5/html5-interface-HTMLTableColElement.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-HTMLTableDataCellElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLTableDataCellElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-HTMLTableDataCellElement.html", 
         "path": "tests/html5/html5-interface-HTMLTableDataCellElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLTableElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLTableElement-partial-1.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-HTMLTableElement.html", 
@@ -778,8 +994,16 @@
         "path": "tests/html5/html5-interface-HTMLTableHeaderCellElement.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-HTMLTableRowElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLTableRowElement-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-HTMLTableRowElement.html", 
         "path": "tests/html5/html5-interface-HTMLTableRowElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLTableSectionElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLTableSectionElement-partial-1.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-HTMLTableSectionElement.html", 
@@ -804,6 +1028,10 @@
       {
         "url": "/tests/html5/html5-interface-HTMLTrackElement.html", 
         "path": "tests/html5/html5-interface-HTMLTrackElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-HTMLUListElement-partial-1.html", 
+        "path": "tests/html5/html5-interface-HTMLUListElement-partial-1.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-HTMLUListElement.html", 
@@ -934,6 +1162,10 @@
         "path": "tests/html5/html5-interface-VideoTrackList.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-Window-partial-1.html", 
+        "path": "tests/html5/html5-interface-Window-partial-1.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-Window.html", 
         "path": "tests/html5/html5-interface-Window.html"
       }, 
@@ -950,12 +1182,24 @@
         "path": "tests/html5/html5-interface-WindowTimers.html"
       }, 
       {
+        "url": "/tests/selectors1/selectors1-interface-Document-partial-1.html", 
+        "path": "tests/selectors1/selectors1-interface-Document-partial-1.html"
+      }, 
+      {
         "url": "/tests/selectors1/selectors1-interface-Document.html", 
         "path": "tests/selectors1/selectors1-interface-Document.html"
       }, 
       {
+        "url": "/tests/selectors1/selectors1-interface-DocumentFragment-partial-1.html", 
+        "path": "tests/selectors1/selectors1-interface-DocumentFragment-partial-1.html"
+      }, 
+      {
         "url": "/tests/selectors1/selectors1-interface-DocumentFragment.html", 
         "path": "tests/selectors1/selectors1-interface-DocumentFragment.html"
+      }, 
+      {
+        "url": "/tests/selectors1/selectors1-interface-Element-partial-1.html", 
+        "path": "tests/selectors1/selectors1-interface-Element-partial-1.html"
       }, 
       {
         "url": "/tests/selectors1/selectors1-interface-Element.html", 
@@ -1400,8 +1644,68 @@
         "path": "tests/file/helpers/URL.js"
       }, 
       {
+        "url": "/tests/html5/helpers/AudioTrack.js", 
+        "path": "tests/html5/helpers/AudioTrack.js"
+      }, 
+      {
+        "url": "/tests/html5/helpers/AudioTrackList.js", 
+        "path": "tests/html5/helpers/AudioTrackList.js"
+      }, 
+      {
+        "url": "/tests/html5/helpers/DataCue.js", 
+        "path": "tests/html5/helpers/DataCue.js"
+      }, 
+      {
+        "url": "/tests/html5/helpers/DataTranserItemList.js", 
+        "path": "tests/html5/helpers/DataTranserItemList.js"
+      }, 
+      {
+        "url": "/tests/html5/helpers/DataTransfer.js", 
+        "path": "tests/html5/helpers/DataTransfer.js"
+      }, 
+      {
+        "url": "/tests/html5/helpers/DataTransferItem.js", 
+        "path": "tests/html5/helpers/DataTransferItem.js"
+      }, 
+      {
+        "url": "/tests/html5/helpers/DataTransferItemList.js", 
+        "path": "tests/html5/helpers/DataTransferItemList.js"
+      }, 
+      {
         "url": "/tests/html5/helpers/MediaError.js", 
         "path": "tests/html5/helpers/MediaError.js"
+      }, 
+      {
+        "url": "/tests/html5/helpers/MimeType.js", 
+        "path": "tests/html5/helpers/MimeType.js"
+      }, 
+      {
+        "url": "/tests/html5/helpers/MimeTypeArray.js", 
+        "path": "tests/html5/helpers/MimeTypeArray.js"
+      }, 
+      {
+        "url": "/tests/html5/helpers/Plugin.js", 
+        "path": "tests/html5/helpers/Plugin.js"
+      }, 
+      {
+        "url": "/tests/html5/helpers/PluginArray.js", 
+        "path": "tests/html5/helpers/PluginArray.js"
+      }, 
+      {
+        "url": "/tests/html5/helpers/RadioNodeList.js", 
+        "path": "tests/html5/helpers/RadioNodeList.js"
+      }, 
+      {
+        "url": "/tests/html5/helpers/TextTrackCue.js", 
+        "path": "tests/html5/helpers/TextTrackCue.js"
+      }, 
+      {
+        "url": "/tests/html5/helpers/VideoTrack.js", 
+        "path": "tests/html5/helpers/VideoTrack.js"
+      }, 
+      {
+        "url": "/tests/html5/helpers/VideoTrackList.js", 
+        "path": "tests/html5/helpers/VideoTrackList.js"
       }, 
       {
         "url": "/tests/sse/helpers/EventSource.js", 
@@ -1502,5 +1806,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "434f931a2552e310c9a0f1381473eeeb94938b81"
+  "rev": "ed7506ebe917314c3b174043bda7055750dca6ba"
 }
