@@ -62,6 +62,7 @@
         inputData : '',
         document : null,
         output : null,
+        partials: {},
         /* callbacks */
         onFatalException : function(e) {
             util.error(util.inspect(e));
@@ -181,8 +182,23 @@
         }
         var hasHelpers = !!options['helpers'] && (options['helpers'].indexOf(name) >= 0);
         var testContent = buildTest(spec, name, type, def, getInstance, async, hasHelpers);
-        var testFile = path.normalize(path.join(options['testDirectory'], [spec, type, name].join('-') + '.html'));
+        var testFile = path.normalize(path.join(options['testDirectory'], makeTestFileName(def)));
         fs.writeFileSync(testFile, testContent, {encoding: options['outputFileEncoding']});
+    }
+    function makeTestFileName(def, doc) {
+        var sep = '-';
+        var name = def.name;
+        if (def.partial) {
+            var partials = $.partials;
+            var partialIndex;
+            if (name in partials)
+                partialIndex = partials['name'];
+            else
+                partialIndex = 0;
+            partials['name'] = ++partialIndex;
+            name += sep + 'partial' + sep + partialIndex;
+        }
+        return [$.options['spec'], def.type, name].join(sep) + '.html';
     }
     function processImplements(doc) {
     }
