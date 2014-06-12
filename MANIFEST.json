@@ -362,6 +362,78 @@
         "path": "tests/domps/domps-interface-XMLSerializer.html"
       }, 
       {
+        "url": "/tests/ecmascript51/ecmascript51-interface-Array.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-Array.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-Boolean.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-Boolean.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-Date.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-Date.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-ECMA262Globals.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-ECMA262Globals.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-Error.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-Error.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-EvalError.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-EvalError.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-Function.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-Function.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-JSON.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-JSON.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-Math.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-Math.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-Number.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-Number.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-Object.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-Object.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-RangeError.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-RangeError.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-ReferenceError.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-ReferenceError.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-RegExp.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-RegExp.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-String.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-String.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-SyntaxError.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-SyntaxError.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-TypeError.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-TypeError.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-URIError.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-URIError.html"
+      }, 
+      {
         "url": "/tests/file/file-interface-Blob.html", 
         "path": "tests/file/file-interface-Blob.html"
       }, 
@@ -1430,5 +1502,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "09405bb42b5989da48a79da8c6875da2f25ee125"
+  "rev": "434f931a2552e310c9a0f1381473eeeb94938b81"
 }
