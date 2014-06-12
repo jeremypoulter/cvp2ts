@@ -1,0 +1,29 @@
+{
+    "spec": "ecmascript51",
+    "source": "http://www.ecma-international.org/ecma-262/5.1/",
+    "local": "ecmascript51.html",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "definitions of IDL require manual creation",
+    "instances": {
+        "ECMA262Globals": "window",
+        "Object": "window['Object'] && new Object()",
+        "Function": "window['Function'] && new Function()",
+        "Array": "window['Array'] && new Array()",
+        "String": "window['String'] && new String()",
+        "Boolean": "window['Boolean'] && new Boolean(false)",
+        "Number": "window['Number'] && new Number(0)",
+        "Math": "window['Math'] && window.Math",
+        "Date": "window['Date'] && new Date()",
+        "RegExp": "window['RegExp'] && new RegExp('', '')",
+        "Error": "window['Error'] && new Error('')",
+        "EvalError": "window['EvalError'] && new EvalError('')",
+        "RangeError": "window['RangeError'] && new RangeError('')",
+        "ReferenceError": "window['ReferenceError'] && new ReferenceError('')",
+        "SyntaxError": "window['SyntaxError'] && new SyntaxError('')",
+        "TypeError": "window['TypeError'] && new TypeError('')",
+        "URIError": "window['URIError'] && new URIError('')",
+        "JSON": "window['JSON'] && window.JSON"
+    }
+}

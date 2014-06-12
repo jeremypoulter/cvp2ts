@@ -1,0 +1,6709 @@
+[
+  {
+    "type": "interface",
+    "name": "ECMA262Globals",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "NaN",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "Infinity",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "undefined",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "any"
+        },
+        "name": "eval",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "x"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "int"
+        },
+        "name": "parseInt",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "String"
+            },
+            "name": "string"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "int"
+            },
+            "name": "radix"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "parseFloat",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "String"
+            },
+            "name": "string"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "isNaN",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "number"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "isFinite",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "number"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "decodeURI",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "encodedUri"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "decodeURIComponent",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "encodedUri"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "encodeURI",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "uri"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "encodeURIComponent",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "uri"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "NoInterfaceObject",
+        "arguments": null
+      }
+    ]
+  },
+  {
+    "type": "implements",
+    "target": "Window",
+    "implements": "ECMA262Globals",
+    "extAttrs": []
+  },
+  {
+    "type": "interface",
+    "name": "Object",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "prototype",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "getPrototypeOf",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "object"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "getOwnPropertyDescriptor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "object"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "name"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Array"
+        },
+        "name": "getOwnPropertyNames",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "object"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "create",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "object"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "properties"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "defineProperty",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "object"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "name"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "attributes"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "defineProperties",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "object"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "attributes"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "seal",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "object"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "freeze",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "object"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "preventExtensions",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "object"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "isSealed",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "object"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "isFrozen",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "object"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "isExtensible",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "object"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Array"
+        },
+        "name": "keys",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "object"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toString",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toLocaleString",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "valueOf",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "hasOwnProperty",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "value"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "isPrototypeOf",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "value"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "propertyIsEnumerable",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "value"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": null
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "Function",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "prototype",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "int"
+        },
+        "name": "length",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toString",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "any"
+        },
+        "name": "apply",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "this"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Array"
+            },
+            "name": "arguments"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "any"
+        },
+        "name": "call",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "this"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "item1"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "any"
+        },
+        "name": "bind",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "this"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "item1"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "prototype",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "int"
+        },
+        "name": "length",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": null
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "Array",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "prototype",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "isArray",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "x"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toString",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toLocaleString",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Array"
+        },
+        "name": "concat",
+        "arguments": [
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "item1"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "join",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "separator"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Array"
+        },
+        "name": "pop",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Array"
+        },
+        "name": "push",
+        "arguments": [
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "item1"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Array"
+        },
+        "name": "reverse",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "any"
+        },
+        "name": "shift",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Array"
+        },
+        "name": "slice",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "start"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "end"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Array"
+        },
+        "name": "sort",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "comparator"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Array"
+        },
+        "name": "splice",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "start"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "deleteCount"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "item1"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "int"
+        },
+        "name": "unshift",
+        "arguments": [
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "item1"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "int"
+        },
+        "name": "indexOf",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "searchElement"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "int"
+            },
+            "name": "fromIndex"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "int"
+        },
+        "name": "lastIndexOf",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "searchElement"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "int"
+            },
+            "name": "fromIndex"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "every",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "predicator"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "this"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "some",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "predicator"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "this"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "forEach",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "iterator"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "this"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Array"
+        },
+        "name": "map",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "iterator"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "this"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Array"
+        },
+        "name": "filter",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "predicator"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Object"
+            },
+            "name": "this"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "any"
+        },
+        "name": "reduce",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "reductor"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "initial"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "any"
+        },
+        "name": "reduceRight",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "reductor"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "initial"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "int"
+        },
+        "name": "length",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": null
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "String",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "prototype",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "fromCharCode",
+        "arguments": [
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "char1"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toString",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "valueOf",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "charAt",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "position"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "charCodeAt",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "position"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "concat",
+        "arguments": [
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "string1"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "int"
+        },
+        "name": "indexOf",
+        "arguments": [
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "searchString"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "position"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "int"
+        },
+        "name": "lastIndexOf",
+        "arguments": [
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "searchString"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "position"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "localeCompare",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "that"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Array"
+        },
+        "name": "match",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "RegExp"
+            },
+            "name": "pattern"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "replace",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "pattern"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "replacement"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "search",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "RegExp"
+            },
+            "name": "pattern"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "slice",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "start"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "end"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Array"
+        },
+        "name": "split",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "separator"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "limit"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "substring",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "start"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "end"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toLowerCase",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toLocaleLowerCase",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toUpperCase",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toLocaleUpperCase",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "trim",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "int"
+        },
+        "name": "length",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": null
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "Boolean",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "prototype",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toString",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Boolean"
+        },
+        "name": "valueOf",
+        "arguments": [],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "value"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "Number",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "prototype",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "MAX_VALUE",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "MIN_VALUE",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "NaN",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "NEGATIVE_INFINITY",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "POSITIVE_INFINITY",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toString",
+        "arguments": [
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "radix"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toLocaleString",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "valueOf",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toFixed",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "fractionDigits"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toExponential",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "fractionDigits"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toPrecision",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "precision"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "value"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "Math",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "E",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "LN10",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "LN2",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "LOG2E",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "LOG10E",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "PI",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "SQRT1_2",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "SQRT2",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "abs",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "x"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "acos",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "x"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "asin",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "x"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "atan",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "x"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "atan2",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "x"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "y"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "ceil",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "x"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "cos",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "x"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "exp",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "x"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "floor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "x"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "log",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "x"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "max",
+        "arguments": [
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "value1"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "min",
+        "arguments": [
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "value1"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "pow",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "x"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "y"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "random",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "round",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "x"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "sin",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "x"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "sqrt",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "x"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "tan",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Number"
+            },
+            "name": "x"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "NoInterfaceObject",
+        "arguments": null
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "Date",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "prototype",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "parse",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "string"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "UTC",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "year"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "month"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "date"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "hour"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "minute"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "second"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "ms"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "now",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toString",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toDateString",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toTimeString",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toLocaleString",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toLocaleDateString",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toLocaleTimeString",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "valueOf",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getTime",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getFullYear",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getUTCFullYear",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getMonth",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getUTCMonth",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getDate",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getUTCDate",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getDay",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getUTCDay",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getHours",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getUTCHours",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getMinutes",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getUTCMinutes",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getSeconds",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getUTCSeconds",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getMilliseconds",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getUTCMilliseconds",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "getTimezoneOffset",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "setTime",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "time"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "setMilliseconds",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "ms"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "setUTCMilliseconds",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "ms"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "setSeconds",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "seconds"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "ms"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "setUTCSeconds",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "seconds"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "ms"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "setMinutes",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "minutes"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "seconds"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "ms"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "setUTCMinutes",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "minutes"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "seconds"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "ms"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "setHours",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "hours"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "minutes"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "seconds"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "ms"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "setUTCHours",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "hours"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "minutes"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "seconds"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "ms"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "setDate",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "date"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "setUTCDate",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "date"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "setMonth",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "month"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "date"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "setUTCMonth",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "month"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "date"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "setFullYear",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "year"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "month"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "date"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "setUTCFullYear",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "year"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "month"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "date"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toUTCString",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toISOString",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toJSON",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "key"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": null
+      },
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "value"
+          }
+        ]
+      },
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "year"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "month"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "date"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "hour"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "minute"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "second"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "ms"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "RegExp",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "prototype",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "source",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Boolean"
+        },
+        "name": "global",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Boolean"
+        },
+        "name": "ignoreCase",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Boolean"
+        },
+        "name": "multiline",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Number"
+        },
+        "name": "lastIndex",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Array"
+        },
+        "name": "exec",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "string"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "test",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "string"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toString",
+        "arguments": [],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "pattern"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "flags"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "Error",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "prototype",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "name",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "message",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toString",
+        "arguments": [],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "message"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "EvalError",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "prototype",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "name",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "message",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toString",
+        "arguments": [],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "message"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "RangeError",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "prototype",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "name",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "message",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toString",
+        "arguments": [],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "message"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "ReferenceError",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "prototype",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "name",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "message",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toString",
+        "arguments": [],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "message"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "SyntaxError",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "prototype",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "name",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "message",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toString",
+        "arguments": [],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "message"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "TypeError",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "prototype",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "name",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "message",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toString",
+        "arguments": [],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "message"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "URIError",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": true,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "prototype",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "name",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "message",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "toString",
+        "arguments": [],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "message"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "JSON",
+    "partial": false,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Object"
+        },
+        "name": "parse",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "text"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "Function"
+            },
+            "name": "reviver"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "String"
+        },
+        "name": "stringify",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "value"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "replacer"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "space"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "NoInterfaceObject",
+        "arguments": null
+      }
+    ]
+  }
+]
