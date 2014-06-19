@@ -26,7 +26,7 @@
 
 
 [Constructor(sequence<(Blob or DOMString or ArrayBufferView or ArrayBuffer)> fileBits, 
-             [EnsureUTF16] DOMString fileName, optional FilePropertyBag options), Exposed=Window,Worker]
+[EnsureUTF16] DOMString fileName, optional FilePropertyBag options), Exposed=Window,Worker]
 interface File : Blob {
 
   readonly attribute DOMString name;
@@ -51,7 +51,7 @@ dictionary FilePropertyBag {
 
 
 
-    [Constructor, Exposed=Window,Worker]
+	[Constructor, Exposed=Window,Worker]
 	interface FileReader: EventTarget {
 
 	  // async read methods
@@ -87,7 +87,7 @@ dictionary FilePropertyBag {
 
 
 
-    [Constructor, Exposed=Worker]
+	[Constructor, Exposed=Worker]
 	interface FileReaderSync {
 
 	  // Synchronously return strings

@@ -2,8 +2,6 @@
     "spec": "file",
     "source": "http://dev.w3.org/2006/webapi/FileAPI/",
     "local": "file.html",
-    "dontFetch": true,
-    "dontExtract": true,
     "helpers": [
         "Blob",
         "File",
