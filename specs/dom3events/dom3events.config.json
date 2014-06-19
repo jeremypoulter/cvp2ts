@@ -3,6 +3,7 @@
     "source": "https://dvcs.w3.org/hg/dom3events/raw-file/tip/html/DOM3-Events.html",
     "local": "dom3events.html",
     "dontFetch": true,
+    "dontFetchReason": "requires manual respec snapshot",
     "instances": {
         "CompositionEvent": "document.createEvent('CompositionEvent')",
         "CustomEvent": "document.createEvent('CustomEvent')",

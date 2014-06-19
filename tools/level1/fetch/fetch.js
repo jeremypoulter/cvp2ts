@@ -134,13 +134,14 @@
                 }
                 $.lastModifiedCurrent = lastModifiedCurrent;
             }
+            var spec = $.options['spec'];
             if (fetchRequired) {
                 if ($.options['verbose'])
-                    console.warn('[I]: ' + 'Fetching spec from ' + url.format($.url) + ' ...');
+                    console.warn('[I]: ' + 'Fetching spec ' + spec + ' from ' + url.format($.url) + ' ...');
                 setTimeout(function() { $.onFetch('GET'); }, 0);
             } else {
                 if ($.options['verbose'])
-                    console.warn('[I]: ' + 'Fetching spec ' + $.options['spec'] + ' not required, last modified on ' + new Date($.lastModifiedCurrent).toUTCString() + '.');
+                    console.warn('[I]: ' + 'Fetching spec ' + spec + ' skipped: cached copy available, last modified on ' + new Date($.lastModifiedCurrent).toUTCString() + '.');
                 setTimeout(function() { $.onOutputLastModifiedDone(); }, 0);
             }
         },
@@ -237,8 +238,14 @@
             try {
                 var options = commonOptions.readOptions(argv, defaultOptions(), $);
                 if (!!options['dontFetch']) {
-                    if (options['verbose'])
-                        console.warn('[I]: ' + 'Skipping spec ' + options['spec'] + ' fetch' + (!!options['dontFetchReason'] ? ': ' + options['dontFetchReason'] : '') + '.');
+                    if (options['verbose']) {
+                        var reason;
+                        if (!!options['dontFetchReason'])
+                            reason = options['dontFetchReason'];
+                        else if (!!options['dontExtract'])
+                            reason = "manual extraction required";
+                        console.warn('[I]: ' + 'Skipping spec ' + options['spec'] + ' fetch' + (!!reason ? ': ' + reason : '') + '.');
+                    }
                     return;
                 }
                 var input;

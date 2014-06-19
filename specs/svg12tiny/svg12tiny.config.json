@@ -3,7 +3,7 @@
     "source": "http://www.w3.org/TR/2008/REC-SVGTiny12-20081222/single-page.html",
     "local": "svg12tiny.html",
     "dontFetch": true,
-    "dontFetchReason": "specification is final (REC)",
+    "dontFetchReason": "specification is final",
     "dontExtract": true,
     "dontExtractReason": "definitions of IDL require manual editing, about which see comment in IDL file",
     "helpers": [

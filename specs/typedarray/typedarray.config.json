@@ -3,7 +3,6 @@
     "source": "https://www.khronos.org/registry/typedarray/specs/latest/",
     "local": "typedarray.html",
     "dontFetch": true,
-    "dontFetchReason": "extracted IDL has been edited",
     "dontExtract": true,
     "dontExtractReason": "definitions of IDL require manual editing, about which see comment in IDL file",
     "instances": {

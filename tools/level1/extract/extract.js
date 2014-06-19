@@ -124,8 +124,14 @@
             try {
                 var options = commonOptions.readOptions(argv, defaultOptions(), $);
                 if (!!options['dontExtract']) {
-                    if (options['verbose'])
-                        console.warn('[I]: ' + 'Skipping spec ' + options['spec'] + ' extraction' + (!!options['dontExtractReason'] ? ': ' + options['dontExtractReason'] : '') + '.');
+                    if (options['verbose']) {
+                        var reason;
+                        if (!!options['dontExtractReason'])
+                            reason = options['dontExtractReason'];
+                        else
+                            reason = "manual extraction required";
+                        console.warn('[I]: ' + 'Skipping spec ' + options['spec'] + ' extraction: ' + reason + '.');
+                    }
                     return;
                 }
                 var input;

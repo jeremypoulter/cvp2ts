@@ -3,6 +3,7 @@
     "source": "https://dvcs.w3.org/hg/innerhtml/raw-file/tip/index.html",
     "local": "domps.html",
     "dontFetch": true,
+    "dontFetchReason": "requires manual respec snapshot",
     "instances": {
         "DOMParser": "!!window['DOMParser'] && new DOMParser()",
         "XMLSerializer": "!!window['XMLSerializer'] && new XMLSerializer()",

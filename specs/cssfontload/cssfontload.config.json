@@ -4,6 +4,7 @@
     "local": "cssfontload.html",
     "dontFetch": true,
     "dontExtract": true,
+    "dontExtractReason": "extracted IDL edited to abstract use of promises",
     "instances": {
         "FontFace": "undefined",
         "CSSFontFaceLoadEvent": "document.createEvent('CSSFontFaceLoadEvent')",
