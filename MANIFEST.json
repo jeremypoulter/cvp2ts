@@ -398,6 +398,10 @@
         "path": "tests/dom4/dom4-interface-Node.html"
       }, 
       {
+        "url": "/tests/dom4/dom4-interface-NodeFilter.html", 
+        "path": "tests/dom4/dom4-interface-NodeFilter.html"
+      }, 
+      {
         "url": "/tests/dom4/dom4-interface-NodeIterator.html", 
         "path": "tests/dom4/dom4-interface-NodeIterator.html"
       }, 
@@ -1994,5 +1998,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "eaa507859ec473be267ef078fefaa816ed406fdf"
+  "rev": "c728d626dac2b4be41dcc2992dc45be27601daa4"
 }
