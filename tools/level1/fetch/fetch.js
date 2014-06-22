@@ -141,7 +141,7 @@
                 setTimeout(function() { $.onFetch('GET'); }, 0);
             } else {
                 if ($.options['verbose'])
-                    console.warn('[I]: ' + 'Fetching spec ' + spec + ' skipped: cached copy available, last modified on ' + new Date($.lastModifiedCurrent).toUTCString() + '.');
+                    console.warn('[I]: ' + 'Skipping spec ' + spec + ': cached copy available, last modified on ' + new Date($.lastModifiedCurrent).toUTCString() + '.');
                 setTimeout(function() { $.onOutputLastModifiedDone(); }, 0);
             }
         },
