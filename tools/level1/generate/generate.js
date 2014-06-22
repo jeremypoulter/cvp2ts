@@ -85,7 +85,7 @@
             try {
                 var doc = $.document;
                 if (!!doc) {
-                    processCallbacks(doc);
+                    processCallbackInterfaces(doc);
                     processDictionaries(doc);
                     processExceptions(doc);
                     processInterfaces(doc);
@@ -151,9 +151,19 @@
     function defaultOptions() {
         return defaults;
     }
-    function processCallbacks(doc) {
+    function processCallbackInterfaces(doc) {
+        _(doc).filter(function (def) {
+            return def.type == 'callback interface' && hasConstantMember(def);
+        }).forEach(function (def) {
+            processCallbackInterface(def, doc);
+        });
     }
     function processDictionaries(doc) {
+        _(doc).filter(function (def) {
+            return def.type == 'dictionary' && hasExtendedAttribute(def, 'Constructor');
+        }).forEach(function (def) {
+            processDictionary(def, doc);
+        });
     }
     function processExceptions(doc) {
         _(doc).filter(function (def) {
@@ -175,6 +185,12 @@
         }).forEach(function (def) {
             processImplementsInterface(def, doc);
         });
+    }
+    function processCallbackInterface(def, doc) {
+        processInterface(def, doc);
+    }
+    function processDictionary(def, doc) {
+        console.warn('[W]: ' + 'Dictionary with constructor ' + def.name + ' NOT YET TESTED!');
     }
     function processImplementsInterface(def, doc) {
         var options = $.options;
@@ -212,7 +228,7 @@
     }
     function findInterface(doc, name) {
         return _(doc).filter(function (def) {
-            return def.type == 'interface' && def.name == name;
+            return (def.type == 'interface' || def.type == 'callback interface') && def.name == name;
         }).pop();
     }
     function getTestPreamble() {
@@ -287,6 +303,24 @@
             fs.writeFileSync(testFile, testContent, {encoding: options['outputFileEncoding']});
         }
     }
+    function hasExtendedAttribute(def, attr) {
+        var eas = def.extAttrs || [];
+        for (var i in eas) {
+            var ea = eas[i];
+            if (ea.name == attr)
+                return true;
+        }
+        return false;
+    }
+    function hasConstantMember(def) {
+        var members = def.members;
+        for (var i in members) {
+            var member = members[i];
+            if (member.type == 'const')
+                return true;
+        }
+        return false;
+    }
     function getHelper(name) {
         var helpers = $.options.helpers;
         if (!!helpers) {
@@ -299,7 +333,9 @@
     }
     function makeTestFileName(def, doc) {
         var sep = '-';
-        if (def.type == 'exception')
+        if (def.type == 'callback interface')
+            return makeCallbackInterfaceTestFileName(def, doc, sep);
+        else if (def.type == 'exception')
             return makeExceptionTestFileName(def, doc, sep);
         else if (def.type == 'implements')
             return makeImplementsTestFileName(def, doc, sep);
@@ -307,6 +343,9 @@
             return makeInterfaceTestFileName(def, doc, sep);
         else
             return null;
+    }
+    function makeCallbackInterfaceTestFileName(def, doc, sep) {
+        return makeInterfaceTestFileName(def, doc, sep);
     }
     function makeExceptionTestFileName(def, doc, sep) {
         return makeInterfaceTestFileName(def, doc, sep);
@@ -326,7 +365,10 @@
             partials['name'] = ++partialIndex;
             name += sep + 'partial' + sep + partialIndex;
         }
-        return [$.options['spec'], def.type, name].join(sep) + '.html';
+        var type = def.type;
+        if (type == 'callback interface')
+            type = 'interface';
+        return [$.options['spec'], type, name].join(sep) + '.html';
     }
     function buildInterfaceTest(spec, defs, getInstance, async, helper) {
         assert.ok(util.isArray(defs) && (defs.length > 0));
@@ -340,13 +382,15 @@
         var entryName = async ? 'level1Async' : 'level1';
         var instanceGetter;
         if (!!getInstance) {
-            if (getInstance != 'undefined') {
-                instanceGetter = "function(test){return " + getInstance + ";}";
-            } else {
+            if (getInstance == 'undefined') {
                 if ($.options['warnOnUndefinedInstanceGetter']) {
                     console.warn('[W]: ' + 'Undefined instance getter for ' + def.name + '.');
                 }
                 instanceGetter = "undefined";
+            } else if (getInstance == 'null') {
+                instanceGetter = "null";
+            } else {
+                instanceGetter = "function(test){return " + getInstance + ";}";
             }
         } else {
             instanceGetter = "undefined";
@@ -364,6 +408,8 @@
                 var w = words[i];
                 var first = String.fromCharCode(w.charCodeAt(0));
                 var remainder = w.substring(1);
+                if (sNew.length > 0)
+                    sNew += ' ';
                 sNew += first.toUpperCase() + remainder;
             }
             return sNew;

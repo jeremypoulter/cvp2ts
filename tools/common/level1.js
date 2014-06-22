@@ -35,7 +35,9 @@
     function testDefinitions(spec, defs, getInstance, async) {
         var def = !!defs && !Array.isArray(defs) ? defs : ((defs.length > 0) ? defs[0] : null);
         if (!!def) {
-            if (def.type == 'exception')
+            if (def.type == 'callback interface')
+                testInterface(spec, def, getInstance, async);
+            else if (def.type == 'exception')
                 testException(spec, def, getInstance, async);
             else if (def.type == 'implements')
                 testImplements(spec, findInterface(defs, def.implements), getInstance, async, def.target);
@@ -73,8 +75,13 @@
                 testStaticMembers(global[defName], defProperties);
             }, defProperties.expandedName + '-has-statics', {def: defProperties});
         }
+        if (hasConstantMember(def)) {
+            test(function() {
+                testInterfaceConstantMembers(global[defName], defProperties);
+            }, defProperties.expandedName + '-has-constants', {def: defProperties});
+        }
         if (!!getInstance && ((getInstance != 'undefined') && (getInstance != 'null'))) {
-            if (typeof getInstance === 'function') {
+            if (typeof getInstance == 'function') {
                 if (!async) {
                     test(function() {
                         testInstance(getInstance(), defProperties);
@@ -89,7 +96,7 @@
             return null;
         for (var i in defs) {
             var def = defs[i];
-            if ((def.type == 'interface') && ('name' in def) && (def.name == name))
+            if ((def.type == 'interface' || def.type == 'callback interface') && ('name' in def) && (def.name == name))
                 return def;
         }
         return null;
@@ -104,7 +111,7 @@
         var eas = def.extAttrs || [];
         for (var i in eas) {
             var ea = eas[i];
-            if (ea.name === attr)
+            if (ea.name == attr)
                 return true;
         }
         return false;
@@ -120,7 +127,7 @@
     function testStaticMembers(interfaceInstance, defProperties) {
         test(function() {
             assert_true(!!interfaceInstance, 'Is ' + defProperties.name + ' interface present?');
-        }, defProperties.expandedName + '-interface-present');
+        }, defProperties.expandedName + '-interface-present-for-statics');
         if (!interfaceInstance)
             return;
         for (var i in defProperties.idl.members) {
@@ -140,6 +147,42 @@
                     test(function() {
                         assert_true(memberName in interfaceInstance, 'Does ' + defProperties.name + ' interface have static ' + memberName + ' operation?');
                     }, defProperties.expandedName + '-interface-has-static-' + memberName + '-operation');
+                }
+            }
+        }
+    }
+    function hasConstantMember(def) {
+        for (var i in def.members) {
+            var member = def.members[i];
+            if (member.type == 'const')
+                return true;
+        }
+        return false;
+    }
+    function testInterfaceConstantMembers(interfaceInstance, defProperties) {
+        test(function() {
+            assert_true(!!interfaceInstance, 'Is ' + defProperties.name + ' interface present?');
+        }, defProperties.expandedName + '-interface-present-for-constants');
+        if (!interfaceInstance)
+            return;
+        for (var i in defProperties.idl.members) {
+            var member = defProperties.idl.members[i];
+            if (member.type != 'const')
+                continue;
+            var memberName = member.name;
+            if (!memberName)
+                continue;
+            test(function() {
+                assert_true(memberName in interfaceInstance, 'Does ' + defProperties.name + ' interface have ' + memberName + ' constant?');
+            }, defProperties.expandedName + '-interface-has-' + memberName + '-constant');
+            if (memberName in interfaceInstance) {
+                var value = member.value;
+                if (!!member.value) {
+                    if (value.type == 'number') {
+                        test(function() {
+                            assert_equals(interfaceInstance[memberName], value.value, 'Does ' + memberName + ' interface constant have value ' + value.value + '?');
+                        }, defProperties.expandedName + '-interface-' + memberName + '-constant-has-value-' + value.value);
+                    }
                 }
             }
         }

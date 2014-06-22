@@ -27,6 +27,7 @@
         "HTMLCollection": "document.body.children",
         "MutationObserver": "!!window['MutationObserver'] && new MutationObserver(function(mutations, observer){})",
         "Node": "document",
+        "NodeFilter": "null",
         "NodeIterator": "document.createNodeIterator(document.documentElement, NodeFilter.SHOW_ALL, null, false)",
         "NodeList": "document.body.childNodes",
         "NonDocumentTypeChildNode": "document.createTextNode('text')",
