@@ -2,12 +2,20 @@
   "items": {
     "testharness": [
       {
+        "url": "/tests/canvas2d/canvas2d-interface-CanvasDrawingStyles-implemented-by-CanvasRenderingContext2D.html", 
+        "path": "tests/canvas2d/canvas2d-interface-CanvasDrawingStyles-implemented-by-CanvasRenderingContext2D.html"
+      }, 
+      {
         "url": "/tests/canvas2d/canvas2d-interface-CanvasDrawingStyles.html", 
         "path": "tests/canvas2d/canvas2d-interface-CanvasDrawingStyles.html"
       }, 
       {
         "url": "/tests/canvas2d/canvas2d-interface-CanvasGradient.html", 
         "path": "tests/canvas2d/canvas2d-interface-CanvasGradient.html"
+      }, 
+      {
+        "url": "/tests/canvas2d/canvas2d-interface-CanvasPathMethods-implemented-by-CanvasRenderingContext2D.html", 
+        "path": "tests/canvas2d/canvas2d-interface-CanvasPathMethods-implemented-by-CanvasRenderingContext2D.html"
       }, 
       {
         "url": "/tests/canvas2d/canvas2d-interface-CanvasPathMethods.html", 
@@ -44,6 +52,14 @@
       {
         "url": "/tests/cssfontload/cssfontload-interface-FontFaceSet.html", 
         "path": "tests/cssfontload/cssfontload-interface-FontFaceSet.html"
+      }, 
+      {
+        "url": "/tests/cssfontload/cssfontload-interface-FontFaceSource-implemented-by-Document.html", 
+        "path": "tests/cssfontload/cssfontload-interface-FontFaceSource-implemented-by-Document.html"
+      }, 
+      {
+        "url": "/tests/cssfontload/cssfontload-interface-FontFaceSource-implemented-by-WorkerGlobalScope.html", 
+        "path": "tests/cssfontload/cssfontload-interface-FontFaceSource-implemented-by-WorkerGlobalScope.html"
       }, 
       {
         "url": "/tests/cssfontload/cssfontload-interface-FontFaceSource.html", 
@@ -110,12 +126,32 @@
         "path": "tests/cssom/cssom-interface-Element-partial-1.html"
       }, 
       {
+        "url": "/tests/cssom/cssom-interface-ElementCSSInlineStyle-implemented-by-HTMLElement.html", 
+        "path": "tests/cssom/cssom-interface-ElementCSSInlineStyle-implemented-by-HTMLElement.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-ElementCSSInlineStyle-implemented-by-SVGElement.html", 
+        "path": "tests/cssom/cssom-interface-ElementCSSInlineStyle-implemented-by-SVGElement.html"
+      }, 
+      {
         "url": "/tests/cssom/cssom-interface-ElementCSSInlineStyle.html", 
         "path": "tests/cssom/cssom-interface-ElementCSSInlineStyle.html"
       }, 
       {
+        "url": "/tests/cssom/cssom-interface-GetStyleUtils-implemented-by-Element.html", 
+        "path": "tests/cssom/cssom-interface-GetStyleUtils-implemented-by-Element.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-GetStyleUtils-implemented-by-PseudoElement.html", 
+        "path": "tests/cssom/cssom-interface-GetStyleUtils-implemented-by-PseudoElement.html"
+      }, 
+      {
         "url": "/tests/cssom/cssom-interface-GetStyleUtils.html", 
         "path": "tests/cssom/cssom-interface-GetStyleUtils.html"
+      }, 
+      {
+        "url": "/tests/cssom/cssom-interface-LinkStyle-implemented-by-ProcessingInstruction.html", 
+        "path": "tests/cssom/cssom-interface-LinkStyle-implemented-by-ProcessingInstruction.html"
       }, 
       {
         "url": "/tests/cssom/cssom-interface-LinkStyle.html", 
@@ -152,6 +188,22 @@
       {
         "url": "/tests/cssomview/cssomview-interface-Element-partial-1.html", 
         "path": "tests/cssomview/cssomview-interface-Element-partial-1.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-GeometryUtils-implemented-by-Document.html", 
+        "path": "tests/cssomview/cssomview-interface-GeometryUtils-implemented-by-Document.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-GeometryUtils-implemented-by-Element.html", 
+        "path": "tests/cssomview/cssomview-interface-GeometryUtils-implemented-by-Element.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-GeometryUtils-implemented-by-PseudoElement.html", 
+        "path": "tests/cssomview/cssomview-interface-GeometryUtils-implemented-by-PseudoElement.html"
+      }, 
+      {
+        "url": "/tests/cssomview/cssomview-interface-GeometryUtils-implemented-by-Text.html", 
+        "path": "tests/cssomview/cssomview-interface-GeometryUtils-implemented-by-Text.html"
       }, 
       {
         "url": "/tests/cssomview/cssomview-interface-GeometryUtils.html", 
@@ -266,6 +318,18 @@
         "path": "tests/dom4/dom4-interface-CharacterData.html"
       }, 
       {
+        "url": "/tests/dom4/dom4-interface-ChildNode-implemented-by-CharacterData.html", 
+        "path": "tests/dom4/dom4-interface-ChildNode-implemented-by-CharacterData.html"
+      }, 
+      {
+        "url": "/tests/dom4/dom4-interface-ChildNode-implemented-by-DocumentType.html", 
+        "path": "tests/dom4/dom4-interface-ChildNode-implemented-by-DocumentType.html"
+      }, 
+      {
+        "url": "/tests/dom4/dom4-interface-ChildNode-implemented-by-Element.html", 
+        "path": "tests/dom4/dom4-interface-ChildNode-implemented-by-Element.html"
+      }, 
+      {
         "url": "/tests/dom4/dom4-interface-ChildNode.html", 
         "path": "tests/dom4/dom4-interface-ChildNode.html"
       }, 
@@ -342,12 +406,40 @@
         "path": "tests/dom4/dom4-interface-NodeList.html"
       }, 
       {
+        "url": "/tests/dom4/dom4-interface-NonDocumentTypeChildNode-implemented-by-CharacterData.html", 
+        "path": "tests/dom4/dom4-interface-NonDocumentTypeChildNode-implemented-by-CharacterData.html"
+      }, 
+      {
+        "url": "/tests/dom4/dom4-interface-NonDocumentTypeChildNode-implemented-by-Element.html", 
+        "path": "tests/dom4/dom4-interface-NonDocumentTypeChildNode-implemented-by-Element.html"
+      }, 
+      {
         "url": "/tests/dom4/dom4-interface-NonDocumentTypeChildNode.html", 
         "path": "tests/dom4/dom4-interface-NonDocumentTypeChildNode.html"
       }, 
       {
+        "url": "/tests/dom4/dom4-interface-NonElementParentNode-implemented-by-Document.html", 
+        "path": "tests/dom4/dom4-interface-NonElementParentNode-implemented-by-Document.html"
+      }, 
+      {
+        "url": "/tests/dom4/dom4-interface-NonElementParentNode-implemented-by-DocumentFragment.html", 
+        "path": "tests/dom4/dom4-interface-NonElementParentNode-implemented-by-DocumentFragment.html"
+      }, 
+      {
         "url": "/tests/dom4/dom4-interface-NonElementParentNode.html", 
         "path": "tests/dom4/dom4-interface-NonElementParentNode.html"
+      }, 
+      {
+        "url": "/tests/dom4/dom4-interface-ParentNode-implemented-by-Document.html", 
+        "path": "tests/dom4/dom4-interface-ParentNode-implemented-by-Document.html"
+      }, 
+      {
+        "url": "/tests/dom4/dom4-interface-ParentNode-implemented-by-DocumentFragment.html", 
+        "path": "tests/dom4/dom4-interface-ParentNode-implemented-by-DocumentFragment.html"
+      }, 
+      {
+        "url": "/tests/dom4/dom4-interface-ParentNode-implemented-by-Element.html", 
+        "path": "tests/dom4/dom4-interface-ParentNode-implemented-by-Element.html"
       }, 
       {
         "url": "/tests/dom4/dom4-interface-ParentNode.html", 
@@ -400,6 +492,10 @@
       {
         "url": "/tests/ecmascript51/ecmascript51-interface-Date.html", 
         "path": "tests/ecmascript51/ecmascript51-interface-Date.html"
+      }, 
+      {
+        "url": "/tests/ecmascript51/ecmascript51-interface-ECMA262Globals-implemented-by-Window.html", 
+        "path": "tests/ecmascript51/ecmascript51-interface-ECMA262Globals-implemented-by-Window.html"
       }, 
       {
         "url": "/tests/ecmascript51/ecmascript51-interface-ECMA262Globals.html", 
@@ -548,6 +644,18 @@
       {
         "url": "/tests/html5/html5-interface-External.html", 
         "path": "tests/html5/html5-interface-External.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-GlobalEventHandlers-implemented-by-Document.html", 
+        "path": "tests/html5/html5-interface-GlobalEventHandlers-implemented-by-Document.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-GlobalEventHandlers-implemented-by-HTMLElement.html", 
+        "path": "tests/html5/html5-interface-GlobalEventHandlers-implemented-by-HTMLElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-GlobalEventHandlers-implemented-by-Window.html", 
+        "path": "tests/html5/html5-interface-GlobalEventHandlers-implemented-by-Window.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-GlobalEventHandlers.html", 
@@ -1002,24 +1110,48 @@
         "path": "tests/html5/html5-interface-Navigator.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-NavigatorContentUtils-implemented-by-Navigator.html", 
+        "path": "tests/html5/html5-interface-NavigatorContentUtils-implemented-by-Navigator.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-NavigatorContentUtils.html", 
         "path": "tests/html5/html5-interface-NavigatorContentUtils.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-NavigatorID-implemented-by-Navigator.html", 
+        "path": "tests/html5/html5-interface-NavigatorID-implemented-by-Navigator.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-NavigatorID.html", 
         "path": "tests/html5/html5-interface-NavigatorID.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-NavigatorLanguage-implemented-by-Navigator.html", 
+        "path": "tests/html5/html5-interface-NavigatorLanguage-implemented-by-Navigator.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-NavigatorLanguage.html", 
         "path": "tests/html5/html5-interface-NavigatorLanguage.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-NavigatorOnLine-implemented-by-Navigator.html", 
+        "path": "tests/html5/html5-interface-NavigatorOnLine-implemented-by-Navigator.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-NavigatorOnLine.html", 
         "path": "tests/html5/html5-interface-NavigatorOnLine.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-NavigatorPlugins-implemented-by-Navigator.html", 
+        "path": "tests/html5/html5-interface-NavigatorPlugins-implemented-by-Navigator.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-NavigatorPlugins.html", 
         "path": "tests/html5/html5-interface-NavigatorPlugins.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-NavigatorStorageUtils-implemented-by-Navigator.html", 
+        "path": "tests/html5/html5-interface-NavigatorStorageUtils-implemented-by-Navigator.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-NavigatorStorageUtils.html", 
@@ -1070,6 +1202,14 @@
         "path": "tests/html5/html5-interface-TrackEvent.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-Transferable-implemented-by-ArrayBuffer.html", 
+        "path": "tests/html5/html5-interface-Transferable-implemented-by-ArrayBuffer.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-Transferable-implemented-by-MessagePort.html", 
+        "path": "tests/html5/html5-interface-Transferable-implemented-by-MessagePort.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-Transferable.html", 
         "path": "tests/html5/html5-interface-Transferable.html"
       }, 
@@ -1094,12 +1234,32 @@
         "path": "tests/html5/html5-interface-Window.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-WindowBase64-implemented-by-Window.html", 
+        "path": "tests/html5/html5-interface-WindowBase64-implemented-by-Window.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-WindowBase64.html", 
         "path": "tests/html5/html5-interface-WindowBase64.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-WindowEventHandlers-implemented-by-HTMLBodyElement.html", 
+        "path": "tests/html5/html5-interface-WindowEventHandlers-implemented-by-HTMLBodyElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-WindowEventHandlers-implemented-by-HTMLFrameSetElement.html", 
+        "path": "tests/html5/html5-interface-WindowEventHandlers-implemented-by-HTMLFrameSetElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-WindowEventHandlers-implemented-by-Window.html", 
+        "path": "tests/html5/html5-interface-WindowEventHandlers-implemented-by-Window.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-WindowEventHandlers.html", 
         "path": "tests/html5/html5-interface-WindowEventHandlers.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-WindowTimers-implemented-by-Window.html", 
+        "path": "tests/html5/html5-interface-WindowTimers-implemented-by-Window.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-WindowTimers.html", 
@@ -1122,6 +1282,18 @@
         "path": "tests/sse/sse-interface-EventSource.html"
       }, 
       {
+        "url": "/tests/svg12tiny/svg12tiny-exception-DOMException.html", 
+        "path": "tests/svg12tiny/svg12tiny-exception-DOMException.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-exception-SVGException.html", 
+        "path": "tests/svg12tiny/svg12tiny-exception-SVGException.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-AbstractView-implemented-by-Window.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-AbstractView-implemented-by-Window.html"
+      }, 
+      {
         "url": "/tests/svg12tiny/svg12tiny-interface-AbstractView.html", 
         "path": "tests/svg12tiny/svg12tiny-interface-AbstractView.html"
       }, 
@@ -1134,6 +1306,10 @@
         "path": "tests/svg12tiny/svg12tiny-interface-Document.html"
       }, 
       {
+        "url": "/tests/svg12tiny/svg12tiny-interface-DocumentView-implemented-by-Document.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-DocumentView-implemented-by-Document.html"
+      }, 
+      {
         "url": "/tests/svg12tiny/svg12tiny-interface-DocumentView.html", 
         "path": "tests/svg12tiny/svg12tiny-interface-DocumentView.html"
       }, 
@@ -1142,8 +1318,16 @@
         "path": "tests/svg12tiny/svg12tiny-interface-Element.html"
       }, 
       {
+        "url": "/tests/svg12tiny/svg12tiny-interface-ElementTimeControl-implemented-by-SVGTimedElement.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-ElementTimeControl-implemented-by-SVGTimedElement.html"
+      }, 
+      {
         "url": "/tests/svg12tiny/svg12tiny-interface-ElementTimeControl.html", 
         "path": "tests/svg12tiny/svg12tiny-interface-ElementTimeControl.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-ElementTraversal-implemented-by-Element.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-ElementTraversal-implemented-by-Element.html"
       }, 
       {
         "url": "/tests/svg12tiny/svg12tiny-interface-ElementTraversal.html", 
@@ -1152,6 +1336,14 @@
       {
         "url": "/tests/svg12tiny/svg12tiny-interface-Event.html", 
         "path": "tests/svg12tiny/svg12tiny-interface-Event.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-EventTarget-implemented-by-SVGDocument.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-EventTarget-implemented-by-SVGDocument.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-EventTarget-implemented-by-SVGElement.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-EventTarget-implemented-by-SVGElement.html"
       }, 
       {
         "url": "/tests/svg12tiny/svg12tiny-interface-EventTarget.html", 
@@ -1198,8 +1390,16 @@
         "path": "tests/svg12tiny/svg12tiny-interface-SVGElementInstance.html"
       }, 
       {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGGlobal-implemented-by-Window.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGGlobal-implemented-by-Window.html"
+      }, 
+      {
         "url": "/tests/svg12tiny/svg12tiny-interface-SVGGlobal.html", 
         "path": "tests/svg12tiny/svg12tiny-interface-SVGGlobal.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGLocatable-implemented-by-SVGLocatableElement.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGLocatable-implemented-by-SVGLocatableElement.html"
       }, 
       {
         "url": "/tests/svg12tiny/svg12tiny-interface-SVGLocatable.html", 
@@ -1234,6 +1434,14 @@
         "path": "tests/svg12tiny/svg12tiny-interface-SVGSVGElement.html"
       }, 
       {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGTimedElement-implemented-by-SVGSVGElement.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGTimedElement-implemented-by-SVGSVGElement.html"
+      }, 
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGTimedElement-implemented-by-SVGVisualMediaElement.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGTimedElement-implemented-by-SVGVisualMediaElement.html"
+      }, 
+      {
         "url": "/tests/svg12tiny/svg12tiny-interface-SVGTimedElement.html", 
         "path": "tests/svg12tiny/svg12tiny-interface-SVGTimedElement.html"
       }, 
@@ -1258,6 +1466,10 @@
         "path": "tests/svg12tiny/svg12tiny-interface-TimeEvent.html"
       }, 
       {
+        "url": "/tests/svg12tiny/svg12tiny-interface-TraitAccess-implemented-by-SVGElement.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-TraitAccess-implemented-by-SVGElement.html"
+      }, 
+      {
         "url": "/tests/svg12tiny/svg12tiny-interface-TraitAccess.html", 
         "path": "tests/svg12tiny/svg12tiny-interface-TraitAccess.html"
       }, 
@@ -1272,6 +1484,46 @@
       {
         "url": "/tests/typedarray/typedarray-interface-ArrayBuffer.html", 
         "path": "tests/typedarray/typedarray-interface-ArrayBuffer.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-DataView.html", 
+        "path": "tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-DataView.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Float32Array.html", 
+        "path": "tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Float32Array.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Float64Array.html", 
+        "path": "tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Float64Array.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Int16Array.html", 
+        "path": "tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Int16Array.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Int32Array.html", 
+        "path": "tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Int32Array.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Int8Array.html", 
+        "path": "tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Int8Array.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Uint16Array.html", 
+        "path": "tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Uint16Array.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Uint32Array.html", 
+        "path": "tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Uint32Array.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Uint8Array.html", 
+        "path": "tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Uint8Array.html"
+      }, 
+      {
+        "url": "/tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Uint8ClampedArray.html", 
+        "path": "tests/typedarray/typedarray-interface-ArrayBufferView-implemented-by-Uint8ClampedArray.html"
       }, 
       {
         "url": "/tests/typedarray/typedarray-interface-ArrayBufferView.html", 
@@ -1326,6 +1578,10 @@
         "path": "tests/url/url-interface-URLSearchParams.html"
       }, 
       {
+        "url": "/tests/url/url-interface-URLUtils-implemented-by-URL.html", 
+        "path": "tests/url/url-interface-URLUtils-implemented-by-URL.html"
+      }, 
+      {
         "url": "/tests/url/url-interface-URLUtils.html", 
         "path": "tests/url/url-interface-URLUtils.html"
       }, 
@@ -1364,6 +1620,10 @@
       {
         "url": "/tests/webgl/webgl-interface-WebGLRenderingContext.html", 
         "path": "tests/webgl/webgl-interface-WebGLRenderingContext.html"
+      }, 
+      {
+        "url": "/tests/webgl/webgl-interface-WebGLRenderingContextBase-implemented-by-WebGLRenderingContext.html", 
+        "path": "tests/webgl/webgl-interface-WebGLRenderingContextBase-implemented-by-WebGLRenderingContext.html"
       }, 
       {
         "url": "/tests/webgl/webgl-interface-WebGLRenderingContextBase.html", 
@@ -1418,8 +1678,16 @@
         "path": "tests/webstorage/webstorage-interface-StorageEvent.html"
       }, 
       {
+        "url": "/tests/webstorage/webstorage-interface-WindowLocalStorage-implemented-by-Window.html", 
+        "path": "tests/webstorage/webstorage-interface-WindowLocalStorage-implemented-by-Window.html"
+      }, 
+      {
         "url": "/tests/webstorage/webstorage-interface-WindowLocalStorage.html", 
         "path": "tests/webstorage/webstorage-interface-WindowLocalStorage.html"
+      }, 
+      {
+        "url": "/tests/webstorage/webstorage-interface-WindowSessionStorage-implemented-by-Window.html", 
+        "path": "tests/webstorage/webstorage-interface-WindowSessionStorage-implemented-by-Window.html"
       }, 
       {
         "url": "/tests/webstorage/webstorage-interface-WindowSessionStorage.html", 
@@ -1632,6 +1900,10 @@
         "path": "tests/sse/resources/simple.txt"
       }, 
       {
+        "url": "/tests/svg12tiny/helpers/DOMException.js", 
+        "path": "tests/svg12tiny/helpers/DOMException.js"
+      }, 
+      {
         "url": "/tests/svg12tiny/helpers/Document.js", 
         "path": "tests/svg12tiny/helpers/Document.js"
       }, 
@@ -1662,6 +1934,10 @@
       {
         "url": "/tests/svg12tiny/helpers/SVGDocument.js", 
         "path": "tests/svg12tiny/helpers/SVGDocument.js"
+      }, 
+      {
+        "url": "/tests/svg12tiny/helpers/SVGException.js", 
+        "path": "tests/svg12tiny/helpers/SVGException.js"
       }, 
       {
         "url": "/tests/svg12tiny/helpers/TextEvent.js", 
@@ -1718,5 +1994,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "d3bd3ed74433132a5f1215db840420edc914183a"
+  "rev": "ffb01d96fda83e8830177fc3c14a1df5cf858334"
 }
