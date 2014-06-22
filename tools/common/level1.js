@@ -69,16 +69,37 @@
             test(function() {
                 assert_true(defName in global, 'Is ' + defProperties.name + ' bound at global scope?');
             }, defProperties.expandedName + '-bound-at-global-scope');
+            if (defName in global) {
+                test(function() {
+                    assert_true(!!global[defName], 'Is ' + defProperties.name + ' interface object present?');
+                }, defProperties.expandedName + '-interface-object-present');
+            }
         }
-        if (hasStaticMember(def)) {
+        var interfaceInstance = defName in global && global[defName];
+        if (!!interfaceInstance) {
             test(function() {
-                testStaticMembers(global[defName], defProperties);
-            }, defProperties.expandedName + '-has-statics', {def: defProperties});
-        }
-        if (hasConstantMember(def)) {
-            test(function() {
-                testInterfaceConstantMembers(global[defName], defProperties);
-            }, defProperties.expandedName + '-has-constants', {def: defProperties});
+                assert_true('prototype' in interfaceInstance, 'Does ' + defProperties.name + ' interface object have a prototype property?');
+            }, defProperties.expandedName + '-interface-object-has-prototype-property');
+            if ('prototype' in interfaceInstance) {
+                test(function() {
+                    assert_true(!!interfaceInstance['prototype'], 'Does ' + defProperties.name + ' interface object have a prototype?');
+                }, defProperties.expandedName + '-interface-object-has-prototype');
+            }
+            if (hasStaticMember(def)) {
+                test(function() {
+                    testStaticMembers(interfaceInstance, defProperties);
+                }, defProperties.expandedName + '-has-statics', {def: defProperties});
+            }
+            if (hasConstantMember(def)) {
+                test(function() {
+                    testConstantMembers(interfaceInstance, defProperties);
+                }, defProperties.expandedName + '-has-constants', {def: defProperties});
+            }
+            if (hasExtendedAttribute(def, 'Constructor') || hasExtendedAttribute(def, 'NamedConstructor')) {
+                test(function() {
+                    testConstructors(interfaceInstance, defProperties);
+                }, defProperties.expandedName + '-has-constructors', {def: defProperties});
+            }
         }
         if (!!getInstance && ((getInstance != 'undefined') && (getInstance != 'null'))) {
             if (typeof getInstance == 'function') {
@@ -125,11 +146,6 @@
         return false;
     }
     function testStaticMembers(interfaceInstance, defProperties) {
-        test(function() {
-            assert_true(!!interfaceInstance, 'Is ' + defProperties.name + ' interface present?');
-        }, defProperties.expandedName + '-interface-present-for-statics');
-        if (!interfaceInstance)
-            return;
         for (var i in defProperties.idl.members) {
             var member = defProperties.idl.members[i];
             if (!member.static)
@@ -142,11 +158,11 @@
                 if (member.type == 'attribute') {
                     test(function() {
                         assert_true(memberName in interfaceInstance, 'Does ' + defProperties.name + ' interface have static ' + memberName + ' attribute?');
-                    }, defProperties.expandedName + '-interface-has-static-' + memberName + '-attribute');
+                    }, defProperties.expandedName + '-has-static-' + memberName + '-attribute');
                 } else if (member.type == 'operation') {
                     test(function() {
                         assert_true(memberName in interfaceInstance, 'Does ' + defProperties.name + ' interface have static ' + memberName + ' operation?');
-                    }, defProperties.expandedName + '-interface-has-static-' + memberName + '-operation');
+                    }, defProperties.expandedName + '-has-static-' + memberName + '-operation');
                 }
             }
         }
@@ -159,12 +175,7 @@
         }
         return false;
     }
-    function testInterfaceConstantMembers(interfaceInstance, defProperties) {
-        test(function() {
-            assert_true(!!interfaceInstance, 'Is ' + defProperties.name + ' interface present?');
-        }, defProperties.expandedName + '-interface-present-for-constants');
-        if (!interfaceInstance)
-            return;
+    function testConstantMembers(interfaceInstance, defProperties) {
         for (var i in defProperties.idl.members) {
             var member = defProperties.idl.members[i];
             if (member.type != 'const')
@@ -174,15 +185,56 @@
                 continue;
             test(function() {
                 assert_true(memberName in interfaceInstance, 'Does ' + defProperties.name + ' interface have ' + memberName + ' constant?');
-            }, defProperties.expandedName + '-interface-has-' + memberName + '-constant');
+            }, defProperties.expandedName + '-has-' + memberName + '-constant');
             if (memberName in interfaceInstance) {
                 var value = member.value;
                 if (!!member.value) {
                     if (value.type == 'number') {
                         test(function() {
                             assert_equals(interfaceInstance[memberName], value.value, 'Does ' + memberName + ' interface constant have value ' + value.value + '?');
-                        }, defProperties.expandedName + '-interface-' + memberName + '-constant-has-value-' + value.value);
+                        }, defProperties.expandedName + '-constant-' + memberName + '-has-value-' + value.value);
                     }
+                }
+            }
+        }
+    }
+    function testConstructors(interfaceInstance, defProperties) {
+        var defName = defProperties.name;
+        var prototype = interfaceInstance.prototype;
+        if (!prototype)
+            return;
+        for (var i in defProperties.idl.extAttrs) {
+            var ea = defProperties.idl.extAttrs[i];
+            if (ea.name == 'Constructor') {
+                test(function() {
+                    assert_true('constructor' in prototype, 'Does ' + defName + ' interface prototype have a constructor property?');
+                }, defProperties.expandedName + '-prototype-has-constructor-property');
+                var constructor = prototype['constructor'];
+                if (!!constructor) {
+                    test(function() {
+                        assert_true(constructor === global[defName], 'Does ' + defName + ' interface constructor strictly equal global interface object?');
+                    }, defProperties.expandedName + '-constructor-strictly-equals-global-interface-object');
+                    test(function() {
+                        assert_equals(typeof constructor, 'function', 'Is ' + defName + ' interface constructor a function?');
+                    }, defProperties.expandedName + '-constructor-is-function');
+                }
+            } else if (ea.name == 'NamedConstructor') {
+                var constructorName = ea.rhs.value;
+                test(function() {
+                    assert_true(constructorName in global, 'Is ' + defName + ' named constructor ' + constructorName + ' bound at global scope?');
+                }, defProperties.expandedName + '-named-constructor-' + constructorName + '-bound-at-global-scope');
+                var constructor = global[constructorName];
+                if (!!constructor) {
+                    test(function() {
+                        assert_equals(typeof constructor, 'function', 'Is ' + defName + ' named constructor ' + constructorName + ' a function?');
+                    }, defProperties.expandedName + '-named-constructor-' + constructorName + '-is-function');
+                    test(function() {
+                        assert_true(!!constructor['prototype'], 'Does ' + defName + ' named constructor ' + constructorName + ' have a prototype?');
+                    }, defProperties.expandedName + '-named-constructor-' + constructorName + '-has-prototype');
+                    test(function() {
+                        assert_true(constructor['prototype'] === prototype, 'Does ' + defName + ' named constructor ' + constructorName +
+                            ' prototype strictly equal interface prototype?');
+                    }, defProperties.expandedName + '-named-constructor-' + constructorName + '-prototype-strictly-equals-interface-prototype');
                 }
             }
         }
