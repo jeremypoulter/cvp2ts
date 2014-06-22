@@ -206,6 +206,10 @@
         for (var i in defProperties.idl.extAttrs) {
             var ea = defProperties.idl.extAttrs[i];
             if (ea.name == 'Constructor') {
+                var constructorName = ea.name;
+                var overloadIndex = getOverloadIndex(constructorName);
+                if (overloadIndex > 0)
+                    continue;
                 test(function() {
                     assert_true('constructor' in prototype, 'Does ' + defName + ' interface prototype have a constructor property?');
                 }, defProperties.expandedName + '-prototype-has-constructor-property');
@@ -220,6 +224,9 @@
                 }
             } else if (ea.name == 'NamedConstructor') {
                 var constructorName = ea.rhs.value;
+                var overloadIndex = getOverloadIndex(constructorName);
+                if (overloadIndex > 0)
+                    continue;
                 test(function() {
                     assert_true(constructorName in global, 'Is ' + defName + ' named constructor ' + constructorName + ' bound at global scope?');
                 }, defProperties.expandedName + '-named-constructor-' + constructorName + '-bound-at-global-scope');
