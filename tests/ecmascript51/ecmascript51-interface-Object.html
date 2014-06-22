@@ -12,5 +12,5 @@
 <h1>Test Interface Object Signature</h1>
 <div id='log'></div>
 <script>
-level1('ecmascript51', JSON.parse(document.getElementById('idl').textContent), function(test){return window['Object'] && new Object();});
+level1('ecmascript51', JSON.parse(document.getElementById('idl').textContent), function(test){return 'Object' in window && new Object();});
 </script>

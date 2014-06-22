@@ -5,9 +5,9 @@
     "dontFetch": true,
     "dontFetchReason": "requires manual respec snapshot",
     "instances": {
-        "DOMParser": "!!window['DOMParser'] && new DOMParser()",
-        "XMLSerializer": "!!window['XMLSerializer'] && new XMLSerializer()",
+        "DOMParser": "'DOMParser' in window && new DOMParser()",
         "Element": "document.documentElement",
-        "Range": "document.createRange()"
+        "Range": "document.createRange()",
+        "XMLSerializer": "'XMLSerializer' in window && new XMLSerializer()"
     }
 }

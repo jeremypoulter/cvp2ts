@@ -5,7 +5,8 @@
     "instances": {
         "Storage": "window.localStorage",
         "StorageEvent": "document.createEvent('StorageEvent')",
-        "WindowLocalStorage": "window",
-        "WindowSessionStorage": "window"
+        "Window": "window",
+        "WindowLocalStorage": "null",
+        "WindowSessionStorage": "null"
     }
 }

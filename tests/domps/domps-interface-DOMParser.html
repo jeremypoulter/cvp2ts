@@ -12,5 +12,5 @@
 <h1>Test Interface DOMParser Signature</h1>
 <div id='log'></div>
 <script>
-level1('domps', JSON.parse(document.getElementById('idl').textContent), function(test){return !!window['DOMParser'] && new DOMParser();});
+level1('domps', JSON.parse(document.getElementById('idl').textContent), function(test){return 'DOMParser' in window && new DOMParser();});
 </script>

@@ -3,9 +3,9 @@
     "source": "http://dev.w3.org/html5/postmsg/",
     "local": "webmessage.html",
     "instances": {
-        "MessageChannel": "!!window['MessageChannel'] && new MessageChannel()",
+        "MessageChannel": "'MessageChannel' in window && new MessageChannel()",
         "MessageEvent": "document.createEvent('MessageEvent')",
-        "MessagePort": "!!window['MessageChannel'] && new MessageChannel().port1",
-        "PortCollection": "!!window['PortCollection'] && new PortCollection()"
+        "MessagePort": "'MessageChannel' in window && new MessageChannel().port1",
+        "PortCollection": "'PortCollection' in window && new PortCollection()"
     }
 }

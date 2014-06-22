@@ -12,5 +12,5 @@
 <h1>Test Interface Array Signature</h1>
 <div id='log'></div>
 <script>
-level1('ecmascript51', JSON.parse(document.getElementById('idl').textContent), function(test){return window['Array'] && new Array();});
+level1('ecmascript51', JSON.parse(document.getElementById('idl').textContent), function(test){return 'Array' in window && new Array();});
 </script>

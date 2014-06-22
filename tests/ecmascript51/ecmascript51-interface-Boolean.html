@@ -12,5 +12,5 @@
 <h1>Test Interface Boolean Signature</h1>
 <div id='log'></div>
 <script>
-level1('ecmascript51', JSON.parse(document.getElementById('idl').textContent), function(test){return window['Boolean'] && new Boolean(false);});
+level1('ecmascript51', JSON.parse(document.getElementById('idl').textContent), function(test){return 'Boolean' in window && new Boolean(false);});
 </script>

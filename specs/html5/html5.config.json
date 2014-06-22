@@ -21,6 +21,7 @@
     ],
     "instances": {
         "ApplicationCache": "window.applicationCache",
+        "ArrayBuffer": "'ArrayBuffer' in window && new ArrayBuffer(0)",
         "AudioTrack": "getAudioTrack()",
         "AudioTrackList": "getAudioTrackList()",
         "BarProp": "'statusbar' in window && window.statusbar",
@@ -113,6 +114,7 @@
         "Location": "'location' in window && window.location",
         "MediaController": "'MediaController' in window && new MediaController()",
         "MediaError": "getMediaError()",
+        "MessagePort": "'MessageChannel' in window && new MessageChannel().port1",
         "MimeType": "getMimeType()",
         "MimeTypeArray": "getMimeTypeArray()",
         "Navigator": "'navigator' in window && window.navigator",

@@ -26,49 +26,82 @@
 "use strict";
 (function() {
     var global = window;
-    function level1(spec, idl, getInstance) {
-        level1Test(spec, idl, getInstance, false);
+    function level1(spec, defs, getInstance) {
+        testDefinitions(spec, defs, getInstance, false);
     }
-    function level1Async(spec, idl, getInstance) {
-        level1Test(spec, idl, getInstance, true);
+    function level1Async(spec, defs, getInstance) {
+        testDefinitions(spec, defs, getInstance, true);
     }
-    function level1Test(spec, idl, getInstance, async) {
-        var idlType = idl.type || 'definition';
-        var idlName = idl.name || 'missing';
-        var idlProperties = {
-            idl: idl,
-            type: idlType,
-            name: idlName,
-            expandedName: spec + '-' + idlType + '-' + idlName.toLowerCase()
+    function testDefinitions(spec, defs, getInstance, async) {
+        var def = !!defs && !Array.isArray(defs) ? defs : ((defs.length > 0) ? defs[0] : null);
+        if (!!def) {
+            if (def.type == 'exception')
+                testException(spec, def, getInstance, async);
+            else if (def.type == 'implements')
+                testImplements(spec, findInterface(defs, def.implements), getInstance, async, def.target);
+            else if (def.type == 'interface')
+                testInterface(spec, def, getInstance, async);
+        }
+    }
+    function testException(spec, def, getInstance, async) {
+        testInterface(spec, def, getInstance, async);
+    }
+    function testImplements(spec, def, getInstance, async, target) {
+        testInterface(spec, def, getInstance, async, target);
+    }
+    function testInterface(spec, def, getInstance, async, target) {
+        var defType = def.type || 'definition';
+        var defName = def.name || 'missing';
+        var defProperties = {
+            idl: def,
+            type: defType,
+            name: defName,
+            expandedName: makeExpandedName(spec, def, target)
         };
         test(function() {
-            assert_true(!!idl, 'Is IDL defined?');
-        }, idlProperties.expandedName + '-idl-defined');
-        if (!idl)
+            assert_true(!!def, 'Is IDL defined?');
+        }, defProperties.expandedName + '-idl-defined');
+        if (!def)
             return;
-        if (!hasExtendedAttribute(idl, 'NoInterfaceObject')) {
+        if (!hasExtendedAttribute(def, 'NoInterfaceObject')) {
             test(function() {
-                assert_true(idlName in global, 'Is ' + idlProperties.name + ' bound at global scope?');
-            }, idlProperties.expandedName + '-bound-at-global-scope');
+                assert_true(defName in global, 'Is ' + defProperties.name + ' bound at global scope?');
+            }, defProperties.expandedName + '-bound-at-global-scope');
         }
-        if (hasStaticMember(idl)) {
+        if (hasStaticMember(def)) {
             test(function() {
-                testStaticMembers(global[idlName], idlProperties);
-            }, idlProperties.expandedName + '-has-statics', {idl: idlProperties});
+                testStaticMembers(global[defName], defProperties);
+            }, defProperties.expandedName + '-has-statics', {def: defProperties});
         }
-        if (!!getInstance && (getInstance != 'undefined')) {
+        if (!!getInstance && ((getInstance != 'undefined') && (getInstance != 'null'))) {
             if (typeof getInstance === 'function') {
                 if (!async) {
                     test(function() {
-                        testInstance(getInstance(), idlProperties);
-                    }, idlProperties.expandedName + '-get-instance-sync', {idl: idlProperties});
+                        testInstance(getInstance(), defProperties);
+                    }, defProperties.expandedName + '-get-instance-sync', {def: defProperties});
                 } else
-                    async_test(getInstance, idlProperties.expandedName + '-get-instance-async', {idl: idlProperties});
+                    async_test(getInstance, defProperties.expandedName + '-get-instance-async', {def: defProperties});
             }
         }
     };
-    function hasExtendedAttribute(idl, attr) {
-        var eas = idl.extAttrs || [];
+    function findInterface(defs, name) {
+        if (!name)
+            return null;
+        for (var i in defs) {
+            var def = defs[i];
+            if ((def.type == 'interface') && ('name' in def) && (def.name == name))
+                return def;
+        }
+        return null;
+    }
+    function makeExpandedName(spec, def, target) {
+        if (!!target)
+            return spec + '-' + target.toLowerCase() + '-implements-' + def.name.toLowerCase();
+        else
+            return spec + '-' + def.type + '-' + def.name.toLowerCase();
+    }
+    function hasExtendedAttribute(def, attr) {
+        var eas = def.extAttrs || [];
         for (var i in eas) {
             var ea = eas[i];
             if (ea.name === attr)
@@ -76,22 +109,22 @@
         }
         return false;
     }
-    function hasStaticMember(idl) {
-        for (var i in idl.members) {
-            var member = idl.members[i];
+    function hasStaticMember(def) {
+        for (var i in def.members) {
+            var member = def.members[i];
             if (member.static)
                 return true;
         }
         return false;
     }
-    function testStaticMembers(interfaceInstance, idlProperties) {
+    function testStaticMembers(interfaceInstance, defProperties) {
         test(function() {
-            assert_true(!!interfaceInstance, 'Is ' + idlProperties.name + ' interface present?');
-        }, idlProperties.expandedName + '-interface-present');
+            assert_true(!!interfaceInstance, 'Is ' + defProperties.name + ' interface present?');
+        }, defProperties.expandedName + '-interface-present');
         if (!interfaceInstance)
             return;
-        for (var i in idlProperties.idl.members) {
-            var member = idlProperties.idl.members[i];
+        for (var i in defProperties.idl.members) {
+            var member = defProperties.idl.members[i];
             if (!member.static)
                 continue;
             var memberName = member.name;
@@ -101,37 +134,37 @@
             if (overloadIndex < 1) {
                 if (member.type == 'attribute') {
                     test(function() {
-                        assert_true(memberName in interfaceInstance, 'Does ' + idlProperties.name + ' interface have static ' + memberName + ' attribute?');
-                    }, idlProperties.expandedName + '-interface-has-static-' + memberName + '-attribute');
+                        assert_true(memberName in interfaceInstance, 'Does ' + defProperties.name + ' interface have static ' + memberName + ' attribute?');
+                    }, defProperties.expandedName + '-interface-has-static-' + memberName + '-attribute');
                 } else if (member.type == 'operation') {
                     test(function() {
-                        assert_true(memberName in interfaceInstance, 'Does ' + idlProperties.name + ' interface have static ' + memberName + ' operation?');
-                    }, idlProperties.expandedName + '-interface-has-static-' + memberName + '-operation');
+                        assert_true(memberName in interfaceInstance, 'Does ' + defProperties.name + ' interface have static ' + memberName + ' operation?');
+                    }, defProperties.expandedName + '-interface-has-static-' + memberName + '-operation');
                 }
             }
         }
     }
-    function hasInstanceMember(idl) {
-        for (var i in idl.members) {
-            var member = idl.members[i];
+    function hasInstanceMember(def) {
+        for (var i in def.members) {
+            var member = def.members[i];
             if (!member.static)
                 return true;
         }
         return false;
     }
-    function testInstance(instance, idlProperties) {
-        var idlName = idlProperties.name;
+    function testInstance(instance, defProperties) {
+        var defName = defProperties.name;
         test(function() {
-            assert_true(!!instance, 'Is ' + idlName + ' instance present?');
-        }, idlProperties.expandedName + '-instance-present');
+            assert_true(!!instance, 'Is ' + defName + ' instance present?');
+        }, defProperties.expandedName + '-instance-present');
         if (!instance)
             return;
-        if (!hasExtendedAttribute(idlProperties.idl, 'NoInterfaceObject')) {
+        if (!hasExtendedAttribute(defProperties.idl, 'NoInterfaceObject')) {
             test(function() {
-                assert_true(idlName in global && instance instanceof global[idlName], 'Is instance object an instance of ' + idlName + '?');
-            }, idlProperties.expandedName + '-is-instance-instanceof-' + idlName);
+                assert_true(defName in global && instance instanceof global[defName], 'Is instance object an instance of ' + defName + '?');
+            }, defProperties.expandedName + '-is-instance-instanceof-' + defName);
         }
-        var inheritance = idlProperties.idl.inheritance;
+        var inheritance = defProperties.idl.inheritance;
         if (!!inheritance) {
             // TODO: the following is producing false negatives in the case that the inherited interface is marked as [NoInterfaceObject],
             // in which case we can't determine inheritance using instanceof operator; to fix this, we need a list of all IDL interfaces (defined in any spec)
@@ -139,10 +172,10 @@
             // generate phase
             test(function() {
                 assert_true(inheritance in global && instance instanceof global[inheritance], 'Does instance object inherit from ' + inheritance + '?');
-            }, idlProperties.expandedName + '-does-instance-inherit-from-' + inheritance);
+            }, defProperties.expandedName + '-does-instance-inherit-from-' + inheritance);
         }
-        for (var i in idlProperties.idl.members) {
-            var member = idlProperties.idl.members[i];
+        for (var i in defProperties.idl.members) {
+            var member = defProperties.idl.members[i];
             var memberName = member.name;
             if (!memberName) {
                 if (member.type == 'operation') {
@@ -158,34 +191,34 @@
             if (overloadIndex < 1) {
                 if (member.type == 'const') {
                     test(function() {
-                        assert_true(memberName in instance, 'Does ' + idlName + ' instance have ' + memberName + ' constant?');
-                    }, idlProperties.expandedName + '-instance-has-' + memberName + '-constant');
+                        assert_true(memberName in instance, 'Does ' + defName + ' instance have ' + memberName + ' constant?');
+                    }, defProperties.expandedName + '-instance-has-' + memberName + '-constant');
                     if (memberName in instance) {
                         var value = member.value;
                         if (!!member.value) {
                             if (value.type == 'number') {
                                 test(function() {
-                                    assert_equals(instance[memberName], value.value, 'Does ' + idlName + ' instance constant have value ' + value.value + '?');
-                                }, idlProperties.expandedName + '-instance-' + memberName + '-constant-has-value-' + value.value);
+                                    assert_equals(instance[memberName], value.value, 'Does ' + defName + ' instance constant have value ' + value.value + '?');
+                                }, defProperties.expandedName + '-instance-' + memberName + '-constant-has-value-' + value.value);
                             }
                         }
                     }
                 } else if (member.type == 'field') {
                     test(function() {
-                        assert_true(memberName in instance, 'Does ' + idlName + ' instance have ' + memberName + ' field?');
-                    }, idlProperties.expandedName + '-instance-has-' + memberName + '-field');
+                        assert_true(memberName in instance, 'Does ' + defName + ' instance have ' + memberName + ' field?');
+                    }, defProperties.expandedName + '-instance-has-' + memberName + '-field');
                 } else if (member.type == 'attribute') {
                     test(function() {
-                        assert_true(memberName in instance, 'Does ' + idlName + ' instance have ' + memberName + ' attribute?');
-                    }, idlProperties.expandedName + '-instance-has-' + memberName + '-attribute');
+                        assert_true(memberName in instance, 'Does ' + defName + ' instance have ' + memberName + ' attribute?');
+                    }, defProperties.expandedName + '-instance-has-' + memberName + '-attribute');
                 } else if (member.type == 'operation') {
                     test(function() {
-                        assert_true(memberName in instance, 'Does ' + idlName + ' instance have ' + memberName + ' operation?');
-                    }, idlProperties.expandedName + '-instance-has-' + memberName + '-operation');
+                        assert_true(memberName in instance, 'Does ' + defName + ' instance have ' + memberName + ' operation?');
+                    }, defProperties.expandedName + '-instance-has-' + memberName + '-operation');
                 } else if (member.type == 'serializer') {
                     test(function() {
-                        assert_true(memberName in instance, 'Does ' + idlName + ' instance have ' + memberName + ' serializer?');
-                    }, idlProperties.expandedName + '-instance-has-' + memberName + '-serializer');
+                        assert_true(memberName in instance, 'Does ' + defName + ' instance have ' + memberName + ' serializer?');
+                    }, defProperties.expandedName + '-instance-has-' + memberName + '-serializer');
                 }
             }
         }

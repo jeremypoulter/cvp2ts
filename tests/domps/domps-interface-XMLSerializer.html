@@ -12,5 +12,5 @@
 <h1>Test Interface XMLSerializer Signature</h1>
 <div id='log'></div>
 <script>
-level1('domps', JSON.parse(document.getElementById('idl').textContent), function(test){return !!window['XMLSerializer'] && new XMLSerializer();});
+level1('domps', JSON.parse(document.getElementById('idl').textContent), function(test){return 'XMLSerializer' in window && new XMLSerializer();});
 </script>

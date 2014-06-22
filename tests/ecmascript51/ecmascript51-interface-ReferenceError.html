@@ -12,5 +12,5 @@
 <h1>Test Interface ReferenceError Signature</h1>
 <div id='log'></div>
 <script>
-level1('ecmascript51', JSON.parse(document.getElementById('idl').textContent), function(test){return window['ReferenceError'] && new ReferenceError('');});
+level1('ecmascript51', JSON.parse(document.getElementById('idl').textContent), function(test){return 'ReferenceError' in window && new ReferenceError('');});
 </script>

@@ -12,5 +12,5 @@
 <h1>Test Interface Error Signature</h1>
 <div id='log'></div>
 <script>
-level1('ecmascript51', JSON.parse(document.getElementById('idl').textContent), function(test){return window['Error'] && new Error('');});
+level1('ecmascript51', JSON.parse(document.getElementById('idl').textContent), function(test){return 'Error' in window && new Error('');});
 </script>

@@ -6,9 +6,11 @@
     "dontExtract": true,
     "dontExtractReason": "extracted IDL edited to abstract use of promises",
     "instances": {
-        "FontFace": "undefined",
         "CSSFontFaceLoadEvent": "document.createEvent('CSSFontFaceLoadEvent')",
+        "Document": "document",
+        "FontFace": "undefined",
         "FontFaceSet": "!!document['fonts'] && document.fonts",
-        "FontFaceSource": "document"
+        "FontFaceSource": "document",
+        "WorkerGlobalScope": "undefined"
     }
 }

@@ -12,5 +12,5 @@
 <h1>Test Interface TypeError Signature</h1>
 <div id='log'></div>
 <script>
-level1('ecmascript51', JSON.parse(document.getElementById('idl').textContent), function(test){return window['TypeError'] && new TypeError('');});
+level1('ecmascript51', JSON.parse(document.getElementById('idl').textContent), function(test){return 'TypeError' in window && new TypeError('');});
 </script>

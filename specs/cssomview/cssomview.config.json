@@ -7,17 +7,19 @@
         "MediaQueryList"
     ],
     "instances": {
-        "Window": "window",
-        "MediaQueryList": "getMediaQueryList()",
-        "MediaQueryListEvent": "document.createEvent('MediaQueryListEvent')",
-        "Screen": "!!window['screen'] && window.screen",
-        "Document": "document",
         "CaretPosition": "getCaretPosition()",
+        "Document": "document",
         "Element": "document.documentElement",
+        "GeometryUtils": "document",
         "HTMLElement": "document.documentElement",
         "HTMLImageElement": "document.createElement('img')",
-        "Range": "document.createRange()",
+        "MediaQueryList": "getMediaQueryList()",
+        "MediaQueryListEvent": "document.createEvent('MediaQueryListEvent')",
         "MouseEvent": "document.createEvent('MouseEvent')",
-        "GeometryUtils": "document"
+        "PseudoElement": "getPseudoElement()",
+        "Range": "document.createRange()",
+        "Screen": "!!window['screen'] && window.screen",
+        "Text": "document.createTextNode('text')",
+        "Window": "window"
     }
 }

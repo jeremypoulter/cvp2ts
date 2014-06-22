@@ -6,12 +6,12 @@
 <script src='/resources/testharness.js'></script>
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
+<script src='./helpers/WebGLObject.js'></script>
 <script type='text/plain' id='idl'>
 {"type":"interface","name":"WebGLObject","partial":false,"members":[],"inheritance":null,"extAttrs":[]}
 </script>
 <h1>Test Interface WebGLObject Signature</h1>
 <div id='log'></div>
-<script src='./helpers/WebGLObject.js'></script>
 <script>
 level1('webgl', JSON.parse(document.getElementById('idl').textContent), function(test){return getWebGLObject();});
 </script>

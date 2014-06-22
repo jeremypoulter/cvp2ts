@@ -4,8 +4,8 @@
     "local": "url.html",
     "instances": {
         "URL": "'URL' in window && new URL('http://example.org/')",
+        "URLSearchParams": "'URLSearchParams' in window && new URLSearchPararms()",
         "URLUtils": "'URL' in window && new URL('http://example.org/')",
-        "URLUtilsReadOnly": "'URL' in window && new URL('http://example.org/')",
-        "URLSearchParams": "'URLSearchParams' in window && new URLSearchPararms()"
+        "URLUtilsReadOnly": "'URL' in window && new URL('http://example.org/')"
     }
 }

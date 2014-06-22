@@ -12,5 +12,5 @@
 <h1>Test Interface Number Signature</h1>
 <div id='log'></div>
 <script>
-level1('ecmascript51', JSON.parse(document.getElementById('idl').textContent), function(test){return window['Number'] && new Number(0);});
+level1('ecmascript51', JSON.parse(document.getElementById('idl').textContent), function(test){return 'Number' in window && new Number(0);});
 </script>

@@ -8,15 +8,15 @@
     "instances": {
         "ArrayBuffer": "'ArrayBuffer' in window && new ArrayBuffer(0)",
         "ArrayBufferView": "'Uint8Array' in window && new Uint8Array(0)",
-        "Int8Array": "'Int8Array' in window && new Int8Array(0)",
-        "Uint8Array": "'Uint8Array' in window && new Uint8Array(0)",
-        "Uint8ClampedArray": "'Uint8ClampedArray' in window && new Uint8ClampedArray(0)",
-        "Int16Array": "'Int16Array' in window && new Int16Array(0)",
-        "Uint16Array": "'Uint16Array' in window && new Uint16Array(0)",
-        "Int32Array": "'Int32Array' in window && new Int32Array(0)",
-        "Uint32Array": "'Uint32Array' in window && new Uint32Array(0)",
+        "DataView": "'DataView' in window && 'ArrayBuffer' in window && new DataView(new ArrayBuffer(0))",
         "Float32Array": "'Float32Array' in window && new Float32Array(0)",
         "Float64Array": "'Float64Array' in window && new Float64Array(0)",
-        "DataView": "'DataView' in window && 'ArrayBuffer' in window && new DataView(new ArrayBuffer(0))"
+        "Int16Array": "'Int16Array' in window && new Int16Array(0)",
+        "Int32Array": "'Int32Array' in window && new Int32Array(0)",
+        "Int8Array": "'Int8Array' in window && new Int8Array(0)",
+        "Uint16Array": "'Uint16Array' in window && new Uint16Array(0)",
+        "Uint32Array": "'Uint32Array' in window && new Uint32Array(0)",
+        "Uint8Array": "'Uint8Array' in window && new Uint8Array(0)",
+        "Uint8ClampedArray": "'Uint8ClampedArray' in window && new Uint8ClampedArray(0)"
     }
 }
