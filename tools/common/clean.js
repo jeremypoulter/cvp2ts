@@ -144,6 +144,16 @@
                 }
             }
         },
+        cleanIndex : function(options, specDirectory, spec, specOptions) {
+            try {
+                if (!!specDirectory && !!spec) {
+                    var lf = path.resolve(specDirectory, spec + '.idl.json');
+                    $.removeFile(options, lf);
+                }
+            } catch (e) {
+                setTimeout(function() { $.onFatalException(e); }, 0);
+            }
+        },
         clean : function(options, specDirectory, spec, specOptions) {
             if (options['phase'] === 'fetch')
                 $.cleanFetch(options, specDirectory, spec, specOptions);
@@ -151,6 +161,8 @@
                 $.cleanExtract(options, specDirectory, spec, specOptions);
             else if (options['phase'] === 'parse')
                 $.cleanParse(options, specDirectory, spec, specOptions);
+            else if (options['phase'] === 'index')
+                $.cleanIndex(options, specDirectory, spec, specOptions);
             else if (options['phase'] === 'generate')
                 $.cleanGenerate(options, specDirectory, spec, specOptions);
         },

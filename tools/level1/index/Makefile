@@ -23,5 +23,23 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# tools
-TOOLS		= fetch extract parse index generate
+TOP		= ../../..
+
+include $(TOP)/Makefile.Config.mk
+
+TOOL		= index.js
+INSUFFIX	= idl.json
+infiles		:= $(foreach spec, $(SPECS), $(SPECDIR)/$(spec)/$(spec).$(INSUFFIX))
+OUTDIR		= $(SPECDIR)/index
+OUTFILE		= $(OUTDIR)/index.idl.json
+CONFIGFILE	= $(OUTDIR)/index.$(CONFIGSUFFIX)
+
+all: $(OUTFILE)
+
+$(OUTFILE): $(infiles) $(CONFIGFILE)
+	@$(NODE) $(TOOL) $(TOOLFLAGS) $(PARSEFLAGS) --config $(CONFIGFILE) --outfile $@ $(infiles)
+
+clean:
+	@$(CLEANTOOL) --phase index $(OUTFILE)
+
+.PHONY: all clean

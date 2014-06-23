@@ -87,7 +87,7 @@
                     options['specDirectory'] = commonOptions.extractSpecDirectory(options['inputFile']);
                 if (!options['inputFile']) {
                     if (!!options['specDirectory'] && !!options['spec'])
-                        options['inputFile'] = path.normalize(path.join(options['specDirectory'], '.cache', options['spec'] + '.idl'));
+                        options['inputFile'] = path.normalize(path.join(options['specDirectory'], options['spec'] + '.idl'));
                 }
             }
             return options;
@@ -97,7 +97,7 @@
                 if (other.length > 0)
                     options['outputFile'] = other.shift();
                 else if (!!options['specDirectory'] && !!options['spec'])
-                    options['outputFile'] = path.join(options['specDirectory'], '.cache', options['spec'] + '.idl.json');
+                    options['outputFile'] = path.join(options['specDirectory'], options['spec'] + '.idl.json');
             }
             return options;
         },

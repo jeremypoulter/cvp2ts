@@ -40,7 +40,9 @@ extract: fetch
 
 parse: extract
 
-generate: parse
+index: parse
+
+generate: index
 
 .PHONY: all clean subdirs $(SUBDIRS)
 
