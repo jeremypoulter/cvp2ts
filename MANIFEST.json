@@ -1506,6 +1506,22 @@
         "path": "tests/svg12tiny/svg12tiny-interface-Window.html"
       }, 
       {
+        "url": "/tests/touchevents/touchevents-interface-Document-partial-1.html", 
+        "path": "tests/touchevents/touchevents-interface-Document-partial-1.html"
+      }, 
+      {
+        "url": "/tests/touchevents/touchevents-interface-Touch.html", 
+        "path": "tests/touchevents/touchevents-interface-Touch.html"
+      }, 
+      {
+        "url": "/tests/touchevents/touchevents-interface-TouchEvent.html", 
+        "path": "tests/touchevents/touchevents-interface-TouchEvent.html"
+      }, 
+      {
+        "url": "/tests/touchevents/touchevents-interface-TouchList.html", 
+        "path": "tests/touchevents/touchevents-interface-TouchList.html"
+      }, 
+      {
         "url": "/tests/typedarray/typedarray-interface-ArrayBuffer.html", 
         "path": "tests/typedarray/typedarray-interface-ArrayBuffer.html"
       }, 
@@ -2032,5 +2048,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "6284856662c5543fa64a68e4c667f69bbac32d6e"
+  "rev": "93066b477daf58cf9c10818106ac1d8296edf78e"
 }
