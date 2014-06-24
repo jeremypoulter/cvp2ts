@@ -46,6 +46,10 @@
         "path": "tests/cssfontload/cssfontload-interface-CSSFontFaceLoadEvent.html"
       }, 
       {
+        "url": "/tests/cssfontload/cssfontload-interface-EventTarget-implemented-by-FontFaceSet.html", 
+        "path": "tests/cssfontload/cssfontload-interface-EventTarget-implemented-by-FontFaceSet.html"
+      }, 
+      {
         "url": "/tests/cssfontload/cssfontload-interface-FontFace.html", 
         "path": "tests/cssfontload/cssfontload-interface-FontFace.html"
       }, 
@@ -1090,6 +1094,14 @@
         "path": "tests/html5/html5-interface-History.html"
       }, 
       {
+        "url": "/tests/html5/html5-interface-LinkStyle-implemented-by-HTMLLinkElement.html", 
+        "path": "tests/html5/html5-interface-LinkStyle-implemented-by-HTMLLinkElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-LinkStyle-implemented-by-HTMLStyleElement.html", 
+        "path": "tests/html5/html5-interface-LinkStyle-implemented-by-HTMLStyleElement.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-Location.html", 
         "path": "tests/html5/html5-interface-Location.html"
       }, 
@@ -1216,6 +1228,18 @@
       {
         "url": "/tests/html5/html5-interface-Transferable.html", 
         "path": "tests/html5/html5-interface-Transferable.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-URLUtils-implemented-by-HTMLAnchorElement.html", 
+        "path": "tests/html5/html5-interface-URLUtils-implemented-by-HTMLAnchorElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-URLUtils-implemented-by-HTMLAreaElement.html", 
+        "path": "tests/html5/html5-interface-URLUtils-implemented-by-HTMLAreaElement.html"
+      }, 
+      {
+        "url": "/tests/html5/html5-interface-URLUtils-implemented-by-Location.html", 
+        "path": "tests/html5/html5-interface-URLUtils-implemented-by-Location.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-ValidityState.html", 
@@ -1390,10 +1414,6 @@
         "path": "tests/svg12tiny/svg12tiny-interface-SVGElement.html"
       }, 
       {
-        "url": "/tests/svg12tiny/svg12tiny-interface-SVGElementInstance.html", 
-        "path": "tests/svg12tiny/svg12tiny-interface-SVGElementInstance.html"
-      }, 
-      {
         "url": "/tests/svg12tiny/svg12tiny-interface-SVGGlobal-implemented-by-Window.html", 
         "path": "tests/svg12tiny/svg12tiny-interface-SVGGlobal-implemented-by-Window.html"
       }, 
@@ -1558,6 +1578,10 @@
         "path": "tests/typedarray/typedarray-interface-Int8Array.html"
       }, 
       {
+        "url": "/tests/typedarray/typedarray-interface-Transferable-implemented-by-ArrayBuffer.html", 
+        "path": "tests/typedarray/typedarray-interface-Transferable-implemented-by-ArrayBuffer.html"
+      }, 
+      {
         "url": "/tests/typedarray/typedarray-interface-Uint16Array.html", 
         "path": "tests/typedarray/typedarray-interface-Uint16Array.html"
       }, 
@@ -1712,6 +1736,12 @@
       {
         "url": "/tests/xhr/xhr-interface-XMLHttpRequestUpload.html", 
         "path": "tests/xhr/xhr-interface-XMLHttpRequestUpload.html"
+      }
+    ], 
+    "manual": [
+      {
+        "url": "/tests/svg12tiny/svg12tiny-interface-SVGElementInstance-manual.html", 
+        "path": "tests/svg12tiny/svg12tiny-interface-SVGElementInstance-manual.html"
       }
     ], 
     "helper": [
@@ -1940,6 +1970,10 @@
         "path": "tests/svg12tiny/helpers/SVGDocument.js"
       }, 
       {
+        "url": "/tests/svg12tiny/helpers/SVGElementInstance.js", 
+        "path": "tests/svg12tiny/helpers/SVGElementInstance.js"
+      }, 
+      {
         "url": "/tests/svg12tiny/helpers/SVGException.js", 
         "path": "tests/svg12tiny/helpers/SVGException.js"
       }, 
@@ -1998,5 +2032,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "80957c90f980a236e284f860f1cfb897d1785858"
+  "rev": "6284856662c5543fa64a68e4c667f69bbac32d6e"
 }
