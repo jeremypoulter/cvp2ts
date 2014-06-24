@@ -1,0 +1,13 @@
+{
+    "spec": "touchevents",
+    "source": "http://www.w3.org/TR/2013/REC-touch-events-20131010/",
+    "local": "touchevents.html",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "instances": {
+        "Document": "document",
+        "Touch": "'createTouch' in document && document.createTouch(window, window, 0, 0, 0, 0, 0)",
+        "TouchEvent": "document.createEvent('TouchEvent')",
+        "TouchList": "'createTouchList' in document && document.createTouchList()"
+    }
+}
