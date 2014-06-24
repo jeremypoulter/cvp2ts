@@ -82,6 +82,8 @@
         run : function(argv) {
             var rv = 0;
             try {
+                if (options['verbose'])
+                    console.warn('[I]: ' + 'Generating interface index to ' + options['outputFile'] + ' ...');
                 $.index(commonOptions.readOptions(argv, defaultOptions(), $));
             } catch(e) {
                 setTimeout(function() { $.onFatalException(e); }, 0);

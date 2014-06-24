@@ -38,6 +38,7 @@
         configFile : undefined,
         configFileEncoding : 'utf8',
         helpers : undefined,
+        indexFile : undefined,
         inputFileEncoding : 'utf8',
         inputFile : undefined,
         instances : {},
@@ -60,6 +61,7 @@
     var $               = {
         /* state */
         options : {},
+        index : null,
         input : null,
         inputData : '',
         document : null,
@@ -227,9 +229,32 @@
         }
     }
     function findInterface(doc, name) {
-        return _(doc).filter(function (def) {
+        var def =  _(doc).filter(function (def) {
             return (def.type == 'interface' || def.type == 'callback interface') && def.name == name;
         }).pop();
+        if (!def)
+            def = findInterfaceFromIndex(doc, name);
+        return def;
+    }
+    function findInterfaceFromIndex(doc, name) {
+        try {
+            if (!$.index) {
+                var options = $.options;
+                $.index = JSON.parse(fs.readFileSync(options['indexFile'], {encoding: options['inputFileEncoding']}));
+            }
+            for (var i in $.index) {
+                var def = $.index[i];
+                if (def.type == 'interface') {
+                    if (!def.partial) {
+                        if (def.name == name)
+                            return def;
+                    }
+                }
+            }
+        } catch (e) {
+            setTimeout(function() { $.onFatalException(e); }, 0);
+        }
+        return undefined;
     }
     function getTestPreamble() {
         var html = "";

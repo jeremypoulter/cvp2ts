@@ -30,13 +30,14 @@ include $(TOP)/Makefile.Config.mk
 TOOL		= generate.js
 INSUFFIX	= idl.json
 OUTSUFFIX	= test.ts
+INDEXFILE	= $(SPECDIR)/index/index.idl.json
 outfiles	:= $(foreach spec, $(SPECS), $(SPECDIR)/$(spec)/$(spec).$(OUTSUFFIX))
 
 all: $(outfiles)
 
 %.$(OUTSUFFIX): %.$(INSUFFIX) %.$(CONFIGSUFFIX)
 	@if [ ! -d $(TESTDIR)/$(*F) ]; then mkdir -p $(TESTDIR)/$(*F); fi;
-	@$(NODE) $(TOOL) $(TOOLFLAGS) $(GENERATEFLAGS) --config $(@D)/$(*F).$(CONFIGSUFFIX) --testDirectory $(TESTDIR)/$(*F) $< $@
+	@$(NODE) $(TOOL) $(TOOLFLAGS) $(GENERATEFLAGS) --config $(@D)/$(*F).$(CONFIGSUFFIX) --testDirectory $(TESTDIR)/$(*F) --indexFile $(INDEXFILE) $< $@
 	@if [ -d $(SPECDIR)/$(*F)/helpers ]; then \
 	    $(CP) -R $(SPECDIR)/$(*F)/helpers $(TESTDIR)/$(*F) ; \
 	fi;
