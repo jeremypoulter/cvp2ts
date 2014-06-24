@@ -44,7 +44,7 @@
     };
     var $               = {
         /* state */
-        output : null,
+        options : null,
         /* callbacks */
         onFatalException : function(e) {
             util.error(util.inspect(e));
@@ -60,7 +60,8 @@
             }
             return options;
         },
-        index : function(options) {
+        index : function() {
+            var options = $.options;
             var idlAll = [];
             for (var i in options.other) {
                 var fn = options.other[i];
@@ -82,9 +83,11 @@
         run : function(argv) {
             var rv = 0;
             try {
+                var options = commonOptions.readOptions(argv, defaultOptions(), $);
                 if (options['verbose'])
                     console.warn('[I]: ' + 'Generating interface index to ' + options['outputFile'] + ' ...');
-                $.index(commonOptions.readOptions(argv, defaultOptions(), $));
+                $.options = options;
+                $.index();
             } catch(e) {
                 setTimeout(function() { $.onFatalException(e); }, 0);
             }

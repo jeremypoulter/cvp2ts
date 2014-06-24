@@ -5,7 +5,7 @@ function getDocumentAsync(test) {
     e.data = './resources/empty.svg';
     e.onload = test.step_func_done(function(evt) {
         var d = evt.target.contentDocument;
-        level1TestInstance(d, test.properties.idl);
+        level1TestInstance(d, test.properties.def);
     });
     document.body.appendChild(e);
 }

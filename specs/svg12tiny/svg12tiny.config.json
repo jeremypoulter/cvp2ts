@@ -16,6 +16,7 @@
         "MouseWheelEvent",
         "ProgressEvent",
         "SVGDocument",
+        "SVGElementInstance",
         "SVGException",
         "TextEvent",
         "TimeEvent",
@@ -33,7 +34,6 @@
         "Node": "document.createElementNS('http://www.w3.org/2000/svg','svg')",
         "SVGAnimationElement": "document.createElementNS('http://www.w3.org/2000/svg','animate')",
         "SVGElement": "document.createElementNS('http://www.w3.org/2000/svg','svg')",
-        "SVGElementInstance": "undefined",
         "SVGException": "getSVGException()",
         "SVGGlobal": "window",
         "SVGLocatable": "document.createElementNS('http://www.w3.org/2000/svg','svg')",
@@ -60,8 +60,12 @@
         "MouseWheelEvent": "getMouseWheelEventAsync(test)",
         "ProgressEvent": "getProgressEventAsync(test)",
         "SVGDocument": "getSVGDocumentAsync(test)",
+        "SVGElementInstance": "getSVGElementInstanceAsync(test)",
         "TextEvent": "getTextEventAsync(test)",
         "TimeEvent": "getTimeEventAsync(test)",
         "UIEvent": "getUIEventAsync(test)"
-    }
+    },
+    "manual": [
+        "SVGElementInstance"
+    ]
 }

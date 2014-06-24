@@ -44,6 +44,7 @@
         instances : {},
         instancesAsync : {},
         local : undefined,
+        manual : [],
         other : [],
         outputFile : undefined,
         outputFileEncoding : 'utf8',
@@ -221,9 +222,10 @@
                 console.warn('[W]: ' + 'Missing instance getter for ' + target + '.');
             return;
         }
-        var testFileName = makeTestFileName(def, doc);
+        var manual = requiresManualTest(targetImplements);
+        var testFileName = makeTestFileName(def, doc, manual);
         if (!!testFileName) {
-            var testContent = buildImplementsTest(options['spec'], defs, getInstance, async, getHelper(target));
+            var testContent = buildImplementsTest(options['spec'], defs, getInstance, async, getHelper(target), manual);
             var testFile = path.normalize(path.join(options['testDirectory'], testFileName));
             fs.writeFileSync(testFile, testContent, {encoding: options['outputFileEncoding']});
         }
@@ -276,7 +278,7 @@
         html += "</script>\n";
         return html;
     }
-    function buildImplementsTest(spec, defs, getInstance, async, helper) {
+    function buildImplementsTest(spec, defs, getInstance, async, helper, manual) {
         assert.ok(util.isArray(defs) && (defs.length > 0));
         var def = defs[0];
         var type = capitalize(def.type);
@@ -300,6 +302,8 @@
             instanceGetter = "undefined";
         }
         html += "<script>\n";
+        if (manual)
+            html += "setup({explicit_done: true, explicit_timeout: true});\n"
         html += entryName + "('" + spec + "', JSON.parse(document.getElementById('idl').textContent), " + instanceGetter + ");\n";
         html += "</script>\n";
         return html;
@@ -321,9 +325,10 @@
                 console.warn('[W]: ' + 'Missing instance getter for ' + name + '.');
             return;
         }
-        var testFileName = makeTestFileName(def, doc);
+        var manual = requiresManualTest(name);
+        var testFileName = makeTestFileName(def, doc, manual);
         if (!!testFileName) {
-            var testContent = buildInterfaceTest(options['spec'], [def], getInstance, async, getHelper(name));
+            var testContent = buildInterfaceTest(options['spec'], [def], getInstance, async, getHelper(name), manual);
             var testFile = path.normalize(path.join(options['testDirectory'], testFileName));
             fs.writeFileSync(testFile, testContent, {encoding: options['outputFileEncoding']});
         }
@@ -356,29 +361,32 @@
         }
         return undefined;
     }
-    function makeTestFileName(def, doc) {
+    function makeTestFileName(def, doc, manual) {
         var sep = '-';
         if (def.type == 'callback interface')
-            return makeCallbackInterfaceTestFileName(def, doc, sep);
+            return makeCallbackInterfaceTestFileName(def, doc, manual, sep);
         else if (def.type == 'exception')
-            return makeExceptionTestFileName(def, doc, sep);
+            return makeExceptionTestFileName(def, doc, manual, sep);
         else if (def.type == 'implements')
-            return makeImplementsTestFileName(def, doc, sep);
+            return makeImplementsTestFileName(def, doc, manual, sep);
         else if (def.type == 'interface')
-            return makeInterfaceTestFileName(def, doc, sep);
+            return makeInterfaceTestFileName(def, doc, manual, sep);
         else
             return null;
     }
-    function makeCallbackInterfaceTestFileName(def, doc, sep) {
-        return makeInterfaceTestFileName(def, doc, sep);
+    function makeCallbackInterfaceTestFileName(def, doc, manual, sep) {
+        return makeInterfaceTestFileName(def, doc, manual, sep);
     }
-    function makeExceptionTestFileName(def, doc, sep) {
-        return makeInterfaceTestFileName(def, doc, sep);
+    function makeExceptionTestFileName(def, doc, manual, sep) {
+        return makeInterfaceTestFileName(def, doc, manual, sep);
     }
-    function makeImplementsTestFileName(def, doc, sep) {
-        return [$.options['spec'], 'interface', def.implements, 'implemented', 'by', def.target].join(sep) + '.html';
+    function makeImplementsTestFileName(def, doc, manual, sep) {
+        var target = def.target;
+        if (manual)
+            target += sep + 'manual';
+        return [$.options['spec'], 'interface', def.implements, 'implemented', 'by', target].join(sep) + '.html';
     }
-    function makeInterfaceTestFileName(def, doc, sep) {
+    function makeInterfaceTestFileName(def, doc, manual, sep) {
         var name = def.name;
         if (def.partial) {
             var partials = $.partials;
@@ -393,9 +401,11 @@
         var type = def.type;
         if (type == 'callback interface')
             type = 'interface';
+        if (manual)
+            name += sep + 'manual';
         return [$.options['spec'], type, name].join(sep) + '.html';
     }
-    function buildInterfaceTest(spec, defs, getInstance, async, helper) {
+    function buildInterfaceTest(spec, defs, getInstance, async, helper, manual) {
         assert.ok(util.isArray(defs) && (defs.length > 0));
         var def = defs[0];
         var type = capitalize(def.type);
@@ -421,9 +431,15 @@
             instanceGetter = "undefined";
         }
         html += "<script>\n";
+        if (manual)
+            html += "setup({explicit_done: true, explicit_timeout: true});\n"
         html += entryName + "('" + spec + "', JSON.parse(document.getElementById('idl').textContent), " + instanceGetter + ");\n";
         html += "</script>\n";
         return html;
+    }
+    function requiresManualTest(name) {
+        var options = $.options;
+        return !!options['manual'] && (options.manual.indexOf(name) >= 0);
     }
     function capitalize(s) {
         if (s.length > 0) {
