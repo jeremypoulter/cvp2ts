@@ -7,6 +7,7 @@
     "dontExtract": true,
     "dontExtractReason": "definitions of IDL require manual editing, about which see comment in IDL file",
     "helpers": [
+        "AsyncURLStatus",
         "DOMException",
         "Document",
         "DocumentView",
@@ -24,7 +25,6 @@
     ],
     "instances": {
         "AbstractView": "window",    
-        "AsyncURLStatus": "undefined",    
         "DOMException": "getDOMException()",
         "Element": "document.createElementNS('http://www.w3.org/2000/svg','svg')",
         "ElementTimeControl": "document.createElementNS('http://www.w3.org/2000/svg','svg')",
@@ -52,6 +52,7 @@
         "Window": "window"
     },
     "instancesAsync": {
+        "AsyncURLStatus": "getAsyncURLStatusAsync(test)",
         "Document": "getDocumentAsync(test)",
         "DocumentView": "getDocumentViewAsync(test)",
         "Event": "getEventAsync(test)",

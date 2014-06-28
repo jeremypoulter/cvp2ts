@@ -6,7 +6,7 @@
         "Storage": "window.localStorage",
         "StorageEvent": "document.createEvent('StorageEvent')",
         "Window": "window",
-        "WindowLocalStorage": "null",
-        "WindowSessionStorage": "null"
+        "WindowLocalStorage": "window",
+        "WindowSessionStorage": "window"
     }
 }
