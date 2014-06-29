@@ -1734,6 +1734,74 @@
         "path": "tests/webstorage/webstorage-interface-WindowSessionStorage.html"
       }, 
       {
+        "url": "/tests/webworkers/webworkers-interface-AbstractWorker-implemented-by-SharedWorker.html", 
+        "path": "tests/webworkers/webworkers-interface-AbstractWorker-implemented-by-SharedWorker.html"
+      }, 
+      {
+        "url": "/tests/webworkers/webworkers-interface-AbstractWorker-implemented-by-Worker.html", 
+        "path": "tests/webworkers/webworkers-interface-AbstractWorker-implemented-by-Worker.html"
+      }, 
+      {
+        "url": "/tests/webworkers/webworkers-interface-AbstractWorker.html", 
+        "path": "tests/webworkers/webworkers-interface-AbstractWorker.html"
+      }, 
+      {
+        "url": "/tests/webworkers/webworkers-interface-DedicatedWorkerGlobalScope.html", 
+        "path": "tests/webworkers/webworkers-interface-DedicatedWorkerGlobalScope.html"
+      }, 
+      {
+        "url": "/tests/webworkers/webworkers-interface-NavigatorID-implemented-by-WorkerNavigator.html", 
+        "path": "tests/webworkers/webworkers-interface-NavigatorID-implemented-by-WorkerNavigator.html"
+      }, 
+      {
+        "url": "/tests/webworkers/webworkers-interface-NavigatorLanguage-implemented-by-WorkerNavigator.html", 
+        "path": "tests/webworkers/webworkers-interface-NavigatorLanguage-implemented-by-WorkerNavigator.html"
+      }, 
+      {
+        "url": "/tests/webworkers/webworkers-interface-NavigatorOnLine-implemented-by-WorkerNavigator.html", 
+        "path": "tests/webworkers/webworkers-interface-NavigatorOnLine-implemented-by-WorkerNavigator.html"
+      }, 
+      {
+        "url": "/tests/webworkers/webworkers-interface-SharedWorker.html", 
+        "path": "tests/webworkers/webworkers-interface-SharedWorker.html"
+      }, 
+      {
+        "url": "/tests/webworkers/webworkers-interface-SharedWorkerGlobalScope.html", 
+        "path": "tests/webworkers/webworkers-interface-SharedWorkerGlobalScope.html"
+      }, 
+      {
+        "url": "/tests/webworkers/webworkers-interface-URLUtilsReadOnly-implemented-by-WorkerLocation.html", 
+        "path": "tests/webworkers/webworkers-interface-URLUtilsReadOnly-implemented-by-WorkerLocation.html"
+      }, 
+      {
+        "url": "/tests/webworkers/webworkers-interface-WindowBase64-implemented-by-WorkerGlobalScope.html", 
+        "path": "tests/webworkers/webworkers-interface-WindowBase64-implemented-by-WorkerGlobalScope.html"
+      }, 
+      {
+        "url": "/tests/webworkers/webworkers-interface-WindowTimers-implemented-by-WorkerGlobalScope.html", 
+        "path": "tests/webworkers/webworkers-interface-WindowTimers-implemented-by-WorkerGlobalScope.html"
+      }, 
+      {
+        "url": "/tests/webworkers/webworkers-interface-Worker.html", 
+        "path": "tests/webworkers/webworkers-interface-Worker.html"
+      }, 
+      {
+        "url": "/tests/webworkers/webworkers-interface-WorkerGlobalScope-partial-1.html", 
+        "path": "tests/webworkers/webworkers-interface-WorkerGlobalScope-partial-1.html"
+      }, 
+      {
+        "url": "/tests/webworkers/webworkers-interface-WorkerGlobalScope.html", 
+        "path": "tests/webworkers/webworkers-interface-WorkerGlobalScope.html"
+      }, 
+      {
+        "url": "/tests/webworkers/webworkers-interface-WorkerLocation.html", 
+        "path": "tests/webworkers/webworkers-interface-WorkerLocation.html"
+      }, 
+      {
+        "url": "/tests/webworkers/webworkers-interface-WorkerNavigator.html", 
+        "path": "tests/webworkers/webworkers-interface-WorkerNavigator.html"
+      }, 
+      {
         "url": "/tests/xhr/xhr-interface-FormData.html", 
         "path": "tests/xhr/xhr-interface-FormData.html"
       }, 
@@ -2048,9 +2116,21 @@
       {
         "url": "/tests/webgl/helpers/WebGLUniformLocation.js", 
         "path": "tests/webgl/helpers/WebGLUniformLocation.js"
+      }, 
+      {
+        "url": "/tests/webworkers/helpers/WorkerGlobalScope.js", 
+        "path": "tests/webworkers/helpers/WorkerGlobalScope.js"
+      }, 
+      {
+        "url": "/tests/webworkers/resources/empty.js", 
+        "path": "tests/webworkers/resources/empty.js"
+      }, 
+      {
+        "url": "/tests/webworkers/resources/workerglobalscope.js", 
+        "path": "tests/webworkers/resources/workerglobalscope.js"
       }
     ]
   }, 
   "local_changes": [], 
-  "rev": "9f97042bbfd225c0ab2afae03c09b80f39fc1e18"
+  "rev": "53909e3f7ba635833775b34ab3a42301e80e2f8b"
 }
