@@ -12,5 +12,5 @@
 <h1>Test Interface AbstractWorker Signature</h1>
 <div id='log'></div>
 <script>
-level1('webworkers', JSON.parse(document.getElementById('idl').textContent), function(test){return !!window['Worker'] && new Worker('./resources/empty.js');});
+level1('webworkers', JSON.parse(document.getElementById('idl').textContent), function(test){return 'Worker' in window && new Worker('./resources/empty.js');});
 </script>

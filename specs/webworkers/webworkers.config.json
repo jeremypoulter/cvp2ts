@@ -2,19 +2,16 @@
     "spec": "webworkers",
     "source": "http://dev.w3.org/html5/workers/",
     "local": "webworkers.html",
-    "helpers": [
-        "WorkerGlobalScope"
-    ],
     "instances": {
-        "AbstractWorker": "!!window['Worker'] && new Worker('./resources/empty.js')",
-        "SharedWorker": "!!window['SharedWorker'] && new SharedWorker('./resources/empty.js')",
-        "Worker": "!!window['Worker'] && new Worker('./resources/empty.js')"
+        "AbstractWorker": "'Worker' in window && new Worker('./resources/empty.js')",
+        "SharedWorker": "'SharedWorker' in window && new SharedWorker('./resources/empty.js')",
+        "Worker": "'Worker' in window && new Worker('./resources/empty.js')"
     },
     "instancesAsync": {
-        "DedicatedWorkerGlobalScope": "undefined",
-        "SharedWorkerGlobalScope": "undefined",
-        "WorkerGlobalScope": "getWorkerGlobalScopeAsync(test)",
-        "WorkerLocation": "undefined",
-        "WorkerNavigator": "undefined"
+        "DedicatedWorkerGlobalScope": "null",
+        "SharedWorkerGlobalScope": "null",
+        "WorkerGlobalScope": "null",
+        "WorkerLocation": "null",
+        "WorkerNavigator": "null"
     }
 }
