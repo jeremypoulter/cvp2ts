@@ -2118,10 +2118,6 @@
         "path": "tests/webgl/helpers/WebGLUniformLocation.js"
       }, 
       {
-        "url": "/tests/webworkers/helpers/WorkerGlobalScope.js", 
-        "path": "tests/webworkers/helpers/WorkerGlobalScope.js"
-      }, 
-      {
         "url": "/tests/webworkers/resources/empty.js", 
         "path": "tests/webworkers/resources/empty.js"
       }, 
@@ -2132,5 +2128,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "53909e3f7ba635833775b34ab3a42301e80e2f8b"
+  "rev": "afe511987fe5015c7fdee4ff28bfa985279b87c1"
 }
