@@ -42,20 +42,16 @@
         "path": "tests/canvas2d/canvas2d-interface-TextMetrics.html"
       }, 
       {
-        "url": "/tests/cssfontload/cssfontload-interface-CSSFontFaceLoadEvent.html", 
-        "path": "tests/cssfontload/cssfontload-interface-CSSFontFaceLoadEvent.html"
-      }, 
-      {
-        "url": "/tests/cssfontload/cssfontload-interface-EventTarget-implemented-by-FontFaceSet.html", 
-        "path": "tests/cssfontload/cssfontload-interface-EventTarget-implemented-by-FontFaceSet.html"
-      }, 
-      {
         "url": "/tests/cssfontload/cssfontload-interface-FontFace.html", 
         "path": "tests/cssfontload/cssfontload-interface-FontFace.html"
       }, 
       {
         "url": "/tests/cssfontload/cssfontload-interface-FontFaceSet.html", 
         "path": "tests/cssfontload/cssfontload-interface-FontFaceSet.html"
+      }, 
+      {
+        "url": "/tests/cssfontload/cssfontload-interface-FontFaceSetLoadEvent.html", 
+        "path": "tests/cssfontload/cssfontload-interface-FontFaceSetLoadEvent.html"
       }, 
       {
         "url": "/tests/cssfontload/cssfontload-interface-FontFaceSource-implemented-by-Document.html", 
@@ -1766,6 +1762,10 @@
         "path": "tests/canvas2d/helpers/CanvasPattern.js"
       }, 
       {
+        "url": "/tests/cssfontload/helpers/FontFace.js", 
+        "path": "tests/cssfontload/helpers/FontFace.js"
+      }, 
+      {
         "url": "/tests/cssom/helpers/CSSCharsetRule.js", 
         "path": "tests/cssom/helpers/CSSCharsetRule.js"
       }, 
@@ -1950,6 +1950,10 @@
         "path": "tests/sse/resources/simple.txt"
       }, 
       {
+        "url": "/tests/svg12tiny/helpers/AsyncURLStatus.js", 
+        "path": "tests/svg12tiny/helpers/AsyncURLStatus.js"
+      }, 
+      {
         "url": "/tests/svg12tiny/helpers/DOMException.js", 
         "path": "tests/svg12tiny/helpers/DOMException.js"
       }, 
@@ -2048,5 +2052,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "93066b477daf58cf9c10818106ac1d8296edf78e"
+  "rev": "9f97042bbfd225c0ab2afae03c09b80f39fc1e18"
 }
