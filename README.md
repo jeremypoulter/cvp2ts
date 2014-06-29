@@ -43,8 +43,9 @@ The `cvp2ts` tool source and build tree is organized as follow:
   Makefile.Tools.mk     - tools parameter (determines which tools are run)
   README.ms             - this readme
   specs/                - contains one sub-directory for each specification
+  specs/index           - special (pseudo) specification directory where aggregate parsed IDL index is written
   tests/                - contains test (and helper and resource) files produced by build
-  tools/                - contains build, utility,and run tools
+  tools/                - contains build, utility, and run tools
 </pre>
 
 Each specification directory is initially populated with a configuration file, e.g.,
@@ -66,9 +67,9 @@ Fetching a specification may be skipped by its configuration file for various re
 
 Some reasons for skipping fetch include:
 
- * Specification is final (REC or equivalent)
+ * Specification is final (REC or equivalent).
  * Specification must be manually processed after fetching before performing extraction, e.g., in order to create a `respec` snapshot.
- * WebIDL must be manually extracted or edited, in which case refetch should be performed manually before this extraction or edit.
+ * WebIDL must be manually extracted or edited, in which case refetch should be performed manually before manual extraction or edit.
 
 Extracting WebIDL from a fetched specification may be skipped according to configuration control if the IDL cannot be automatically extracted or must be manually edited, e.g., to make it acceptable to the WebIDL parser.
 
@@ -97,13 +98,13 @@ Normally rebuilding the `MANIFEST.json` file is not required unless some test ha
 In order to run tests, perform the following steps:
 
  1. Add entries to the local /etc/hosts file as follows:
-    `127.0.0.1 web-platform.test`
-    `127.0.0.1 www.web-platform.test`
+    * `127.0.0.1 web-platform.test`
+    * `127.0.0.1 www.web-platform.test`
  2. From the top-level directory of this `cvp2ts` hierarchy, run the following command in a separate shell:
-    `python tools/w3c/scripts/serve.py`
+    * `python tools/w3c/scripts/serve.py`
  3. From the test browser (user agent), open the following link:
-    `http://web-platform.test:8000/tools/w3c/runner/index.html`
- 4. After setting runner options as desired, click on `Start` button. Note that Manual tests are enabled by default, and there is at least one manual test present in the generated tests.
+    * `http://web-platform.test:8000/tools/w3c/runner/index.html`
+ 4. After setting runner options as desired, click on `Start` button. Note that manual tests are enabled by default, and there is at least one manual test present in the generated tests.
 
 If it is desired that the server and client run on separated devices, then the nameserver in use should be configured to return the desired address for the server (instead of the localhost address).
 
