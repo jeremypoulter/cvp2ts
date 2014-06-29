@@ -37,18 +37,22 @@ The `cvp2ts` tool provides a test suite for performing signature and feature pre
  * node.js
  * npm
  * cheerio npm module
+ * webidl2 npm module
 
 ## Notes
 
  * At present, `cvp2ts` is being developed using the following versions of tools:
 
 <pre>
-    $ node -version
+    $ node --version
     v0.10.26
 
     $ npm --version
     1.4.3
 
     $ npm ls --parseable true --long true cheerio | awk -F: '{print $2}'
-    cheerio@0.14.0
+    cheerio@0.17.0
+
+    $ npm ls --parseable true --long true webidl2 | awk -F: '{print $2}'
+    webidl2@2.0.6
 </pre>

@@ -3,7 +3,48 @@
   <title>CSS Font Loading Module Level 3</title>
   <link href=../default.css rel=stylesheet type=text/css>
   <link href=../csslogo.ico rel="shortcut icon" type=image/x-icon>
-  <link href=https://www.w3.org/StyleSheets/TR/W3C-WD rel=stylesheet type=text/css>
+  <style>
+  body {
+    background: url("https://www.w3.org/StyleSheets/TR/logo-ED") top left no-repeat white;
+    background-attachment: fixed;
+    color: black;
+    font-family: sans-serif;
+    margin: 0 auto;
+    max-width: 50em;
+    padding: 2em 1em 2em 70px;
+  }
+  :link { color: #00C; background: transparent }
+  :visited { color: #609; background: transparent }
+  a[href]:active { color: #C00; background: transparent }
+  a[href]:hover { background: #ffa }
+
+  a[href] img { border-style: none }
+
+  h1, h2, h3, h4, h5, h6 { text-align: left }
+  h1, h2, h3 { color: #005A9C; }
+  h1 { font: 170% sans-serif }
+  h2 { font: 140% sans-serif }
+  h3 { font: 120% sans-serif }
+  h4 { font: bold 100% sans-serif }
+  h5 { font: italic 100% sans-serif }
+  h6 { font: small-caps 100% sans-serif }
+
+  .hide { display: none }
+
+  div.head { margin-bottom: 1em }
+  div.head h1 { margin-top: 2em; clear: both }
+  div.head table { margin-left: 2em; margin-top: 2em }
+
+  p.copyright { font-size: small }
+  p.copyright small { font-size: small }
+
+  pre { margin-left: 2em }
+  dt { font-weight: bold }
+
+  ul.toc, ol.toc {
+    list-style: none;
+  }
+  </style>
 </head>
 <body class=h-entry>
 <div class=head>
@@ -12,15 +53,25 @@
 </a>
 </p>
   <h1 class="p-name no-ref" id=title>CSS Font Loading Module Level 3</h1>
-  <h2 class="no-num no-toc no-ref heading settled heading" id=subtitle><span class=content>W3C Last Call Working Draft,
-    <span class=dt-updated><span class=value-title title=20140522>22 May 2014</span></span></span></h2>
-  <div data-fill-with=spec-metadata><dl><dt>This version:<dd><a class=u-url href=http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/>http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/</a><dt>Latest version:<dd><a href=http://w3.org/TR/css-font-loading/>http://w3.org/TR/css-font-loading/</a><dt>Editor’s Draft:<dd><a href=http://dev.w3.org/csswg/css-font-loading/>http://dev.w3.org/csswg/css-font-loading/</a>
-    <dt>Feedback:</dt>
-        <dd><a href="mailto:www-style@w3.org?subject=%5Bcss-font-loading%5D%20feedback">www-style@w3.org</a>
+  <h2 class="no-num no-toc no-ref heading settled heading" id=subtitle><span class=content>Editor’s Draft,
+    <span class=dt-updated><span class=value-title title=20140627>27 June 2014</span></span></span></h2>
+  <div data-fill-with=spec-metadata><dl>
+	<dt>This version:
+	<dd><a class=u-url href=http://dev.w3.org/csswg/css-font-loading/>http://dev.w3.org/csswg/css-font-loading/</a>
+	<dt>Latest version:
+	<dd><a href=http://w3.org/TR/css-font-loading/>http://w3.org/TR/css-font-loading/</a>
+	<dt>Previous Versions:
+	<dd><dd><a href=http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/ rel=previous>http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/</a>
+	<dt>Feedback:
+	<dd><a href="mailto:www-style@w3.org?subject=%5Bcss-font-loading%5D%20feedback">www-style@w3.org</a>
             with subject line
-            “<kbd>[css-font-loading] <var>… message topic …</var></kbd>”(<a href=http://lists.w3.org/Archives/Public/www-style/ rel=discussion>archives</a>)<dt>Test Suite:<dd>None Yet<dt>Editors:
-<dd class="p-author h-card vcard"><a class="p-name fn u-url url" href=http://xanthir.com/contact/>Tab Atkins Jr.</a> (<span class="p-org org">Google</span>)<dt>Former Editors:
-<dd class="p-author h-card vcard"><a class="p-name fn u-email email" href=mailto:jdaggett@mozilla.com>John Daggett</a> (<span class="p-org org">Mozilla</span>)</dl></div>
+            “<kbd>[css-font-loading] <var>… message topic …</var></kbd>”(<a href=http://lists.w3.org/Archives/Public/www-style/ rel=discussion>archives</a>)
+	<dt>Editor:
+	<dd><dd class="p-author h-card vcard"><a class="p-name fn u-url url" href=http://xanthir.com/contact/>Tab Atkins Jr.</a> (<span class="p-org org">Google</span>)
+	<dt>Former Editor:
+	<dd><dd class="p-author h-card vcard"><a class="p-name fn u-email email" href=mailto:jdaggett@mozilla.com>John Daggett</a> (<span class="p-org org">Mozilla</span>)
+</dl>
+</div>
   <div data-fill-with=warning></div>
   <p class=copyright data-fill-with=copyright><a href=http://www.w3.org/Consortium/Legal/ipr-notice#Copyright>Copyright</a> © 2014 <a href=http://www.w3.org/><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href=http://www.csail.mit.edu/><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href=http://www.ercim.eu/><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href=http://www.keio.ac.jp/>Keio</a>, <a href=http://ev.buaa.edu.cn/>Beihang</a>), All Rights Reserved. W3C <a href=http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer>liability</a>, <a href=http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks>trademark</a> and <a href=http://www.w3.org/Consortium/Legal/copyright-documents>document use</a> rules apply.
 </p>
@@ -28,86 +79,82 @@
 </div>
 
 <h2 class="no-num no-toc no-ref heading settled heading" id=abstract><span class=content>Abstract</span></h2>
-<p class=p-summary data-fill-with=abstract>This CSS module describes events and interfaces used for dynamically loading font resources.
+<div class=p-summary data-fill-with=abstract><p>This CSS module describes events and interfaces used for dynamically loading font resources.</p>
+
 <a href=http://www.w3.org/TR/CSS/>CSS</a> is a language for describing the rendering of structured documents 
 (such as HTML and XML) 
-on screen, on paper, in speech, etc.</p>
+on screen, on paper, in speech, etc.</div>
 
 <h2 class="no-num no-toc no-ref heading settled heading" id=status><span class=content>Status of this document</span></h2>
-<div data-fill-with=status><p><em>This section describes the status of this document at the time of
-   its publication. Other documents may supersede this document. A list of
-   current W3C publications and the latest revision of this technical report
-   can be found in the <a href=http://www.w3.org/TR/>W3C technical reports
-   index at http://www.w3.org/TR/.</a></em>
+<div data-fill-with=status><p>
+	This is a public copy of the editors’ draft. 
+	It is provided for discussion only and may change at any moment. 
+	Its publication here does not imply endorsement of its contents by W3C. 
+	Don’t cite this document other than as work in progress.
 
-  <p>Publication as a Last Call Working Draft does not imply endorsement by the W3C
-   Membership. This is a draft document and may be updated, replaced or
-   obsoleted by other documents at any time. It is inappropriate to cite this
-   document as other than work in progress.
+<p>
+	The (<a href=http://lists.w3.org/Archives/Public/www-style/>archived</a>) public mailing list
+	<a href="mailto:www-style@w3.org?Subject=%5Bcss-font-loading%5D%20PUT%20SUBJECT%20HERE">www-style@w3.org</a> 
+	(see <a href=http://www.w3.org/Mail/Request>instructions</a>) 
+	is preferred for discussion of this specification. 
+	When sending e-mail, 
+	please put the text “css-font-loading” in the subject, 
+	preferably like this:
+	“[css-font-loading] <em>…summary of comment…</em>”
 
-  <p>The (<a href=http://lists.w3.org/Archives/Public/www-style/>archived</a>) public
-   mailing list <a href=mailto:www-style@w3.org>www-style@w3.org</a> (see
-   <a href=http://www.w3.org/Mail/Request>instructions</a>) is preferred
-   for discussion of this specification. When sending e-mail, please put the
-   text “css-font-loading” in the subject, preferably like this:
-   “[css-font-loading] <em>…summary of comment…</em>”
+<p>
+	This document was produced by the <a href=http://www.w3.org/Style/CSS/members>CSS Working Group</a> 
+	(part of the <a href=http://www.w3.org/Style/>Style Activity</a>).
 
-  <p>This document was produced by the <a href=http://www.w3.org/Style/CSS/members>CSS Working Group</a> (part of
-   the <a href=http://www.w3.org/Style/>Style Activity</a>).
-
-  <p>This document was produced by a group operating under the <a href=http://www.w3.org/Consortium/Patent-Policy-20040205/>5 February
-   2004 W3C Patent Policy</a>. W3C maintains a <a href=http://www.w3.org/2004/01/pp-impl/32061/status rel=disclosure>public list of any patent disclosures</a> made in
-   connection with the deliverables of the group; that page also includes
-   instructions for disclosing a patent. An individual who has actual
-   knowledge of a patent which the individual believes contains <a href=http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential>Essential
-   Claim(s)</a> must disclose the information in accordance with <a href=http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure>section
-   6 of the W3C Patent Policy</a>.</p>
-
-  <p>This specification is a <strong>Last Call Working Draft</strong>. All
-   persons are encouraged to review this document and <strong>send comments
-   to the <a href=http://lists.w3.org/Archives/Public/www-style/>www-style</a>
-   mailing list</strong> as described above. The <strong>deadline for
-   comments</strong> is <strong>30 June 2014</strong>.</div>
+<p>
+	This document was produced by a group operating under 
+	the <a href=http://www.w3.org/Consortium/Patent-Policy-20040205/>5 February 2004 W3C Patent Policy</a>. 
+	W3C maintains a <a href=http://www.w3.org/2004/01/pp-impl/32061/status rel=disclosure>public list of any patent disclosures</a> 
+	made in connection with the deliverables of the group; 
+	that page also includes instructions for disclosing a patent. 
+	An individual who has actual knowledge of a patent which the individual believes contains <a href=http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential>Essential Claim(s)</a> 
+	must disclose the information in accordance with <a href=http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure>section 6 of the W3C Patent Policy</a>.</div>
 <div data-fill-with=at-risk></div>
 
 <h2 class="no-num no-toc no-ref heading settled heading" id=contents><span class=content>Table of Contents</span></h2>
 <div data-fill-with=table-of-contents><ul class=toc>
-	<li><a href=#introduction><span class=secno>1</span> Introduction</a>
+	<li><a href=#introduction><span class=secno>1</span>  Introduction</a>
 		<ul class=toc>
-		<li><a href=#values><span class=secno>1.1</span> Values</a></ul>
-	<li><a href=#fontface-interface><span class=secno>2</span> The <code>FontFace</code> Interface</a>
+		<li><a href=#values><span class=secno>1.1</span>  Values</a></ul>
+	<li><a href=#fontface-interface><span class=secno>2</span>  The <code>FontFace</code> Interface</a>
 		<ul class=toc>
-		<li><a href=#font-face-constructor><span class=secno>2.1</span> The Constructor</a>
-		<li><a href=#font-face-load><span class=secno>2.2</span> The <code>load()</code> method</a>
-		<li><a href=#font-face-css-connection><span class=secno>2.3</span> Interaction with CSS’s <span class=css data-link-type=maybe title=@font-face>@font-face</span> Rule</a></ul>
-	<li><a href=#FontFaceSet-interface><span class=secno>3</span> The <code>FontFaceSet</code> Interface</a>
+		<li><a href=#font-face-constructor><span class=secno>2.1</span>  The Constructor</a>
+		<li><a href=#font-face-load><span class=secno>2.2</span>  The <code>load()</code> method</a>
+		<li><a href=#font-face-css-connection><span class=secno>2.3</span>  Interaction with CSS’s <span>@font-face</span> Rule</a></ul>
+	<li><a href=#FontFaceSet-interface><span class=secno>3</span>  The <code>FontFaceSet</code> Interface</a>
 		<ul class=toc>
-		<li><a href=#set-modifications><span class=secno>3.1</span> Modifications of normal Set methods</a>
-		<li><a href=#FontFaceSet-events><span class=secno>3.2</span> Events</a>
-		<li><a href=#font-face-set-load><span class=secno>3.3</span> The <code>load()</code> method</a>
-		<li><a href=#font-face-set-check><span class=secno>3.4</span> The <code>check()</code> method</a>
-		<li><a href=#font-face-set-ready><span class=secno>3.5</span> The <code>ready()</code> method</a>
-		<li><a href=#font-face-set-css><span class=secno>3.6</span> Interaction with CSS Font Loading and Matching</a></ul>
-	<li><a href=#font-face-source><span class=secno>4</span> The <code>FontFaceSource</code> interface</a>
+		<li><a href=#set-modifications><span class=secno>3.1</span>  Modifications of normal Set methods</a>
+		<li><a href=#FontFaceSet-events><span class=secno>3.2</span>  Events</a>
+		<li><a href=#font-face-set-load><span class=secno>3.3</span>  The <code>load()</code> method</a>
+		<li><a href=#font-face-set-check><span class=secno>3.4</span>  The <code>check()</code> method</a>
+		<li><a href=#font-face-set-ready><span class=secno>3.5</span>  The <code>ready</code> attribute</a>
+		<li><a href=#font-face-set-css><span class=secno>3.6</span>  Interaction with CSS Font Loading and Matching</a></ul>
+	<li><a href=#font-face-source><span class=secno>4</span>  The <code>FontFaceSource</code> interface</a>
 		<ul class=toc>
-		<li><a href=#fontfacesource-workers><span class=secno>4.1</span> Worker FontFaceSources</a>
-		<li><a href=#document-font-face-set><span class=secno>4.2</span> Interaction with CSS’s <span class=css data-link-type=maybe title=@font-face>@font-face</span> Rule</a></ul>
-	<li><a href=#font-load-event-examples><span class=secno>5</span> API Examples</a>
-	<li><a href=#changes><span class=secno></span>Changes</a>
-	<li><a href=#acknowledgments><span class=secno></span> Acknowledgments</a>
-	<li><a href=#conformance><span class=secno></span> Conformance</a>
+		<li><a href=#fontfacesource-workers><span class=secno>4.1</span>  Worker FontFaceSources</a>
+		<li><a href=#document-font-face-set><span class=secno>4.2</span>  Interaction with CSS’s <span>@font-face</span> Rule</a></ul>
+	<li><a href=#font-load-event-examples><span class=secno>5</span>  API Examples</a>
+	<li><a href=#changes><span class=secno></span> Changes</a>
+	<li><a href=#acknowledgments><span class=secno></span>  Acknowledgments</a>
+	<li><a href=#conformance><span class=secno></span>  Conformance</a>
 		<ul class=toc>
-		<li><a href=#conventions><span class=secno></span> Document conventions</a>
-		<li><a href=#conformance-classes><span class=secno></span> Conformance classes</a>
-		<li><a href=#partial><span class=secno></span> Partial implementations</a>
-		<li><a href=#experimental><span class=secno></span> Experimental implementations</a>
-		<li><a href=#testing><span class=secno></span> Non-experimental implementations</a></ul>
-	<li><a href=#references><span class=secno></span> References</a>
+		<li><a href=#conventions><span class=secno></span>  Document conventions</a>
+		<li><a href=#conformance-classes><span class=secno></span>  Conformance classes</a>
+		<li><a href=#partial><span class=secno></span>  Partial implementations</a>
+		<li><a href=#experimental><span class=secno></span>  Experimental implementations</a>
+		<li><a href=#testing><span class=secno></span>  Non-experimental implementations</a></ul>
+	<li><a href=#references><span class=secno></span>  References</a>
 		<ul class=toc>
-		<li><a href=#normative><span class=secno></span> Normative References</a>
-		<li><a href=#informative><span class=secno></span> Informative References</a></ul>
-	<li><a href=#index><span class=secno></span> Index</a>
-	<li><a href=#property-index><span class=secno></span> Property index</a></ul></div>
+		<li><a href=#normative><span class=secno></span>  Normative References</a>
+		<li><a href=#informative><span class=secno></span>  Informative References</a></ul>
+	<li><a href=#index><span class=secno></span>  Index</a>
+	<li><a href=#property-index><span class=secno></span>  Property index</a>
+	<li><a href=#issues-index><span class=secno></span> Issues Index</a></ul></div>
 
 
 
@@ -116,7 +163,7 @@ on screen, on paper, in speech, etc.</p>
 <h2 class="heading settled heading" data-level=1 id=introduction><span class=secno>1 </span><span class=content>
 Introduction</span><a class=self-link href=#introduction></a></h2>
 
-<p>CSS allows authors to load custom fonts from the web via the <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule.
+<p>CSS allows authors to load custom fonts from the web via the <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule.
 	While this is easy to use when authoring a stylesheet,
 	it’s much more difficult to use dynamically via scripting.</p>
 
@@ -144,38 +191,39 @@ Values</span><a class=self-link href=#values></a></h3>
 The <code>FontFace</code> Interface</span><a class=self-link href=#fontface-interface></a></h2>
 
 <p>The <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> interface represents a single usable font face.
-	CSS <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rules implicitly define FontFace objects,
+	CSS <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rules implicitly define FontFace objects,
 	or they can be constructed manually from a url or binary data.</p>
 
 	<pre class=idl>typedef (<a data-link-type=idl href=http://www.khronos.org/registry/typedarray/specs/latest/#ArrayBuffer title=arraybuffer>ArrayBuffer</a> or <a data-link-type=idl href=http://www.khronos.org/registry/typedarray/specs/latest/#ArrayBufferView title=arraybufferview>ArrayBufferView</a>) <dfn class=idl-code data-dfn-type=typedef data-export="" data-global-name="" id=typedefdef-binarydata>BinaryData<a class=self-link href=#typedefdef-binarydata></a></dfn>;
 
-  dictionary <dfn class=idl-code data-dfn-type=dictionary data-export="" data-global-name="" id=dictdef-fontfacedescriptors>FontFaceDescriptors<a class=self-link href=#dictdef-fontfacedescriptors></a></dfn> {
-    DOMString <dfn class=idl-code data-dfn-for=FontFaceDescriptors data-dfn-type=dict-member data-export="" data-global-name="FontFaceDescriptors<dictionary>/style<dict-member>" id=dom-fontfacedescriptors-style>style<a class=self-link href=#dom-fontfacedescriptors-style></a></dfn> = "normal";
-    DOMString <dfn class=idl-code data-dfn-for=FontFaceDescriptors data-dfn-type=dict-member data-export="" data-global-name="FontFaceDescriptors<dictionary>/weight<dict-member>" id=dom-fontfacedescriptors-weight>weight<a class=self-link href=#dom-fontfacedescriptors-weight></a></dfn> = "normal";
-    DOMString <dfn class=idl-code data-dfn-for=FontFaceDescriptors data-dfn-type=dict-member data-export="" data-global-name="FontFaceDescriptors<dictionary>/stretch<dict-member>" id=dom-fontfacedescriptors-stretch>stretch<a class=self-link href=#dom-fontfacedescriptors-stretch></a></dfn> = "normal";
-    DOMString <dfn class=idl-code data-dfn-for=FontFaceDescriptors data-dfn-type=dict-member data-export="" data-global-name="FontFaceDescriptors<dictionary>/unicoderange<dict-member>" id=dom-fontfacedescriptors-unicoderange>unicodeRange<a class=self-link href=#dom-fontfacedescriptors-unicoderange></a></dfn> = "U+0-10FFFF";
-    DOMString <dfn class=idl-code data-dfn-for=FontFaceDescriptors data-dfn-type=dict-member data-export="" data-global-name="FontFaceDescriptors<dictionary>/variant<dict-member>" id=dom-fontfacedescriptors-variant>variant<a class=self-link href=#dom-fontfacedescriptors-variant></a></dfn> = "normal";
-    DOMString <dfn class=idl-code data-dfn-for=FontFaceDescriptors data-dfn-type=dict-member data-export="" data-global-name="FontFaceDescriptors<dictionary>/featuresettings<dict-member>" id=dom-fontfacedescriptors-featuresettings>featureSettings<a class=self-link href=#dom-fontfacedescriptors-featuresettings></a></dfn> = "normal";
-  };
+dictionary <dfn class=idl-code data-dfn-type=dictionary data-export="" data-global-name="" id=dictdef-fontfacedescriptors>FontFaceDescriptors<a class=self-link href=#dictdef-fontfacedescriptors></a></dfn> {
+  DOMString <dfn class=idl-code data-dfn-for=FontFaceDescriptors data-dfn-type=dict-member data-export="" data-global-name="FontFaceDescriptors<dictionary>/style<dict-member>" id=dom-fontfacedescriptors-style>style<a class=self-link href=#dom-fontfacedescriptors-style></a></dfn> = "normal";
+  DOMString <dfn class=idl-code data-dfn-for=FontFaceDescriptors data-dfn-type=dict-member data-export="" data-global-name="FontFaceDescriptors<dictionary>/weight<dict-member>" id=dom-fontfacedescriptors-weight>weight<a class=self-link href=#dom-fontfacedescriptors-weight></a></dfn> = "normal";
+  DOMString <dfn class=idl-code data-dfn-for=FontFaceDescriptors data-dfn-type=dict-member data-export="" data-global-name="FontFaceDescriptors<dictionary>/stretch<dict-member>" id=dom-fontfacedescriptors-stretch>stretch<a class=self-link href=#dom-fontfacedescriptors-stretch></a></dfn> = "normal";
+  DOMString <dfn class=idl-code data-dfn-for=FontFaceDescriptors data-dfn-type=dict-member data-export="" data-global-name="FontFaceDescriptors<dictionary>/unicoderange<dict-member>" id=dom-fontfacedescriptors-unicoderange>unicodeRange<a class=self-link href=#dom-fontfacedescriptors-unicoderange></a></dfn> = "U+0-10FFFF";
+  DOMString <dfn class=idl-code data-dfn-for=FontFaceDescriptors data-dfn-type=dict-member data-export="" data-global-name="FontFaceDescriptors<dictionary>/variant<dict-member>" id=dom-fontfacedescriptors-variant>variant<a class=self-link href=#dom-fontfacedescriptors-variant></a></dfn> = "normal";
+  DOMString <dfn class=idl-code data-dfn-for=FontFaceDescriptors data-dfn-type=dict-member data-export="" data-global-name="FontFaceDescriptors<dictionary>/featuresettings<dict-member>" id=dom-fontfacedescriptors-featuresettings>featureSettings<a class=self-link href=#dom-fontfacedescriptors-featuresettings></a></dfn> = "normal";
+};
 
-  enum <dfn class=idl-code data-dfn-type=enum data-export="" data-global-name="" id=enumdef-fontfaceloadstatus>FontFaceLoadStatus<a class=self-link href=#enumdef-fontfaceloadstatus></a></dfn> { "unloaded", "loading", "loaded", "error" };
+enum <dfn class=idl-code data-dfn-type=enum data-export="" data-global-name="" id=enumdef-fontfaceloadstatus>FontFaceLoadStatus<a class=self-link href=#enumdef-fontfaceloadstatus></a></dfn> { "unloaded", "loading", "loaded", "error" };
 
-  [Constructor(DOMString <a class=idl-code data-global-name="FontFace<interface>/FontFace()<method>/family<argument>" data-link-for=FontFace/FontFace() data-link-type=argument href=#dom-fontfacefontface-family title=family>family</a>, (DOMString or <a data-link-type=idl href=#typedefdef-binarydata title=binarydata>BinaryData</a>) <a class=idl-code data-global-name="FontFace<interface>/FontFace()<method>/source<argument>" data-link-for=FontFace/FontFace() data-link-type=argument href=#dom-fontfacefontface-source title=source>source</a>,
-             <a data-link-type=idl href=#dictdef-fontfacedescriptors title=fontfacedescriptors>FontFaceDescriptors</a> <a class=idl-code data-global-name="FontFace<interface>/FontFace()<method>/descriptors<argument>" data-link-for=FontFace/FontFace() data-link-type=argument href=#dom-fontfacefontface-descriptors title=descriptors>descriptors</a>)]
-  interface <dfn class=idl-code data-dfn-type=interface data-export="" data-global-name="" id=dom-fontface>FontFace<a class=self-link href=#dom-fontface></a></dfn> {
-    attribute DOMString <a class=idl-code data-global-name="FontFace<interface>/family<attribute>" data-link-for=FontFace data-link-type=attribute data-type="DOMString " href=#dom-fontface-family title=family>family</a>;
-    attribute DOMString <a class=idl-code data-global-name="FontFace<interface>/style<attribute>" data-link-for=FontFace data-link-type=attribute data-type="DOMString " href=#dom-fontface-style title=style>style</a>;
-    attribute DOMString <a class=idl-code data-global-name="FontFace<interface>/weight<attribute>" data-link-for=FontFace data-link-type=attribute data-type="DOMString " href=#dom-fontface-weight title=weight>weight</a>;
-    attribute DOMString <a class=idl-code data-global-name="FontFace<interface>/stretch<attribute>" data-link-for=FontFace data-link-type=attribute data-type="DOMString " href=#dom-fontface-stretch title=stretch>stretch</a>;
-    attribute DOMString <a class=idl-code data-global-name="FontFace<interface>/unicoderange<attribute>" data-link-for=FontFace data-link-type=attribute data-type="DOMString " href=#dom-fontface-unicoderange title=unicoderange>unicodeRange</a>;
-    attribute DOMString <a class=idl-code data-global-name="FontFace<interface>/variant<attribute>" data-link-for=FontFace data-link-type=attribute data-type="DOMString " href=#dom-fontface-variant title=variant>variant</a>;
-    attribute DOMString <a class=idl-code data-global-name="FontFace<interface>/featuresettings<attribute>" data-link-for=FontFace data-link-type=attribute data-type="DOMString " href=#dom-fontface-featuresettings title=featuresettings>featureSettings</a>;
+[Constructor(DOMString <a class=idl-code data-global-name="FontFace<interface>/FontFace()<method>/family<argument>" data-link-for=FontFace/FontFace() data-link-type=argument href=#dom-fontfacefontface-family title=family>family</a>, (DOMString or <a data-link-type=idl href=#typedefdef-binarydata title=binarydata>BinaryData</a>) <a class=idl-code data-global-name="FontFace<interface>/FontFace()<method>/source<argument>" data-link-for=FontFace/FontFace() data-link-type=argument href=#dom-fontfacefontface-source title=source>source</a>,
+           optional <a data-link-type=idl href=#dictdef-fontfacedescriptors title=fontfacedescriptors>FontFaceDescriptors</a> <a class=idl-code data-global-name="FontFace<interface>/FontFace()<method>/descriptors<argument>" data-link-for=FontFace/FontFace() data-link-type=argument href=#dom-fontfacefontface-descriptors title=descriptors>descriptors</a>),
+ Exposed=Window,Worker]
+interface <dfn class=idl-code data-dfn-type=interface data-export="" data-global-name="" id=dom-fontface>FontFace<a class=self-link href=#dom-fontface></a></dfn> {
+  attribute DOMString <a class=idl-code data-global-name="FontFace<interface>/family<attribute>" data-link-for=FontFace data-link-type=attribute data-type="DOMString " href=#dom-fontface-family title=family>family</a>;
+  attribute DOMString <a class=idl-code data-global-name="FontFace<interface>/style<attribute>" data-link-for=FontFace data-link-type=attribute data-type="DOMString " href=#dom-fontface-style title=style>style</a>;
+  attribute DOMString <a class=idl-code data-global-name="FontFace<interface>/weight<attribute>" data-link-for=FontFace data-link-type=attribute data-type="DOMString " href=#dom-fontface-weight title=weight>weight</a>;
+  attribute DOMString <a class=idl-code data-global-name="FontFace<interface>/stretch<attribute>" data-link-for=FontFace data-link-type=attribute data-type="DOMString " href=#dom-fontface-stretch title=stretch>stretch</a>;
+  attribute DOMString <a class=idl-code data-global-name="FontFace<interface>/unicoderange<attribute>" data-link-for=FontFace data-link-type=attribute data-type="DOMString " href=#dom-fontface-unicoderange title=unicoderange>unicodeRange</a>;
+  attribute DOMString <a class=idl-code data-global-name="FontFace<interface>/variant<attribute>" data-link-for=FontFace data-link-type=attribute data-type="DOMString " href=#dom-fontface-variant title=variant>variant</a>;
+  attribute DOMString <a class=idl-code data-global-name="FontFace<interface>/featuresettings<attribute>" data-link-for=FontFace data-link-type=attribute data-type="DOMString " href=#dom-fontface-featuresettings title=featuresettings>featureSettings</a>;
 
-    readonly attribute <a data-link-type=idl href=#enumdef-fontfaceloadstatus title=fontfaceloadstatus>FontFaceLoadStatus</a> <a class=idl-code data-global-name="FontFace<interface>/status<attribute>" data-link-for=FontFace data-link-type=attribute data-readonly="" data-type="FontFaceLoadStatus " href=#dom-fontface-status title=status>status</a>;
+  readonly attribute <a data-link-type=idl href=#enumdef-fontfaceloadstatus title=fontfaceloadstatus>FontFaceLoadStatus</a> <a class=idl-code data-global-name="FontFace<interface>/status<attribute>" data-link-for=FontFace data-link-type=attribute data-readonly="" data-type="FontFaceLoadStatus " href=#dom-fontface-status title=status>status</a>;
 
-    Promise&lt;<a data-link-type=idl href=#dom-fontface title=fontface>FontFace</a>&gt; <a class=idl-code data-global-name="FontFace<interface>/load()<method>" data-link-for=FontFace data-link-type=method href=#dom-fontface-load title=load()>load</a>();
-    attribute Promise&lt;boolean&gt; <a class=idl-code data-global-name="FontFace<interface>/loaded<attribute>" data-link-for=FontFace data-link-type=attribute data-type="Promise<boolean> " href=#dom-fontface-loaded title=loaded>loaded</a>;
-  };
+  Promise&lt;<a data-link-type=idl href=#dom-fontface title=fontface>FontFace</a>&gt; <a class=idl-code data-global-name="FontFace<interface>/load()<method>" data-link-for=FontFace data-link-type=method href=#dom-fontface-load title=load()>load</a>();
+  readonly attribute Promise&lt;boolean&gt; <a class=idl-code data-global-name="FontFace<interface>/loaded<attribute>" data-link-for=FontFace data-link-type=attribute data-readonly="" data-type="Promise<boolean> " href=#dom-fontface-loaded title=loaded>loaded</a>;
+};
 </pre>
 
 	<dl data-dfn-for=FontFace data-dfn-type=attribute>
@@ -186,8 +234,8 @@ The <code>FontFace</code> Interface</span><a class=self-link href=#fontface-inte
 		<dt><dfn class=idl-code data-dfn-for=FontFace data-dfn-type=attribute data-export="" id=dom-fontface-unicoderange>unicodeRange<a class=self-link href=#dom-fontface-unicoderange></a></dfn>, <span data-attribute-info="" for=unicodeRange> of type <a data-link-type=idl-name title=domstring>DOMString</a></span>
 		<dd>
 			These attributes all represent the corresponding aspects of a font face,
-			as defined by the descriptors defined in the CSS <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule.
-			They are parsed the same as the corresponding <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> descriptors.
+			as defined by the descriptors defined in the CSS <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule.
+			They are parsed the same as the corresponding <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> descriptors.
 			They are used by the font matching algorithm,
 			but otherwise have no effect.
 
@@ -195,16 +243,30 @@ The <code>FontFace</code> Interface</span><a class=self-link href=#fontface-inte
 			<em>represents</em> an italic font face;
 			it does not <strong>make</strong> the font face italic.</p>
 
+<p>On getting, return the string associated with this attribute.</p>
+
+<p>On setting, parse the string according to the grammar for the CSS <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule.
+			If it does not match the grammar,
+			throw a SyntaxError;
+			otherwise, set the attribute to the serialization of the parsed value.</p>
+
 		<dt><dfn class=idl-code data-dfn-for=FontFace data-dfn-type=attribute data-export="" id=dom-fontface-variant>variant<a class=self-link href=#dom-fontface-variant></a></dfn>, <span data-attribute-info="" for=variant> of type <a data-link-type=idl-name title=domstring>DOMString</a></span>
 		<dt><dfn class=idl-code data-dfn-for=FontFace data-dfn-type=attribute data-export="" id=dom-fontface-featuresettings>featureSettings<a class=self-link href=#dom-fontface-featuresettings></a></dfn>, <span data-attribute-info="" for=featureSettings> of type <a data-link-type=idl-name title=domstring>DOMString</a></span>
 		<dd>
 			These attributes have the same meaning,
 			and are parsed the same as,
-			the corresponding descriptors in the CSS <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rules.
+			the corresponding descriptors in the CSS <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rules.
 
 <p>They turn on or off specific features in fonts that support them.
 			Unlike the previous attributes,
 			these attributes actually affect the font face.</p>
+
+<p>On getting, return the string associated with this attribute.</p>
+
+<p>On setting, parse the string according to the grammar for the CSS <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule.
+			If it does not match the grammar,
+			throw a SyntaxError;
+			otherwise, set the attribute to the serialization of the parsed value.</p>
 
 		<dt><dfn class=idl-code data-dfn-for=FontFace data-dfn-type=attribute data-export="" id=dom-fontface-status>status<a class=self-link href=#dom-fontface-status></a></dfn>, <span data-attribute-info="" for=FontFace/status> of type <a data-link-type=idl-name href=#enumdef-fontfaceloadstatus title=fontfaceloadstatus>FontFaceLoadStatus</a>, readonly</span>
 		<dd>
@@ -216,7 +278,7 @@ The <code>FontFace</code> Interface</span><a class=self-link href=#fontface-inte
 			or implicitly by the user agent,
 			due to it detecting that the font face is needed to draw some text on the screen.</p>
 
-		<dt><dfn class=idl-code data-dfn-for=FontFace data-dfn-type=attribute data-export="" id=dom-fontface-loaded>loaded<a class=self-link href=#dom-fontface-loaded></a></dfn>, <span data-attribute-info="" for=loaded> of type <a data-link-type=idl-name href=#dom-promise title=promise>Promise<boolean></boolean></a></span>
+		<dt><dfn class=idl-code data-dfn-for=FontFace data-dfn-type=attribute data-export="" id=dom-fontface-loaded>loaded<a class=self-link href=#dom-fontface-loaded></a></dfn>, <span data-attribute-info="" for=loaded> of type <a data-link-type=idl-name href=#dom-promise title=promise>Promise<boolean></boolean></a>, readonly</span>
 		<dd>
 			This attribute reflects the <a data-link-type=idl href=#dom-fontface-fontstatuspromise title=[[fontstatuspromise]]>[[FontStatusPromise]]</a> of the font face.
 	</dl>
@@ -253,16 +315,16 @@ The Constructor</span><a class=self-link href=#font-face-constructor></a></h3>
 		<li>
 			Parse the <a class=idl-code data-link-type=argument href=#dom-fontfacefontface-family title=family>family</a> argument,
 			and the members of the <a class=idl-code data-link-for=FontFace/FontFace() data-link-type=argument href=#dom-fontfacefontface-descriptors title=descriptors>descriptors</a> argument,
-			according to the grammars of the corresponding descriptors of the CSS <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule.
+			according to the grammars of the corresponding descriptors of the CSS <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule.
 			If any of them fail to parse correctly,
-			reject <var>font face’s</var> <a data-link-type=idl href=#dom-fontface-fontstatuspromise title=[[fontstatuspromise]]>[[FontStatusPromise]]</a> with a SyntaxError exception and abort these steps.
-			Otherwise, set <var>font face’s</var> corresponding attributes to the serialization of the parsed values.
+			reject <var>font face’s</var> <a data-link-type=idl href=#dom-fontface-fontstatuspromise title=[[fontstatuspromise]]>[[FontStatusPromise]]</a> with a DOMException named "SyntaxError" and abort these steps.
+			Otherwise, queue a task to set <var>font face’s</var> corresponding attributes to the serialization of the parsed values.
 
 		<li>
 			If the <a data-link-type=idl href=#dom-fontfacefontface-source title=source>source</a> argument was a <a data-link-type=idl title=domstring>DOMString</a>,
-			parse it according to the grammar of the <a class=property data-link-type=propdesc href=http://www.w3.org/TR/css-fonts-3/#descdef-src title=src>src</a> descriptor of the CSS <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule.
+			parse it according to the grammar of the <a class=property data-link-type=propdesc href=http://dev.w3.org/csswg/css-fonts-3/#descdef-src title=src>src</a> descriptor of the CSS <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule.
 			If it fails to parse correctly,
-			reject <var>font face’s</var> <a data-link-type=idl href=#dom-fontface-fontstatuspromise title=[[fontstatuspromise]]>[[FontStatusPromise]]</a> with a SyntaxError exception and abort these steps;
+			reject <var>font face’s</var> <a data-link-type=idl href=#dom-fontface-fontstatuspromise title=[[fontstatuspromise]]>[[FontStatusPromise]]</a> with a DOMException named "SyntaxError" exception and abort these steps;
 			otherwise, set <var>font face’s</var> internal <a data-link-type=idl href=#dom-fontface-urls title=[[urls]]>[[Urls]]</a> slot to the string.
 
 <p class=note>Note: Note that this means that passing a naked url as the source argument,
@@ -274,17 +336,23 @@ The Constructor</span><a class=self-link href=#font-face-constructor></a></h3>
 			specify the type of font each fallback is,
 			and refer to local fonts easily.</p>
 
+<p class=issue id=issue-46e5892e><a class=self-link href=#issue-46e5892e></a>Need to define the base url,
+			so relative urls can resolve.
+			Should it be the url of the document?
+			Is that correct for workers too,
+			or should they use their worker url?
+			Is that always defined?</p>
+
 <p>If the <a data-link-type=idl href=#dom-fontfacefontface-source title=source>source</a> argument was a <a data-link-type=idl href=#typedefdef-binarydata title=binarydata>BinaryData</a>,
 			set <var>font face’s</var> internal <a data-link-type=idl href=#dom-fontface-data title=[[data]]>[[Data]]</a> slot to the passed argument.</p>
 
 		<li>
 			If <var>font face’s</var> <a data-link-type=idl href=#dom-fontface-data title=[[data]]>[[Data]]</a> slot is not <code>null</code>,
-			set <var>font face’s</var> <a data-link-for=FontFace data-link-type=idl href=#dom-fontface-status title=status>status</a> attribute to "loading",
-			and attempt to parse the data in it as a font.
+			queue a task to set <var>font face’s</var> <a data-link-for=FontFace data-link-type=idl href=#dom-fontface-status title=status>status</a> attribute to "loading".
+			Attempt to parse the data in it as a font.
 			When this is completed,
 			successfully or not,
-			await a stable state,
-			then run the following steps synchronously:
+			queue a task to run the following steps synchronously:
 
 			<ol>
 				<li>
@@ -295,7 +363,7 @@ The Constructor</span><a class=self-link href=#font-face-constructor></a></h3>
 
 				<li>
 					Otherwise,
-					reject <var>font face’s</var> <a data-link-type=idl href=#dom-fontface-fontstatuspromise title=[[fontstatuspromise]]>[[FontStatusPromise]]</a> with a SyntaxError
+					reject <var>font face’s</var> <a data-link-type=idl href=#dom-fontface-fontstatuspromise title=[[fontstatuspromise]]>[[FontStatusPromise]]</a> with a DOMException named "SyntaxError"
 					and set <var>font face’s</var> <a data-link-for=FontFace data-link-type=idl href=#dom-fontface-status title=status>status</a> attribute to "error".
 			</ol>
 	</ol>
@@ -340,18 +408,18 @@ The <code>load()</code> method</span><a class=self-link href=#font-face-load></a
 		<li>
 			Using the value of <var>font face’s</var> <a data-link-type=idl href=#dom-fontface-urls title=[[urls]]>[[Urls]]</a> slot,
 			attempt to load a font as defined in <a data-biblio-type=normative data-link-type=biblio href=#biblio-css3-fonts title=biblio-css3-fonts>[CSS3-FONTS]</a>,
-			as if it was the value of a <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule’s <a class=property data-link-type=propdesc href=http://www.w3.org/TR/css-fonts-3/#descdef-src title=src>src</a> descriptor.
+			as if it was the value of a <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule’s <a class=property data-link-type=propdesc href=http://dev.w3.org/csswg/css-fonts-3/#descdef-src title=src>src</a> descriptor.
 
 		<li>
 			When the load operation completes,
 			successfully or not,
-			await a stable state,
-			then run the following steps synchronously:
+			queue a task to run the following steps synchronously:
 
 			<ol>
 				<li>
 					If the attempt to load fails,
-					reject <var>font face’s</var> <a data-link-type=idl href=#dom-fontface-fontstatuspromise title=[[fontstatuspromise]]>[[FontStatusPromise]]</a> with a NetworkError
+					reject <var>font face’s</var> <a data-link-type=idl href=#dom-fontface-fontstatuspromise title=[[fontstatuspromise]]>[[FontStatusPromise]]</a> with
+					a DOMException whose name is "NetworkError"
 					and set <var>font face’s</var> <a data-link-for=FontFace data-link-type=idl href=#dom-fontface-status title=status>status</a> attribute to "error".
 
 				<li>
@@ -368,79 +436,142 @@ The <code>load()</code> method</span><a class=self-link href=#font-face-load></a
 	they must act as if they had called the corresponding <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a>’s <a class=idl-code data-link-for=FontFace data-link-type=method href=#dom-fontface-load title=load()>load()</a> method described here.</p>
 
 <h3 class="heading settled heading" data-level=2.3 id=font-face-css-connection><span class=secno>2.3 </span><span class=content>
-Interaction with CSS’s <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> Rule</span><a class=self-link href=#font-face-css-connection></a></h3>
+Interaction with CSS’s <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> Rule</span><a class=self-link href=#font-face-css-connection></a></h3>
 
-<p>A CSS <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule automatically defines a corresponding <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> object,
+<p>A CSS <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule automatically defines a corresponding <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> object,
 	which is automatically placed in the document’s <a data-link-type=dfn href=#font-source title="font source">font source</a>
 	when the rule is parsed.
 	This <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> object is <dfn data-dfn-type=dfn data-noexport="" id=css-connected>CSS-connected<a class=self-link href=#css-connected></a></dfn>.</p>
 
-<p>The <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> object corresponding to a <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule
+<p>The <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> object corresponding to a <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule
 	has its <a class=idl-code data-link-type=attribute href=#dom-fontface-family title=family>family</a>, <a class=idl-code data-link-type=attribute href=#dom-fontface-style title=style>style</a>, <a class=idl-code data-link-type=attribute href=#dom-fontface-weight title=weight>weight</a>, <a class=idl-code data-link-type=attribute href=#dom-fontface-stretch title=stretch>stretch</a>, <a class=idl-code data-link-type=attribute href=#dom-fontface-unicoderange title=unicoderange>unicodeRange</a>, <a class=idl-code data-link-type=attribute href=#dom-fontface-variant title=variant>variant</a>, and <a class=idl-code data-link-type=attribute href=#dom-fontface-featuresettings title=featuresettings>featureSettings</a> attributes
-	set to the same value as the corresponding descriptors in the <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule.
+	set to the same value as the corresponding descriptors in the <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule.
 	There is a two-way connection between the two:
-	any change made to a <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> descriptor is immediately reflected in the corresponding <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> attribute,
+	any change made to a <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> descriptor is immediately reflected in the corresponding <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> attribute,
 	and vice versa.</p>
 
-<p>The internal <a class=idl-code data-link-type=attribute href=#dom-fontface-urls title=[[urls]]>[[Urls]]</a> slot of the <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> object is set to the value of the <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule’s <a class=property data-link-type=propdesc href=http://www.w3.org/TR/css-fonts-3/#descdef-src title=src>src</a> descriptor,
-	and reflects any changes made to the <a class=property data-link-type=propdesc href=http://www.w3.org/TR/css-fonts-3/#descdef-src title=src>src</a> descriptor.</p>
+<p>The internal <a class=idl-code data-link-type=attribute href=#dom-fontface-urls title=[[urls]]>[[Urls]]</a> slot of the <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> object is set to the value of the <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule’s <a class=property data-link-type=propdesc href=http://dev.w3.org/csswg/css-fonts-3/#descdef-src title=src>src</a> descriptor,
+	and reflects any changes made to the <a class=property data-link-type=propdesc href=http://dev.w3.org/csswg/css-fonts-3/#descdef-src title=src>src</a> descriptor.</p>
 
-<p>Otherwise, a <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> object created by a CSS <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule is identical to one created manually.</p>
+<p>Otherwise, a <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> object created by a CSS <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule is identical to one created manually.</p>
 
-<p>If a <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule is removed from the document, its corresponding <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> object is no longer <a data-link-type=dfn href=#css-connected title=css-connected>CSS-connected</a>.
+<p>If a <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule is removed from the document, its corresponding <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> object is no longer <a data-link-type=dfn href=#css-connected title=css-connected>CSS-connected</a>.
 	The connection is not restorable by any means
-	(but adding the <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> back to the stylesheet will create a brand new <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> object which <em>is</em> <a data-link-type=dfn href=#css-connected title=css-connected>CSS-connected</a>).</p>
+	(but adding the <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> back to the stylesheet will create a brand new <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> object which <em>is</em> <a data-link-type=dfn href=#css-connected title=css-connected>CSS-connected</a>).</p>
 
 
 
 <h2 class="heading settled heading" data-level=3 id=FontFaceSet-interface><span class=secno>3 </span><span class=content>
 The <code>FontFaceSet</code> Interface</span><a class=self-link href=#FontFaceSet-interface></a></h2>
 
-	<pre class=idl>dictionary <dfn class=idl-code data-dfn-type=dictionary data-export="" data-global-name="" id=dictdef-cssfontfaceloadeventinit>CSSFontFaceLoadEventInit<a class=self-link href=#dictdef-cssfontfaceloadeventinit></a></dfn> : <a data-link-type=idl href=http://dom.spec.whatwg.org/#eventinit title=eventinit>EventInit</a> {
-    sequence&lt;<a data-link-type=idl title=cssfontfacerule>CSSFontFaceRule</a>&gt; <dfn class=idl-code data-dfn-for=CSSFontFaceLoadEventInit data-dfn-type=dict-member data-export="" data-global-name="CSSFontFaceLoadEventInit<dictionary>/fontfaces<dict-member>" id=dom-cssfontfaceloadeventinit-fontfaces>fontfaces<a class=self-link href=#dom-cssfontfaceloadeventinit-fontfaces></a></dfn> = null;
-  };
+	<pre class=idl>dictionary <dfn class=idl-code data-dfn-type=dictionary data-export="" data-global-name="" id=dictdef-fontfacesetloadeventinit>FontFaceSetLoadEventInit<a class=self-link href=#dictdef-fontfacesetloadeventinit></a></dfn> : <a data-link-type=idl href=http://dom.spec.whatwg.org/#eventinit title=eventinit>EventInit</a> {
+  sequence&lt;<a data-link-type=idl href=#dom-fontface title=fontface>FontFace</a>&gt; <dfn class=idl-code data-dfn-for=FontFaceSetLoadEventInit data-dfn-type=dict-member data-export="" data-global-name="FontFaceSetLoadEventInit<dictionary>/fontfaces<dict-member>" id=dom-fontfacesetloadeventinit-fontfaces>fontfaces<a class=self-link href=#dom-fontfacesetloadeventinit-fontfaces></a></dfn> = [];
+};
 
-  [Constructor(DOMString <dfn class=idl-code data-dfn-for=CSSFontFaceLoadEvent/CSSFontFaceLoadEvent() data-dfn-type=argument data-export="" data-global-name="CSSFontFaceLoadEvent<interface>/CSSFontFaceLoadEvent()<method>/type<argument>" id=dom-cssfontfaceloadeventcssfontfaceloadevent-type>type<a class=self-link href=#dom-cssfontfaceloadeventcssfontfaceloadevent-type></a></dfn>, optional <a data-link-type=idl href=#dictdef-cssfontfaceloadeventinit title=cssfontfaceloadeventinit>CSSFontFaceLoadEventInit</a> <dfn class=idl-code data-dfn-for=CSSFontFaceLoadEvent/CSSFontFaceLoadEvent() data-dfn-type=argument data-export="" data-global-name="CSSFontFaceLoadEvent<interface>/CSSFontFaceLoadEvent()<method>/eventinitdict<argument>" id=dom-cssfontfaceloadeventcssfontfaceloadevent-eventinitdict>eventInitDict<a class=self-link href=#dom-cssfontfaceloadeventcssfontfaceloadevent-eventinitdict></a></dfn>)]
-  interface <dfn class=idl-code data-dfn-type=interface data-export="" data-global-name="" id=dom-cssfontfaceloadevent>CSSFontFaceLoadEvent<a class=self-link href=#dom-cssfontfaceloadevent></a></dfn> : <a data-link-type=idl href=http://dom.spec.whatwg.org/#event title=event>Event</a> {
-    readonly attribute sequence&lt;<a data-link-type=idl title=cssfontfacerule>CSSFontFaceRule</a>&gt; <dfn class=idl-code data-dfn-for=CSSFontFaceLoadEvent data-dfn-type=attribute data-export="" data-global-name="CSSFontFaceLoadEvent<interface>/fontfaces<attribute>" data-readonly="" data-type="sequence<CSSFontFaceRule> " id=dom-cssfontfaceloadevent-fontfaces>fontfaces<a class=self-link href=#dom-cssfontfaceloadevent-fontfaces></a></dfn>;
-  };
+[Constructor(DOMString <dfn class=idl-code data-dfn-for=FontFaceSetLoadEvent/FontFaceSetLoadEvent() data-dfn-type=argument data-export="" data-global-name="FontFaceSetLoadEvent<interface>/FontFaceSetLoadEvent()<method>/type<argument>" id=dom-fontfacesetloadeventfontfacesetloadevent-type>type<a class=self-link href=#dom-fontfacesetloadeventfontfacesetloadevent-type></a></dfn>, optional <a data-link-type=idl href=#dictdef-fontfacesetloadeventinit title=fontfacesetloadeventinit>FontFaceSetLoadEventInit</a> <dfn class=idl-code data-dfn-for=FontFaceSetLoadEvent/FontFaceSetLoadEvent() data-dfn-type=argument data-export="" data-global-name="FontFaceSetLoadEvent<interface>/FontFaceSetLoadEvent()<method>/eventinitdict<argument>" id=dom-fontfacesetloadeventfontfacesetloadevent-eventinitdict>eventInitDict<a class=self-link href=#dom-fontfacesetloadeventfontfacesetloadevent-eventinitdict></a></dfn>),
+ Exposed=Window,Worker]
+interface <dfn class=idl-code data-dfn-type=interface data-export="" data-global-name="" id=dom-fontfacesetloadevent>FontFaceSetLoadEvent<a class=self-link href=#dom-fontfacesetloadevent></a></dfn> : <a data-link-type=idl href=http://dom.spec.whatwg.org/#event title=event>Event</a> {
+  readonly attribute sequence&lt;<a data-link-type=idl href=#dom-fontface title=fontface>FontFace</a>&gt; <dfn class=idl-code data-dfn-for=FontFaceSetLoadEvent data-dfn-type=attribute data-export="" data-global-name="FontFaceSetLoadEvent<interface>/fontfaces<attribute>" data-readonly="" data-type="sequence<FontFace> " id=dom-fontfacesetloadevent-fontfaces>fontfaces<a class=self-link href=#dom-fontfacesetloadevent-fontfaces></a></dfn>;
+};
 
-  enum <dfn class=idl-code data-dfn-type=enum data-export="" data-global-name="" id=enumdef-fontfacesetloadstatus>FontFaceSetLoadStatus<a class=self-link href=#enumdef-fontfacesetloadstatus></a></dfn> { "loading", "loaded" };
+enum <dfn class=idl-code data-dfn-type=enum data-export="" data-global-name="" id=enumdef-fontfacesetloadstatus>FontFaceSetLoadStatus<a class=self-link href=#enumdef-fontfacesetloadstatus></a></dfn> { "loading", "loaded" };
 
-  [SetClass(FontFace)]
-  interface <dfn class=idl-code data-dfn-type=interface data-export="" data-global-name="" id=dom-fontfaceset>FontFaceSet<a class=self-link href=#dom-fontfaceset></a></dfn> {
+callback <dfn class=idl-code data-dfn-type=callback data-export="" data-global-name="" id=callbackdef-foreachcallback>ForEachCallback<a class=self-link href=#callbackdef-foreachcallback></a></dfn> = void (<a data-link-type=idl href=#dom-fontface title=fontface>FontFace</a> <dfn class=idl-code data-dfn-for=ForEachCallback data-dfn-type=argument data-export="" data-global-name="ForEachCallback/font<argument>" id=dom-foreachcallback-font>font<a class=self-link href=#dom-foreachcallback-font></a></dfn>, long <dfn class=idl-code data-dfn-for=ForEachCallback data-dfn-type=argument data-export="" data-global-name="ForEachCallback/index<argument>" id=dom-foreachcallback-index>index<a class=self-link href=#dom-foreachcallback-index></a></dfn>, <a data-link-type=idl href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a> <dfn class=idl-code data-dfn-for=ForEachCallback data-dfn-type=argument data-export="" data-global-name="ForEachCallback/self<argument>" id=dom-foreachcallback-self>self<a class=self-link href=#dom-foreachcallback-self></a></dfn>);
 
-    // -- events for when loading state changes
-    attribute <a data-link-type=idl href=http://www.w3.org/TR/html5/webappapis.html#eventhandler title=eventhandler>EventHandler</a> <dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" data-global-name="FontFaceSet<interface>/onloading<attribute>" data-type="EventHandler " id=dom-fontfaceset-onloading>onloading<a class=self-link href=#dom-fontfaceset-onloading></a></dfn>;
-    attribute <a data-link-type=idl href=http://www.w3.org/TR/html5/webappapis.html#eventhandler title=eventhandler>EventHandler</a> <dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" data-global-name="FontFaceSet<interface>/onloadingdone<attribute>" data-type="EventHandler " id=dom-fontfaceset-onloadingdone>onloadingdone<a class=self-link href=#dom-fontfaceset-onloadingdone></a></dfn>;
-    attribute <a data-link-type=idl href=http://www.w3.org/TR/html5/webappapis.html#eventhandler title=eventhandler>EventHandler</a> <dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" data-global-name="FontFaceSet<interface>/onloadingerror<attribute>" data-type="EventHandler " id=dom-fontfaceset-onloadingerror>onloadingerror<a class=self-link href=#dom-fontfaceset-onloadingerror></a></dfn>;
+[Exposed=Window,Worker,
+ Constructor(sequence initialFaces)]
+interface <dfn class=idl-code data-dfn-type=interface data-export="" data-global-name="" id=dom-fontfaceset>FontFaceSet<a class=self-link href=#dom-fontfaceset></a></dfn> : <a data-link-type=idl href=http://dom.spec.whatwg.org/#eventtarget title=eventtarget>EventTarget</a> {
+  // Emulate the Set interface, until we can extend Set correctly.
+  readonly attribute unsigned long <a class=idl-code data-global-name="FontFaceSet<interface>/size<attribute>" data-link-for=FontFaceSet data-link-type=attribute data-readonly="" data-type="unsigned long " href=#dom-fontfaceset-size title=size>size</a>;
+  void <a class=idl-code data-global-name="FontFaceSet<interface>/add()<method>" data-link-for=FontFaceSet data-link-type=method href=#dom-fontfaceset-add title=add()>add</a>(<a data-link-type=idl href=#dom-fontface title=fontface>FontFace</a> <dfn class=idl-code data-dfn-for=FontFaceSet/add() data-dfn-type=argument data-export="" data-global-name="FontFaceSet<interface>/add()<method>/font<argument>" id=dom-fontfacesetadd-font>font<a class=self-link href=#dom-fontfacesetadd-font></a></dfn>);
+  boolean <a class=idl-code data-global-name="FontFaceSet<interface>/has()<method>" data-link-for=FontFaceSet data-link-type=method href=#dom-fontfaceset-has title=has()>has</a>(<a data-link-type=idl href=#dom-fontface title=fontface>FontFace</a> <dfn class=idl-code data-dfn-for=FontFaceSet/has() data-dfn-type=argument data-export="" data-global-name="FontFaceSet<interface>/has()<method>/font<argument>" id=dom-fontfacesethas-font>font<a class=self-link href=#dom-fontfacesethas-font></a></dfn>);
+  boolean <a class=idl-code data-global-name="FontFaceSet<interface>/delete()<method>" data-link-for=FontFaceSet data-link-type=method href=#dom-fontfaceset-delete title=delete()>delete</a>(<a data-link-type=idl href=#dom-fontface title=fontface>FontFace</a> <dfn class=idl-code data-dfn-for=FontFaceSet/delete() data-dfn-type=argument data-export="" data-global-name="FontFaceSet<interface>/delete()<method>/font<argument>" id=dom-fontfacesetdelete-font>font<a class=self-link href=#dom-fontfacesetdelete-font></a></dfn>);
+  void <a class=idl-code data-global-name="FontFaceSet<interface>/clear()<method>" data-link-for=FontFaceSet data-link-type=method href=#dom-fontfaceset-clear title=clear()>clear</a>();
+  <a data-link-type=idl href=#dom-fontfaceset-iterator title=iterator>Iterator</a> <a class=idl-code data-global-name="FontFaceSet<interface>/entries()<method>" data-link-for=FontFaceSet data-link-type=method href=#dom-fontfaceset-entries title=entries()>entries</a>();
+  <a data-link-type=idl href=#dom-fontfaceset-iterator title=iterator>Iterator</a> <a class=idl-code data-global-name="FontFaceSet<interface>/keys()<method>" data-link-for=FontFaceSet data-link-type=method href=#dom-fontfaceset-keys title=keys()>keys</a>();
+  <a data-link-type=idl href=#dom-fontfaceset-iterator title=iterator>Iterator</a> <a class=idl-code data-global-name="FontFaceSet<interface>/values()<method>" data-link-for=FontFaceSet data-link-type=method href=#dom-fontfaceset-values title=values()>values</a>();
+  void <a class=idl-code data-global-name="FontFaceSet<interface>/foreach()<method>" data-link-for=FontFaceSet data-link-type=method href=#dom-fontfaceset-foreach title=foreach()>forEach</a>(<a data-link-type=idl href=#callbackdef-foreachcallback title=foreachcallback>ForEachCallback</a> <dfn class=idl-code data-dfn-for=FontFaceSet/forEach() data-dfn-type=argument data-export="" data-global-name="FontFaceSet<interface>/forEach()<method>/cb<argument>" id=dom-fontfacesetforeach-cb>cb<a class=self-link href=#dom-fontfacesetforeach-cb></a></dfn>, optional any <dfn class=idl-code data-dfn-for=FontFaceSet/forEach() data-dfn-type=argument data-export="" data-global-name="FontFaceSet<interface>/forEach()<method>/thisarg<argument>" id=dom-fontfacesetforeach-thisarg>thisArg<a class=self-link href=#dom-fontfacesetforeach-thisarg></a></dfn>);
+  <a data-link-type=idl href=#dom-fontface title=fontface>FontFace</a> iterator;
 
-    // check and start loads if appropriate
-    // and fulfill promise when all loads complete
-    Promise&lt;sequence&lt;<a data-link-type=idl href=#dom-fontface title=fontface>FontFace</a>&gt;&gt; <a class=idl-code data-global-name="FontFaceSet<interface>/load()<method>" data-link-for=FontFaceSet data-link-type=method href=#dom-fontfaceset-load title=load()>load</a>(DOMString <a class=idl-code data-global-name="FontFaceSet<interface>/load()<method>/font<argument>" data-link-for=FontFaceSet/load() data-link-type=argument href=#dom-fontfacesetload-font title=font>font</a>, optional DOMString <a class=idl-code data-global-name="FontFaceSet<interface>/load()<method>/text<argument>" data-link-for=FontFaceSet/load() data-link-type=argument href=#dom-fontfacesetload-text title=text>text</a> = " ");
+  // -- events for when loading state changes
+  attribute <a data-link-type=idl href=http://www.w3.org/html/wg/drafts/html/CR/webappapis.html#eventhandler title=eventhandler>EventHandler</a> <dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" data-global-name="FontFaceSet<interface>/onloading<attribute>" data-type="EventHandler " id=dom-fontfaceset-onloading>onloading<a class=self-link href=#dom-fontfaceset-onloading></a></dfn>;
+  attribute <a data-link-type=idl href=http://www.w3.org/html/wg/drafts/html/CR/webappapis.html#eventhandler title=eventhandler>EventHandler</a> <dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" data-global-name="FontFaceSet<interface>/onloadingdone<attribute>" data-type="EventHandler " id=dom-fontfaceset-onloadingdone>onloadingdone<a class=self-link href=#dom-fontfaceset-onloadingdone></a></dfn>;
+  attribute <a data-link-type=idl href=http://www.w3.org/html/wg/drafts/html/CR/webappapis.html#eventhandler title=eventhandler>EventHandler</a> <dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" data-global-name="FontFaceSet<interface>/onloadingerror<attribute>" data-type="EventHandler " id=dom-fontfaceset-onloadingerror>onloadingerror<a class=self-link href=#dom-fontfaceset-onloadingerror></a></dfn>;
 
-    // return whether all fonts in the fontlist are loaded
-    // (does not initiate load if not available)
-    boolean <a class=idl-code data-global-name="FontFaceSet<interface>/check()<method>" data-link-for=FontFaceSet data-link-type=method href=#dom-fontfaceset-check title=check()>check</a>(DOMString <a class=idl-code data-global-name="FontFaceSet<interface>/check()<method>/font<argument>" data-link-for=FontFaceSet/check() data-link-type=argument href=#dom-fontfacesetcheck-font title=font>font</a>, optional DOMString <a class=idl-code data-global-name="FontFaceSet<interface>/check()<method>/text<argument>" data-link-for=FontFaceSet/check() data-link-type=argument href=#dom-fontfacesetcheck-text title=text>text</a> = " ");
+  // check and start loads if appropriate
+  // and fulfill promise when all loads complete
+  Promise&lt;sequence&lt;<a data-link-type=idl href=#dom-fontface title=fontface>FontFace</a>&gt;&gt; <a class=idl-code data-global-name="FontFaceSet<interface>/load()<method>" data-link-for=FontFaceSet data-link-type=method href=#dom-fontfaceset-load title=load()>load</a>(DOMString <a class=idl-code data-global-name="FontFaceSet<interface>/load()<method>/font<argument>" data-link-for=FontFaceSet/load() data-link-type=argument href=#dom-fontfacesetload-font title=font>font</a>, optional DOMString <a class=idl-code data-global-name="FontFaceSet<interface>/load()<method>/text<argument>" data-link-for=FontFaceSet/load() data-link-type=argument href=#dom-fontfacesetload-text title=text>text</a> = " ");
 
-    // async notification that font loading and layout operations are done
-    Promise&lt;<a data-link-type=idl href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a>&gt; <a class=idl-code data-global-name="FontFaceSet<interface>/ready()<method>" data-link-for=FontFaceSet data-link-type=method href=#dom-fontfaceset-ready title=ready()>ready</a>();
+  // return whether all fonts in the fontlist are loaded
+  // (does not initiate load if not available)
+  boolean <a class=idl-code data-global-name="FontFaceSet<interface>/check()<method>" data-link-for=FontFaceSet data-link-type=method href=#dom-fontfaceset-check title=check()>check</a>(DOMString <a class=idl-code data-global-name="FontFaceSet<interface>/check()<method>/font<argument>" data-link-for=FontFaceSet/check() data-link-type=argument href=#dom-fontfacesetcheck-font title=font>font</a>, optional DOMString <a class=idl-code data-global-name="FontFaceSet<interface>/check()<method>/text<argument>" data-link-for=FontFaceSet/check() data-link-type=argument href=#dom-fontfacesetcheck-text title=text>text</a> = " ");
 
-    // loading state, "loading" while one or more fonts loading, "loaded" otherwise
-    readonly attribute <a data-link-type=idl href=#enumdef-fontfaceloadstatus title=fontfaceloadstatus>FontFaceLoadStatus</a> <a class=idl-code data-global-name="FontFaceSet<interface>/status<attribute>" data-link-for=FontFaceSet data-link-type=attribute data-readonly="" data-type="FontFaceLoadStatus " href=#dom-fontfaceset-status title=status>status</a>;
-  };
+  // async notification that font loading and layout operations are done
+  readonly attribute Promise&lt;<a data-link-type=idl href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a>&gt; <a class=idl-code data-global-name="FontFaceSet<interface>/ready<attribute>" data-link-for=FontFaceSet data-link-type=attribute data-readonly="" data-type="Promise<FontFaceSet> " href=#dom-fontfaceset-ready title=ready>ready</a>;
 
-  <a data-link-type=idl href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a> implements <a data-link-type=idl href=http://dom.spec.whatwg.org/#eventtarget title=eventtarget>EventTarget</a>;
+  // loading state, "loading" while one or more fonts loading, "loaded" otherwise
+  readonly attribute <a data-link-type=idl href=#enumdef-fontfacesetloadstatus title=fontfacesetloadstatus>FontFaceSetLoadStatus</a> <a class=idl-code data-global-name="FontFaceSet<interface>/status<attribute>" data-link-for=FontFaceSet data-link-type=attribute data-readonly="" data-type="FontFaceSetLoadStatus " href=#dom-fontfaceset-status title=status>status</a>;
+};
 </pre>
 
-<p class=note>Note: The use of [SetClass] is controversial,
-	so this will be rewritten to instead be just a Set look-alike,
-	without use of [SetClass],
-	at least until we figure out how to do this kind of thing correctly.</p>
+	<dl data-dfn-for=FontFaceSet data-dfn-type=attribute>
+		<dt><dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" id=dom-fontfaceset-ready>ready<a class=self-link href=#dom-fontfaceset-ready></a></dfn> <span data-attribute-info="" for=FontFaceSet/ready> of type <a data-link-type=idl-name href=#dom-promise title=promise>Promise<fontfaceset></fontfaceset></a>, readonly</span>
+		<dd>
+			This attribute reflects the <a data-link-type=idl href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a>’s <a data-link-type=idl href=#dom-fontfaceset-readypromise title=[[readypromise]]>[[ReadyPromise]]</a> slot.
 
-<p>The set entries for a <a class=idl-code data-link-type=interface href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a> is initially an empty list.
-	A <a class=idl-code data-link-type=interface href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a> attached to a document may have some initial <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> objects prefilled in it;
-	see the section on <a href=#document-font-face-set>Interactions with CSS’s @font-face Rule</a> for details.</p>
+<p>See <a data-section="" href=#font-face-set-ready>§3.5 
+The ready attribute</a> for more details on this <a data-link-type=idl href=#dom-promise title=promise>Promise</a> and its use.</p>
+
+		<dt><dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" id=dom-fontfaceset-size>size<a class=self-link href=#dom-fontfaceset-size></a></dfn> <span data-attribute-info="" for=FontFaceSet/size> of type <a data-link-type=idl-name title="unsigned long">unsigned long</a>, readonly</span>
+		<dd>
+			This attribute reflects the <code>size</code> attribute of the <a data-link-type=idl href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a>’s <a data-link-type=idl href=#dom-fontfaceset-containedfonts title=[[containedfonts]]>[[ContainedFonts]]</a> slot.
+
+		<dt><dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" id=dom-fontfaceset-status>status<a class=self-link href=#dom-fontfaceset-status></a></dfn> <span data-attribute-info="" for=FontFaceSet/status> of type <a data-link-type=idl-name href=#enumdef-fontfacesetloadstatus title=fontfacesetloadstatus>FontFaceSetLoadStatus</a>, readonly</span>
+		<dd>
+			If there are <a data-link-type=dfn href=#possibly-pending-font-loads title="possibly pending font loads">possibly pending font loads</a>,
+			the <a class=idl-code data-link-for=FontFaceSet data-link-type=attribute href=#dom-fontfaceset-status title=status>status</a> attribute must have the value <code>"loading"</code>.
+			Otherwise, it must have the value <code>"loaded"</code>.
+	</dl>
+
+	<dl data-dfn-for=FontFaceSet data-dfn-type=method>
+		<dt><dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=constructor data-export="" id=dom-fontfaceset-fontfaceset title=FontFaceSet()>FontFaceSet<a class=self-link href=#dom-fontfaceset-fontfaceset></a></dfn>(sequence&lt;<a data-link-type=idl href=#dom-fontface title=fontface>FontFace</a>&gt; <dfn class=idl-code data-dfn-for=FontFaceSet/FontFaceSet() data-dfn-type=argument data-export="" id=dom-fontfacesetfontfaceset-initialfaces>initialFaces<a class=self-link href=#dom-fontfacesetfontfaceset-initialfaces></a></dfn>)
+		<dd>
+			The <a data-link-type=idl href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a> constructor, when called,
+			must construct a new <a class=idl-code data-link-type=interface title=set>Set</a> object
+			by passing its <a class=idl-code data-link-type=argument href=#dom-fontfacesetfontfaceset-initialfaces title=initialfaces>initialFaces</a> argument
+			to the <a class=idl-code data-link-type=interface title=set>Set</a> constructor,
+			then assigning that <a class=idl-code data-link-type=interface title=set>Set</a> object to the <a data-link-type=idl href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a>’s <a data-link-type=idl href=#dom-fontfaceset-containedfonts title=[[containedfonts]]>[[ContainedFonts]]</a> slot.
+
+		<dt><dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=method data-export="" id=dom-fontfaceset-add title=add()>add<a class=self-link href=#dom-fontfaceset-add></a></dfn>(<a data-link-type=idl href=#dom-fontface title=fontface>FontFace</a> font)
+		<dt><dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=method data-export="" id=dom-fontfaceset-has title=has()>has<a class=self-link href=#dom-fontfaceset-has></a></dfn>(<a data-link-type=idl href=#dom-fontface title=fontface>FontFace</a> font)
+		<dt><dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=method data-export="" id=dom-fontfaceset-delete title=delete()>delete<a class=self-link href=#dom-fontfaceset-delete></a></dfn>(<a data-link-type=idl href=#dom-fontface title=fontface>FontFace</a> font)
+		<dt><dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=method data-export="" id=dom-fontfaceset-clear title=clear()>clear<a class=self-link href=#dom-fontfaceset-clear></a></dfn>()
+		<dt><dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=method data-export="" id=dom-fontfaceset-entries title=entries()>entries<a class=self-link href=#dom-fontfaceset-entries></a></dfn>()
+		<dt><dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=method data-export="" id=dom-fontfaceset-keys title=keys()>keys<a class=self-link href=#dom-fontfaceset-keys></a></dfn>()
+		<dt><dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=method data-export="" id=dom-fontfaceset-values title=values()>values<a class=self-link href=#dom-fontfaceset-values></a></dfn>()
+		<dt><dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=method data-export="" id=dom-fontfaceset-foreach title=forEach()>forEach<a class=self-link href=#dom-fontfaceset-foreach></a></dfn>(<a data-link-type=idl href=#callbackdef-foreachcallback title=foreachcallback>ForEachCallback</a> cb, optional any thisArg)
+		<dd>
+			All of these methods call the corresponding method of the <a data-link-type=idl href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a>’s <a data-link-type=idl href=#dom-fontfaceset-containedfonts title=[[containedfonts]]>[[ContainedFonts]]</a> slot
+			with the same arguments as were passed to them,
+			and return the value returned by the called method.
+
+		<dt><dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=iterator data-export="" id=dom-fontfaceset-iterator title=iterator>iterator behavior<a class=self-link href=#dom-fontfaceset-iterator></a></dfn>
+		<dd>
+			The <a data-link-spec=webidl data-link-type=dfn href=http://dev.w3.org/2006/webapi/WebIDL/#dfn-iterator-behavior title="iterator behavior">iterator behavior</a> is the iterator behavior of the <a data-link-type=idl href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a>’s <a data-link-type=idl href=#dom-fontfaceset-containedfonts title=[[containedfonts]]>[[ContainedFonts]]</a> slot.
+	</dl>
+
+<p><a class=idl-code data-link-type=interface href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a> objects also have internal
+	<dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" id=dom-fontfaceset-loadingfonts>[[LoadingFonts]]<a class=self-link href=#dom-fontfaceset-loadingfonts></a></dfn>,
+	<dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" id=dom-fontfaceset-loadedfonts>[[LoadedFonts]]<a class=self-link href=#dom-fontfaceset-loadedfonts></a></dfn>,
+	and <dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" id=dom-fontfaceset-failedfonts>[[FailedFonts]]<a class=self-link href=#dom-fontfaceset-failedfonts></a></dfn> slots,
+	all of which are initialized to the empty list,
+	a <dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" id=dom-fontfaceset-readypromise>[[ReadyPromise]]<a class=self-link href=#dom-fontfaceset-readypromise></a></dfn> slot,
+	which is initialized to a fresh pending <a data-link-type=idl href=#dom-promise title=promise>Promise</a>,
+	and a <dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" id=dom-fontfaceset-containedfonts>[[ContainedFonts]]<a class=self-link href=#dom-fontfaceset-containedfonts></a></dfn> slot,
+	which is initialized by the <a class=idl-code data-link-type=constructor href=#dom-fontfaceset-fontfaceset title=fontfaceset()>FontFaceSet constructor</a> to a <a class=idl-code data-link-type=interface title=set>Set</a> object
+	(though see <a data-section="" href=#document-font-face-set>§4.2 
+Interaction with CSS’s @font-face Rule</a> for information on how the Set may be pre-filled
+	for <a data-link-type=idl href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a> objects created by the user agent).</p>
 
 <p>Because font families are loaded only when they are used,
 	content sometimes needs to understand when the loading of fonts occurs.
@@ -467,20 +598,9 @@ The <code>FontFaceSet</code> Interface</span><a class=self-link href=#FontFaceSe
 <p>If any of the above conditions are false,
 	there are <dfn data-dfn-type=dfn data-noexport="" id=possibly-pending-font-loads>possibly pending font loads<a class=self-link href=#possibly-pending-font-loads></a></dfn>.</p>
 
-	<dl>
-		<dt><dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" id=dom-fontfaceset-status>status<a class=self-link href=#dom-fontfaceset-status></a></dfn>, of type <a class=idl-code data-link-type=interface title=domstring>DOMString</a>
-		<dd>
-			If there are <a data-link-type=dfn href=#possibly-pending-font-loads title="possibly pending font loads">possibly pending font loads</a>,
-			the <a class=idl-code data-link-for=FontFaceSet data-link-type=attribute href=#dom-fontfaceset-status title=status>status</a> attribute must have the value <code class=idl-code>"loading"</code>.
-			Otherwise, it must have the value <code class=idl-code>"loaded"</code>.
-	</dl>
-
-<p><a class=idl-code data-link-type=interface href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a> objects also have internal
-	<dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" id=dom-fontfaceset-loadingfonts>[[LoadingFonts]]<a class=self-link href=#dom-fontfaceset-loadingfonts></a></dfn>,
-	<dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" id=dom-fontfaceset-loadedfonts>[[LoadedFonts]]<a class=self-link href=#dom-fontfaceset-loadedfonts></a></dfn>,
-	<dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" id=dom-fontfaceset-failedfonts>[[FailedFonts]]<a class=self-link href=#dom-fontfaceset-failedfonts></a></dfn>,
-	and <dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=attribute data-export="" id=dom-fontfaceset-pendingreadypromises>[[PendingReadyPromises]]<a class=self-link href=#dom-fontfaceset-pendingreadypromises></a></dfn> slots,
-	all of which are initialized to the empty list.</p>
+<p class=issue id=issue-bf2e5cbe><a class=self-link href=#issue-bf2e5cbe></a>The above is wrong; it assumes that you’re only asking about the <a data-link-type=dfn href=#font-source title="font source">font source</a>.
+	The <a data-link-for=FontFaceSet data-link-type=idl href=#dom-fontfaceset-status title=status>status</a> promise needs to pay attention to what <a data-link-type=idl href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a> it’s attached to.
+	I guess only the <a data-link-type=dfn href=#font-source title="font source’s">font source’s</a> <a data-link-for=FontFaceSet data-link-type=idl href=#dom-fontfaceset-status title=status>status</a> promise should care about pending layout operations.</p>
 
 <h3 class="heading settled heading" data-level=3.1 id=set-modifications><span class=secno>3.1 </span><span class=content>
 Modifications of normal Set methods</span><a class=self-link href=#set-modifications></a></h3>
@@ -534,15 +654,12 @@ Events</span><a class=self-link href=#FontFaceSet-events></a></h3>
 	with optional <var>font faces</var>
 	means to
 	<a href=http://www.w3.org/TR/html5/webappapis.html#event-firing>fire a simple event</a> named <var>e</var>
-	using the <a class=idl-code data-link-type=interface href=#dom-cssfontfaceloadevent title=cssfontfaceloadevent>CSSFontFaceLoadEvent</a> interface that also meets these conditions:</p>
+	using the <a class=idl-code data-link-type=interface href=#dom-fontfacesetloadevent title=fontfacesetloadevent>FontFaceSetLoadEvent</a> interface that also meets these conditions:</p>
 
 	<ol>
 		<li>
-			The <a class=idl-code data-link-type=attribute href=#dom-cssfontfaceloadevent-fontfaces title=fontfaces>fontfaces</a> attribute is initialized to the given list of <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> objects.
+			The <a class=idl-code data-link-type=attribute href=#dom-fontfacesetloadevent-fontfaces title=fontfaces>fontfaces</a> attribute is initialized to the given list of <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> objects.
 	</ol>
-
-<p>Whenever a <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> in a given <a class=idl-code data-link-type=interface href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a> <var>font face set</var>
-	changes its <a class=idl-code data-link-for=FontFace data-link-type=attribute href=#dom-fontface-status title=status>status</a> attribute to</p>
 
 <p>Whenever one or more <a data-link-type=dfn href=#available-font-faces title="available font faces">available font faces</a> for a given <a class=idl-code data-link-type=interface href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a>
 	change their <a class=idl-code data-link-for=FontFace data-link-type=attribute href=#dom-fontface-status title=status>status</a> attribute to "loading",
@@ -564,6 +681,10 @@ Events</span><a class=self-link href=#FontFaceSet-events></a></h3>
 
 		<li>
 			Append the <var>loading fonts</var> to <var>font face set’s</var> <a class=idl-code data-link-type=attribute href=#dom-fontfaceset-loadingfonts title=[[loadingfonts]]>[[LoadingFonts]]</a> slot.
+
+		<li>
+			If <var>font face set’s</var> <a class=idl-code data-link-type=attribute href=#dom-fontfaceset-readypromise title=[[readypromise]]>[[ReadyPromise]]</a> slot currently holds a fulfilled promise,
+			replace it with a fresh pending promise.
 	</ol>
 
 <p>Whenever one or more <a data-link-type=dfn href=#available-font-faces title="available font faces">available font faces</a> for a given <a class=idl-code data-link-type=interface href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a>
@@ -603,24 +724,21 @@ Events</span><a class=self-link href=#FontFaceSet-events></a></h3>
 			with the contents of <var>font face set’s</var> <a class=idl-code data-link-type=attribute href=#dom-fontfaceset-failedfonts title=[[failedfonts]]>[[FailedFonts]]</a> slot.
 
 		<li>
-			If <var>font face set’s</var> <a class=idl-code data-link-type=attribute href=#dom-fontfaceset-pendingreadypromises title=[[pendingreadypromises]]>[[PendingReadyPromises]]</a> attribute is non-empty,
-			fulfill each promise in the attribute’s value with <var>font face set</var>.
-
-		<li>
-			Empty <var>font face set’s</var> <a class=idl-code data-link-type=attribute href=#dom-fontfaceset-loadingfonts title=[[loadingfonts]]>[[LoadingFonts]]</a>, <a class=idl-code data-link-type=attribute href=#dom-fontfaceset-loadedfonts title=[[loadedfonts]]>[[LoadedFonts]]</a>, <a class=idl-code data-link-type=attribute href=#dom-fontfaceset-failedfonts title=[[failedfonts]]>[[FailedFonts]]</a>, and <a class=idl-code data-link-type=attribute href=#dom-fontfaceset-pendingreadypromises title=[[pendingreadypromises]]>[[PendingReadyPromises]]</a> slots.
+			Fulfill <var>font face set’s</var> <a class=idl-code data-link-type=attribute href=#dom-fontfaceset-readypromise title=[[readypromise]]>[[ReadyPromise]]</a> attribute’s value with <var>font face set</var>.
 	</ol>
 
 
 <p>If asked to <dfn data-dfn-type=dfn data-export="" id=find-the-matching-font-faces>find the matching font faces<a class=self-link href=#find-the-matching-font-faces></a></dfn>
 	from a FontFaceSet <var>source</var>,
 	for a given font string <var>font</var>
-	and optionally some sample text <var>text</var>,
+	optionally some sample text <var>text</var>,
+	and optionally an <var>allow system fonts</var> flag,
 	run the following steps:</p>
 
 	<ol>
 		<li>
 			Parse <var>font</var>
-			using the CSS value syntax of the <a class=property data-link-type=propdesc href=http://www.w3.org/TR/css-fonts-3/#propdef-font title=font>font</a> property.
+			using the CSS value syntax of the <a class=property data-link-type=propdesc href=http://dev.w3.org/csswg/css-fonts-3/#propdef-font title=font>font</a> property.
 			If a syntax error occurs,
 			return a syntax error.
 
@@ -634,6 +752,8 @@ Events</span><a class=self-link href=#FontFaceSet-events></a></h3>
 
 		<li>
 			Let <var>available font faces</var> be the font faces within <var>source</var>.
+			If the <var>allow system fonts</var> flag is specified,
+			add all system fonts to <var>available font faces</var>.
 
 		<li>
 			Let <var>matched font faces</var> initially be an empty list.
@@ -647,7 +767,7 @@ Events</span><a class=self-link href=#FontFaceSet-events></a></h3>
 
 		<li>
 			For each font face in <var>matched font faces</var>,
-			if its defined <a class=property data-link-type=propdesc href=http://www.w3.org/TR/css-fonts-3/#descdef-unicode-range title=unicode-range>unicode-range</a> does not include the codepoint of at least one character in <var>text</var>,
+			if its defined <a class=property data-link-type=propdesc href=http://dev.w3.org/csswg/css-fonts-3/#descdef-unicode-range title=unicode-range>unicode-range</a> does not include the codepoint of at least one character in <var>text</var>,
 			remove it from the list.
 
 		<li>
@@ -688,8 +808,7 @@ The <code>load()</code> method</span><a class=self-link href=#font-face-set-load
 			and terminate these steps.
 
 		<li>
-			Await a stable state,
-			then run the following steps synchronously:
+			Queue a task to run the following steps synchronously:
 
 			<ol>
 				<li>
@@ -723,6 +842,7 @@ The <code>check()</code> method</span><a class=self-link href=#font-face-set-che
 		<li>
 			<a data-link-type=dfn href=#find-the-matching-font-faces title="find the matching font faces">Find the matching font faces</a> from <var>font face set</var>
 			using the <a class=idl-code data-link-for=FontFaceSet/check() data-link-type=argument href=#dom-fontfacesetcheck-font title=font>font</a> and <a class=idl-code data-link-for=FontFaceSet/check() data-link-type=argument href=#dom-fontfacesetcheck-text title=text>text</a> arguments passed to the function,
+			and including system fonts,
 			and let <var>font face list</var> be the return value.
 			If a syntax error was returned,
 			throw a SyntaxError exception
@@ -730,10 +850,11 @@ The <code>check()</code> method</span><a class=self-link href=#font-face-set-che
 
 		<li>
 			If the <var>font face list</var> contains no font faces,
-			return <code class=idl-code>false</code>.
+			return <code>false</code>.
 
 		<li>
 			If all fonts in the <var>font face list</var> have a <a class=idl-code data-link-for=FontFace data-link-type=attribute href=#dom-fontface-status title=status>status</a> attribute of "loaded",
+			or are system fonts,
 			return <code>true</code>.
 			Otherwise, return <code>false</code>.
 	</ol>
@@ -741,36 +862,18 @@ The <code>check()</code> method</span><a class=self-link href=#font-face-set-che
 
 
 <h3 class="heading settled heading" data-level=3.5 id=font-face-set-ready><span class=secno>3.5 </span><span class=content>
-The <code>ready()</code> method</span><a class=self-link href=#font-face-set-ready></a></h3>
+The <code>ready</code> attribute</span><a class=self-link href=#font-face-set-ready></a></h3>
 
 <p>Because the number of fonts loaded depends on the how many fonts are used for a given piece of text,
 	in some cases whether fonts need to be loaded or not may not be known.
-	The <a data-link-for=FontFaceSet data-link-type=functionish href=#dom-fontfaceset-ready title=ready()>ready()</a> method returns a Promise which is resolved when the document is done loading fonts,
+	The <a data-link-for=FontFaceSet data-link-type=idl href=#dom-fontfaceset-ready title=ready>ready</a> attribute contains a <a data-link-type=idl href=#dom-promise title=promise>Promise</a> which is resolved when the document is done loading fonts,
 	which provides a way for authors to avoid having to keep track of which fonts have or haven’t been loaded
 	before examining content which may be affected by loading fonts.</p>
-
-<p>When the <dfn class=idl-code data-dfn-for=FontFaceSet data-dfn-type=method data-export="" id=dom-fontfaceset-ready>ready()<a class=self-link href=#dom-fontfaceset-ready></a></dfn> method is called,
-	execute these steps:</p>
-
-	<ol>
-		<li>
-			Let <var>font face set</var> be the <a class=idl-code data-link-type=interface href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a> object this method was called on.
-			Let <var>ready promise</var> be a fresh Promise which is initially pending.
-
-		<li>
-			If <var>font face set’s</var> <a class=idl-code data-link-for=FontFaceSet data-link-type=attribute href=#dom-fontfaceset-status title=status>status</a> attribute is "loaded",
-			fulfill <var>ready promise</var> with <var>font face set</var>.
-			Otherwise, append <var>ready promise</var>
-			to <var>font face set’s</var> <a class=idl-code data-link-type=attribute href=#dom-fontfaceset-pendingreadypromises title=[[pendingreadypromises]]>[[PendingReadyPromises]]</a> slot.
-
-		<li>
-			Return <var>ready promise</var>.
-	</ol>
 
 <p class=note>Note: Authors should note that a given <var>ready promise</var> is only fulfilled once,
 	but further fonts may be loaded after it fulfills.
 	This is similar to listening for a <a class=idl-code data-link-type=event href=#dom-fontfaceset-loadingdone title=loadingdone>loadingdone</a> event to fire,
-	but the callbacks passed to the <a class=idl-code data-link-for=FontFaceSet data-link-type=method href=#dom-fontfaceset-ready title=ready()>ready()</a> promise will <strong>always</strong> get called,
+	but the callbacks passed to the <a data-link-for=FontFaceSet data-link-type=idl href=#dom-fontfaceset-ready title=ready>ready</a> promise will <strong>always</strong> get called,
 	even when no font loads occur because the fonts in question are already loaded.
 	It’s a simple, easy way to synchronize code to font loads
 	without the need to keep track of what fonts are needed and precisely when they load.</p>
@@ -783,7 +886,7 @@ The <code>ready()</code> method</span><a class=self-link href=#font-face-set-rea
 	The <var>ready promise</var> is only fulfilled after layout operations complete
 	and no additional font loads are necessary.</p>
 
-<p class=note>Note: Note that the Promise returned by this <a class=idl-code data-link-for=FontFaceSet data-link-type=method href=#dom-fontfaceset-ready title=ready()>ready()</a> method is only ever fulfilled,
+<p class=note>Note: Note that the Promise returned by this <a data-link-for=FontFaceSet data-link-type=idl href=#dom-fontfaceset-ready title=ready>ready</a> attribute is only ever fulfilled,
 	never rejected,
 	unlike the Promise returned by the <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> <a class=idl-code data-link-for=FontFace data-link-type=method href=#dom-fontface-load title=load()>load()</a> method.</p>
 
@@ -803,10 +906,10 @@ Interaction with CSS Font Loading and Matching</span><a class=self-link href=#fo
 
 	<div class=example>
 		Fonts are available when they are added to a <a data-link-type=idl href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a>.
-		Adding a new <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule to a stylesheet
+		Adding a new <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule to a stylesheet
 		also adds a new <a data-link-type=idl href=#dom-fontface title=fontface>FontFace</a> to the <a data-link-type=idl href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a> of the <a class=idl-code data-link-type=interface href=http://dom.spec.whatwg.org/#document title=document>Document</a> object.
 
-<p>Adding a new <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule:</p>
+<p>Adding a new <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule:</p>
 
 		<pre>document.styleSheets[0].insertRule(
   "@font-face { font-family: newfont; src: url(newfont.woff); }", 0);
@@ -821,7 +924,7 @@ document.body.style.fontFamily = "newfont, serif";
 </pre>
 
 <p>In both cases, the loading of the font resource “newfont.woff” will be initiated by the layout engine,
-		just as other <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule fonts are loaded.</p>
+		just as other <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rule fonts are loaded.</p>
 
 <p>Omitting the addition to <code>document.fonts</code> means the font would never be loaded
 		and text would be displayed in the default serif font:</p>
@@ -857,12 +960,12 @@ f.load().then(function (loadedFace) {
 The <code>FontFaceSource</code> interface</span><a class=self-link href=#font-face-source></a></h2>
 
 	<pre class=idl>[NoInterfaceObject]
-  interface <dfn class=idl-code data-dfn-type=interface data-export="" data-global-name="" id=dom-fontfacesource>FontFaceSource<a class=self-link href=#dom-fontfacesource></a></dfn> {
-    readonly attribute <a data-link-type=idl href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a> <dfn class=idl-code data-dfn-for=FontFaceSource data-dfn-type=attribute data-export="" data-global-name="FontFaceSource<interface>/fonts<attribute>" data-readonly="" data-type="FontFaceSet " id=dom-fontfacesource-fonts>fonts<a class=self-link href=#dom-fontfacesource-fonts></a></dfn>;
-  };
+interface <dfn class=idl-code data-dfn-type=interface data-export="" data-global-name="" id=dom-fontfacesource>FontFaceSource<a class=self-link href=#dom-fontfacesource></a></dfn> {
+  readonly attribute <a data-link-type=idl href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a> <dfn class=idl-code data-dfn-for=FontFaceSource data-dfn-type=attribute data-export="" data-global-name="FontFaceSource<interface>/fonts<attribute>" data-readonly="" data-type="FontFaceSet " id=dom-fontfacesource-fonts>fonts<a class=self-link href=#dom-fontfacesource-fonts></a></dfn>;
+};
 
-  <a data-link-type=idl href=http://dom.spec.whatwg.org/#document title=document>Document</a> implements <a data-link-type=idl href=#dom-fontfacesource title=fontfacesource>FontFaceSource</a>;
-  <a data-link-type=idl title=workerglobalscope>WorkerGlobalScope</a> implements <a data-link-type=idl href=#dom-fontfacesource title=fontfacesource>FontFaceSource</a>;
+<a data-link-type=idl href=http://dom.spec.whatwg.org/#document title=document>Document</a> implements <a data-link-type=idl href=#dom-fontfacesource title=fontfacesource>FontFaceSource</a>;
+<a data-link-type=idl title=workerglobalscope>WorkerGlobalScope</a> implements <a data-link-type=idl href=#dom-fontfacesource title=fontfacesource>FontFaceSource</a>;
 </pre>
 
 <p>Any document, workers, or other context which can use fonts in some manner must implement the <a class=idl-code data-link-type=interface href=#dom-fontfacesource title=fontfacesource>FontFaceSource</a> interface.
@@ -884,14 +987,14 @@ Worker FontFaceSources</span><a class=self-link href=#fontfacesource-workers></a
 	(such as, for example, drawing text into a <a class=idl-code data-link-type=interface title=canvasproxy>CanvasProxy</a>).</p>
 
 <h3 class="heading settled heading" data-level=4.2 id=document-font-face-set><span class=secno>4.2 </span><span class=content>
-Interaction with CSS’s <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> Rule</span><a class=self-link href=#document-font-face-set></a></h3>
+Interaction with CSS’s <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> Rule</span><a class=self-link href=#document-font-face-set></a></h3>
 
 <p>The set entries for a document’s <a data-link-type=dfn href=#font-source title="font source">font source</a>
 	must be initially populated with all the <a data-link-type=dfn href=#css-connected title=css-connected>CSS-connected</a> <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> objects
-	from all of the CSS <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rules in the document’s stylesheets,
+	from all of the CSS <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rules in the document’s stylesheets,
 	in document order.
-	As <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rules are added or removed from a stylesheet,
-	or stylesheets containing <a class=css data-link-type=maybe href=http://www.w3.org/TR/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rules are added or removed,
+	As <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rules are added or removed from a stylesheet,
+	or stylesheets containing <a class=css data-link-type=maybe href=http://dev.w3.org/csswg/css-fonts-3/#at-font-face-rule title=@font-face>@font-face</a> rules are added or removed,
 	the corresponding <a data-link-type=dfn href=#css-connected title=css-connected>CSS-connected</a> <a class=idl-code data-link-type=interface href=#dom-fontface title=fontface>FontFace</a> objects
 	must be added or removed from the document’s <a data-link-type=dfn href=#font-source title="font source">font source</a>,
 	and maintain this ordering.</p>
@@ -910,10 +1013,10 @@ API Examples</span><a class=self-link href=#font-load-event-examples></a></h2>
 	<div class=example>
 		To show content only after all font loads complete:
 
-		<pre>  document.fonts.ready().then(function() {
-    var content = document.getElementById("content");
-    content.style.visibility = "visible";
-  });
+		<pre>document.fonts.ready().then(function() {
+  var content = document.getElementById("content");
+  content.style.visibility = "visible";
+});
 </pre>
 	</div>
 
@@ -921,16 +1024,16 @@ API Examples</span><a class=self-link href=#font-load-event-examples></a></h2>
 		Drawing text in a canvas with a downloadable font, explicitly
 		initiating the font download and drawing upon completion:
 
-		<pre>  function drawStuff() {
-    var ctx = document.getElementById("c").getContext("2d");
+		<pre>function drawStuff() {
+  var ctx = document.getElementById("c").getContext("2d");
 
-    ctx.fillStyle = "red";
-    ctx.font = "50px MyDownloadableFont";
-    ctx.fillText("Hello!", 100, 100);
-  }
+  ctx.fillStyle = "red";
+  ctx.font = "50px MyDownloadableFont";
+  ctx.fillText("Hello!", 100, 100);
+}
 
-  document.fonts.load("50px MyDownloadableFont")
-                .then(drawStuff, handleError);
+document.fonts.load("50px MyDownloadableFont")
+              .then(drawStuff, handleError);
 </pre>
 	</div>
 
@@ -941,15 +1044,15 @@ API Examples</span><a class=self-link href=#font-load-event-examples></a></h2>
 		may already have been downloaded, the measurement procedures need to
 		occur after those font loads complete:
 
-		<pre>  function measureTextElements() {
-    // contents can now be measured using the metrics of
-    // the downloadable font(s)
-  }
+		<pre>function measureTextElements() {
+  // contents can now be measured using the metrics of
+  // the downloadable font(s)
+}
 
-  function doEditing() {
-    // content/layout operations that may cause additional font loads
-    document.fonts.ready().then(measureTextElements);
-  }
+function doEditing() {
+  // content/layout operations that may cause additional font loads
+  document.fonts.ready().then(measureTextElements);
+}
 </pre>
 	</div>
 
@@ -957,23 +1060,23 @@ API Examples</span><a class=self-link href=#font-load-event-examples></a></h2>
 		The <a class=idl-code data-link-type=event href=#dom-fontfaceset-loadingdone title=loadingdone>loadingdone</a> event only fires after all font related loads have completed
 		<strong>and</strong> text has been laid out without causing additional font loads:
 
-		<pre>  &lt;style&gt;
-  @font-face {
-    font-family: latin-serif;
-    src: url(latinserif.woff) format("woff"); /* contains no kanji/kana */
-  }
-  @font-face {
-    font-family: jpn-mincho;
-    src: url(mincho.woff) format("woff");
-  }
-  @font-face {
-    font-family: unused;
-    src: url(unused.woff);
-  }
+		<pre>&lt;style&gt;
+@font-face {
+  font-family: latin-serif;
+  src: url(latinserif.woff) format("woff"); /* contains no kanji/kana */
+}
+@font-face {
+  font-family: jpn-mincho;
+  src: url(mincho.woff) format("woff");
+}
+@font-face {
+  font-family: unused;
+  src: url(unused.woff);
+}
 
-  body { font-family: latin-serif, jpn-mincho; }
-  &lt;/style&gt;
-  &lt;p&gt;納豆はいかがでしょうか
+body { font-family: latin-serif, jpn-mincho; }
+&lt;/style&gt;
+&lt;p&gt;納豆はいかがでしょうか
 </pre>
 
 <p>In this situation, the user agent first downloads “latinserif.woff”
@@ -995,7 +1098,7 @@ API Examples</span><a class=self-link href=#font-load-event-examples></a></h2>
 
 	<ol>
 		<li>
-			Corrected the async algorithms to use "await a stable state" language,
+			Corrected the async algorithms to use "queue a task" language,
 			to ensure that side-effect timing is well-defined.
 	</ol>
 
@@ -1143,15 +1246,19 @@ Informative References</span><a class=self-link href=#informative></a></h3>
 <h2 class="no-num no-ref heading settled heading" id=index><span class=content>
 Index</span><a class=self-link href=#index></a></h2>
 <div data-fill-with=index><ul class=indexlist>
+<li>add(), <a href=#dom-fontfaceset-add title="section 3">3</a>
 <li>available font faces, <a href=#available-font-faces title="section 4">4</a>
 <li>BinaryData, <a href=#typedefdef-binarydata title="section 2">2</a>
+<li>cb, <a href=#dom-fontfacesetforeach-cb title="section 3">3</a>
 <li>check(), <a href=#dom-fontfaceset-check title="section 3.4">3.4</a>
+<li>clear(), <a href=#dom-fontfaceset-clear title="section 3">3</a>
+<li>[[ContainedFonts]], <a href=#dom-fontfaceset-containedfonts title="section 3">3</a>
 <li>CSS-connected, <a href=#css-connected title="section 2.3">2.3</a>
-<li>CSSFontFaceLoadEvent, <a href=#dom-cssfontfaceloadevent title="section 3">3</a>
-<li>CSSFontFaceLoadEventInit, <a href=#dictdef-cssfontfaceloadeventinit title="section 3">3</a>
 <li>[[Data]], <a href=#dom-fontface-data title="section 2">2</a>
+<li>delete(), <a href=#dom-fontfaceset-delete title="section 3">3</a>
 <li>descriptors, <a href=#dom-fontfacefontface-descriptors title="section 2.1">2.1</a>
-<li>eventInitDict, <a href=#dom-cssfontfaceloadeventcssfontfaceloadevent-eventinitdict title="section 3">3</a>
+<li>entries(), <a href=#dom-fontfaceset-entries title="section 3">3</a>
+<li>eventInitDict, <a href=#dom-fontfacesetloadeventfontfacesetloadevent-eventinitdict title="section 3">3</a>
 <li>[[FailedFonts]], <a href=#dom-fontfaceset-failedfonts title="section 3">3</a>
 <li>family<ul><li>attribute for FontFace, <a href=#dom-fontface-family title="section 2">2</a>
 <li>argument for FontFace/FontFace(), <a href=#dom-fontfacefontface-family title="section 2.1">2.1</a>
@@ -1159,20 +1266,34 @@ Index</span><a class=self-link href=#index></a></h2>
 <li>attribute for FontFace, <a href=#dom-fontface-featuresettings title="section 2">2</a>
 </ul><li>find the matching font faces, <a href=#find-the-matching-font-faces title="section 3.2">3.2</a>
 <li>fire a font load event, <a href=#fire-a-font-load-event title="section 3.2">3.2</a>
-<li>font<ul><li>argument for FontFaceSet/load(), <a href=#dom-fontfacesetload-font title="section 3.3">3.3</a>
+<li>font<ul><li>argument for ForEachCallback, <a href=#dom-foreachcallback-font title="section 3">3</a>
+<li>argument for FontFaceSet/add(), <a href=#dom-fontfacesetadd-font title="section 3">3</a>
+<li>argument for FontFaceSet/has(), <a href=#dom-fontfacesethas-font title="section 3">3</a>
+<li>argument for FontFaceSet/delete(), <a href=#dom-fontfacesetdelete-font title="section 3">3</a>
+<li>argument for FontFaceSet/load(), <a href=#dom-fontfacesetload-font title="section 3.3">3.3</a>
 <li>argument for FontFaceSet/check(), <a href=#dom-fontfacesetcheck-font title="section 3.4">3.4</a>
 </ul><li>FontFace, <a href=#dom-fontface title="section 2">2</a>
 <li>FontFace(), <a href=#dom-fontface-fontface title="section 2.1">2.1</a>
 <li>FontFaceDescriptors, <a href=#dictdef-fontfacedescriptors title="section 2">2</a>
 <li>FontFaceLoadStatus, <a href=#enumdef-fontfaceloadstatus title="section 2">2</a>
-<li>fontfaces<ul><li>dict-member for CSSFontFaceLoadEventInit, <a href=#dom-cssfontfaceloadeventinit-fontfaces title="section 3">3</a>
-<li>attribute for CSSFontFaceLoadEvent, <a href=#dom-cssfontfaceloadevent-fontfaces title="section 3">3</a>
+<li>fontfaces<ul><li>dict-member for FontFaceSetLoadEventInit, <a href=#dom-fontfacesetloadeventinit-fontfaces title="section 3">3</a>
+<li>attribute for FontFaceSetLoadEvent, <a href=#dom-fontfacesetloadevent-fontfaces title="section 3">3</a>
 </ul><li>FontFaceSet, <a href=#dom-fontfaceset title="section 3">3</a>
+<li>FontFaceSet(), <a href=#dom-fontfaceset-fontfaceset title="section 3">3</a>
+<li>FontFaceSetLoadEvent, <a href=#dom-fontfacesetloadevent title="section 3">3</a>
+<li>FontFaceSetLoadEventInit, <a href=#dictdef-fontfacesetloadeventinit title="section 3">3</a>
 <li>FontFaceSetLoadStatus, <a href=#enumdef-fontfacesetloadstatus title="section 3">3</a>
 <li>FontFaceSource, <a href=#dom-fontfacesource title="section 4">4</a>
 <li>fonts, <a href=#dom-fontfacesource-fonts title="section 4">4</a>
 <li>font source, <a href=#font-source title="section 4">4</a>
 <li>[[FontStatusPromise]], <a href=#dom-fontface-fontstatuspromise title="section 2">2</a>
+<li>forEach(), <a href=#dom-fontfaceset-foreach title="section 3">3</a>
+<li>ForEachCallback, <a href=#callbackdef-foreachcallback title="section 3">3</a>
+<li>has(), <a href=#dom-fontfaceset-has title="section 3">3</a>
+<li>index, <a href=#dom-foreachcallback-index title="section 3">3</a>
+<li>initialFaces, <a href=#dom-fontfacesetfontfaceset-initialfaces title="section 3">3</a>
+<li>iterator, <a href=#dom-fontfaceset-iterator title="section 3">3</a>
+<li>keys(), <a href=#dom-fontfaceset-keys title="section 3">3</a>
 <li>load()<ul><li>method for FontFace, <a href=#dom-fontface-load title="section 2.2">2.2</a>
 <li>method for FontFaceSet, <a href=#dom-fontfaceset-load title="section 3.3">3.3</a>
 </ul><li>loaded, <a href=#dom-fontface-loaded title="section 2">2</a>
@@ -1185,10 +1306,12 @@ Index</span><a class=self-link href=#index></a></h2>
 <li>onloading, <a href=#dom-fontfaceset-onloading title="section 3">3</a>
 <li>onloadingdone, <a href=#dom-fontfaceset-onloadingdone title="section 3">3</a>
 <li>onloadingerror, <a href=#dom-fontfaceset-onloadingerror title="section 3">3</a>
-<li>[[PendingReadyPromises]], <a href=#dom-fontfaceset-pendingreadypromises title="section 3">3</a>
 <li>possibly pending font loads, <a href=#possibly-pending-font-loads title="section 3">3</a>
 <li>Promise, <a href=#dom-promise title="section 1.1">1.1</a>
-<li>ready(), <a href=#dom-fontfaceset-ready title="section 3.5">3.5</a>
+<li>ready, <a href=#dom-fontfaceset-ready title="section 3">3</a>
+<li>[[ReadyPromise]], <a href=#dom-fontfaceset-readypromise title="section 3">3</a>
+<li>self, <a href=#dom-foreachcallback-self title="section 3">3</a>
+<li>size, <a href=#dom-fontfaceset-size title="section 3">3</a>
 <li>source, <a href=#dom-fontfacefontface-source title="section 2.1">2.1</a>
 <li>status<ul><li>attribute for FontFace, <a href=#dom-fontface-status title="section 2">2</a>
 <li>attribute for FontFaceSet, <a href=#dom-fontfaceset-status title="section 3">3</a>
@@ -1198,10 +1321,12 @@ Index</span><a class=self-link href=#index></a></h2>
 <li>attribute for FontFace, <a href=#dom-fontface-style title="section 2">2</a>
 </ul><li>text<ul><li>argument for FontFaceSet/load(), <a href=#dom-fontfacesetload-text title="section 3.3">3.3</a>
 <li>argument for FontFaceSet/check(), <a href=#dom-fontfacesetcheck-text title="section 3.4">3.4</a>
-</ul><li>type, <a href=#dom-cssfontfaceloadeventcssfontfaceloadevent-type title="section 3">3</a>
+</ul><li>thisArg, <a href=#dom-fontfacesetforeach-thisarg title="section 3">3</a>
+<li>type, <a href=#dom-fontfacesetloadeventfontfacesetloadevent-type title="section 3">3</a>
 <li>unicodeRange<ul><li>dict-member for FontFaceDescriptors, <a href=#dom-fontfacedescriptors-unicoderange title="section 2">2</a>
 <li>attribute for FontFace, <a href=#dom-fontface-unicoderange title="section 2">2</a>
 </ul><li>[[Urls]], <a href=#dom-fontface-urls title="section 2">2</a>
+<li>values(), <a href=#dom-fontfaceset-values title="section 3">3</a>
 <li>variant<ul><li>dict-member for FontFaceDescriptors, <a href=#dom-fontfacedescriptors-variant title="section 2">2</a>
 <li>attribute for FontFace, <a href=#dom-fontface-variant title="section 2">2</a>
 </ul><li>weight<ul><li>dict-member for FontFaceDescriptors, <a href=#dom-fontfacedescriptors-weight title="section 2">2</a>
@@ -1213,3 +1338,15 @@ Property index</span><a class=self-link href=#property-index></a></h2>
 <div data-fill-with=property-index><p>No properties defined.</div>
 
 
+<h2 class="no-num heading settled" id=issues-index><span class=content>Issues Index</span><a class=self-link href=#issues-index></a></h2><div style="counter-reset: issue"><div class=issue>Need to define the base url,
+			so relative urls can resolve.
+			Should it be the url of the document?
+			Is that correct for workers too,
+			or should they use their worker url?
+			Is that always defined?<a href=#issue-46e5892e> ↵ </a></div>
+
+<div class=issue>The above is wrong; it assumes that you’re only asking about the <a data-link-type=dfn href=#font-source title="font source">font source</a>.
+	The <a data-link-for=FontFaceSet data-link-type=idl href=#dom-fontfaceset-status title=status>status</a> promise needs to pay attention to what <a data-link-type=idl href=#dom-fontfaceset title=fontfaceset>FontFaceSet</a> it’s attached to.
+	I guess only the <a data-link-type=dfn href=#font-source title="font source’s">font source’s</a> <a data-link-for=FontFaceSet data-link-type=idl href=#dom-fontfaceset-status title=status>status</a> promise should care about pending layout operations.<a href=#issue-bf2e5cbe> ↵ </a></div>
+
+</div>

@@ -4,12 +4,14 @@
     "typeExtAttrs": [],
     "idlType": {
       "sequence": false,
+      "generic": null,
       "nullable": false,
       "array": false,
       "union": true,
       "idlType": [
         {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -17,6 +19,7 @@
         },
         {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -37,6 +40,7 @@
         "name": "style",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -53,6 +57,7 @@
         "name": "weight",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -69,6 +74,7 @@
         "name": "stretch",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -85,6 +91,7 @@
         "name": "unicodeRange",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -101,6 +108,7 @@
         "name": "variant",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -117,6 +125,7 @@
         "name": "featureSettings",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -156,6 +165,7 @@
         "readonly": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -172,6 +182,7 @@
         "readonly": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -188,6 +199,7 @@
         "readonly": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -204,6 +216,7 @@
         "readonly": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -220,6 +233,7 @@
         "readonly": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -236,6 +250,7 @@
         "readonly": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -252,6 +267,7 @@
         "readonly": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -268,6 +284,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -287,10 +304,18 @@
         "stringifier": false,
         "idlType": {
           "sequence": false,
+          "generic": "Promise",
           "nullable": false,
           "array": false,
           "union": false,
-          "idlType": "FontFace"
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "FontFace"
+          }
         },
         "name": "load",
         "arguments": [],
@@ -301,13 +326,21 @@
         "static": false,
         "stringifier": false,
         "inherit": false,
-        "readonly": false,
+        "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": "Promise",
           "nullable": false,
           "array": false,
           "union": false,
-          "idlType": "boolean"
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "boolean"
+          }
         },
         "name": "loaded",
         "extAttrs": []
@@ -324,6 +357,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -337,12 +371,14 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": true,
               "idlType": [
                 {
                   "sequence": false,
+                  "generic": null,
                   "nullable": false,
                   "array": false,
                   "union": false,
@@ -350,6 +386,7 @@
                 },
                 {
                   "sequence": false,
+                  "generic": null,
                   "nullable": false,
                   "array": false,
                   "union": false,
@@ -360,11 +397,12 @@
             "name": "source"
           },
           {
-            "optional": false,
+            "optional": true,
             "variadic": false,
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -373,12 +411,24 @@
             "name": "descriptors"
           }
         ]
+      },
+      {
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": {
+          "type": "identifier",
+          "value": "Window"
+        }
+      },
+      {
+        "name": "Worker",
+        "arguments": null
       }
     ]
   },
   {
     "type": "dictionary",
-    "name": "CSSFontFaceLoadEventInit",
+    "name": "FontFaceSetLoadEventInit",
     "partial": false,
     "members": [
       {
@@ -386,21 +436,20 @@
         "name": "fontfaces",
         "idlType": {
           "sequence": true,
+          "generic": "sequence",
           "nullable": false,
           "array": false,
           "union": false,
           "idlType": {
             "sequence": false,
+            "generic": null,
             "nullable": false,
             "array": false,
             "union": false,
-            "idlType": "CSSFontFaceRule"
+            "idlType": "FontFace"
           }
         },
-        "extAttrs": [],
-        "default": {
-          "type": "null"
-        }
+        "extAttrs": []
       }
     ],
     "inheritance": "EventInit",
@@ -408,7 +457,7 @@
   },
   {
     "type": "interface",
-    "name": "CSSFontFaceLoadEvent",
+    "name": "FontFaceSetLoadEvent",
     "partial": false,
     "members": [
       {
@@ -419,6 +468,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -439,6 +489,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -452,14 +503,27 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "CSSFontFaceLoadEventInit"
+              "idlType": "FontFaceSetLoadEventInit"
             },
             "name": "eventInitDict"
           }
         ]
+      },
+      {
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": {
+          "type": "identifier",
+          "value": "Window"
+        }
+      },
+      {
+        "name": "Worker",
+        "arguments": null
       }
     ]
   },
@@ -473,6 +537,63 @@
     "extAttrs": []
   },
   {
+    "type": "callback",
+    "name": "ForEachCallback",
+    "idlType": {
+      "sequence": false,
+      "generic": null,
+      "nullable": false,
+      "array": false,
+      "union": false,
+      "idlType": "void"
+    },
+    "arguments": [
+      {
+        "optional": false,
+        "variadic": false,
+        "extAttrs": [],
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "FontFace"
+        },
+        "name": "font"
+      },
+      {
+        "optional": false,
+        "variadic": false,
+        "extAttrs": [],
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "long"
+        },
+        "name": "index"
+      },
+      {
+        "optional": false,
+        "variadic": false,
+        "extAttrs": [],
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "FontFaceSet"
+        },
+        "name": "self"
+      }
+    ],
+    "extAttrs": []
+  },
+  {
     "type": "interface",
     "name": "FontFaceSet",
     "partial": false,
@@ -482,9 +603,288 @@
         "static": false,
         "stringifier": false,
         "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "name": "size",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "add",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "FontFace"
+            },
+            "name": "font"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "has",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "FontFace"
+            },
+            "name": "font"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "delete",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "FontFace"
+            },
+            "name": "font"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "clear",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Iterator"
+        },
+        "name": "entries",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Iterator"
+        },
+        "name": "keys",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Iterator"
+        },
+        "name": "values",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "forEach",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ForEachCallback"
+            },
+            "name": "cb"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "thisArg"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "iterator",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "FontFace"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
         "readonly": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -501,6 +901,7 @@
         "readonly": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -517,6 +918,7 @@
         "readonly": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -535,16 +937,25 @@
         "static": false,
         "stringifier": false,
         "idlType": {
-          "sequence": true,
+          "sequence": false,
+          "generic": "Promise",
           "nullable": false,
           "array": false,
           "union": false,
           "idlType": {
-            "sequence": false,
+            "sequence": true,
+            "generic": "sequence",
             "nullable": false,
             "array": false,
             "union": false,
-            "idlType": "FontFace"
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "FontFace"
+            }
           }
         },
         "name": "load",
@@ -555,6 +966,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -568,6 +980,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -593,6 +1006,7 @@
         "stringifier": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -606,6 +1020,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -619,6 +1034,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -634,23 +1050,27 @@
         "extAttrs": []
       },
       {
-        "type": "operation",
-        "getter": false,
-        "setter": false,
-        "creator": false,
-        "deleter": false,
-        "legacycaller": false,
+        "type": "attribute",
         "static": false,
         "stringifier": false,
+        "inherit": false,
+        "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": "Promise",
           "nullable": false,
           "array": false,
           "union": false,
-          "idlType": "FontFaceSet"
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "FontFaceSet"
+          }
         },
         "name": "ready",
-        "arguments": [],
         "extAttrs": []
       },
       {
@@ -661,23 +1081,50 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
-          "idlType": "FontFaceLoadStatus"
+          "idlType": "FontFaceSetLoadStatus"
         },
         "name": "status",
         "extAttrs": []
       }
     ],
-    "inheritance": null,
-    "extAttrs": []
-  },
-  {
-    "type": "implements",
-    "target": "FontFaceSet",
-    "implements": "EventTarget",
-    "extAttrs": []
+    "inheritance": "EventTarget",
+    "extAttrs": [
+      {
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": {
+          "type": "identifier",
+          "value": "Window"
+        }
+      },
+      {
+        "name": "Worker",
+        "arguments": null
+      },
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": true,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "sequence"
+            },
+            "name": "initialFaces"
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "interface",
@@ -692,6 +1139,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,

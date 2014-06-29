@@ -4,13 +4,16 @@
     "local": "cssfontload.html",
     "dontFetch": true,
     "dontExtract": true,
-    "dontExtractReason": "extracted IDL edited to abstract use of promises",
+    "dontExtractReason": "extracted IDL edited to abstract unsupported IDL syntax",
+    "helpers": [
+        "FontFace"
+    ],
     "instances": {
-        "CSSFontFaceLoadEvent": "document.createEvent('CSSFontFaceLoadEvent')",
         "Document": "document",
-        "FontFace": "undefined",
+        "FontFace": "getFontFace()",
         "FontFaceSet": "!!document['fonts'] && document.fonts",
+        "FontFaceSetLoadEvent": "document.createEvent('FontFaceSetLoadEvent')",
         "FontFaceSource": "document",
-        "WorkerGlobalScope": "undefined"
+        "WorkerGlobalScope": "null"
     }
 }

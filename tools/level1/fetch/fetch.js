@@ -243,7 +243,7 @@
                         if (!!options['dontFetchReason'])
                             reason = options['dontFetchReason'];
                         else if (!!options['dontExtract'])
-                            reason = "manual extraction required";
+                            reason = "manual extraction or IDL editing required";
                         console.warn('[I]: ' + 'Skipping spec ' + options['spec'] + ' fetch' + (!!reason ? ': ' + reason : '') + '.');
                     }
                     return;
