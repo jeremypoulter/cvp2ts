@@ -12,6 +12,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": true,
           "array": false,
           "union": false,
@@ -28,6 +29,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -48,6 +50,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -61,6 +64,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -82,6 +86,7 @@
         "name": "view",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": true,
           "array": false,
           "union": false,
@@ -97,6 +102,7 @@
         "name": "detail",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -125,6 +131,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": true,
           "array": false,
           "union": false,
@@ -145,6 +152,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -158,6 +166,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -179,6 +188,7 @@
         "name": "relatedTarget",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": true,
           "array": false,
           "union": false,
@@ -206,6 +216,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -222,6 +233,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -238,6 +250,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -254,6 +267,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -270,6 +284,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -286,6 +301,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -302,6 +318,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -318,6 +335,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -334,6 +352,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -350,6 +369,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": true,
           "array": false,
           "union": false,
@@ -366,6 +386,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -385,6 +406,7 @@
         "stringifier": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -398,6 +420,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -420,6 +443,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -433,6 +457,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -454,6 +479,7 @@
         "name": "screenX",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -470,6 +496,7 @@
         "name": "screenY",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -486,6 +513,7 @@
         "name": "clientX",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -502,6 +530,7 @@
         "name": "clientY",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -518,6 +547,7 @@
         "name": "ctrlKey",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -534,6 +564,7 @@
         "name": "shiftKey",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -550,6 +581,7 @@
         "name": "altKey",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -566,6 +598,7 @@
         "name": "metaKey",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -582,6 +615,7 @@
         "name": "button",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -598,6 +632,7 @@
         "name": "buttons",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -614,6 +649,7 @@
         "name": "relatedTarget",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": true,
           "array": false,
           "union": false,
@@ -674,6 +710,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -690,6 +727,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -706,6 +744,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -722,6 +761,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -742,6 +782,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -755,6 +796,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -776,6 +818,7 @@
         "name": "deltaX",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -792,6 +835,7 @@
         "name": "deltaY",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -808,6 +852,7 @@
         "name": "deltaZ",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -824,6 +869,7 @@
         "name": "deltaMode",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -852,6 +898,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -868,6 +915,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -888,6 +936,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -901,6 +950,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -922,6 +972,7 @@
         "name": "data",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -938,6 +989,7 @@
         "name": "isComposing",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1010,6 +1062,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1026,6 +1079,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1042,6 +1096,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1058,6 +1113,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1074,6 +1130,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1090,6 +1147,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1106,6 +1164,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1122,6 +1181,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1138,6 +1198,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1157,6 +1218,7 @@
         "stringifier": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1170,6 +1232,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1192,6 +1255,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1205,6 +1269,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1226,6 +1291,7 @@
         "name": "key",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1242,6 +1308,7 @@
         "name": "code",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1258,6 +1325,7 @@
         "name": "location",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1274,6 +1342,7 @@
         "name": "ctrlKey",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1290,6 +1359,7 @@
         "name": "shiftKey",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1306,6 +1376,7 @@
         "name": "altKey",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1322,6 +1393,7 @@
         "name": "metaKey",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1338,6 +1410,7 @@
         "name": "repeat",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1354,6 +1427,7 @@
         "name": "isComposing",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1382,6 +1456,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1402,6 +1477,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1415,6 +1491,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1436,6 +1513,7 @@
         "name": "data",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1467,6 +1545,7 @@
         "stringifier": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1480,6 +1559,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1493,6 +1573,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1506,6 +1587,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1519,6 +1601,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1548,6 +1631,7 @@
         "stringifier": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1561,6 +1645,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1574,6 +1659,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1587,6 +1673,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1600,6 +1687,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": true,
               "array": false,
               "union": false,
@@ -1613,6 +1701,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1642,6 +1731,7 @@
         "stringifier": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1655,6 +1745,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1668,6 +1759,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1681,6 +1773,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1694,6 +1787,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": true,
               "array": false,
               "union": false,
@@ -1707,6 +1801,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1720,6 +1815,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": true,
               "array": false,
               "union": false,
@@ -1749,6 +1845,7 @@
         "stringifier": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1762,6 +1859,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1775,6 +1873,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1788,6 +1887,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1801,6 +1901,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": true,
               "array": false,
               "union": false,
@@ -1814,6 +1915,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1827,6 +1929,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1840,6 +1943,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1853,6 +1957,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1866,6 +1971,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1879,6 +1985,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1892,6 +1999,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1905,6 +2013,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1918,6 +2027,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1931,6 +2041,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1944,6 +2055,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": true,
               "array": false,
               "union": false,
@@ -1973,6 +2085,7 @@
         "stringifier": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -1986,6 +2099,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -1999,6 +2113,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2012,6 +2127,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2025,6 +2141,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": true,
               "array": false,
               "union": false,
@@ -2038,6 +2155,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2051,6 +2169,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2064,6 +2183,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2077,6 +2197,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2090,6 +2211,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2103,6 +2225,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2116,6 +2239,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": true,
               "array": false,
               "union": false,
@@ -2129,6 +2253,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2142,6 +2267,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2155,6 +2281,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2168,6 +2295,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2181,6 +2309,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2210,6 +2339,7 @@
         "stringifier": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -2223,6 +2353,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2236,6 +2367,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2249,6 +2381,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2262,6 +2395,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": true,
               "array": false,
               "union": false,
@@ -2275,6 +2409,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2288,6 +2423,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2301,6 +2437,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2314,6 +2451,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2327,6 +2465,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2356,6 +2495,7 @@
         "stringifier": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -2369,6 +2509,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2382,6 +2523,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2395,6 +2537,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2408,6 +2551,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": true,
               "array": false,
               "union": false,
@@ -2421,6 +2565,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2434,6 +2579,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2460,6 +2606,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -2476,6 +2623,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -2492,6 +2640,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -2513,6 +2662,7 @@
         "name": "charCode",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -2529,6 +2679,7 @@
         "name": "keyCode",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -2545,6 +2696,7 @@
         "name": "which",
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -2605,6 +2757,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": true,
           "array": false,
           "union": false,
@@ -2621,6 +2774,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -2637,6 +2791,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -2653,6 +2808,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -2669,6 +2825,7 @@
         "readonly": true,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -2688,6 +2845,7 @@
         "stringifier": false,
         "idlType": {
           "sequence": false,
+          "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
@@ -2701,6 +2859,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2714,6 +2873,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2727,6 +2887,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2740,6 +2901,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": true,
               "array": false,
               "union": false,
@@ -2753,6 +2915,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2766,6 +2929,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2779,6 +2943,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,
@@ -2792,6 +2957,7 @@
             "extAttrs": [],
             "idlType": {
               "sequence": false,
+              "generic": null,
               "nullable": false,
               "array": false,
               "union": false,

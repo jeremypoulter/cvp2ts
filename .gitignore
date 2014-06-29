@@ -1,7 +1,5 @@
 # ignored directories
 .cache
-specs/webworkers
-tests/webworkers
 
 # ignored files
 *~
