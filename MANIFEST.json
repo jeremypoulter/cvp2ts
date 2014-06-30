@@ -562,6 +562,14 @@
         "path": "tests/ecmascript51/ecmascript51-interface-URIError.html"
       }, 
       {
+        "url": "/tests/encoding/encoding-interface-TextDecoder.html", 
+        "path": "tests/encoding/encoding-interface-TextDecoder.html"
+      }, 
+      {
+        "url": "/tests/encoding/encoding-interface-TextEncoder.html", 
+        "path": "tests/encoding/encoding-interface-TextEncoder.html"
+      }, 
+      {
         "url": "/tests/file/file-interface-Blob.html", 
         "path": "tests/file/file-interface-Blob.html"
       }, 
@@ -2132,5 +2140,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "ffa4222ee67c7975187178efeb55562ab8d8a97c"
+  "rev": "7a7ff3ffef0299d03fc7d394c05594b826cf7ce0"
 }
