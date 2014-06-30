@@ -9,6 +9,6 @@ function showProperties(o) {
     return s;
 }
 onmessage = function(event) {
-    self.console.info(self['XMLHttpRequest']);
+    self.console.info(event);
     postMessage('done');
 };
