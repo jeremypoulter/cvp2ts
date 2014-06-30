@@ -1,0 +1,32 @@
+
+typedef DOMString ScalarValueString;
+
+dictionary TextDecoderOptions {
+  boolean fatal = false;
+  boolean ignoreBOM = false;
+};
+
+dictionary TextDecodeOptions {
+  boolean stream = false;
+};
+
+[Constructor(optional DOMString label = "utf-8", optional TextDecoderOptions options),
+ Exposed=Window,Worker]
+interface TextDecoder {
+  readonly attribute DOMString encoding;
+  readonly attribute boolean fatal;
+  readonly attribute boolean ignoreBOM;
+  DOMString decode();
+  DOMString decode(ArrayBufferView input, optional TextDecodeOptions options);
+};
+
+dictionary TextEncodeOptions {
+  boolean stream = false;
+};
+
+[Constructor(optional DOMString utfLabel = "utf-8"),
+ Exposed=Window,Worker]
+interface TextEncoder {
+  readonly attribute DOMString encoding;
+  Uint8Array encode(optional ScalarValueString input = "", optional TextEncodeOptions options);
+};
