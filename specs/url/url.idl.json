@@ -351,6 +351,18 @@
       {
         "name": "NoInterfaceObject",
         "arguments": null
+      },
+      {
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": {
+          "type": "identifier",
+          "value": "Window"
+        }
+      },
+      {
+        "name": "Worker",
+        "arguments": null
       }
     ]
   },
@@ -517,6 +529,18 @@
     "extAttrs": [
       {
         "name": "NoInterfaceObject",
+        "arguments": null
+      },
+      {
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": {
+          "type": "identifier",
+          "value": "Window"
+        }
+      },
+      {
+        "name": "Worker",
         "arguments": null
       }
     ]

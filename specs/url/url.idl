@@ -1,3 +1,10 @@
+//
+// [GA] The IDL extracted from the source specification has been manually edited as follows:
+//
+// (1) remove not yet support syntax to wrap extended attribute value in parens
+//
+// Last Edited: Wed Jul 30 17:24:32 UTC 2014
+//
 
 [Constructor(ScalarValueString url, optional ScalarValueString base = "about:blank"),
  Exposed=Window,Worker]
@@ -7,7 +14,8 @@ interface URL {
 };
 URL implements URLUtils;
 
-[NoInterfaceObject]
+[NoInterfaceObject,
+ Exposed=Window,Worker]
 interface URLUtils {
   stringifier attribute ScalarValueString href;
   readonly attribute ScalarValueString origin;
@@ -24,7 +32,8 @@ interface URLUtils {
            attribute ScalarValueString hash;
 };
 
-[NoInterfaceObject]
+[NoInterfaceObject,
+ Exposed=Window,Worker]
 interface URLUtilsReadOnly {
   stringifier readonly attribute ScalarValueString href;
   readonly attribute ScalarValueString origin;

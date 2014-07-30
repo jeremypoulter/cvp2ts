@@ -345,7 +345,7 @@
 
     <h1>HTML Canvas 2D Context</h1>
     <h2 class="no-num no-toc" id="generatedID"></h2>
-   <p class="no-num no-toc subline">Editor's Draft 30 June 2014</p>
+   <p class="no-num no-toc subline">Editor's Draft 30 July 2014</p>
    </header>
 <dl>
     <dt>Latest Published Version:</dt>
@@ -358,7 +358,7 @@
       <dt id="specification-editors">Editors:</dt>
       <dd>W3C:</dd>
       <dd><a href="mailto:cabanier@adobe.com">Rik Cabanier</a>, Adobe Systems, Inc.</dd>
-      <dd><a href="mailto:eliot.graff@microsoft.com">Eliot Graff</a>, Microsoft Corporation</dd>
+      <dd><a href="mailto:jmann@microsoft.com">Jatinder Mann</a>, Microsoft Corporation</dd>
       <dd><a href="mailto:jaymunro@microsoft.com">Jay Munro</a>, Microsoft Corporation</dd>
       <dd><a href="mailto:wiltzius@google.com">Tom Wiltzius</a>, Google, Inc.</dd>
       <dd>WHATWG:</dd>
@@ -459,7 +459,7 @@
   <p>The W3C <a href="http://www.w3.org/html/wg/">HTML Working
   Group</a> is the W3C working group responsible for this
   specification's progress.
-  This specification is the 30 June 2014 Editor's Draft.
+  This specification is the 30 July 2014 Editor's Draft.
         This specification is intended to become a W3C Recommendation.
       </p>
   
@@ -475,97 +475,54 @@
   </ul>
     
 
-  <h3 class="no-num no-toc" id="commenting-on-this-last-call-working-draft">Commenting on this Last Call Working Draft</h3>
+  <p>Publication as a Candidate Recommendation does not imply endorsement by the W3C Membership.
+  This is a draft document and may be updated, replaced or obsoleted by other documents at
+  any time. It is inappropriate to cite this document as other than work in progress.</p>
+
   <p>
-    This Last Call period for this Working Draft ends 20 June 2014.
-    To make Last Call comments, submit them via using
-    <a href="https://www.w3.org/Bugs/Public/enter_bug.cgi?product=HTML%20WG&amp;component=CR%20HTML%20Canvas%202D%20Context">our public bug database</a>.
-    If you cannot do this then you can also e-mail feedback to <a href="mailto:public-html-comments@w3.org">public-html-comments@w3.org</a>
-    (<a href="mailto:public-html-comments-request@w3.org?subject=subscribe">subscribe</a>,
-    <a href="http://lists.w3.org/Archives/Public/public-html-comments/">archives</a>),
-    and arrangements will be made to transpose the comments to our
-    public bug database.</p>
+    For this specification to exit the CR stage, the conditions detailed in the 
+    <a href="http://dev.w3.org/html5/decision-policy/public-permissive-exit-criteria.html">CR Exit 
+    Criteria (Public Permissive version 3)</a> document will have to be met.
+  </p>
 
-  <h3 class="no-num no-toc" id="changes-causing-the-progression-back-to-last-call">Changes causing the progression back to Last Call</h3>
-  <p>This Last Call Working Draft incorporates changes made by the <a href="https://www.w3.org/WAI/PF/HTML/wiki/Canvas">Canvas Accessibility Sub-Group</a> (<a href="https://www.w3.org/WAI/PF/HTML/wiki/Canvas/Meetings/Minutes#Canvas_Accessibility_Teleconferences:_2014">minutes</a>)
-  in response to <a href="http://lists.w3.org/Archives/Public/public-html-admin/2013Sep/0013.html">feedback
-  from the HTML Accessibility Task Force</a> and adds support for visual focus indicators (<a href="#dom-context-2d-drawfocusifneeded">drawFocusIfNeeded()</a>)
-  and a method for updating the accessibility API of the location of fallback elements that are representative of the corresponding hit region location (<a href="#hit-regions">Hit Regions</a>).  These features were designed to be forward compatible with <a href="http://www.w3.org/TR/2013/WD-2dcontext2-20131029/#hit-regions">Canvas 2D Context, Level 2</a>.
+  <!-- UNDER NO CIRCUMSTANCES IS THE FOLLOWING PARAGRAPH TO BE REMOVED OR EDITED WITHOUT TALKING TO THE EDITORS FIRST -->
+  <!-- version history or list of changes (required) -->
+  <p>The latest stable version of the editor's draft of this
+  specification is always available on <a href="http://dev.w3.org/html5/">the W3C CVS server</a>.
+  There are various ways to follow the change history for this specification:
+  </p>
+  <dl>
+   <dt>Browsable version-control record of all changes:</dt>
+   <dd>Github repository (real-time updates): <a href="https://github.com/w3c/html/commits/master">https://github.com/w3c/html/commits/master</a></dd>
+   <dd>CVSWeb interface (hourly updates): <a href="http://dev.w3.org/cvsweb/html5/spec/">http://dev.w3.org/cvsweb/html5/spec/</a></dd>
+   <dt>E-mail notifications of changes:</dt>
+   <dd>HTML-Commits mailing list (commit notifications for dev.w3.org/html5): <a href="http://lists.w3.org/Archives/Public/public-html-commits/latest">http://lists.w3.org/Archives/Public/public-html-commits/latest</a></dd>
+  </dl>
+  <!-- UNDER NO CIRCUMSTANCES IS THE PRECEDING LIST TO BE REMOVED OR EDITED WITHOUT TALKING TO THE EDITORS FIRST -->
 
-  </p><p>
-    The following are the specific changes that were made to this
-    specification in updating it for a return to Last Call.
+  <!-- status of document, group responsible (required) -->
+  <p>
+    This document was published by the <a href="http://www.w3.org/html/wg/">HTML Working Group</a> as 
+    a Candidate Recommendation. This document is intended to become a 
+    <abbr title="World Wide Web Consortium">W3C</abbr> Recommendation. 
+    <abbr title="World Wide Web Consortium">W3C</abbr> publishes a Candidate Recommendation to indicate that the document 
+    is believed to be stable and to encourage implementation by the developer community. This Candidate Recommendation is 
+    expected to advance to Proposed Recommendation no earlier than 17 June 2013. All feedback is welcome.
+  </p>
 
-    </p><h4 class="no-num no-toc" id="removals">Removals</h4>
-      <p>The following are at-risk features that have been removed from the
-       HTML Canvas 2D Context Level 1 specification, and pushed to to the
-       HTML Canvas 2D Context level 2 specification:
-        </p><ul>
-          <li>The "Path objects" section was removed, along with references
-          in other sections to path versions of methods defined on those sections.
-          </li><li>The <code>ellipse()</code> method was removed. (It's not yet
-           implemented in any user agents, and ellipses can be drawn with
-           the <code>arc()</code> method.
-          </li><li>The attributes
-           <code>actualBoundingBoxLeft</code>,
-           <code>actualBoundingBoxRight</code>,
-           <code>fontBoundingBoxAscent</code>,
-           <code>fontBoundingBoxDecent</code>,
-           <code>emHeightAscentNo</code>,
-           <code>hangingBaseline</code>,
-           <code>alphabetBaseline</code>,
-           and
-           <code>ideographicBaseline</code>
-           were removed from the <code><a href="#textmetrics">TextMetrics</a></code> object returned by the
-           <code>measureText()</code> method.
-          </li><li>The attributes
-            <code>path</code>,
-            <code>parentID</code>,
-            <code>cursor</code>,
-            <code>label</code>,
-            <code>role</code>,
-            and
-            <code>region</code>
-            were removed from the <code><a href="#hitregionoptions">HitRegionOptions</a></code>
-            dictionary.
-          </li><li>The <code>scrollPathIntoView()</code> method was removed.
-          </li><li>The <code>drawCustomFocusRing()</code> method was removed.
-        </li></ul>
 
-    <h4 class="no-num no-toc" id="additions/changes">Additions/changes</h4>
-      <p>The following are additions and changes made to this
-        specification after the previous publication.
-        </p><ul>
-          <li><b>Focus rings</b>
-            <ul>
-              <li>Changed name of the name of the
-               <code>drawSystemFocusRing()</code> method to
-               <code>drawFocusIfNeeded()</code>.
-               It was felt that focus is not necessarily a ring.
-            </li></ul>
-          </li><li><b>Hit regions</b>
-            <ul>
-              <li>The initial hit region dictionary has been reduced to two
-               elements, <code>control</code> and <code>id</code>. The other
-               items in the dictionary were not going to be implemented for
-               the Level 1 spec.
-              </li><li>The hit region section has been edited to only work with
-               the current path, not the path object as initially specified.
-               Path object was an at risk feature that was removed. The
-               level 2 spec will address the use of the path object.
-              </li><li>The <code>clearHitRegions()</code> method was added. This
-               method clears all hit regions for a given canvas without
-               requiring individual control or id values. It is similar in
-               operation to the <code>clearRect()</code> methods.
-            </li></ul>
-          </li><li><b>Mouse events</b>
-            <ul>
-             <li>The <code>mouseEvent</code> interface was updated to not use
-              re-targeting of a mouse event. It returns the id of the hit
-              region as a parameter to the event object. The developer can
-              handle the <code>mouseEvent</code> as needed.
-            </li></ul>
-        </li></ul>
+  <!-- UNDER NO CIRCUMSTANCES IS THE PRECEDING PARAGRAPH TO BE REMOVED OR EDITED WITHOUT TALKING TO THE EDITORS FIRST -->
+  <!-- relationship to other work (required) -->
+  <p>Work on this specification is also done at the <a href="http://www.whatwg.org/">WHATWG</a>. The W3C HTML working group
+  actively pursues convergence with the WHATWG, as required by the <a href="http://www.w3.org/2007/03/HTML-WG-charter">W3C HTML working
+  group charter</a>. There are various ways to follow this work at the WHATWG:</p>
+  <ul>
+      <li>Commit-Watchers mailing list (complete source diffs): <a href="http://lists.whatwg.org/listinfo.cgi/commit-watchers-whatwg.org">http://lists.whatwg.org/listinfo.cgi/commit-watchers-whatwg.org</a></li>
+      <li>Annotated summary with unified diffs: <a href="http://html5.org/tools/web-apps-tracker">http://html5.org/tools/web-apps-tracker</a></li>
+      <li>Raw Subversion interface: <code>svn checkout http://svn.whatwg.org/webapps/</code></li>
+  </ul>
+  <!-- UNDER NO CIRCUMSTANCES IS THE FOLLOWING PARAGRAPH TO BE REMOVED OR EDITED WITHOUT TALKING TO THE EDITORS FIRST -->
+
 
 
   <!-- UNDER NO CIRCUMSTANCES IS THE PRECEDING PARAGRAPH TO BE REMOVED OR EDITED WITHOUT TALKING TO IAN FIRST -->

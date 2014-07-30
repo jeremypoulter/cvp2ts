@@ -62191,6 +62191,18 @@
       {
         "name": "NoInterfaceObject",
         "arguments": null
+      },
+      {
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": {
+          "type": "identifier",
+          "value": "Window"
+        }
+      },
+      {
+        "name": "Worker",
+        "arguments": null
       }
     ],
     "spec": "url"
@@ -62358,6 +62370,18 @@
     "extAttrs": [
       {
         "name": "NoInterfaceObject",
+        "arguments": null
+      },
+      {
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": {
+          "type": "identifier",
+          "value": "Window"
+        }
+      },
+      {
+        "name": "Worker",
         "arguments": null
       }
     ],
