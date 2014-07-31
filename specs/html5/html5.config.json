@@ -1,5 +1,6 @@
 {
     "spec": "html5",
+    "specVersion": "5.0",
     "source": "http://www.w3.org/html/wg/drafts/html/CR/single-page.html",
     "local": "html5.html",
     "helpers": [
@@ -143,5 +144,1471 @@
         "WindowBase64": "window",
         "WindowEventHandlers": "window",
         "WindowTimers": "window"
-    }
+    },
+    "elements": [
+        {
+            "name": "html",
+            "section": "4.1.1",
+            "interface": "HTMLHtmlElement",
+            "attributes": [
+                "*globals*",
+                "manifest"
+            ]
+        },
+        {
+            "name": "head",
+            "section": "4.2.1",
+            "interface": "HTMLHeadElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "title",
+            "section": "4.2.2",
+            "interface": "HTMLTitleElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "base",
+            "section": "4.2.3",
+            "interface": "HTMLBaseElement",
+            "attributes": [
+                "*globals*",
+                "href",
+                "target"
+            ]
+        },
+        {
+            "name": "link",
+            "section": "4.2.4",
+            "interface": "HTMLLinkElement",
+            "attributes": [
+                "*globals*",
+                "crossorigin",
+                "href",
+                "hreflang",
+                "media",
+                "rel",
+                "sizes",
+                "target",
+                "type"
+            ]
+        },
+        {
+            "name": "meta",
+            "section": "4.2.5",
+            "interface": "HTMLMetaElement",
+            "attributes": [
+                "*globals*",
+                "charset",
+                "content",
+                "http-equiv",
+                "name"
+            ]
+        },
+        {
+            "name": "style",
+            "section": "4.2.6",
+            "interface": "HTMLStyleElement",
+            "attributes": [
+                "*globals*",
+                "media",
+                "type"
+            ]
+        },
+        {
+            "name": "body",
+            "section": "4.3.1",
+            "interface": "HTMLBodyElement",
+            "attributes": [
+                "*globals*",
+                "onafterprint",
+                "onbeforeprint",
+                "onbeforeunload",
+                "onhashchange",
+                "onmessage",
+                "onoffline",
+                "ononline",
+                "onpagehide",
+                "onpageshow",
+                "onpopstate",
+                "onstorage",
+                "onunload"
+            ]
+        },
+        {
+            "name": "article",
+            "section": "4.3.2",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "section",
+            "section": "4.3.3",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "nav",
+            "section": "4.3.4",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "aside",
+            "section": "4.3.5",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "h1",
+            "section": "4.3.6",
+            "interface": "HTMLHeadingElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "h2",
+            "section": "4.3.6",
+            "interface": "HTMLHeadingElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "h3",
+            "section": "4.3.6",
+            "interface": "HTMLHeadingElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "h4",
+            "section": "4.3.6",
+            "interface": "HTMLHeadingElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "h5",
+            "section": "4.3.6",
+            "interface": "HTMLHeadingElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "h6",
+            "section": "4.3.6",
+            "interface": "HTMLHeadingElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "header",
+            "section": "4.3.7",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "footer",
+            "section": "4.3.8",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "address",
+            "section": "4.3.9",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "p",
+            "section": "4.4.1",
+            "interface": "HTMLParagraphElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "hr",
+            "section": "4.4.2",
+            "interface": "HTMLHRElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "pre",
+            "section": "4.4.3",
+            "interface": "HTMLPreElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "blockquote",
+            "section": "4.4.4",
+            "interface": "HTMLQuoteElement",
+            "attributes": [
+                "*globals*",
+                "cite"
+            ]
+        },
+        {
+            "name": "ol",
+            "section": "4.4.5",
+            "interface": "HTMLOListElement",
+            "attributes": [
+                "*globals*",
+                "reversed",
+                "start",
+                "type"
+            ]
+        },
+        {
+            "name": "ul",
+            "section": "4.4.6",
+            "interface": "HTMLUListElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "li",
+            "section": "4.4.7",
+            "interface": "HTMLLIElement",
+            "attributes": [
+                "*globals*",
+                "value"
+            ]
+        },
+        {
+            "name": "dl",
+            "section": "4.4.8",
+            "interface": "HTMLDListElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "dt",
+            "section": "4.4.9",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "dd",
+            "section": "4.4.10",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "figure",
+            "section": "4.4.11",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "figcaption",
+            "section": "4.4.12",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "div",
+            "section": "4.4.13",
+            "interface": "HTMLDivElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "main",
+            "section": "4.4.14",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "a",
+            "section": "4.5.1",
+            "interface": "HTMLAnchorElement",
+            "attributes": [
+                "*globals*",
+                "download",
+                "href",
+                "hreflang",
+                "rel",
+                "target",
+                "type"
+            ]
+        },
+        {
+            "name": "em",
+            "section": "4.5.2",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "strong",
+            "section": "4.5.3",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "small",
+            "section": "4.5.4",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "s",
+            "section": "4.5.5",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "cite",
+            "section": "4.5.6",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "q",
+            "section": "4.5.7",
+            "interface": "HTMLQuoteElement",
+            "attributes": [
+                "*globals*",
+                "cite"
+            ]
+        },
+        {
+            "name": "dfn",
+            "section": "4.5.8",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "abbr",
+            "section": "4.5.9",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "data",
+            "section": "4.5.10",
+            "interface": "HTMLDataElement",
+            "attributes": [
+                "*globals*",
+                "value"
+            ]
+        },
+        {
+            "name": "time",
+            "section": "4.5.11",
+            "interface": "HTMLTimeElement",
+            "attributes": [
+                "*globals*",
+                "datetime"
+            ]
+        },
+        {
+            "name": "code",
+            "section": "4.5.12",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "var",
+            "section": "4.5.13",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "samp",
+            "section": "4.5.14",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "kbd",
+            "section": "4.5.15",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "sub",
+            "section": "4.5.16",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "sup",
+            "section": "4.5.16",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "i",
+            "section": "4.5.17",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "b",
+            "section": "4.5.18",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "u",
+            "section": "4.5.19",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "mark",
+            "section": "4.5.20",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "ruby",
+            "section": "4.5.21",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "rb",
+            "section": "4.5.22",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "rt",
+            "section": "4.5.23",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "rtc",
+            "section": "4.5.24",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "rp",
+            "section": "4.5.25",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "bdi",
+            "section": "4.5.26",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "bdo",
+            "section": "4.5.27",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "span",
+            "section": "4.5.28",
+            "interface": "HTMLSpanElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "br",
+            "section": "4.5.29",
+            "interface": "HTMLBRElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "wbr",
+            "section": "4.5.30",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "ins",
+            "section": "4.6.1",
+            "interface": "HTMLModElement",
+            "attributes": [
+                "*globals*",
+                "cite",
+                "datetime"
+            ]
+        },
+        {
+            "name": "del",
+            "section": "4.6.2",
+            "interface": "HTMLModElement",
+            "attributes": [
+                "*globals*",
+                "cite",
+                "datetime"
+            ]
+        },
+        {
+            "name": "img",
+            "section": "4.7.1",
+            "interface": "HTMLImageElement",
+            "attributes": [
+                "*globals*",
+                "alt",
+                "crossorigin",
+                "height",
+                "ismap",
+                "src",
+                "usemap",
+                "width"
+            ]
+        },
+        {
+            "name": "iframe",
+            "section": "4.7.2",
+            "interface": "HTMLIFrameElement",
+            "attributes": [
+                "*globals*",
+                "height",
+                "name",
+                "sandbox",
+                "src",
+                "srcdoc",
+                "width"
+            ]
+        },
+        {
+            "name": "embed",
+            "section": "4.7.3",
+            "interface": "HTMLEmbedElement",
+            "attributes": [
+                "*globals*",
+                "height",
+                "src",
+                "type",
+                "width"
+            ]
+        },
+        {
+            "name": "object",
+            "section": "4.7.4",
+            "interface": "HTMLObjectElement",
+            "attributes": [
+                "*globals*",
+                "data",
+                "form",
+                "height",
+                "name",
+                "type",
+                "typemustmatch",
+                "usemap",
+                "width"
+            ]
+        },
+        {
+            "name": "param",
+            "section": "4.7.5",
+            "interface": "HTMLParamElement",
+            "attributes": [
+                "*globals*",
+                "name",
+                "value"
+            ]
+        },
+        {
+            "name": "video",
+            "section": "4.7.6",
+            "interface": "HTMLVideoElement",
+            "attributes": [
+                "*globals*",
+                "autoplay",
+                "controls",
+                "crossorigin",
+                "height",
+                "loop",
+                "mediagroup",
+                "muted",
+                "poster",
+                "preload",
+                "src",
+                "width"
+            ]
+        },
+        {
+            "name": "audio",
+            "section": "4.7.7",
+            "interface": "HTMLAudioElement",
+            "attributes": [
+                "*globals*",
+                "autoplay",
+                "controls",
+                "crossorigin",
+                "loop",
+                "mediagroup",
+                "muted",
+                "preload",
+                "src"
+            ]
+        },
+        {
+            "name": "source",
+            "section": "4.7.8",
+            "interface": "HTMLSourceElement",
+            "attributes": [
+                "*globals*",
+                "media",
+                "src",
+                "type"
+            ]
+        },
+        {
+            "name": "track",
+            "section": "4.7.9",
+            "interface": "HTMLTrackElement",
+            "attributes": [
+                "*globals*",
+                "default",
+                "kind",
+                "label",
+                "src",
+                "srclang"
+            ]
+        },
+        {
+            "name": "map",
+            "section": "4.7.11",
+            "interface": "HTMLMapElement",
+            "attributes": [
+                "*globals*",
+                "name"
+            ]
+        },
+        {
+            "name": "area",
+            "section": "4.7.12",
+            "interface": "HTMLAreaElement",
+            "attributes": [
+                "*globals*",
+                "alt",
+                "coords",
+                "download",
+                "href",
+                "hreflang",
+                "rel",
+                "shape",
+                "target",
+                "type"
+            ]
+        },
+        {
+            "name": "math",
+            "section": "4.7.14",
+            "interface": null,
+            "attributes": [
+            ]
+        },
+        {
+            "name": "svg",
+            "section": "4.7.15",
+            "interface": null,
+            "attributes": [
+            ]
+        },
+        {
+            "name": "table",
+            "section": "4.9.1",
+            "interface": "HTMLTableElement",
+            "attributes": [
+                "*globals*",
+                "border"
+            ]
+        },
+        {
+            "name": "caption",
+            "section": "4.9.2",
+            "interface": "HTMLTableCaptionElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "colgroup",
+            "section": "4.9.3",
+            "interface": "HTMLTableColElement",
+            "attributes": [
+                "*globals*",
+                "span"
+            ]
+        },
+        {
+            "name": "col",
+            "section": "4.9.4",
+            "interface": "HTMLTableColElement",
+            "attributes": [
+                "*globals*",
+                "span"
+            ]
+        },
+        {
+            "name": "tbody",
+            "section": "4.9.5",
+            "interface": "HTMLTableSectionElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "thead",
+            "section": "4.9.6",
+            "interface": "HTMLTableSectionElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "tfoot",
+            "section": "4.9.7",
+            "interface": "HTMLTableSectionElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "tr",
+            "section": "4.9.8",
+            "interface": "HTMLTableRowElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "td",
+            "section": "4.9.9",
+            "interface": "HTMLTableDataCellElement",
+            "attributes": [
+                "*globals*",
+                "colspan",
+                "headers",
+                "rowspan"
+            ]
+        },
+        {
+            "name": "th",
+            "section": "4.9.10",
+            "interface": "HTMLTableHeaderCellElement",
+            "attributes": [
+                "*globals*",
+                "abbr",
+                "colspan",
+                "headers",
+                "rowspan",
+                "scope"
+            ]
+        },
+        {
+            "name": "form",
+            "section": "4.10.3",
+            "interface": "HTMLFormElement",
+            "attributes": [
+                "*globals*",
+                "accept-charset",
+                "action",
+                "autocomplete",
+                "enctype",
+                "method",
+                "name",
+                "novalidate",
+                "target"
+            ]
+        },
+        {
+            "name": "label",
+            "section": "4.10.4",
+            "interface": "HTMLLabelElement",
+            "attributes": [
+                "*globals*",
+                "for",
+                "form"
+            ]
+        },
+        {
+            "name": "input",
+            "section": "4.10.5",
+            "interface": "HTMLInputElement",
+            "attributes": [
+                "*globals*",
+                "accept",
+                "alt",
+                "autocomplete",
+                "autofocus",
+                "checked",
+                "dirname",
+                "disabled",
+                "form",
+                "formaction",
+                "formenctype",
+                "formmethod",
+                "formnovalidate",
+                "formtarget",
+                "height",
+                "list",
+                "max",
+                "maxlength",
+                "min",
+                "minlength",
+                "multiple",
+                "name",
+                "pattern",
+                "placeholder",
+                "readonly",
+                "required",
+                "size",
+                "src",
+                "step",
+                "type",
+                "value",
+                "width"
+            ]
+        },
+        {
+            "name": "button",
+            "section": "4.10.6",
+            "interface": "HTMLButtonElement",
+            "attributes": [
+                "*globals*",
+                "autofocus",
+                "disabled",
+                "form",
+                "formaction",
+                "formenctype",
+                "formmethod",
+                "formnovalidate",
+                "formtarget",
+                "name",
+                "type",
+                "value"
+            ]
+        },
+        {
+            "name": "select",
+            "section": "4.10.7",
+            "interface": "HTMLSelectElement",
+            "attributes": [
+                "*globals*",
+                "autofocus",
+                "disabled",
+                "form",
+                "multiple",
+                "name",
+                "required",
+                "size"
+            ]
+        },
+        {
+            "name": "datalist",
+            "section": "4.10.8",
+            "interface": "HTMLDataListElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "optgroup",
+            "section": "4.10.9",
+            "interface": "HTMLOptGroupElement",
+            "attributes": [
+                "*globals*",
+                "disabled",
+                "label"
+            ]
+        },
+        {
+            "name": "option",
+            "section": "4.10.10",
+            "interface": "HTMLOptionElement",
+            "attributes": [
+                "*globals*",
+                "disabled",
+                "label",
+                "selected",
+                "value"
+            ]
+        },
+        {
+            "name": "textarea",
+            "section": "4.10.11",
+            "interface": "HTMLTextAreaElement",
+            "attributes": [
+                "*globals*",
+                "autocomplete",
+                "autofocus",
+                "cols",
+                "dirname",
+                "disabled",
+                "form",
+                "maxlength",
+                "minlength",
+                "name",
+                "placeholder",
+                "readonly",
+                "required",
+                "rows",
+                "wrap"
+            ]
+        },
+        {
+            "name": "keygen",
+            "section": "4.10.12",
+            "interface": "HTMLKeygenElement",
+            "attributes": [
+                "*globals*",
+                "autofocus",
+                "challenge",
+                "disabled",
+                "form",
+                "keytype",
+                "name"
+            ]
+        },
+        {
+            "name": "output",
+            "section": "4.10.13",
+            "interface": "HTMLOutputElement",
+            "attributes": [
+                "*globals*",
+                "for",
+                "form",
+                "name"
+            ]
+        },
+        {
+            "name": "progress",
+            "section": "4.10.14",
+            "interface": "HTMLProgressElement",
+            "attributes": [
+                "*globals*",
+                "max",
+                "value"
+            ]
+        },
+        {
+            "name": "meter",
+            "section": "4.10.15",
+            "interface": "HTMLMeterElement",
+            "attributes": [
+                "*globals*",
+                "high",
+                "low",
+                "max",
+                "min",
+                "optimum",
+                "value"
+            ]
+        },
+        {
+            "name": "fieldset",
+            "section": "4.10.16",
+            "interface": "HTMLFieldSetElement",
+            "attributes": [
+                "*globals*",
+                "disabled",
+                "form",
+                "name"
+            ]
+        },
+        {
+            "name": "legend",
+            "section": "4.10.17",
+            "interface": "HTMLLegendElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "script",
+            "section": "4.11.1",
+            "interface": "HTMLScriptElement",
+            "attributes": [
+                "*globals*",
+                "async",
+                "charset",
+                "crossorigin",
+                "defer",
+                "src",
+                "type"
+            ]
+        },
+        {
+            "name": "noscript",
+            "section": "4.11.2",
+            "interface": "HTMLElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "template",
+            "section": "4.11.3",
+            "interface": "HTMLTemplateElement",
+            "attributes": [
+                "*globals*"
+            ]
+        },
+        {
+            "name": "canvas",
+            "section": "4.11.4",
+            "interface": "HTMLCanvasElement",
+            "attributes": [
+                "*globals*",
+                "height",
+                "width"
+            ]
+        }
+    ],
+    "attributeGroups": [
+        {
+            "name": "*globals*",
+            "members": [
+                "*a11y*",
+                "*events*",
+                "*xml*",
+                "accesskey",
+                "class",
+                "contenteditable",
+                "dir",
+                "draggable",
+                "dropzone",
+                "hidden",
+                "id",
+                "lang",
+                "spellcheck",
+                "style",
+                "tabindex",
+                "title",
+                "translate"
+            ]
+        },
+        {
+            "name": "*a11y*",
+            "members": [
+                "*aria*",
+                "role"
+            ]
+        },
+        {
+            "name": "*aria*",
+            "members": [
+                "aria-activedescendant",
+                "aria-atomic",
+                "aria-autocomplete",
+                "aria-busy",
+                "aria-checked",
+                "aria-controls",
+                "aria-describedby",
+                "aria-disabled",
+                "aria-dropeffect",
+                "aria-expanded",
+                "aria-flowto",
+                "aria-grabbed",
+                "aria-haspopup",
+                "aria-hidden",
+                "aria-invalid",
+                "aria-label",
+                "aria-labelledby",
+                "aria-level",
+                "aria-live",
+                "aria-multiline",
+                "aria-multiselectable",
+                "aria-orientation",
+                "aria-owns",
+                "aria-posinset",
+                "aria-pressed",
+                "aria-readonly",
+                "aria-relevant",
+                "aria-required",
+                "aria-selected",
+                "aria-setsize",
+                "aria-sort",
+                "aria-valuemax",
+                "aria-valuemin",
+                "aria-valuenow",
+                "aria-valuetext"
+            ]
+        },
+        {
+            "name": "*events*",
+            "members": [
+                "onabort",
+                "onblur",
+                "oncancel",
+                "oncanplay",
+                "oncanplaythrough",
+                "onchange",
+                "onclick",
+                "oncuechange",
+                "ondblclick",
+                "ondrag",
+                "ondragend",
+                "ondragenter",
+                "ondragexit",
+                "ondragleave",
+                "ondragover",
+                "ondragstart",
+                "ondrop",
+                "ondurationchange",
+                "onemptied",
+                "onended",
+                "onerror",
+                "onfocus",
+                "oninput",
+                "oninvalid",
+                "onkeydown",
+                "onkeypress",
+                "onkeyup",
+                "onload",
+                "onloadeddata",
+                "onloadedmetadata",
+                "onloadstart",
+                "onmousedown",
+                "onmouseenter",
+                "onmouseleave",
+                "onmousemove",
+                "onmouseout",
+                "onmouseover",
+                "onmouseup",
+                "onmousewheel",
+                "onpause",
+                "onplay",
+                "onplaying",
+                "onprogress",
+                "onratechange",
+                "onreset",
+                "onresize",
+                "onscroll",
+                "onseeked",
+                "onseeking",
+                "onselect",
+                "onshow",
+                "onstalled",
+                "onsubmit",
+                "onsuspend",
+                "ontimeupdate",
+                "ontoggle",
+                "onvolumechange",
+                "onwaiting"
+            ]
+        },
+        {
+            "name": "*xml*",
+            "members": [
+                "xml:base",
+                "xml:lang",
+                "xml:space"
+            ]
+        }
+    ],
+    "attributes": [
+        "abbr",
+        "accept",
+        "accept-charset",
+        "accesskey",
+        "action",
+        "alt",
+        "aria-activedescendant",
+        "aria-atomic",
+        "aria-autocomplete",
+        "aria-busy",
+        "aria-checked",
+        "aria-controls",
+        "aria-describedby",
+        "aria-disabled",
+        "aria-dropeffect",
+        "aria-expanded",
+        "aria-flowto",
+        "aria-grabbed",
+        "aria-haspopup",
+        "aria-hidden",
+        "aria-invalid",
+        "aria-label",
+        "aria-labelledby",
+        "aria-level",
+        "aria-live",
+        "aria-multiline",
+        "aria-multiselectable",
+        "aria-orientation",
+        "aria-owns",
+        "aria-posinset",
+        "aria-pressed",
+        "aria-readonly",
+        "aria-relevant",
+        "aria-required",
+        "aria-selected",
+        "aria-setsize",
+        "aria-sort",
+        "aria-valuemax",
+        "aria-valuemin",
+        "aria-valuenow",
+        "aria-valuetext",
+        "async",
+        "autocomplete",
+        "autofocus",
+        "autoplay",
+        "border",
+        "challenge",
+        "charset",
+        "checked",
+        "cite",
+        "class",
+        "cols",
+        "colspan",
+        "content",
+        "contenteditable",
+        "controls",
+        "coords",
+        "crossorigin",
+        "data",
+        "datetime",
+        "default",
+        "defer",
+        "dir",
+        "dirname",
+        "disabled",
+        "download",
+        "draggable",
+        "dropzone",
+        "enctype",
+        "for",
+        "form",
+        "formaction",
+        "formenctype",
+        "formmethod",
+        "formnovalidate",
+        "formtarget",
+        "headers",
+        "height",
+        "hidden",
+        "high",
+        "href",
+        "hreflang",
+        "http-equiv",
+        "id",
+        "ismap",
+        "keytype",
+        "kind",
+        "label",
+        "lang",
+        "list",
+        "loop",
+        "low",
+        "manifest",
+        "max",
+        "maxlength",
+        "media",
+        "mediagroup",
+        "method",
+        "min",
+        "minlength",
+        "multiple",
+        "muted",
+        "name",
+        "novalidate",
+        "onabort",
+        "onafterprint",
+        "onbeforeprint",
+        "onbeforeunload",
+        "onblur",
+        "oncancel",
+        "oncanplay",
+        "oncanplaythrough",
+        "onchange",
+        "onclick",
+        "oncuechange",
+        "ondblclick",
+        "ondrag",
+        "ondragend",
+        "ondragenter",
+        "ondragexit",
+        "ondragleave",
+        "ondragover",
+        "ondragstart",
+        "ondrop",
+        "ondurationchange",
+        "onemptied",
+        "onended",
+        "onerror",
+        "onfocus",
+        "onhashchange",
+        "oninput",
+        "oninvalid",
+        "onkeydown",
+        "onkeypress",
+        "onkeyup",
+        "onload",
+        "onloadeddata",
+        "onloadedmetadata",
+        "onloadstart",
+        "onmessage",
+        "onmousedown",
+        "onmouseenter",
+        "onmouseleave",
+        "onmousemove",
+        "onmouseout",
+        "onmouseover",
+        "onmouseup",
+        "onmousewheel",
+        "onoffline",
+        "ononline",
+        "onpagehide",
+        "onpageshow",
+        "onpause",
+        "onplay",
+        "onplaying",
+        "onpopstate",
+        "onprogress",
+        "onratechange",
+        "onreset",
+        "onresize",
+        "onscroll",
+        "onseeked",
+        "onseeking",
+        "onselect",
+        "onshow",
+        "onstalled",
+        "onstorage",
+        "onsubmit",
+        "onsuspend",
+        "ontimeupdate",
+        "ontoggle",
+        "onunload",
+        "onvolumechange",
+        "onwaiting",
+        "optimum",
+        "pattern",
+        "placeholder",
+        "poster",
+        "preload",
+        "readonly",
+        "rel",
+        "required",
+        "reversed",
+        "role",
+        "rows",
+        "rowspan",
+        "sandbox",
+        "scope",
+        "selected",
+        "shape",
+        "size",
+        "sizes",
+        "span",
+        "spellcheck",
+        "src",
+        "srcdoc",
+        "srclang",
+        "start",
+        "step",
+        "style",
+        "tabindex",
+        "target",
+        "title",
+        "translate",
+        "type",
+        "typemustmatch",
+        "usemap",
+        "value",
+        "width",
+        "wrap",
+        "xml:base",
+        "xml:lang",
+        "xml:space"
+    ]
 }
