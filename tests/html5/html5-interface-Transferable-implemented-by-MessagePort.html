@@ -6,11 +6,11 @@
 <script src='/resources/testharness.js'></script>
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
-<script type='text/plain' id='idl'>
+<script type='text/plain' id='idlDef'>
 [{"type":"implements","target":"MessagePort","implements":"Transferable","extAttrs":[]},{"type":"interface","name":"Transferable","partial":false,"members":[],"inheritance":null,"extAttrs":[{"name":"NoInterfaceObject","arguments":null}]}]
 </script>
 <h1>Test MessagePort Implements Transferable Signature</h1>
 <div id='log'></div>
 <script>
-level1('html5', JSON.parse(document.getElementById('idl').textContent), function(test){return 'MessageChannel' in window && new MessageChannel().port1;});
+level1('html5', JSON.parse(document.getElementById('idlDef').textContent), function(test){return 'MessageChannel' in window && new MessageChannel().port1;});
 </script>

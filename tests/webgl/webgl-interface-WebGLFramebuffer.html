@@ -7,11 +7,11 @@
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
 <script src='./helpers/WebGLFramebuffer.js'></script>
-<script type='text/plain' id='idl'>
+<script type='text/plain' id='idlDef'>
 {"type":"interface","name":"WebGLFramebuffer","partial":false,"members":[],"inheritance":"WebGLObject","extAttrs":[]}
 </script>
 <h1>Test Interface WebGLFramebuffer Signature</h1>
 <div id='log'></div>
 <script>
-level1('webgl', JSON.parse(document.getElementById('idl').textContent), function(test){return getWebGLFramebuffer();});
+level1('webgl', JSON.parse(document.getElementById('idlDef').textContent), function(test){return getWebGLFramebuffer();});
 </script>

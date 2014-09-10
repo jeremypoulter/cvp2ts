@@ -6,11 +6,11 @@
 <script src='/resources/testharness.js'></script>
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
-<script type='text/plain' id='idl'>
+<script type='text/plain' id='idlDef'>
 {"type":"interface","name":"HTMLHtmlElement","partial":false,"members":[],"inheritance":"HTMLElement","extAttrs":[]}
 </script>
 <h1>Test Interface HTMLHtmlElement Signature</h1>
 <div id='log'></div>
 <script>
-level1('html5', JSON.parse(document.getElementById('idl').textContent), function(test){return document.createElement('html');});
+level1('html5', JSON.parse(document.getElementById('idlDef').textContent), function(test){return document.createElement('html');});
 </script>

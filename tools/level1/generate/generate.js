@@ -43,6 +43,7 @@
         inputFile : undefined,
         instances : {},
         instancesAsync : {},
+        level : 1,
         local : undefined,
         manual : [],
         other : [],
@@ -127,6 +128,8 @@
         run : function(argv) {
             try {
                 var options = commonOptions.readOptions(argv, defaultOptions(), $);
+                if (!!options['levels'] && !_.contains(options['levels'], options['level']))
+                    return;
                 var input;
                 if (!!options['inputFile'])
                     input = fs.createReadStream(options['inputFile'], {encoding: options['inputFileEncoding']});
@@ -145,7 +148,7 @@
                     throw "Test directory does not exist!";
                 $.options = options;
                 if (options['verbose'])
-                    console.warn('[I]: ' + 'Generating tests from ' + ((input !== process.stdin) ? options['inputFile'] : 'STDIN') + ' ...');
+                    console.warn('[I]: ' + 'Generating level ' + options['level'] + ' tests from ' + ((input !== process.stdin) ? options['inputFile'] : 'STDIN') + ' ...');
             } catch(e) {
                 setTimeout(function() { $.onFatalException(e); }, 0);
             }
@@ -273,7 +276,7 @@
         html += "<script src='/tools/common/level1.js'></script>\n";
         if (!!helper)
             html += "<script src='./helpers/" + helper + ".js'></script>\n";
-        html += "<script type='text/plain' id='idl'>\n";
+        html += "<script type='text/plain' id='idlDef'>\n";
         html += JSON.stringify(idl) + "\n";
         html += "</script>\n";
         return html;
@@ -304,7 +307,7 @@
         html += "<script>\n";
         if (manual)
             html += "setup({explicit_done: true, explicit_timeout: true});\n"
-        html += entryName + "('" + spec + "', JSON.parse(document.getElementById('idl').textContent), " + instanceGetter + ");\n";
+        html += entryName + "('" + spec + "', JSON.parse(document.getElementById('idlDef').textContent), " + instanceGetter + ");\n";
         html += "</script>\n";
         return html;
     }
@@ -433,7 +436,7 @@
         html += "<script>\n";
         if (manual)
             html += "setup({explicit_done: true, explicit_timeout: true});\n"
-        html += entryName + "('" + spec + "', JSON.parse(document.getElementById('idl').textContent), " + instanceGetter + ");\n";
+        html += entryName + "('" + spec + "', JSON.parse(document.getElementById('idlDef').textContent), " + instanceGetter + ");\n";
         html += "</script>\n";
         return html;
     }
@@ -456,19 +459,6 @@
             return sNew;
         } else
             return s;
-    }
-    function processOutput() {
-        var options = $.options;
-        var output;
-        if (!!options['outputFile'])
-            output = fs.createWriteStream(options['outputFile'], {encoding: options['outputFileEncoding']});
-        else
-            output = process.stdout;
-        if (!!output) {
-            output.on('finish', $.onOutputDone);
-            output.end();
-        } else
-            throw "No output stream!";
     }
     $.run(process.argv);
 })();

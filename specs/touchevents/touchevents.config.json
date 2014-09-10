@@ -1,6 +1,7 @@
 {
     "spec": "touchevents",
     "source": "http://www.w3.org/TR/2013/REC-touch-events-20131010/",
+    "levels": [ 1 ],
     "local": "touchevents.html",
     "dontFetch": true,
     "dontFetchReason": "specification is final",

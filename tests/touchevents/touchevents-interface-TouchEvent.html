@@ -6,11 +6,11 @@
 <script src='/resources/testharness.js'></script>
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
-<script type='text/plain' id='idl'>
+<script type='text/plain' id='idlDef'>
 {"type":"interface","name":"TouchEvent","partial":false,"members":[{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"TouchList"},"name":"touches","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"TouchList"},"name":"targetTouches","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"TouchList"},"name":"changedTouches","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"boolean"},"name":"altKey","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"boolean"},"name":"metaKey","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"boolean"},"name":"ctrlKey","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"boolean"},"name":"shiftKey","extAttrs":[]}],"inheritance":"UIEvent","extAttrs":[]}
 </script>
 <h1>Test Interface TouchEvent Signature</h1>
 <div id='log'></div>
 <script>
-level1('touchevents', JSON.parse(document.getElementById('idl').textContent), function(test){return document.createEvent('TouchEvent');});
+level1('touchevents', JSON.parse(document.getElementById('idlDef').textContent), function(test){return document.createEvent('TouchEvent');});
 </script>

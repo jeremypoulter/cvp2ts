@@ -27,7 +27,7 @@ TOP		= ..
 
 include $(TOP)/Makefile.Config.mk
 
-SUBDIRS		= level1
+SUBDIRS		= level1 level2
 
 all clean: subdirs
 

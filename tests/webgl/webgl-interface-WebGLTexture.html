@@ -7,11 +7,11 @@
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
 <script src='./helpers/WebGLTexture.js'></script>
-<script type='text/plain' id='idl'>
+<script type='text/plain' id='idlDef'>
 {"type":"interface","name":"WebGLTexture","partial":false,"members":[],"inheritance":"WebGLObject","extAttrs":[]}
 </script>
 <h1>Test Interface WebGLTexture Signature</h1>
 <div id='log'></div>
 <script>
-level1('webgl', JSON.parse(document.getElementById('idl').textContent), function(test){return getWebGLTexture();});
+level1('webgl', JSON.parse(document.getElementById('idlDef').textContent), function(test){return getWebGLTexture();});
 </script>

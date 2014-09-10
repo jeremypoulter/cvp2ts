@@ -1,6 +1,7 @@
 {
     "spec": "cssfontload",
     "source": "http://dev.w3.org/csswg/css-font-loading/",
+    "levels": [ 1 ],
     "local": "cssfontload.html",
     "dontFetch": true,
     "dontExtract": true,

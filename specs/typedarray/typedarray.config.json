@@ -1,6 +1,7 @@
 {
     "spec": "typedarray",
     "source": "https://www.khronos.org/registry/typedarray/specs/latest/",
+    "levels": [ 1 ],
     "local": "typedarray.html",
     "dontFetch": true,
     "dontExtract": true,

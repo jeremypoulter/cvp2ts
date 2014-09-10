@@ -1,6 +1,7 @@
 {
     "spec": "file",
     "source": "http://dev.w3.org/2006/webapi/FileAPI/",
+    "levels": [ 1 ],
     "local": "file.html",
     "helpers": [
         "Blob",

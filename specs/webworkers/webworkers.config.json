@@ -1,6 +1,7 @@
 {
     "spec": "webworkers",
     "source": "http://dev.w3.org/html5/workers/",
+    "levels": [ 1 ],
     "local": "webworkers.html",
     "helpers": [
         "WorkerGlobalScope"

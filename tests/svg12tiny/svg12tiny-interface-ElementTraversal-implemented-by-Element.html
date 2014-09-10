@@ -6,11 +6,11 @@
 <script src='/resources/testharness.js'></script>
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
-<script type='text/plain' id='idl'>
+<script type='text/plain' id='idlDef'>
 [{"type":"implements","target":"Element","implements":"ElementTraversal","extAttrs":[]},{"type":"interface","name":"ElementTraversal","partial":false,"members":[{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"Element"},"name":"firstElementChild","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"Element"},"name":"lastElementChild","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"Element"},"name":"nextElementSibling","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"Element"},"name":"previousElementSibling","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"unsigned long"},"name":"childElementCount","extAttrs":[]}],"inheritance":null,"extAttrs":[]}]
 </script>
 <h1>Test Element Implements ElementTraversal Signature</h1>
 <div id='log'></div>
 <script>
-level1('svg12tiny', JSON.parse(document.getElementById('idl').textContent), function(test){return document.createElementNS('http://www.w3.org/2000/svg','svg');});
+level1('svg12tiny', JSON.parse(document.getElementById('idlDef').textContent), function(test){return document.createElementNS('http://www.w3.org/2000/svg','svg');});
 </script>

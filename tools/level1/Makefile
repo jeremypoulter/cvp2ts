@@ -27,7 +27,7 @@ TOP		= ../..
 
 include $(TOP)/Makefile.Config.mk
 
-SUBDIRS		= $(TOOLS)
+SUBDIRS		= $(TOOLS_L1)
 
 all clean: subdirs
 

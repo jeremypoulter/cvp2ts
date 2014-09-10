@@ -1,6 +1,7 @@
 {
     "spec": "encoding",
     "source": "http://www.w3.org/TR/2014/WD-encoding-20140603/",
+    "levels": [ 1 ],
     "local": "spec.html",
     "instances": {
         "TextDecoder": "'TextDecoder' in window && new TextDecoder()",

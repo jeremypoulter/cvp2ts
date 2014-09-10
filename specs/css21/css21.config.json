@@ -1,0 +1,38 @@
+{
+    "spec": "css21",
+    "source": "http://www.w3.org/TR/2011/REC-CSS2-20110607/",
+    "sourceComment": "Specification is not available in single file HTML format.",
+    "levels": [ 2 ],
+    "local": "css21.html",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "no IDL",
+    "helpers": [
+        "BackgroundColor"
+    ],
+    "properties": [
+        {
+            "name": "background-attachment",
+            "section": "14.2.1",
+            "valueType": "enum",
+            "values": [ "scroll", "fixed", "inherit" ],
+            "initial": "scroll"
+        },
+        {
+            "name": "background-color",
+            "section": "14.2.1",
+            "initial": "transparent"
+        },
+        {
+            "name": "background-image",
+            "section": "14.2.1",
+            "initial": "none"
+        },
+        {
+            "name": "background-position",
+            "section": "14.2.1",
+            "initial": "0% 0%"
+        }
+    ]
+}

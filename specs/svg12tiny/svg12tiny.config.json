@@ -1,6 +1,7 @@
 {
     "spec": "svg12tiny",
     "source": "http://www.w3.org/TR/2008/REC-SVGTiny12-20081222/single-page.html",
+    "levels": [ 1 ],
     "local": "svg12tiny.html",
     "dontFetch": true,
     "dontFetchReason": "specification is final",

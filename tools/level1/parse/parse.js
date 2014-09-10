@@ -25,6 +25,7 @@
 
 "use strict";
 (function() {
+    var _               = require('lodash');
     var common          = './../../common/';
     var commonOptions   = require(common + 'options.js');
     var console         = require('console');
@@ -38,6 +39,7 @@
         configFileEncoding : 'utf8',
         inputFileEncoding : 'utf8',
         inputFile : undefined,
+        level : 1,
         local : undefined,
         other : [],
         outputFile : undefined,
@@ -104,6 +106,8 @@
         run : function(argv) {
             try {
                 var options = commonOptions.readOptions(argv, defaultOptions(), $);
+                if (!!options['levels'] && !_.contains(options['levels'], options['level']))
+                    return;
                 var input;
                 if (!!options['inputFile'])
                     input = fs.createReadStream(options['inputFile'], {encoding: options['inputFileEncoding']});

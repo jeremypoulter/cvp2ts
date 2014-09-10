@@ -6,11 +6,11 @@
 <script src='/resources/testharness.js'></script>
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
-<script type='text/plain' id='idl'>
+<script type='text/plain' id='idlDef'>
 {"type":"interface","name":"MessageEvent","partial":false,"members":[{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"any"},"name":"data","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"DOMString"},"name":"origin","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"DOMString"},"name":"lastEventId","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":true,"array":false,"union":true,"idlType":[{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"WindowProxy"},{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"MessagePort"}]},"name":"source","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":true,"array":1,"union":false,"idlType":"MessagePort","nullableArray":[false]},"name":"ports","extAttrs":[]}],"inheritance":"Event","extAttrs":[{"name":"Constructor","arguments":[{"optional":false,"variadic":false,"extAttrs":[],"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"DOMString"},"name":"type"},{"optional":true,"variadic":false,"extAttrs":[],"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"MessageEventInit"},"name":"eventInitDict"}]},{"name":"Exposed","arguments":null,"rhs":{"type":"identifier","value":"Window"}},{"name":"Worker","arguments":null}]}
 </script>
 <h1>Test Interface MessageEvent Signature</h1>
 <div id='log'></div>
 <script>
-level1('webmessage', JSON.parse(document.getElementById('idl').textContent), function(test){return document.createEvent('MessageEvent');});
+level1('webmessage', JSON.parse(document.getElementById('idlDef').textContent), function(test){return document.createEvent('MessageEvent');});
 </script>

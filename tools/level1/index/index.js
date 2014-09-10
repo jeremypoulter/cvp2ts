@@ -36,6 +36,7 @@
         configFile : undefined,
         configFileEncoding : 'utf8',
         inputFileEncoding : 'utf8',
+        level : 1,
         other : [],
         outputFileEncoding : 'utf8',
         phase : 'index',
@@ -81,9 +82,10 @@
             fs.writeFileSync(options['outputFile'], JSON.stringify(idlAll,undefined,'  '), {encoding: options['outputFileEncoding']});
         },
         run : function(argv) {
-            var rv = 0;
             try {
                 var options = commonOptions.readOptions(argv, defaultOptions(), $);
+                if (!!options['levels'] && !_.contains(options['levels'], options['level']))
+                    return;
                 if (options['verbose'])
                     console.warn('[I]: ' + 'Generating interface index to ' + options['outputFile'] + ' ...');
                 $.options = options;

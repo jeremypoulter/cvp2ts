@@ -106,8 +106,6 @@ interface HTMLElement : Element {
   void blur();
            attribute DOMString accessKey;
   readonly attribute DOMString accessKeyLabel;
-           attribute boolean draggable;
-  [PutForwards=value] readonly attribute DOMSettableTokenList dropzone;
            attribute DOMString contentEditable;
   readonly attribute boolean isContentEditable;
            attribute boolean spellcheck;
@@ -505,12 +503,6 @@ interface TextTrackCue : EventTarget {
 
            attribute EventHandler onenter;
            attribute EventHandler onexit;
-};
-
-[Constructor(double startTime, double endTime, ArrayBuffer data)]
-   interface DataCue : TextTrackCue {
-               attribute ArrayBuffer data;
-      readonly attribute DOMString   text;
 };
 
 interface TimeRanges {
@@ -1098,14 +1090,6 @@ interface GlobalEventHandlers {
            attribute EventHandler onclick;
            attribute EventHandler oncuechange;
            attribute EventHandler ondblclick;
-           attribute EventHandler ondrag;
-           attribute EventHandler ondragend;
-           attribute EventHandler ondragenter;
-           attribute EventHandler ondragexit;
-           attribute EventHandler ondragleave;
-           attribute EventHandler ondragover;
-           attribute EventHandler ondragstart;
-           attribute EventHandler ondrop;
            attribute EventHandler ondurationchange;
            attribute EventHandler onemptied;
            attribute EventHandler onended;
@@ -1263,49 +1247,6 @@ interface MimeType {
 interface External {
   void AddSearchProvider(DOMString engineURL);
   unsigned long IsSearchProviderInstalled(DOMString engineURL);
-};
-
-interface DataTransfer {
-           attribute DOMString dropEffect;
-           attribute DOMString effectAllowed;
-
-  readonly attribute DataTransferItemList items;
-
-  void setDragImage(Element image, long x, long y);
-
-  /* old interface */
-  readonly attribute DOMString[] types;
-  DOMString getData(DOMString format);
-  void setData(DOMString format, DOMString data);
-  void clearData(optional DOMString format);
-  readonly attribute FileList files;
-};
-
-interface DataTransferItemList {
-  readonly attribute unsigned long length;
-  getter DataTransferItem (unsigned long index);
-  DataTransferItem? add(DOMString data, DOMString type);
-  DataTransferItem? add(File data);
-  void remove(unsigned long index);
-  void clear();
-};
-
-interface DataTransferItem {
-  readonly attribute DOMString kind;
-  readonly attribute DOMString type;
-  void getAsString(FunctionStringCallback? _callback);
-  File? getAsFile();
-};
-
-callback FunctionStringCallback = void (DOMString data);
-
-[Constructor(DOMString type, optional DragEventInit eventInitDict)]
-interface DragEvent : MouseEvent {
-  readonly attribute DataTransfer? dataTransfer;
-};
-
-dictionary DragEventInit : MouseEventInit {
-  DataTransfer? dataTransfer;
 };
 
 interface HTMLAppletElement : HTMLElement {

@@ -6,11 +6,11 @@
 <script src='/resources/testharness.js'></script>
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
-<script type='text/plain' id='idl'>
+<script type='text/plain' id='idlDef'>
 {"type":"interface","name":"SVGLocatableElement","partial":false,"members":[],"inheritance":"SVGElement","extAttrs":[]}
 </script>
 <h1>Test Interface SVGLocatableElement Signature</h1>
 <div id='log'></div>
 <script>
-level1('svg12tiny', JSON.parse(document.getElementById('idl').textContent), function(test){return document.createElementNS('http://www.w3.org/2000/svg','svg');});
+level1('svg12tiny', JSON.parse(document.getElementById('idlDef').textContent), function(test){return document.createElementNS('http://www.w3.org/2000/svg','svg');});
 </script>

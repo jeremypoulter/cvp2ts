@@ -6,11 +6,11 @@
 <script src='/resources/testharness.js'></script>
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
-<script type='text/plain' id='idl'>
+<script type='text/plain' id='idlDef'>
 [{"type":"implements","target":"WorkerNavigator","implements":"NavigatorID","extAttrs":[]},{"type":"interface","name":"NavigatorID","partial":false,"members":[{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"DOMString"},"name":"appCodeName","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"DOMString"},"name":"appName","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"DOMString"},"name":"appVersion","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"DOMString"},"name":"platform","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"DOMString"},"name":"product","extAttrs":[]},{"type":"operation","getter":false,"setter":false,"creator":false,"deleter":false,"legacycaller":false,"static":false,"stringifier":false,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"boolean"},"name":"taintEnabled","arguments":[],"extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"DOMString"},"name":"userAgent","extAttrs":[]}],"inheritance":null,"extAttrs":[{"name":"NoInterfaceObject","arguments":null}],"spec":"html5"}]
 </script>
 <h1>Test WorkerNavigator Implements NavigatorID Signature</h1>
 <div id='log'></div>
 <script>
-level1Async('webworkers', JSON.parse(document.getElementById('idl').textContent), null);
+level1Async('webworkers', JSON.parse(document.getElementById('idlDef').textContent), null);
 </script>

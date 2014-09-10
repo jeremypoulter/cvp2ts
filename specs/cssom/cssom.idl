@@ -138,6 +138,7 @@ partial interface Window {
 [NoInterfaceObject]
 interface GetStyleUtils {
   [SameObject] readonly attribute CSSStyleDeclaration cascadedStyle;
+  [SameObject] readonly attribute CSSStyleDeclaration defaultStyle;
   [SameObject] readonly attribute CSSStyleDeclaration rawComputedStyle;
   [SameObject] readonly attribute CSSStyleDeclaration usedStyle;
 };

@@ -7,12 +7,12 @@
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
 <script src='./helpers/SVGElementInstance.js'></script>
-<script type='text/plain' id='idl'>
+<script type='text/plain' id='idlDef'>
 {"type":"interface","name":"SVGElementInstance","partial":false,"members":[{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"SVGElement"},"name":"correspondingElement","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"SVGUseElement"},"name":"correspondingUseElement","extAttrs":[]}],"inheritance":"EventTarget","extAttrs":[]}
 </script>
 <h1>Test Interface SVGElementInstance Signature</h1>
 <div id='log'></div>
 <script>
 setup({explicit_done: true, explicit_timeout: true});
-level1Async('svg12tiny', JSON.parse(document.getElementById('idl').textContent), function(test){return getSVGElementInstanceAsync(test);});
+level1Async('svg12tiny', JSON.parse(document.getElementById('idlDef').textContent), function(test){return getSVGElementInstanceAsync(test);});
 </script>

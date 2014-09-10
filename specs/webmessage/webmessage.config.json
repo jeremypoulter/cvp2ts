@@ -1,6 +1,7 @@
 {
     "spec": "webmessage",
     "source": "http://dev.w3.org/html5/postmsg/",
+    "levels": [ 1 ],
     "local": "webmessage.html",
     "instances": {
         "MessageChannel": "'MessageChannel' in window && new MessageChannel()",

@@ -6,11 +6,11 @@
 <script src='/resources/testharness.js'></script>
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
-<script type='text/plain' id='idl'>
+<script type='text/plain' id='idlDef'>
 [{"type":"implements","target":"HTMLElement","implements":"ElementCSSInlineStyle","extAttrs":[]},{"type":"interface","name":"ElementCSSInlineStyle","partial":false,"members":[{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"CSSStyleDeclaration"},"name":"style","extAttrs":[{"name":"SameObject","arguments":null},{"name":"PutForwards","arguments":null,"rhs":{"type":"identifier","value":"cssText"}}]}],"inheritance":null,"extAttrs":[{"name":"NoInterfaceObject","arguments":null}]}]
 </script>
 <h1>Test HTMLElement Implements ElementCSSInlineStyle Signature</h1>
 <div id='log'></div>
 <script>
-level1('cssom', JSON.parse(document.getElementById('idl').textContent), function(test){return document.documentElement;});
+level1('cssom', JSON.parse(document.getElementById('idlDef').textContent), function(test){return document.documentElement;});
 </script>

@@ -6,11 +6,11 @@
 <script src='/resources/testharness.js'></script>
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
-<script type='text/plain' id='idl'>
+<script type='text/plain' id='idlDef'>
 {"type":"interface","name":"StorageEvent","partial":false,"members":[{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"DOMString"},"name":"key","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":true,"array":false,"union":false,"idlType":"DOMString"},"name":"oldValue","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":true,"array":false,"union":false,"idlType":"DOMString"},"name":"newValue","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"DOMString"},"name":"url","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":true,"array":false,"union":false,"idlType":"Storage"},"name":"storageArea","extAttrs":[]}],"inheritance":"Event","extAttrs":[{"name":"Constructor","arguments":[{"optional":false,"variadic":false,"extAttrs":[],"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"DOMString"},"name":"type"},{"optional":true,"variadic":false,"extAttrs":[],"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"StorageEventInit"},"name":"eventInitDict"}]}]}
 </script>
 <h1>Test Interface StorageEvent Signature</h1>
 <div id='log'></div>
 <script>
-level1('webstorage', JSON.parse(document.getElementById('idl').textContent), function(test){return document.createEvent('StorageEvent');});
+level1('webstorage', JSON.parse(document.getElementById('idlDef').textContent), function(test){return document.createEvent('StorageEvent');});
 </script>

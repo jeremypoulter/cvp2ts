@@ -1,6 +1,7 @@
 {
     "spec": "custom",
     "source": "http://w3c.github.io/webcomponents/spec/custom/",
+    "levels": [ 1 ],
     "local": "custom.html",
     "dontFetch": true,
     "dontFetchReason": "requires manual respec snapshot",

@@ -1,6 +1,7 @@
 {
     "spec": "ecmascript51",
     "source": "http://www.ecma-international.org/ecma-262/5.1/",
+    "levels": [ 1 ],
     "local": "ecmascript51.html",
     "dontFetch": true,
     "dontFetchReason": "specification is final",

@@ -6,11 +6,11 @@
 <script src='/resources/testharness.js'></script>
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
-<script type='text/plain' id='idl'>
+<script type='text/plain' id='idlDef'>
 {"type":"interface","name":"XMLHttpRequestUpload","partial":false,"members":[],"inheritance":"XMLHttpRequestEventTarget","extAttrs":[]}
 </script>
 <h1>Test Interface XMLHttpRequestUpload Signature</h1>
 <div id='log'></div>
 <script>
-level1('xhr', JSON.parse(document.getElementById('idl').textContent), function(test){return 'XMLHttpRequest' in window && new XMLHttpRequest().upload;});
+level1('xhr', JSON.parse(document.getElementById('idlDef').textContent), function(test){return 'XMLHttpRequest' in window && new XMLHttpRequest().upload;});
 </script>

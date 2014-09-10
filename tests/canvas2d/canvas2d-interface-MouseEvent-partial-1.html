@@ -6,11 +6,11 @@
 <script src='/resources/testharness.js'></script>
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
-<script type='text/plain' id='idl'>
+<script type='text/plain' id='idlDef'>
 {"type":"interface","name":"MouseEvent","partial":true,"members":[{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":true,"array":false,"union":false,"idlType":"DOMString"},"name":"region","extAttrs":[]}],"extAttrs":[]}
 </script>
 <h1>Test Interface MouseEvent Signature</h1>
 <div id='log'></div>
 <script>
-level1('canvas2d', JSON.parse(document.getElementById('idl').textContent), function(test){return document.createEvent('MouseEvent');});
+level1('canvas2d', JSON.parse(document.getElementById('idlDef').textContent), function(test){return document.createEvent('MouseEvent');});
 </script>

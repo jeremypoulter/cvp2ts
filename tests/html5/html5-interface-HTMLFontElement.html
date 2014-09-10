@@ -6,11 +6,11 @@
 <script src='/resources/testharness.js'></script>
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
-<script type='text/plain' id='idl'>
+<script type='text/plain' id='idlDef'>
 {"type":"interface","name":"HTMLFontElement","partial":false,"members":[{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":false,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"DOMString"},"name":"color","extAttrs":[{"name":"TreatNullAs","arguments":null,"rhs":{"type":"identifier","value":"EmptyString"}}]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":false,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"DOMString"},"name":"face","extAttrs":[]},{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":false,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"DOMString"},"name":"size","extAttrs":[]}],"inheritance":"HTMLElement","extAttrs":[]}
 </script>
 <h1>Test Interface HTMLFontElement Signature</h1>
 <div id='log'></div>
 <script>
-level1('html5', JSON.parse(document.getElementById('idl').textContent), function(test){return document.createElement('font');});
+level1('html5', JSON.parse(document.getElementById('idlDef').textContent), function(test){return document.createElement('font');});
 </script>

@@ -1,6 +1,7 @@
 {
     "spec": "domps",
     "source": "https://dvcs.w3.org/hg/innerhtml/raw-file/tip/index.html",
+    "levels": [ 1 ],
     "local": "domps.html",
     "dontFetch": true,
     "dontFetchReason": "requires manual respec snapshot",

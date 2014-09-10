@@ -1,6 +1,7 @@
 {
     "spec": "websocket",
     "source": "http://dev.w3.org/html5/websockets/",
+    "levels": [ 1 ],
     "local": "websocket.html",
     "instances": {
         "CloseEvent": "'CloseEvent' in window && new CloseEvent('close')",

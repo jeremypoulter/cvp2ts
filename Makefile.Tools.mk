@@ -24,4 +24,5 @@
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # tools
-TOOLS		= fetch extract parse index generate
+TOOLS_L1	= fetch extract parse index generate
+TOOLS_L2	= fetch generate
