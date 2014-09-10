@@ -8,34 +8,494 @@
     "dontFetchReason": "specification is final",
     "dontExtract": true,
     "dontExtractReason": "no IDL",
-    "helpers": [
-        "Background",
-        "BackgroundColor",
-        "BackgroundImage",
-        "BackgroundPosition"
-    ],
+    "helpers": [],
     "properties": [
         {
-            "name": "background-attachment",
-            "section": "14.2.1",
+            "name": "margin-top",
+            "section": "8.3",
             "valueType": "enum",
-            "values": [ "scroll", "fixed" ],
-            "initial": "scroll"
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%",
+                "auto"
+            ],
+            "initial": "0"
         },
         {
-            "name": "background-color",
-            "section": "14.2.1",
+            "name": "margin-bottom",
+            "section": "8.3",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%",
+                "auto"
+            ],
+            "initial": "0"
+        },
+        {
+            "name": "margin-right",
+            "section": "8.3",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%",
+                "auto"
+            ],
+            "initial": "0"
+        },
+        {
+            "name": "margin-left",
+            "section": "8.3",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%",
+                "auto"
+            ],
+            "initial": "0"
+        },
+        {
+            "name": "margin",
+            "section": "8.3",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1px",
+                "1px 2px",
+                "1px 2px 3px",
+                "1px 2px 3px 4px",
+                "1%",
+                "1% 2%",
+                "1% 2% 3%",
+                "1% 2% 3% 4%",
+                "auto",
+                "auto 2% 3% 4%",
+                "auto auto 3% 4%",
+                "auto auto auto 4%",
+                [ "auto auto auto auto", "auto" ]
+            ],
+            "initial": "0 0 0 0"
+        },
+        {
+            "name": "padding-top",
+            "section": "8.4",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%"
+            ],
+            "initial": "0"
+        },
+        {
+            "name": "padding-bottom",
+            "section": "8.4",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%",
+                "auto"
+            ],
+            "initial": "0"
+        },
+        {
+            "name": "padding-right",
+            "section": "8.4",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%",
+                "auto"
+            ],
+            "initial": "0"
+        },
+        {
+            "name": "padding-left",
+            "section": "8.4",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%",
+                "auto"
+            ],
+            "initial": "0"
+        },
+        {
+            "name": "padding",
+            "section": "8.4",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1px",
+                "1px 2px",
+                "1px 2px 3px",
+                "1px 2px 3px 4px",
+                "1%",
+                "1% 2%",
+                "1% 2% 3%",
+                "1% 2% 3% 4%"
+            ],
+            "initial": "0 0 0 0"
+        },
+        {
+            "name": "border-top-width",
+            "section": "8.5.1",
+            "valueType": "enum",
+            "values": [
+                "thin",
+                "medium",
+                "thick",
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px"
+            ],
+            "initial": "medium"
+        },
+        {
+            "name": "border-right-width",
+            "section": "8.5.1",
+            "valueType": "enum",
+            "values": [
+                "thin",
+                "medium",
+                "thick",
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px"
+            ],
+            "initial": "medium"
+        },
+        {
+            "name": "border-bottom-width",
+            "section": "8.5.1",
+            "valueType": "enum",
+            "values": [
+                "thin",
+                "medium",
+                "thick",
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px"
+            ],
+            "initial": "medium"
+        },
+        {
+            "name": "border-left-width",
+            "section": "8.5.1",
+            "valueType": "enum",
+            "values": [
+                "thin",
+                "medium",
+                "thick",
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px"
+            ],
+            "initial": "medium"
+        },
+        {
+            "name": "border-width",
+            "section": "8.5.1",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "thin",
+                "thin medium",
+                "thin medium thick",
+                "thin medium thick thin",
+                "1in",
+                "1in 1cm",
+                "1in 1cm 1mm",
+                "1in 1cm 1mm 1pt"
+            ],
+            "initial": "medium medium medium medium"
+        },
+        {
+            "name": "border-top-color",
+            "section": "8.5.2",
+            "valueType": "enum",
+            "values": [
+                "red",
+                [ "#F00", "rgb(255, 0, 0)" ],
+                [ "#FF0000", "rgb(255, 0, 0)" ],
+                "rgb(255, 0, 0)",
+                [ "rgb(100%, 0, 0)", "rgb(255, 0, 0)" ],
+                "transparent"
+            ],
             "initial": "transparent"
+        },
+        {
+            "name": "border-right-color",
+            "section": "8.5.2",
+            "valueType": "enum",
+            "values": [
+                "red",
+                [ "#F00", "rgb(255, 0, 0)" ],
+                [ "#FF0000", "rgb(255, 0, 0)" ],
+                "rgb(255, 0, 0)",
+                [ "rgb(100%, 0, 0)", "rgb(255, 0, 0)" ],
+                "transparent"
+            ],
+            "initial": "transparent"
+        },
+        {
+            "name": "border-bottom-color",
+            "section": "8.5.2",
+            "valueType": "enum",
+            "values": [
+                "red",
+                [ "#F00", "rgb(255, 0, 0)" ],
+                [ "#FF0000", "rgb(255, 0, 0)" ],
+                "rgb(255, 0, 0)",
+                [ "rgb(100%, 0, 0)", "rgb(255, 0, 0)" ],
+                "transparent"
+            ],
+            "initial": "transparent"
+        },
+        {
+            "name": "border-left-color",
+            "section": "8.5.2",
+            "valueType": "enum",
+            "values": [
+                "red",
+                [ "#F00", "rgb(255, 0, 0)" ],
+                [ "#FF0000", "rgb(255, 0, 0)" ],
+                "rgb(255, 0, 0)",
+                [ "rgb(100%, 0, 0)", "rgb(255, 0, 0)" ],
+                "transparent"
+            ],
+            "initial": "transparent"
+        },
+        {
+            "name": "border-right-color",
+            "section": "8.5.2",
+            "valueType": "enum",
+            "values": [
+                "red",
+                [ "#F00", "rgb(255, 0, 0)" ],
+                [ "#FF0000", "rgb(255, 0, 0)" ],
+                "rgb(255, 0, 0)",
+                [ "rgb(100%, 0, 0)", "rgb(255, 0, 0)" ],
+                "transparent"
+            ],
+            "initial": "transparent"
+        },
+        {
+            "name": "border-bottom-color",
+            "section": "8.5.2",
+            "valueType": "enum",
+            "values": [
+                "red",
+                [ "#F00", "rgb(255, 0, 0)" ],
+                [ "#FF0000", "rgb(255, 0, 0)" ],
+                "rgb(255, 0, 0)",
+                [ "rgb(100%, 0, 0)", "rgb(255, 0, 0)" ],
+                "transparent"
+            ],
+            "initial": "transparent"
+        },
+        {
+            "name": "border-left-color",
+            "section": "8.5.2",
+            "valueType": "enum",
+            "values": [
+                "red",
+                [ "#F00", "rgb(255, 0, 0)" ],
+                [ "#FF0000", "rgb(255, 0, 0)" ],
+                "rgb(255, 0, 0)",
+                [ "rgb(100%, 0, 0)", "rgb(255, 0, 0)" ],
+                "transparent"
+            ],
+            "initial": "transparent"
+        },
+        {
+            "name": "border-color",
+            "section": "8.5.2",
+            "valueType": "enum",
+            "values": [
+                "red",
+                "red green",
+                "red green blue",
+                "red green blue black",
+                [ "#F00", "rgb(255, 0, 0)" ],
+                [ "#F00 #0F0", "rgb(255, 0, 0) rgb(0, 255, 0)" ],
+                [ "#F00 #0F0 #00F", "rgb(255, 0, 0) rgb(0, 255, 0) rgb(0, 0, 255)" ],
+                [ "#F00 #0F0 #00F #FFF", "rgb(255, 0, 0) rgb(0, 255, 0) rgb(0, 0, 255) rgb(255, 255, 255)" ],
+                "transparent"
+            ],
+            "initial": "transparent"
+        },
+        {
+            "name": "border-top-style",
+            "section": "8.5.3",
+            "valueType": "enum",
+            "values": [
+                "hidden",
+                "dotted",
+                "dashed",
+                "solid",
+                "double",
+                "groove",
+                "ridge",
+                "inset",
+                "outset",
+                "none"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "border-right-style",
+            "section": "8.5.3",
+            "valueType": "enum",
+            "values": [
+                "hidden",
+                "dotted",
+                "dashed",
+                "solid",
+                "double",
+                "groove",
+                "ridge",
+                "inset",
+                "outset",
+                "none"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "border-bottom-style",
+            "section": "8.5.3",
+            "valueType": "enum",
+            "values": [
+                "hidden",
+                "dotted",
+                "dashed",
+                "solid",
+                "double",
+                "groove",
+                "ridge",
+                "inset",
+                "outset",
+                "none"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "border-left-style",
+            "section": "8.5.3",
+            "valueType": "enum",
+            "values": [
+                "hidden",
+                "dotted",
+                "dashed",
+                "solid",
+                "double",
+                "groove",
+                "ridge",
+                "inset",
+                "outset",
+                "none"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "border-style",
+            "section": "8.5.3",
+            "valueType": "enum",
+            "values": [
+                "dotted",
+                "dotted dashed",
+                "dotted dashed solid",
+                "dotted dashed solid double",
+                "none" 
+            ],
+            "initial": "none none none none"
         },
         {
             "name": "background-image",
             "section": "14.2.1",
+            "valueType": "enum",
+            "values": [
+                "none",
+                "url(http://example.com/image.png)"
+            ],
             "initial": "none"
         },
         {
-            "name": "background-position",
+            "name": "background-color",
             "section": "14.2.1",
-            "initial": "0% 0%"
+            "valueType": "enum",
+            "values": [
+                "red",
+                [ "#F00", "rgb(255, 0, 0)" ],
+                [ "#FF0000", "rgb(255, 0, 0)" ],
+                "rgb(255, 0, 0)",
+                [ "rgb(100%, 0, 0)", "rgb(255, 0, 0)" ],
+                "transparent"
+            ],
+            "initial": "transparent"
         },
         {
             "name": "background-repeat",
@@ -45,8 +505,59 @@
             "initial": "repeat"
         },
         {
+            "name": "background-attachment",
+            "section": "14.2.1",
+            "valueType": "enum",
+            "values": [ "scroll", "fixed" ],
+            "initial": "scroll"
+        },
+        {
+            "name": "background-position",
+            "section": "14.2.1",
+            "valueType": "enum",
+            "values": [
+                [ "0%", "0% 50%" ],
+                "0% 0%",
+                [ "1cm", "1cm 50%" ],
+                "1cm 2cm",
+                [ "left", "0% 50%" ],
+                [ "top", "50% 0%" ],
+                [ "bottom", "50% 100%" ],
+                [ "center", "50% 50%" ],
+                [ "right", "100% 50%" ]
+            ],
+            "initial": "0% 0%"
+        },
+        {
             "name": "background",
             "section": "14.2.1",
+            "valueType": "enum",
+            "values": [
+                "red",
+                "url(http://example.com/image.png)",
+                "repeat",
+                "scroll",
+                "0% 0%",
+                [ "red url(http://example.com/image.png)", "url(http://example.com/image.png) red" ],
+                [ "red repeat", "repeat red" ],
+                [ "red scroll", "scroll red" ],
+                [ "red 0% 0%", "0% 0% red" ],
+                [ "red url(http://example.com/image.png) repeat", "url(http://example.com/image.png) repeat red" ],
+                [ "red url(http://example.com/image.png) scroll", "url(http://example.com/image.png) scroll red" ],
+                [ "red url(http://example.com/image.png) 0% 0%", "url(http://example.com/image.png) 0% 0% red" ],
+                [ "red url(http://example.com/image.png) repeat scroll", "url(http://example.com/image.png) repeat scroll red" ],
+                [ "red url(http://example.com/image.png) repeat 0% 0%", "url(http://example.com/image.png) 0% 0% repeat red" ],
+                [ "red url(http://example.com/image.png) repeat scroll 0% 0%", "url(http://example.com/image.png) 0% 0% repeat scroll red" ],
+                "repeat red",
+                "scroll red",
+                "0% 0% red",
+                [ "repeat url(http://example.com/image.png) red", "url(http://example.com/image.png) repeat red" ],
+                [ "scroll url(http://example.com/image.png) red", "url(http://example.com/image.png) scroll red" ],
+                [ "0% 0% url(http://example.com/image.png) red", "url(http://example.com/image.png) 0% 0% red" ],
+                [ "scroll repeat url(http://example.com/image.png) red", "url(http://example.com/image.png) repeat scroll red" ],
+                [ "0% 0% repeat url(http://example.com/image.png) red", "url(http://example.com/image.png) 0% 0% repeat red" ],
+                [ "0% 0% scroll repeat url(http://example.com/image.png) red", "url(http://example.com/image.png) 0% 0% repeat scroll red" ]
+            ],
             "initial": "transparent none repeat scroll 0% 0%"
         }
     ]
