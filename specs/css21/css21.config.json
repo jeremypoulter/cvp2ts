@@ -9,14 +9,16 @@
     "dontExtract": true,
     "dontExtractReason": "no IDL",
     "helpers": [
-        "BackgroundColor"
+        "BackgroundColor",
+        "BackgroundImage",
+        "BackgroundPosition"
     ],
     "properties": [
         {
             "name": "background-attachment",
             "section": "14.2.1",
             "valueType": "enum",
-            "values": [ "scroll", "fixed", "inherit" ],
+            "values": [ "scroll", "fixed" ],
             "initial": "scroll"
         },
         {

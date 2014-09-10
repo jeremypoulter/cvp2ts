@@ -32,8 +32,9 @@
     function testDefinitions(spec, defs) {
         var def = !!defs && !Array.isArray(defs) ? defs : ((defs.length > 0) ? defs[0] : null);
         if (!!def) {
-            if (def.type == 'property')
+            if (def.type == 'property') {
                 testProperty(spec, def);
+            }
         }
     }
     function testProperty(spec, def) {
@@ -45,12 +46,55 @@
             name: defName,
             expandedName: makeExpandedName(spec, def)
         };
-        test(function() {
-            assert_true(true, 'Is property defined?');
-        }, defProperties.expandedName + '-property-defined');
+        var e = document.createElement('p');
+        var name = def.name;
+        var v;
+        var vSerialized;
+        // test explicitt values
+        var values = [];
+        if (!def.valueType) {
+            var getterName = 'get' + def.nameNormalized + 'Values';
+            if (!!global[getterName]) {
+                var getter = new Function('return ' + getterName + '();');
+                values = values.concat(getter());
+            }
+        } else if (def.valueType == 'enum') {
+            if (!!def.values)
+                values = values.concat(def.values);
+        }
+        if (values.indexOf('inherit') < 0)
+            values = values.concat('inherit');
+        if (values.indexOf('initial') < 0)
+            values = values.concat('initial');
+        for (var i = 0; i < values.length; ++i) {
+            var value = values[i];
+            if (!!value) {
+                if (Array.isArray(value)) {
+                    if (value.length > 0)
+                        v = value[0];
+                    else
+                        v = '';
+                    if (value.length > 1)
+                        vSerialized = value[1];
+                    else
+                        vSerialized = v;
+                } else {
+                    v = value;
+                    vSerialized = value;
+                }
+                test(function() {
+                    var s = e.style;
+                    s.setProperty(name, v);
+                    assert_equals(s.getPropertyValue(name), vSerialized);
+                }, defProperties.expandedName + '-can-round-trip-value-' + escapeValue(v));
+            }
+        }
     };
     function makeExpandedName(spec, def) {
         return spec + '-' + def.type + '-' + def.name;
+    }
+    function escapeValue(s) {
+        return s;
     }
     /* debug only */
     function dumpProps(o) {
