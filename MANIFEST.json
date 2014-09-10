@@ -42,6 +42,22 @@
         "path": "tests/canvas2d/canvas2d-interface-TextMetrics.html"
       }, 
       {
+        "url": "/tests/css21/css21-property-BackgroundAttachment.html", 
+        "path": "tests/css21/css21-property-BackgroundAttachment.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BackgroundColor.html", 
+        "path": "tests/css21/css21-property-BackgroundColor.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BackgroundImage.html", 
+        "path": "tests/css21/css21-property-BackgroundImage.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BackgroundPosition.html", 
+        "path": "tests/css21/css21-property-BackgroundPosition.html"
+      }, 
+      {
         "url": "/tests/cssfontload/cssfontload-interface-FontFace.html", 
         "path": "tests/cssfontload/cssfontload-interface-FontFace.html"
       }, 
@@ -2140,5 +2156,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "8e58ffe6b1357bf8ba3ec407a28186fd3025d17a"
+  "rev": "99429ded123c5ae09bdf5246984391e8c6590d07"
 }
