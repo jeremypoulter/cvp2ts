@@ -42,6 +42,10 @@
         "path": "tests/canvas2d/canvas2d-interface-TextMetrics.html"
       }, 
       {
+        "url": "/tests/css21/css21-property-Background.html", 
+        "path": "tests/css21/css21-property-Background.html"
+      }, 
+      {
         "url": "/tests/css21/css21-property-BackgroundAttachment.html", 
         "path": "tests/css21/css21-property-BackgroundAttachment.html"
       }, 
@@ -56,6 +60,10 @@
       {
         "url": "/tests/css21/css21-property-BackgroundPosition.html", 
         "path": "tests/css21/css21-property-BackgroundPosition.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BackgroundRepeat.html", 
+        "path": "tests/css21/css21-property-BackgroundRepeat.html"
       }, 
       {
         "url": "/tests/cssfontload/cssfontload-interface-FontFace.html", 
@@ -1854,6 +1862,10 @@
         "path": "tests/canvas2d/helpers/CanvasPattern.js"
       }, 
       {
+        "url": "/tests/css21/helpers/Background.js", 
+        "path": "tests/css21/helpers/Background.js"
+      }, 
+      {
         "url": "/tests/css21/helpers/BackgroundColor.js", 
         "path": "tests/css21/helpers/BackgroundColor.js"
       }, 
@@ -2168,5 +2180,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "481452f8fb0c4314e6853eb732feda7b9f794d2d"
+  "rev": "620b80006fecdcc00e81c8a529f4a5461cd639d6"
 }
