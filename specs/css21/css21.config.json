@@ -9,6 +9,7 @@
     "dontExtract": true,
     "dontExtractReason": "no IDL",
     "helpers": [
+        "Background",
         "BackgroundColor",
         "BackgroundImage",
         "BackgroundPosition"
@@ -35,6 +36,18 @@
             "name": "background-position",
             "section": "14.2.1",
             "initial": "0% 0%"
+        },
+        {
+            "name": "background-repeat",
+            "section": "14.2.1",
+            "valueType": "enum",
+            "values": [ "repeat", "repeat-x", "repeat-y", "no-repeat" ],
+            "initial": "repeat"
+        },
+        {
+            "name": "background",
+            "section": "14.2.1",
+            "initial": "transparent none repeat scroll 0% 0%"
         }
     ]
 }
