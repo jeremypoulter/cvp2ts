@@ -66,6 +66,106 @@
         "path": "tests/css21/css21-property-BackgroundRepeat.html"
       }, 
       {
+        "url": "/tests/css21/css21-property-BorderBottomColor.html", 
+        "path": "tests/css21/css21-property-BorderBottomColor.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BorderBottomStyle.html", 
+        "path": "tests/css21/css21-property-BorderBottomStyle.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BorderBottomWidth.html", 
+        "path": "tests/css21/css21-property-BorderBottomWidth.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BorderColor.html", 
+        "path": "tests/css21/css21-property-BorderColor.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BorderLeftColor.html", 
+        "path": "tests/css21/css21-property-BorderLeftColor.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BorderLeftStyle.html", 
+        "path": "tests/css21/css21-property-BorderLeftStyle.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BorderLeftWidth.html", 
+        "path": "tests/css21/css21-property-BorderLeftWidth.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BorderRightColor.html", 
+        "path": "tests/css21/css21-property-BorderRightColor.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BorderRightStyle.html", 
+        "path": "tests/css21/css21-property-BorderRightStyle.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BorderRightWidth.html", 
+        "path": "tests/css21/css21-property-BorderRightWidth.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BorderStyle.html", 
+        "path": "tests/css21/css21-property-BorderStyle.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BorderTopColor.html", 
+        "path": "tests/css21/css21-property-BorderTopColor.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BorderTopStyle.html", 
+        "path": "tests/css21/css21-property-BorderTopStyle.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BorderTopWidth.html", 
+        "path": "tests/css21/css21-property-BorderTopWidth.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BorderWidth.html", 
+        "path": "tests/css21/css21-property-BorderWidth.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Margin.html", 
+        "path": "tests/css21/css21-property-Margin.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-MarginBottom.html", 
+        "path": "tests/css21/css21-property-MarginBottom.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-MarginLeft.html", 
+        "path": "tests/css21/css21-property-MarginLeft.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-MarginRight.html", 
+        "path": "tests/css21/css21-property-MarginRight.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-MarginTop.html", 
+        "path": "tests/css21/css21-property-MarginTop.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Padding.html", 
+        "path": "tests/css21/css21-property-Padding.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-PaddingBottom.html", 
+        "path": "tests/css21/css21-property-PaddingBottom.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-PaddingLeft.html", 
+        "path": "tests/css21/css21-property-PaddingLeft.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-PaddingRight.html", 
+        "path": "tests/css21/css21-property-PaddingRight.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-PaddingTop.html", 
+        "path": "tests/css21/css21-property-PaddingTop.html"
+      }, 
+      {
         "url": "/tests/cssfontload/cssfontload-interface-FontFace.html", 
         "path": "tests/cssfontload/cssfontload-interface-FontFace.html"
       }, 
@@ -1862,22 +1962,6 @@
         "path": "tests/canvas2d/helpers/CanvasPattern.js"
       }, 
       {
-        "url": "/tests/css21/helpers/Background.js", 
-        "path": "tests/css21/helpers/Background.js"
-      }, 
-      {
-        "url": "/tests/css21/helpers/BackgroundColor.js", 
-        "path": "tests/css21/helpers/BackgroundColor.js"
-      }, 
-      {
-        "url": "/tests/css21/helpers/BackgroundImage.js", 
-        "path": "tests/css21/helpers/BackgroundImage.js"
-      }, 
-      {
-        "url": "/tests/css21/helpers/BackgroundPosition.js", 
-        "path": "tests/css21/helpers/BackgroundPosition.js"
-      }, 
-      {
         "url": "/tests/cssfontload/helpers/FontFace.js", 
         "path": "tests/cssfontload/helpers/FontFace.js"
       }, 
@@ -2180,5 +2264,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "620b80006fecdcc00e81c8a529f4a5461cd639d6"
+  "rev": "e3622ad61505c7894c6dd12223f324ca894d8ec2"
 }
