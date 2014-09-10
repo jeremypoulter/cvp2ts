@@ -750,28 +750,8 @@
         "path": "tests/html5/html5-interface-DOMStringMap.html"
       }, 
       {
-        "url": "/tests/html5/html5-interface-DataCue.html", 
-        "path": "tests/html5/html5-interface-DataCue.html"
-      }, 
-      {
-        "url": "/tests/html5/html5-interface-DataTransfer.html", 
-        "path": "tests/html5/html5-interface-DataTransfer.html"
-      }, 
-      {
-        "url": "/tests/html5/html5-interface-DataTransferItem.html", 
-        "path": "tests/html5/html5-interface-DataTransferItem.html"
-      }, 
-      {
-        "url": "/tests/html5/html5-interface-DataTransferItemList.html", 
-        "path": "tests/html5/html5-interface-DataTransferItemList.html"
-      }, 
-      {
         "url": "/tests/html5/html5-interface-Document-partial-1.html", 
         "path": "tests/html5/html5-interface-Document-partial-1.html"
-      }, 
-      {
-        "url": "/tests/html5/html5-interface-DragEvent.html", 
-        "path": "tests/html5/html5-interface-DragEvent.html"
       }, 
       {
         "url": "/tests/html5/html5-interface-ErrorEvent.html", 
@@ -2264,5 +2244,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "bef63684e640708f907e4924704179120360fcf5"
+  "rev": "ef10960a38d4273cc8957a956bf70a94f77cc308"
 }
