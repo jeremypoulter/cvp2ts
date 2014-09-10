@@ -24,5 +24,4 @@
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # specifications
-#SPECS =	canvas2d css21 cssfontload cssom cssomview custom dom3events dom4 domps ecmascript51 encoding file fullscreen html5 selectors1 sse svg12tiny touchevents typedarray url webgl webmessage websocket webstorage webworkers xhr
-SPECS =	css21
+SPECS =	canvas2d css21 cssfontload cssom cssomview custom dom3events dom4 domps ecmascript51 encoding file fullscreen html5 selectors1 sse svg12tiny touchevents typedarray url webgl webmessage websocket webstorage webworkers xhr
