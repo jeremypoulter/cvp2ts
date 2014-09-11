@@ -78,6 +78,10 @@
         "path": "tests/css21/css21-property-BorderBottomWidth.html"
       }, 
       {
+        "url": "/tests/css21/css21-property-BorderCollapse.html", 
+        "path": "tests/css21/css21-property-BorderCollapse.html"
+      }, 
+      {
         "url": "/tests/css21/css21-property-BorderColor.html", 
         "path": "tests/css21/css21-property-BorderColor.html"
       }, 
@@ -106,6 +110,10 @@
         "path": "tests/css21/css21-property-BorderRightWidth.html"
       }, 
       {
+        "url": "/tests/css21/css21-property-BorderSpacing.html", 
+        "path": "tests/css21/css21-property-BorderSpacing.html"
+      }, 
+      {
         "url": "/tests/css21/css21-property-BorderStyle.html", 
         "path": "tests/css21/css21-property-BorderStyle.html"
       }, 
@@ -124,6 +132,114 @@
       {
         "url": "/tests/css21/css21-property-BorderWidth.html", 
         "path": "tests/css21/css21-property-BorderWidth.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Bottom.html", 
+        "path": "tests/css21/css21-property-Bottom.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-CaptionSide.html", 
+        "path": "tests/css21/css21-property-CaptionSide.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Clear.html", 
+        "path": "tests/css21/css21-property-Clear.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Clip.html", 
+        "path": "tests/css21/css21-property-Clip.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Color.html", 
+        "path": "tests/css21/css21-property-Color.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Content.html", 
+        "path": "tests/css21/css21-property-Content.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-CounterIncrement.html", 
+        "path": "tests/css21/css21-property-CounterIncrement.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-CounterReset.html", 
+        "path": "tests/css21/css21-property-CounterReset.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Cursor.html", 
+        "path": "tests/css21/css21-property-Cursor.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Direction.html", 
+        "path": "tests/css21/css21-property-Direction.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Display.html", 
+        "path": "tests/css21/css21-property-Display.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-EmptyCells.html", 
+        "path": "tests/css21/css21-property-EmptyCells.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Float.html", 
+        "path": "tests/css21/css21-property-Float.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Font.html", 
+        "path": "tests/css21/css21-property-Font.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-FontFamily.html", 
+        "path": "tests/css21/css21-property-FontFamily.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-FontSize.html", 
+        "path": "tests/css21/css21-property-FontSize.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-FontStyle.html", 
+        "path": "tests/css21/css21-property-FontStyle.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-FontVariant.html", 
+        "path": "tests/css21/css21-property-FontVariant.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-FontWeight.html", 
+        "path": "tests/css21/css21-property-FontWeight.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Height.html", 
+        "path": "tests/css21/css21-property-Height.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Left.html", 
+        "path": "tests/css21/css21-property-Left.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-LetterSpacing.html", 
+        "path": "tests/css21/css21-property-LetterSpacing.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-LineHeight.html", 
+        "path": "tests/css21/css21-property-LineHeight.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-ListStyle.html", 
+        "path": "tests/css21/css21-property-ListStyle.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-ListStyleImage.html", 
+        "path": "tests/css21/css21-property-ListStyleImage.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-ListStylePosition.html", 
+        "path": "tests/css21/css21-property-ListStylePosition.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-ListStyleType.html", 
+        "path": "tests/css21/css21-property-ListStyleType.html"
       }, 
       {
         "url": "/tests/css21/css21-property-Margin.html", 
@@ -146,6 +262,46 @@
         "path": "tests/css21/css21-property-MarginTop.html"
       }, 
       {
+        "url": "/tests/css21/css21-property-MaxHeight.html", 
+        "path": "tests/css21/css21-property-MaxHeight.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-MaxWidth.html", 
+        "path": "tests/css21/css21-property-MaxWidth.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-MinHeight.html", 
+        "path": "tests/css21/css21-property-MinHeight.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-MinWidth.html", 
+        "path": "tests/css21/css21-property-MinWidth.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Orphans.html", 
+        "path": "tests/css21/css21-property-Orphans.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Outline.html", 
+        "path": "tests/css21/css21-property-Outline.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-OutlineColor.html", 
+        "path": "tests/css21/css21-property-OutlineColor.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-OutlineStyle.html", 
+        "path": "tests/css21/css21-property-OutlineStyle.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-OutlineWidth.html", 
+        "path": "tests/css21/css21-property-OutlineWidth.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Overflow.html", 
+        "path": "tests/css21/css21-property-Overflow.html"
+      }, 
+      {
         "url": "/tests/css21/css21-property-Padding.html", 
         "path": "tests/css21/css21-property-Padding.html"
       }, 
@@ -164,6 +320,86 @@
       {
         "url": "/tests/css21/css21-property-PaddingTop.html", 
         "path": "tests/css21/css21-property-PaddingTop.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-PageBreakAfter.html", 
+        "path": "tests/css21/css21-property-PageBreakAfter.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-PageBreakBefore.html", 
+        "path": "tests/css21/css21-property-PageBreakBefore.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-PageBreakInside.html", 
+        "path": "tests/css21/css21-property-PageBreakInside.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Position.html", 
+        "path": "tests/css21/css21-property-Position.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Quotes.html", 
+        "path": "tests/css21/css21-property-Quotes.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Right.html", 
+        "path": "tests/css21/css21-property-Right.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-TableLayout.html", 
+        "path": "tests/css21/css21-property-TableLayout.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-TextAlign.html", 
+        "path": "tests/css21/css21-property-TextAlign.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-TextDecoration.html", 
+        "path": "tests/css21/css21-property-TextDecoration.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-TextIndent.html", 
+        "path": "tests/css21/css21-property-TextIndent.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-TextTransform.html", 
+        "path": "tests/css21/css21-property-TextTransform.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Top.html", 
+        "path": "tests/css21/css21-property-Top.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-UnicodeBidi.html", 
+        "path": "tests/css21/css21-property-UnicodeBidi.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-VerticalAlign.html", 
+        "path": "tests/css21/css21-property-VerticalAlign.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Visibility.html", 
+        "path": "tests/css21/css21-property-Visibility.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-WhiteSpace.html", 
+        "path": "tests/css21/css21-property-WhiteSpace.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Widows.html", 
+        "path": "tests/css21/css21-property-Widows.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-Width.html", 
+        "path": "tests/css21/css21-property-Width.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-WordSpacing.html", 
+        "path": "tests/css21/css21-property-WordSpacing.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-ZIndex.html", 
+        "path": "tests/css21/css21-property-ZIndex.html"
       }, 
       {
         "url": "/tests/cssfontload/cssfontload-interface-FontFace.html", 
@@ -2244,5 +2480,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "ef10960a38d4273cc8957a956bf70a94f77cc308"
+  "rev": "fbcf2315d5ad3f78dc61ef2ea63e3c22c52f081c"
 }
