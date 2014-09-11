@@ -466,9 +466,537 @@
                 "dotted dashed",
                 "dotted dashed solid",
                 "dotted dashed solid double",
-                "none" 
+                "none"
             ],
             "initial": "none none none none"
+        },
+        {
+            "name": "display",
+            "section": "9.2.4",
+            "valueType": "enum",
+            "values": [
+                "inline",
+                "block",
+                "list-item",
+                "inline-block",
+                "table",
+                "inline-table",
+                "table-row-group",
+                "table-header-group",
+                "table-footer-group",
+                "table-row",
+                "table-column-group",
+                "table-column",
+                "table-cell",
+                "table-caption",
+                "none"
+            ],
+            "initial": "inline"
+        },
+        {
+            "name": "position",
+            "section": "9.3.1",
+            "valueType": "enum",
+            "values": [
+                "static",
+                "relative",
+                "absolute",
+                "fixed"
+            ],
+            "initial": "static"
+        },
+        {
+            "name": "top",
+            "section": "9.3.2",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%",
+                "auto"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "right",
+            "section": "9.3.2",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%",
+                "auto"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "bottom",
+            "section": "9.3.2",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%",
+                "auto"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "left",
+            "section": "9.3.2",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%",
+                "auto"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "float",
+            "section": "9.5.1",
+            "valueType": "enum",
+            "values": [
+                "left",
+                "right",
+                "none"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "clear",
+            "section": "9.5.2",
+            "valueType": "enum",
+            "values": [
+                "left",
+                "right",
+                "both",
+                "none"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "z-index",
+            "section": "9.9.1",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "-999",
+                "-1",
+                "0",
+                "1",
+                "999"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "direction",
+            "section": "9.10",
+            "valueType": "enum",
+            "values": [
+                "ltr",
+                "rtl"
+            ],
+            "initial": "ltr"
+        },
+        {
+            "name": "unicode-bidi",
+            "section": "9.10",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "embed",
+                "bidi-override"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "width",
+            "section": "10.2",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%",
+                "auto"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "min-width",
+            "section": "10.4",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%"
+            ],
+            "initial": "0"
+        },
+        {
+            "name": "max-width",
+            "section": "10.4",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%",
+                "none"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "height",
+            "section": "10.5",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%",
+                "auto"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "min-height",
+            "section": "10.7",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%"
+            ],
+            "initial": "0"
+        },
+        {
+            "name": "max-height",
+            "section": "10.7",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%",
+                "none"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "line-height",
+            "section": "10.8.1",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "0",
+                [ "1.0", "1" ],
+                "1.1",
+                "1.2",
+                "1.3",
+                "1.4",
+                "1.5",
+                [ "2.0", "2" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "vertical-align",
+            "section": "10.8.1",
+            "valueType": "enum",
+            "values": [
+                "baseline",
+                "sub",
+                "super",
+                "top",
+                "text-top",
+                "middle",
+                "bottom",
+                "text-bottom",
+                "1%",
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px"
+            ],
+            "initial": "baseline"
+        },
+        {
+            "name": "overflow",
+            "section": "11.1.1",
+            "valueType": "enum",
+            "values": [
+                "visible",
+                "hidden",
+                "scroll",
+                "auto"
+            ],
+            "initial": "visible"
+        },
+        {
+            "name": "clip",
+            "section": "11.1.2",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                [ "rect(1px,2px,3px,4px)", "rect(1px 2px 3px 4px)" ],
+                [ "rect(-1px,-2px,-3px,-4px)", "rect(-1px -2px -3px -4px)" ],
+                [ "rect(auto,auto,auto,auto)", "rect(auto auto auto auto)"]
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "visibility",
+            "section": "11.2",
+            "valueType": "enum",
+            "values": [
+                "visible",
+                "hidden",
+                "collapse"
+            ],
+            "initial": "visible"
+        },
+        {
+            "name": "content",
+            "section": "12.2",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "none",
+                "'some text'",
+                "url(http://example.com/content.txt)",
+                [ "counter(section)", "counter(section, decimal)" ],
+                [ "counter(section,decimal)", "counter(section, decimal)" ],
+                "attr(data-content)",
+                "open-quote",
+                "close-quote",
+                "no-open-quote",
+                "no-close-quote",
+                [ "'some text' open-quote", "'some text', open-quote" ]
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "quotes",
+            "section": "12.3.1",
+            "valueType": "enum",
+            "values": [
+                [ "'(' ')'", "'(', ')'" ],
+                [ "'(' ')' '[' ']'", "'(', ')', '[', ']'" ],
+                "none"
+            ]
+        },
+        {
+            "name": "counter-reset",
+            "section": "12.4",
+            "valueType": "enum",
+            "values": [
+                [ "section", "section 0" ],
+                "section 1",
+                [ "section subsection", "section 0, subsection 0" ],
+                [ "section 1 subsection", "section 1, subsection 0" ],
+                [ "section subsection 1", "section 0, subsection 1" ],
+                [ "section 1 subsection 1", "section 1, subsection 1" ],
+                "none"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "counter-increment",
+            "section": "12.4",
+            "valueType": "enum",
+            "values": [
+                [ "section", "section 1" ],
+                "section 1",
+                [ "section subsection", "section 1, subsection 1" ],
+                [ "section 1 subsection", "section 1, subsection 1" ],
+                [ "section subsection 1", "section 1, subsection 1" ],
+                [ "section 1 subsection 1", "section 1, subsection 1" ],
+                "none"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "list-style-type",
+            "section": "12.5.1",
+            "valueType": "enum",
+            "values": [
+                "disc",
+                "circle",
+                "square",
+                "decimal",
+                "decimal-leading-zero",
+                "lower-roman",
+                "upper-roman",
+                "lower-greek",
+                "lower-latin",
+                "upper-latin",
+                "armenian",
+                "georgian",
+                "lower-alpha",
+                "upper-alpha",
+                "none"
+            ],
+            "initial": "disc"
+        },
+        {
+            "name": "list-style-image",
+            "section": "12.5.1",
+            "valueType": "enum",
+            "values": [
+                "none",
+                "url(http://example.com/image.png)"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "list-style-position",
+            "section": "12.5.1",
+            "valueType": "enum",
+            "values": [
+                "inside",
+                "outside"
+            ],
+            "initial": "outside"
+        },
+        {
+            "name": "list-style",
+            "section": "12.5.1",
+            "valueType": "enum",
+            "values": [
+                "disc",
+                [ "url(http://example.com/image.png) disc", "disc url(http://example.com/image.png)" ],
+                [ "url(http://example.com/image.png) disc inside", "disc inside url(http://example.com/image.png)" ]
+            ],
+            "initial": "disc none outside"
+        },
+        {
+            "name": "page-break-before",
+            "section": "13.3.1",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "always",
+                "avoid",
+                "left",
+                "right"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "page-break-after",
+            "section": "13.3.1",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "always",
+                "avoid",
+                "left",
+                "right"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "page-break-inside",
+            "section": "13.3.1",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "avoid"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "orphans",
+            "section": "13.3.2",
+            "valueType": "enum",
+            "values": [
+                "1",
+                "2",
+                "5"
+            ],
+            "initial": "2"
+        },
+        {
+            "name": "widows",
+            "section": "13.3.2",
+            "valueType": "enum",
+            "values": [
+                "1",
+                "2",
+                "5"
+            ],
+            "initial": "2"
+        },
+        {
+            "name": "color",
+            "section": "14.1",
+            "valueType": "enum",
+            "values": [
+                "red",
+                [ "#F00", "rgb(255, 0, 0)" ],
+                [ "#FF0000", "rgb(255, 0, 0)" ],
+                "rgb(255, 0, 0)",
+                [ "rgb(100%, 0, 0)", "rgb(255, 0, 0)" ]
+            ]
         },
         {
             "name": "background-image",
@@ -556,6 +1084,368 @@
                 [ "0% 0% scroll repeat url(http://example.com/image.png) red", "url(http://example.com/image.png) 0% 0% repeat scroll red" ]
             ],
             "initial": "transparent none repeat scroll 0% 0%"
+        },
+        {
+            "name": "font-family",
+            "section": "15.3",
+            "valueType": "enum",
+            "values": [
+                "serif",
+                "sans-serif",
+                "cursive",
+                "fantasy",
+                "monospace",
+                "arial",
+                "helvetica",
+                "arial, helvetica",
+                "'arial unicode ms'",
+                "arial, 'arial unicode ms'",
+                [ "arial, arial unicode ms", "arial, 'arial unicode ms'" ]
+            ]
+        },
+        {
+            "name": "font-style",
+            "section": "15.4",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "italic",
+                "oblique"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "font-variant",
+            "section": "15.5",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "small-caps"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "font-weight",
+            "section": "15.6",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "bold",
+                "bolder",
+                "lighter",
+                "100",
+                "200",
+                "300",
+                "400",
+                "500",
+                "600",
+                "700",
+                "800",
+                "900"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "font-size",
+            "section": "15.7",
+            "valueType": "enum",
+            "values": [
+                "xx-small",
+                "x-small",
+                "small",
+                "medium",
+                "large",
+                "x-large",
+                "xx-large",
+                "larger",
+                "smaller",
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%"
+            ],
+            "initial": "medium"
+        },
+        {
+            "name": "font",
+            "section": "15.8",
+            "valueType": "enum",
+            "values": [
+                "caption",
+                "icon",
+                "menu",
+                "message-box",
+                "small-caption",
+                "status-bar",
+                "12px/14px sans-serif",
+                "80% sans-serif",
+                [ "x-large/110% 'New Century Schoolbook', serif", "x-large/110% 'New Century Schoolbook',serif" ],
+                [ "bold italic large Palantino, serif", "italic bold large Palantino,serif" ],
+                [ "normal small-caps 120%/120% fanatasy", "small-caps 120%/120% fanatasy" ]
+            ],
+            "initial": "normal normal normal medium/150% serif"
+        },
+        {
+            "name": "text-indent",
+            "section": "15.1",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                "1%"
+            ],
+            "initial": "0"
+        },
+        {
+            "name": "text-align",
+            "section": "16.2",
+            "valueType": "enum",
+            "values": [
+                "left",
+                "right",
+                "center",
+                "justify"
+            ]
+        },
+        {
+            "name": "text-decoration",
+            "section": "16.3.1",
+            "valueType": "enum",
+            "values": [
+                "none",
+                "underline",
+                "overline",
+                "line-through",
+                "blink",
+                "underline overline",
+                "underline line-through",
+                "underline blink",
+                [ "overline underline", "underline overline" ],
+                "overline line-through",
+                "overline blink",
+                "line-through blink",
+                [ "line-through underline", "underline line-through" ],
+                [ "blink underline", "underline blink" ],
+                [ "line-through overline", "overline line-through" ],
+                [ "blink overline", "overline blink" ],
+                [ "blink line-through", "line-through blink" ],
+                "underline overline line-through",
+                "underline overline blink",
+                "underline line-through blink",
+                "overline line-through blink",
+                "underline overline line-through blink",
+                [ "overline underline line-through", "underline overline line-through" ],
+                [ "underline blink overline", "underline overline blink" ],
+                [ "line-through blink underline", "underline line-through blink" ],
+                [ "blink overline line-through", "overline line-through blink" ],
+                [ "underline line-through blink overline", "underline overline line-through blink" ]
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "letter-spacing",
+            "section": "16.4",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "word-spacing",
+            "section": "16.4",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "text-transform",
+            "section": "16.5",
+            "valueType": "enum",
+            "values": [
+                "capitalize",
+                "uppercase",
+                "lowercase",
+                "none"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "white-space",
+            "section": "16.6",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "pre",
+                "nowrap",
+                "pre-wrap",
+                "pre-line"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "caption-side",
+            "section": "17.4.1",
+            "valueType": "enum",
+            "values": [
+                "top",
+                "bottom"
+            ],
+            "initial": "top"
+        },
+        {
+            "name": "table-layout",
+            "section": "17.5.2",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "fixed"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "border-collapse",
+            "section": "17.6",
+            "valueType": "enum",
+            "values": [
+                "collapse",
+                "separate"
+            ],
+            "initial": "separate"
+        },
+        {
+            "name": "border-spacing",
+            "section": "17.6.1",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pt",
+                "1pc",
+                "1px",
+                [ "0 0", "0px" ],
+                "1in 1cm",
+                "1cm 1mm",
+                "1mm 1pt",
+                "1pt 1pc",
+                "1pc 1px",
+                "1px 1in"
+            ],
+            "initial": "0"
+        },
+        {
+            "name": "empty-cells",
+            "section": "17.6.1.1",
+            "valueType": "enum",
+            "values": [
+                "show",
+                "hide"
+            ],
+            "initial": "show"
+        },
+        {
+            "name": "cursor",
+            "section": "18.1",
+            "valueType": "enum",
+            "values": [
+                "url(http://example.com/cursor.png)",
+                "auto",
+                "crosshair",
+                "default",
+                "pointer",
+                "move",
+                "e-resize",
+                "ne-resize",
+                "nw-resize",
+                "n-resize",
+                "se-resize",
+                "sw-resize",
+                "s-resize",
+                "w-resize",
+                "text",
+                "wait",
+                "help",
+                "progress"
+            ],
+            "initial": "show"
+        },
+        {
+            "name": "outline",
+            "section": "18.4",
+            "valueType": "enum",
+            "values": [
+                "red double thick",
+                [ "double red thick", "red double thick" ],
+                [ "double thick red", "red double thick" ]
+            ],
+            "initial": "invert none medium"
+        },
+        {
+            "name": "outline-width",
+            "section": "18.4",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "thin",
+                "medium",
+                "thick",
+                "1mm"
+            ],
+            "initial": "medium"
+        },
+        {
+            "name": "outline-style",
+            "section": "18.4",
+            "valueType": "enum",
+            "values": [
+                "dotted",
+                "dashed",
+                "solid",
+                "double",
+                "none"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "outline-color",
+            "section": "18.4",
+            "valueType": "enum",
+            "values": [
+                "red",
+                [ "#F00", "rgb(255, 0, 0)" ],
+                [ "#FF0000", "rgb(255, 0, 0)" ],
+                "rgb(255, 0, 0)",
+                [ "rgb(100%, 0, 0)", "rgb(255, 0, 0)" ],
+                "invert"
+            ],
+            "initial": "invert"
         }
     ]
 }
