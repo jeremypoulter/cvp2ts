@@ -10,10 +10,10 @@ partial interface Window {
   [SameObject] readonly attribute Screen screen;
 
   // browsing context
-  void moveTo(double x, double y);
-  void moveBy(double x, double y);
-  void resizeTo(double x, double y);
-  void resizeBy(double x, double y);
+  void moveTo(unrestricted double x, unrestricted double y);
+  void moveBy(unrestricted double x, unrestricted double y);
+  void resizeTo(unrestricted double x, unrestricted double y);
+  void resizeBy(unrestricted double x, unrestricted double y);
 
   // viewport
   readonly attribute double innerWidth;
@@ -24,9 +24,9 @@ partial interface Window {
   readonly attribute double pageXOffset;
   readonly attribute double scrollY;
   readonly attribute double pageYOffset;
-  void scroll(double x, double y, optional ScrollOptions options);
-  void scrollTo(double x, double y, optional ScrollOptions options);
-  void scrollBy(double x, double y, optional ScrollOptions options);
+  void scroll(unrestricted double x, unrestricted double y, optional ScrollOptions options);
+  void scrollTo(unrestricted double x, unrestricted double y, optional ScrollOptions options);
+  void scrollBy(unrestricted double x, unrestricted double y, optional ScrollOptions options);
 
   // client
   readonly attribute double screenX;
@@ -88,8 +88,8 @@ partial interface Element {
   DOMRect getBoundingClientRect();
   void scrollIntoView();
   void scrollIntoView(boolean top, optional ScrollOptions options);
-  attribute (double or ScrollOptionsVertical) scrollTop;
-  attribute (double or ScrollOptionsHorizontal) scrollLeft;
+  attribute (unrestricted double or ScrollOptionsVertical) scrollTop;
+  attribute (unrestricted double or ScrollOptionsHorizontal) scrollLeft;
   readonly attribute double scrollWidth;
   readonly attribute double scrollHeight;
   readonly attribute double clientTop;

@@ -127,7 +127,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             "name": "x"
           },
@@ -141,7 +141,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             "name": "y"
           }
@@ -177,7 +177,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             "name": "x"
           },
@@ -191,7 +191,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             "name": "y"
           }
@@ -227,7 +227,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             "name": "x"
           },
@@ -241,7 +241,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             "name": "y"
           }
@@ -277,7 +277,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             "name": "x"
           },
@@ -291,7 +291,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             "name": "y"
           }
@@ -429,7 +429,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             "name": "x"
           },
@@ -443,7 +443,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             "name": "y"
           },
@@ -493,7 +493,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             "name": "x"
           },
@@ -507,7 +507,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             "name": "y"
           },
@@ -557,7 +557,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             "name": "x"
           },
@@ -571,7 +571,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             "name": "y"
           },
@@ -1453,7 +1453,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             {
               "sequence": false,
@@ -1487,7 +1487,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             {
               "sequence": false,

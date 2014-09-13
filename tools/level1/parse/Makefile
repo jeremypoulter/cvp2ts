@@ -30,7 +30,7 @@ include $(TOP)/Makefile.Config.mk
 TOOL		= parse.js
 INSUFFIX	= idl
 OUTSUFFIX	= idl.json
-outfiles	:= $(foreach spec, $(SPECS), $(SPECDIR)/$(spec)/$(spec).$(OUTSUFFIX))
+outfiles	:= $(foreach spec, $(SPECS_L1), $(SPECDIR)/$(spec)/$(spec).$(OUTSUFFIX))
 
 all: $(outfiles)
 

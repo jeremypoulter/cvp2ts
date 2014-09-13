@@ -1,13 +1,13 @@
 {
     "spec": "css21",
-    "source": "http://www.w3.org/TR/2011/REC-CSS2-20110607/",
-    "sourceComment": "Specification is not available in single file HTML format.",
+    "source": "http://www.w3.org/TR/CSS2/css2.zip",
+    "sourceComment": "Specification source reference contains full CSS2.1 specification.",
     "levels": [ 2 ],
-    "local": "css21.html",
+    "local": "css21.zip",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
     "dontExtract": true,
-    "dontExtractReason": "no IDL",
+    "dontExtractReason": "requires manual property extraction",
     "helpers": [],
     "properties": [
         {
@@ -327,48 +327,6 @@
             "initial": "transparent"
         },
         {
-            "name": "border-right-color",
-            "section": "8.5.2",
-            "valueType": "enum",
-            "values": [
-                "red",
-                [ "#F00", "rgb(255, 0, 0)" ],
-                [ "#FF0000", "rgb(255, 0, 0)" ],
-                "rgb(255, 0, 0)",
-                [ "rgb(100%, 0, 0)", "rgb(255, 0, 0)" ],
-                "transparent"
-            ],
-            "initial": "transparent"
-        },
-        {
-            "name": "border-bottom-color",
-            "section": "8.5.2",
-            "valueType": "enum",
-            "values": [
-                "red",
-                [ "#F00", "rgb(255, 0, 0)" ],
-                [ "#FF0000", "rgb(255, 0, 0)" ],
-                "rgb(255, 0, 0)",
-                [ "rgb(100%, 0, 0)", "rgb(255, 0, 0)" ],
-                "transparent"
-            ],
-            "initial": "transparent"
-        },
-        {
-            "name": "border-left-color",
-            "section": "8.5.2",
-            "valueType": "enum",
-            "values": [
-                "red",
-                [ "#F00", "rgb(255, 0, 0)" ],
-                [ "#FF0000", "rgb(255, 0, 0)" ],
-                "rgb(255, 0, 0)",
-                [ "rgb(100%, 0, 0)", "rgb(255, 0, 0)" ],
-                "transparent"
-            ],
-            "initial": "transparent"
-        },
-        {
             "name": "border-color",
             "section": "8.5.2",
             "valueType": "enum",
@@ -469,6 +427,66 @@
                 "none"
             ],
             "initial": "none none none none"
+        },
+        {
+            "name": "border-top",
+            "section": "8.5.4",
+            "valueType": "enum",
+            "values": [
+                "thin double red",
+                [ "double thin red", "thin double red" ],
+                [ "double red thin", "thin double red" ],
+                [ "red double thin", "thin double red" ]
+            ],
+            "initial": "transparent"
+        },
+        {
+            "name": "border-right",
+            "section": "8.5.4",
+            "valueType": "enum",
+            "values": [
+                "thin double red",
+                [ "double thin red", "thin double red" ],
+                [ "double red thin", "thin double red" ],
+                [ "red double thin", "thin double red" ]
+            ],
+            "initial": "transparent"
+        },
+        {
+            "name": "border-bottom",
+            "section": "8.5.4",
+            "valueType": "enum",
+            "values": [
+                "thin double red",
+                [ "double thin red", "thin double red" ],
+                [ "double red thin", "thin double red" ],
+                [ "red double thin", "thin double red" ]
+            ],
+            "initial": "transparent"
+        },
+        {
+            "name": "border-left",
+            "section": "8.5.4",
+            "valueType": "enum",
+            "values": [
+                "thin double red",
+                [ "double thin red", "thin double red" ],
+                [ "double red thin", "thin double red" ],
+                [ "red double thin", "thin double red" ]
+            ],
+            "initial": "transparent"
+        },
+        {
+            "name": "border",
+            "section": "8.5.4",
+            "valueType": "enum",
+            "values": [
+                "thin double red",
+                [ "double thin red", "thin double red" ],
+                [ "double red thin", "thin double red" ],
+                [ "red double thin", "thin double red" ]
+            ],
+            "initial": "transparent"
         },
         {
             "name": "display",
@@ -797,9 +815,9 @@
             "valueType": "enum",
             "values": [
                 "auto",
-                [ "rect(1px,2px,3px,4px)", "rect(1px 2px 3px 4px)" ],
-                [ "rect(-1px,-2px,-3px,-4px)", "rect(-1px -2px -3px -4px)" ],
-                [ "rect(auto,auto,auto,auto)", "rect(auto auto auto auto)"]
+                [ "rect(1px,2px,3px,4px)", "rect(1px, 2px, 3px, 4px)" ],
+                [ "rect(-1px,-2px,-3px,-4px)", "rect(-1px, -2px, -3px, -4px)" ],
+                [ "rect(auto,auto,auto,auto)", "rect(auto, auto, auto, auto)"]
             ],
             "initial": "auto"
         },
@@ -821,8 +839,9 @@
             "values": [
                 "normal",
                 "none",
-                "'some text'",
-                "url(http://example.com/content.txt)",
+                [ "'some text'", "\"some text\"" ],
+                [ "\"some text\"", "\"some text\"" ],
+                "url(\"http://example.com/content.txt\")",
                 [ "counter(section)", "counter(section, decimal)" ],
                 [ "counter(section,decimal)", "counter(section, decimal)" ],
                 "attr(data-content)",
@@ -830,7 +849,8 @@
                 "close-quote",
                 "no-open-quote",
                 "no-close-quote",
-                [ "'some text' open-quote", "'some text', open-quote" ]
+                [ "'some text' open-quote", "\"some text\" open-quote" ],
+                [ "\"some text\" open-quote", "\"some text\" open-quote" ]
             ],
             "initial": "normal"
         },
@@ -839,8 +859,8 @@
             "section": "12.3.1",
             "valueType": "enum",
             "values": [
-                [ "'(' ')'", "'(', ')'" ],
-                [ "'(' ')' '[' ']'", "'(', ')', '[', ']'" ],
+                [ "'(' ')'", "\"(\" \")\"" ],
+                [ "'(' ')' '[' ']'", "\"(\" \")\" \"[\" \"]\"" ],
                 "none"
             ]
         },
@@ -849,12 +869,12 @@
             "section": "12.4",
             "valueType": "enum",
             "values": [
-                [ "section", "section 0" ],
+                "section",
                 "section 1",
-                [ "section subsection", "section 0, subsection 0" ],
-                [ "section 1 subsection", "section 1, subsection 0" ],
-                [ "section subsection 1", "section 0, subsection 1" ],
-                [ "section 1 subsection 1", "section 1, subsection 1" ],
+                [ "section subsection", "section subsection" ],
+                [ "section 1 subsection", "section 1 subsection" ],
+                [ "section subsection 1", "section subsection 1" ],
+                [ "section 1 subsection 1", "section 1 subsection 1" ],
                 "none"
             ],
             "initial": "none"
@@ -864,12 +884,12 @@
             "section": "12.4",
             "valueType": "enum",
             "values": [
-                [ "section", "section 1" ],
+                "section",
                 "section 1",
-                [ "section subsection", "section 1, subsection 1" ],
-                [ "section 1 subsection", "section 1, subsection 1" ],
-                [ "section subsection 1", "section 1, subsection 1" ],
-                [ "section 1 subsection 1", "section 1, subsection 1" ],
+                [ "section subsection", "section subsection" ],
+                [ "section 1 subsection", "section 1 subsection" ],
+                [ "section subsection 1", "section subsection 1" ],
+                [ "section 1 subsection 1", "section 1 subsection 1" ],
                 "none"
             ],
             "initial": "none"
@@ -903,7 +923,7 @@
             "valueType": "enum",
             "values": [
                 "none",
-                "url(http://example.com/image.png)"
+                "url(\"http://example.com/image.png\")"
             ],
             "initial": "none"
         },
@@ -922,9 +942,9 @@
             "section": "12.5.1",
             "valueType": "enum",
             "values": [
-                "disc",
-                [ "url(http://example.com/image.png) disc", "disc url(http://example.com/image.png)" ],
-                [ "url(http://example.com/image.png) disc inside", "disc inside url(http://example.com/image.png)" ]
+                [ "disc", "disc outside none" ],
+                [ "url(\"http://example.com/image.png\") disc", "disc outside url(\"http://example.com/image.png\")" ],
+                [ "url(\"http://example.com/image.png\") disc inside", "disc inside url(\"http://example.com/image.png\")" ]
             ],
             "initial": "disc none outside"
         },
@@ -1004,7 +1024,7 @@
             "valueType": "enum",
             "values": [
                 "none",
-                "url(http://example.com/image.png)"
+                "url(\"http://example.com/image.png\")"
             ],
             "initial": "none"
         },
@@ -1041,15 +1061,15 @@
             "section": "14.2.1",
             "valueType": "enum",
             "values": [
-                [ "0%", "0% 50%" ],
+                [ "0%", "0% center" ],
                 "0% 0%",
-                [ "1cm", "1cm 50%" ],
+                [ "1cm", "1cm center" ],
                 "1cm 2cm",
-                [ "left", "0% 50%" ],
-                [ "top", "50% 0%" ],
-                [ "bottom", "50% 100%" ],
-                [ "center", "50% 50%" ],
-                [ "right", "100% 50%" ]
+                [ "left", "left center" ],
+                [ "top", "center top" ],
+                [ "bottom", "center bottom" ],
+                [ "center", "center center" ],
+                [ "right", "right center" ]
             ],
             "initial": "0% 0%"
         },
@@ -1058,30 +1078,30 @@
             "section": "14.2.1",
             "valueType": "enum",
             "values": [
-                "red",
-                "url(http://example.com/image.png)",
-                "repeat",
-                "scroll",
-                "0% 0%",
-                [ "red url(http://example.com/image.png)", "url(http://example.com/image.png) red" ],
-                [ "red repeat", "repeat red" ],
-                [ "red scroll", "scroll red" ],
-                [ "red 0% 0%", "0% 0% red" ],
-                [ "red url(http://example.com/image.png) repeat", "url(http://example.com/image.png) repeat red" ],
-                [ "red url(http://example.com/image.png) scroll", "url(http://example.com/image.png) scroll red" ],
-                [ "red url(http://example.com/image.png) 0% 0%", "url(http://example.com/image.png) 0% 0% red" ],
-                [ "red url(http://example.com/image.png) repeat scroll", "url(http://example.com/image.png) repeat scroll red" ],
-                [ "red url(http://example.com/image.png) repeat 0% 0%", "url(http://example.com/image.png) 0% 0% repeat red" ],
-                [ "red url(http://example.com/image.png) repeat scroll 0% 0%", "url(http://example.com/image.png) 0% 0% repeat scroll red" ],
-                "repeat red",
-                "scroll red",
-                "0% 0% red",
-                [ "repeat url(http://example.com/image.png) red", "url(http://example.com/image.png) repeat red" ],
-                [ "scroll url(http://example.com/image.png) red", "url(http://example.com/image.png) scroll red" ],
-                [ "0% 0% url(http://example.com/image.png) red", "url(http://example.com/image.png) 0% 0% red" ],
-                [ "scroll repeat url(http://example.com/image.png) red", "url(http://example.com/image.png) repeat scroll red" ],
-                [ "0% 0% repeat url(http://example.com/image.png) red", "url(http://example.com/image.png) 0% 0% repeat red" ],
-                [ "0% 0% scroll repeat url(http://example.com/image.png) red", "url(http://example.com/image.png) 0% 0% repeat scroll red" ]
+                [ "red", "none repeat scroll 0% 0% red" ],
+                [ "url(\"http://example.com/image.png\")", "url(\"http://example.com/image.png\") repeat scroll 0% 0% transparent" ],
+                [ "repeat", "none repeat scroll 0% 0% transparent" ],
+                [ "scroll", "none repeat scroll 0% 0% transparent" ],
+                [ "0% 0%", "none repeat scroll 0% 0% transparent" ],
+                [ "red url(\"http://example.com/image.png\")", "url(\"http://example.com/image.png\") repeat scroll 0% 0% red" ],
+                [ "red repeat", "none repeat scroll 0% 0% red" ],
+                [ "red scroll", "none repeat scroll 0% 0% red" ],
+                [ "red 0% 0%", "none repeat scroll 0% 0% red" ],
+                [ "red url(\"http://example.com/image.png\") repeat", "url(\"http://example.com/image.png\") repeat scroll 0% 0% red" ],
+                [ "red url(\"http://example.com/image.png\") scroll", "url(\"http://example.com/image.png\") repeat scroll 0% 0% red" ],
+                [ "red url(\"http://example.com/image.png\") 0% 0%", "url(\"http://example.com/image.png\") repeat scroll 0% 0% red" ],
+                [ "red url(\"http://example.com/image.png\") repeat scroll", "url(\"http://example.com/image.png\") repeat scroll 0% 0% red" ],
+                [ "red url(\"http://example.com/image.png\") repeat 0% 0%", "url(\"http://example.com/image.png\") repeat scroll 0% 0% red" ],
+                [ "red url(\"http://example.com/image.png\") repeat scroll 0% 0%", "url(\"http://example.com/image.png\") repeat scroll 0% 0% red" ],
+                [ "repeat red", "none repeat scroll 0% 0% red" ],
+                [ "scroll red", "none repeat scroll 0% 0% red" ],
+                [ "0% 0% red", "none repeat scroll 0% 0% red" ],
+                [ "repeat url(\"http://example.com/image.png\") red", "url(\"http://example.com/image.png\") repeat scroll 0% 0% red" ],
+                [ "scroll url(\"http://example.com/image.png\") red", "url(\"http://example.com/image.png\") repeat scroll 0% 0% red" ],
+                [ "0% 0% url(\"http://example.com/image.png\") red", "url(\"http://example.com/image.png\") repeat scroll 0% 0% red" ],
+                [ "scroll repeat url(\"http://example.com/image.png\") red", "url(\"http://example.com/image.png\") repeat scroll 0% 0% red" ],
+                [ "0% 0% repeat url(\"http://example.com/image.png\") red", "url(\"http://example.com/image.png\") repeat scroll 0% 0% red" ],
+                [ "0% 0% scroll repeat url(\"http://example.com/image.png\") red", "url(\"http://example.com/image.png\") repeat scroll 0% 0% red" ]
             ],
             "initial": "transparent none repeat scroll 0% 0%"
         },
@@ -1099,9 +1119,12 @@
                 "helvetica",
                 "arial, helvetica",
                 "'arial unicode ms'",
-                "arial, 'arial unicode ms'",
-                [ "arial, arial unicode ms", "arial, 'arial unicode ms'" ]
-            ]
+                "arial, \"arial unicode ms\"",
+                [ "arial, arial unicode ms", "arial, \"arial unicode ms\"" ]
+            ],
+            "comments": {
+                "firefox": "serializes list without inserting a SPACE before COMMA"
+            }
         },
         {
             "name": "font-style",
@@ -1375,7 +1398,7 @@
             "section": "18.1",
             "valueType": "enum",
             "values": [
-                "url(http://example.com/cursor.png)",
+                "url(\"http://example.com/cursor.png\")",
                 "auto",
                 "crosshair",
                 "default",
@@ -1402,10 +1425,14 @@
             "valueType": "enum",
             "values": [
                 "red double thick",
+                [ "thick double red", "red double thick" ],
                 [ "double red thick", "red double thick" ],
                 [ "double thick red", "red double thick" ]
             ],
-            "initial": "invert none medium"
+            "initial": "invert none medium",    
+            "comments": {
+                "firefox": "serializes in non-canonical order"
+            }
         },
         {
             "name": "outline-width",
@@ -1445,7 +1472,10 @@
                 [ "rgb(100%, 0, 0)", "rgb(255, 0, 0)" ],
                 "invert"
             ],
-            "initial": "invert"
+            "initial": "invert",
+            "comments": {
+                "firefox": "does not support 'invert'"
+            }
         }
     ]
 }

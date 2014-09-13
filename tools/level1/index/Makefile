@@ -29,7 +29,7 @@ include $(TOP)/Makefile.Config.mk
 
 TOOL		= index.js
 INSUFFIX	= idl.json
-infiles		:= $(foreach spec, $(SPECS), $(SPECDIR)/$(spec)/$(spec).$(INSUFFIX))
+infiles		:= $(foreach spec, $(SPECS_L1), $(SPECDIR)/$(spec)/$(spec).$(INSUFFIX))
 OUTDIR		= $(SPECDIR)/index
 OUTFILE		= $(OUTDIR)/index.idl.json
 CONFIGFILE	= $(OUTDIR)/index.$(CONFIGSUFFIX)

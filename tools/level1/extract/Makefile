@@ -30,7 +30,7 @@ include $(TOP)/Makefile.Config.mk
 TOOL		= extract.js
 INSUFFIX	= html
 OUTSUFFIX	= idl
-outfiles	:= $(foreach spec, $(SPECS), $(SPECDIR)/$(spec)/$(spec).$(OUTSUFFIX))
+outfiles	:= $(foreach spec, $(SPECS_L1), $(SPECDIR)/$(spec)/$(spec).$(OUTSUFFIX))
 
 all: $(outfiles)
 

@@ -31,7 +31,7 @@ TOOL		= generate.js
 INSUFFIX	= idl.json
 OUTSUFFIX	= test.ts
 INDEXFILE	= $(SPECDIR)/index/index.idl.json
-outfiles	:= $(foreach spec, $(SPECS), $(SPECDIR)/$(spec)/$(spec).$(OUTSUFFIX))
+outfiles	:= $(foreach spec, $(SPECS_L1), $(SPECDIR)/$(spec)/$(spec).$(OUTSUFFIX))
 
 all: $(outfiles)
 
