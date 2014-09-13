@@ -66,6 +66,14 @@
         "path": "tests/css21/css21-property-BackgroundRepeat.html"
       }, 
       {
+        "url": "/tests/css21/css21-property-Border.html", 
+        "path": "tests/css21/css21-property-Border.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BorderBottom.html", 
+        "path": "tests/css21/css21-property-BorderBottom.html"
+      }, 
+      {
         "url": "/tests/css21/css21-property-BorderBottomColor.html", 
         "path": "tests/css21/css21-property-BorderBottomColor.html"
       }, 
@@ -86,6 +94,10 @@
         "path": "tests/css21/css21-property-BorderColor.html"
       }, 
       {
+        "url": "/tests/css21/css21-property-BorderLeft.html", 
+        "path": "tests/css21/css21-property-BorderLeft.html"
+      }, 
+      {
         "url": "/tests/css21/css21-property-BorderLeftColor.html", 
         "path": "tests/css21/css21-property-BorderLeftColor.html"
       }, 
@@ -96,6 +108,10 @@
       {
         "url": "/tests/css21/css21-property-BorderLeftWidth.html", 
         "path": "tests/css21/css21-property-BorderLeftWidth.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BorderRight.html", 
+        "path": "tests/css21/css21-property-BorderRight.html"
       }, 
       {
         "url": "/tests/css21/css21-property-BorderRightColor.html", 
@@ -116,6 +132,10 @@
       {
         "url": "/tests/css21/css21-property-BorderStyle.html", 
         "path": "tests/css21/css21-property-BorderStyle.html"
+      }, 
+      {
+        "url": "/tests/css21/css21-property-BorderTop.html", 
+        "path": "tests/css21/css21-property-BorderTop.html"
       }, 
       {
         "url": "/tests/css21/css21-property-BorderTopColor.html", 
@@ -400,6 +420,170 @@
       {
         "url": "/tests/css21/css21-property-ZIndex.html", 
         "path": "tests/css21/css21-property-ZIndex.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-Background.html", 
+        "path": "tests/cssbg/cssbg-property-Background.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BackgroundAttachment.html", 
+        "path": "tests/cssbg/cssbg-property-BackgroundAttachment.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BackgroundClip.html", 
+        "path": "tests/cssbg/cssbg-property-BackgroundClip.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BackgroundColor.html", 
+        "path": "tests/cssbg/cssbg-property-BackgroundColor.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BackgroundImage.html", 
+        "path": "tests/cssbg/cssbg-property-BackgroundImage.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BackgroundOrigin.html", 
+        "path": "tests/cssbg/cssbg-property-BackgroundOrigin.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BackgroundPosition.html", 
+        "path": "tests/cssbg/cssbg-property-BackgroundPosition.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BackgroundRepeat.html", 
+        "path": "tests/cssbg/cssbg-property-BackgroundRepeat.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BackgroundSize.html", 
+        "path": "tests/cssbg/cssbg-property-BackgroundSize.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-Border.html", 
+        "path": "tests/cssbg/cssbg-property-Border.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderBottom.html", 
+        "path": "tests/cssbg/cssbg-property-BorderBottom.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderBottomColor.html", 
+        "path": "tests/cssbg/cssbg-property-BorderBottomColor.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderBottomLeftRadius.html", 
+        "path": "tests/cssbg/cssbg-property-BorderBottomLeftRadius.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderBottomRightRadius.html", 
+        "path": "tests/cssbg/cssbg-property-BorderBottomRightRadius.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderBottomStyle.html", 
+        "path": "tests/cssbg/cssbg-property-BorderBottomStyle.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderBottomWidth.html", 
+        "path": "tests/cssbg/cssbg-property-BorderBottomWidth.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderColor.html", 
+        "path": "tests/cssbg/cssbg-property-BorderColor.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderImage.html", 
+        "path": "tests/cssbg/cssbg-property-BorderImage.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderImageOutset.html", 
+        "path": "tests/cssbg/cssbg-property-BorderImageOutset.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderImageRepeat.html", 
+        "path": "tests/cssbg/cssbg-property-BorderImageRepeat.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderImageSlice.html", 
+        "path": "tests/cssbg/cssbg-property-BorderImageSlice.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderImageSource.html", 
+        "path": "tests/cssbg/cssbg-property-BorderImageSource.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderImageWidth.html", 
+        "path": "tests/cssbg/cssbg-property-BorderImageWidth.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderLeft.html", 
+        "path": "tests/cssbg/cssbg-property-BorderLeft.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderLeftColor.html", 
+        "path": "tests/cssbg/cssbg-property-BorderLeftColor.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderLeftStyle.html", 
+        "path": "tests/cssbg/cssbg-property-BorderLeftStyle.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderLeftWidth.html", 
+        "path": "tests/cssbg/cssbg-property-BorderLeftWidth.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderRadius.html", 
+        "path": "tests/cssbg/cssbg-property-BorderRadius.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderRight.html", 
+        "path": "tests/cssbg/cssbg-property-BorderRight.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderRightColor.html", 
+        "path": "tests/cssbg/cssbg-property-BorderRightColor.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderRightStyle.html", 
+        "path": "tests/cssbg/cssbg-property-BorderRightStyle.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderRightWidth.html", 
+        "path": "tests/cssbg/cssbg-property-BorderRightWidth.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderStyle.html", 
+        "path": "tests/cssbg/cssbg-property-BorderStyle.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderTop.html", 
+        "path": "tests/cssbg/cssbg-property-BorderTop.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderTopColor.html", 
+        "path": "tests/cssbg/cssbg-property-BorderTopColor.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderTopLeftRadius.html", 
+        "path": "tests/cssbg/cssbg-property-BorderTopLeftRadius.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderTopRightRadius.html", 
+        "path": "tests/cssbg/cssbg-property-BorderTopRightRadius.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderTopStyle.html", 
+        "path": "tests/cssbg/cssbg-property-BorderTopStyle.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderTopWidth.html", 
+        "path": "tests/cssbg/cssbg-property-BorderTopWidth.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BorderWidth.html", 
+        "path": "tests/cssbg/cssbg-property-BorderWidth.html"
+      }, 
+      {
+        "url": "/tests/cssbg/cssbg-property-BoxShadow.html", 
+        "path": "tests/cssbg/cssbg-property-BoxShadow.html"
       }, 
       {
         "url": "/tests/cssfontload/cssfontload-interface-FontFace.html", 
@@ -2480,5 +2664,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "fbcf2315d5ad3f78dc61ef2ea63e3c22c52f081c"
+  "rev": "293a5778dfc89e07ad610db40d34b9be4e90aa4e"
 }
