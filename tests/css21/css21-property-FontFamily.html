@@ -7,7 +7,7 @@
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level2.js'></script>
 <script type='text/plain' id='propDef'>
-{"name":"font-family","section":"15.3","valueType":"enum","values":["serif","sans-serif","cursive","fantasy","monospace","arial","helvetica","arial, helvetica","'arial unicode ms'","arial, \"arial unicode ms\"",["arial, arial unicode ms","arial, \"arial unicode ms\""]],"comments":{"firefox":"serializes list without inserting a SPACE before COMMA"},"type":"property","nameNormalized":"FontFamily"}
+{"name":"font-family","section":"15.3","valueType":"enum","values":["serif","sans-serif","cursive","fantasy","monospace","arial","helvetica","arial, helvetica","'arial unicode ms'","arial, arial unicode ms","arial, \"arial unicode ms\""],"comments":{"chrome":"serializes non-generic quoted and non-quoted families incorrectly","firefox":"serializes list without inserting a SPACE before COMMA"},"type":"property","nameNormalized":"FontFamily"}
 </script>
 <h1>Test Property font-family Support</h1>
 <div id='log'></div>

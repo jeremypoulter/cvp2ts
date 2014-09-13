@@ -38,7 +38,10 @@
                 "repeat repeat",
                 "repeat no-repeat, no-repeat repeat"
             ],
-            "initial": "repeat"
+            "initial": "repeat",
+            "comments": {
+                "firefox": "does not support 'space' or 'round'"
+            }
         },
         {
             "name": "background-attachment",
@@ -126,7 +129,10 @@
                 "url(\"http://example.com/image.png\") left top / auto 1in repeat no-repeat local content-box border-box red",
                 "url(\"http://example.com/image.png\") left top / auto 1in repeat no-repeat local content-box border-box, url(\"http://example.com/image.png\") right bottom / 1px 1mm no-repeat repeat fixed padding-box content-box red"
             ],
-            "initial": "none 0% 0% / auto repeat scroll padding-box border-box transparent"
+            "initial": "none 0% 0% / auto repeat scroll padding-box border-box transparent",
+            "comments": {
+                "firefox": "serializes in non-canonical order, fails to insert SPACE between <repeat-style> tokens"
+            }
         },
         {
             "name": "border-top-color",
@@ -542,7 +548,10 @@
                 "round stretch",
                 "space stretch"
             ],
-            "initial": "stretch"
+            "initial": "stretch",
+            "comments": {
+                "firefox": "does not support 'space'"
+            }
         },
         {
             "name": "border-image",
@@ -552,7 +561,10 @@
                 [ "url(\"http://example.com/image.png\") 1% / 2% round", "url(\"http://example.com/image.png\") 1% 1% 1% 1% / 2% 2% 2% 2% round round" ],
                 [ "url(\"http://example.com/image.png\") 1% / 2% 1mm space", "url(\"http://example.com/image.png\") 1% 1% 1% 1% / 2% 2% 2% 2% 1mm space space" ]
             ],
-            "initial": "0"
+            "initial": "0",
+            "comments": {
+                "firefox": "does not support 'space'"
+            }
         },
         {
             "name": "box-shadow",
@@ -563,7 +575,7 @@
                 "1px 2px",
                 "1px 2px 3px",
                 "1px 2px 3px 4px",
-                "1px 2px",
+                [ "inset 1px 2px", "1px 2px inset" ],
                 [ "inset 1px 2px 3px", "1px 2px 3px inset" ],
                 [ "inset 1px 2px 3px 4px", "1px 2px 3px 4px inset" ],
                 "1px 2px red",

@@ -819,7 +819,10 @@
                 [ "rect(-1px,-2px,-3px,-4px)", "rect(-1px, -2px, -3px, -4px)" ],
                 [ "rect(auto,auto,auto,auto)", "rect(auto, auto, auto, auto)"]
             ],
-            "initial": "auto"
+            "initial": "auto",
+            "comments": {
+                "chrome": "serializes argument list with inserting COMMA separators"
+            }
         },
         {
             "name": "visibility",
@@ -852,7 +855,10 @@
                 [ "'some text' open-quote", "\"some text\" open-quote" ],
                 [ "\"some text\" open-quote", "\"some text\" open-quote" ]
             ],
-            "initial": "normal"
+            "initial": "normal",
+            "comments": {
+                "chrome": "serializes 'url(...)' and text incorrectly"
+            }
         },
         {
             "name": "quotes",
@@ -862,7 +868,10 @@
                 [ "'(' ')'", "\"(\" \")\"" ],
                 [ "'(' ')' '[' ']'", "\"(\" \")\" \"[\" \"]\"" ],
                 "none"
-            ]
+            ],
+            "comments": {
+                "chrome": "serializes quoted strings incorrectly"
+            }
         },
         {
             "name": "counter-reset",
@@ -877,7 +886,10 @@
                 [ "section 1 subsection 1", "section 1 subsection 1" ],
                 "none"
             ],
-            "initial": "none"
+            "initial": "none",
+            "comments": {
+                "chrome": "serializes without default component minimization"
+            }
         },
         {
             "name": "counter-increment",
@@ -892,7 +904,10 @@
                 [ "section 1 subsection 1", "section 1 subsection 1" ],
                 "none"
             ],
-            "initial": "none"
+            "initial": "none",
+            "comments": {
+                "chrome": "serializes without default component minimization"
+            }
         },
         {
             "name": "list-style-type",
@@ -915,7 +930,10 @@
                 "upper-alpha",
                 "none"
             ],
-            "initial": "disc"
+            "initial": "disc",
+            "comments": {
+                "firefox": "serializes {lower,upper}-latin as {lower,upper}-alpha"
+            }
         },
         {
             "name": "list-style-image",
@@ -925,7 +943,10 @@
                 "none",
                 "url(\"http://example.com/image.png\")"
             ],
-            "initial": "none"
+            "initial": "none",
+            "comments": {
+                "chrome": "serializes 'url(...)' incorrectly"
+            }
         },
         {
             "name": "list-style-position",
@@ -946,7 +967,10 @@
                 [ "url(\"http://example.com/image.png\") disc", "disc outside url(\"http://example.com/image.png\")" ],
                 [ "url(\"http://example.com/image.png\") disc inside", "disc inside url(\"http://example.com/image.png\")" ]
             ],
-            "initial": "disc none outside"
+            "initial": "disc none outside",
+            "comments": {
+                "chrome": "serializes 'url(...)' incorrectly, differs from firefox with respect to minimization"
+            }
         },
         {
             "name": "page-break-before",
@@ -1026,7 +1050,10 @@
                 "none",
                 "url(\"http://example.com/image.png\")"
             ],
-            "initial": "none"
+            "initial": "none",
+            "comments": {
+                "chrome": "serializes 'url(...)' incorrectly"
+            }
         },
         {
             "name": "background-color",
@@ -1071,7 +1098,10 @@
                 [ "center", "center center" ],
                 [ "right", "right center" ]
             ],
-            "initial": "0% 0%"
+            "initial": "0% 0%",
+            "comments": {
+                "chrome": "serializes tokens incorrectly (as percentages)"
+            }
         },
         {
             "name": "background",
@@ -1103,7 +1133,10 @@
                 [ "0% 0% repeat url(\"http://example.com/image.png\") red", "url(\"http://example.com/image.png\") repeat scroll 0% 0% red" ],
                 [ "0% 0% scroll repeat url(\"http://example.com/image.png\") red", "url(\"http://example.com/image.png\") repeat scroll 0% 0% red" ]
             ],
-            "initial": "transparent none repeat scroll 0% 0%"
+            "initial": "transparent none repeat scroll 0% 0%",
+            "comments": {
+                "chrome": "property supported, but serialization is broken in numerous ways"
+            }
         },
         {
             "name": "font-family",
@@ -1119,10 +1152,11 @@
                 "helvetica",
                 "arial, helvetica",
                 "'arial unicode ms'",
-                "arial, \"arial unicode ms\"",
-                [ "arial, arial unicode ms", "arial, \"arial unicode ms\"" ]
+                "arial, arial unicode ms",
+                "arial, \"arial unicode ms\""
             ],
             "comments": {
+                "chrome": "serializes non-generic quoted and non-quoted families incorrectly",
                 "firefox": "serializes list without inserting a SPACE before COMMA"
             }
         },
@@ -1210,7 +1244,10 @@
                 [ "bold italic large Palantino, serif", "italic bold large Palantino,serif" ],
                 [ "normal small-caps 120%/120% fanatasy", "small-caps 120%/120% fanatasy" ]
             ],
-            "initial": "normal normal normal medium/150% serif"
+            "initial": "normal normal normal medium/150% serif",
+            "comments": {
+                "chrome": "serializes unmapped fonts as 'status-bar'"
+            }
         },
         {
             "name": "text-indent",
@@ -1272,7 +1309,10 @@
                 [ "blink overline line-through", "overline line-through blink" ],
                 [ "underline line-through blink overline", "underline overline line-through blink" ]
             ],
-            "initial": "none"
+            "initial": "none",
+            "comments": {
+                "chrome": "does not support???!!!"
+            }
         },
         {
             "name": "letter-spacing",
@@ -1417,7 +1457,11 @@
                 "help",
                 "progress"
             ],
-            "initial": "show"
+            "initial": "show",
+            "comments": {
+                "chrome": "does not support 'url(...)'",
+                "firefox": "does not support 'url(...)'"
+            }
         },
         {
             "name": "outline",
