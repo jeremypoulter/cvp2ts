@@ -1,0 +1,129 @@
+{
+    "spec": "cssimage",
+    "source": "http://dev.w3.org/csswg/css-images-3/",
+    "levels": [ 2 ],
+    "local": "cssimage.html",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction",
+    "helpers": [],
+    "comments": "test extensions to css21, or initial value if no extension",
+    "properties": [
+        {
+            "name": "background-image",
+            "section": "3",
+            "valueType": "enum",
+            "values": [
+                "image(url(\"http://example.com/image.png\"))",
+                "image(\"http://example.com/image.png\")",
+                "image(\"http://example.com/image1.png\", \"http://example.com/image2.png\")",
+                "image(\"http://example.com/image1.png\", \"http://example.com/image2.png\", gray)"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "content",
+            "section": "3",
+            "valueType": "enum",
+            "values": [
+                "image(url(\"http://example.com/image.png\"))",
+                "image(\"http://example.com/image.png\")",
+                "image(\"http://example.com/image1.png\", \"http://example.com/image2.png\")",
+                "image(\"http://example.com/image1.png\", \"http://example.com/image2.png\", gray)"
+            ],
+            "initial": "normal",
+            "comments": {
+                "chrome": "serializes 'url(...)' and text incorrectly"
+            }
+        },
+        {
+            "name": "cursor",
+            "section": "3",
+            "valueType": "enum",
+            "values": [
+                "image(url(\"http://example.com/cursor.png\"))",
+                "image(\"http://example.com/cursor.png\")",
+                "image(\"http://example.com/cursor1.png\", \"http://example.com/cursor2.png\")",
+                "image(\"http://example.com/cursor1.png\", \"http://example.com/cursor2.png\", gray)"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "list-style-image",
+            "section": "3",
+            "valueType": "enum",
+            "values": [
+                "image(url(\"http://example.com/image.png\"))",
+                "image(\"http://example.com/image.png\")",
+                "image(\"http://example.com/image1.png\", \"http://example.com/image2.png\")",
+                "image(\"http://example.com/image1.png\", \"http://example.com/image2.png\", gray)"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "object-fit",
+            "section": "5.5",
+            "valueType": "enum",
+            "values": [
+                "fill",
+                "contain",
+                "cover",
+                "none",
+                "scale-down"
+            ],
+            "initial": "fill"
+        },
+        {
+            "name": "object-position",
+            "section": "5.6",
+            "valueType": "enum",
+            "values": [
+                [ "0%", "0% center" ],
+                "0% 0%",
+                [ "1cm", "1cm center" ],
+                "1cm 2cm",
+                [ "left", "left center" ],
+                [ "top", "center top" ],
+                [ "bottom", "center bottom" ],
+                [ "center", "center center" ],
+                [ "right", "right center" ]
+            ],
+            "initial": "0% 0%"
+        },
+        {
+            "name": "image-resolution",
+            "section": "6.1",
+            "valueType": "enum",
+            "values": [
+                "1dppx",
+                "100dpi",
+                "100dpcm",
+                "100dppx",
+                "100dpi snap",
+                "100dpcm snap",
+                "100dppx snap",
+                "from-image",
+                "from-image snap",
+                "from-image 100dpi",
+                "from-image 100dpcm",
+                "from-image 100dppx",
+                "from-image 100dpi snap",
+                "from-image 100dpcm snap",
+                "from-image 100dppx snap"
+            ],
+            "initial": "1dppx"
+        },
+        {
+            "name": "image-orientation",
+            "section": "6.2",
+            "valueType": "enum",
+            "values": [
+                "0deg",
+                "1deg",
+                "1rad",
+                "1grad",
+                "1turn"
+            ],
+            "initial": "0deg"
+        }
+    ]
+}

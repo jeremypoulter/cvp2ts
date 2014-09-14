@@ -1,0 +1,267 @@
+{
+    "spec": "cssfonts",
+    "source": "http://dev.w3.org/csswg/css-fonts/",
+    "levels": [ 2 ],
+    "local": "cssfonts.html",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction",
+    "helpers": [],
+    "comments": "test extensions to css21, or initial value if no extension",
+    "properties": [
+        {
+            "name": "font-family",
+            "section": "3.1",
+            "valueType": "enum",
+            "values": [
+                "sans-serif"
+            ]
+        },
+        {
+            "name": "font-weight",
+            "section": "3.2",
+            "valueType": "enum",
+            "values": [
+                "normal"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "font-stretch",
+            "section": "3.3",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "ultra-condensed",
+                "extra-condensed",
+                "condensed",
+                "semi-condensed",
+                "semi-expanded",
+                "expanded",
+                "extra-expanded",
+                "ultra-expanded"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "font-style",
+            "section": "3.4",
+            "valueType": "enum",
+            "values": [
+                "normal"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "font-size",
+            "section": "3.5",
+            "valueType": "enum",
+            "values": [
+                "medium"
+            ],
+            "initial": "medium"
+        },
+        {
+            "name": "font-size-adjust",
+            "section": "3.6",
+            "valueType": "enum",
+            "values": [
+                "none",
+                "1",
+                [ "1.0", "1" ],
+                "1.1"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "font",
+            "section": "3.7",
+            "shorthand": [
+                "font-style",
+                "font-variant",
+                "font-weight",
+                "font-stretch",
+                "font-size",
+                "line-height",
+                "font-family"
+            ],
+            "valueType": "enum",
+            "values": [
+                "italic small-caps bold expanded 10pt/12pt serif"
+            ],
+            "initial": "normal normal normal normal medium/150% serif"
+        },
+        {
+            "name": "font-synthesis",
+            "section": "3.8",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "weight",
+                "style",
+                "weight style"
+            ],
+            "initial": "weight style"
+        },
+        {
+            "name": "font-kerning",
+            "section": "6.3",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "normal",
+                "none"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "font-variant-ligatures",
+            "section": "6.4",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "none",
+                "common-ligatures",
+                "no-common-ligatures",
+                "discretionary-ligatures",
+                "no-discretionary-ligatures",
+                "historical-ligatures",
+                "no-historical-ligatures",
+                "contextual",
+                "no-contextual",
+                "common-ligatures discretionary-ligatures historical-ligatures contextual",
+                "no-common-ligatures no-discretionary-ligatures no-historical-ligatures no-contextual"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "font-variant-position",
+            "section": "6.5",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "sub",
+                "super"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "font-variant-caps",
+            "section": "6.6",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "small-caps",
+                "all-small-caps",
+                "petite-caps",
+                "all-petite-caps",
+                "unicase",
+                "titling-caps"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "font-variant-numeric",
+            "section": "6.7",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "lining-nums",
+                "oldstyle-nums",
+                "proportional-nums",
+                "tabular-nums",
+                "diagonal-fractions",
+                "stacked-fracions",
+                "ordinal",
+                "slashed-zero",
+                "lining-nums proportional-nums diagonal-fractions ordinal slashed-zero",
+                "oldstyle-nums tabular-nums stacked-fractions ordinal slashed-zero"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "font-variant-alternates",
+            "section": "6.8",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "historical-forms",
+                "stylistic(fvn1)",
+                "styleset(fvn2)",
+                "character-variant(fvn3)",
+                "swash(fvn4)",
+                "ornaments(fvn5)",
+                "annotation(fvn6)"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "font-variant-east-asian",
+            "section": "6.10",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "jis78",
+                "jis83",
+                "jis90",
+                "jis04",
+                "simplified",
+                "traditional",
+                "full-width",
+                "proportional-width",
+                "ruby",
+                "simplified full-width",
+                "simplified proportional-width",
+                "traditional full-width",
+                "traditional proportional-width"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "font-variant",
+            "section": "6.11",
+            "shorthand": [
+                "font-variant-ligatures",
+                "font-variant-position",
+                "font-variant-caps",
+                "font-variant-numeric",
+                "font-variant-alternates",
+                "font-variant-east-asian"
+            ],
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "small-caps",
+                "normal normal normal normal normal normal",
+                "common-ligatures sub small-caps lining-nums historical-forms jis78"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "font-features-settings",
+            "section": "6.12",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "'dlig' 1",
+                "'smcp' on",
+                "'c2sc'",
+                "'liga' off",
+                "'tnum', 'hist'",
+                "'tnum', \"hist\"",
+                "'silly', off",
+                "PKRN"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "font-language-override",
+            "section": "6.13",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "\"SRB\""
+            ],
+            "initial": "normal"
+        }
+    ]
+}

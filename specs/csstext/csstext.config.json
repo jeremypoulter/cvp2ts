@@ -1,0 +1,208 @@
+{
+    "spec": "csstext",
+    "source": "http://dev.w3.org/csswg/css-text-3/",
+    "levels": [ 2 ],
+    "local": "csstext.html",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction",
+    "helpers": [],
+    "comments": "test extensions to css21, or initial value if no extension",
+    "properties": [
+        {
+            "name": "text-transform",
+            "section": "2.1",
+            "valueType": "enum",
+            "values": [
+                "full-width"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "white-space",
+            "section": "3",
+            "valueType": "enum",
+            "values": [
+                "normal"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "tab-size",
+            "section": "4.2",
+            "valueType": "enum",
+            "values": [
+                "8",
+                "8in",
+                "8cm",
+                "8mm",
+                "8pc",
+                "8px"
+            ],
+            "initial": "8"
+        },
+        {
+            "name": "word-break",
+            "section": "5.2",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "keep-all",
+                "break-all"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "line-break",
+            "section": "5.3",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "loose",
+                "normal",
+                "strict"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "hyphens",
+            "section": "6.1",
+            "valueType": "enum",
+            "values": [
+                "none",
+                "manual",
+                "auto"
+            ],
+            "initial": "manual"
+        },
+        {
+            "name": "overflow-wrap",
+            "section": "6.2",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "break-word"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "word-wrap",
+            "section": "6.2",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "break-word"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "text-align",
+            "section": "7.1",
+            "shorthand": [
+                "text-align-all",
+                "text-align-last"
+            ],
+            "valueType": "enum",
+            "values": [
+                "start",
+                "end",
+                "match-parent",
+                "justify-all"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "text-align-all",
+            "section": "7.2",
+            "valueType": "enum",
+            "values": [
+                "start",
+                "end",
+                "left",
+                "right",
+                "center",
+                "justify",
+                "match-parent"
+            ],
+            "initial": "start"
+        },
+        {
+            "name": "text-align-last",
+            "section": "7.3",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "start",
+                "end",
+                "left",
+                "right",
+                "center",
+                "justify"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "text-justify",
+            "section": "7.4",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "none",
+                "inter-word",
+                "distribute"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "word-spacing",
+            "section": "8.1",
+            "valueType": "enum",
+            "values": [
+                "0%",
+                "1%",
+                "10%",
+                "100%",
+                "-100%"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "letter-spacing",
+            "section": "8.2",
+            "valueType": "enum",
+            "values": [
+                "normal"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "text-indent",
+            "section": "9.1",
+            "valueType": "enum",
+            "values": [
+                "1cm hanging",
+                "1cm each-line",
+                "1cm hanging each-line"
+            ],
+            "initial": "0"
+        },
+        {
+            "name": "hanging-punctuation",
+            "section": "9.2",
+            "valueType": "enum",
+            "values": [
+                "none",
+                "first",
+                "last",
+                "force-end",
+                "allow-end",
+                "first force-end",
+                "first allow-end",
+                "force-end last",
+                "allow-end last",
+                "first force-end last",
+                "first allow-end last"
+            ],
+            "initial": "none"
+        }
+    ]
+}

@@ -1,0 +1,243 @@
+{
+    "spec": "cssui",
+    "source": "http://dev.w3.org/csswg/css-ui/",
+    "levels": [ 2 ],
+    "local": "cssui.html",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction",
+    "helpers": [],
+    "comments": "test extensions to css21, or initial value if no extension",
+    "properties": [
+        {
+            "name": "content",
+            "section": "5.1",
+            "valueType": "enum",
+            "values": [
+                "icon"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "icon",
+            "section": "5.2",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "url(\"http://example.com/icon.png\")",
+                "url(\"http://example.com/icon1.png\"), url(\"http://example.com/icon2.png\")"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "box-sizing",
+            "section": "6.1",
+            "valueType": "enum",
+            "values": [
+                "content-box",
+                "padding-box",
+                "border-box"
+            ],
+            "initial": "content-box"
+        },
+        {
+            "name": "outline",
+            "section": "7.1",
+            "shorthand": [
+                "outline-color",
+                "outline-style",
+                "outline-width"
+            ],
+            "valueType": "enum",
+            "values": [
+                "invert none medium"
+            ],
+            "initial": "invert none medium"
+        },
+        {
+            "name": "outline-width",
+            "section": "7.2",
+            "valueType": "enum",
+            "values": [
+                "medium"
+            ],
+            "initial": "medium"
+        },
+        {
+            "name": "outline-style",
+            "section": "7.3",
+            "valueType": "enum",
+            "values": [
+                "auto"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "outline-color",
+            "section": "7.4",
+            "valueType": "enum",
+            "values": [
+                "invert"
+            ],
+            "initial": "invert"
+        },
+        {
+            "name": "outline-offset",
+            "section": "7.5",
+            "valueType": "enum",
+            "values": [
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pc",
+                "0px",
+                "1px"
+            ],
+            "initial": "0"
+        },
+        {
+            "name": "resize",
+            "section": "8.1",
+            "valueType": "enum",
+            "values": [
+                "none",
+                "both",
+                "horizontal",
+                "vertical"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "text-overflow",
+            "section": "8.2",
+            "valueType": "enum",
+            "values": [
+                "clip",
+                "ellipsis",
+                "\",,,\"",
+                "clip clip",
+                "clip ellipsis",
+                "ellipsis ellipsis",
+                "\",,,\" \"!!!\""
+            ],
+            "initial": "clip"
+        },
+        {
+            "name": "cursor",
+            "section": "9.1.1",
+            "valueType": "enum",
+            "values": [
+                "url(\"http://example.com/cursor.png\") 0 0",
+                "url(\"http://example.com/cursor.png\") 1 2",
+                "none",
+                "context-menu",
+                "cell",
+                "vertical-text",
+                "alias",
+                "copy",
+                "no-drop",
+                "not-allowed",
+                "ew-resize",
+                "ns-resize",
+                "nesw-resize",
+                "nwse-resize",
+                "col-resize",
+                "row-resize",
+                "all-scroll",
+                "zoom-in",
+                "zoom-out"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "nav-index",
+            "section": "9.2.1",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "1",
+                "2",
+                "10",
+                "99"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "nav-up",
+            "section": "9.2.2",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "#id1",
+                "#id1 current",
+                "#id1 root",
+                "#id1 target",
+                "2",
+                "10",
+                "99"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "nav-right",
+            "section": "9.2.2",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "#id1",
+                "#id1 current",
+                "#id1 root",
+                "#id1 target",
+                "2",
+                "10",
+                "99"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "nav-down",
+            "section": "9.2.2",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "#id1",
+                "#id1 current",
+                "#id1 root",
+                "#id1 target",
+                "2",
+                "10",
+                "99"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "nav-left",
+            "section": "9.2.2",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "#id1",
+                "#id1 current",
+                "#id1 root",
+                "#id1 target",
+                "2",
+                "10",
+                "99"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "ime-mode",
+            "section": "9.2.3",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "normal",
+                "active",
+                "inactive",
+                "disabled"
+            ],
+            "initial": "auto"
+        }
+    ]
+}

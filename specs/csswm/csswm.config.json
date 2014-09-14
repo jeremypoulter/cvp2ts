@@ -1,0 +1,71 @@
+{
+    "spec": "csswm",
+    "source": "http://dev.w3.org/csswg/css-writing-modes-3/",
+    "levels": [ 2 ],
+    "local": "csswm.html",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction",
+    "helpers": [],
+    "comments": "test extensions to css21, or initial value if no extension",
+    "properties": [
+        {
+            "name": "direction",
+            "section": "2.1",
+            "valueType": "enum",
+            "values": [
+                "ltr"
+            ],
+            "initial": "ltr"
+        },
+        {
+            "name": "unicode-bidi",
+            "section": "2.2",
+            "valueType": "enum",
+            "values": [
+                "isolate",
+                "isolate-override",
+                "plaintext"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "writing-mode",
+            "section": "3.1",
+            "valueType": "enum",
+            "values": [
+                "horizontal-tb",
+                "vertical-rl",
+                "vertical-lr"
+            ],
+            "initial": "horizontal-tb"
+        },
+        {
+            "name": "text-orientation",
+            "section": "5.1",
+            "valueType": "enum",
+            "values": [
+                "mixed",
+                "upright",
+                "sideways-right",
+                "sideways-left",
+                "sideways",
+                "use-glyph-orientation"
+            ],
+            "initial": "mixed"
+        },
+        {
+            "name": "text-combine-upright",
+            "section": "9.1",
+            "valueType": "enum",
+            "values": [
+                "none",
+                "all",
+                "digits",
+                "digits 2",
+                "digits 3",
+                "digits 4"
+            ],
+            "initial": "none"
+        }
+    ]
+}

@@ -6,7 +6,7 @@
     "dontExtract": true,
     "dontExtractReason": "requires manual property extraction",
     "helpers": [],
-    "comments": "test extensions to css21",
+    "comments": "test extensions to css21, or initial value if no extension",
     "properties": [
         {
             "name": "background-color",
@@ -99,8 +99,9 @@
                 [ "1in", "1in auto" ],
                 [ "1cm", "1cm auto" ],
                 [ "1mm", "1mm auto" ],
-                [ "1pt", "1pt auto" ],
                 [ "1pc", "1pc auto" ],
+                [ "1em", "1em auto" ],
+                [ "1pt", "1pt auto" ],
                 [ "1px", "1px auto" ],
                 [ "0%", "0% auto" ],
                 [ "10%", "10% auto" ],
@@ -187,6 +188,7 @@
             "section": "4.2",
             "valueType": "enum",
             "values": [
+                "none"
             ],
             "initial": "none"
         },
@@ -195,6 +197,7 @@
             "section": "4.2",
             "valueType": "enum",
             "values": [
+                "none"
             ],
             "initial": "none"
         },
@@ -203,6 +206,7 @@
             "section": "4.2",
             "valueType": "enum",
             "values": [
+                "none"
             ],
             "initial": "none"
         },
@@ -211,6 +215,7 @@
             "section": "4.2",
             "valueType": "enum",
             "values": [
+                "none"
             ],
             "initial": "none"
         },
@@ -219,6 +224,7 @@
             "section": "4.2",
             "valueType": "enum",
             "values": [
+                "none none none none"
             ],
             "initial": "none none none none"
         },
@@ -227,6 +233,7 @@
             "section": "4.3",
             "valueType": "enum",
             "values": [
+                "medium"
             ],
             "initial": "medium"
         },
@@ -235,6 +242,7 @@
             "section": "4.3",
             "valueType": "enum",
             "values": [
+                "medium"
             ],
             "initial": "medium"
         },
@@ -243,6 +251,7 @@
             "section": "4.3",
             "valueType": "enum",
             "values": [
+                "medium"
             ],
             "initial": "medium"
         },
@@ -251,6 +260,7 @@
             "section": "4.3",
             "valueType": "enum",
             "values": [
+                "medium"
             ],
             "initial": "medium"
         },
@@ -259,6 +269,7 @@
             "section": "4.3",
             "valueType": "enum",
             "values": [
+                "medium medium medium medium"
             ],
             "initial": "medium medium medium medium"
         },
@@ -331,8 +342,9 @@
                 "1in",
                 "1cm",
                 "1mm",
-                "1pt",
                 "1pc",
+                "1em",
+                "1pt",
                 "1px",
                 "1%",
                 [ "0 0", "0px" ],
@@ -354,8 +366,9 @@
                 "1in",
                 "1cm",
                 "1mm",
-                "1pt",
                 "1pc",
+                "1em",
+                "1pt",
                 "1px",
                 "1%",
                 [ "0 0", "0px" ],
@@ -377,8 +390,9 @@
                 "1in",
                 "1cm",
                 "1mm",
-                "1pt",
                 "1pc",
+                "1em",
+                "1pt",
                 "1px",
                 "1%",
                 [ "0 0", "0px" ],
@@ -400,8 +414,9 @@
                 "1in",
                 "1cm",
                 "1mm",
-                "1pt",
                 "1pc",
+                "1em",
+                "1pt",
                 "1px",
                 "1%",
                 [ "0 0", "0px" ],

@@ -1,0 +1,46 @@
+{
+    "spec": "csscolor",
+    "source": "http://www.w3.org/TR/2011/REC-css3-color-20110607/",
+    "levels": [ 2 ],
+    "local": "csscolor.html",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction",
+    "helpers": [],
+    "comments": "test extensions to css21",
+    "properties": [
+        {
+            "name": "color",
+            "section": "3.1",
+            "valueType": "enum",
+            "values": [
+                "transparent",
+                [ "rgba(255, 0, 0, 0.0)", "rgba(255, 0, 0, 0)" ],
+                "rgba(255, 0, 0, 0.1)",
+                [ "rgba(255, 0, 0, 1)", "rgb(255, 0, 0)" ],
+                [ "rgba(255, 0, 0, 1.0)", "rgb(255, 0, 0)" ]
+            ]
+        },
+        {
+            "name": "opacity",
+            "section": "3.1",
+            "valueType": "enum",
+            "values": [
+                "0",
+                [ "0.0", "0" ],
+                "0.1",
+                "0.9",
+                "1",
+                [ "1.0", "1" ],
+                "9.9",
+                "10",
+                [ "10.0", "10" ],
+                "99.9",
+                "100",
+                [ "100.0", "100" ]
+            ],
+            "initial": "1"
+        }
+    ]
+}

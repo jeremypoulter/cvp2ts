@@ -1,0 +1,226 @@
+{
+    "spec": "cssmulticol",
+    "source": "http://dev.w3.org/csswg/css-multicol/",
+    "levels": [ 2 ],
+    "local": "cssmulticol.html",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction",
+    "helpers": [],
+    "comments": "test extensions to css21, or initial value if no extension",
+    "properties": [
+        {
+            "name": "column-width",
+            "section": "3.1",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "1in",
+                "1cm",
+                "1mm",
+                "1pc",
+                "1em",
+                "1pt",
+                "1px"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "column-count",
+            "section": "3.2",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "1",
+                "2",
+                "10"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "column",
+            "section": "3.3",
+            "shorthand": [
+                "column-width",
+                "column-count"
+            ],
+            "valueType": "enum",
+            "values": [
+                "12em",
+                "auto 12em",
+                "2",
+                "2 auto",
+                "auto",
+                "auto auto"
+            ],
+            "initial": "auto auto"
+        },
+        {
+            "name": "column-gap",
+            "section": "4.1",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "1in",
+                "1cm",
+                "1mm",
+                "1pc",
+                "1em",
+                "1pt",
+                "1px"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "column-rule-color",
+            "section": "4.2",
+            "valueType": "enum",
+            "values": [
+                "currentcolor",
+                "black",
+                "silver",
+                "gray",
+                "white",
+                "maroon",
+                "red",
+                "purple",
+                "fuchsia",
+                "green",
+                "lime",
+                "olive",
+                "yellow",
+                "navy",
+                "blue",
+                "teal",
+                "aqua",
+                "transparent",
+                [ "#F00", "rgb(255, 0, 0)" ],
+                [ "#FF0000", "rgb(255, 0, 0)" ],
+                "rgb(255, 0, 0)",
+                [ "rgb(100%, 0, 0)", "rgb(255, 0, 0)" ],
+                [ "rgba(255, 0, 0, 0.0)", "rgba(255, 0, 0, 0)" ],
+                "rgba(255, 0, 0, 0.1)",
+                [ "rgba(255, 0, 0, 1)", "rgb(255, 0, 0)" ],
+                [ "rgba(255, 0, 0, 1.0)", "rgb(255, 0, 0)" ]
+            ],
+            "initial": "currentcolor"
+        },
+        {
+            "name": "column-rule-style",
+            "section": "4.3",
+            "valueType": "enum",
+            "values": [
+                "hidden",
+                "dotted",
+                "dashed",
+                "solid",
+                "double",
+                "groove",
+                "ridge",
+                "inset",
+                "outset",
+                "none"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "column-rule-width",
+            "section": "4.4",
+            "valueType": "enum",
+            "values": [
+                "thin",
+                "medium",
+                "thick",
+                [ "0", "0px" ],
+                "1in",
+                "1cm",
+                "1mm",
+                "1pc",
+                "1em",
+                "1pt",
+                "1px"
+            ],
+            "initial": "medium"
+        },
+        {
+            "name": "column-rule",
+            "section": "4.5",
+            "shorthand": [
+                "column-rule-width",
+                "column-rule-style",
+                "column-rule-color"
+            ],
+            "valueType": "enum",
+            "values": [
+                "thick dashed red"
+            ],
+            "initial": "medium none currentcolor"
+        },
+        {
+            "name": "break-before",
+            "section": "5.1",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "always",
+                "avoid",
+                "left",
+                "right",
+                "page",
+                "column",
+                "avoid-page",
+                "avoid-column"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "break-after",
+            "section": "5.1",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "always",
+                "avoid",
+                "left",
+                "right",
+                "page",
+                "column",
+                "avoid-page",
+                "avoid-column"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "break-inside",
+            "section": "5.1",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "avoid",
+                "avoid-page",
+                "avoid-column"
+            ],
+            "initial": "auto"
+        },
+        {
+            "name": "column-span",
+            "section": "6.1",
+            "valueType": "enum",
+            "values": [
+                "none",
+                "all"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "column-fill",
+            "section": "7.1",
+            "valueType": "enum",
+            "values": [
+                "auto",
+                "balance",
+                "balance-all"
+            ],
+            "initial": "balance"
+        }
+    ]
+}
