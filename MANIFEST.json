@@ -422,6 +422,42 @@
         "path": "tests/css21/css21-property-ZIndex.html"
       }, 
       {
+        "url": "/tests/cssanimation/cssanimation-property-Animation.html", 
+        "path": "tests/cssanimation/cssanimation-property-Animation.html"
+      }, 
+      {
+        "url": "/tests/cssanimation/cssanimation-property-AnimationDelay.html", 
+        "path": "tests/cssanimation/cssanimation-property-AnimationDelay.html"
+      }, 
+      {
+        "url": "/tests/cssanimation/cssanimation-property-AnimationDirection.html", 
+        "path": "tests/cssanimation/cssanimation-property-AnimationDirection.html"
+      }, 
+      {
+        "url": "/tests/cssanimation/cssanimation-property-AnimationDuration.html", 
+        "path": "tests/cssanimation/cssanimation-property-AnimationDuration.html"
+      }, 
+      {
+        "url": "/tests/cssanimation/cssanimation-property-AnimationFillMode.html", 
+        "path": "tests/cssanimation/cssanimation-property-AnimationFillMode.html"
+      }, 
+      {
+        "url": "/tests/cssanimation/cssanimation-property-AnimationIterationCount.html", 
+        "path": "tests/cssanimation/cssanimation-property-AnimationIterationCount.html"
+      }, 
+      {
+        "url": "/tests/cssanimation/cssanimation-property-AnimationName.html", 
+        "path": "tests/cssanimation/cssanimation-property-AnimationName.html"
+      }, 
+      {
+        "url": "/tests/cssanimation/cssanimation-property-AnimationPlayState.html", 
+        "path": "tests/cssanimation/cssanimation-property-AnimationPlayState.html"
+      }, 
+      {
+        "url": "/tests/cssanimation/cssanimation-property-AnimationTimingFunction.html", 
+        "path": "tests/cssanimation/cssanimation-property-AnimationTimingFunction.html"
+      }, 
+      {
         "url": "/tests/cssbg/cssbg-property-Background.html", 
         "path": "tests/cssbg/cssbg-property-Background.html"
       }, 
@@ -784,6 +820,46 @@
       {
         "url": "/tests/cssomview/cssomview-interface-Window-partial-1.html", 
         "path": "tests/cssomview/cssomview-interface-Window-partial-1.html"
+      }, 
+      {
+        "url": "/tests/csstransform/csstransform-property-Perspective.html", 
+        "path": "tests/csstransform/csstransform-property-Perspective.html"
+      }, 
+      {
+        "url": "/tests/csstransform/csstransform-property-PerspectiveOrigin.html", 
+        "path": "tests/csstransform/csstransform-property-PerspectiveOrigin.html"
+      }, 
+      {
+        "url": "/tests/csstransform/csstransform-property-Transform.html", 
+        "path": "tests/csstransform/csstransform-property-Transform.html"
+      }, 
+      {
+        "url": "/tests/csstransform/csstransform-property-TransformOrigin.html", 
+        "path": "tests/csstransform/csstransform-property-TransformOrigin.html"
+      }, 
+      {
+        "url": "/tests/csstransform/csstransform-property-TransformStyle.html", 
+        "path": "tests/csstransform/csstransform-property-TransformStyle.html"
+      }, 
+      {
+        "url": "/tests/csstransition/csstransition-property-Transition.html", 
+        "path": "tests/csstransition/csstransition-property-Transition.html"
+      }, 
+      {
+        "url": "/tests/csstransition/csstransition-property-TransitionDelay.html", 
+        "path": "tests/csstransition/csstransition-property-TransitionDelay.html"
+      }, 
+      {
+        "url": "/tests/csstransition/csstransition-property-TransitionDuration.html", 
+        "path": "tests/csstransition/csstransition-property-TransitionDuration.html"
+      }, 
+      {
+        "url": "/tests/csstransition/csstransition-property-TransitionProperty.html", 
+        "path": "tests/csstransition/csstransition-property-TransitionProperty.html"
+      }, 
+      {
+        "url": "/tests/csstransition/csstransition-property-TransitionTimingFunction.html", 
+        "path": "tests/csstransition/csstransition-property-TransitionTimingFunction.html"
       }, 
       {
         "url": "/tests/custom/custom-interface-Document-partial-1.html", 
@@ -2664,5 +2740,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "638d342022feee0bfe4884d642fd6e1ac8b52fca"
+  "rev": "328b580b9bf0597f6a89259a64c967163c08b988"
 }
