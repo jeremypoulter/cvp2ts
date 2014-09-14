@@ -1,0 +1,151 @@
+{
+    "spec": "cssanimation",
+    "source": "http://dev.w3.org/csswg/css-animations/",
+    "levels": [ 2 ],
+    "local": "cssanimation.html",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction",
+    "helpers": [],
+    "properties": [
+        {
+            "name": "animation-name",
+            "section": "4.2",
+            "valueType": "enum",
+            "values": [
+                "none",
+                "foo",
+                "bar",
+                "baz",
+                "foo, bar"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "animation-duration",
+            "section": "4.3",
+            "valueType": "enum",
+            "values": [
+                "0s",
+                "1s",
+                "1.2s",
+                "0ms",
+                "1ms",
+                "1.2ms",
+                "1s, 2ms"
+            ],
+            "initial": "0s"
+        },
+        {
+            "name": "animation-timing-function",
+            "section": "4.4",
+            "valueType": "enum",
+            "values": [
+                "ease",
+                "linear",
+                "ease-in",
+                "ease-out",
+                "ease-in-out",
+                "step-start",
+                "step-end",
+                "steps(1, start)",
+                "steps(1, end)",
+                "steps(10, start)",
+                "steps(10, end)",
+                "cubic-bezier(0.6, 0.1, 0.1, 0.6)",
+                "ease-in, ease-out"
+            ],
+            "initial": "ease"
+        },
+        {
+            "name": "animation-iteration-count",
+            "section": "4.5",
+            "valueType": "enum",
+            "values": [
+                "infinite",
+                "0",
+                "1",
+                "10",
+                "1, 2"
+            ],
+            "initial": "1"
+        },
+        {
+            "name": "animation-direction",
+            "section": "4.6",
+            "valueType": "enum",
+            "values": [
+                "normal",
+                "reverse",
+                "alternate",
+                "alternate-reverse",
+                "reverse, alternate"
+            ],
+            "initial": "normal"
+        },
+        {
+            "name": "animation-play-state",
+            "section": "4.7",
+            "valueType": "enum",
+            "values": [
+                "running",
+                "paused",
+                "running, paused"
+            ],
+            "initial": "running"
+        },
+        {
+            "name": "animation-delay",
+            "section": "4.8",
+            "valueType": "enum",
+            "values": [
+                "0s",
+                "1s",
+                "1.2s",
+                "0ms",
+                "1ms",
+                "1.2ms",
+                "1s, 2ms"
+            ],
+            "initial": "0s"
+        },
+        {
+            "name": "animation-fill-mode",
+            "section": "4.9",
+            "valueType": "enum",
+            "values": [
+                "none",
+                "forwards",
+                "backwards",
+                "both",
+                "forwards, backwards"
+            ],
+            "initial": "none"
+        },
+        {
+            "name": "animation",
+            "section": "4.10",
+            "shorthand": [
+                "animation-duration",
+                "animation-timing-function",
+                "animation-delay",
+                "animation-iteration-count",
+                "animation-direction",
+                "animation-fill-mode",
+                "animation-play-state",
+                "animation-name"
+            ],
+            "valueType": "enum",
+            "values": [
+                [ "3s backwards", "3s ease 0s 1 normal backwards running none" ],
+                [ "3s none backwards", "3s ease 0s 1 normal backwards running none" ],
+                "1s ease-out 2s 3 reverse backwards paused id1",
+                [ "3s backwards, 2s none backwards", "3s ease 0s 1 normal backwards running none, 2s ease 0s normal backwards running none" ]
+            ],
+            "initial": "0s ease 0s 1 normal none running none",
+            "comments": {
+                "chrome": "incomplete or incorrect implementation",
+                "firefox": "incomplete or incorrect implementation"
+            }
+        }
+    ]
+}

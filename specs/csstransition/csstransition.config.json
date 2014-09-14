@@ -1,0 +1,94 @@
+{
+    "spec": "csstransition",
+    "source": "http://dev.w3.org/csswg/css-transitions/",
+    "levels": [ 2 ],
+    "local": "csstransition.html",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction",
+    "helpers": [],
+    "properties": [
+        {
+            "name": "transition-property",
+            "section": "2.1",
+            "valueType": "enum",
+            "values": [
+                "none",
+                "all",
+                "color",
+                "color, background-color"
+            ],
+            "initial": "all"
+        },
+        {
+            "name": "transition-duration",
+            "section": "2.2",
+            "valueType": "enum",
+            "values": [
+                "0s",
+                "1s",
+                "1.2s",
+                "0ms",
+                "1ms",
+                "1.2ms",
+                "1s, 2ms"
+            ],
+            "initial": "0s"
+        },
+        {
+            "name": "transition-timing-function",
+            "section": "2.3",
+            "valueType": "enum",
+            "values": [
+                "ease",
+                "linear",
+                "ease-in",
+                "ease-out",
+                "ease-in-out",
+                "step-start",
+                "step-end",
+                "steps(1, start)",
+                "steps(1, end)",
+                "steps(10, start)",
+                "steps(10, end)",
+                "cubic-bezier(0.6, 0.1, 0.1, 0.6)",
+                "ease-in, ease-out"
+            ],
+            "initial": "ease"
+        },
+        {
+            "name": "transition-delay",
+            "section": "2.4",
+            "valueType": "enum",
+            "values": [
+                "0s",
+                "1s",
+                "1.2s",
+                "0ms",
+                "1ms",
+                "1.2ms",
+                "1s, 2ms"
+            ],
+            "initial": "0s"
+        },
+        {
+            "name": "transition",
+            "section": "2.5",
+            "shorthand": [
+                "transition-property",
+                "transition-duration",
+                "transition-timing-function",
+                "transition-delay"
+            ],
+            "valueType": "enum",
+            "values": [
+                "none 0s ease 0s",
+                [ "background-color linear 1s", "background-color 1s linear 0s" ],
+                [ "opacity 2s, left 1s", "opacity 2s ease 0s, left 1s ease 0s" ]
+            ],
+            "initial": "none 0s ease 0s",
+            "comments": {
+                "firefox": "serializes initial value with extra final SPACE"
+            }
+        }
+    ]
+}
