@@ -622,6 +622,14 @@
         "path": "tests/cssbg/cssbg-property-BoxShadow.html"
       }, 
       {
+        "url": "/tests/csscolor/csscolor-property-Color.html", 
+        "path": "tests/csscolor/csscolor-property-Color.html"
+      }, 
+      {
+        "url": "/tests/csscolor/csscolor-property-Opacity.html", 
+        "path": "tests/csscolor/csscolor-property-Opacity.html"
+      }, 
+      {
         "url": "/tests/cssfontload/cssfontload-interface-FontFace.html", 
         "path": "tests/cssfontload/cssfontload-interface-FontFace.html"
       }, 
@@ -644,6 +652,162 @@
       {
         "url": "/tests/cssfontload/cssfontload-interface-FontFaceSource.html", 
         "path": "tests/cssfontload/cssfontload-interface-FontFaceSource.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-Font.html", 
+        "path": "tests/cssfonts/cssfonts-property-Font.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-FontFamily.html", 
+        "path": "tests/cssfonts/cssfonts-property-FontFamily.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-FontFeaturesSettings.html", 
+        "path": "tests/cssfonts/cssfonts-property-FontFeaturesSettings.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-FontKerning.html", 
+        "path": "tests/cssfonts/cssfonts-property-FontKerning.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-FontLanguageOverride.html", 
+        "path": "tests/cssfonts/cssfonts-property-FontLanguageOverride.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-FontSize.html", 
+        "path": "tests/cssfonts/cssfonts-property-FontSize.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-FontSizeAdjust.html", 
+        "path": "tests/cssfonts/cssfonts-property-FontSizeAdjust.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-FontStretch.html", 
+        "path": "tests/cssfonts/cssfonts-property-FontStretch.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-FontStyle.html", 
+        "path": "tests/cssfonts/cssfonts-property-FontStyle.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-FontSynthesis.html", 
+        "path": "tests/cssfonts/cssfonts-property-FontSynthesis.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-FontVariant.html", 
+        "path": "tests/cssfonts/cssfonts-property-FontVariant.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-FontVariantAlternates.html", 
+        "path": "tests/cssfonts/cssfonts-property-FontVariantAlternates.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-FontVariantCaps.html", 
+        "path": "tests/cssfonts/cssfonts-property-FontVariantCaps.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-FontVariantEastAsian.html", 
+        "path": "tests/cssfonts/cssfonts-property-FontVariantEastAsian.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-FontVariantLigatures.html", 
+        "path": "tests/cssfonts/cssfonts-property-FontVariantLigatures.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-FontVariantNumeric.html", 
+        "path": "tests/cssfonts/cssfonts-property-FontVariantNumeric.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-FontVariantPosition.html", 
+        "path": "tests/cssfonts/cssfonts-property-FontVariantPosition.html"
+      }, 
+      {
+        "url": "/tests/cssfonts/cssfonts-property-FontWeight.html", 
+        "path": "tests/cssfonts/cssfonts-property-FontWeight.html"
+      }, 
+      {
+        "url": "/tests/cssimage/cssimage-property-BackgroundImage.html", 
+        "path": "tests/cssimage/cssimage-property-BackgroundImage.html"
+      }, 
+      {
+        "url": "/tests/cssimage/cssimage-property-Content.html", 
+        "path": "tests/cssimage/cssimage-property-Content.html"
+      }, 
+      {
+        "url": "/tests/cssimage/cssimage-property-Cursor.html", 
+        "path": "tests/cssimage/cssimage-property-Cursor.html"
+      }, 
+      {
+        "url": "/tests/cssimage/cssimage-property-ImageOrientation.html", 
+        "path": "tests/cssimage/cssimage-property-ImageOrientation.html"
+      }, 
+      {
+        "url": "/tests/cssimage/cssimage-property-ImageResolution.html", 
+        "path": "tests/cssimage/cssimage-property-ImageResolution.html"
+      }, 
+      {
+        "url": "/tests/cssimage/cssimage-property-ListStyleImage.html", 
+        "path": "tests/cssimage/cssimage-property-ListStyleImage.html"
+      }, 
+      {
+        "url": "/tests/cssimage/cssimage-property-ObjectFit.html", 
+        "path": "tests/cssimage/cssimage-property-ObjectFit.html"
+      }, 
+      {
+        "url": "/tests/cssimage/cssimage-property-ObjectPosition.html", 
+        "path": "tests/cssimage/cssimage-property-ObjectPosition.html"
+      }, 
+      {
+        "url": "/tests/cssmulticol/cssmulticol-property-BreakAfter.html", 
+        "path": "tests/cssmulticol/cssmulticol-property-BreakAfter.html"
+      }, 
+      {
+        "url": "/tests/cssmulticol/cssmulticol-property-BreakBefore.html", 
+        "path": "tests/cssmulticol/cssmulticol-property-BreakBefore.html"
+      }, 
+      {
+        "url": "/tests/cssmulticol/cssmulticol-property-BreakInside.html", 
+        "path": "tests/cssmulticol/cssmulticol-property-BreakInside.html"
+      }, 
+      {
+        "url": "/tests/cssmulticol/cssmulticol-property-Column.html", 
+        "path": "tests/cssmulticol/cssmulticol-property-Column.html"
+      }, 
+      {
+        "url": "/tests/cssmulticol/cssmulticol-property-ColumnCount.html", 
+        "path": "tests/cssmulticol/cssmulticol-property-ColumnCount.html"
+      }, 
+      {
+        "url": "/tests/cssmulticol/cssmulticol-property-ColumnFill.html", 
+        "path": "tests/cssmulticol/cssmulticol-property-ColumnFill.html"
+      }, 
+      {
+        "url": "/tests/cssmulticol/cssmulticol-property-ColumnGap.html", 
+        "path": "tests/cssmulticol/cssmulticol-property-ColumnGap.html"
+      }, 
+      {
+        "url": "/tests/cssmulticol/cssmulticol-property-ColumnRule.html", 
+        "path": "tests/cssmulticol/cssmulticol-property-ColumnRule.html"
+      }, 
+      {
+        "url": "/tests/cssmulticol/cssmulticol-property-ColumnRuleColor.html", 
+        "path": "tests/cssmulticol/cssmulticol-property-ColumnRuleColor.html"
+      }, 
+      {
+        "url": "/tests/cssmulticol/cssmulticol-property-ColumnRuleStyle.html", 
+        "path": "tests/cssmulticol/cssmulticol-property-ColumnRuleStyle.html"
+      }, 
+      {
+        "url": "/tests/cssmulticol/cssmulticol-property-ColumnRuleWidth.html", 
+        "path": "tests/cssmulticol/cssmulticol-property-ColumnRuleWidth.html"
+      }, 
+      {
+        "url": "/tests/cssmulticol/cssmulticol-property-ColumnSpan.html", 
+        "path": "tests/cssmulticol/cssmulticol-property-ColumnSpan.html"
+      }, 
+      {
+        "url": "/tests/cssmulticol/cssmulticol-property-ColumnWidth.html", 
+        "path": "tests/cssmulticol/cssmulticol-property-ColumnWidth.html"
       }, 
       {
         "url": "/tests/cssom/cssom-interface-CSS-partial-1.html", 
@@ -822,6 +986,70 @@
         "path": "tests/cssomview/cssomview-interface-Window-partial-1.html"
       }, 
       {
+        "url": "/tests/csstext/csstext-property-HangingPunctuation.html", 
+        "path": "tests/csstext/csstext-property-HangingPunctuation.html"
+      }, 
+      {
+        "url": "/tests/csstext/csstext-property-Hyphens.html", 
+        "path": "tests/csstext/csstext-property-Hyphens.html"
+      }, 
+      {
+        "url": "/tests/csstext/csstext-property-LetterSpacing.html", 
+        "path": "tests/csstext/csstext-property-LetterSpacing.html"
+      }, 
+      {
+        "url": "/tests/csstext/csstext-property-LineBreak.html", 
+        "path": "tests/csstext/csstext-property-LineBreak.html"
+      }, 
+      {
+        "url": "/tests/csstext/csstext-property-OverflowWrap.html", 
+        "path": "tests/csstext/csstext-property-OverflowWrap.html"
+      }, 
+      {
+        "url": "/tests/csstext/csstext-property-TabSize.html", 
+        "path": "tests/csstext/csstext-property-TabSize.html"
+      }, 
+      {
+        "url": "/tests/csstext/csstext-property-TextAlign.html", 
+        "path": "tests/csstext/csstext-property-TextAlign.html"
+      }, 
+      {
+        "url": "/tests/csstext/csstext-property-TextAlignAll.html", 
+        "path": "tests/csstext/csstext-property-TextAlignAll.html"
+      }, 
+      {
+        "url": "/tests/csstext/csstext-property-TextAlignLast.html", 
+        "path": "tests/csstext/csstext-property-TextAlignLast.html"
+      }, 
+      {
+        "url": "/tests/csstext/csstext-property-TextIndent.html", 
+        "path": "tests/csstext/csstext-property-TextIndent.html"
+      }, 
+      {
+        "url": "/tests/csstext/csstext-property-TextJustify.html", 
+        "path": "tests/csstext/csstext-property-TextJustify.html"
+      }, 
+      {
+        "url": "/tests/csstext/csstext-property-TextTransform.html", 
+        "path": "tests/csstext/csstext-property-TextTransform.html"
+      }, 
+      {
+        "url": "/tests/csstext/csstext-property-WhiteSpace.html", 
+        "path": "tests/csstext/csstext-property-WhiteSpace.html"
+      }, 
+      {
+        "url": "/tests/csstext/csstext-property-WordBreak.html", 
+        "path": "tests/csstext/csstext-property-WordBreak.html"
+      }, 
+      {
+        "url": "/tests/csstext/csstext-property-WordSpacing.html", 
+        "path": "tests/csstext/csstext-property-WordSpacing.html"
+      }, 
+      {
+        "url": "/tests/csstext/csstext-property-WordWrap.html", 
+        "path": "tests/csstext/csstext-property-WordWrap.html"
+      }, 
+      {
         "url": "/tests/csstransform/csstransform-property-Perspective.html", 
         "path": "tests/csstransform/csstransform-property-Perspective.html"
       }, 
@@ -860,6 +1088,94 @@
       {
         "url": "/tests/csstransition/csstransition-property-TransitionTimingFunction.html", 
         "path": "tests/csstransition/csstransition-property-TransitionTimingFunction.html"
+      }, 
+      {
+        "url": "/tests/cssui/cssui-property-BoxSizing.html", 
+        "path": "tests/cssui/cssui-property-BoxSizing.html"
+      }, 
+      {
+        "url": "/tests/cssui/cssui-property-Content.html", 
+        "path": "tests/cssui/cssui-property-Content.html"
+      }, 
+      {
+        "url": "/tests/cssui/cssui-property-Cursor.html", 
+        "path": "tests/cssui/cssui-property-Cursor.html"
+      }, 
+      {
+        "url": "/tests/cssui/cssui-property-Icon.html", 
+        "path": "tests/cssui/cssui-property-Icon.html"
+      }, 
+      {
+        "url": "/tests/cssui/cssui-property-ImeMode.html", 
+        "path": "tests/cssui/cssui-property-ImeMode.html"
+      }, 
+      {
+        "url": "/tests/cssui/cssui-property-NavDown.html", 
+        "path": "tests/cssui/cssui-property-NavDown.html"
+      }, 
+      {
+        "url": "/tests/cssui/cssui-property-NavIndex.html", 
+        "path": "tests/cssui/cssui-property-NavIndex.html"
+      }, 
+      {
+        "url": "/tests/cssui/cssui-property-NavLeft.html", 
+        "path": "tests/cssui/cssui-property-NavLeft.html"
+      }, 
+      {
+        "url": "/tests/cssui/cssui-property-NavRight.html", 
+        "path": "tests/cssui/cssui-property-NavRight.html"
+      }, 
+      {
+        "url": "/tests/cssui/cssui-property-NavUp.html", 
+        "path": "tests/cssui/cssui-property-NavUp.html"
+      }, 
+      {
+        "url": "/tests/cssui/cssui-property-Outline.html", 
+        "path": "tests/cssui/cssui-property-Outline.html"
+      }, 
+      {
+        "url": "/tests/cssui/cssui-property-OutlineColor.html", 
+        "path": "tests/cssui/cssui-property-OutlineColor.html"
+      }, 
+      {
+        "url": "/tests/cssui/cssui-property-OutlineOffset.html", 
+        "path": "tests/cssui/cssui-property-OutlineOffset.html"
+      }, 
+      {
+        "url": "/tests/cssui/cssui-property-OutlineStyle.html", 
+        "path": "tests/cssui/cssui-property-OutlineStyle.html"
+      }, 
+      {
+        "url": "/tests/cssui/cssui-property-OutlineWidth.html", 
+        "path": "tests/cssui/cssui-property-OutlineWidth.html"
+      }, 
+      {
+        "url": "/tests/cssui/cssui-property-Resize.html", 
+        "path": "tests/cssui/cssui-property-Resize.html"
+      }, 
+      {
+        "url": "/tests/cssui/cssui-property-TextOverflow.html", 
+        "path": "tests/cssui/cssui-property-TextOverflow.html"
+      }, 
+      {
+        "url": "/tests/csswm/csswm-property-Direction.html", 
+        "path": "tests/csswm/csswm-property-Direction.html"
+      }, 
+      {
+        "url": "/tests/csswm/csswm-property-TextCombineUpright.html", 
+        "path": "tests/csswm/csswm-property-TextCombineUpright.html"
+      }, 
+      {
+        "url": "/tests/csswm/csswm-property-TextOrientation.html", 
+        "path": "tests/csswm/csswm-property-TextOrientation.html"
+      }, 
+      {
+        "url": "/tests/csswm/csswm-property-UnicodeBidi.html", 
+        "path": "tests/csswm/csswm-property-UnicodeBidi.html"
+      }, 
+      {
+        "url": "/tests/csswm/csswm-property-WritingMode.html", 
+        "path": "tests/csswm/csswm-property-WritingMode.html"
       }, 
       {
         "url": "/tests/custom/custom-interface-Document-partial-1.html", 
@@ -2740,5 +3056,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "328b580b9bf0597f6a89259a64c967163c08b988"
+  "rev": "1a02641557dc3128c331a705d89ac3d8f41780b0"
 }
