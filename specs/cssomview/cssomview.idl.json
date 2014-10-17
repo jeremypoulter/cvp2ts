@@ -36,6 +36,41 @@
     "extAttrs": []
   },
   {
+    "type": "dictionary",
+    "name": "ScrollToOptions",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "left",
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "double"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "top",
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "double"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "ScrollOptions",
+    "extAttrs": []
+  },
+  {
     "type": "interface",
     "name": "Window",
     "partial": true,
@@ -420,6 +455,42 @@
         "name": "scroll",
         "arguments": [
           {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ScrollToOptions"
+            },
+            "name": "options"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "scroll",
+        "arguments": [
+          {
             "optional": false,
             "variadic": false,
             "extAttrs": [],
@@ -446,7 +517,29 @@
               "idlType": "unrestricted double"
             },
             "name": "y"
-          },
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "scrollTo",
+        "arguments": [
           {
             "optional": true,
             "variadic": false,
@@ -457,7 +550,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "ScrollOptions"
+              "idlType": "ScrollToOptions"
             },
             "name": "options"
           }
@@ -510,7 +603,29 @@
               "idlType": "unrestricted double"
             },
             "name": "y"
-          },
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "scrollBy",
+        "arguments": [
           {
             "optional": true,
             "variadic": false,
@@ -521,7 +636,7 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "ScrollOptions"
+              "idlType": "ScrollToOptions"
             },
             "name": "options"
           }
@@ -574,20 +689,6 @@
               "idlType": "unrestricted double"
             },
             "name": "y"
-          },
-          {
-            "optional": true,
-            "variadic": false,
-            "extAttrs": [],
-            "idlType": {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "ScrollOptions"
-            },
-            "name": "options"
           }
         ],
         "extAttrs": []
@@ -1273,44 +1374,35 @@
     "extAttrs": []
   },
   {
-    "type": "dictionary",
-    "name": "ScrollOptionsHorizontal",
-    "partial": false,
-    "members": [
-      {
-        "type": "field",
-        "name": "x",
-        "idlType": {
-          "sequence": false,
-          "generic": null,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "double"
-        },
-        "extAttrs": []
-      }
+    "type": "enum",
+    "name": "ScrollLogicalPosition",
+    "values": [
+      "start",
+      "end"
     ],
-    "inheritance": "ScrollOptions",
     "extAttrs": []
   },
   {
     "type": "dictionary",
-    "name": "ScrollOptionsVertical",
+    "name": "ScrollIntoViewOptions",
     "partial": false,
     "members": [
       {
         "type": "field",
-        "name": "y",
+        "name": "block",
         "idlType": {
           "sequence": false,
           "generic": null,
           "nullable": false,
           "array": false,
           "union": false,
-          "idlType": "double"
+          "idlType": "ScrollLogicalPosition"
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "default": {
+          "type": "string",
+          "value": "start"
+        }
       }
     ],
     "inheritance": "ScrollOptions",
@@ -1412,11 +1504,50 @@
               "generic": null,
               "nullable": false,
               "array": false,
-              "union": false,
-              "idlType": "boolean"
+              "union": true,
+              "idlType": [
+                {
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "array": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                {
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "array": false,
+                  "union": false,
+                  "idlType": "object"
+                }
+              ]
             },
-            "name": "top"
-          },
+            "name": "arg"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "scroll",
+        "arguments": [
           {
             "optional": true,
             "variadic": false,
@@ -1427,9 +1558,231 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "ScrollOptions"
+              "idlType": "ScrollToOptions"
             },
             "name": "options"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "scroll",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "unrestricted double"
+            },
+            "name": "x"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "unrestricted double"
+            },
+            "name": "y"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "scrollTo",
+        "arguments": [
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ScrollToOptions"
+            },
+            "name": "options"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "scrollTo",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "unrestricted double"
+            },
+            "name": "x"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "unrestricted double"
+            },
+            "name": "y"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "scrollBy",
+        "arguments": [
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ScrollToOptions"
+            },
+            "name": "options"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "scrollBy",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "unrestricted double"
+            },
+            "name": "x"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "unrestricted double"
+            },
+            "name": "y"
           }
         ],
         "extAttrs": []
@@ -1445,25 +1798,8 @@
           "generic": null,
           "nullable": false,
           "array": false,
-          "union": true,
-          "idlType": [
-            {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "unrestricted double"
-            },
-            {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "ScrollOptionsVertical"
-            }
-          ]
+          "union": false,
+          "idlType": "unrestricted double"
         },
         "name": "scrollTop",
         "extAttrs": []
@@ -1479,25 +1815,8 @@
           "generic": null,
           "nullable": false,
           "array": false,
-          "union": true,
-          "idlType": [
-            {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "unrestricted double"
-            },
-            {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "ScrollOptionsHorizontal"
-            }
-          ]
+          "union": false,
+          "idlType": "unrestricted double"
         },
         "name": "scrollLeft",
         "extAttrs": []

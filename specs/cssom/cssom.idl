@@ -119,7 +119,7 @@ interface CSSStyleDeclaration {
   void setPropertyPriority(DOMString property, [TreatNullAs=EmptyString] DOMString priority);
   DOMString removeProperty(DOMString property);
   readonly attribute CSSRule? parentRule;
-           attribute DOMString cssFloat;
+  [TreatNullAs=EmptyString] attribute DOMString cssFloat;
 };
 
 [NoInterfaceObject]

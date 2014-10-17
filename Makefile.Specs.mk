@@ -25,8 +25,8 @@
 
 # specifications
 
-SPECS		= $(SPECS_L1) $(SPECS_L2)
-
-SPECS_L1	= canvas2d cssfontload cssom cssomview custom dom3events dom4 domps ecmascript51 encoding file fullscreen html5 selectors1 sse svg12tiny touchevents typedarray url webgl webmessage websocket webstorage webworkers xhr
-
-SPECS_L2	= css21 cssanimation cssbg csscolor cssfonts cssimage cssmulticol csstext csstransform csstransition cssui csswm
+SPECS           = $(SPECS_L1) $(SPECS_L2) $(SPECS_L3) $(SPECS_L4)
+SPECS_L1        = canvas2d cssfontload cssom cssomview custom dom3events dom4 domps ecmascript51 encoding file fullscreen html5 selectors1 sse svg12tiny touchevents typedarray url webgl webmessage websocket webstorage webworkers xhr
+SPECS_L2        = css21 cssanimation cssbg csscolor cssfonts cssimage cssmulticol csstext csstransform csstransition cssui csswm
+SPECS_L3        =
+SPECS_L4        =

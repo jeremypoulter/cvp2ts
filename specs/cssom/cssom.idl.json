@@ -1837,7 +1837,16 @@
           "idlType": "DOMString"
         },
         "name": "cssFloat",
-        "extAttrs": []
+        "extAttrs": [
+          {
+            "name": "TreatNullAs",
+            "arguments": null,
+            "rhs": {
+              "type": "identifier",
+              "value": "EmptyString"
+            }
+          }
+        ]
       }
     ],
     "inheritance": null,

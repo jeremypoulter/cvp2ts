@@ -56,7 +56,7 @@
 </p>
   <h1 class="p-name no-ref" id=title>CSS Animations Level 1</h1>
   <h2 class="no-num no-toc no-ref heading settled heading" id=subtitle><span class=content>Editor’s Draft,
-    <span class=dt-updated><span class=value-title title=20140910>10 September 2014</span></span></span></h2>
+    <span class=dt-updated><span class=value-title title=20141016>16 October 2014</span></span></span></h2>
   <div data-fill-with=spec-metadata><dl><dt>This version:<dd><a class=u-url href=http://dev.w3.org/csswg/css3-animations/>http://dev.w3.org/csswg/css3-animations/</a><dt>Latest version:<dd><a href=http://www.w3.org/TR/css3-animations/>http://www.w3.org/TR/css3-animations/</a><dt>Editor’s Draft:<dd><a href=http://dev.w3.org/csswg/css3-animations/>http://dev.w3.org/csswg/css3-animations/</a><dt>Previous Versions:<dd><a href=http://www.w3.org/TR/2013/WD-css3-animations-20130219/ rel=previous>http://www.w3.org/TR/2013/WD-css3-animations-20130219/</a><dd><a href=http://www.w3.org/TR/2012/WD-css3-animations-20120403/ rel=previous>http://www.w3.org/TR/2012/WD-css3-animations-20120403/</a>
     <dt>Feedback:</dt>
         <dd><a href="mailto:www-style@w3.org?subject=%5Bcss-animations%5D%20feedback">www-style@w3.org</a>
@@ -162,8 +162,7 @@ on screen, on paper, in speech, etc.</p>
 		<li><a href=#normative><span class=secno></span> Normative References</a>
 		<li><a href=#informative><span class=secno></span> Informative References</a></ul>
 	<li><a href=#index><span class=secno></span> Index</a>
-	<li><a href=#property-index><span class=secno></span> Property index</a>
-	<li><a href=#issues-index><span class=secno></span>Issues Index</a></ul></div>
+	<li><a href=#property-index><span class=secno></span> Property index</a></ul></div>
 
 
 
@@ -228,17 +227,9 @@ Animations</span><a class=self-link href=#animations></a></h2>
 	the animation, before the animation delay has expired, and after the end of
 	the animation.
 
-	</p><figure>
-		<img alt="" src=./sandwich.png>
-		<figcaption>Computation of animated property values</figcaption>
-	</figure>
-
-<p>	The diagram above shows how property values are computed. The intrinsic
-	style is shown at the top of the diagram. The computed value is derived
-	from intrinsic style at the times when an animation is not running and
-	also when an animation is delayed (see below for specification of animation
-	delay). During an animation, the computed style is derived from the
-	animated value.
+<p>	While running, the animation computes the value of those properties
+	it animates. Other values may take precedence over the animated value
+	according to the CSS cascade (<a data-biblio-type=normative data-link-type=biblio href=#css3cascade title=css3cascade>[CSS3CASCADE]</a>). 
 
 <p>	The start time of an animation is the time at which the style applying
 	the animation and the corresponding @keyframes rule are both resolved.
@@ -257,9 +248,13 @@ Animations</span><a class=self-link href=#animations></a></h2>
 	identifiers in the computed value of the <a class=property data-link-type=propdesc href=#propdef-animation-name title=animation-name>animation-name</a> property and the
 	animation uses a valid @keyframes rule. Once an
 	animation has started it continues until it ends or the <a class=property data-link-type=propdesc href=#propdef-animation-name title=animation-name>animation-name</a> is
-	removed. The values used for the keyframes and animation properties are
-	snapshotted at the time the animation starts. Changing them during the
-	execution of the animation has no effect. Note also that changing the value
+	removed. Changing the values of the animation properties while the animation
+	is running has no effect on the amount of time elapsed since the animation
+	started running i.e. once the animation is running, updates to <a class=property data-link-type=propdesc href=#propdef-animation-delay title=animation-delay>animation-delay</a>
+	have no effect. The remainder of the animation runs according to the new
+	animation property values.
+
+<p>	Note also that changing the value
 	of <a class=property data-link-type=propdesc href=#propdef-animation-name title=animation-name>animation-name</a> does not necessarily restart an animation (e.g., if a list
 	of animations are applied and one is removed from the list, only that animation
 	will stop; The other animations will continue). In order to restart an animation,
@@ -390,9 +385,6 @@ Keyframes</span><a class=self-link href=#keyframes></a></h2>
 }
 </pre>
 	</div>
-
-<p class=note>	Note: Since empty @keyframes rules are valid, they may hide the keyframes of those
-	preceding animation definitions with a matching name. 
 
 <p>	To determine the set of keyframes, all of the values in the selectors are sorted in increasing order
 	by time. The rules within the @keyframes rule then cascade; the properties of a keyframe may thus derive
@@ -550,10 +542,15 @@ The <a class=property data-link-type=propdesc href=#propdef-animation-duration t
 <p>			If the <a class="production css-code" data-link-type=type href=http://dev.w3.org/csswg/css-values-3/#time-value title="<time>">&lt;time&gt;</a> is <span class=css data-link-type=maybe title=0s>0s</span>, like the initial value,
 			the keyframes of the animation have no effect,
 			but the animation itself still occurs instantaneously.
-			That is, <a class=property data-link-type=propdesc href=#propdef-animation-fill-mode title=animation-fill-mode>animation-fill-mode</a> applies as normal,
-			filling backwards or forwards as appropriate.
-
-			<p class=issue id=issue-1275c8d8><a class=self-link href=#issue-1275c8d8></a>Do animation events fire when the duration is 0s?
+			Specifically, start and end events are fired; if 
+			<a class=property data-link-type=propdesc href=#propdef-animation-fill-mode title=animation-fill-mode>animation-fill-mode</a> is set to <a class=css data-link-type=maybe href=#valuedef-backwards title=backwards>backwards</a> or 
+			<a class=css data-link-type=maybe href=#valuedef-both title=both>both</a>, the first frame of the animation, as defined by 
+			<a class=property data-link-type=propdesc href=#propdef-animation-direction title=animation-direction>animation-direction</a>, will be displayed during the 
+			<a class=property data-link-type=propdesc href=#propdef-animation-delay title=animation-delay>animation-delay</a>. Then the last frame of the animation, 
+			as defined by <a class=property data-link-type=propdesc href=#propdef-animation-direction title=animation-direction>animation-direction</a>, will be displayed if 
+			<a class=property data-link-type=propdesc href=#propdef-animation-fill-mode title=animation-fill-mode>animation-fill-mode</a> is set to <a class=css data-link-type=maybe href=#valuedef-forwards title=forwards>forwards</a> or <a class=css data-link-type=maybe href=#valuedef-both title=both>both</a>. 
+			If <a class=property data-link-type=propdesc href=#propdef-animation-fill-mode title=animation-fill-mode>animation-fill-mode</a> is set to <a class=css data-link-for=animation-fill-mode data-link-type=maybe href=#valuedef-none title=none>none</a> 
+			then the animation has no visible effect. 
 	</dl>
 
 <h3 class="heading settled heading" data-level=4.4 id=animation-timing-function><span class=secno>4.4 </span><span class=content>
@@ -584,9 +581,13 @@ The <a class=property data-link-type=propdesc href=#propdef-animation-iteration-
 
 <p>	The <a class=property data-link-type=propdesc href=#propdef-animation-iteration-count title=animation-iteration-count>animation-iteration-count</a> property specifies the number of times an animation cycle
 	is played. The initial value is <span class=css data-link-type=maybe title=1>1</span>, meaning the animation will play from beginning to end
-	once.  This property is often used in conjunction with an
+	once. This property is often used in conjunction with an
 	<a class=property data-link-type=propdesc href=#propdef-animation-direction title=animation-direction>animation-direction</a> value of <a class=css data-link-type=maybe href=#valuedef-alternate title=alternate>alternate</a>, which will cause the animation to play in
 	reverse on alternate cycles.
+
+<p>	The time window during which the animation is active 
+	(<code>duration</code> x <code>iteration-count</code>)
+	is known as the <dfn data-dfn-type=dfn data-noexport="" id=active-duration>active duration<a class=self-link href=#active-duration></a></dfn>. 
 
 <table class="definition propdef"><tr><th>Name:<td><dfn class=css-code data-dfn-type=property data-export="" id=propdef-animation-iteration-count>animation-iteration-count<a class=self-link href=#propdef-animation-iteration-count></a></dfn><tr><th>Value:<td class=prod><a class="production css-code" data-link-type=type href=#typedef-single-animation-iteration-count title="<single-animation-iteration-count>">&lt;single-animation-iteration-count&gt;</a>#<tr><th>Initial:<td>1<tr><th>Applies to:<td>all elements, ::before and ::after pseudo-elements<tr><th>Inherited:<td>no<tr><th>Media:<td>interactive<tr><th>Computed value:<td>As specified<tr><th>Canonical order:<td>per grammar<tr><th>Percentages:<td>N/A<tr><th>Animatable:<td>no</table>
 <p>	<dfn class=css-code data-dfn-type=type data-export="" id=typedef-single-animation-iteration-count>&lt;single-animation-iteration-count&gt;<a class=self-link href=#typedef-single-animation-iteration-count></a></dfn> = infinite | <a class="production css-code" data-link-type=type href=http://dev.w3.org/csswg/css-values-3/#number-value title="<number>">&lt;number&gt;</a>
@@ -594,7 +595,7 @@ The <a class=property data-link-type=propdesc href=#propdef-animation-iteration-
 	<dl data-dfn-for=animation-iteration-count data-dfn-type=value>
 		<dt><dfn class=css-code data-dfn-for=animation-iteration-count data-dfn-type=value data-export="" id=valuedef-infinite>infinite<a class=self-link href=#valuedef-infinite></a></dfn>
 		<dd>
-			The animation will repeat forever.
+			The animation will repeat forever. 
 
 		<dt><dfn class=css-code data-dfn-for=animation-iteration-count data-dfn-type=value data-export="" id=valuedef-number><a class="production css-code" data-link-type=type href=http://dev.w3.org/csswg/css-values-3/#number-value title="<number>">&lt;number&gt;</a><a class=self-link href=#valuedef-number></a></dfn>
 		<dd>
@@ -605,18 +606,10 @@ The <a class=property data-link-type=propdesc href=#propdef-animation-iteration-
 
 			<p>A value of <span class=css data-link-type=maybe title=0>0</span> is valid and, similar to an <a class=property data-link-type=propdesc href=#propdef-animation-duration title=animation-duration>animation-duration</a> 
 			of <span class=css data-link-type=maybe title=0s>0s</span>, causes the animation to occur instantaneously. 
-			Specifically, if <a class=property data-link-type=propdesc href=#propdef-animation-fill-mode title=animation-fill-mode>animation-fill-mode</a> is set to <a class=css data-link-type=maybe href=#valuedef-backwards title=backwards>backwards</a> or 
-			<a class=css data-link-type=maybe href=#valuedef-both title=both>both</a>, the first frame of the animation, as defined by 
-			<a class=property data-link-type=propdesc href=#propdef-animation-direction title=animation-direction>animation-direction</a>, will be displayed during the 
-			<a class=property data-link-type=propdesc href=#propdef-animation-delay title=animation-delay>animation-delay</a>. Then the last frame of the animation, 
-			as defined by <a class=property data-link-type=propdesc href=#propdef-animation-direction title=animation-direction>animation-direction</a>, will be displayed if 
-			<a class=property data-link-type=propdesc href=#propdef-animation-fill-mode title=animation-fill-mode>animation-fill-mode</a> is set to <a class=css data-link-type=maybe href=#valuedef-forwards title=forwards>forwards</a> or <a class=css data-link-type=maybe href=#valuedef-both title=both>both</a>. 
-			If <a class=property data-link-type=propdesc href=#propdef-animation-fill-mode title=animation-fill-mode>animation-fill-mode</a> is set to <a class=css data-link-for=animation-fill-mode data-link-type=maybe href=#valuedef-none title=none>none</a> 
-			then the animation has no effect. 
-
-			<p class=issue id=issue-ef1c522a><a class=self-link href=#issue-ef1c522a></a>If similar to animation-duration:0s, also relates to whether
-			animation events fire?
 	</dl>
+
+<p>	If the animation has a duration of <span class=css data-link-type=maybe title=0s>0s</span>, it will occur instantaneously for any
+	valid value of <a class=property data-link-type=propdesc href=#propdef-animation-iteration-count title=animation-iteration-count>animation-iteration-count</a>, including <a class=css data-link-type=maybe href=#valuedef-infinite title=infinite>infinite</a>.
 
 
 <h3 class="heading settled heading" data-level=4.6 id=animation-direction><span class=secno>4.6 </span><span class=content>
@@ -703,7 +696,8 @@ The <a class=property data-link-type=propdesc href=#propdef-animation-delay titl
 			Similar to a delay of <span class=css data-link-type=maybe title=0s>0s</span>, it means that the animation executes immediately,
 			but is automatically progressed by the absolute value of the delay,
 			as if the animation had started the specified time in the past,
-			and so it appears to start partway through its play-cycle already.
+			and so it appears to start partway through its 
+			<a href=#animation-iteration-count>active duration</a>.
 			If an animation’s keyframes have an implied starting value,
 			the values are taken from the time the animation starts,
 			not some time in the past.
@@ -718,7 +712,8 @@ The <a class=property data-link-type=propdesc href=#propdef-animation-fill-mode 
 	element) and the time it begins execution (which is determined by the <a class=property data-link-type=propdesc href=#propdef-animation-delay title=animation-delay>animation-delay</a>
 	property). Also, by default an animation does not affect property values after the
 	animation ends (determined by the <a class=property data-link-type=propdesc href=#propdef-animation-duration title=animation-duration>animation-duration</a> and <a class=property data-link-type=propdesc href=#propdef-animation-iteration-count title=animation-iteration-count>animation-iteration-count</a> properties).
-	The <a class=property data-link-type=propdesc href=#propdef-animation-fill-mode title=animation-fill-mode>animation-fill-mode</a> property can override this behavior.
+	The <a class=property data-link-type=propdesc href=#propdef-animation-fill-mode title=animation-fill-mode>animation-fill-mode</a> property can override this behavior. Dynamic updates to the property will 
+	be reflected by property values as needed, whether during the animation delay or after the animation ends.
 
 <table class="definition propdef"><tr><th>Name:<td><dfn class=css-code data-dfn-type=property data-export="" id=propdef-animation-fill-mode>animation-fill-mode<a class=self-link href=#propdef-animation-fill-mode></a></dfn><tr><th>Value:<td class=prod><a class="production css-code" data-link-type=type href=#typedef-single-animation-fill-mode title="<single-animation-fill-mode>">&lt;single-animation-fill-mode&gt;</a>#<tr><th>Initial:<td>none<tr><th>Applies to:<td>all elements, ::before and ::after pseudo-elements<tr><th>Inherited:<td>no<tr><th>Media:<td>interactive<tr><th>Computed value:<td>As specified<tr><th>Canonical order:<td>per grammar<tr><th>Percentages:<td>N/A<tr><th>Animatable:<td>no</table>
 <p>	<dfn class=css-code data-dfn-type=type data-export="" id=typedef-single-animation-fill-mode>&lt;single-animation-fill-mode&gt;<a class=self-link href=#typedef-single-animation-fill-mode></a></dfn> = none | forwards | backwards | both
@@ -730,37 +725,20 @@ The <a class=property data-link-type=propdesc href=#propdef-animation-fill-mode 
 
 		<dt><dfn class=css-code data-dfn-for=animation-fill-mode data-dfn-type=value data-export="" id=valuedef-forwards>forwards<a class=self-link href=#valuedef-forwards></a></dfn>
 		<dd>
-			After the animation is done executing
-			(has played the number of times specified by its <a class=property data-link-type=propdesc href=#propdef-animation-iteration-count title=animation-iteration-count>animation-iteration-count</a> value)
-			it continues to apply the values that it ended its last complete iteration with.
-			This will be the values specified or implied for either its <span class=css data-link-type=maybe title=100%>100%</span> or <span class=css data-link-type=maybe title=0%>0%</span> keyframe,
-			depending on the direction that the last complete iteration was executing in
-			(per <a class=property data-link-type=propdesc href=#propdef-animation-direction title=animation-direction>animation-direction</a>).
-			If the animation didn’t complete an entire iteration
-			(if the iteration count was <span class=css data-link-type=maybe title=0>0</span> or a value less than 1)
-			the values specified or implied for its <span class=css data-link-type=maybe title=0%>0%</span> keyframe are used.
-
-<p class=note>			Note: If <a class=property data-link-type=propdesc href=#propdef-animation-iteration-count title=animation-iteration-count>animation-iteration-count</a> is a non-integer value,
-			the animation will stop executing partway through its animation cycle,
-			but a forwards fill will still apply the values of the <span class=css data-link-type=maybe title=100%>100%</span> keyframe,
-			not whatever values were being applied at the time the animation stopped executing.
-
-<p>			Issue: Why does it ignore the progress made by a non-integer iteration count?
-
-<p>			Issue: What happens with <a class=css data-link-type=propdesc href=#propdef-animation-duration title=animation-duration>animation-duration: 0; animation-iteration-count: infinite;</a>?
-			The animation is instantaneous,
-			but there is no "last complete iteration".
-			In particular, you can’t tell whether to use the 0% or 100% keyframe.
+			After the animation ends (as determined by its <a class=property data-link-type=propdesc href=#propdef-animation-iteration-count title=animation-iteration-count>animation-iteration-count</a>), the animation 
+			will apply the property values for the time the animation ended. When <a class=property data-link-type=propdesc href=#propdef-animation-iteration-count title=animation-iteration-count>animation-iteration-count</a> 
+			is an integer greater than zero, the values applied will be those for the end of the last 
+			completed iteration of the animation (rather than the values for the start of the iteration 
+			that would be next). When <a class=property data-link-type=propdesc href=#propdef-animation-iteration-count title=animation-iteration-count>animation-iteration-count</a> is zero, the values applied will be 
+			those that would start the first iteration (just as when <a class=property data-link-type=propdesc href=#propdef-animation-fill-mode title=animation-fill-mode>animation-fill-mode</a> is <a class=css data-link-type=maybe href=#valuedef-backwards title=backwards>backwards</a>).
 
 		<dt><dfn class=css-code data-dfn-for=animation-fill-mode data-dfn-type=value data-export="" id=valuedef-backwards>backwards<a class=self-link href=#valuedef-backwards></a></dfn>
 		<dd>
-			Before the animation has begun executing
-			(during the period specified by <a class=property data-link-type=propdesc href=#propdef-animation-delay title=animation-delay>animation-delay</a>),
-			the animation applies the values that it will start the first iteration with.
-			If the <a class=property data-link-type=propdesc href=#propdef-animation-direction title=animation-direction>animation-direction</a> is <a class=css data-link-type=maybe href=#valuedef-normal title=normal>normal</a> or <a class=css data-link-type=maybe href=#valuedef-alternate title=alternate>alternate</a>,
-			the values specified or implied for its <span class=css data-link-type=maybe title=0%>0%</span> keyframe are used;
-			if the <a class=property data-link-type=propdesc href=#propdef-animation-direction title=animation-direction>animation-direction</a> is <a class=css data-link-type=maybe href=#valuedef-reverse title=reverse>reverse</a> or <a class=css data-link-type=maybe href=#valuedef-alternate-reverse title=alternate-reverse>alternate-reverse</a>,
-			the values specified or implied for its <span class=css data-link-type=maybe title=100%>100%</span> keyframe are used.
+			During the period defined by <a class=property data-link-type=propdesc href=#propdef-animation-delay title=animation-delay>animation-delay</a>, the animation will apply the property values 
+			defined in the keyframe that will start the first iteration of the animation.
+			These are either the values of the <span class=css data-link-type=maybe title=from>from</span> keyframe (when <a class=property data-link-type=propdesc href=#propdef-animation-direction title=animation-direction>animation-direction</a> is <a class=css data-link-type=maybe href=#valuedef-normal title=normal>normal</a> 
+			or <a class=css data-link-type=maybe href=#valuedef-alternate title=alternate>alternate</a>) or those of the <span class=css data-link-type=maybe title=to>to</span> keyframe (when <a class=property data-link-type=propdesc href=#propdef-animation-direction title=animation-direction>animation-direction</a> is <a class=css data-link-type=maybe href=#valuedef-reverse title=reverse>reverse</a> 
+			or <a class=css data-link-type=maybe href=#valuedef-alternate-reverse title=alternate-reverse>alternate-reverse</a>).
 
 		<dt><dfn class=css-code data-dfn-for=animation-fill-mode data-dfn-type=value data-export="" id=valuedef-both>both<a class=self-link href=#valuedef-both></a></dfn>
 		<dd>
@@ -813,10 +791,8 @@ Animation Events</span><a class=self-link href=#events></a></h2>
 	a single animation. Therefore an event will be generated for each <a class=property data-link-type=propdesc href=#propdef-animation-name title=animation-name>animation-name</a> value and
 	not necessarily for each property being animated.
 
-<p>	Any animation for which both a valid keyframe rule and a non-zero duration are defined will run
+<p>	Any animation for which a valid keyframe rule is defined will run
 	and generate events; this includes animations with empty keyframe rules.
-
-	<p class=issue id=issue-f9dd28a4><a class=self-link href=#issue-f9dd28a4></a>Clarify whether 0s animations fire start/end events or not.
 
 <p>	The time the animation has been running is sent with each event generated. This allows the event
 	handler to determine the current iteration of a looping animation or the current position of an
@@ -875,10 +851,11 @@ Types of <code>AnimationEvent</code></span><a class=self-link href=#event-animat
 	<dl data-dfn-for=animationevent data-dfn-type=event>
 		<dt><dfn class=idl-code data-dfn-for=animationevent data-dfn-type=event data-export="" id=dom-animationevent-animationstart>animationstart<a class=self-link href=#dom-animationevent-animationstart></a></dfn>
 		<dd>
-			The <a data-link-type=idl href=#dom-animationevent-animationstart title=animationstart>animationstart</a> event occurs at the start of the animation. If there is an
-			<a class=property data-link-type=propdesc href=#propdef-animation-delay title=animation-delay>animation-delay</a> then this event will fire once the delay period has expired.
-			A negative delay will cause the event to fire with an elapsedTime equal to the
-			absolute value of the delay.
+			The <a data-link-type=idl href=#dom-animationevent-animationstart title=animationstart>animationstart</a> event occurs at the start of the animation. 
+			If there is an <a class=property data-link-type=propdesc href=#propdef-animation-delay title=animation-delay>animation-delay</a> then this event will fire once the delay 
+			period has expired. A negative delay will cause the event to fire with 
+			an elapsedTime equal to the absolute value of the delay; in this case the
+			event will fire whether <a class=property data-link-type=propdesc href=#propdef-animation-play-state title=animation-play-state>animation-play-state</a> is set to <a class=css data-link-type=maybe href=#valuedef-running title=running>running</a> or <a class=css data-link-type=maybe href=#valuedef-paused title=paused>paused</a>.
 			<ul>
 				<li>Bubbles: Yes</li>
 				<li>Cancelable: No</li>
@@ -951,7 +928,7 @@ Attributes</span><a class=self-link href=#interface-csskeyframerule-attributes><
 			respectively.
             
 <p>            If <a class=idl-code data-link-for=CSSKeyFramesRule data-link-type=attribute href=#dom-csskeyframesrule-keytext title=keytext>keyText</a> is updated with an invalid keyframe selector, 
-            a <a data-link-spec=dom-core-ls data-link-type=dfn href=http://dom.spec.whatwg.org/#syntaxerror title=syntaxerror>SyntaxError</a> exception must be thrown.
+            a <a data-link-spec=webidl data-link-type=dfn href=https://heycam.github.io/webidl/#syntaxerror title=syntaxerror>SyntaxError</a> exception must be thrown.
  
 		<dt><dfn class=idl-code data-dfn-for=csskeyframerule data-dfn-type=attribute data-export="" id=dom-csskeyframerule-style>style<a class=self-link href=#dom-csskeyframerule-style></a></dfn>, of type <a class=idl-code data-link-type=interface href=http://dev.w3.org/csswg/cssom-1/#cssstyledeclaration title=cssstyledeclaration>CSSStyleDeclaration</a>
 		<dd>
@@ -1066,6 +1043,8 @@ Acknowledgements</span><a class=self-link href=#acknowledgements></a></h2>
 
 <p>	Thanks especially to the feedback from
 	Tab Atkins,
+	Brian Birtles,
+	Shane Stephens,
 	Carine Bournez,
 	Christian Budde,
 	Anne van Kesteren,
@@ -1087,10 +1066,11 @@ Working Group Resolutions that are pending editing</span><a class=self-link href
     		<li>Detail how/when keyframe values are computed; using <a href=http://lists.w3.org/Archives/Public/www-style/2014Aug/0132.html>G.beta in dbaron’s mail</a>
     		<li>Agreed that both transitions and animations animate all properties. css-transitions to define animation of non-interoperable/discrete values. They take their starting values below 50% timing function progress, and end values above
     		<li>Dynamic changes to animation properties/keyframes. Tab to propose resolution. (<a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=14713">Bug 14713</a>)
-    		<li>Negative animation-delay values apply against the active duration of the animation i.e. (animation-duration*animation-iteration-count). The delay can thus swallow iterations for which no iteration event will be fired. The start/end events are still fired. Even when delay == (-1*active_duration)
-    		<li>Fire animation start/end events when animation-duration is zero, with 0 elapsedTime
-    		<li>If animation-iteration-count is infinite and duration is 0, treat the iteration-count as if it was finite and run a 0s second (option A in <a href=http://lists.w3.org/Archives/Public/www-style/2014Sep/0056.html>Brian’s mail</a>)
-    		<li>If an animation with a negative animation delay is initially paused, the start event still fires
+    		<li><del>Negative animation-delay values apply against the active duration of the animation i.e. (animation-duration*animation-iteration-count). The delay can thus swallow iterations for which no iteration event will be fired. The start/end events are still fired. Even when delay == (-1*active_duration)
+    		</del><li><del>Fire animation start/end events when animation-duration is zero, with 0 elapsedTime
+    		</del><li><del>If animation-iteration-count is infinite and duration is 0, treat the iteration-count as if it was finite and run a 0s second (option A in <a href=http://lists.w3.org/Archives/Public/www-style/2014Sep/0056.html>Brian’s mail</a>)
+    		</del><li><del>If an animation with a negative animation delay is initially paused, the start event still fires
+    		</del></ul>
 
     	<li>2012-10-29 minutes
 	    	<ul>
@@ -1259,6 +1239,7 @@ Informative References</span><a class=self-link href=#informative></a></h3>
 <h2 class="no-num no-ref heading settled heading" id=index><span class=content>
 Index</span><a class=self-link href=#index></a></h2>
 <div data-fill-with=index><ul class=indexlist>
+<li>active duration, <a href=#active-duration title="section 4.5">4.5</a>
 <li>alternate, <a href=#valuedef-alternate title="section 4.6">4.6</a>
 <li>alternate-reverse, <a href=#valuedef-alternate-reverse title="section 4.6">4.6</a>
 <li>animation, <a href=#propdef-animation title="section 4.10">4.10</a>
@@ -1350,9 +1331,4 @@ Property index</span><a class=self-link href=#property-index></a></h2>
 <tr><th scope=row><a data-property="">animation</a><td>&lt;single-animation&gt;#<td>see individual properties<td>all elements, ::before and ::after pseudo-elements<td>no<td>N/A<td>interactive<td>no<td>per grammar<td>As specified</table></div>
 
 
-</ul></ul><h2 class="no-num heading settled" id=issues-index><span class=content>Issues Index</span><a class=self-link href=#issues-index></a></h2><div style="counter-reset: issue"><div class=issue>Do animation events fire when the duration is 0s?
-	<a href=#issue-1275c8d8> ↵ </a></div><div class=issue>If similar to animation-duration:0s, also relates to whether
-			animation events fire?
-	<a href=#issue-ef1c522a> ↵ </a></div><div class=issue>Clarify whether 0s animations fire start/end events or not.
-
-<a href=#issue-f9dd28a4> ↵ </a></div></div>
+</ul>
