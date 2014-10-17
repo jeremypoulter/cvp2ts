@@ -1,0 +1,8 @@
+{
+    "spec": "cssvalues",
+    "source": "http://dev.w3.org/csswg/css-values/",
+    "levels": [ 2 ],
+    "local": "cssvalues.html",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction"
+}

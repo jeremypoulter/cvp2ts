@@ -1,0 +1,10 @@
+{
+    "spec": "cssattr",
+    "source": "http://www.w3.org/TR/2013/REC-css-style-attr-20131107/",
+    "levels": [ 2 ],
+    "local": "cssattr.html",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction"
+}

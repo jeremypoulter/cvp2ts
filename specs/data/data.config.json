@@ -1,0 +1,10 @@
+{
+    "spec": "data",
+    "source": "http://tools.ietf.org/rfc/rfc2397.txt",
+    "levels": [ 3 ],
+    "local": "rfc2397.txt",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction"
+}

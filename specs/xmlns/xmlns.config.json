@@ -1,0 +1,10 @@
+{
+    "spec": "xmlns",
+    "source": "http://www.w3.org/TR/2009/REC-xml-names-20091208/",
+    "levels": [ 2 ],
+    "local": "xmlns.html",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction"
+}

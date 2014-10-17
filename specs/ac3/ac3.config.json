@@ -1,0 +1,9 @@
+{
+    "spec": "ac3",
+    "levels": [ 4 ],
+    "local": "ac3.txt",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction"
+}

@@ -1,0 +1,9 @@
+{
+    "spec": "png",
+    "levels": [ 4 ],
+    "local": "png.txt",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction"
+}

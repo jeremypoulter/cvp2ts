@@ -1,0 +1,10 @@
+{
+    "spec": "mediaqueries",
+    "source": "http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/",
+    "levels": [ 2 ],
+    "local": "mediaqueries.html",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction"
+}

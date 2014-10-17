@@ -1,0 +1,10 @@
+{
+    "spec": "wsp",
+    "source": "http://tools.ietf.org/rfc/rfc6455.txt",
+    "levels": [ 3 ],
+    "local": "rfc6455.txt",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction"
+}

@@ -1,0 +1,10 @@
+{
+    "spec": "woff",
+    "source": "http://www.w3.org/TR/2012/REC-WOFF-20121213/",
+    "levels": [ 4 ],
+    "local": "woff.html",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction"
+}

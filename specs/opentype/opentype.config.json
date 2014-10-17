@@ -1,0 +1,9 @@
+{
+    "spec": "opentype",
+    "levels": [ 4 ],
+    "local": "opentype.txt",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction"
+}

@@ -1,0 +1,10 @@
+{
+    "spec": "xmlbase",
+    "source": "http://www.w3.org/TR/2009/REC-xmlbase-20090128/",
+    "levels": [ 2 ],
+    "local": "xmlbase.html",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction"
+}

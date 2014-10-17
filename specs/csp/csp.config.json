@@ -1,0 +1,8 @@
+{
+    "spec": "csp",
+    "source": "http://www.w3.org/TR/2012/CR-CSP-20121115/",
+    "levels": [ 3 ],
+    "local": "csp.html",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction"
+}

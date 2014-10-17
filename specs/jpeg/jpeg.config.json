@@ -1,0 +1,9 @@
+{
+    "spec": "jpeg",
+    "levels": [ 4 ],
+    "local": "jpeg.txt",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction"
+}

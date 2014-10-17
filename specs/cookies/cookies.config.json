@@ -1,0 +1,10 @@
+{
+    "spec": "cookies",
+    "source": "http://tools.ietf.org/rfc/rfc6265.txt",
+    "levels": [ 3 ],
+    "local": "rfc6265.txt",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction"
+}

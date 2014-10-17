@@ -1,0 +1,10 @@
+{
+    "spec": "xml",
+    "source": "http://www.w3.org/TR/2008/REC-xml-20081126/",
+    "levels": [ 2 ],
+    "local": "xml.html",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction"
+}

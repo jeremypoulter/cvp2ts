@@ -1,0 +1,10 @@
+{
+    "spec": "cssselectors",
+    "source": "http://www.w3.org/TR/css3-selectors/",
+    "levels": [ 2 ],
+    "local": "cssselectors.html",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction"
+}

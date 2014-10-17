@@ -1,0 +1,10 @@
+{
+    "spec": "cssns",
+    "source": "http://www.w3.org/TR/2014/REC-css-namespaces-3-20140320/",
+    "levels": [ 2 ],
+    "local": "cssns.html",
+    "dontFetch": true,
+    "dontFetchReason": "specification is final",
+    "dontExtract": true,
+    "dontExtractReason": "requires manual property extraction"
+}

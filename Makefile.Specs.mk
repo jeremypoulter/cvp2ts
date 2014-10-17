@@ -27,6 +27,6 @@
 
 SPECS           = $(SPECS_L1) $(SPECS_L2) $(SPECS_L3) $(SPECS_L4)
 SPECS_L1        = canvas2d cssfontload cssom cssomview custom dom3events dom4 domps ecmascript51 encoding file fullscreen html5 selectors1 sse svg12tiny touchevents typedarray url webgl webmessage websocket webstorage webworkers xhr
-SPECS_L2        = css21 cssanimation cssbg csscolor cssfonts cssimage cssmulticol csstext csstransform csstransition cssui csswm
-SPECS_L3        =
-SPECS_L4        =
+SPECS_L2        = css21 cssanimation cssattr cssbg csscolor cssfonts cssimage cssmulticol cssns cssselectors csstext csstransform csstransition cssui cssvalues csswm mediaqueries xml xmlbase xmlns xpath
+SPECS_L3        = cookies cors csp data http https origin tls wsp
+SPECS_L4        = ac3 gif jpeg opentype png mpeg2audio mpeg2ts mpeg2video woff
