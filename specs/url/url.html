@@ -1,48 +1,32 @@
 <!DOCTYPE html><html lang="en-US"><meta charset="utf-8">
 <title>URL Standard</title>
-<link href="http://www.whatwg.org/style/specification" rel="stylesheet">
+<link href="//whatwg.org/style/specification" rel="stylesheet">
 <link href="//resources.whatwg.org/logo-url.svg" rel="icon">
 
 <div class="head">
 
-<p><a class="logo" href="//www.whatwg.org/"><img alt="WHATWG" height="100" src="//resources.whatwg.org/logo-url.svg" width="100"></a></p>
+<p><a class="logo" href="//whatwg.org/"><img alt="WHATWG" height="100" src="//resources.whatwg.org/logo-url.svg" width="100"></a></p>
 
 <hgroup>
  <h1 class="allcaps">URL</h1>
- <h2>Living Standard — Last Updated 11 September 2014</h2>
+ <h2>Living Standard — Last Updated 16 October 2014</h2>
 </hgroup>
 
 <dl>
- <dt>This Version:
- <dd><a href="//url.spec.whatwg.org/">http://url.spec.whatwg.org/</a>
-
  <dt>Participate:</dt>
  <dd>Send feedback to
-  <a href="http://www.whatwg.org/mailing-list">whatwg@whatwg.org</a>
-  (<a href="http://www.whatwg.org/mailing-list#specs">archives</a>) or
-  <a href="https://www.w3.org/Bugs/Public/enter_bug.cgi?product=WHATWG&amp;component=URL">file a bug</a>
-  (<a href="https://www.w3.org/Bugs/Public/buglist.cgi?product=WHATWG&amp;component=URL&amp;resolution=---">open bugs</a>)
- <dd><a href="http://wiki.whatwg.org/wiki/IRC">IRC: #whatwg on Freenode</a>
+  <a href="//whatwg.org/mailing-list">whatwg@whatwg.org</a>
+  (<a href="//whatwg.org/mailing-list#specs">archives</a>) or
+  <a href="//www.w3.org/Bugs/Public/enter_bug.cgi?product=WHATWG&amp;component=URL">file a bug</a>
+  (<a href="//www.w3.org/Bugs/Public/buglist.cgi?product=WHATWG&amp;component=URL&amp;resolution=---">open bugs</a>)
+ <dd><a href="//wiki.whatwg.org/wiki/IRC">IRC: #whatwg on Freenode</a>
 
  <dt>Version History:
- <dd><a href="https://github.com/whatwg/url/commits">https://github.com/whatwg/url/commits</a>
- <dd><a href="https://twitter.com/urlstandard">@urlstandard</a>
-
- <dt>Editor:
- <dd class="h-card vcard"><a class="u-url url p-name fn" href="http://annevankesteren.nl/" lang="nl">Anne van Kesteren</a>
-  &lt;<a class="u-email email" href="mailto:annevk@annevk.nl">annevk@annevk.nl</a>&gt;
+ <dd><a href="//github.com/whatwg/url/commits">https://github.com/whatwg/url/commits</a>
+ <dd><a href="//twitter.com/urlstandard">@urlstandard</a>
 </dl>
 
 <script async="" src="//resources.whatwg.org/file-bug.js"></script>
-
-<p class="copyright"><a href="http://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img alt="CC0" src="http://i.creativecommons.org/p/zero/1.0/80x15.png"></a>
-To the extent possible under law, the editors have waived all copyright and
-related or neighboring rights to this work. In addition, as of
-11 September 2014, the editors have made this specification available
-under the
-<a href="http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0" rel="license">Open Web Foundation Agreement Version 1.0</a>,
-which is available at
-http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0.
 
 </div>
 
@@ -61,19 +45,19 @@ http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0.
  <li><a href="#hosts-(domains-and-ip-addresses)"><span class="secno">4 </span>Hosts (domains and IP addresses)</a>
   <ol>
    <li><a href="#idna"><span class="secno">4.1 </span>IDNA</a></li>
-   <li><a href="#host-writing"><span class="secno">4.2 </span>Writing</a></li>
-   <li><a href="#host-parsing"><span class="secno">4.3 </span>Parsing</a></li>
-   <li><a href="#host-serializing"><span class="secno">4.4 </span>Serializing</a></ol></li>
+   <li><a href="#host-writing"><span class="secno">4.2 </span>Host writing</a></li>
+   <li><a href="#host-parsing"><span class="secno">4.3 </span>Host parsing</a></li>
+   <li><a href="#host-serializing"><span class="secno">4.4 </span>Host serializing</a></ol></li>
  <li><a href="#urls"><span class="secno">5 </span>URLs</a>
   <ol>
-   <li><a href="#writing"><span class="secno">5.1 </span>Writing</a></li>
-   <li><a href="#parsing"><span class="secno">5.2 </span>Parsing</a></li>
-   <li><a href="#serializing"><span class="secno">5.3 </span>Serializing</a></li>
+   <li><a href="#url-writing"><span class="secno">5.1 </span>URL writing</a></li>
+   <li><a href="#url-parsing"><span class="secno">5.2 </span>URL parsing</a></li>
+   <li><a href="#url-serializing"><span class="secno">5.3 </span>URL serializing</a></li>
    <li><a href="#origin"><span class="secno">5.4 </span>Origin</a></ol></li>
  <li><a href="#application/x-www-form-urlencoded"><span class="secno">6 </span><code>application/x-www-form-urlencoded</code></a>
   <ol>
-   <li><a href="#urlencoded-parsing"><span class="secno">6.1 </span>Parsing</a></li>
-   <li><a href="#urlencoded-serializing"><span class="secno">6.2 </span>Serializing</a></li>
+   <li><a href="#urlencoded-parsing"><span class="secno">6.1 </span><code title="">application/x-www-form-urlencoded</code> parsing</a></li>
+   <li><a href="#urlencoded-serializing"><span class="secno">6.2 </span><code title="">application/x-www-form-urlencoded</code> serializing</a></li>
    <li><a href="#urlencoded-hooks"><span class="secno">6.3 </span>Hooks</a></ol></li>
  <li><a href="#api"><span class="secno">7 </span>API</a>
   <ol>
@@ -90,8 +74,7 @@ http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0.
 
 <h2 class="no-num" id="goals">Goals</h2>
 
-<p>The URL standard standardizes URLs, aiming to make them fully interoperable.
-It does so as follows:
+<p>The URL standard takes the following approach towards making URLs fully interoperable:
 
 <ul>
  <li><p>Align RFC 3986 and RFC 3987 with contemporary implementations and
@@ -112,7 +95,7 @@ It does so as follows:
  <li><p>Define URL's existing JavaScript API in full detail and add
  enhancements to make it easier to work with. Add a new <a href="#url"><code>URL</code></a>
  object as well for URL manipulation without usage of HTML elements. (Useful
- for Web Workers.)
+ for JavaScript worker environments.)
 </ul>
 
 <p class="note">As the editor learns more about the subject matter the goals
@@ -184,8 +167,8 @@ processed and <var title="">pointer</var> points to "<code title="">@</code>",
 two <a href="#ascii-hex-digits">ASCII hex digits</a>. Sequences of
 <a href="#percent-encoded-byte" title="percent-encoded byte">percent-encoded bytes</a>, after
 conversion to bytes, should not cause a
-<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#utf-8-decoder">utf-8 decoder</a> to run into any
-<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#error" title="error">errors</a>.
+<a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#utf-8-decoder">utf-8 decoder</a> to run into any
+<a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#error" title="error">errors</a>.
 
 <p>To <dfn id="percent-encode">percent encode</dfn> a <var title="">byte</var> into a
 <a href="#percent-encoded-byte">percent-encoded byte</a>, return a string consisting of
@@ -194,7 +177,7 @@ representation of <var title="">byte</var>.
 
 <p>To <dfn id="percent-decode">percent decode</dfn> a byte sequence <var title="">input</var>, run these steps:
 
-<p class="warning">Using anything but a <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#utf-8-decoder">utf-8 decoder</a>
+<p class="warning">Using anything but a <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#utf-8-decoder">utf-8 decoder</a>
 when the <var title="">input</var> contains bytes outside the range 0x00 to 0x7F might be
 insecure and is not recommended.
 
@@ -219,7 +202,7 @@ insecure and is not recommended.
     <ol>
      <li><p>Let <var title="">bytePoint</var> be the two bytes after <var title="">byte</var> in
      <var title="">input</var>,
-     <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#utf-8-decode-without-bom" title="utf-8 decode without BOM">decoded</a>, and
+     <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#utf-8-decode-without-bom" title="utf-8 decode without BOM">decoded</a>, and
      then interpreted as hexadecimal number.
      <!-- We should have a definition for this that is saner. -->
 
@@ -271,7 +254,7 @@ an <var title="">encode set</var>, run these steps:
  <var title="">encode set</var>, return <var title="">code point</var>.
 
  <li><p>Let <var title="">bytes</var> be the result of running
- <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#utf-8-encode">utf-8 encode</a> on
+ <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#utf-8-encode">utf-8 encode</a> on
  <var title="">code point</var>.
 
  <li><p><a href="#percent-encode">Percent encode</a> each byte in <var title="">bytes</var>, and
@@ -331,7 +314,7 @@ eight <dfn id="concept-ipv6-piece" title="concept-ipv6-piece">16-bit pieces</dfn
 </ol>
 
 
-<h3 id="host-writing"><span class="secno">4.2 </span>Writing</h3>
+<h3 id="host-writing"><span class="secno">4.2 </span>Host writing</h3>
 
 <p>A <a href="#concept-host" title="concept-host">host</a> must be either a
 <a href="#concept-domain" title="concept-domain">domain</a> or "<code title="">[</code>", followed
@@ -375,7 +358,7 @@ by an <a href="#concept-ipv6" title="concept-ipv6">IPv6 address</a>, followed by
      XXX should we define the format inline instead just like STD 66? -->
 
 
-<h3 id="host-parsing"><span class="secno">4.3 </span>Parsing</h3>
+<h3 id="host-parsing"><span class="secno">4.3 </span>Host parsing</h3>
 
 <p>The <dfn id="concept-host-parser" title="concept-host-parser">host parser</dfn> takes a string
 <var title="">input</var> and optionally a <var title="">Unicode flag</var>, and then runs
@@ -404,9 +387,9 @@ these steps:
   </ol>
 
  <li><p>Let <var title="">domain</var> be the result of
- <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#utf-8-decode-without-bom">utf-8 decode without BOM</a> on the
+ <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#utf-8-decode-without-bom">utf-8 decode without BOM</a> on the
  <a href="#percent-decode" title="percent decode">percent decoding</a> of
- <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#utf-8-encode">utf-8 encode</a> on <var title="">input</var>.
+ <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#utf-8-encode">utf-8 encode</a> on <var title="">input</var>.
  <!-- https://bugzilla.mozilla.org/show_bug.cgi?id=309671 -->
 
  <li><p>Let <var title="">asciiDomain</var> be the result of running
@@ -613,7 +596,7 @@ these steps:
 </ol>
 
 
-<h3 id="host-serializing"><span class="secno">4.4 </span>Serializing</h3>
+<h3 id="host-serializing"><span class="secno">4.4 </span>Host serializing</h3>
 
 <p>The <dfn id="concept-host-serializer" title="concept-host-serializer">host serializer</dfn> takes null or a
 <a href="#concept-host" title="concept-host">host</a> <var title="">host</var> and then runs
@@ -741,6 +724,7 @@ either null or a string holding data. It is initially null.
 <p>A <a href="#concept-url" title="concept-url">URL</a>'s <dfn id="concept-url-fragment" title="concept-url-fragment">fragment</dfn>
 is either null or a string holding data that can be used for further processing on the
 resource the <a href="#concept-url" title="concept-url">URL</a>'s other components identify.
+It is initially null.
 
 <p>A <a href="#concept-url" title="concept-url">URL</a> also has an associated <dfn id="relative-flag">relative flag</dfn>.
 It is initially unset.
@@ -753,7 +737,7 @@ It is initially unset.
 
 <p>A <a href="#concept-url" title="concept-url">URL</a> also has an associated
 <dfn id="concept-url-object" title="concept-url-object">object</dfn> that is either null or a
-<a href="http://dev.w3.org/2006/webapi/FileAPI/#blob"><code class="external" data-anolis-spec="fileapi">Blob</code></a>.
+<a href="http://dev.w3.org/2006/webapi/FileAPI/#blob"><code class="external" data-anolis-spec="fileapi">Blob</code></a>. It is initially null.
 <a href="#refsFILEAPI">[FILEAPI]</a>
 
 <p class="note">At this point this is used primarily to support "<code title="">blob</code>"
@@ -799,7 +783,7 @@ the <a href="#concept-url-parser" title="concept-url-parser">URL parser</a> when
 <a href="#concept-relative-url" title="concept-relative-url">relative URL</a>.
 
 
-<h3 id="writing"><span class="secno">5.1 </span>Writing</h3>
+<h3 id="url-writing"><span class="secno">5.1 </span>URL writing</h3>
 
 <!-- http://tantek.com/2011/238/b1/many-ways-slice-url-name-pieces -->
 
@@ -924,10 +908,9 @@ U+A0000 to U+AFFFD,
 U+B0000 to U+BFFFD,
 U+C0000 to U+CFFFD,
 U+D0000 to U+DFFFD,
-U+E1000 to U+EFFFD,
+U+E0000 to U+EFFFD,<!-- changed relative to IRI from E1000 to E0000 to align with HTML-->
 U+F0000 to U+FFFFD,
 U+100000 to U+10FFFD.
-<!-- XXX https://www.w3.org/Bugs/Public/show_bug.cgi?id=19743 -->
 
 <p class="note">Code points higher than U+009F will be converted to
 <a href="#percent-encoded-byte" title="percent-encoded byte">percent-encoded bytes</a> by the
@@ -937,14 +920,14 @@ U+100000 to U+10FFFD.
 <a href="#percent-encoded-byte" title="percent-encoded byte">percent-encoded bytes</a>.
 
 
-<h3 id="parsing"><span class="secno">5.2 </span>Parsing</h3>
+<h3 id="url-parsing"><span class="secno">5.2 </span>URL parsing</h3>
 
 <p class="XXX">Add the ability to halt on the first conformance error.
 
 <p>The <dfn id="concept-url-parser" title="concept-url-parser">URL parser</dfn> takes a string
 <var title="">input</var>, optionally with a
 <a href="#concept-base-url" title="concept-base-url">base URL</a> <var title="">base</var>, and
-optionally with an <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#encoding">encoding</a>
+optionally with an <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#encoding">encoding</a>
 <var>encoding override</var>, and then runs these steps:
 
 <ol>
@@ -962,7 +945,7 @@ optionally with an <a class="external" data-anolis-spec="encoding" href="http://
  <var title="">url</var>. <a href="#refsFILEAPI">[FILEAPI]</a>
 
  <li><p>Set <var title="">url</var>'s <a href="#concept-url-object" title="concept-url-object">object</a> to a
- <a class="external" data-anolis-spec="html" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/infrastructure.html#structured-clone">structured clone</a> of the entry in the
+ <a class="external" data-anolis-spec="html" href="https://html.spec.whatwg.org/multipage/infrastructure.html#structured-clone">structured clone</a> of the entry in the
  <a class="external" data-anolis-spec="fileapi" href="http://dev.w3.org/2006/webapi/FileAPI/#BlobURLStore">blob URL store</a> corresponding to
  <var title="">url</var>'s <a href="#concept-url-scheme-data" title="concept-url-scheme-data">scheme data</a>.
  <a href="#refsHTML">[HTML]</a>
@@ -975,7 +958,7 @@ optionally with an <a class="external" data-anolis-spec="encoding" href="http://
 <p>The <dfn id="concept-basic-url-parser" title="concept-basic-url-parser">basic URL parser</dfn> takes a string
 <var title="">input</var>, optionally with a
 <a href="#concept-base-url" title="concept-base-url">base URL</a> <var title="">base</var>,
-optionally with an <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#encoding">encoding</a>
+optionally with an <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#encoding">encoding</a>
 <var>encoding override</var>, optionally with an
 <a href="#concept-url" title="concept-url">URL</a> <var title="">url</var> and a state override
 <var title="">state override</var>, and then runs these steps:
@@ -1001,7 +984,7 @@ optionally with an <a class="external" data-anolis-spec="encoding" href="http://
    <li><p>Set <var title="">url</var> to a new <a href="#concept-url" title="concept-url">URL</a>.
 
    <li><p>Remove any leading and trailing
-   <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#ascii-whitespace">ASCII whitespace</a> from
+   <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#ascii-whitespace">ASCII whitespace</a> from
    <var title="">input</var>.
   </ol>
 
@@ -1011,7 +994,7 @@ optionally with an <a class="external" data-anolis-spec="encoding" href="http://
  <li><p>If <var title="">base</var> is not given, set it to null.
 
  <li><p>If <var>encoding override</var> is not given, set it to
- <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#utf-8">utf-8</a>.
+ <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#utf-8">utf-8</a>.
 
  <li><p>Let <var title="">buffer</var> be the empty string.
 
@@ -1022,10 +1005,10 @@ optionally with an <a class="external" data-anolis-spec="encoding" href="http://
  <var title="">input</var>.
 
  <li>
-  <p>Keep running the following state machine by switching on
-  <var title="">state</var>, increasing <var title="">pointer</var> by one after
-  each time it is run, and if after a run <var title="">pointer</var> points to the
-  <a href="#eof-code-point">EOF code point</a>, go to the next step.
+  <p>Keep running the following state machine by switching on <var title="">state</var>. If
+  after a run <var title="">pointer</var> points to the <a href="#eof-code-point">EOF code point</a>, go to
+  the next step. Otherwise, increase <var title="">pointer</var> by one and continue with the
+  state machine.
 
   <dl class="switch">
    <dt><dfn id="scheme-start-state">scheme start state</dfn>
@@ -1569,7 +1552,7 @@ optionally with an <a class="external" data-anolis-spec="encoding" href="http://
          <li>
           <p>If <var title="">url</var>'s <a href="#concept-url-scheme" title="concept-url-scheme">scheme</a> is
           "<code title="">file</code>", <var title="">url</var>'s <a href="#concept-url-path" title="concept-url-path">path</a>
-          is the empty list, <var title="">buffer</var> consists of two
+          is empty, <var title="">buffer</var> consists of two
           code points, of which the first is an <a href="#ascii-alpha">ASCII alpha</a>,
           and the second is "<code title="">|</code>", replace the second code point in
           <var title="">buffer</var> with "<code title="">:</code>".
@@ -1616,7 +1599,7 @@ optionally with an <a class="external" data-anolis-spec="encoding" href="http://
    <dd>
     <ol>
      <li>
-      <p>If <a href="#c">c</a> is the <a href="#eof-code-point">EOF code point</a> or
+      <p>If <a href="#c">c</a> is the <a href="#eof-code-point">EOF code point</a>, or
       <var title="">state override</var> is not given and <a href="#c">c</a>
       is "<code title="">#</code>", run these substeps:
 
@@ -1624,11 +1607,11 @@ optionally with an <a class="external" data-anolis-spec="encoding" href="http://
        <li><p>If <var title="">url</var>'s <a href="#relative-flag">relative flag</a> is unset or
        <var title="">url</var>'s <a href="#concept-url-scheme" title="concept-url-scheme">scheme</a> is either
        "<code title="">ws</code>" or "<code title="">wss</code>", set
-       <var>encoding override</var> to <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#utf-8">utf-8</a>.
-       <!-- http://simon.html5.org/test/url/url-encoding.html -->
+       <var>encoding override</var> to <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#utf-8">utf-8</a>.
+       <!-- https://simon.html5.org/test/url/url-encoding.html -->
 
        <li><p>Set <var title="">buffer</var> to the result of
-       <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#encode" title="encode">encoding</a>
+       <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#encode" title="encode">encoding</a>
        <var title="">buffer</var> using <var>encoding override</var>.
 
        <li>
@@ -1709,7 +1692,7 @@ optionally with an <a class="external" data-anolis-spec="encoding" href="http://
 </ol>
 
 
-<h3 id="serializing"><span class="secno">5.3 </span>Serializing</h3>
+<h3 id="url-serializing"><span class="secno">5.3 </span>URL serializing</h3>
 
 <p>The <dfn id="concept-url-serializer" title="concept-url-serializer">URL serializer</dfn> takes a
 <a href="#concept-url" title="concept-url">URL</a> <var title="">url</var>,
@@ -1784,11 +1767,11 @@ optionally an <i title="">exclude fragment flag</i>, and then runs these steps:
 <h3 id="origin"><span class="secno">5.4 </span>Origin</h3>
 <!-- Still need to watch the final bits -->
 
-<p class="note">See <a class="external" data-anolis-spec="html" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/browsers.html#origin">origin</a>'s definition in HTML for the
+<p class="note">See <a class="external" data-anolis-spec="html" href="https://html.spec.whatwg.org/multipage/browsers.html#origin">origin</a>'s definition in HTML for the
 necessary background information. <a href="#refsHTML">[HTML]</a>
 
 <p>A <a href="#concept-url" title="concept-url">URL</a>'s <dfn id="concept-url-origin" title="concept-url-origin">origin</dfn> is
-the <a class="external" data-anolis-spec="html" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/browsers.html#origin">origin</a> returned by running these steps, switching
+the <a class="external" data-anolis-spec="html" href="https://html.spec.whatwg.org/multipage/browsers.html#origin">origin</a> returned by running these steps, switching
 on <a href="#concept-url" title="concept-url">URL</a>'s <a href="#concept-url-scheme" title="concept-url-scheme">scheme</a>:
 
 <dl class="switch">
@@ -1804,9 +1787,9 @@ on <a href="#concept-url" title="concept-url">URL</a>'s <a href="#concept-url-sc
   <!-- Did you mean: recursion -->
 
   <p class="example no-backref">The <a href="#concept-url-origin" title="concept-url-origin">origin</a> of
-  <code title="">blob:https://www.whatwg.org/d0360e2f-caee-469f-9a2f-87d5b0456f6f</code> is
+  <code title="">blob:https://whatwg.org/d0360e2f-caee-469f-9a2f-87d5b0456f6f</code> is
   the tuple
-  (<code title="">https</code>, <code title="">www.whatwg.org</code>, <code title="">443</code>).
+  (<code title="">https</code>, <code title="">whatwg.org</code>, <code title="">443</code>).
 
  <dt>"<code title="">ftp</code>"
  <dt>"<code title="">gopher</code>"
@@ -1839,7 +1822,7 @@ encode name-value pairs in a byte sequence where all bytes are in the 0x00 to 0x
 format is in widespread use due to its prevalence of HTML forms.
 <a href="#refsHTML">[HTML]</a>
 
-<h3 id="urlencoded-parsing"><span class="secno">6.1 </span>Parsing</h3>
+<h3 id="urlencoded-parsing"><span class="secno">6.1 </span><code title="">application/x-www-form-urlencoded</code> parsing</h3>
 
 <p class="note no-backref">The features provided by the
 <a href="#concept-urlencoded-parser" title="concept-urlencoded-parser"><code>application/x-www-form-urlencoded</code> parser</a>
@@ -1851,17 +1834,17 @@ requires.
 <p>The
 <dfn id="concept-urlencoded-parser" title="concept-urlencoded-parser"><code>application/x-www-form-urlencoded</code> parser</dfn>
 takes a byte sequence <var title="">input</var>, optionally with an
-<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#encoding">encoding</a> <var>encoding override</var>,
+<a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#encoding">encoding</a> <var>encoding override</var>,
 optionally with a <i title="">use _charset_ flag</i>, and optionally with an
 <i title="">isindex flag</i>, and then runs these steps:
 
 <ol>
  <li><p>If <var>encoding override</var> is not given, set it to
- <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#utf-8">utf-8</a>.
+ <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#utf-8">utf-8</a>.
 
  <li>
   <p>If <var>encoding override</var> is not
-  <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#utf-8">utf-8</a> and <var title="">input</var> contains bytes
+  <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#utf-8">utf-8</a> and <var title="">input</var> contains bytes
   whose value is greater than 0x7F, return failure.
 
   <p class="note no-backref">This can only happen if <var title="">input</var> was not
@@ -1907,9 +1890,9 @@ optionally with a <i title="">use _charset_ flag</i>, and optionally with an
 
     <ol>
      <li><p>Let <var>result</var> be the result of
-     <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#concept-encoding-get" title="concept-encoding-get">getting an encoding</a>
+     <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#concept-encoding-get" title="concept-encoding-get">getting an encoding</a>
      for <var title="">value</var>,
-     <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#utf-8-decode-without-bom" title="utf-8 decode without BOM">decoded</a>.
+     <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#utf-8-decode-without-bom" title="utf-8 decode without BOM">decoded</a>.
 
      <li><p>If <var>result</var> is not failure, unset <i title="">use _charset_ flag</i> and
      set <var>encoding override</var> to <var>result</var>.
@@ -1925,14 +1908,14 @@ optionally with a <i title="">use _charset_ flag</i>, and optionally with an
  <li><p>For each name-value pair in <var title="">pairs</var>, append a name-value pair to
  <var title="">output</var> where the new name and value appended to <var title="">output</var>
  are the result of running <var>encoding override</var>'s
- <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#decoder">decoder</a> on the
+ <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#decoder">decoder</a> on the
  <a href="#percent-decode" title="percent decode">percent decoding</a> of the name and value from
  <var title="">pairs</var>, respectively.
 
  <li><p>Return <var title="">output</var>.
 </ol>
 
-<h3 id="urlencoded-serializing"><span class="secno">6.2 </span>Serializing</h3>
+<h3 id="urlencoded-serializing"><span class="secno">6.2 </span><code title="">application/x-www-form-urlencoded</code> serializing</h3>
 
 <p>The
 <dfn id="concept-urlencoded-byte-serializer" title="concept-urlencoded-byte-serializer"><code>application/x-www-form-urlencoded</code> byte serializer</dfn>
@@ -1979,12 +1962,12 @@ takes a byte sequence <var title="">input</var> and then runs these steps:
 <p>The
 <dfn id="concept-urlencoded-serializer" title="concept-urlencoded-serializer"><code>application/x-www-form-urlencoded</code> serializer</dfn>
 takes a list of name-value pairs <var title="">pairs</var>, optionally with an
-<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#encoding">encoding</a>
+<a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#encoding">encoding</a>
 <var>encoding override</var>, and then runs these steps:
 
 <ol>
  <li><p>If <var>encoding override</var> is not given, set it to
- <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#utf-8">utf-8</a>.
+ <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#utf-8">utf-8</a>.
 
  <li><p>Let <var title="">output</var> be the empty string.
 
@@ -1993,19 +1976,20 @@ takes a list of name-value pairs <var title="">pairs</var>, optionally with an
   these substeps:
 
   <ol>
-   <li><p>Replace <var title="">pair</var>'s name and value with the result of
-   running <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#encode">encode</a> on them using
+   <li><p>Let <var title="">outputPair</var> be a copy of <var title="">pair</var>.
+
+   <li><p>Replace <var title="">outputPair</var>'s name and value with the result of running
+   <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#encode">encode</a> on them using
    <var>encoding override</var>, respectively.
 
-   <li><p>Replace <var title="">pair</var>'s name and value with their
+   <li><p>Replace <var title="">outputPair</var>'s name and value with their
    <a href="#concept-urlencoded-byte-serializer" title="concept-urlencoded-byte-serializer">serialization</a>.
 
-   <li><p>If this is not the first pair, append "<code title="">&amp;</code>" to
-   <var title="">output</var>.
+   <li><p>If <var title="">pair</var> is not the first pair in <var title="">pairs</var>, append
+   "<code title="">&amp;</code>" to <var title="">output</var>.
 
-   <li><p>Append <var title="">pair</var>'s name, followed by
-   "<code title="">=</code>", followed by <var title="">pair</var>'s value to
-   <var title="">output</var>.
+   <li><p>Append <var title="">outputPair</var>'s name, followed by "<code title="">=</code>",
+   followed by <var title="">outputPair</var>'s value to <var title="">output</var>.
   </ol>
 
  <li>Return <var title="">output</var>.
@@ -2016,7 +2000,7 @@ takes a list of name-value pairs <var title="">pairs</var>, optionally with an
 <p>The
 <dfn id="concept-urlencoded-string-parser" title="concept-urlencoded-string-parser"><code>application/x-www-form-urlencoded</code> string parser</dfn>
 takes a string <var title="">input</var>,
-<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#utf-8-encode" title="utf-8 encode">utf-8 encodes</a> it, and then
+<a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#utf-8-encode" title="utf-8 encode">utf-8 encodes</a> it, and then
 returns the result of
 <a href="#concept-urlencoded-parser" title="concept-urlencoded-parser"><code>application/x-www-form-urlencoded</code> parsing</a>
 it.
@@ -2027,48 +2011,48 @@ it.
 
 <!-- XXX https://www.w3.org/Bugs/Public/show_bug.cgi?id=20159 -->
 
-<pre class="idl">[<a href="#dom-url" title="dom-URL">Constructor</a>(<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <var title="">url</var>, optional <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <var title="">base</var> = "about:blank"),
+<pre class="idl">[<a href="#dom-url" title="dom-URL">Constructor</a>(USVString <var title="">url</var>, optional USVString <var title="">base</var> = "about:blank"),
  Exposed=(Window,Worker)]
 interface <dfn id="url">URL</dfn> {
-  static <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-domaintoascii" title="dom-URL-domainToASCII">domainToASCII</a>(<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <var title="">domain</var>);
-  static <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-domaintounicode" title="dom-URL-domainToUnicode">domainToUnicode</a>(<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <var title="">domain</var>);
+  static USVString <a href="#dom-url-domaintoascii" title="dom-URL-domainToASCII">domainToASCII</a>(USVString <var title="">domain</var>);
+  static USVString <a href="#dom-url-domaintounicode" title="dom-URL-domainToUnicode">domainToUnicode</a>(USVString <var title="">domain</var>);
 };
 <a href="#url">URL</a> implements <a href="#urlutils">URLUtils</a>;
 
 [NoInterfaceObject,
  Exposed=(Window,Worker)]
 interface <dfn id="urlutils">URLUtils</dfn> {
-  stringifier attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-href" title="dom-URL-href">href</a>;
-  readonly attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-origin" title="dom-URL-origin">origin</a>;
+  stringifier attribute USVString <a href="#dom-url-href" title="dom-URL-href">href</a>;
+  readonly attribute USVString <a href="#dom-url-origin" title="dom-URL-origin">origin</a>;
 
-           attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-protocol" title="dom-URL-protocol">protocol</a>;
-           attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-username" title="dom-URL-username">username</a>;
-           attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-password" title="dom-URL-password">password</a>;
-           attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-host" title="dom-URL-host">host</a>;
-           attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-hostname" title="dom-URL-hostname">hostname</a>;
-           attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-port" title="dom-URL-port">port</a>;
-           attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-pathname" title="dom-URL-pathname">pathname</a>;
-           attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-search" title="dom-URL-search">search</a>;
+           attribute USVString <a href="#dom-url-protocol" title="dom-URL-protocol">protocol</a>;
+           attribute USVString <a href="#dom-url-username" title="dom-URL-username">username</a>;
+           attribute USVString <a href="#dom-url-password" title="dom-URL-password">password</a>;
+           attribute USVString <a href="#dom-url-host" title="dom-URL-host">host</a>;
+           attribute USVString <a href="#dom-url-hostname" title="dom-URL-hostname">hostname</a>;
+           attribute USVString <a href="#dom-url-port" title="dom-URL-port">port</a>;
+           attribute USVString <a href="#dom-url-pathname" title="dom-URL-pathname">pathname</a>;
+           attribute USVString <a href="#dom-url-search" title="dom-URL-search">search</a>;
            attribute <a href="#urlsearchparams">URLSearchParams</a> <a href="#dom-url-searchparams" title="dom-URL-searchParams">searchParams</a>;
-           attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-hash" title="dom-URL-hash">hash</a>;
+           attribute USVString <a href="#dom-url-hash" title="dom-URL-hash">hash</a>;
 };
 
 [NoInterfaceObject,
  Exposed=(Window,Worker)]
 interface <dfn id="urlutilsreadonly">URLUtilsReadOnly</dfn> {
-  stringifier readonly attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-href" title="dom-URL-href">href</a>;
-  readonly attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-origin" title="dom-URL-origin">origin</a>;
+  stringifier readonly attribute USVString <a href="#dom-url-href" title="dom-URL-href">href</a>;
+  readonly attribute USVString <a href="#dom-url-origin" title="dom-URL-origin">origin</a>;
 
-  readonly attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-protocol" title="dom-URL-protocol">protocol</a>;<!--
-  readonly attribute <span data-anolis-spec=encoding>ScalarValueString</span> <span title=dom-URL-username>username</span>;
-  readonly attribute <span data-anolis-spec=encoding>ScalarValueString</span> <span title=dom-URL-password>password</span>;-->
-  readonly attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-host" title="dom-URL-host">host</a>;
-  readonly attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-hostname" title="dom-URL-hostname">hostname</a>;
-  readonly attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-port" title="dom-URL-port">port</a>;
-  readonly attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-pathname" title="dom-URL-pathname">pathname</a>;
-  readonly attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-search" title="dom-URL-search">search</a>;<!--
+  readonly attribute USVString <a href="#dom-url-protocol" title="dom-URL-protocol">protocol</a>;<!--
+  readonly attribute USVString <span title=dom-URL-username>username</span>;
+  readonly attribute USVString <span title=dom-URL-password>password</span>;-->
+  readonly attribute USVString <a href="#dom-url-host" title="dom-URL-host">host</a>;
+  readonly attribute USVString <a href="#dom-url-hostname" title="dom-URL-hostname">hostname</a>;
+  readonly attribute USVString <a href="#dom-url-port" title="dom-URL-port">port</a>;
+  readonly attribute USVString <a href="#dom-url-pathname" title="dom-URL-pathname">pathname</a>;
+  readonly attribute USVString <a href="#dom-url-search" title="dom-URL-search">search</a>;<!--
   readonly attribute <span>URLSearchParams</span> <span title=dom-URL-searchParams>searchParams</span>;-->
-  readonly attribute <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <a href="#dom-url-hash" title="dom-URL-hash">hash</a>;
+  readonly attribute USVString <a href="#dom-url-hash" title="dom-URL-hash">hash</a>;
 };</pre>
 
 <p>Except where different objects implementing <a href="#urlutilsreadonly"><code>URLUtilsReadOnly</code></a> are identical
@@ -2094,77 +2078,81 @@ URLPath would be a subclassed Array? -->
 
 <p>Specifications defining objects implementing <a href="#urlutils"><code>URLUtils</code></a> or
 <a href="#urlutilsreadonly"><code>URLUtilsReadOnly</code></a> must define a
-<dfn id="concept-uu-get-the-base" title="concept-UU-get-the-base">get the base</dfn> algorithm, which must return the
+<dfn id="concept-urlutils-get-the-base" title="concept-URLUtils-get-the-base">get the base</dfn> algorithm, which must return the
 appropriate <a href="#concept-base-url" title="concept-base-url">base URL</a> for the object.
 
 <p>Specifications defining objects implementing <a href="#urlutils"><code>URLUtils</code></a> may
-define <dfn id="concept-uu-update" title="concept-UU-update">update steps</dfn> to make it possible for an
+define <dfn id="concept-urlutils-update" title="concept-URLUtils-update">update steps</dfn> to make it possible for an
 underlying string (such as an
-<a class="external" data-anolis-spec="dom" href="http://dom.spec.whatwg.org/#concept-attribute-value" title="concept-attribute-value">attribute value</a>)
-to be updated. The <a href="#concept-uu-update" title="concept-UU-update">update steps</a> are passed a string
+<a class="external" data-anolis-spec="dom" href="https://dom.spec.whatwg.org/#concept-attribute-value" title="concept-attribute-value">attribute value</a>)
+to be updated. The <a href="#concept-urlutils-update" title="concept-URLUtils-update">update steps</a> are passed a string
 <var title="">value</var> for this purpose.
 
 <p>An object implementing <a href="#urlutils"><code>URLUtils</code></a> or <a href="#urlutilsreadonly"><code>URLUtilsReadOnly</code></a> has an
-associated <dfn id="concept-uu-input" title="concept-UU-input">input</dfn> (a string),
-<dfn id="concept-uu-query-encoding" title="concept-UU-query-encoding">query encoding</dfn>
-(an <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#encoding">encoding</a>),
-<dfn id="concept-uu-query-object" title="concept-UU-query-object">query object</dfn>
+associated <dfn id="concept-urlutils-input" title="concept-URLUtils-input">input</dfn> (a string),
+<dfn id="concept-urlutils-query-encoding" title="concept-URLUtils-query-encoding">query encoding</dfn>
+(an <a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#encoding">encoding</a>),
+<dfn id="concept-urlutils-query-object" title="concept-URLUtils-query-object">query object</dfn>
 (a <a href="#urlsearchparams"><code>URLSearchParams</code></a> object or null), and a
-<dfn id="concept-uu-url" title="concept-UU-url">url</dfn> (a <a href="#concept-url" title="concept-url">URL</a> or null).
+<dfn id="concept-urlutils-url" title="concept-URLUtils-url">url</dfn> (a <a href="#concept-url" title="concept-url">URL</a> or null).
 
-Unless stated otherwise, <a href="#concept-uu-query-encoding" title="concept-UU-query-encoding">query encoding</a> is
-<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#utf-8">utf-8</a>. The others follow from the
-<a href="#concept-uu-set-the-input" title="concept-UU-set-the-input">set the input</a> algorithm.
+Unless stated otherwise, <a href="#concept-urlutils-query-encoding" title="concept-URLUtils-query-encoding">query encoding</a> is
+<a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#utf-8">utf-8</a> and
+<a href="#concept-urlutils-query-object" title="concept-URLUtils-query-object">query object</a> is null. The others follow
+from the <a href="#concept-urlutils-set-the-input" title="concept-URLUtils-set-the-input">set the input</a> algorithm.
 
 <p class="note">The associated
-<a href="#concept-uu-query-encoding" title="concept-UU-query-encoding">query encoding</a> is a legacy
+<a href="#concept-urlutils-query-encoding" title="concept-URLUtils-query-encoding">query encoding</a> is a legacy
 concept only relevant for HTML.
 <a href="#refsHTML">[HTML]</a>
 
 <p>Specifications defining objects implementing <a href="#urlutils"><code>URLUtils</code></a> or
 <a href="#urlutilsreadonly"><code>URLUtilsReadOnly</code></a> must use the
-<a href="#concept-uu-set-the-input" title="concept-UU-set-the-input">set the input</a> algorithms to set
-<a href="#concept-uu-input" title="concept-UU-input">input</a>, <a href="#concept-uu-url" title="concept-UU-url">url</a>, and
-<a href="#concept-uu-query-object" title="concept-UU-query-object">query object</a>. To
-<dfn id="concept-uu-set-the-input" title="concept-UU-set-the-input">set the input</dfn> run these steps:
+<a href="#concept-urlutils-set-the-input" title="concept-URLUtils-set-the-input">set the input</a> algorithms to set
+<a href="#concept-urlutils-input" title="concept-URLUtils-input">input</a>, <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a>, and
+<a href="#concept-urlutils-query-object" title="concept-URLUtils-query-object">query object</a>. To
+<dfn id="concept-urlutils-set-the-input" title="concept-URLUtils-set-the-input">set the input</dfn> run these steps:
 
 <ol>
- <li><p>Set <a href="#concept-uu-url" title="concept-UU-url">url</a> to null.
+ <li><p>Set <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> to null.
 
- <li><p>Set <a href="#concept-uu-input" title="concept-UU-input">input</a> to the given value.
-
- <li><p>Let <var title="">url</var> be the result of running the
- <a href="#concept-url-parser" title="concept-url-parser">URL parser</a> on
- <a href="#concept-uu-input" title="concept-UU-input">input</a> with
- <a href="#concept-base-url" title="concept-base-url">base URL</a> being the result of running
- <a href="#concept-uu-get-the-base" title="concept-UU-get-the-base">get the base</a> and
- <a href="#concept-uu-query-encoding" title="concept-UU-query-encoding">query encoding</a> as
- <var>encoding override</var>.
- <!-- support blob URLs at this level -->
-
- <li><p>If <var title="">url</var> is not failure, set
- <a href="#concept-uu-url" title="concept-UU-url">url</a> to <var title="">url</var>.
+ <li><p>If the given value is null, set <a href="#concept-urlutils-input" title="concept-URLUtils-input">input</a> to
+ the empty string.
 
  <li>
-  <p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is non-null and its
-  <a href="#relative-flag">relative flag</a> is set, run these substeps:
+  <p>Otherwise, run these substeps:
 
   <ol>
-   <li><p>If <a href="#concept-uu-query-object" title="concept-UU-query-object">query object</a> is null, set
-   <a href="#concept-uu-query-object" title="concept-UU-query-object">query object</a> to a
-   <a href="#concept-uq-new" title="concept-UQ-new">new <code>URLSearchParams</code> object</a> using
-   <a href="#concept-uu-url" title="concept-UU-url">url</a>'s <a href="#concept-url-query" title="concept-URL-query">query</a>.
+   <li><p>Set <a href="#concept-urlutils-input" title="concept-URLUtils-input">input</a> to the given value.
 
-   <li><p>Otherwise, set <a href="#concept-uu-query-object" title="concept-UU-query-object">query object</a>'s
-   associated list of name-value pairs to the result of
-   <a href="#concept-urlencoded-string-parser" title="concept-urlencoded-string-parser">parsing</a>
-   <a href="#concept-uu-url" title="concept-UU-url">url</a>'s <a href="#concept-url-query" title="concept-URL-query">query</a>.
+   <li><p>Let <var title="">url</var> be the result of running the
+   <a href="#concept-url-parser" title="concept-url-parser">URL parser</a> on
+   <a href="#concept-urlutils-input" title="concept-URLUtils-input">input</a> with
+   <a href="#concept-base-url" title="concept-base-url">base URL</a> being the result of running
+   <a href="#concept-urlutils-get-the-base" title="concept-URLUtils-get-the-base">get the base</a> and
+   <a href="#concept-urlutils-query-encoding" title="concept-URLUtils-query-encoding">query encoding</a> as
+   <var>encoding override</var>.
+   <!-- support blob URLs at this level -->
+
+   <li><p>If <var title="">url</var> is not failure, set
+   <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> to <var title="">url</var>.
   </ol>
 
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null and
- <a href="#concept-uu-query-object" title="concept-UU-query-object">query object</a> is non-null, empty
- <a href="#concept-uu-query-object" title="concept-UU-query-object">query object</a>'s associated list of name-value
- pairs.
+ <li><p>Let <var title="">query</var> be <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a>'s
+ <a href="#concept-url-query" title="concept-url-query">query</a> if <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a>
+ is non-null, and the empty string otherwise.
+
+ <li><p>If <a href="#concept-urlutils-query-object" title="concept-URLUtils-query-object">query object</a> is null, set
+ <a href="#concept-urlutils-query-object" title="concept-URLUtils-query-object">query object</a> to a
+ <a href="#concept-urlsearchparams-new" title="concept-URLSearchParams-new">new <code>URLSearchParams</code> object</a>
+ using <var title="">query</var>, and then append the
+ <a class="external" data-anolis-spec="dom" href="https://dom.spec.whatwg.org/#context-object">context object</a> to
+ <a href="#concept-urlutils-query-object" title="concept-URLUtils-query-object">query object</a>'s list of
+ <a href="#concept-urlsearchparams-url-object" title="concept-URLSearchParams-url-object">url objects</a>.
+
+ <li><p>Otherwise, set <a href="#concept-urlutils-query-object" title="concept-URLUtils-query-object">query object</a>'s
+ <a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a> to the result of
+ <a href="#concept-urlencoded-string-parser" title="concept-urlencoded-string-parser">parsing</a> <var title="">query</var>.
 </ol>
 
 <p>To run the <dfn id="pre-update-steps">pre-update steps</dfn> for an object implementing
@@ -2173,10 +2161,10 @@ concept only relevant for HTML.
 <ol>
  <li><p>If <var title="">value</var> is not given, let <var title="">value</var> be the result
  of <a href="#concept-url-serializer" title="concept-url-serializer">serializing</a> the associated
- <a href="#concept-uu-url" title="concept-UU-url">url</a>.
+ <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a>.
  <!-- these steps are always invoked with a value if url can be null -->
 
- <li><p>Run the <a href="#concept-uu-update" title="concept-UU-update">update steps</a> with
+ <li><p>Run the <a href="#concept-urlutils-update" title="concept-URLUtils-update">update steps</a> with
  <var title="">value</var>.
 </ol>
 
@@ -2185,7 +2173,7 @@ concept only relevant for HTML.
 
 <p>The
 <dfn id="dom-url" title="dom-URL"><code>URL(<var title="">url</var>, <var title="">base</var>)</code></dfn>
-constructor must run these steps:
+constructor, when invoked, must run these steps:
 
 <ol>
  <li><p><a href="#concept-basic-url-parser" title="concept-basic-url-parser">Basic URL parse</a> <var title="">base</var>
@@ -2197,12 +2185,12 @@ constructor must run these steps:
  <li><p>Let <var title="">result</var> be a new <a href="#url"><code>URL</code></a> object.
 
  <li><p>Let <var title="">result</var>'s
- <a href="#concept-uu-get-the-base" title="concept-UU-get-the-base">get the base</a> return <var title="">base</var>.
+ <a href="#concept-urlutils-get-the-base" title="concept-URLUtils-get-the-base">get the base</a> return <var title="">base</var>.
 
  <li><p>Run <var title="">result</var>'s
- <a href="#concept-uu-set-the-input" title="concept-UU-set-the-input">set the input</a> for <var title="">url</var>.
+ <a href="#concept-urlutils-set-the-input" title="concept-URLUtils-set-the-input">set the input</a> for <var title="">url</var>.
 
- <li><p>If <var title="">result</var>'s <a href="#concept-uu-url" title="concept-UU-url">url</a> is null,
+ <li><p>If <var title="">result</var>'s <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null,
  <a class="external" data-anolis-spec="webidl" href="http://heycam.github.io/webidl/#dfn-throw">throw</a> a <code title="">TypeError</code> exception.
 
  <li><p>Return <var title="">result</var>.
@@ -2214,17 +2202,17 @@ constructor must run these steps:
  <a href="#concept-base-url" title="concept-base-url">base URL</a>, invoke the constructor with a single
  argument:
 
- <pre>var input = "http://example.org/💩",
+ <pre>var input = "https://example.org/💩",
     url = new URL(input)
 url.pathname // "/%F0%9F%92%A9"</pre>
 
  <p>Alternatively you can use the <a href="#concept-base-url" title="concept-base-url">base URL</a> of a
- <a class="external" data-anolis-spec="dom" href="http://dom.spec.whatwg.org/#concept-document" title="concept-document">document</a> through
- <a href="http://dom.spec.whatwg.org/#dom-node-baseuri"><code class="external" data-anolis-spec="dom" title="dom-Node-baseURI">baseURI</code></a>:
+ <a class="external" data-anolis-spec="dom" href="https://dom.spec.whatwg.org/#concept-document" title="concept-document">document</a> through
+ <a href="https://dom.spec.whatwg.org/#dom-node-baseuri"><code class="external" data-anolis-spec="dom" title="dom-Node-baseURI">baseURI</code></a>:
 
  <pre>var input = "/💩",
     url = new URL(input, document.baseURI)
-url.href // "http://url.spec.whatwg.org/%F0%9F%92%A9"</pre>
+url.href // "https://url.spec.whatwg.org/%F0%9F%92%A9"</pre>
 </div>
 
 
@@ -2232,7 +2220,7 @@ url.href // "http://url.spec.whatwg.org/%F0%9F%92%A9"</pre>
 
 <p>The
 <dfn id="dom-url-domaintoascii" title="dom-URL-domainToASCII"><code>domainToASCII(<var>domain</var>)</code></dfn>
-static method must run these steps:
+static method, when invoked, must run these steps:
 
 <ol>
  <li><p>Let <var title="">asciiDomain</var> be the result of
@@ -2246,7 +2234,7 @@ static method must run these steps:
 
 <p>The
 <dfn id="dom-url-domaintounicode" title="dom-URL-domainToUnicode"><code>domainToUnicode(<var>domain</var>)</code></dfn>
-static method must run these steps:
+static method, when invoked, must run these steps:
 
 <ol>
  <li><p>Let <var title="">unicodeDomain</var> be the result of
@@ -2269,51 +2257,79 @@ representation?
 not exposed on the global object. They are meant to augment other interfaces, such as
 <a href="#url"><code>URL</code></a>.
 
-<p>The <dfn id="dom-url-href" title="dom-URL-href"><code>href</code></dfn> attribute must run
+<p>The <dfn id="dom-url-href" title="dom-URL-href"><code>href</code></dfn> attribute's getter must run
 these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, return
- <a href="#concept-uu-input" title="concept-UU-input">input</a>.
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, return
+ <a href="#concept-urlutils-input" title="concept-URLUtils-input">input</a>.
 
  <li><p>Return the <a href="#concept-url-serializer" title="concept-url-serializer">serialization</a>
- of <a href="#concept-uu-url" title="concept-UU-url">url</a>.
+ of <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a>.
 </ol>
 
-<p>Setting the <a href="#dom-url-href"><code title="dom-URL-href">href</code></a> attribute must
+<p>The <a href="#dom-url-href"><code title="dom-URL-href">href</code></a> attribute's setter must run these steps:
+
+<ol>
+ <li><p>Let <var title="">input</var> be the given value.
+
+ <li>
+  <p>If the <a class="external" data-anolis-spec="dom" href="https://dom.spec.whatwg.org/#context-object">context object</a> is a <a href="#url"><code>URL</code></a> object,
+  run these substeps:
+
+  <ol>
+   <li><p>Let <var title="">url</var> be the result of running the
+   <a href="#concept-basic-url-parser" title="concept-basic-url-parser">basic URL parser</a> on <var title="">input</var>
+   with <a href="#concept-base-url" title="concept-base-url">base URL</a> being the result of running
+   <a href="#concept-urlutils-get-the-base" title="concept-URLUtils-get-the-base">get the base</a>.
+
+   <li><p>If <var title="">url</var> is failure, <a class="external" data-anolis-spec="webidl" href="http://heycam.github.io/webidl/#dfn-throw">throw</a> a
+   <code title="">TypeError</code> exception.
+
+   <li><p>Set <a href="#concept-urlutils-input" title="concept-URLUtils-input">input</a> to <var title="">input</var>.
+
+   <li><p>Set <a href="#url" tilte="concept-URLUtils-url">url</a> to <var title="">url</var>.
+
+   <li><p>Set <a href="#concept-urlutils-query-object" title="concept-URLUtils-query-object">query object</a>'s
+   <a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a> to the result of
+   <a href="#concept-urlencoded-string-parser" title="concept-urlencoded-string-parser">parsing</a>
+   <a href="#url" tilte="concept-URLUtils-url">url</a>'s
+   <a href="#concept-url-query" title="concept-url-query">query</a>.
+  </ol>
+
+ <li>
+  <p>Otherwise, run these substeps:
+
+  <ol>
+   <li><p>Run the <a href="#concept-urlutils-set-the-input" title="concept-URLUtils-set-the-input">set the input</a>
+   algorithm for <var title="">input</var>.
+
+   <li><p>Run the <a href="#pre-update-steps">pre-update steps</a> with the given value.
+  </ol>
+
+  <div class="example">
+   <p>This means that if the <a href="#dom-url-href"><code title="dom-URL-href">href</code></a> attribute is set to
+   value that would cause the <a href="#concept-url-parser" title="concept-url-parser">URL parser</a> to return
+   failure, that value is still passed through unchanged. This is one of those unfortunate
+   legacy incidents.
+
+   <pre>var a = document.createElement("a"),
+    input = "https://test:test/" // invalid port makes the parser return failure
+a.href = test
+a.href === test // true</pre>
+  </div>
+</ol>
+
+<p>The <dfn id="dom-url-origin" title="dom-URL-origin"><code>origin</code></dfn> attribute's getter must
 run these steps:
 
 <ol>
- <li><p>Run the <a href="#concept-uu-set-the-input" title="concept-UU-set-the-input">set the input</a> algorithm for
- the given value.
-
- <li><p>If the <a class="external" data-anolis-spec="dom" href="http://dom.spec.whatwg.org/#context-object">context object</a> is a <a href="#url"><code>URL</code></a>
- object and its <a href="#concept-uu-url" title="concept-UU-url">url</a> is null,
- <a class="external" data-anolis-spec="webidl" href="http://heycam.github.io/webidl/#dfn-throw">throw</a> a <code title="">TypeError</code> exception.
-
- <li><p>Run the <a href="#pre-update-steps">pre-update steps</a> with the given value.
-</ol>
-
-<p class="note">This means that if the <a href="#dom-url-href"><code title="dom-URL-href">href</code></a> attribute is set
-to value that would cause the <a href="#concept-url-parser" title="concept-url-parser">URL parser</a> to return
-failure, that value is still passed through unchanged. This is one of those unfortunate
-legacy incidents.
-<!--
-  var urlPoop = "http://poop:poop/"
-  <a>.href = urlPoop
-  <a>.getAttribute("href") == urlPoop
--->
-
-<p>The <dfn id="dom-url-origin" title="dom-URL-origin"><code>origin</code></dfn> attribute must
-run these steps:
-
-<ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, return the empty
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, return the empty
  string.
 
  <li><p>Return the
- <a class="external" data-anolis-spec="html" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/browsers.html#unicode-serialisation-of-an-origin" title="Unicode serialization of an origin">Unicode serialization</a>
- of <a href="#concept-uu-url" title="concept-UU-url">url</a>'s <a href="#concept-url-origin" title="concept-url-origin">origin</a>.
+ <a class="external" data-anolis-spec="html" href="https://html.spec.whatwg.org/multipage/browsers.html#unicode-serialisation-of-an-origin" title="Unicode serialization of an origin">Unicode serialization</a>
+ of <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a>'s <a href="#concept-url-origin" title="concept-url-origin">origin</a>.
  <a href="#refsHTML">[HTML]</a>
 </ol>
 
@@ -2321,47 +2337,47 @@ run these steps:
 compatibility with HTML's <code>MessageEvent</code> feature.
 <a href="#refsHTML">[HTML]</a>
 
-<p>The <dfn id="dom-url-protocol" title="dom-URL-protocol"><code>protocol</code></dfn> attribute
+<p>The <dfn id="dom-url-protocol" title="dom-URL-protocol"><code>protocol</code></dfn> attribute's getter
 must run these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, return
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, return
  "<code title="">:</code>".
 
  <li><p>Return <a href="#concept-url-scheme" title="concept-url-scheme">scheme</a> and
  "<code title="">:</code>" concatenated.
 </ol>
 
-<p>Setting the <a href="#dom-url-protocol"><code title="dom-URL-protocol">protocol</code></a> attribute must
+<p>The <a href="#dom-url-protocol"><code title="dom-URL-protocol">protocol</code></a> attribute's setter must
 run these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, terminate
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, terminate
  these steps.
 
  <li><p><a href="#concept-basic-url-parser" title="concept-basic-url-parser">Basic URL parse</a> the given value and
  "<code title="">:</code>" concatenated with
- <a href="#concept-uu-url" title="concept-UU-url">url</a> as <var title="">url</var> and
+ <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> as <var title="">url</var> and
  <a href="#scheme-start-state">scheme start state</a> as <var title="">state override</var>.
 
  <li><p>Run the <a href="#pre-update-steps">pre-update steps</a>.
 </ol>
 
-<p>The <dfn id="dom-url-username" title="dom-URL-username"><code>username</code></dfn> attribute
+<p>The <dfn id="dom-url-username" title="dom-URL-username"><code>username</code></dfn> attribute's getter
 must run these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, return the
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, return the
  empty string.
 
  <li><p>Return <a href="#concept-url-username" title="concept-url-username">username</a>.
 </ol>
 
-<p>Setting the <a href="#dom-url-username"><code title="dom-URL-username">username</code></a> attribute must
+<p>The <a href="#dom-url-username"><code title="dom-URL-username">username</code></a> attribute's setter must
 run these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, or its
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, or its
  <a href="#relative-flag">relative flag</a> is unset, terminate these steps.
 
  <li><p>Set <a href="#concept-url-username" title="concept-url-username">username</a> to the empty
@@ -2375,22 +2391,22 @@ run these steps:
  <li><p>Run the <a href="#pre-update-steps">pre-update steps</a>.
 </ol>
 
-<p>The <dfn id="dom-url-password" title="dom-URL-password"><code>password</code></dfn> attribute
+<p>The <dfn id="dom-url-password" title="dom-URL-password"><code>password</code></dfn> attribute's getter
 must run these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null or its
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null or its
  <a href="#concept-url-password" title="concept-url-password">password</a> is null, return the empty
  string.
 
  <li><p>Return <a href="#concept-url-password" title="concept-url-password">password</a>.
 </ol>
 
-<p>Setting the <a href="#dom-url-password"><code title="dom-URL-password">password</code></a> attribute must
+<p>The <a href="#dom-url-password"><code title="dom-URL-password">password</code></a> attribute's setter must
 run these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, or its
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, or its
  <a href="#relative-flag">relative flag</a> is unset, terminate these steps.
 
  <li><p>If the given value is the empty string, set
@@ -2406,11 +2422,11 @@ run these steps:
  <li><p>Run the <a href="#pre-update-steps">pre-update steps</a>.
 </ol>
 
-<p>The <dfn id="dom-url-host" title="dom-URL-host"><code>host</code></dfn> attribute must run
+<p>The <dfn id="dom-url-host" title="dom-URL-host"><code>host</code></dfn> attribute's getter must run
 these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, return the
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, return the
  empty string.
 
  <li><p>If <a href="#concept-url-port" title="concept-url-port">port</a> is the empty string,
@@ -2423,76 +2439,75 @@ these steps:
  concatenated.
 </ol>
 
-<p>Setting the <a href="#dom-url-host"><code title="dom-URL-host">host</code></a> attribute must run these
+<p>The <a href="#dom-url-host"><code title="dom-URL-host">host</code></a> attribute's setter must run these
 steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, or its
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, or its
  <a href="#relative-flag">relative flag</a> is unset, terminate these steps.
 
  <li><p><a href="#concept-basic-url-parser" title="concept-basic-url-parser">Basic URL parse</a> the given value with
- <a href="#concept-uu-url" title="concept-UU-url">url</a> as <var title="">url</var> and
+ <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> as <var title="">url</var> and
  <a href="#host-state">host state</a> as <var title="">state override</var>.
 
  <li><p>Run the <a href="#pre-update-steps">pre-update steps</a>.
 </ol>
 
-<p>The <dfn id="dom-url-hostname" title="dom-URL-hostname"><code>hostname</code></dfn> attribute
+<p>The <dfn id="dom-url-hostname" title="dom-URL-hostname"><code>hostname</code></dfn> attribute's getter
 must run these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, return the
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, return the
  empty string.
 
  <li><p>Return <a href="#concept-url-host" title="concept-url-host">host</a>,
  <a href="#concept-host-serializer" title="concept-host-serializer">serialized</a>.
 </ol>
 
-<p>Setting the <a href="#dom-url-hostname"><code title="dom-URL-hostname">hostname</code></a> attribute must
+<p>The <a href="#dom-url-hostname"><code title="dom-URL-hostname">hostname</code></a> attribute's setter must
 run these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, or its
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, or its
  <a href="#relative-flag">relative flag</a> is unset, terminate these steps.
 
  <li><p><a href="#concept-basic-url-parser" title="concept-basic-url-parser">Basic URL parse</a> the given value with
- <a href="#concept-uu-url" title="concept-UU-url">url</a> as <var title="">url</var> and
+ <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> as <var title="">url</var> and
  <a href="#hostname-state">hostname state</a> as <var title="">state override</var>.
 
  <li><p>Run the <a href="#pre-update-steps">pre-update steps</a>.
 </ol>
 
-<p>The <dfn id="dom-url-port" title="dom-URL-port"><code>port</code></dfn> attribute must run
+<p>The <dfn id="dom-url-port" title="dom-URL-port"><code>port</code></dfn> attribute's getter must run
 these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, return the
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, return the
  empty string.
 
  <li><p>Return <a href="#concept-url-port" title="concept-url-port">port</a>.
 </ol>
 
-<p>Setting the <a href="#dom-url-port"><code title="dom-URL-port">port</code></a> attribute must run these
-steps:
+<p>The <a href="#dom-url-port"><code title="dom-URL-port">port</code></a> attribute's setter must run these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, its
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, its
  <a href="#relative-flag">relative flag</a> is unset, or its
  <a href="#concept-url-scheme" title="concept-url-scheme">scheme</a> is "<code title="">file</code>",
  terminate these steps.
 
  <li><p>Otherwise, <a href="#concept-basic-url-parser" title="concept-basic-url-parser">Basic URL parse</a>
- the given value with <a href="#concept-uu-url" title="concept-UU-url">url</a> as <var title="">url</var> and
+ the given value with <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> as <var title="">url</var> and
  <a href="#port-state">port state</a> as <var title="">state override</var>.
 
  <li><p>Run the <a href="#pre-update-steps">pre-update steps</a>.
 </ol>
 
-<p>The <dfn id="dom-url-pathname" title="dom-URL-pathname"><code>pathname</code></dfn> attribute
+<p>The <dfn id="dom-url-pathname" title="dom-URL-pathname"><code>pathname</code></dfn> attribute's getter
 must run these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, return the
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, return the
  empty string.
 
  <li><p>If the <a href="#relative-flag">relative flag</a> is unset, return
@@ -2503,27 +2518,27 @@ must run these steps:
  separated from each other by "<code title="">/</code>".
 </ol>
 
-<p>Setting the <a href="#dom-url-pathname"><code title="dom-URL-pathname">pathname</code></a> attribute must
+<p>The <a href="#dom-url-pathname"><code title="dom-URL-pathname">pathname</code></a> attribute's setter must
 run these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, or its
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, or its
  <a href="#relative-flag">relative flag</a> is unset, terminate these steps.
 
- <li><p>Set <a href="#concept-url-path" title="concept-url-path">path</a> to the empty list.
+ <li><p>Empty <a href="#concept-url-path" title="concept-url-path">path</a>.
 
  <li><p><a href="#concept-basic-url-parser" title="concept-basic-url-parser">Basic URL parse</a> the given value with
- <a href="#concept-uu-url" title="concept-UU-url">url</a> as <var title="">url</var> and
+ <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> as <var title="">url</var> and
  <a href="#relative-path-start-state">relative path start state</a> as <var title="">state override</var>.
 
  <li><p>Run the <a href="#pre-update-steps">pre-update steps</a>.
 </ol>
 
-<p>The <dfn id="dom-url-search" title="dom-URL-search"><code>search</code></dfn> attribute must
+<p>The <dfn id="dom-url-search" title="dom-URL-search"><code>search</code></dfn> attribute's getter must
 run these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, or its
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, or its
  <a href="#concept-url-query" title="concept-url-query">query</a> is either null or
  the empty string, return the empty string.
 
@@ -2531,17 +2546,17 @@ run these steps:
  <a href="#concept-url-query" title="concept-url-query">query</a>.
 </ol>
 
-<p>Setting the <a href="#dom-url-search"><code title="dom-URL-search">search</code></a> attribute must run
-these steps:
+<p>The <a href="#dom-url-search"><code title="dom-URL-search">search</code></a> attribute's setter must run these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, terminate these steps.
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, terminate these steps.
 
  <li><p>If the given value is the empty string, set
- <a href="#concept-url-query" title="concept-url-query">query</a> to null, set
- <a href="#concept-uu-query-object" title="concept-UU-query-object">query object</a>'s associated list
- of name-value pairs to the empty list, run its
- <a href="#concept-uq-update" title="concept-UQ-update">update steps</a>, and terminate these steps.
+ <a href="#concept-url-query" title="concept-url-query">query</a> to null, empty
+ <a href="#concept-urlutils-query-object" title="concept-URLUtils-query-object">query object</a>'s
+ <a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a>, run its
+ <a href="#concept-urlsearchparams-update" title="concept-URLSearchParams-update">update steps</a>, and terminate these
+ steps.
 
  <li><p>Let <var title="">input</var> be the given value with a single leading
  "<code title="">?</code>" removed, if any.
@@ -2549,57 +2564,56 @@ these steps:
  <li><p>Set <a href="#concept-url-query" title="concept-url-query">query</a> to the empty string.
 
  <li><p><a href="#concept-basic-url-parser" title="concept-basic-url-parser">Basic URL parse</a> <var title="">input</var>
- with <a href="#concept-uu-url" title="concept-UU-url">url</a> as <var title="">url</var>,
+ with <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> as <var title="">url</var>,
  <a href="#query-state">query state</a> as <var title="">state override</var>, and the
- associated <a href="#concept-uu-query-encoding" title="concept-UU-query-encoding">query encoding</a> as
+ associated <a href="#concept-urlutils-query-encoding" title="concept-URLUtils-query-encoding">query encoding</a> as
  <var>encoding override</var>.
 
- <li><p>Set <a href="#concept-uu-query-object" title="concept-UU-query-object">query object</a>'s
- associated list of name-value pairs to the result of
- <a href="#concept-urlencoded-string-parser" title="concept-urlencoded-string-parser">parsing</a>
- <var title="">input</var>.
+ <li><p>Set <a href="#concept-urlutils-query-object" title="concept-URLUtils-query-object">query object</a>'s
+ <a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a> to the result of
+ <a href="#concept-urlencoded-string-parser" title="concept-urlencoded-string-parser">parsing</a> <var title="">input</var>.
 
- <li><p>Run <a href="#concept-uu-query-object" title="concept-UU-query-object">query object</a>'s
- <a href="#concept-uq-update" title="concept-UQ-update">update steps</a>.
+ <li><p>Run <a href="#concept-urlutils-query-object" title="concept-URLUtils-query-object">query object</a>'s
+ <a href="#concept-urlsearchparams-update" title="concept-URLSearchParams-update">update steps</a>.
 </ol>
 
-<p class="note no-backref">The <a href="#concept-uq-update" title="concept-UQ-update">update steps</a> of
-<a href="#concept-uu-query-object" title="concept-UU-query-object">query object</a> are run to ensure all
-<a href="#concept-uq-url-object" title="concept-UQ-url-object">url objects</a> remain synchronized.
+<p class="note no-backref">The <a href="#concept-urlsearchparams-update" title="concept-URLSearchParams-update">update steps</a> of
+<a href="#concept-urlutils-query-object" title="concept-URLUtils-query-object">query object</a> are run to ensure all
+<a href="#concept-urlsearchparams-url-object" title="concept-URLSearchParams-url-object">url objects</a> remain synchronized.
 
-<p>The <dfn id="dom-url-searchparams" title="dom-URL-searchParams"><code>searchParams</code></dfn> attribute must
-return the <a href="#concept-uu-query-object" title="concept-UU-query-object">query object</a>.
+<p>The <dfn id="dom-url-searchparams" title="dom-URL-searchParams"><code>searchParams</code></dfn> attribute's getter
+must return the <a href="#concept-urlutils-query-object" title="concept-URLUtils-query-object">query object</a>.
 
-<p>Setting the <a href="#dom-url-searchparams"><code title="dom-URL-searchParams">searchParams</code></a> attribute must run
+<p>The <a href="#dom-url-searchparams"><code title="dom-URL-searchParams">searchParams</code></a> attribute's setter must run
 these steps:
 
 <ol>
  <li><p>Let <var title="">object</var> be the given value.
 
- <li><p>Remove the <a class="external" data-anolis-spec="dom" href="http://dom.spec.whatwg.org/#context-object">context object</a> from
- <a href="#concept-uu-query-object" title="concept-UU-query-object">query object</a>'s associated list of
- <a href="#concept-uq-url-object" title="concept-UQ-url-object">url objects</a>.
+ <li><p>Remove the <a class="external" data-anolis-spec="dom" href="https://dom.spec.whatwg.org/#context-object">context object</a> from
+ <a href="#concept-urlutils-query-object" title="concept-URLUtils-query-object">query object</a>'s list of
+ <a href="#concept-urlsearchparams-url-object" title="concept-URLSearchParams-url-object">url objects</a>.
 
- <li><p>Append the <a class="external" data-anolis-spec="dom" href="http://dom.spec.whatwg.org/#context-object">context object</a> to
- <var title="">object</var>'s associated list of
- <a href="#concept-uq-url-object" title="concept-UQ-url-object">url objects</a>.
+ <li><p>Append the <a class="external" data-anolis-spec="dom" href="https://dom.spec.whatwg.org/#context-object">context object</a> to
+ <var title="">object</var>'s list of
+ <a href="#concept-urlsearchparams-url-object" title="concept-URLSearchParams-url-object">url objects</a>.
 
- <li><p>Set <a href="#concept-uu-query-object" title="concept-UU-query-object">query object</a> to
+ <li><p>Set <a href="#concept-urlutils-query-object" title="concept-URLUtils-query-object">query object</a> to
  <var title="">object</var>.
 
  <li><p>Set <a href="#concept-url-query" title="concept-url-query">query</a> to the
  <a href="#concept-urlencoded-serializer" title="concept-urlencoded-serializer">serialization</a> of the
- <a href="#concept-uu-query-object" title="concept-UU-query-object">query object</a>'s associated list of name-value
- pairs.
+ <a href="#concept-urlutils-query-object" title="concept-URLUtils-query-object">query object</a>'s
+ <a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a>.
 
  <li><p>Run the <a href="#pre-update-steps">pre-update steps</a>.
 </ol>
 
-<p>The <dfn id="dom-url-hash" title="dom-URL-hash"><code>hash</code></dfn> attribute must run
+<p>The <dfn id="dom-url-hash" title="dom-URL-hash"><code>hash</code></dfn> attribute's getter must run
 these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, or its
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, or its
  <a href="#concept-url-fragment" title="concept-url-fragment">fragment</a> is either null or
  the empty string, return the empty string.
 
@@ -2607,11 +2621,10 @@ these steps:
  <a href="#concept-url-fragment" title="concept-url-fragment">fragment</a>.
 </ol>
 
-<p>Setting the <a href="#dom-url-hash"><code title="dom-URL-hash">hash</code></a> attribute must run these
-steps:
+<p>The <a href="#dom-url-hash"><code title="dom-URL-hash">hash</code></a> attribute's setter must run these steps:
 
 <ol>
- <li><p>If <a href="#concept-uu-url" title="concept-UU-url">url</a> is null, or its
+ <li><p>If <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> is null, or its
  <a href="#concept-url-scheme" title="concept-url-scheme">scheme</a> is
  "<code title="">javascript</code>", terminate these steps.
 
@@ -2626,7 +2639,7 @@ steps:
  the empty string.
 
  <li><p><a href="#concept-basic-url-parser" title="concept-basic-url-parser">Basic URL parse</a> <var title="">input</var>
- with <a href="#concept-uu-url" title="concept-UU-url">url</a> as <var title="">url</var> and
+ with <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a> as <var title="">url</var> and
  <a href="#fragment-state">fragment state</a> as <var title="">state override</var>.
 
  <li><p>Run the <a href="#pre-update-steps">pre-update steps</a>.
@@ -2635,35 +2648,37 @@ steps:
 
 <h3 id="interface-urlsearchparams"><span class="secno">7.4 </span>Interface <a href="#urlsearchparams"><code>URLSearchParams</code></a></h3>
 
-<pre class="idl">[<a href="#dom-urlsearchparams" title="dom-URLSearchParams">Constructor</a>(optional (<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> or <a href="#urlsearchparams">URLSearchParams</a>) <var title="">init</var> = ""),
+<pre class="idl">[<a href="#dom-urlsearchparams" title="dom-URLSearchParams">Constructor</a>(optional (USVString or <a href="#urlsearchparams">URLSearchParams</a>) <var title="">init</var> = ""),
  Exposed=(Window,Worker)]
 interface <dfn id="urlsearchparams">URLSearchParams</dfn> {
-  void <a href="#dom-urlsearchparams-append" title="dom-URLSearchParams-append">append</a>(<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <var title="">name</var>, <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <var title="">value</var>);
-  void <a href="#dom-urlsearchparams-delete" title="dom-URLSearchParams-delete">delete</a>(<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <var title="">name</var>);
-  <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a>? <a href="#dom-urlsearchparams-get" title="dom-URLSearchParams-get">get</a>(<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <var title="">name</var>);
-  sequence&lt;<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a>&gt; <a href="#dom-urlsearchparams-getall" title="dom-URLSearchParams-getAll">getAll</a>(<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <var title="">name</var>);
-  boolean <a href="#dom-urlsearchparams-has" title="dom-URLSearchParams-has">has</a>(<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <var title="">name</var>);
-  void <a href="#dom-urlsearchparams-set" title="dom-URLSearchParams-set">set</a>(<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <var title="">name</var>, <a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#scalarvaluestring">ScalarValueString</a> <var title="">value</var>);
+  void <a href="#dom-urlsearchparams-append" title="dom-URLSearchParams-append">append</a>(USVString <var title="">name</var>, USVString <var title="">value</var>);
+  void <a href="#dom-urlsearchparams-delete" title="dom-URLSearchParams-delete">delete</a>(USVString <var title="">name</var>);
+  USVString? <a href="#dom-urlsearchparams-get" title="dom-URLSearchParams-get">get</a>(USVString <var title="">name</var>);
+  sequence&lt;USVString&gt; <a href="#dom-urlsearchparams-getall" title="dom-URLSearchParams-getAll">getAll</a>(USVString <var title="">name</var>);
+  boolean <a href="#dom-urlsearchparams-has" title="dom-URLSearchParams-has">has</a>(USVString <var title="">name</var>);
+  void <a href="#dom-urlsearchparams-set" title="dom-URLSearchParams-set">set</a>(USVString <var title="">name</var>, USVString <var title="">value</var>);
+  iterable&lt;USVString, USVString&gt;;
   <a href="#dom-urlsearchparams-stringifier" title="dom-URLSearchParams-stringifier">stringifier</a>;
 };</pre>
 
-<p>A <a href="#urlsearchparams"><code>URLSearchParams</code></a> object has an associated list of name-value
-pairs, which is initially empty.
+<p>A <a href="#urlsearchparams"><code>URLSearchParams</code></a> object has an associated
+<dfn id="concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</dfn> of name-value pairs, which is initially
+empty.
 
 <p>A <a href="#urlsearchparams"><code>URLSearchParams</code></a> object has an associated list of zero or more
-<dfn id="concept-uq-url-object" title="concept-UQ-url-object">url objects</dfn>.
+<dfn id="concept-urlsearchparams-url-object" title="concept-URLSearchParams-url-object">url objects</dfn>, which is initially empty.
 
 <p class="note"><a href="#urlsearchparams"><code>URLSearchParams</code></a> objects always use
-<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#utf-8">utf-8</a> as
-<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#encoding">encoding</a>, despite the existence of
+<a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#utf-8">utf-8</a> as
+<a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#encoding">encoding</a>, despite the existence of
 concepts such as
-<a href="#concept-uu-query-encoding" title="concept-UU-query-encoding">query encoding</a>. This is to
+<a href="#concept-urlutils-query-encoding" title="concept-URLUtils-query-encoding">query encoding</a>. This is to
 encourage developers to migrate towards
-<a class="external" data-anolis-spec="encoding" href="http://encoding.spec.whatwg.org/#utf-8">utf-8</a>, which they really ought to
+<a class="external" data-anolis-spec="encoding" href="https://encoding.spec.whatwg.org/#utf-8">utf-8</a>, which they really ought to
 have done a long time ago now.
 
 <p>To create a
-<dfn id="concept-uq-new" title="concept-UQ-new">new <code>URLSearchParams</code> object</dfn>, optionally
+<dfn id="concept-urlsearchparams-new" title="concept-URLSearchParams-new">new <code>URLSearchParams</code> object</dfn>, optionally
 using <var title="">init</var>, run these steps:
 
 <ol>
@@ -2674,91 +2689,101 @@ using <var title="">init</var>, run these steps:
  <!-- Beware: new URLSearchParams(null) is equivalent to new URLSearchParams("null") -->
 
  <li><p>If <var title="">init</var> is a string,
- set <var title="">query</var>'s associated list of name-value pairs to the
+ set <var title="">query</var>'s <a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a> to the
  result of <a href="#concept-urlencoded-string-parser" title="concept-urlencoded-string-parser">parsing</a>
- <var title="">input</var>.
+ <var title="">init</var>.
 
  <li><p>If <var title="">init</var> is a <a href="#urlsearchparams"><code>URLSearchParams</code></a> object, set
- <var title="">query</var>'s associated list of name-value pairs to a copy of
- <var title="">init</var> associated list of name-value pairs.
+ <var title="">query</var>'s <a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a> to a copy
+ of <var title="">init</var>'s <a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a>.
 
  <li><p>Return <var title="">query</var>.
 </ol>
 
 <p>A <a href="#urlsearchparams"><code>URLSearchParams</code></a> object's
-<dfn id="concept-uq-update" title="concept-UQ-update">update steps</dfn> are to run these steps for each associated
-<a href="#concept-uq-url-object" title="concept-UQ-url-object">url object</a> <var title="">urlObject</var>, in order:
+<dfn id="concept-urlsearchparams-update" title="concept-URLSearchParams-update">update steps</dfn> are to run these steps for
+each associated  <a href="#concept-urlsearchparams-url-object" title="concept-URLSearchParams-url-object">url object</a>
+<var title="">urlObject</var>, in order:
 
 <ol>
- <li><p>Set <var title="">urlObject</var>'s <a href="#concept-uu-url" title="concept-UU-url">url</a>'s
- <a href="#concept-url-query" title="concept-URL-query">query</a> to the
- <a href="#concept-urlencoded-serializer" title="concept-urlencoded-serializer">serialization</a> of the
- <a href="#urlsearchparams"><code>URLSearchParams</code></a> object's associated list of name-value pairs.
+ <li><p>Set <var title="">urlObject</var>'s <a href="#concept-urlutils-url" title="concept-URLUtils-url">url</a>'s
+ <a href="#concept-url-query" title="concept-url-query">query</a> to the
+ <a href="#concept-urlencoded-serializer" title="concept-urlencoded-serializer">serialization</a> of
+ <a href="#urlsearchparams"><code>URLSearchParams</code></a> object's
+ <a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a>.
 
  <li><p>Run <var title="">urlObject</var>'s <a href="#pre-update-steps">pre-update steps</a>.
 </ol>
 
 <p>The
 <dfn id="dom-urlsearchparams" title="dom-URLSearchParams"><code>URLSearchParams(<var title="">init</var>)</code></dfn>
-constructor must return a
-<a href="#concept-uq-new" title="concept-UQ-new">new <code>URLSearchParams</code> object</a> using
-<var title="">init</var> if given.
+constructor, when invoked, must return a
+<a href="#concept-urlsearchparams-new" title="concept-URLSearchParams-new">new <code>URLSearchParams</code> object</a>
+using <var title="">init</var> if given.
 
 <p>The
 <dfn id="dom-urlsearchparams-append" title="dom-URLSearchParams-append"><code>append(<var title="">name</var>, <var title="">value</var>)</code></dfn>
-method must run these steps:
+method, when invoked, must run these steps:
 
 <ol>
  <li><p>Append a new name-value pair whose name is <var title="">name</var> and
- value is <var title="">value</var>, to the list of name-value pairs.
+ value is <var title="">value</var>, to <a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a>.
 
- <li><p>Run the <a href="#concept-uq-update" title="concept-UQ-update">update steps</a>.
+ <li><p>Run the <a href="#concept-urlsearchparams-update" title="concept-URLSearchParams-update">update steps</a>.
 </ol>
 
 <p>The
 <dfn id="dom-urlsearchparams-delete" title="dom-URLSearchParams-delete"><code>delete(<var title="">name</var>)</code></dfn>
-method must run these steps:
+method, when invoked, must run these steps:
 
 <ol>
- <li><p>Remove all name-value pairs whose name is <var title="">name</var>.
+ <li><p>Remove all name-value pairs whose name is <var title="">name</var> from
+ <a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a>.
 
- <li><p>Run the <a href="#concept-uq-update" title="concept-UQ-update">update steps</a>.
+ <li><p>Run the <a href="#concept-urlsearchparams-update" title="concept-URLSearchParams-update">update steps</a>.
 </ol>
 
 <p>The
 <dfn id="dom-urlsearchparams-get" title="dom-URLSearchParams-get"><code>get(<var title="">name</var>)</code></dfn>
-method must return the value of the first name-value pair whose name is
-<var title="">name</var>, and null if there is no such pair.
+method, when invoked, must return the value of the first name-value pair whose name is
+<var title="">name</var> in <a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a>, and null if
+there is no such pair.
 
 <p>The
 <dfn id="dom-urlsearchparams-getall" title="dom-URLSearchParams-getAll"><code>getAll(<var title="">name</var>)</code></dfn>
-method must return the values of all name-value pairs whose name is
-<var title="">name</var>, in list order, and the empty sequence otherwise.
+method, when invoked, must return the values of all name-value pairs whose name is
+<var title="">name</var>, in <a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a>,
+in list order, and the empty sequence otherwise.
 
 <p>The
 <dfn id="dom-urlsearchparams-set" title="dom-URLSearchParams-set"><code>set(<var title="">name</var>, <var title="">value</var>)</code></dfn>
-method must run these steps:
+method, when invoked, must run these steps:
 
 <ol>
- <li><p>If there are any name-value pairs whose name is <var title="">name</var>,
- set the value of the first such name-value pair to <var title="">value</var> and remove the
- others.
+ <li><p>If there are any name-value pairs whose name is <var title="">name</var>, in
+ <a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a>, set the value of the first such
+ name-value pair to <var title="">value</var> and remove the others.
 
- <li><p>Otherwise, append a new name-value pair whose name is
- <var title="">name</var> and value is <var title="">value</var>, to the list of
- name-value pairs.
+ <li><p>Otherwise, append a new name-value pair whose name is <var title="">name</var> and
+ value is <var title="">value</var>, to <a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a>.
 
- <li><p>Run the <a href="#concept-uq-update" title="concept-UQ-update">update steps</a>.
+ <li><p>Run the <a href="#concept-urlsearchparams-update" title="concept-URLSearchParams-update">update steps</a>.
 </ol>
 
 <p>The
 <dfn id="dom-urlsearchparams-has" title="dom-URLSearchParams-has"><code>has(<var title="">name</var>)</code></dfn>
-method must return true if there is a name-value pair whose name is
-<var title="">name</var>, and false otherwise.
+method, when invoked, must return true if there is a name-value pair whose name is
+<var title="">name</var> in <a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a>, and false
+otherwise.
+
+<p>The <a class="external" data-anolis-spec="webidl" href="http://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over">value pairs to iterate over</a> are the
+<a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a> name-value pairs with the key being
+the name and the value the value.
 
 <p>The <dfn id="dom-urlsearchparams-stringifier" title="dom-URLSearchParams-stringifier">stringifier</dfn> must return the
 <a href="#concept-urlencoded-serializer" title="concept-urlencoded-serializer">serialization</a> of the
-<a href="#urlsearchparams"><code>URLSearchParams</code></a> object's associated list of name-value pairs.
+<a href="#urlsearchparams"><code>URLSearchParams</code></a> object's
+<a href="#concept-urlsearchparams-list" title="concept-URLSearchParams-list">list</a>.
 
 
 <h3 id="url-apis-elsewhere"><span class="secno">7.5 </span>URL APIs elsewhere</h3>
@@ -2769,7 +2794,7 @@ method must return true if there is a name-value pair whose name is
 <a href="#concept-url" title="concept-url">URL</a>). A standard should not expose a
 <a href="#concept-url" title="concept-url">URL</a> using a <a href="#url"><code>URL</code></a> object. <a href="#url"><code>URL</code></a>
 objects are meant for <a href="#concept-url" title="concept-url">URL</a> manipulation. In IDL the
-<a href="http://encoding.spec.whatwg.org/#scalarvaluestring"><code class="external" data-anolis-spec="encoding">ScalarValueString</code></a> type should be used.
+USVString type should be used.
 
 <p class="note">The higher-level notion here is that values are to be exposed as immutable
 data structures.
@@ -2779,24 +2804,24 @@ should name such a feature "url" (i.e. lowercase and with an "l" at the end). Na
 as "URL", "URI", and "IRI" should not be used. However, if the name is a compound, "URL"
 (i.e. uppercase) is preferred, e.g. "newURL" and "oldURL".
 
-<p class="note">The <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/comms.html#eventsource"><code class="external" data-anolis-spec="html">EventSource</code></a> and
-<a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/browsers.html#hashchangeevent"><code class="external" data-anolis-spec="html">HashChangeEvent</code></a> interfaces in HTML are examples of
+<p class="note">The <a href="https://html.spec.whatwg.org/multipage/comms.html#eventsource"><code class="external" data-anolis-spec="html">EventSource</code></a> and
+<a href="https://html.spec.whatwg.org/multipage/browsers.html#hashchangeevent"><code class="external" data-anolis-spec="html">HashChangeEvent</code></a> interfaces in HTML are examples of
 proper naming. <a href="#refsHTML">[HTML]</a>
 
 
 
 <h2 class="no-num" id="references">References</h2>
 <div id="anolis-references"><dl><dt id="refsDOM">[DOM]
-<dd><cite><a href="http://dom.spec.whatwg.org/">DOM</a></cite>, Anne van Kesteren, Aryeh Gregor and Ms2ger. WHATWG.
+<dd><cite><a href="https://dom.spec.whatwg.org/">DOM</a></cite>, Anne van Kesteren, Aryeh Gregor and Ms2ger. WHATWG.
 
 <dt id="refsENCODING">[ENCODING]
-<dd><cite><a href="http://encoding.spec.whatwg.org/">Encoding</a></cite>, Anne van Kesteren. WHATWG.
+<dd><cite><a href="https://encoding.spec.whatwg.org/">Encoding</a></cite>, Anne van Kesteren. WHATWG.
 
 <dt id="refsFILEAPI">[FILEAPI]
 <dd><cite><a href="http://dev.w3.org/2006/webapi/FileAPI/">File API</a></cite>, Arun Ranganathan and Jonas Sicking. W3C.
 
 <dt id="refsHTML">[HTML]
-<dd><cite><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/">HTML</a></cite>, Ian Hickson. WHATWG.
+<dd><cite><a href="https://html.spec.whatwg.org/multipage/">HTML</a></cite>, Ian Hickson. WHATWG.
 
 <dt id="refsIDNA">[IDNA]
 <dd><cite><a href="http://www.unicode.org/reports/tr46/">Unicode IDNA Compatibility Processing</a></cite>, Mark Davis and Michel Suignard. Unicode Consortium.
@@ -2830,8 +2855,6 @@ proper naming. <a href="#refsHTML">[HTML]</a>
 thereby furthered the goals of this standard. Likewise many people have helped making this
 standard what it is today.
 
-<p>Ideally they are all listed here so please contact the editor with any omissions.
-
 <p>With that, many thanks to
 Adam Barth,
 Albert Wiersch,
@@ -2841,6 +2864,7 @@ Behnam Esfahbod,
 Bobby Holley,
 Boris Zbarsky,
 Brandon Ross,
+Dan Appelquist,
 Daniel Bratell,
 David Håsäther,
 David Sheets,
@@ -2857,6 +2881,7 @@ James Ross,
 Joshua Bell,
 Kevin Grandon,
 Larry Masinter,
+Mark Davis,
 Marcos Cáceres,
 Martin Dürst,
 Mathias Bynens,
@@ -2866,6 +2891,7 @@ Michel Suignard,
 Peter Occil,
 Rodney Rehm,
 Roy Fielding,
+Sam Ruby,
 Santiago M. Mola,
 Simon Pieters,
 Simon Sapin,
@@ -2876,4 +2902,13 @@ Vyacheslav Matva, and
 成瀬ゆい (Yui Naruse)
 for being awesome!
 
-<script id="head" src="http://www.whatwg.org/specs/web-apps/current-work/dfn.js"></script>
+<p>This standard is written by
+<a href="//annevankesteren.nl/" lang="nl">Anne van Kesteren</a>
+(<a href="//www.mozilla.org/">Mozilla</a>,
+<a href="mailto:annevk@annevk.nl">annevk@annevk.nl</a>).
+
+<p>Per <a href="//creativecommons.org/publicdomain/zero/1.0/" rel="license">CC0</a>, to
+the extent possible under law, the editor has waived all copyright and related or
+neighboring rights to this work.
+
+<script id="head" src="//resources.whatwg.org/dfn.js"></script>

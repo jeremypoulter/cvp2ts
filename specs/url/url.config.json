@@ -1,6 +1,6 @@
 {
     "spec": "url",
-    "source": "http://url.spec.whatwg.org/",
+    "source": "https://url.spec.whatwg.org/",
     "levels": [ 1 ],
     "local": "url.html",
     "dontExtract": true,
