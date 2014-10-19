@@ -1538,6 +1538,10 @@
         "path": "tests/fullscreen/fullscreen-interface-Element-partial-1.html"
       }, 
       {
+        "url": "/tests/gif/gif-ImageGIFFormat.html", 
+        "path": "tests/gif/gif-ImageGIFFormat.html"
+      }, 
+      {
         "url": "/tests/html5/html5-interface-ApplicationCache.html", 
         "path": "tests/html5/html5-interface-ApplicationCache.html"
       }, 
@@ -2214,6 +2218,18 @@
         "path": "tests/html5/html5-interface-WindowTimers.html"
       }, 
       {
+        "url": "/tests/jpeg/jpeg-ImageJPEGFormat.html", 
+        "path": "tests/jpeg/jpeg-ImageJPEGFormat.html"
+      }, 
+      {
+        "url": "/tests/opentype/opentype-FontOpenTypeFormat.html", 
+        "path": "tests/opentype/opentype-FontOpenTypeFormat.html"
+      }, 
+      {
+        "url": "/tests/png/png-ImagePNGFormat.html", 
+        "path": "tests/png/png-ImagePNGFormat.html"
+      }, 
+      {
         "url": "/tests/selectors1/selectors1-interface-Document-partial-1.html", 
         "path": "tests/selectors1/selectors1-interface-Document-partial-1.html"
       }, 
@@ -2726,6 +2742,10 @@
         "path": "tests/webworkers/webworkers-interface-WorkerNavigator.html"
       }, 
       {
+        "url": "/tests/woff/woff-FontWOFFFormat.html", 
+        "path": "tests/woff/woff-FontWOFFFormat.html"
+      }, 
+      {
         "url": "/tests/xhr/xhr-interface-FormData.html", 
         "path": "tests/xhr/xhr-interface-FormData.html"
       }, 
@@ -2874,6 +2894,14 @@
         "path": "tests/file/helpers/URL.js"
       }, 
       {
+        "url": "/tests/gif/helpers/ImageGIFFormat.js", 
+        "path": "tests/gif/helpers/ImageGIFFormat.js"
+      }, 
+      {
+        "url": "/tests/gif/resources/test.gif", 
+        "path": "tests/gif/resources/test.gif"
+      }, 
+      {
         "url": "/tests/html5/helpers/AudioTrack.js", 
         "path": "tests/html5/helpers/AudioTrack.js"
       }, 
@@ -2932,6 +2960,30 @@
       {
         "url": "/tests/html5/helpers/VideoTrackList.js", 
         "path": "tests/html5/helpers/VideoTrackList.js"
+      }, 
+      {
+        "url": "/tests/jpeg/helpers/ImageJPEGFormat.js", 
+        "path": "tests/jpeg/helpers/ImageJPEGFormat.js"
+      }, 
+      {
+        "url": "/tests/jpeg/resources/test.jpg", 
+        "path": "tests/jpeg/resources/test.jpg"
+      }, 
+      {
+        "url": "/tests/opentype/helpers/FontOpenTypeFormat.js", 
+        "path": "tests/opentype/helpers/FontOpenTypeFormat.js"
+      }, 
+      {
+        "url": "/tests/opentype/resources/test.ttf", 
+        "path": "tests/opentype/resources/test.ttf"
+      }, 
+      {
+        "url": "/tests/png/helpers/ImagePNGFormat.js", 
+        "path": "tests/png/helpers/ImagePNGFormat.js"
+      }, 
+      {
+        "url": "/tests/png/resources/test.png", 
+        "path": "tests/png/resources/test.png"
       }, 
       {
         "url": "/tests/sse/helpers/EventSource.js", 
@@ -3052,9 +3104,17 @@
       {
         "url": "/tests/webworkers/resources/workerglobalscope.js", 
         "path": "tests/webworkers/resources/workerglobalscope.js"
+      }, 
+      {
+        "url": "/tests/woff/helpers/FontWOFFFormat.js", 
+        "path": "tests/woff/helpers/FontWOFFFormat.js"
+      }, 
+      {
+        "url": "/tests/woff/resources/test.woff", 
+        "path": "tests/woff/resources/test.woff"
       }
     ]
   }, 
   "local_changes": [], 
-  "rev": "1cfcd2bae477447fffdb4241cbb456a9d1e6435a"
+  "rev": "cd3563744c268511fc054ae92c04b78b0cd513ca"
 }
