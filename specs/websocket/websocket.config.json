@@ -3,6 +3,7 @@
     "source": "http://dev.w3.org/html5/websockets/",
     "levels": [ 1 ],
     "local": "websocket.html",
+    "helpers1": [],
     "instances": {
         "CloseEvent": "'CloseEvent' in window && new CloseEvent('close')",
         "WebSocket": "'WebSocket' in window && new WebSocket('ws://web-platform.test:8000/echo')"

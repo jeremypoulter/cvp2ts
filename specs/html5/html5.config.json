@@ -4,7 +4,7 @@
     "source": "http://www.w3.org/html/wg/drafts/html/CR/single-page.html",
     "levels": [ 1 ],
     "local": "html5.html",
-    "helpers": [
+    "helpers1": [
         "AudioTrack",
         "AudioTrackList",
         "DataCue",

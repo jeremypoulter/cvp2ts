@@ -3,6 +3,7 @@
     "source": "http://www.w3.org/TR/2014/WD-encoding-20140603/",
     "levels": [ 1 ],
     "local": "spec.html",
+    "helpers1": [],
     "instances": {
         "TextDecoder": "'TextDecoder' in window && new TextDecoder()",
         "TextEncoder": "'TextEncoder' in window && new TextEncoder()"

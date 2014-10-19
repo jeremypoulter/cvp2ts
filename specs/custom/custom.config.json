@@ -5,6 +5,7 @@
     "local": "custom.html",
     "dontFetch": true,
     "dontFetchReason": "requires manual respec snapshot",
+    "helpers1": [],
     "instances": {
         "Document": "document"
     }

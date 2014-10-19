@@ -37,8 +37,8 @@
     var defaults        = {
         configFile : undefined,
         configFileEncoding : 'utf8',
-        helpers2 : undefined,
-        level : 2,
+        helpers3 : undefined,
+        level : 3,
         local : undefined,
         other : [],
         outputFileEncoding : 'utf8',
@@ -59,8 +59,7 @@
         },
         onProcessDocument : function() {
             try {
-                processVocabulary();
-                processProperties();
+                processTests();
                 setTimeout(function() { $.onOutputDone(); }, 0);
             } catch(e) {
                 setTimeout(function() { $.onFatalException(e); }, 0);
@@ -96,34 +95,27 @@
     function defaultOptions() {
         return defaults;
     }
-    function processVocabulary() {
-    }
-    function processProperties() {
+    function processTests() {
         var options = $.options;
-        _(options['properties']).forEach(function (def) {
-            if (!def.type)
-                def.type = 'property';
-            if (!def.nameNormalized)
-                def.nameNormalized = normalizePropertyName(def.name);
-            processProperty(def);
+        _(options['tests']).forEach(function (def) {
+            processTest(def);
         });
     }
-    function processProperty(def) {
+    function processTest(def) {
         var options = $.options;
-        var type = def.type;
-        var name = def.nameNormalized;
+        var name = def.name;
+        var helper = def.helper || name;
+        var testCode = def.code || "run(test)";
+        var async = def.async || false;
         var testFileName = makeTestFileName(def);
         if (!!testFileName) {
-            var testContent = buildPropertyTest(options['spec'], [def], getHelper(name));
+            var testContent = buildTest(options['spec'], [def], getHelper(helper), testCode, async);
             var testFile = path.normalize(path.join(options['testDirectory'], testFileName));
             fs.writeFileSync(testFile, testContent, {encoding: options['outputFileEncoding']});
         }
     }
-    function normalizePropertyName(name) {
-        return capitalize(name.split("-").join(" ")).split(" ").join("");
-    }
     function getHelper(name) {
-        var helpers = $.options.helpers2;
+        var helpers = $.options.helpers3;
         if (!!helpers) {
             var index = helpers.indexOf(name);
             if (index >= 0) {
@@ -134,28 +126,35 @@
     }
     function makeTestFileName(def) {
         var sep = '-';
-        if (def.type == 'property')
-            return makePropertyTestFileName(def, sep);
-        else
-            return null;
+        var name = def.name;
+        return [$.options['spec'], name].join(sep) + '.html';
     }
-    function makePropertyTestFileName(def, sep) {
-        var type = def.type;
-        var name = def.nameNormalized;
-        return [$.options['spec'], type, name].join(sep) + '.html';
-    }
-    function buildPropertyTest(spec, defs, helper) {
+    function buildTest(spec, defs, helper, testCode, async) {
         assert.ok(util.isArray(defs) && (defs.length > 0));
         var def = defs[0];
-        var type = 'property';
         var html = getTestPreamble();
-        html += "<title>" + "Property " + def.name + " Tests</title>\n";
+        html += "<title>" + "Test " + def.name + "</title>\n";
         html += getTestScripts(def, helper);
-        html += "<h1>Test " + capitalize(type) + " " + def.name + " Support</h1>\n";
+        html += "<h1>Test " + def.name + " Support</h1>\n";
         html += "<div id='log'></div>\n";
-        var entryName = 'level2';
+        var entryName = async ? 'level3Async' : 'level3';
+        var tester;
+        if (!!testCode) {
+            if (testCode == 'undefined') {
+                if ($.options['warnOnUndefinedInstanceGetter']) {
+                    console.warn('[W]: ' + 'Undefined test code for ' + def.name + '.');
+                }
+                tester = "undefined";
+            } else if (testCode == 'null') {
+                tester = "null";
+            } else {
+                tester = "function(t){return " + testCode + ";}";
+            }
+        } else {
+            tester = "undefined";
+        }
         html += "<script>\n";
-        html += entryName + "('" + spec + "', JSON.parse(document.getElementById('propDef').textContent));\n";
+        html += entryName + "('" + spec + "', JSON.parse(document.getElementById('testDef').textContent), " + tester + ");\n";
         html += "</script>\n";
         return html;
     }
@@ -171,29 +170,13 @@
         var html = "";
         html += "<script src='/resources/testharness.js'></script>\n";
         html += "<script src='/resources/testharnessreport.js'></script>\n";
-        html += "<script src='/tools/common/level2.js'></script>\n";
+        html += "<script src='/tools/common/level3.js'></script>\n";
         if (!!helper)
             html += "<script src='./helpers/" + helper + ".js'></script>\n";
-        html += "<script type='text/plain' id='propDef'>\n";
+        html += "<script type='text/plain' id='testDef'>\n";
         html += JSON.stringify(def) + "\n";
         html += "</script>\n";
         return html;
-    }
-    function capitalize(s) {
-        if (s.length > 0) {
-            var sNew = '';
-            var words = s.match(/\S+/g);
-            for (var i in words) {
-                var w = words[i];
-                var first = String.fromCharCode(w.charCodeAt(0));
-                var remainder = w.substring(1);
-                if (sNew.length > 0)
-                    sNew += ' ';
-                sNew += first.toUpperCase() + remainder;
-            }
-            return sNew;
-        } else
-            return s;
     }
     $.run(process.argv);
 })();

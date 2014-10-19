@@ -6,5 +6,6 @@
     "dontFetch": true,
     "dontFetchReason": "specification is final",
     "dontExtract": true,
-    "dontExtractReason": "requires manual property extraction"
+    "dontExtractReason": "requires manual property extraction",
+    "helpers2": []
 }

@@ -3,6 +3,7 @@
     "source": "http://dev.w3.org/html5/postmsg/",
     "levels": [ 1 ],
     "local": "webmessage.html",
+    "helpers1": [],
     "instances": {
         "MessageChannel": "'MessageChannel' in window && new MessageChannel()",
         "MessageEvent": "document.createEvent('MessageEvent')",

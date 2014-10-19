@@ -4,7 +4,7 @@
     "local": "ac3.txt",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "helpers": [
+    "helpers4": [
         "MediaAC3AudioFormat"
     ],
     "tests": [

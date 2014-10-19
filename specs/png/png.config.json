@@ -4,7 +4,7 @@
     "local": "png.txt",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "helpers": [
+    "helpers4": [
         "ImagePNGFormat"
     ],
     "tests": [

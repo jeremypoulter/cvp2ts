@@ -6,6 +6,7 @@
     "dontFetch": true,
     "dontExtract": true,
     "dontExtractReason": "definitions of IDL require manual editing, about which see comment in IDL file",
+    "helpers1": [],
     "instances": {
         "ArrayBuffer": "'ArrayBuffer' in window && new ArrayBuffer(0)",
         "ArrayBufferView": "'Uint8Array' in window && new Uint8Array(0)",

@@ -3,7 +3,7 @@
     "source": "http://dev.w3.org/csswg/cssom/",
     "levels": [ 1 ],
     "local": "cssom.html",
-    "helpers": [
+    "helpers1": [
         "CSSCharsetRule",
         "CSSGroupingRule",
         "CSSImportRule",

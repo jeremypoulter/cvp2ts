@@ -5,6 +5,7 @@
     "local": "dom3events.html",
     "dontFetch": true,
     "dontFetchReason": "requires manual respec snapshot",
+    "helpers1": [],
     "instances": {
         "CompositionEvent": "document.createEvent('CompositionEvent')",
         "CustomEvent": "document.createEvent('CustomEvent')",

@@ -5,6 +5,7 @@
     "local": "url.html",
     "dontExtract": true,
     "dontExtractReason": "definitions of IDL require manual editing, about which see comment in IDL file",
+    "helpers1": [],
     "instances": {
         "URL": "'URL' in window && new URL('http://example.org/')",
         "URLSearchParams": "'URLSearchParams' in window && new URLSearchPararms()",

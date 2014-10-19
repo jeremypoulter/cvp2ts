@@ -37,7 +37,7 @@
     var defaults        = {
         configFile : undefined,
         configFileEncoding : 'utf8',
-        helpers : undefined,
+        helpers1 : undefined,
         indexFile : undefined,
         inputFileEncoding : 'utf8',
         inputFile : undefined,
@@ -355,7 +355,7 @@
         return false;
     }
     function getHelper(name) {
-        var helpers = $.options.helpers;
+        var helpers = $.options.helpers1;
         if (!!helpers) {
             var index = helpers.indexOf(name);
             if (index >= 0) {

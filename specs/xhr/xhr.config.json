@@ -3,6 +3,7 @@
     "source": "https://dvcs.w3.org/hg/xhr/raw-file/default/xhr-1/Overview.html",
     "levels": [ 1 ],
     "local": "spec.html",
+    "helpers1": [],
     "instances": {
         "FormData": "'FormData' in window && new FormData()",
         "XMLHttpRequest": "'XMLHttpRequest' in window && new XMLHttpRequest()",

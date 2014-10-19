@@ -7,7 +7,7 @@
     "dontFetchReason": "specification is final",
     "dontExtract": true,
     "dontExtractReason": "definitions of IDL require manual editing, about which see comment in IDL file",
-    "helpers": [
+    "helpers1": [
         "AsyncURLStatus",
         "DOMException",
         "Document",

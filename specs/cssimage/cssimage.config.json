@@ -5,7 +5,7 @@
     "local": "cssimage.html",
     "dontExtract": true,
     "dontExtractReason": "requires manual property extraction",
-    "helpers": [],
+    "helpers2": [],
     "comments": "test extensions to css21, or initial value if no extension",
     "properties": [
         {

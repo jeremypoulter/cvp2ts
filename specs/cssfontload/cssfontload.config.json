@@ -6,7 +6,7 @@
     "dontFetch": true,
     "dontExtract": true,
     "dontExtractReason": "extracted IDL edited to abstract unsupported IDL syntax",
-    "helpers": [
+    "helpers1": [
         "FontFace"
     ],
     "instances": {

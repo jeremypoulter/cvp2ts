@@ -3,6 +3,7 @@
     "source": "http://www.w3.org/TR/2012/WD-fullscreen-20120703/",
     "levels": [ 1 ],
     "local": "fullscreen.html",
+    "helpers1": [],
     "instances": {
         "Element": "document.documentElement",
         "Document": "document"

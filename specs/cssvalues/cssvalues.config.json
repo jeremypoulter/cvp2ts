@@ -4,5 +4,6 @@
     "levels": [ 2 ],
     "local": "cssvalues.html",
     "dontExtract": true,
-    "dontExtractReason": "requires manual property extraction"
+    "dontExtractReason": "requires manual property extraction",
+    "helpers2": []
 }

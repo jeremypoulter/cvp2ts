@@ -5,5 +5,15 @@
     "local": "rfc6265.txt",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "helpers": []
+    "helpers3": [
+        "ProtocolCookies"
+    ],
+    "tests": [
+        {
+            "name": "ProtocolCookies",
+            "helper": "ProtocolCookies",
+            "code": "run(t)",
+            "async": true
+        }
+    ]
 }

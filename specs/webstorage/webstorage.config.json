@@ -3,6 +3,7 @@
     "source": "http://www.w3.org/TR/2013/REC-webstorage-20130730/",
     "levels": [ 1 ],
     "local": "webstorage.html",
+    "helpers1": [],
     "instances": {
         "Storage": "window.localStorage",
         "StorageEvent": "document.createEvent('StorageEvent')",

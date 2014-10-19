@@ -8,7 +8,7 @@
     "dontFetchReason": "specification is final",
     "dontExtract": true,
     "dontExtractReason": "requires manual property extraction",
-    "helpers": [],
+    "helpers2": [],
     "properties": [
         {
             "name": "margin-top",

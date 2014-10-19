@@ -3,7 +3,7 @@
     "source": "http://dev.w3.org/csswg/cssom-view/",
     "levels": [ 1 ],
     "local": "cssomview.html",
-    "helpers": [
+    "helpers1": [
         "CaretPosition",
         "MediaQueryList"
     ],

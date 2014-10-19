@@ -7,6 +7,7 @@
     "dontFetchReason": "specification is final",
     "dontExtract": true,
     "dontExtractReason": "definitions of IDL require manual creation",
+    "helpers1": [],
     "instances": {
         "Array": "'Array' in window && new Array()",
         "Boolean": "'Boolean' in window && new Boolean(false)",

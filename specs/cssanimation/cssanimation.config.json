@@ -5,7 +5,7 @@
     "local": "cssanimation.html",
     "dontExtract": true,
     "dontExtractReason": "requires manual property extraction",
-    "helpers": [],
+    "helpers2": [],
     "properties": [
         {
             "name": "animation-name",

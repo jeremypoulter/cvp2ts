@@ -3,7 +3,7 @@
     "source": "http://www.w3.org/html/wg/drafts/2dcontext/html5_canvas_CR/",
     "levels": [ 1 ],
     "local": "canvas2d.html",
-    "helpers": [
+    "helpers1": [
         "CanvasPattern"
     ],
     "instances": {

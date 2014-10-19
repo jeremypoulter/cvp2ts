@@ -3,6 +3,7 @@
     "source": "http://www.w3.org/TR/2013/REC-selectors-api-20130221/",
     "levels": [ 1 ],
     "local": "selectors1.html",
+    "helpers1": [],
     "instances": {
         "Document": "document",
         "DocumentFragment": "document.createDocumentFragment()",

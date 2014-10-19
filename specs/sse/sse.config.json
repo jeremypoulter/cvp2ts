@@ -3,7 +3,7 @@
     "source": "http://dev.w3.org/html5/eventsource/",
     "levels": [ 1 ],
     "local": "sse.html",
-    "helpers": [
+    "helpers1": [
         "EventSource"
     ],
     "instances": {

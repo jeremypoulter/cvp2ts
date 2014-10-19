@@ -5,7 +5,7 @@
     "local": "woff.html",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "helpers": [
+    "helpers4": [
         "FontWOFFFormat"
     ],
     "tests": [

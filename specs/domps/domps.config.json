@@ -5,6 +5,7 @@
     "local": "domps.html",
     "dontFetch": true,
     "dontFetchReason": "requires manual respec snapshot",
+    "helpers1": [],
     "instances": {
         "DOMParser": "'DOMParser' in window && new DOMParser()",
         "Element": "document.documentElement",

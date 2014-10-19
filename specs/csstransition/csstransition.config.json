@@ -5,7 +5,7 @@
     "local": "csstransition.html",
     "dontExtract": true,
     "dontExtractReason": "requires manual property extraction",
-    "helpers": [],
+    "helpers2": [],
     "properties": [
         {
             "name": "transition-property",

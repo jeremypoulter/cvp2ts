@@ -5,7 +5,7 @@
     "local": "csstransform.html",
     "dontExtract": true,
     "dontExtractReason": "requires manual property extraction",
-    "helpers": [],
+    "helpers2": [],
     "properties": [
         {
             "name": "transform",

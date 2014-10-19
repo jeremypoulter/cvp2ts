@@ -3,7 +3,7 @@
     "source": "http://w3c.github.io/dom/",
     "levels": [ 1 ],
     "local": "dom4.html",
-    "helpers": [
+    "helpers1": [
         "DOMException",
         "DOMSettableTokenList",
         "MutationRecord"

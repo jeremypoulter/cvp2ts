@@ -23,9 +23,27 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# tools
-TOOLS_L1        = fetch extract parse index generate
-TOOLS_L2        = fetch generate
-TOOLS_L3        = fetch generate
-TOOLS_L4        = fetch generate
+TOP		= ../../..
 
+include $(TOP)/Makefile.Config.mk
+
+TOOL		= generate.js
+OUTSUFFIX	= test.ts
+outfiles	:= $(foreach spec, $(SPECS_L3), $(SPECDIR)/$(spec)/$(spec).$(OUTSUFFIX))
+
+all: $(outfiles)
+
+%.$(OUTSUFFIX): %.$(CONFIGSUFFIX)
+	@if [ ! -d $(TESTDIR)/$(*F) ]; then mkdir -p $(TESTDIR)/$(*F); fi;
+	@$(NODE) $(TOOL) $(TOOLFLAGS) $(GENERATEFLAGS) --config $(@D)/$(*F).$(CONFIGSUFFIX) --testDirectory $(TESTDIR)/$(*F)
+	@if [ -d $(SPECDIR)/$(*F)/helpers ]; then \
+	    $(CP) -R $(SPECDIR)/$(*F)/helpers $(TESTDIR)/$(*F) ; \
+	fi;
+	@if [ -d $(SPECDIR)/$(*F)/resources ]; then \
+	    $(CP) -R $(SPECDIR)/$(*F)/resources $(TESTDIR)/$(*F) ; \
+	fi;
+
+clean:
+	@$(CLEANTOOL) --phase generate --testDirectoryRoot $(TESTDIR) $(outfiles)
+
+.PHONY: all clean

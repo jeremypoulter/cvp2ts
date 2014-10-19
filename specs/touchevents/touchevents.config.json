@@ -5,6 +5,7 @@
     "local": "touchevents.html",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
+    "helpers1": [],
     "instances": {
         "Document": "document",
         "Touch": "'createTouch' in document && document.createTouch(window, window, 0, 0, 0, 0, 0)",
