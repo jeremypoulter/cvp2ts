@@ -2806,6 +2806,10 @@
         "path": "tests/cookies/helpers/ProtocolCookies.js"
       }, 
       {
+        "url": "/tests/cookies/resources/set-cookie.py", 
+        "path": "tests/cookies/resources/set-cookie.py"
+      }, 
+      {
         "url": "/tests/cssfontload/helpers/FontFace.js", 
         "path": "tests/cssfontload/helpers/FontFace.js"
       }, 
@@ -3172,5 +3176,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "8c233c484c5195801db0878ee4f62a9303454160"
+  "rev": "382366ae9e8bdee2d24f6d3c23b759f451d94372"
 }
