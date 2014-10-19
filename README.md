@@ -41,7 +41,7 @@ The `cvp2ts` tool source and build tree is organized as follow:
   Makefile.Config.mk    - general make configuration parameters
   Makefile.Specs.mk     - specifications parameter (determines which specifications to process)
   Makefile.Tools.mk     - tools parameter (determines which tools are run)
-  README.ms             - this readme
+  README.md             - this readme
   specs/                - contains one sub-directory for each specification
   specs/index           - special (pseudo) specification directory where aggregate parsed IDL index is written
   tests/                - contains test (and helper and resource) files produced by build
@@ -53,7 +53,7 @@ Each specification directory is initially populated with a configuration file, e
 
 ## Build Tool Chain
 
-The following tools are executed in the normal build chain:
+The following tools are executed in the normal build chain. Different levels may vary in tool usage.
 
 <pre>
   fetch                 - fetches specification source, unless skipped (see below)
@@ -83,7 +83,7 @@ In order to perform a clean build, perform the following steps:
   % make MANIFEST.json
 </pre>
 
-Normally rebuilding the `MANIFEST.json` file is not required unless some test has changed (or been added or removed).
+Normally rebuilding the `MANIFEST.json` file is not required unless some test has changed (or been added or removed). Note that rebuilding `MANIFEST.json` requires a committed git repository (if one is being used).
 
 ## Build and Run Dependencies
 
