@@ -8,7 +8,7 @@ function run(t) {
         assert_not_equals(canPlay, '', 'can play type ' + mimeType + ' must return non-empty string');
     },  defProperties.expandedName + '-can-play-type');
     if ((canPlay === 'maybe') || (canPlay === 'probably')) {
-        e.src = './resources/test.m2ts';
+        e.src = './resources/test.mp2';
         e.autoplay = true;
         e.onended = t.step_func_done(function(evt) {
             loadComplete(defProperties, e, evt);
