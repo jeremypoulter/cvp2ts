@@ -46,6 +46,10 @@
         "path": "tests/canvas2d/canvas2d-interface-TextMetrics.html"
       }, 
       {
+        "url": "/tests/cookies/cookies-ProtocolCookies.html", 
+        "path": "tests/cookies/cookies-ProtocolCookies.html"
+      }, 
+      {
         "url": "/tests/css21/css21-property-Background.html", 
         "path": "tests/css21/css21-property-Background.html"
       }, 
@@ -2798,6 +2802,10 @@
         "path": "tests/canvas2d/helpers/CanvasPattern.js"
       }, 
       {
+        "url": "/tests/cookies/helpers/ProtocolCookies.js", 
+        "path": "tests/cookies/helpers/ProtocolCookies.js"
+      }, 
+      {
         "url": "/tests/cssfontload/helpers/FontFace.js", 
         "path": "tests/cssfontload/helpers/FontFace.js"
       }, 
@@ -3006,12 +3014,8 @@
         "path": "tests/mpeg2ts/helpers/MediaMPEG2TSFormat.js"
       }, 
       {
-        "url": "/tests/mpeg2ts/resources/test.m2ts", 
-        "path": "tests/mpeg2ts/resources/test.m2ts"
-      }, 
-      {
-        "url": "/tests/mpeg2ts/resources/test.mp2ts", 
-        "path": "tests/mpeg2ts/resources/test.mp2ts"
+        "url": "/tests/mpeg2ts/resources/test.mp2", 
+        "path": "tests/mpeg2ts/resources/test.mp2"
       }, 
       {
         "url": "/tests/mpeg2video/helpers/MediaMPEG2VideoFormat.js", 
@@ -3168,5 +3172,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "fcabd6ce4c43c2c3d8f3969ef92e6d2dbafedfd4"
+  "rev": "8c233c484c5195801db0878ee4f62a9303454160"
 }
