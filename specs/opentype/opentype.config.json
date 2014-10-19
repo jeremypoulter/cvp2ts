@@ -4,6 +4,15 @@
     "local": "opentype.txt",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "dontExtract": true,
-    "dontExtractReason": "requires manual property extraction"
+    "helpers": [
+        "FontOpenTypeFormat"
+    ],
+    "tests": [
+        {
+            "name": "FontOpenTypeFormat",
+            "helper": "FontOpenTypeFormat",
+            "code": "run(t)",
+            "async": true
+        }
+    ]
 }

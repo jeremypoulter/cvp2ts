@@ -4,5 +4,6 @@
     "levels": [ 3 ],
     "local": "csp.html",
     "dontExtract": true,
-    "dontExtractReason": "requires manual property extraction"
+    "dontExtractReason": "requires manual property extraction",
+    "helpers": []
 }

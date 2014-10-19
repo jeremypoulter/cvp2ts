@@ -1,4 +1,4 @@
-"use script";
+"use strict";
 function getWorkerGlobalScopeAsync(test) {
     var w = new Worker('./resources/workerglobalscope.js');
     w.onmessage = test.step_func_done(function(evt) {

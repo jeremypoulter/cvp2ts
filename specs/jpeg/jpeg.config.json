@@ -4,6 +4,15 @@
     "local": "jpeg.txt",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "dontExtract": true,
-    "dontExtractReason": "requires manual property extraction"
+    "helpers": [
+        "ImageJPEGFormat"
+    ],
+    "tests": [
+        {
+            "name": "ImageJPEGFormat",
+            "helper": "ImageJPEGFormat",
+            "code": "run(t)",
+            "async": true
+        }
+    ]
 }

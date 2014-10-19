@@ -5,6 +5,15 @@
     "local": "woff.html",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "dontExtract": true,
-    "dontExtractReason": "requires manual property extraction"
+    "helpers": [
+        "FontWOFFFormat"
+    ],
+    "tests": [
+        {
+            "name": "FontWOFFFormat",
+            "helper": "FontWOFFFormat",
+            "code": "run(t)",
+            "async": true
+        }
+    ]
 }

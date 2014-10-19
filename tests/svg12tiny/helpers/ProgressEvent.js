@@ -1,4 +1,4 @@
-"use script";
+"use strict";
 function getProgressEventAsync(test) {
     var e = document.createElement('object');
     e.type = 'image/svg+xml';

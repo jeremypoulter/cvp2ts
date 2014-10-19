@@ -5,6 +5,5 @@
     "local": "rfc6265.txt",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "dontExtract": true,
-    "dontExtractReason": "requires manual property extraction"
+    "helpers": []
 }

@@ -1,4 +1,4 @@
-"use script";
+"use strict";
 function getDocumentAsync(test) {
     var e = document.createElement('object');
     e.type = 'image/svg+xml';

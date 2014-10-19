@@ -4,6 +4,15 @@
     "local": "png.txt",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "dontExtract": true,
-    "dontExtractReason": "requires manual property extraction"
+    "helpers": [
+        "ImagePNGFormat"
+    ],
+    "tests": [
+        {
+            "name": "ImagePNGFormat",
+            "helper": "ImagePNGFormat",
+            "code": "run(t)",
+            "async": true
+        }
+    ]
 }

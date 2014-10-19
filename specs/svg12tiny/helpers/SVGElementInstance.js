@@ -1,4 +1,4 @@
-"use script";
+"use strict";
 function getSVGElementInstanceAsync(test) {
     var rct = document.createElementNS('http://www.w3.org/2000/svg','rect');
     rct.setAttributeNS(null, 'id', 'rect');

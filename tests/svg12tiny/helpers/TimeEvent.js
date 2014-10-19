@@ -1,4 +1,4 @@
-"use script";
+"use strict";
 function getTimeEventAsync(test) {
     var e = document.createElement('object');
     e.type = 'image/svg+xml';

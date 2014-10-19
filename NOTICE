@@ -1,0 +1,10 @@
+CVP2TS - CVP-2 Feature Presence Test Suite
+Copyright 2014 Skynav, Inc. and Cable Laboratories, Inc.
+
+This product includes the following open source software:
+
+(1) specs/opentype/resources/test.ttf is a copy of NotoSans-Regular.ttf developed by
+Google, Inc. under The Apache License, Version 2.0 (see https://www.google.com/get/noto/#/family/noto-sans);
+
+(2) specs/woff/resources/test.woff is a format converted copy of NotoSans-Regular.ttf developed by
+Google, Inc. under The Apache License, Version 2.0 (see https://www.google.com/get/noto/#/family/noto-sans);

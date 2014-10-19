@@ -27,5 +27,5 @@
 TOOLS_L1        = fetch extract parse index generate
 TOOLS_L2        = fetch generate
 TOOLS_L3        = fetch
-TOOLS_L4        = fetch
+TOOLS_L4        = fetch generate
 

@@ -4,6 +4,15 @@
     "local": "gif.txt",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "dontExtract": true,
-    "dontExtractReason": "requires manual property extraction"
+    "helpers": [
+        "ImageGIFFormat"
+    ],
+    "tests": [
+        {
+            "name": "ImageGIFFormat",
+            "helper": "ImageGIFFormat",
+            "code": "run(t)",
+            "async": true
+        }
+    ]
 }
