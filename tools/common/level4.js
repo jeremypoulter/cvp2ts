@@ -44,14 +44,20 @@
             name: defName,
             expandedName: makeExpandedName(spec, def)
         };
+        var properties = {
+            def: defProperties
+        };
+        if ('timeout' in def) {
+            properties.timeout = def.timeout;
+        }
         if (!!tester && ((tester != 'undefined') && (tester != 'null'))) {
             if (typeof tester == 'function') {
                 if (!async) {
                     test(function() {
                         tester.apply(this);
-                    }, defProperties.expandedName + '-tester-sync', {def: defProperties});
+                    }, defProperties.expandedName + '-tester-sync', properties);
                 } else
-                    async_test(tester, defProperties.expandedName + '-tester-async', {def: defProperties});
+                    async_test(tester, defProperties.expandedName + '-tester-async', properties);
             }
         }
     }

@@ -4,5 +4,16 @@
     "local": "mpeg2audio.txt",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "helpers": []
+    "helpers": [
+        "MediaMPEG2AudioFormat"
+    ],
+    "tests": [
+        {
+            "name": "MediaMPEG2AudioFormat",
+            "helper": "MediaMPEG2AudioFormat",
+            "code": "run(t)",
+            "async": true,
+            "timeout": 10000
+        }
+    ]
 }

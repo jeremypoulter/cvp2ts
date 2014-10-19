@@ -4,5 +4,16 @@
     "local": "mpeg2ts.txt",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "helpers": []
+    "helpers": [
+        "MediaMPEG2TSFormat"
+    ],
+    "tests": [
+        {
+            "name": "MediaMPEG2TSFormat",
+            "helper": "MediaMPEG2TSFormat",
+            "code": "run(t)",
+            "async": true,
+            "timeout": 31000
+        }
+    ]
 }

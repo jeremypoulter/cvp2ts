@@ -4,5 +4,16 @@
     "local": "ac3.txt",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "helpers": []
+    "helpers": [
+        "MediaAC3AudioFormat"
+    ],
+    "tests": [
+        {
+            "name": "MediaAC3AudioFormat",
+            "helper": "MediaAC3AudioFormat",
+            "code": "run(t)",
+            "async": true,
+            "timeout": 10000
+        }
+    ]
 }

@@ -4,5 +4,16 @@
     "local": "mpeg2video.txt",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "helpers": []
+    "helpers": [
+        "MediaMPEG2VideoFormat"
+    ],
+    "tests": [
+        {
+            "name": "MediaMPEG2VideoFormat",
+            "helper": "MediaMPEG2VideoFormat",
+            "code": "run(t)",
+            "async": true,
+            "timeout": 10000
+        }
+    ]
 }
