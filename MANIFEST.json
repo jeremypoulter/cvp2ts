@@ -2246,6 +2246,10 @@
         "path": "tests/opentype/opentype-FontOpenTypeFormat.html"
       }, 
       {
+        "url": "/tests/origin/origin-ProtocolOrigin.html", 
+        "path": "tests/origin/origin-ProtocolOrigin.html"
+      }, 
+      {
         "url": "/tests/png/png-ImagePNGFormat.html", 
         "path": "tests/png/png-ImagePNGFormat.html"
       }, 
@@ -3038,6 +3042,14 @@
         "path": "tests/opentype/resources/test.ttf"
       }, 
       {
+        "url": "/tests/origin/helpers/ProtocolOrigin.js", 
+        "path": "tests/origin/helpers/ProtocolOrigin.js"
+      }, 
+      {
+        "url": "/tests/origin/resources/check-origin.py", 
+        "path": "tests/origin/resources/check-origin.py"
+      }, 
+      {
         "url": "/tests/png/helpers/ImagePNGFormat.js", 
         "path": "tests/png/helpers/ImagePNGFormat.js"
       }, 
@@ -3176,5 +3188,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "382366ae9e8bdee2d24f6d3c23b759f451d94372"
+  "rev": "85c1791b69fae4bf55744480be1cd22af05bb4fa"
 }
