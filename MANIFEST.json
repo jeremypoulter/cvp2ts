@@ -50,6 +50,10 @@
         "path": "tests/cookies/cookies-ProtocolCookies.html"
       }, 
       {
+        "url": "/tests/cors/cors-ProtocolCORS.html", 
+        "path": "tests/cors/cors-ProtocolCORS.html"
+      }, 
+      {
         "url": "/tests/css21/css21-property-Background.html", 
         "path": "tests/css21/css21-property-Background.html"
       }, 
@@ -2814,6 +2818,14 @@
         "path": "tests/cookies/resources/set-cookie.py"
       }, 
       {
+        "url": "/tests/cors/helpers/ProtocolCORS.js", 
+        "path": "tests/cors/helpers/ProtocolCORS.js"
+      }, 
+      {
+        "url": "/tests/cors/resources/check-cors.py", 
+        "path": "tests/cors/resources/check-cors.py"
+      }, 
+      {
         "url": "/tests/cssfontload/helpers/FontFace.js", 
         "path": "tests/cssfontload/helpers/FontFace.js"
       }, 
@@ -3188,5 +3200,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "85c1791b69fae4bf55744480be1cd22af05bb4fa"
+  "rev": "c0a3161d4f1a3f53a06db82ab227aad73b40392c"
 }
