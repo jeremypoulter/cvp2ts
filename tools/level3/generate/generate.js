@@ -37,6 +37,7 @@
     var defaults        = {
         configFile : undefined,
         configFileEncoding : 'utf8',
+        crossDomainSupport : false,
         helpers3 : undefined,
         level : 3,
         local : undefined,
@@ -171,6 +172,8 @@
         html += "<script src='/resources/testharness.js'></script>\n";
         html += "<script src='/resources/testharnessreport.js'></script>\n";
         html += "<script src='/tools/common/level3.js'></script>\n";
+        if ($.options['crossDomainSupport'])
+            html += "<script src='/tools/common/crossdomain.js?pipe=sub'></script>\n";
         if (!!helper)
             html += "<script src='./helpers/" + helper + ".js'></script>\n";
         html += "<script type='text/plain' id='testDef'>\n";

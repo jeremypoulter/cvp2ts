@@ -1,4 +1,3 @@
-import pprint
 def main(request, response):
     headers = [("Content-Type", "text/plain")]
     ident = request.GET.first('ident', 'test')

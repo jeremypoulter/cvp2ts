@@ -5,5 +5,16 @@
     "local": "rfc6454.txt",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "helpers3": []
+    "helpers3": [
+        "ProtocolOrigin"
+    ],
+    "crossDomainSupport": true,
+    "tests": [
+        {
+            "name": "ProtocolOrigin",
+            "helper": "ProtocolOrigin",
+            "code": "run(t)",
+            "async": true
+        }
+    ]
 }
