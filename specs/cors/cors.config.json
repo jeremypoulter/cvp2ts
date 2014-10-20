@@ -5,5 +5,16 @@
     "local": "cors.html",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "helpers3": []
+    "helpers3": [
+        "ProtocolCORS"
+    ],
+    "crossDomainSupport": true,
+    "tests": [
+        {
+            "name": "ProtocolCORS",
+            "helper": "ProtocolCORS",
+            "code": "run(t)",
+            "async": true
+        }
+    ]
 }
