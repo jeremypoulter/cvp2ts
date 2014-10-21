@@ -1198,6 +1198,10 @@
         "path": "tests/custom/custom-interface-Document-partial-1.html"
       }, 
       {
+        "url": "/tests/data/data-SchemeData.html", 
+        "path": "tests/data/data-SchemeData.html"
+      }, 
+      {
         "url": "/tests/dom3events/dom3events-interface-CompositionEvent-partial-1.html", 
         "path": "tests/dom3events/dom3events-interface-CompositionEvent-partial-1.html"
       }, 
@@ -2234,6 +2238,10 @@
         "path": "tests/html5/html5-interface-WindowTimers.html"
       }, 
       {
+        "url": "/tests/http/http-SchemeHTTP.html", 
+        "path": "tests/http/http-SchemeHTTP.html"
+      }, 
+      {
         "url": "/tests/jpeg/jpeg-ImageJPEGFormat.html", 
         "path": "tests/jpeg/jpeg-ImageJPEGFormat.html"
       }, 
@@ -2934,6 +2942,10 @@
         "path": "tests/cssomview/helpers/MediaQueryList.js"
       }, 
       {
+        "url": "/tests/data/helpers/SchemeData.js", 
+        "path": "tests/data/helpers/SchemeData.js"
+      }, 
+      {
         "url": "/tests/dom4/helpers/DOMException.js", 
         "path": "tests/dom4/helpers/DOMException.js"
       }, 
@@ -3036,6 +3048,14 @@
       {
         "url": "/tests/html5/helpers/VideoTrackList.js", 
         "path": "tests/html5/helpers/VideoTrackList.js"
+      }, 
+      {
+        "url": "/tests/http/helpers/SchemeHTTP.js", 
+        "path": "tests/http/helpers/SchemeHTTP.js"
+      }, 
+      {
+        "url": "/tests/http/support/respond.py", 
+        "path": "tests/http/support/respond.py"
       }, 
       {
         "url": "/tests/jpeg/helpers/ImageJPEGFormat.js", 
@@ -3224,5 +3244,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "145fe3ca88de1dcf7047d0c51fbd1ec02b2790b1"
+  "rev": "d10756f1acc9eb99f56fb5afc3dfb2b246793546"
 }
