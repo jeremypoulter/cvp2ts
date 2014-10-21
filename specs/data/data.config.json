@@ -5,5 +5,15 @@
     "local": "rfc2397.txt",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "helpers3": []
+    "helpers3": [
+        "SchemeData"
+    ],
+    "tests": [
+        {
+            "name": "SchemeData",
+            "helper": "SchemeData",
+            "code": "run(t)",
+            "async": true
+        }
+    ]
 }

@@ -8,7 +8,6 @@
     "helpers3": [
         "ProtocolCSP"
     ],
-    "crossDomainSupport": true,
     "tests": [
         {
             "name": "ProtocolCSP",
