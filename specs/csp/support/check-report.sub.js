@@ -41,6 +41,9 @@
                 assert_unreached('unable to load report-csp.py');
             });
             xhr.send();
+        } else {
+            assert_unreached('report identifier cookie missing');
+            t.done();
         }
     }
     expose('checkReport', checkReport);
