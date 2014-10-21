@@ -3058,6 +3058,14 @@
         "path": "tests/http/support/respond.py"
       }, 
       {
+        "url": "/tests/https/helpers/SchemeHTTPS.js", 
+        "path": "tests/https/helpers/SchemeHTTPS.js"
+      }, 
+      {
+        "url": "/tests/https/support/respond.py", 
+        "path": "tests/https/support/respond.py"
+      }, 
+      {
         "url": "/tests/jpeg/helpers/ImageJPEGFormat.js", 
         "path": "tests/jpeg/helpers/ImageJPEGFormat.js"
       }, 
@@ -3244,5 +3252,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "98cfcb333e0187bcfabe07d2468164399f5d75ca"
+  "rev": "d888bb25acd8ed2ca2dc9c952cc8f72875dcd986"
 }
