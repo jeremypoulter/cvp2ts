@@ -2786,6 +2786,10 @@
         "path": "tests/woff/woff-FontWOFFFormat.html"
       }, 
       {
+        "url": "/tests/wsp/wsp-SchemeWS.html", 
+        "path": "tests/wsp/wsp-SchemeWS.html"
+      }, 
+      {
         "url": "/tests/xhr/xhr-interface-FormData.html", 
         "path": "tests/xhr/xhr-interface-FormData.html"
       }, 
@@ -3248,9 +3252,13 @@
       {
         "url": "/tests/woff/resources/test.woff", 
         "path": "tests/woff/resources/test.woff"
+      }, 
+      {
+        "url": "/tests/wsp/helpers/SchemeWS.js", 
+        "path": "tests/wsp/helpers/SchemeWS.js"
       }
     ]
   }, 
   "local_changes": [], 
-  "rev": "d888bb25acd8ed2ca2dc9c952cc8f72875dcd986"
+  "rev": "d1eb8915afd5c3ae7d6717a0a85a49e80a5a0c07"
 }
