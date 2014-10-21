@@ -36,16 +36,16 @@ subdirs: $(SUBDIRS)
 $(SUBDIRS):
 	@$(MAKE) -C $@ $(MAKECMDGOALS)
 
+um: update_manifest
+
+update_manifest: MANIFEST.json
+	@git add MANIFEST.json
+	@git commit -m 'Update manifest.'
+
 manifest: MANIFEST.json
 
 MANIFEST.json: FORCE
 	@$(PYTHON) tools/w3c/scripts/manifest.py
-
-update_manifest: manifest
-	@git add MANIFEST.json
-	@git commit -m 'Update manifest.'
-
-um: update_manifest
 
 FORCE:
 
