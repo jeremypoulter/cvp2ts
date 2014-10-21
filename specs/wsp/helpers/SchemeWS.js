@@ -27,6 +27,10 @@ function run(tOuter) {
     });
     ws.onerror = tOpen.step_func_done(function() {
         assert_unreached('web socket error');
+        if (!!tDone)
+            tDone.done();
+        if (!!tData)
+            tData.done();
     });
     tOuter.done();
 }

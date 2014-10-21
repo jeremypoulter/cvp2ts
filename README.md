@@ -1,7 +1,7 @@
 <!--
 // DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER
 //  
-// Copyright (C) 2014, Cable Television Laboratories, Inc. & Skynav, Inc. 
+// Copyright (C) 2014, Skynav, Inc. & Cable Television Laboratories, Inc.
 //  
 // Redistribution and use in source and binary forms, with or without modification, are
 // permitted provided that the following conditions are met:
@@ -100,6 +100,7 @@ In order to run tests, perform the following steps:
  1. Add entries to the local /etc/hosts file as follows:
     * `127.0.0.1 web-platform.test`
     * `127.0.0.1 www.web-platform.test`
+    * `127.0.0.1 www1.web-platform.test`
  2. From the top-level directory of this `cvp2ts` hierarchy, run the following command in a separate shell:
     * `python tools/w3c/scripts/serve.py`
  3. From the test browser (user agent), open the following link:
@@ -126,7 +127,7 @@ If it is desired that the server and client run on separated devices, then the n
     webidl2@2.0.6
 
     $ python -V
-    Python 2.7.7
+    Python 2.7.8
 </pre>
 
 ## Issues
