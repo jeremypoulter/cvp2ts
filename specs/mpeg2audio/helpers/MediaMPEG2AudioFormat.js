@@ -10,6 +10,7 @@ function run(t) {
     if ((canPlay === 'maybe') || (canPlay === 'probably')) {
         e.src = './resources/test.mp3';
         e.autoplay = true;
+        e.loop = false;
         e.onended = t.step_func_done(function(evt) {
             loadComplete(defProperties, e, evt);
         });
