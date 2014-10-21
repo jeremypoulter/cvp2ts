@@ -1,10 +1,8 @@
-{
-    "host": "web-platform.test",
-    "ports": {
-        "http": [ 8000, "auto" ],
-        "https": [ "auto" ]
-    },
-    "check_subdomains": true,
-    "log_level": "debug",
-    "bind_hostname": true
-}
+{"host": "web-platform.test",
+ "external_host": null,
+ "ports":{"http":[8000, "auto"],
+          "https":[],
+          "ws":["auto"]},
+ "check_subdomains": true,
+ "log_level":"debug",
+ "bind_hostname": true}
