@@ -5,5 +5,16 @@
     "local": "rfc6455.txt",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
-    "helpers3": []
+    "comments": "can't test 'wss' scheme yet due to missing tls support in pywebsocket",
+    "helpers3": [
+        "SchemeWS"
+    ],
+    "tests": [
+        {
+            "name": "SchemeWS",
+            "helper": "SchemeWS",
+            "code": "run(t)",
+            "async": true
+        }
+    ]
 }

@@ -1,9 +1,10 @@
 {
     "spec": "https",
-    "source": "http://tools.ietf.org/rfc/rfc5785.txt",
+    "source": "http://tools.ietf.org/rfc/rfc2616.txt",
     "levels": [ 3 ],
-    "local": "rfc5785.txt",
+    "local": "rfc2616.txt",
     "dontFetch": true,
     "dontFetchReason": "specification is final",
+    "comments": "can't test yet due to missing tls support in wptserve",
     "helpers3": []
 }
