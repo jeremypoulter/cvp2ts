@@ -8,7 +8,7 @@
     "helpers3": [
         "ProtocolCORS"
     ],
-    "crossDomainSupport": true,
+    "configuredConstantsSupport": true,
     "tests": [
         {
             "name": "ProtocolCORS",

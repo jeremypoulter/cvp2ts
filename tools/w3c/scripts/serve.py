@@ -303,7 +303,7 @@ def set_computed_defaults(config):
             root = config["doc_root"]
         else:
             root = repo_root
-        config["ws_doc_root"] = os.path.join(repo_root, "websockets", "handlers")
+        config["ws_doc_root"] = os.path.join(repo_root, "tools", "wsh")
 
     if not value_set(config, "doc_root"):
         config["doc_root"] = repo_root

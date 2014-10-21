@@ -9,6 +9,7 @@
     "helpers3": [
         "SchemeWS"
     ],
+    "configuredConstantsSupport": true,
     "tests": [
         {
             "name": "SchemeWS",

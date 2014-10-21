@@ -8,7 +8,7 @@
     "helpers3": [
         "ProtocolOrigin"
     ],
-    "crossDomainSupport": true,
+    "configuredConstantsSupport": true,
     "tests": [
         {
             "name": "ProtocolOrigin",
