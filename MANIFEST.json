@@ -54,6 +54,10 @@
         "path": "tests/cors/cors-ProtocolCORS.html"
       }, 
       {
+        "url": "/tests/csp/csp-ProtocolCSP.html", 
+        "path": "tests/csp/csp-ProtocolCSP.html"
+      }, 
+      {
         "url": "/tests/css21/css21-property-Background.html", 
         "path": "tests/css21/css21-property-Background.html"
       }, 
@@ -2814,16 +2818,36 @@
         "path": "tests/cookies/helpers/ProtocolCookies.js"
       }, 
       {
-        "url": "/tests/cookies/resources/set-cookie.py", 
-        "path": "tests/cookies/resources/set-cookie.py"
+        "url": "/tests/cookies/support/set-cookie.py", 
+        "path": "tests/cookies/support/set-cookie.py"
       }, 
       {
         "url": "/tests/cors/helpers/ProtocolCORS.js", 
         "path": "tests/cors/helpers/ProtocolCORS.js"
       }, 
       {
-        "url": "/tests/cors/resources/check-cors.py", 
-        "path": "tests/cors/resources/check-cors.py"
+        "url": "/tests/cors/support/check-cors.py", 
+        "path": "tests/cors/support/check-cors.py"
+      }, 
+      {
+        "url": "/tests/csp/csp-ProtocolCSP.html.sub.headers", 
+        "path": "tests/csp/csp-ProtocolCSP.html.sub.headers"
+      }, 
+      {
+        "url": "/tests/csp/helpers/ProtocolCSP.js", 
+        "path": "tests/csp/helpers/ProtocolCSP.js"
+      }, 
+      {
+        "url": "/tests/csp/resources/test.png", 
+        "path": "tests/csp/resources/test.png"
+      }, 
+      {
+        "url": "/tests/csp/support/check-report.sub.js", 
+        "path": "tests/csp/support/check-report.sub.js"
+      }, 
+      {
+        "url": "/tests/csp/support/report-csp.py", 
+        "path": "tests/csp/support/report-csp.py"
       }, 
       {
         "url": "/tests/cssfontload/helpers/FontFace.js", 
@@ -3058,8 +3082,8 @@
         "path": "tests/origin/helpers/ProtocolOrigin.js"
       }, 
       {
-        "url": "/tests/origin/resources/check-origin.py", 
-        "path": "tests/origin/resources/check-origin.py"
+        "url": "/tests/origin/support/check-origin.py", 
+        "path": "tests/origin/support/check-origin.py"
       }, 
       {
         "url": "/tests/png/helpers/ImagePNGFormat.js", 
@@ -3200,5 +3224,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "c0a3161d4f1a3f53a06db82ab227aad73b40392c"
+  "rev": "145fe3ca88de1dcf7047d0c51fbd1ec02b2790b1"
 }
