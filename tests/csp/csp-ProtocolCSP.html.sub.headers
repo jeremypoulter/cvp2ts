@@ -1,0 +1,5 @@
+Expires: Thu, 01 Jan 1970 00:00:00 UTC
+Cache-Control: no-store, no-cache
+Pragma: no-cache
+Set-Cookie: csp-protocolcsp={{$id:uuid()}}; Path=/tests/csp/
+Content-Security-Policy: img-src 'none'; report-uri ./support/report-csp.py?op=put&id={{$id}}

@@ -1,7 +1,7 @@
 "use strict";
 function run(t) {
     var defProperties = t.properties.def;
-    var url = CROSSDOMAIN + './resources/check-origin.py';
+    var url = CROSSDOMAIN + './support/check-origin.py';
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
     xhr.onload = t.step_func_done(function() {

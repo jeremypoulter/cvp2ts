@@ -42,6 +42,12 @@ all: $(outfiles)
 	@if [ -d $(SPECDIR)/$(*F)/resources ]; then \
 	    $(CP) -R $(SPECDIR)/$(*F)/resources $(TESTDIR)/$(*F) ; \
 	fi;
+	@if [ -d $(SPECDIR)/$(*F)/support ]; then \
+	    $(CP) -R $(SPECDIR)/$(*F)/support $(TESTDIR)/$(*F) ; \
+	fi;
+	@if [ -d $(SPECDIR)/$(*F)/other ]; then \
+	    $(CP) $(SPECDIR)/$(*F)/other/* $(TESTDIR)/$(*F) ; \
+	fi;
 
 clean:
 	@$(CLEANTOOL) --phase generate --testDirectoryRoot $(TESTDIR) $(outfiles)

@@ -5,6 +5,6 @@
         "https": [ "auto" ]
     },
     "check_subdomains": true,
-    "log_level": "info",
+    "log_level": "debug",
     "bind_hostname": true
 }

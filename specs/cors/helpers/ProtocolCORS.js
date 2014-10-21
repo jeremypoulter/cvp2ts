@@ -1,7 +1,7 @@
 "use strict";
 function run(t) {
     var defProperties = t.properties.def;
-    var url = CROSSDOMAIN + './resources/check-cors.py';
+    var url = CROSSDOMAIN + './support/check-cors.py';
     test(function() {
         var xhr = new XMLHttpRequest();
         xhr.open('GET', url + '?allow=1', false);

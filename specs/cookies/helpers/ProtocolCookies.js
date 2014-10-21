@@ -2,7 +2,7 @@
 function run(t) {
     var defProperties = t.properties.def;
     var ident = 'test';
-    var url = './resources/set-cookie.py?ident=' + ident;
+    var url = './support/set-cookie.py?ident=' + ident;
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
     xhr.onload = t.step_func(function() {
