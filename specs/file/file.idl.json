@@ -252,6 +252,7 @@
       {
         "type": "field",
         "name": "type",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -426,6 +427,7 @@
       {
         "type": "field",
         "name": "type",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -443,6 +445,7 @@
       {
         "type": "field",
         "name": "lastModified",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,

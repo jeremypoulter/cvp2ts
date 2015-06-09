@@ -108,6 +108,164 @@
         },
         "name": "ports",
         "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "initMessageEvent",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "typeArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "canBubbleArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "cancelableArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "dataArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "originArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "lastEventIdArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": true,
+              "idlType": [
+                {
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "array": false,
+                  "union": false,
+                  "idlType": "WindowProxy"
+                },
+                {
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "array": false,
+                  "union": false,
+                  "idlType": "MessagePort"
+                }
+              ]
+            },
+            "name": "sourceArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": true,
+              "generic": "sequence",
+              "nullable": true,
+              "array": false,
+              "union": false,
+              "idlType": {
+                "sequence": false,
+                "generic": null,
+                "nullable": false,
+                "array": false,
+                "union": false,
+                "idlType": "MessagePort"
+              }
+            },
+            "name": "portsArg"
+          }
+        ],
+        "extAttrs": []
       }
     ],
     "inheritance": "Event",
@@ -148,14 +306,10 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": {
-          "type": "identifier",
-          "value": "Window"
-        }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
+        "rhs": [
+          "Window",
+          "Worker"
+        ]
       }
     ]
   },
@@ -167,6 +321,7 @@
       {
         "type": "field",
         "name": "data",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -180,6 +335,7 @@
       {
         "type": "field",
         "name": "origin",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -193,19 +349,7 @@
       {
         "type": "field",
         "name": "lastEventId",
-        "idlType": {
-          "sequence": false,
-          "generic": null,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "DOMString"
-        },
-        "extAttrs": []
-      },
-      {
-        "type": "field",
-        "name": "channel",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -219,6 +363,7 @@
       {
         "type": "field",
         "name": "source",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -249,6 +394,7 @@
       {
         "type": "field",
         "name": "ports",
+        "required": false,
         "idlType": {
           "sequence": true,
           "generic": "sequence",
@@ -319,14 +465,10 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": {
-          "type": "identifier",
-          "value": "Window"
-        }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
+        "rhs": [
+          "Window",
+          "Worker"
+        ]
       }
     ]
   },
@@ -457,14 +599,10 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": {
-          "type": "identifier",
-          "value": "Window"
-        }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
+        "rhs": [
+          "Window",
+          "Worker"
+        ]
       }
     ]
   },
@@ -612,14 +750,10 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": {
-          "type": "identifier",
-          "value": "Window"
-        }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
+        "rhs": [
+          "Window",
+          "Worker"
+        ]
       }
     ]
   },

@@ -17,6 +17,7 @@
       {
         "type": "field",
         "name": "behavior",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -43,6 +44,7 @@
       {
         "type": "field",
         "name": "left",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -56,6 +58,7 @@
       {
         "type": "field",
         "name": "top",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -998,6 +1001,7 @@
       {
         "type": "field",
         "name": "media",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1015,6 +1019,7 @@
       {
         "type": "field",
         "name": "matches",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1390,6 +1395,7 @@
       {
         "type": "field",
         "name": "block",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -2297,6 +2303,7 @@
       {
         "type": "field",
         "name": "screenX",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -2314,6 +2321,7 @@
       {
         "type": "field",
         "name": "screenY",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -2331,6 +2339,7 @@
       {
         "type": "field",
         "name": "clientX",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -2348,6 +2357,7 @@
       {
         "type": "field",
         "name": "clientY",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -2384,6 +2394,7 @@
       {
         "type": "field",
         "name": "box",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -2401,6 +2412,7 @@
       {
         "type": "field",
         "name": "relativeTo",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -2423,6 +2435,7 @@
       {
         "type": "field",
         "name": "fromBox",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -2440,6 +2453,7 @@
       {
         "type": "field",
         "name": "toBox",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,

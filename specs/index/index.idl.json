@@ -3226,6 +3226,7 @@
       {
         "type": "field",
         "name": "id",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -3243,6 +3244,7 @@
       {
         "type": "field",
         "name": "control",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -3356,6 +3358,7 @@
       {
         "type": "field",
         "name": "region",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -6781,6 +6784,7 @@
       {
         "type": "field",
         "name": "behavior",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -6808,6 +6812,7 @@
       {
         "type": "field",
         "name": "left",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -6821,6 +6826,7 @@
       {
         "type": "field",
         "name": "top",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -7767,6 +7773,7 @@
       {
         "type": "field",
         "name": "media",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -7784,6 +7791,7 @@
       {
         "type": "field",
         "name": "matches",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -8164,6 +8172,7 @@
       {
         "type": "field",
         "name": "block",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -9077,6 +9086,7 @@
       {
         "type": "field",
         "name": "screenX",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -9094,6 +9104,7 @@
       {
         "type": "field",
         "name": "screenY",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -9111,6 +9122,7 @@
       {
         "type": "field",
         "name": "clientX",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -9128,6 +9140,7 @@
       {
         "type": "field",
         "name": "clientY",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -9166,6 +9179,7 @@
       {
         "type": "field",
         "name": "box",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -9183,6 +9197,7 @@
       {
         "type": "field",
         "name": "relativeTo",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -9206,6 +9221,7 @@
       {
         "type": "field",
         "name": "fromBox",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -9223,6 +9239,7 @@
       {
         "type": "field",
         "name": "toBox",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -27379,6 +27396,1354 @@
     "spec": "ecmascript51"
   },
   {
+    "type": "interface",
+    "name": "Navigator",
+    "partial": true,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "MediaKeySystemAccess"
+          }
+        },
+        "name": "requestMediaKeySystemAccess",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "keySystem"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": true,
+              "generic": "sequence",
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": {
+                "sequence": false,
+                "generic": null,
+                "nullable": false,
+                "array": false,
+                "union": false,
+                "idlType": "MediaKeySystemConfiguration"
+              }
+            },
+            "name": "supportedConfigurations"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "extAttrs": [],
+    "spec": "eme"
+  },
+  {
+    "type": "enum",
+    "name": "MediaKeysRequirement",
+    "values": [
+      "required",
+      "optional",
+      "not-allowed"
+    ],
+    "extAttrs": [],
+    "spec": "eme"
+  },
+  {
+    "type": "dictionary",
+    "name": "MediaKeySystemConfiguration",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "initDataTypes",
+        "required": false,
+        "idlType": {
+          "sequence": true,
+          "generic": "sequence",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "DOMString"
+          }
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "audioCapabilities",
+        "required": false,
+        "idlType": {
+          "sequence": true,
+          "generic": "sequence",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "MediaKeySystemMediaCapability"
+          }
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "videoCapabilities",
+        "required": false,
+        "idlType": {
+          "sequence": true,
+          "generic": "sequence",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "MediaKeySystemMediaCapability"
+          }
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "distinctiveIdentifier",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "MediaKeysRequirement"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "string",
+          "value": "optional"
+        }
+      },
+      {
+        "type": "field",
+        "name": "persistentState",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "MediaKeysRequirement"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "string",
+          "value": "optional"
+        }
+      },
+      {
+        "type": "field",
+        "name": "sessionTypes",
+        "required": false,
+        "idlType": {
+          "sequence": true,
+          "generic": "sequence",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "MediaKeySessionType"
+          }
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [],
+    "spec": "eme"
+  },
+  {
+    "type": "dictionary",
+    "name": "MediaKeySystemMediaCapability",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "contentType",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "string",
+          "value": ""
+        }
+      },
+      {
+        "type": "field",
+        "name": "robustness",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "string",
+          "value": ""
+        }
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [],
+    "spec": "eme"
+  },
+  {
+    "type": "interface",
+    "name": "MediaKeySystemAccess",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "keySystem",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "MediaKeySystemConfiguration"
+        },
+        "name": "getConfiguration",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "MediaKeys"
+          }
+        },
+        "name": "createMediaKeys",
+        "arguments": [],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [],
+    "spec": "eme"
+  },
+  {
+    "type": "enum",
+    "name": "MediaKeySessionType",
+    "values": [
+      "temporary",
+      "persistent-license",
+      "TBD"
+    ],
+    "extAttrs": [],
+    "spec": "eme"
+  },
+  {
+    "type": "interface",
+    "name": "MediaKeys",
+    "partial": false,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "MediaKeySession"
+        },
+        "name": "createSession",
+        "arguments": [
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "MediaKeySessionType"
+            },
+            "name": "sessionType",
+            "default": {
+              "type": "string",
+              "value": "temporary"
+            }
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "void"
+          }
+        },
+        "name": "setServerCertificate",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "name": "serverCertificate"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [],
+    "spec": "eme"
+  },
+  {
+    "type": "interface",
+    "name": "MediaKeySession",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "sessionId",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unrestricted double"
+        },
+        "name": "expiration",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "void"
+          }
+        },
+        "name": "closed",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "MediaKeyStatusMap"
+        },
+        "name": "keyStatuses",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "void"
+          }
+        },
+        "name": "generateRequest",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "initDataType"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "name": "initData"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "boolean"
+          }
+        },
+        "name": "load",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "sessionId"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "void"
+          }
+        },
+        "name": "update",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "name": "response"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "void"
+          }
+        },
+        "name": "close",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "void"
+          }
+        },
+        "name": "remove",
+        "arguments": [],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "EventTarget",
+    "extAttrs": [],
+    "spec": "eme"
+  },
+  {
+    "type": "interface",
+    "name": "MediaKeyStatusMap",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "name": "size",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "any"
+        },
+        "name": "entries",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "any"
+        },
+        "name": "keys",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "any"
+        },
+        "name": "values",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "any"
+        },
+        "name": "get",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "name": "source"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "any"
+        },
+        "name": "has",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "name": "source"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "clear",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "any"
+        },
+        "name": "delete",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "name": "source"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "any"
+        },
+        "name": "set",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "name": "source"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "MediaKeyStatus"
+            },
+            "name": "status"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [],
+    "spec": "eme"
+  },
+  {
+    "type": "enum",
+    "name": "MediaKeyStatus",
+    "values": [
+      "usable",
+      "expired",
+      "output-downscaled",
+      "output-not-allowed",
+      "status-pending",
+      "internal-error"
+    ],
+    "extAttrs": [],
+    "spec": "eme"
+  },
+  {
+    "type": "enum",
+    "name": "MediaKeyMessageType",
+    "values": [
+      "license-request",
+      "license-renewal",
+      "license-release",
+      "individualization-request"
+    ],
+    "extAttrs": [],
+    "spec": "eme"
+  },
+  {
+    "type": "interface",
+    "name": "MediaKeyMessageEvent",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "MediaKeyMessageType"
+        },
+        "name": "messageType",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ArrayBuffer"
+        },
+        "name": "message",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Event",
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "type"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "MediaKeyMessageEventInit"
+            },
+            "name": "eventInitDict"
+          }
+        ]
+      }
+    ],
+    "spec": "eme"
+  },
+  {
+    "type": "dictionary",
+    "name": "MediaKeyMessageEventInit",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "messageType",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "MediaKeyMessageType"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "string",
+          "value": "license-request"
+        }
+      },
+      {
+        "type": "field",
+        "name": "message",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ArrayBuffer"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "EventInit",
+    "extAttrs": [],
+    "spec": "eme"
+  },
+  {
+    "type": "interface",
+    "name": "HTMLMediaElement",
+    "partial": true,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": true,
+          "array": false,
+          "union": false,
+          "idlType": "MediaKeys"
+        },
+        "name": "mediaKeys",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "EventHandler"
+        },
+        "name": "onencrypted",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "void"
+          }
+        },
+        "name": "setMediaKeys",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": true,
+              "array": false,
+              "union": false,
+              "idlType": "MediaKeys"
+            },
+            "name": "mediaKeys"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "extAttrs": [],
+    "spec": "eme"
+  },
+  {
+    "type": "interface",
+    "name": "MediaEncryptedEvent",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "initDataType",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": true,
+          "array": false,
+          "union": false,
+          "idlType": "ArrayBuffer"
+        },
+        "name": "initData",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Event",
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "type"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "MediaEncryptedEventInit"
+            },
+            "name": "eventInitDict"
+          }
+        ]
+      }
+    ],
+    "spec": "eme"
+  },
+  {
+    "type": "dictionary",
+    "name": "MediaEncryptedEventInit",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "initDataType",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "string",
+          "value": ""
+        }
+      },
+      {
+        "type": "field",
+        "name": "initData",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": true,
+          "array": false,
+          "union": false,
+          "idlType": "ArrayBuffer"
+        },
+        "extAttrs": [],
+        "default": {
+          "type": "null"
+        }
+      }
+    ],
+    "inheritance": "EventInit",
+    "extAttrs": [],
+    "spec": "eme"
+  },
+  {
     "type": "typedef",
     "typeExtAttrs": [],
     "idlType": {
@@ -28044,6 +29409,7 @@
       {
         "type": "field",
         "name": "type",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -28220,6 +29586,7 @@
       {
         "type": "field",
         "name": "type",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -28237,6 +29604,7 @@
       {
         "type": "field",
         "name": "lastModified",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -35829,6 +37197,7 @@
       {
         "type": "field",
         "name": "track",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -43227,6 +44596,7 @@
       {
         "type": "field",
         "name": "state",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -43328,6 +44698,7 @@
       {
         "type": "field",
         "name": "oldURL",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -43341,6 +44712,7 @@
       {
         "type": "field",
         "name": "newURL",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -43425,6 +44797,7 @@
       {
         "type": "field",
         "name": "persisted",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -43928,6 +45301,7 @@
       {
         "type": "field",
         "name": "message",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -43941,6 +45315,7 @@
       {
         "type": "field",
         "name": "filename",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -43954,6 +45329,7 @@
       {
         "type": "field",
         "name": "lineno",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -43967,6 +45343,7 @@
       {
         "type": "field",
         "name": "colno",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -43980,6 +45357,7 @@
       {
         "type": "field",
         "name": "error",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -50103,6 +51481,1239 @@
     ],
     "extAttrs": [],
     "spec": "html5"
+  },
+  {
+    "type": "enum",
+    "name": "ReadyState",
+    "values": [
+      "closed",
+      "open",
+      "ended"
+    ],
+    "extAttrs": [],
+    "spec": "mse"
+  },
+  {
+    "type": "enum",
+    "name": "EndOfStreamError",
+    "values": [
+      "network",
+      "decode"
+    ],
+    "extAttrs": [],
+    "spec": "mse"
+  },
+  {
+    "type": "interface",
+    "name": "MediaSource",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "SourceBufferList"
+        },
+        "name": "sourceBuffers",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "SourceBufferList"
+        },
+        "name": "activeSourceBuffers",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ReadyState"
+        },
+        "name": "readyState",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unrestricted double"
+        },
+        "name": "duration",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "SourceBuffer"
+        },
+        "name": "addSourceBuffer",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "type"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "removeSourceBuffer",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "SourceBuffer"
+            },
+            "name": "sourceBuffer"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "endOfStream",
+        "arguments": [
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "EndOfStreamError"
+            },
+            "name": "error"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "isTypeSupported",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "type"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "EventTarget",
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": null
+      }
+    ],
+    "spec": "mse"
+  },
+  {
+    "type": "enum",
+    "name": "AppendMode",
+    "values": [
+      "segments",
+      "sequence"
+    ],
+    "extAttrs": [],
+    "spec": "mse"
+  },
+  {
+    "type": "interface",
+    "name": "SourceBuffer",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "AppendMode"
+        },
+        "name": "mode",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "updating",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "TimeRanges"
+        },
+        "name": "buffered",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "double"
+        },
+        "name": "timestampOffset",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "AudioTrackList"
+        },
+        "name": "audioTracks",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "VideoTrackList"
+        },
+        "name": "videoTracks",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "TextTrackList"
+        },
+        "name": "textTracks",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "double"
+        },
+        "name": "appendWindowStart",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unrestricted double"
+        },
+        "name": "appendWindowEnd",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "appendBuffer",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ArrayBuffer"
+            },
+            "name": "data"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "appendBuffer",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ArrayBufferView"
+            },
+            "name": "data"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "appendStream",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ReadableStream"
+            },
+            "name": "stream"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [
+              {
+                "name": "EnforceRange",
+                "arguments": null
+              }
+            ],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "name": "maxSize"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "abort",
+        "arguments": [],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "remove",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "name": "start"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "unrestricted double"
+            },
+            "name": "end"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "TrackDefaultList"
+        },
+        "name": "trackDefaults",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "EventTarget",
+    "extAttrs": [],
+    "spec": "mse"
+  },
+  {
+    "type": "interface",
+    "name": "SourceBufferList",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "name": "length",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": true,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "SourceBuffer"
+        },
+        "name": null,
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "name": "index"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "EventTarget",
+    "extAttrs": [],
+    "spec": "mse"
+  },
+  {
+    "type": "interface",
+    "name": "VideoPlaybackQuality",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMHighResTimeStamp"
+        },
+        "name": "creationTime",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "name": "totalVideoFrames",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "name": "droppedVideoFrames",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "name": "corruptedVideoFrames",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "double"
+        },
+        "name": "totalFrameDelay",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [],
+    "spec": "mse"
+  },
+  {
+    "type": "enum",
+    "name": "TrackDefaultType",
+    "values": [
+      "audio",
+      "video",
+      "text"
+    ],
+    "extAttrs": [],
+    "spec": "mse"
+  },
+  {
+    "type": "interface",
+    "name": "TrackDefault",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "TrackDefaultType"
+        },
+        "name": "type",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "byteStreamTrackID",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "language",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "label",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": 1,
+          "union": false,
+          "idlType": "DOMString",
+          "nullableArray": [
+            false
+          ]
+        },
+        "name": "kinds",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "TrackDefaultType"
+            },
+            "name": "type"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "language"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "label"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": true,
+              "generic": "sequence",
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": {
+                "sequence": false,
+                "generic": null,
+                "nullable": false,
+                "array": false,
+                "union": false,
+                "idlType": "DOMString"
+              }
+            },
+            "name": "kinds"
+          },
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "byteStreamTrackID",
+            "default": {
+              "type": "string",
+              "value": ""
+            }
+          }
+        ]
+      }
+    ],
+    "spec": "mse"
+  },
+  {
+    "type": "interface",
+    "name": "TrackDefaultList",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "name": "length",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": true,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "TrackDefault"
+        },
+        "name": null,
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "name": "index"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Constructor",
+        "arguments": [
+          {
+            "optional": true,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": true,
+              "generic": "sequence",
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": {
+                "sequence": false,
+                "generic": null,
+                "nullable": false,
+                "array": false,
+                "union": false,
+                "idlType": "TrackDefault"
+              }
+            },
+            "name": "trackDefaults"
+          }
+        ]
+      }
+    ],
+    "spec": "mse"
+  },
+  {
+    "type": "interface",
+    "name": "URL",
+    "partial": true,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": true,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "name": "createObjectURL",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "MediaSource"
+            },
+            "name": "mediaSource"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "extAttrs": [],
+    "spec": "mse"
+  },
+  {
+    "type": "interface",
+    "name": "HTMLVideoElement",
+    "partial": true,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "VideoPlaybackQuality"
+        },
+        "name": "getVideoPlaybackQuality",
+        "arguments": [],
+        "extAttrs": []
+      }
+    ],
+    "extAttrs": [],
+    "spec": "mse"
+  },
+  {
+    "type": "interface",
+    "name": "AudioTrack",
+    "partial": true,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": true,
+          "array": false,
+          "union": false,
+          "idlType": "SourceBuffer"
+        },
+        "name": "sourceBuffer",
+        "extAttrs": []
+      }
+    ],
+    "extAttrs": [],
+    "spec": "mse"
+  },
+  {
+    "type": "interface",
+    "name": "VideoTrack",
+    "partial": true,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": true,
+          "array": false,
+          "union": false,
+          "idlType": "SourceBuffer"
+        },
+        "name": "sourceBuffer",
+        "extAttrs": []
+      }
+    ],
+    "extAttrs": [],
+    "spec": "mse"
+  },
+  {
+    "type": "interface",
+    "name": "TextTrack",
+    "partial": true,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": true,
+          "array": false,
+          "union": false,
+          "idlType": "SourceBuffer"
+        },
+        "name": "sourceBuffer",
+        "extAttrs": []
+      }
+    ],
+    "extAttrs": [],
+    "spec": "mse"
   },
   {
     "type": "interface",
@@ -61804,6 +64415,2819 @@
       }
     ],
     "spec": "url"
+  },
+  {
+    "type": "interface",
+    "name": "GlobalCrypto",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "Crypto"
+        },
+        "name": "crypto",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "NoInterfaceObject",
+        "arguments": null
+      }
+    ],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "implements",
+    "target": "Window",
+    "implements": "GlobalCrypto",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "implements",
+    "target": "WorkerGlobalScope",
+    "implements": "GlobalCrypto",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "interface",
+    "name": "Crypto",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "SubtleCrypto"
+        },
+        "name": "subtle",
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "ArrayBufferView"
+        },
+        "name": "getRandomValues",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "ArrayBufferView"
+            },
+            "name": "array"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": [
+          "Window",
+          "Worker"
+        ]
+      }
+    ],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "typedef",
+    "typeExtAttrs": [],
+    "idlType": {
+      "sequence": false,
+      "generic": null,
+      "nullable": false,
+      "array": false,
+      "union": true,
+      "idlType": [
+        {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "object"
+        },
+        {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        }
+      ]
+    },
+    "name": "AlgorithmIdentifier",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "typedef",
+    "typeExtAttrs": [],
+    "idlType": {
+      "sequence": false,
+      "generic": null,
+      "nullable": false,
+      "array": false,
+      "union": false,
+      "idlType": "AlgorithmIdentifier"
+    },
+    "name": "HashAlgorithmIdentifier",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "Algorithm",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "name",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "KeyAlgorithm",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "name",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "enum",
+    "name": "KeyType",
+    "values": [
+      "public",
+      "private",
+      "secret"
+    ],
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "enum",
+    "name": "KeyUsage",
+    "values": [
+      "encrypt",
+      "decrypt",
+      "sign",
+      "verify",
+      "deriveKey",
+      "deriveBits",
+      "wrapKey",
+      "unwrapKey"
+    ],
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "interface",
+    "name": "CryptoKey",
+    "partial": false,
+    "members": [
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "KeyType"
+        },
+        "name": "type",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "name": "extractable",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "object"
+        },
+        "name": "algorithm",
+        "extAttrs": []
+      },
+      {
+        "type": "attribute",
+        "static": false,
+        "stringifier": false,
+        "inherit": false,
+        "readonly": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "object"
+        },
+        "name": "usages",
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": [
+          "Window",
+          "Worker"
+        ]
+      }
+    ],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "enum",
+    "name": "KeyFormat",
+    "values": [
+      "raw",
+      "spki",
+      "pkcs8",
+      "jwk"
+    ],
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "interface",
+    "name": "SubtleCrypto",
+    "partial": false,
+    "members": [
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "any"
+          }
+        },
+        "name": "encrypt",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "AlgorithmIdentifier"
+            },
+            "name": "algorithm"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "CryptoKey"
+            },
+            "name": "key"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "name": "data"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "any"
+          }
+        },
+        "name": "decrypt",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "AlgorithmIdentifier"
+            },
+            "name": "algorithm"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "CryptoKey"
+            },
+            "name": "key"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "name": "data"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "any"
+          }
+        },
+        "name": "sign",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "AlgorithmIdentifier"
+            },
+            "name": "algorithm"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "CryptoKey"
+            },
+            "name": "key"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "name": "data"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "any"
+          }
+        },
+        "name": "verify",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "AlgorithmIdentifier"
+            },
+            "name": "algorithm"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "CryptoKey"
+            },
+            "name": "key"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "name": "signature"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "name": "data"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "any"
+          }
+        },
+        "name": "digest",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "AlgorithmIdentifier"
+            },
+            "name": "algorithm"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "name": "data"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "any"
+          }
+        },
+        "name": "generateKey",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "AlgorithmIdentifier"
+            },
+            "name": "algorithm"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "extractable"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": true,
+              "generic": "sequence",
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": {
+                "sequence": false,
+                "generic": null,
+                "nullable": false,
+                "array": false,
+                "union": false,
+                "idlType": "KeyUsage"
+              }
+            },
+            "name": "keyUsages"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "any"
+          }
+        },
+        "name": "deriveKey",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "AlgorithmIdentifier"
+            },
+            "name": "algorithm"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "CryptoKey"
+            },
+            "name": "baseKey"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "AlgorithmIdentifier"
+            },
+            "name": "derivedKeyType"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "extractable"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": true,
+              "generic": "sequence",
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": {
+                "sequence": false,
+                "generic": null,
+                "nullable": false,
+                "array": false,
+                "union": false,
+                "idlType": "KeyUsage"
+              }
+            },
+            "name": "keyUsages"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "any"
+          }
+        },
+        "name": "deriveBits",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "AlgorithmIdentifier"
+            },
+            "name": "algorithm"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "CryptoKey"
+            },
+            "name": "baseKey"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "name": "length"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "any"
+          }
+        },
+        "name": "importKey",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "KeyFormat"
+            },
+            "name": "format"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": true,
+              "idlType": [
+                {
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "array": false,
+                  "union": false,
+                  "idlType": "BufferSource"
+                },
+                {
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "array": false,
+                  "union": false,
+                  "idlType": "JsonWebKey"
+                }
+              ]
+            },
+            "name": "keyData"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "AlgorithmIdentifier"
+            },
+            "name": "algorithm"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "extractable"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": true,
+              "generic": "sequence",
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": {
+                "sequence": false,
+                "generic": null,
+                "nullable": false,
+                "array": false,
+                "union": false,
+                "idlType": "KeyUsage"
+              }
+            },
+            "name": "keyUsages"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "any"
+          }
+        },
+        "name": "exportKey",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "KeyFormat"
+            },
+            "name": "format"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "CryptoKey"
+            },
+            "name": "key"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "any"
+          }
+        },
+        "name": "wrapKey",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "KeyFormat"
+            },
+            "name": "format"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "CryptoKey"
+            },
+            "name": "key"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "CryptoKey"
+            },
+            "name": "wrappingKey"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "AlgorithmIdentifier"
+            },
+            "name": "wrapAlgorithm"
+          }
+        ],
+        "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": "Promise",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "any"
+          }
+        },
+        "name": "unwrapKey",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "KeyFormat"
+            },
+            "name": "format"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "name": "wrappedKey"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "CryptoKey"
+            },
+            "name": "unwrappingKey"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "AlgorithmIdentifier"
+            },
+            "name": "unwrapAlgorithm"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "AlgorithmIdentifier"
+            },
+            "name": "unwrappedKeyAlgorithm"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "extractable"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": true,
+              "generic": "sequence",
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": {
+                "sequence": false,
+                "generic": null,
+                "nullable": false,
+                "array": false,
+                "union": false,
+                "idlType": "KeyUsage"
+              }
+            },
+            "name": "keyUsages"
+          }
+        ],
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [
+      {
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": [
+          "Window",
+          "Worker"
+        ]
+      }
+    ],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "RsaOtherPrimesInfo",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "r",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "d",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "t",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "JsonWebKey",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "kty",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "use",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "key_ops",
+        "required": false,
+        "idlType": {
+          "sequence": true,
+          "generic": "sequence",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "DOMString"
+          }
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "alg",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "ext",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "boolean"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "crv",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "x",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "y",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "d",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "n",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "e",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "p",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "q",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "dp",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "dq",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "qi",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "oth",
+        "required": false,
+        "idlType": {
+          "sequence": true,
+          "generic": "sequence",
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": {
+            "sequence": false,
+            "generic": null,
+            "nullable": false,
+            "array": false,
+            "union": false,
+            "idlType": "RsaOtherPrimesInfo"
+          }
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "k",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "typedef",
+    "typeExtAttrs": [],
+    "idlType": {
+      "sequence": false,
+      "generic": null,
+      "nullable": false,
+      "array": false,
+      "union": false,
+      "idlType": "Uint8Array"
+    },
+    "name": "BigInteger",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "CryptoKeyPair",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "publicKey",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "CryptoKey"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "privateKey",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "CryptoKey"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "RsaKeyGenParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "modulusLength",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "extAttrs": [
+          {
+            "name": "EnforceRange",
+            "arguments": null
+          }
+        ]
+      },
+      {
+        "type": "field",
+        "name": "publicExponent",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BigInteger"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "RsaHashedKeyGenParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "hash",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "HashAlgorithmIdentifier"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "RsaKeyGenParams",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "RsaKeyAlgorithm",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "modulusLength",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "publicExponent",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BigInteger"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "KeyAlgorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "RsaHashedKeyAlgorithm",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "hash",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "KeyAlgorithm"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "RsaKeyAlgorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "RsaHashedImportParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "hash",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "HashAlgorithmIdentifier"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": null,
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "RsaPssParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "saltLength",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "extAttrs": [
+          {
+            "name": "EnforceRange",
+            "arguments": null
+          }
+        ]
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "RsaOaepParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "label",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BufferSource"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "EcdsaParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "hash",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "HashAlgorithmIdentifier"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "typedef",
+    "typeExtAttrs": [],
+    "idlType": {
+      "sequence": false,
+      "generic": null,
+      "nullable": false,
+      "array": false,
+      "union": false,
+      "idlType": "DOMString"
+    },
+    "name": "NamedCurve",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "EcKeyGenParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "namedCurve",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "NamedCurve"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "EcKeyAlgorithm",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "namedCurve",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "NamedCurve"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "KeyAlgorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "EcKeyImportParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "namedCurve",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "NamedCurve"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "EcdhKeyDeriveParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "public",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "CryptoKey"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "AesCtrParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "counter",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BufferSource"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "length",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "octet"
+        },
+        "extAttrs": [
+          {
+            "name": "EnforceRange",
+            "arguments": null
+          }
+        ]
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "AesKeyAlgorithm",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "length",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned short"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "KeyAlgorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "AesKeyGenParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "length",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned short"
+        },
+        "extAttrs": [
+          {
+            "name": "EnforceRange",
+            "arguments": null
+          }
+        ]
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "AesDerivedKeyParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "length",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned short"
+        },
+        "extAttrs": [
+          {
+            "name": "EnforceRange",
+            "arguments": null
+          }
+        ]
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "AesCbcParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "iv",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BufferSource"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "AesCmacParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "length",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned short"
+        },
+        "extAttrs": [
+          {
+            "name": "EnforceRange",
+            "arguments": null
+          }
+        ]
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "AesGcmParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "iv",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BufferSource"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "additionalData",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BufferSource"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "tagLength",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "octet"
+        },
+        "extAttrs": [
+          {
+            "name": "EnforceRange",
+            "arguments": null
+          }
+        ]
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "AesCfbParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "iv",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BufferSource"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "HmacImportParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "hash",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "HashAlgorithmIdentifier"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "length",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "extAttrs": [
+          {
+            "name": "EnforceRange",
+            "arguments": null
+          }
+        ]
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "HmacKeyAlgorithm",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "hash",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "KeyAlgorithm"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "length",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "KeyAlgorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "HmacKeyGenParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "hash",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "HashAlgorithmIdentifier"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "length",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "extAttrs": [
+          {
+            "name": "EnforceRange",
+            "arguments": null
+          }
+        ]
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "DhKeyGenParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "prime",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BigInteger"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "generator",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BigInteger"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "DhKeyAlgorithm",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "prime",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BigInteger"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "generator",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BigInteger"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "KeyAlgorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "DhKeyDeriveParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "public",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "CryptoKey"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "DhImportKeyParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "prime",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BigInteger"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "generator",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BigInteger"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "ConcatParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "hash",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "HashAlgorithmIdentifier"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "algorithmId",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BufferSource"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "partyUInfo",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BufferSource"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "partyVInfo",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BufferSource"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "publicInfo",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BufferSource"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "privateInfo",
+        "required": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BufferSource"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "HkdfCtrParams",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "hash",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "HashAlgorithmIdentifier"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "label",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BufferSource"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "context",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BufferSource"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
+  },
+  {
+    "type": "dictionary",
+    "name": "Pbkdf2Params",
+    "partial": false,
+    "members": [
+      {
+        "type": "field",
+        "name": "salt",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "BufferSource"
+        },
+        "extAttrs": []
+      },
+      {
+        "type": "field",
+        "name": "iterations",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "extAttrs": [
+          {
+            "name": "EnforceRange",
+            "arguments": null
+          }
+        ]
+      },
+      {
+        "type": "field",
+        "name": "hash",
+        "required": true,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "HashAlgorithmIdentifier"
+        },
+        "extAttrs": []
+      }
+    ],
+    "inheritance": "Algorithm",
+    "extAttrs": [],
+    "spec": "webcrypto"
   },
   {
     "type": "typedef",
@@ -74564,6 +79988,164 @@
         },
         "name": "ports",
         "extAttrs": []
+      },
+      {
+        "type": "operation",
+        "getter": false,
+        "setter": false,
+        "creator": false,
+        "deleter": false,
+        "legacycaller": false,
+        "static": false,
+        "stringifier": false,
+        "idlType": {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "name": "initMessageEvent",
+        "arguments": [
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "typeArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "canBubbleArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "name": "cancelableArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "name": "dataArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "originArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "name": "lastEventIdArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": true,
+              "idlType": [
+                {
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "array": false,
+                  "union": false,
+                  "idlType": "WindowProxy"
+                },
+                {
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "array": false,
+                  "union": false,
+                  "idlType": "MessagePort"
+                }
+              ]
+            },
+            "name": "sourceArg"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": true,
+              "generic": "sequence",
+              "nullable": true,
+              "array": false,
+              "union": false,
+              "idlType": {
+                "sequence": false,
+                "generic": null,
+                "nullable": false,
+                "array": false,
+                "union": false,
+                "idlType": "MessagePort"
+              }
+            },
+            "name": "portsArg"
+          }
+        ],
+        "extAttrs": []
       }
     ],
     "inheritance": "Event",
@@ -74604,14 +80186,10 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": {
-          "type": "identifier",
-          "value": "Window"
-        }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
+        "rhs": [
+          "Window",
+          "Worker"
+        ]
       }
     ],
     "spec": "webmessage"
@@ -74624,6 +80202,7 @@
       {
         "type": "field",
         "name": "data",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -74637,6 +80216,7 @@
       {
         "type": "field",
         "name": "origin",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -74650,19 +80230,7 @@
       {
         "type": "field",
         "name": "lastEventId",
-        "idlType": {
-          "sequence": false,
-          "generic": null,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "DOMString"
-        },
-        "extAttrs": []
-      },
-      {
-        "type": "field",
-        "name": "channel",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -74676,6 +80244,7 @@
       {
         "type": "field",
         "name": "source",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -74706,6 +80275,7 @@
       {
         "type": "field",
         "name": "ports",
+        "required": false,
         "idlType": {
           "sequence": true,
           "generic": "sequence",
@@ -74777,14 +80347,10 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": {
-          "type": "identifier",
-          "value": "Window"
-        }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
+        "rhs": [
+          "Window",
+          "Worker"
+        ]
       }
     ],
     "spec": "webmessage"
@@ -74916,14 +80482,10 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": {
-          "type": "identifier",
-          "value": "Window"
-        }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
+        "rhs": [
+          "Window",
+          "Worker"
+        ]
       }
     ],
     "spec": "webmessage"
@@ -75072,14 +80634,10 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": {
-          "type": "identifier",
-          "value": "Window"
-        }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
+        "rhs": [
+          "Window",
+          "Worker"
+        ]
       }
     ],
     "spec": "webmessage"

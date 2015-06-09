@@ -6702,6 +6702,7 @@
       {
         "type": "field",
         "name": "track",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -14059,6 +14060,7 @@
       {
         "type": "field",
         "name": "state",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -14158,6 +14160,7 @@
       {
         "type": "field",
         "name": "oldURL",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -14171,6 +14174,7 @@
       {
         "type": "field",
         "name": "newURL",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -14253,6 +14257,7 @@
       {
         "type": "field",
         "name": "persisted",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -14751,6 +14756,7 @@
       {
         "type": "field",
         "name": "message",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -14764,6 +14770,7 @@
       {
         "type": "field",
         "name": "filename",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -14777,6 +14784,7 @@
       {
         "type": "field",
         "name": "lineno",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -14790,6 +14798,7 @@
       {
         "type": "field",
         "name": "colno",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -14803,6 +14812,7 @@
       {
         "type": "field",
         "name": "error",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,

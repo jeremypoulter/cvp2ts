@@ -3,6 +3,8 @@
     "source": "http://w3c.github.io/dom/",
     "levels": [ 1 ],
     "local": "dom4.html",
+    "dontFetch": true,
+    "dontFetchReason": "unsupported IDL constructs",
     "helpers1": [
         "DOMException",
         "DOMSettableTokenList",

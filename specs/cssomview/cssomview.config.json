@@ -3,6 +3,8 @@
     "source": "http://dev.w3.org/csswg/cssom-view/",
     "levels": [ 1 ],
     "local": "cssomview.html",
+    "dontFetch": true,
+    "dontFetchReason": "unsupported IDL constructs",
     "helpers1": [
         "CaretPosition",
         "MediaQueryList"

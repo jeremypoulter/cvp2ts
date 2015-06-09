@@ -3218,6 +3218,7 @@
       {
         "type": "field",
         "name": "id",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -3235,6 +3236,7 @@
       {
         "type": "field",
         "name": "control",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -3345,6 +3347,7 @@
       {
         "type": "field",
         "name": "region",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
