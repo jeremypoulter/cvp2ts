@@ -101,6 +101,9 @@
     font-weight: bold;
     color: #c50;
   }
+
+  #fonts ul.indexlist ul, #fonts ul.indexlist dl { font-size: inherit; }
+
   </style>
   <link href="http://www.w3.org/StyleSheets/TR/W3C-ED.css" rel=stylesheet
   type="text/css">
@@ -108,22 +111,22 @@
   src="http://test.csswg.org/harness/annotate.js#CSS3-FONTS_DEV"
   type="text/javascript"></script>
 
- <body>
+ <body id=fonts>
   <div class=head> <!--begin-logo-->
    <p><a href="http://www.w3.org/"><img alt=W3C height=48
     src="http://www.w3.org/Icons/w3c_home" width=72></a> <!--end-logo-->
 
    <h1>CSS Fonts Module Level 3</h1>
 
-   <h2 class="no-num no-toc" id=editors-draft-26-february-2014>Editor's Draft
-    26 February 2014</h2>
+   <h2 class="no-num no-toc" id=editors-draft-19-march-2015>Editor's Draft 19
+    March 2015</h2>
 
    <dl id=authors>
     <dt>This version:
 
     <dd><a
      href="http://dev.w3.org/csswg/css-fonts/">http://dev.w3.org/csswg/css-fonts/</a>
-     <!-- <dd><a href="http://www.w3.org/TR/2014/ED-css-fonts-3-20140226/">http://www.w3.org/TR/2014/ED-css-fonts-3-20140226/</a> -->
+     <!-- <dd><a href="http://www.w3.org/TR/2015/ED-css-fonts-3-20150319/">http://www.w3.org/TR/2015/ED-css-fonts-3-20150319/</a> -->
      
 
     <dt>Latest version:
@@ -136,13 +139,13 @@
     <dd><a
      href="http://dev.w3.org/csswg/css-fonts/">http://dev.w3.org/csswg/css-fonts/</a>
      (<a
-     href="https://dvcs.w3.org/hg/csswg/log/tip/css-fonts/Fonts.html">change
+     href="https://hg.csswg.org/drafts/log/tip/css-fonts/Fonts.html">change
      log</a>)
 
     <dt>Previous version:
 
     <dd><a
-     href="http://www.w3.org/TR/2013/WD-css-fonts-3-20130711/">http://www.w3.org/TR/2013/WD-css-fonts-3-20130711/</a>
+     href="http://www.w3.org/TR/2013/CR-css-fonts-3-20131003/">http://www.w3.org/TR/2013/CR-css-fonts-3-20131003/</a>
 
     <dt>Issues List:
 
@@ -175,7 +178,7 @@
    <!--begin-copyright-->
    <p class=copyright><a
     href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"
-    rel=license>Copyright</a> © 2014 <a href="http://www.w3.org/"><abbr
+    rel=license>Copyright</a> © 2015 <a href="http://www.w3.org/"><abbr
     title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a
     href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of
     Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr
@@ -438,8 +441,8 @@
 
    <li class=no-num><a href="#ch-ch-ch-changes">Changes</a>
     <ul class=toc>
-     <li class=no-num><a href="#recent-changes"> Changes from the July 2013
-      CSS3 Fonts Last Call Working Draft</a>
+     <li class=no-num><a href="#recent-changes"> Changes from the October
+      2013 CSS3 Fonts Candidate Recommendation</a>
     </ul>
 
    <li class=no-num><a href="#acknowledgments">Acknowledgments</a>
@@ -832,8 +835,8 @@ body { font-family: "New Century Schoolbook", serif }
    font family. CSS uses the term ‘<a href="#serif"><code
    class=property>serif</code></a>’ to apply to a font for any script,
    although other names may be more familiar for particular scripts, such as
-   Mincho (Japanese), Sung, Song or Kai (Chinese), Batang (Korean). For
-   Arabic, the Naskh style would correspond to ‘<a href="#serif"><code
+   Mincho (Japanese), Sung or Song (Chinese), Batang (Korean). For Arabic,
+   the Naskh style would correspond to ‘<a href="#serif"><code
    class=property>serif</code></a>’ more due to its typographic role rather
    than its actual design style. Any font that is so described may be used to
    represent the generic ‘<a href="#serif"><code
@@ -1469,14 +1472,14 @@ body { font-family: "New Century Schoolbook", serif }
    <dt><dfn id=length-size-value><var>&lt;length&gt;</var></dfn>
 
    <dd>A length value specifies an absolute font size (independent of the
-    user agent's font table). Negative lengths are illegal.
+    user agent's font table). Negative lengths are invalid.
 
    <dt><dfn id=percentage-size-value><var>&lt;percentage&gt;</var></dfn>
 
    <dd>A percentage value specifies an absolute font size relative to the
     parent element's font size. Use of percentage values, or values in
     ‘<code class=property>em</code>’s, leads to more robust and
-    cascadable style sheets.
+    cascadable style sheets. Negative percentages are invalid.
   </dl>
 
   <p>The following table provides user agent guidelines for the absolute-size
@@ -1731,6 +1734,8 @@ a  =  <a href="#aspect-value"><i>aspect value</i></a> as specified by the 'font-
 a' =  <a href="#aspect-value"><i>aspect value</i></a> of actual font
 c  =  adjusted font-size to use
 </pre>
+
+    <p>Negative values are invalid.</p>
 
     <p>This value applies to any font that is selected but in typical usage
      it should be based on the <a href="#aspect-value"><i>aspect
@@ -3017,7 +3022,8 @@ body { font-family: DroidSans; }
       href="#east-asian-variant-values"><var>&lt;east-asian-variant-values&gt;</var></a>
       || <a
       href="#east-asian-width-values"><var>&lt;east-asian-width-values&gt;</var></a>
-      || <a href="#ruby"><i>ruby</i></a> ]
+      || <a href="#ruby"><i>ruby</i></a> || [ <a href="#sub"><i>sub</i></a> |
+      <a href="#super"><i>super</i></a> ] ]
 
     <tr>
      <td><em>Initial:</em>
@@ -5044,7 +5050,7 @@ p {
 }
 
 p {
-  font-variant: discretionary-ligatures,
+  font-variant: discretionary-ligatures
                 character-variant(leo-B, leo-M, leo-N, leo-T, leo-U);
 }
 
@@ -5270,7 +5276,8 @@ span.alt-U {
       href="#east-asian-variant-values"><var>&lt;east-asian-variant-values&gt;</var></a>
       || <a
       href="#east-asian-width-values"><var>&lt;east-asian-width-values&gt;</var></a>
-      || <a href="#ruby"><i>ruby</i></a> ]
+      || <a href="#ruby"><i>ruby</i></a> || [ <a href="#sub"><i>sub</i></a> |
+      <a href="#super"><i>super</i></a> ] ]
 
     <tr>
      <td>Initial:
@@ -6026,31 +6033,17 @@ interface CSSFontFeatureValuesMap {
   <h2 class=no-num id=ch-ch-ch-changes>Changes</h2>
 
   <h3 class=no-num id=recent-changes> Changes from the <a
-   href="http://www.w3.org/TR/2013/WD-css-fonts-3-20130711/">July 2013 CSS3
-   Fonts Last Call Working Draft</a></h3>
+   href="http://www.w3.org/TR/2013/CR-css-fonts-3-20131003/">October 2013
+   CSS3 Fonts Candidate Recommendation</a></h3>
 
   <ul>
-   <li>reorder feature precedence such that features implied by other CSS
-    properties override ‘<code class=property>font-variant</code>’
-    settings
+   <li>add omitted ‘<a href="#propdef-font-variant-position"><code
+    class=property>font-variant-position</code></a>’ values to <a
+    href="#propdef-font-variant" title="font-variant!!property">‘<code
+    class=property>font-variant</code>’</a> shorthand
 
-   <li>switched examples to use .woff files
-
-   <li>revised wording of font fetching algorithm
-
-   <li>drop ‘<code class=property>auto</code>’ value for ‘<a
-    href="#propdef-font-size-adjust"><code
-    class=property>font-size-adjust</code></a>’
-
-   <li>clarify effect of ‘<a href="#propdef-font-size-adjust"><code
-    class=property>font-size-adjust</code></a>’ on <a class=property
-    href="http://www.w3.org/TR/CSS2/visudet.html#propdef-line-height">‘<code
-    class=property>line-height</code>’</a>
-
-   <li>allow user agents to synthesize OpenType <span class=tag>kern</span>
-    feature
-
-   <li>add example of ordinals and associated markup
+   <li>make negative values for font-size-adjust invalid, along with negative
+    percentage font-size values
 
    <li>minor editorial cleanups
   </ul>
@@ -6299,20 +6292,20 @@ interface CSSFontFeatureValuesMap {
    <dt id=ref-HTML5>[HTML5]
 
    <dd>Robin Berjon; et al. <a
-    href="http://www.w3.org/TR/2013/CR-html5-20130806/"><cite>HTML5.</cite></a>
-    6 August 2013. W3C Candidate Recommendation. (Work in progress.) URL: <a
-    href="http://www.w3.org/TR/2013/CR-html5-20130806/">http://www.w3.org/TR/2013/CR-html5-20130806/</a>
+    href="http://www.w3.org/TR/2014/REC-html5-20141028/"><cite>HTML5.</cite></a>
+    28 October 2014. W3C Recommendation. URL: <a
+    href="http://www.w3.org/TR/2014/REC-html5-20141028/">http://www.w3.org/TR/2014/REC-html5-20141028/</a>
     </dd>
    <!---->
 
    <dt id=ref-OPEN-FONT-FORMAT>[OPEN-FONT-FORMAT]
 
    <dd><a
-    href="http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=52136"><cite>Information
+    href="http://standards.iso.org/ittf/PubliclyAvailableStandards/c052136_ISO_IEC_14496-22_2009%28E%29.zip"><cite>Information
     technology — Coding of audio-visual objects — Part 22: Open Font
     Format.</cite></a> International Organization for Standardization.
     ISO/IEC 14496-22:2009. URL: <a
-    href="http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=52136">http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=52136</a>
+    href="http://standards.iso.org/ittf/PubliclyAvailableStandards/c052136_ISO_IEC_14496-22_2009%28E%29.zip">http://standards.iso.org/ittf/PubliclyAvailableStandards/c052136_ISO_IEC_14496-22_2009%28E%29.zip</a>
     </dd>
    <!---->
 
@@ -6366,10 +6359,10 @@ interface CSSFontFeatureValuesMap {
 
    <dd>The Unicode Consortium. <a
     href="http://www.unicode.org/standard/versions/enumeratedversions.html"><cite>The
-    Unicode Standard.</cite></a> 2013. Defined by: The Unicode Standard,
-    Version 6.3.0, (Mountain View, CA: The Unicode Consortium, 2013. ISBN
-    978-1-936213-08-5), as updated from time to time by the publication of
-    new versions URL: <a
+    Unicode Standard.</cite></a> 2014. Defined by: The Unicode Standard,
+    Version 7.0.0, (Mountain View, CA: The Unicode Consortium, 2014. ISBN
+    978-1-936213-09-2), as updated from time to time by the publication of
+    new versions. URL: <a
     href="http://www.unicode.org/standard/versions/enumeratedversions.html">http://www.unicode.org/standard/versions/enumeratedversions.html</a>
     </dd>
    <!---->
@@ -7193,7 +7186,7 @@ interface CSSFontFeatureValuesMap {
       &lt;numeric-figure-values&gt; || &lt;numeric-spacing-values&gt; ||
       &lt;numeric-fraction-values&gt; || ordinal || slashed-zero ||
       &lt;east-asian-variant-values&gt; || &lt;east-asian-width-values&gt; ||
-      ruby ]
+      ruby || [ sub | super ] ]
 
      <td>normal
 
@@ -7390,7 +7383,7 @@ interface CSSFontFeatureValuesMap {
       &lt;numeric-figure-values&gt; || &lt;numeric-spacing-values&gt; ||
       &lt;numeric-fraction-values&gt; || ordinal || slashed-zero ||
       &lt;east-asian-variant-values&gt; || &lt;east-asian-width-values&gt; ||
-      ruby ]
+      ruby || [ sub | super ] ]
 
      <td>normal
 
