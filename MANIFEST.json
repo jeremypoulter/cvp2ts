@@ -1518,6 +1518,38 @@
         "path": "tests/ecmascript51/ecmascript51-interface-URIError.html"
       }, 
       {
+        "url": "/tests/eme/eme-interface-HTMLMediaElement-partial-1.html", 
+        "path": "tests/eme/eme-interface-HTMLMediaElement-partial-1.html"
+      }, 
+      {
+        "url": "/tests/eme/eme-interface-MediaEncryptedEvent.html", 
+        "path": "tests/eme/eme-interface-MediaEncryptedEvent.html"
+      }, 
+      {
+        "url": "/tests/eme/eme-interface-MediaKeyMessageEvent.html", 
+        "path": "tests/eme/eme-interface-MediaKeyMessageEvent.html"
+      }, 
+      {
+        "url": "/tests/eme/eme-interface-MediaKeySession.html", 
+        "path": "tests/eme/eme-interface-MediaKeySession.html"
+      }, 
+      {
+        "url": "/tests/eme/eme-interface-MediaKeyStatusMap.html", 
+        "path": "tests/eme/eme-interface-MediaKeyStatusMap.html"
+      }, 
+      {
+        "url": "/tests/eme/eme-interface-MediaKeySystemAccess.html", 
+        "path": "tests/eme/eme-interface-MediaKeySystemAccess.html"
+      }, 
+      {
+        "url": "/tests/eme/eme-interface-MediaKeys.html", 
+        "path": "tests/eme/eme-interface-MediaKeys.html"
+      }, 
+      {
+        "url": "/tests/eme/eme-interface-Navigator-partial-1.html", 
+        "path": "tests/eme/eme-interface-Navigator-partial-1.html"
+      }, 
+      {
         "url": "/tests/encoding/encoding-interface-TextDecoder.html", 
         "path": "tests/encoding/encoding-interface-TextDecoder.html"
       }, 
@@ -2258,6 +2290,50 @@
         "path": "tests/mpeg2video/mpeg2video-MediaMPEG2VideoFormat.html"
       }, 
       {
+        "url": "/tests/mse/mse-interface-AudioTrack-partial-1.html", 
+        "path": "tests/mse/mse-interface-AudioTrack-partial-1.html"
+      }, 
+      {
+        "url": "/tests/mse/mse-interface-HTMLVideoElement-partial-1.html", 
+        "path": "tests/mse/mse-interface-HTMLVideoElement-partial-1.html"
+      }, 
+      {
+        "url": "/tests/mse/mse-interface-MediaSource.html", 
+        "path": "tests/mse/mse-interface-MediaSource.html"
+      }, 
+      {
+        "url": "/tests/mse/mse-interface-SourceBuffer.html", 
+        "path": "tests/mse/mse-interface-SourceBuffer.html"
+      }, 
+      {
+        "url": "/tests/mse/mse-interface-SourceBufferList.html", 
+        "path": "tests/mse/mse-interface-SourceBufferList.html"
+      }, 
+      {
+        "url": "/tests/mse/mse-interface-TextTrack-partial-1.html", 
+        "path": "tests/mse/mse-interface-TextTrack-partial-1.html"
+      }, 
+      {
+        "url": "/tests/mse/mse-interface-TrackDefault.html", 
+        "path": "tests/mse/mse-interface-TrackDefault.html"
+      }, 
+      {
+        "url": "/tests/mse/mse-interface-TrackDefaultList.html", 
+        "path": "tests/mse/mse-interface-TrackDefaultList.html"
+      }, 
+      {
+        "url": "/tests/mse/mse-interface-URL-partial-1.html", 
+        "path": "tests/mse/mse-interface-URL-partial-1.html"
+      }, 
+      {
+        "url": "/tests/mse/mse-interface-VideoPlaybackQuality.html", 
+        "path": "tests/mse/mse-interface-VideoPlaybackQuality.html"
+      }, 
+      {
+        "url": "/tests/mse/mse-interface-VideoTrack-partial-1.html", 
+        "path": "tests/mse/mse-interface-VideoTrack-partial-1.html"
+      }, 
+      {
         "url": "/tests/opentype/opentype-FontOpenTypeFormat.html", 
         "path": "tests/opentype/opentype-FontOpenTypeFormat.html"
       }, 
@@ -2608,6 +2684,30 @@
       {
         "url": "/tests/url/url-interface-URLUtilsReadOnly.html", 
         "path": "tests/url/url-interface-URLUtilsReadOnly.html"
+      }, 
+      {
+        "url": "/tests/webcrypto/webcrypto-interface-Crypto.html", 
+        "path": "tests/webcrypto/webcrypto-interface-Crypto.html"
+      }, 
+      {
+        "url": "/tests/webcrypto/webcrypto-interface-CryptoKey.html", 
+        "path": "tests/webcrypto/webcrypto-interface-CryptoKey.html"
+      }, 
+      {
+        "url": "/tests/webcrypto/webcrypto-interface-GlobalCrypto-implemented-by-Window.html", 
+        "path": "tests/webcrypto/webcrypto-interface-GlobalCrypto-implemented-by-Window.html"
+      }, 
+      {
+        "url": "/tests/webcrypto/webcrypto-interface-GlobalCrypto-implemented-by-WorkerGlobalScope.html", 
+        "path": "tests/webcrypto/webcrypto-interface-GlobalCrypto-implemented-by-WorkerGlobalScope.html"
+      }, 
+      {
+        "url": "/tests/webcrypto/webcrypto-interface-GlobalCrypto.html", 
+        "path": "tests/webcrypto/webcrypto-interface-GlobalCrypto.html"
+      }, 
+      {
+        "url": "/tests/webcrypto/webcrypto-interface-SubtleCrypto.html", 
+        "path": "tests/webcrypto/webcrypto-interface-SubtleCrypto.html"
       }, 
       {
         "url": "/tests/webgl/webgl-interface-WebGLActiveInfo.html", 
@@ -3260,5 +3360,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "d0cce110b66d324a089a9ed892b65d4881cce070"
+  "rev": "17d185d267293bec825cfe1e644fe78e2c7adf86"
 }
