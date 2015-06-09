@@ -1,0 +1,120 @@
+
+//
+// [GA] The IDL extracted from the source specification has been manually edited as follows:
+//
+// (1) expand maplike<K,V>;
+// (2) remove use of interface inheritance from partial interface declarations;
+//
+// Last Edited: Tue Jun  9 19:23:20 UTC 2015
+//
+
+partial interface Navigator {
+    Promise<MediaKeySystemAccess> requestMediaKeySystemAccess (DOMString keySystem, sequence<MediaKeySystemConfiguration> supportedConfigurations);
+};
+
+enum MediaKeysRequirement {
+    "required",
+    "optional",
+    "not-allowed"
+};
+
+dictionary MediaKeySystemConfiguration {
+             sequence<DOMString>                     initDataTypes;
+             sequence<MediaKeySystemMediaCapability> audioCapabilities;
+             sequence<MediaKeySystemMediaCapability> videoCapabilities;
+             MediaKeysRequirement                    distinctiveIdentifier = "optional";
+             MediaKeysRequirement                    persistentState = "optional";
+             sequence<MediaKeySessionType>           sessionTypes;
+};
+
+dictionary MediaKeySystemMediaCapability {
+             DOMString contentType = "";
+             DOMString robustness = "";
+};
+
+interface MediaKeySystemAccess {
+    readonly    attribute DOMString keySystem;
+    MediaKeySystemConfiguration getConfiguration ();
+    Promise<MediaKeys>          createMediaKeys ();
+};
+
+enum MediaKeySessionType {
+    "temporary",
+    "persistent-license",
+    "TBD"
+};
+
+interface MediaKeys {
+    MediaKeySession createSession (optional MediaKeySessionType sessionType = "temporary");
+    Promise<void>   setServerCertificate (BufferSource serverCertificate);
+};
+
+interface MediaKeySession : EventTarget {
+    readonly    attribute DOMString           sessionId;
+    readonly    attribute unrestricted double expiration;
+    readonly    attribute Promise<void>       closed;
+    readonly    attribute MediaKeyStatusMap   keyStatuses;
+    Promise<void>    generateRequest (DOMString initDataType, BufferSource initData);
+    Promise<boolean> load (DOMString sessionId);
+    Promise<void>    update (BufferSource response);
+    Promise<void>    close ();
+    Promise<void>    remove ();
+};
+
+interface MediaKeyStatusMap {
+    // readonly maplike<BufferSource, MediaKeyStatus>;  // [GA] expand below
+    readonly attribute unsigned long size;
+    any entries();
+    any keys();
+    any values();
+    any get(BufferSource source);
+    any has(BufferSource source);
+    void clear();
+    any delete(BufferSource source);
+    any set(BufferSource source, MediaKeyStatus status);
+};
+
+enum MediaKeyStatus {
+    "usable",
+    "expired",
+    "output-downscaled",
+    "output-not-allowed",
+    "status-pending",
+    "internal-error"
+};
+
+enum MediaKeyMessageType {
+    "license-request",
+    "license-renewal",
+    "license-release",
+    "individualization-request"
+};
+
+[ Constructor (DOMString type, optional MediaKeyMessageEventInit eventInitDict)]
+interface MediaKeyMessageEvent : Event {
+    readonly    attribute MediaKeyMessageType messageType;
+    readonly    attribute ArrayBuffer         message;
+};
+
+dictionary MediaKeyMessageEventInit : EventInit {
+             MediaKeyMessageType messageType = "license-request";
+             ArrayBuffer         message;
+};
+
+// [GA] remove partial interface inheritance
+partial interface HTMLMediaElement /* : EventTarget */ {
+    readonly    attribute MediaKeys?   mediaKeys;
+                attribute EventHandler onencrypted;
+    Promise<void> setMediaKeys (MediaKeys? mediaKeys);
+};
+
+[ Constructor (DOMString type, optional MediaEncryptedEventInit eventInitDict)]
+interface MediaEncryptedEvent : Event {
+    readonly    attribute DOMString    initDataType;
+    readonly    attribute ArrayBuffer? initData;
+};
+
+dictionary MediaEncryptedEventInit : EventInit {
+             DOMString    initDataType = "";
+             ArrayBuffer? initData = null;
+};

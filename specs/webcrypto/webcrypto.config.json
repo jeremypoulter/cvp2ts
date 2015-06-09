@@ -1,0 +1,21 @@
+{
+    "spec": "webcrypto",
+    "source": "https://dvcs.w3.org/hg/webcrypto-api/raw-file/tip/spec/Overview.html",
+    "levels": [ 1 ],
+    "local": "webcrypto.html",
+    "dontFetch": true,
+    "dontExtract": true,
+    "dontExtractReason": "definitions of IDL require manual editing, about which see comment in IDL file",
+    "helpers1": [
+    ],
+    "instances": {
+        "Crypto": "null",
+        "CryptoKey": "null",
+        "GlobalCrypto": "null",
+        "SubtleCrypto": "null",
+        "Window": "null",
+        "WorkerGlobalScope": "null"
+    },
+    "instancesAsync": {
+    }
+}

@@ -121,13 +121,13 @@ If it is desired that the server and client run on separated devices, then the n
     1.4.3
 
     $ npm ls --parseable true --long true cheerio | awk -F: '{print $2}'
-    cheerio@0.17.0
+    cheerio@0.19.0
 
     $ npm ls --parseable true --long true webidl2 | awk -F: '{print $2}'
-    webidl2@2.0.6
+    webidl2@2.0.10
 
     $ python -V
-    Python 2.7.8
+    Python 2.7.9
 </pre>
 
 ## Issues

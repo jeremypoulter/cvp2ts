@@ -1,0 +1,23 @@
+{
+    "spec": "eme",
+    "source": "https://w3c.github.io/encrypted-media/",
+    "levels": [ 1 ],
+    "local": "eme.html",
+    "dontFetch": true,
+    "dontExtract": true,
+    "dontExtractReason": "definitions of IDL require manual editing, about which see comment in IDL file",
+    "helpers1": [
+    ],
+    "instances": {
+        "HTMLMediaElement": "null",
+        "MediaEncryptedEvent": "null",
+        "MediaKeyMessageEvent": "null",
+        "MediaKeySession": "null",
+        "MediaKeyStatusMap": "null",
+        "MediaKeySystemAccess": "null",
+        "MediaKeys": "null",
+        "Navigator": "null"
+    },
+    "instancesAsync": {
+    }
+}

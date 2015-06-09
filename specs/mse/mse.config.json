@@ -1,0 +1,26 @@
+{
+    "spec": "mse",
+    "source": "http://w3c.github.io/media-source/",
+    "levels": [ 1 ],
+    "local": "mse.html",
+    "dontFetch": true,
+    "dontExtract": true,
+    "dontExtractReason": "definitions of IDL require manual editing, about which see comment in IDL file",
+    "helpers1": [
+    ],
+    "instances": {
+        "AudioTrack": "null",
+        "HTMLVideoElement": "null",
+        "MediaSource": "null",
+        "SourceBuffer": "null",
+        "SourceBufferList": "null",
+        "TextTrack": "null",
+        "TrackDefault": "null",
+        "TrackDefaultList": "null",
+        "URL": "null",
+        "VideoPlaybackQuality": "null",
+        "VideoTrack": "null"
+    },
+    "instancesAsync": {
+    }
+}
