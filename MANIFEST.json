@@ -3062,6 +3062,34 @@
         "path": "tests/dom4/helpers/MutationRecord.js"
       }, 
       {
+        "url": "/tests/eme/helpers/MediaEncryptedEvent.js", 
+        "path": "tests/eme/helpers/MediaEncryptedEvent.js"
+      }, 
+      {
+        "url": "/tests/eme/helpers/MediaKeyMessageEvent.js", 
+        "path": "tests/eme/helpers/MediaKeyMessageEvent.js"
+      }, 
+      {
+        "url": "/tests/eme/helpers/MediaKeySession.js", 
+        "path": "tests/eme/helpers/MediaKeySession.js"
+      }, 
+      {
+        "url": "/tests/eme/helpers/MediaKeyStatusMap.js", 
+        "path": "tests/eme/helpers/MediaKeyStatusMap.js"
+      }, 
+      {
+        "url": "/tests/eme/helpers/MediaKeySystemAccess.js", 
+        "path": "tests/eme/helpers/MediaKeySystemAccess.js"
+      }, 
+      {
+        "url": "/tests/eme/helpers/MediaKeys.js", 
+        "path": "tests/eme/helpers/MediaKeys.js"
+      }, 
+      {
+        "url": "/tests/eme/resources/video.webm", 
+        "path": "tests/eme/resources/video.webm"
+      }, 
+      {
         "url": "/tests/file/helpers/Blob.js", 
         "path": "tests/file/helpers/Blob.js"
       }, 
@@ -3202,6 +3230,50 @@
         "path": "tests/mpeg2video/resources/test.m2v"
       }, 
       {
+        "url": "/tests/mse/helpers/AudioTrack.js", 
+        "path": "tests/mse/helpers/AudioTrack.js"
+      }, 
+      {
+        "url": "/tests/mse/helpers/MediaSource.js", 
+        "path": "tests/mse/helpers/MediaSource.js"
+      }, 
+      {
+        "url": "/tests/mse/helpers/SourceBuffer.js", 
+        "path": "tests/mse/helpers/SourceBuffer.js"
+      }, 
+      {
+        "url": "/tests/mse/helpers/SourceBufferList.js", 
+        "path": "tests/mse/helpers/SourceBufferList.js"
+      }, 
+      {
+        "url": "/tests/mse/helpers/TextTrack.js", 
+        "path": "tests/mse/helpers/TextTrack.js"
+      }, 
+      {
+        "url": "/tests/mse/helpers/TrackDefault.js", 
+        "path": "tests/mse/helpers/TrackDefault.js"
+      }, 
+      {
+        "url": "/tests/mse/helpers/TrackDefaultList.js", 
+        "path": "tests/mse/helpers/TrackDefaultList.js"
+      }, 
+      {
+        "url": "/tests/mse/helpers/TrackDefaults.js", 
+        "path": "tests/mse/helpers/TrackDefaults.js"
+      }, 
+      {
+        "url": "/tests/mse/helpers/VideoPlaybackQuality.js", 
+        "path": "tests/mse/helpers/VideoPlaybackQuality.js"
+      }, 
+      {
+        "url": "/tests/mse/helpers/VideoTrack.js", 
+        "path": "tests/mse/helpers/VideoTrack.js"
+      }, 
+      {
+        "url": "/tests/mse/resources/video.webm", 
+        "path": "tests/mse/resources/video.webm"
+      }, 
+      {
         "url": "/tests/opentype/helpers/FontOpenTypeFormat.js", 
         "path": "tests/opentype/helpers/FontOpenTypeFormat.js"
       }, 
@@ -3294,6 +3366,18 @@
         "path": "tests/svg12tiny/helpers/UIEvent.js"
       }, 
       {
+        "url": "/tests/webcrypto/helpers/Crypto.js", 
+        "path": "tests/webcrypto/helpers/Crypto.js"
+      }, 
+      {
+        "url": "/tests/webcrypto/helpers/CryptoKey.js", 
+        "path": "tests/webcrypto/helpers/CryptoKey.js"
+      }, 
+      {
+        "url": "/tests/webcrypto/helpers/SubtleCrypto.js", 
+        "path": "tests/webcrypto/helpers/SubtleCrypto.js"
+      }, 
+      {
         "url": "/tests/webgl/helpers/WebGLActiveInfo.js", 
         "path": "tests/webgl/helpers/WebGLActiveInfo.js"
       }, 
@@ -3360,5 +3444,5 @@
     ]
   }, 
   "local_changes": [], 
-  "rev": "e2d337fe1b1183683a37b7691f009d99d8c985cd"
+  "rev": "c8cbf810bd896eb7b9863aa83b0aecdb15a675cb"
 }
