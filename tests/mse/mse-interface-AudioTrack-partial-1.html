@@ -6,11 +6,12 @@
 <script src='/resources/testharness.js'></script>
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
+<script src='./helpers/AudioTrack.js'></script>
 <script type='text/plain' id='idlDef'>
 {"type":"interface","name":"AudioTrack","partial":true,"members":[{"type":"attribute","static":false,"stringifier":false,"inherit":false,"readonly":true,"idlType":{"sequence":false,"generic":null,"nullable":true,"array":false,"union":false,"idlType":"SourceBuffer"},"name":"sourceBuffer","extAttrs":[]}],"extAttrs":[]}
 </script>
 <h1>Test Interface AudioTrack Signature</h1>
 <div id='log'></div>
 <script>
-level1('mse', JSON.parse(document.getElementById('idlDef').textContent), null);
+level1Async('mse', JSON.parse(document.getElementById('idlDef').textContent), function(test){return getAudioTrackAsync(test);});
 </script>

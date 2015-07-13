@@ -7,17 +7,23 @@
     "dontExtract": true,
     "dontExtractReason": "definitions of IDL require manual editing, about which see comment in IDL file",
     "helpers1": [
+        "MediaEncryptedEvent",
+        "MediaKeyMessageEvent",
+        "MediaKeySession",
+        "MediaKeyStatusMap",
+        "MediaKeySystemAccess",
+        "MediaKeys"
     ],
     "instances": {
-        "HTMLMediaElement": "null",
-        "MediaEncryptedEvent": "null",
-        "MediaKeyMessageEvent": "null",
-        "MediaKeySession": "null",
-        "MediaKeyStatusMap": "null",
-        "MediaKeySystemAccess": "null",
-        "MediaKeys": "null",
-        "Navigator": "null"
+        "HTMLMediaElement": "document.createElement('video')",
+        "Navigator": "window['navigator'] && window.navigator"
     },
     "instancesAsync": {
+        "MediaEncryptedEvent": "getMediaEncryptedEventAsync(test)",
+        "MediaKeyMessageEvent": "getMediaKeyMessageEventAsync(test)",
+        "MediaKeySession": "getMediaKeySessionAsync(test)",
+        "MediaKeyStatusMap": "getMediaKeyStatusMapAsync(test)",
+        "MediaKeySystemAccess": "getMediaKeySystemAccessAsync(test)",
+        "MediaKeys": "getMediaKeysAsync(test)"
     }
 }

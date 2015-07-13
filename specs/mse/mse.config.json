@@ -7,20 +7,28 @@
     "dontExtract": true,
     "dontExtractReason": "definitions of IDL require manual editing, about which see comment in IDL file",
     "helpers1": [
+        "AudioTrack",
+        "MediaSource",
+        "SourceBuffer",
+        "SourceBufferList",
+        "TextTrack",
+        "TrackDefault",
+        "TrackDefaultList",
+        "VideoPlaybackQuality",
+        "VideoTrack"
     ],
     "instances": {
-        "AudioTrack": "null",
-        "HTMLVideoElement": "null",
-        "MediaSource": "null",
-        "SourceBuffer": "null",
-        "SourceBufferList": "null",
-        "TextTrack": "null",
-        "TrackDefault": "null",
-        "TrackDefaultList": "null",
-        "URL": "null",
-        "VideoPlaybackQuality": "null",
-        "VideoTrack": "null"
+        "HTMLVideoElement": "document.createElement('video')",
+        "MediaSource": "getMediaSource()",
+        "SourceBufferList": "getSourceBufferList()",
+        "TrackDefault": "getTrackDefault()",
+        "VideoPlaybackQuality": "getVideoPlaybackQuality()"
     },
     "instancesAsync": {
+        "AudioTrack": "getAudioTrackAsync(test)",
+        "SourceBuffer": "getSourceBufferAsync(test)",
+        "TextTrack": "getTextTrackAsync(test)",
+        "TrackDefaultList": "getTrackDefaultListAsync(test)",
+        "VideoTrack": "getVideoTrackAsync(test)"
     }
 }

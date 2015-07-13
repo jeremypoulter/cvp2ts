@@ -69,9 +69,10 @@ interface MediaKeyStatusMap {
     any values();
     any get(BufferSource source);
     any has(BufferSource source);
-    void clear();
-    any delete(BufferSource source);
-    any set(BufferSource source, MediaKeyStatus status);
+    void forEach(any callback);
+    // void clear();
+    // any delete(BufferSource source);
+    // any set(BufferSource source, MediaKeyStatus status);
 };
 
 enum MediaKeyStatus {

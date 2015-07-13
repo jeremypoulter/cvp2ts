@@ -6,11 +6,12 @@
 <script src='/resources/testharness.js'></script>
 <script src='/resources/testharnessreport.js'></script>
 <script src='/tools/common/level1.js'></script>
+<script src='./helpers/MediaKeys.js'></script>
 <script type='text/plain' id='idlDef'>
 {"type":"interface","name":"MediaKeys","partial":false,"members":[{"type":"operation","getter":false,"setter":false,"creator":false,"deleter":false,"legacycaller":false,"static":false,"stringifier":false,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"MediaKeySession"},"name":"createSession","arguments":[{"optional":true,"variadic":false,"extAttrs":[],"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"MediaKeySessionType"},"name":"sessionType","default":{"type":"string","value":"temporary"}}],"extAttrs":[]},{"type":"operation","getter":false,"setter":false,"creator":false,"deleter":false,"legacycaller":false,"static":false,"stringifier":false,"idlType":{"sequence":false,"generic":"Promise","nullable":false,"array":false,"union":false,"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"void"}},"name":"setServerCertificate","arguments":[{"optional":false,"variadic":false,"extAttrs":[],"idlType":{"sequence":false,"generic":null,"nullable":false,"array":false,"union":false,"idlType":"BufferSource"},"name":"serverCertificate"}],"extAttrs":[]}],"inheritance":null,"extAttrs":[]}
 </script>
 <h1>Test Interface MediaKeys Signature</h1>
 <div id='log'></div>
 <script>
-level1('eme', JSON.parse(document.getElementById('idlDef').textContent), null);
+level1Async('eme', JSON.parse(document.getElementById('idlDef').textContent), function(test){return getMediaKeysAsync(test);});
 </script>

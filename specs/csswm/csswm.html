@@ -97,7 +97,7 @@ div.figure table {
  <script type='text/javascript'><!--
 Stream=function(uri,params,callback){this.xhr=new XMLHttpRequest();this.callback=callback;this.persist=false;if(!params){params={};}var loginKey=system.getCookie('loginkey');if(loginKey){params['loginkey']=loginKey;}params['stream']=++this.gStreamId;this.uri=(params ?uri+'?'+system.encodeParams(params):uri);var stream=this;this.xhr.onreadystatechange=function(){if((200==stream.xhr.status)&&((3==stream.xhr.readyState)||(4==stream.xhr.readyState))){var message=stream.xhr.responseText.substring(stream.processed);if(-1!=message.indexOf("\uEE00\uEEFF\uEE00")){var messages=message.split("\uEE00\uEEFF\uEE00");for(var index=0;index<(messages.length-1);index++){message=messages[index];stream.processed+=(message.length+3);try{response=JSON.parse(message.trim());}catch(err){console.log("stream parse error: "+message.trim());console.log(err);continue;}stream.callback(response.message,response.data);}}if(4==stream.xhr.readyState){if(stream.persist&&(!stream.closed)){setTimeout(function(){if(!stream.closed){stream.connect();}},10);}stream.closed=true;}}};this.connect();return this;};Stream.prototype={gStreamId:Math.floor(Math.random()*0xFFFFFFFF),connect:function(){this.processed=0;this.closed=false;this.xhr.open('GET',this.uri,true);this.xhr.setRequestHeader('Accept','application/json');this.xhr.send();},close:function(){this.closed=true;if((4!=this.xhr.readyState)&&(0!=this.xhr.readyState)){this.xhr.abort();}},setTimeout:function(callback,timeoutMS){this.xhr.timeout=timeoutMS;var stream=this;this.xhr.ontimeout=function(){stream.closed=true;callback(stream);};},};
 // --></script><script type='text/javascript'><!--
-var gDraftAPIURI="https:\/\/drafts.csswg.org\/api\/drafts\/";var gCookiePrefix="drafts_";var gRepo="csswg";var gDate=false;var gBranch=null;var gHead=null;var gRepoPath="css-writing-modes\/Overview.bs";if(!Array.indexOf){Array.prototype.indexOf=function(obj){for(var index=0;index<this.length;index++){if(this[index]==obj){return index;}}return-1;}}if(!Date.now){Date.now=function(){return new Date().getTime();}}try{if(1!=Node.ELEMENT_NODE){throw true;}}catch(exc){var Node={ELEMENT_NODE:1,ATTRIBUTE_NODE:2,TEXT_NODE:3};}var system={getCookie:function(name){var cookies=document.cookie.split(';');name+='=';var prefixedName=gCookiePrefix+name;for(var index=0;index<cookies.length;index++){cookie=cookies[index].trim();if(prefixedName==cookie.substring(0,prefixedName.length)){return unescape(cookie.substring(prefixedName.length));}if(name==cookie.substring(0,name.length)){return unescape(cookie.substring(name.length));}}return null;},encodeParams:function(params,arrayName){var paramString='';for(param in params){if(params.hasOwnProperty(param)){if(paramString){paramString+='&';}var name=param;if(arrayName){name=arrayName+'['+param+']';}if(Array.isArray(params[param])){for(var index=0;index<params[param].length;index++){paramString+=name+'[]='+params[param][index];}}else if('object'==typeof(params[param])){paramString+=this.encodeParams(params[param],param);}else if('boolean'==typeof(params[param])){paramString+=name+'='+(params[param]+0);}else{paramString+=name+'='+encodeURIComponent(params[param]);}}}return paramString;},addLoadEvent:function(onLoad){try{var oldOnLoad=window.onload;if('function'!=typeof(window.onload)){window.onload=onLoad;}else{window.onload=function(){if(oldOnLoad){oldOnLoad();}onLoad();}}}catch(err){}}};var updateCount=0;var maxStreamListenTime=5*60*1000;var minStreamListenTime=10*1000;var streamInterval=20*60*1000;var streamListenTime=maxStreamListenTime;var streamStartTime=0;function updateBikeshed(message,data){var bikeshedIcon=document.getElementById('bikeshed');if(bikeshedIcon){bikeshedIcon.setAttribute('class',data.status);switch(data.status){case'pending':bikeshedIcon.setAttribute('title','Bikeshed Pending');break;case'success':bikeshedIcon.setAttribute('title','Bikeshed Succeeded');break;case'warning':bikeshedIcon.setAttribute('title','Bikeshed Warnings');break;case'previous':case'error':bikeshedIcon.setAttribute('title','Bikeshed Failed');break;}}updateCount++;if((1<updateCount)||(gDate&&(data.date!=gDate))){streamListenTime=maxStreamListenTime;gUpdateStream.setTimeout(streamTimeout,(Date.now()-streamStartTime)+streamListenTime);if(('pending'!=data.status)&&(gDate<data.date)&&((!bikeshedIcon)||('success'==data.status)||('warning'==data.status))){window.location.reload();}}gDate=data.date;}function streamTimeout(stream){streamListenTime=minStreamListenTime;setTimeout(function(){startStream();},streamInterval);}function startStream(){updateCount=0;streamStartTime=Date.now();gUpdateStream=new Stream(gDraftAPIURI,{'repo':gRepo,'date':gDate,'branch':gBranch,'head':gHead,'path':gRepoPath},updateBikeshed);gUpdateStream.persist=true;gUpdateStream.setTimeout(streamTimeout,streamListenTime);}function setupPage(){var bikeshedIcon=document.getElementById('bikeshed');if(bikeshedIcon){bikeshedIcon.onclick=function(domEvent){if(domEvent.shiftKey){var url=bikeshedIcon.getAttribute('href').replace('/bikeshed/','/static/')+window.location.hash;window.location.href=url;if(domEvent){(domEvent.preventDefault)?domEvent.preventDefault():domEvent.returnValue=false;}}};}startStream();}system.addLoadEvent(setupPage);
+var gDraftAPIURI="https:\/\/drafts.csswg.org\/api\/drafts\/";var gCookiePrefix="drafts_";var gRepo="csswg";var gDate=false;var gBranch=null;var gHead=null;var gRepoPath="css-writing-modes\/Overview.bs";if(!Array.indexOf){Array.prototype.indexOf=function(obj){for(var index=0;index<this.length;index++){if(this[index]==obj){return index;}}return-1;}}if(!Date.now){Date.now=function(){return new Date().getTime();}}try{if(1!=Node.ELEMENT_NODE){throw true;}}catch(exc){var Node={ELEMENT_NODE:1,ATTRIBUTE_NODE:2,TEXT_NODE:3};}var system={getCookie:function(name){var cookies=document.cookie.split(';');name+='=';var prefixedName=gCookiePrefix+name;for(var index=0;index<cookies.length;index++){cookie=cookies[index].trim();if(prefixedName==cookie.substring(0,prefixedName.length)){return unescape(cookie.substring(prefixedName.length));}if(name==cookie.substring(0,name.length)){return unescape(cookie.substring(name.length));}}return null;},encodeParams:function(params,arrayName){var paramString='';for(param in params){if(params.hasOwnProperty(param)){if(paramString){paramString+='&';}var name=param;if(arrayName){name=arrayName+'['+param+']';}if(Array.isArray(params[param])){for(var index=0;index<params[param].length;index++){paramString+=name+'[]='+params[param][index];}}else if('object'==typeof(params[param])){paramString+=this.encodeParams(params[param],param);}else if('boolean'==typeof(params[param])){paramString+=name+'='+(params[param]+0);}else{paramString+=name+'='+encodeURIComponent(params[param]);}}}return paramString;},addLoadEvent:function(onLoad){try{var oldOnLoad=window.onload;if('function'!=typeof(window.onload)){window.onload=onLoad;}else{window.onload=function(){if(oldOnLoad){oldOnLoad();}onLoad();}}}catch(err){}}};var updateCount=0;var maxStreamListenTime=5*60*1000;var minStreamListenTime=10*1000;var streamInterval=20*60*1000;var streamListenTime=maxStreamListenTime;var streamStartTime=0;function updateBikeshed(message,data){var bikeshedIcon=document.getElementById('bikeshed');if(bikeshedIcon){bikeshedIcon.setAttribute('class',data.status);switch(data.status){case'pending':bikeshedIcon.setAttribute('title','Bikeshed Pending');break;case'success':bikeshedIcon.setAttribute('title','Bikeshed Succeeded');break;case'warning':bikeshedIcon.setAttribute('title','Bikeshed Warnings');break;case'previous':case'error':bikeshedIcon.setAttribute('title','Bikeshed Failed');break;}}updateCount++;if((1<updateCount)||(gDate&&(data.date!=gDate))){streamListenTime=maxStreamListenTime;gUpdateStream.setTimeout(streamTimeout,(Date.now()-streamStartTime)+streamListenTime);if(('pending'!=data.status)&&(gDate<data.date)&&((!bikeshedIcon)||('success'==data.status)||('warning'==data.status))){window.location.reload();}}gDate=data.date;}function streamTimeout(stream){streamListenTime=minStreamListenTime;setTimeout(function(){startStream();},streamInterval);}function startStream(){updateCount=0;streamStartTime=Date.now();gUpdateStream=new Stream(gDraftAPIURI,{'repo':gRepo,'date':gDate,'branch':gBranch,'head':gHead,'path':gRepoPath},updateBikeshed);gUpdateStream.persist=true;gUpdateStream.setTimeout(streamTimeout,streamListenTime);}function setupPage(){var bikeshedIcon=document.getElementById('bikeshed');if(bikeshedIcon){bikeshedIcon.onclick=function(domEvent){if(domEvent.shiftKey){var url=bikeshedIcon.getAttribute('href').replace('/bikeshed/','/static/')+window.location.hash;window.location.href=url;if(domEvent){(domEvent.preventDefault)?domEvent.preventDefault():domEvent.returnValue=false;}}};}startStream();}system.addLoadEvent(setupPage)
 // --></script><style type='text/css'><!-- a#bikeshed { width: 32px; height: 32px; display: block; position: fixed; right: 0; top: 0;
  border-bottom-left-radius: 5px; background: #f4f4f4; box-shadow: 2px 0px 3px #444;
  background-image: linear-gradient(to bottom, #eee, #fff 15%, #ededed 80%, #e0e0e0);
@@ -143,7 +143,7 @@ a#bikeshed.pending [fill=blue] { animation-name: fill; } --></style></head>
    <h1 class="p-name no-ref" id="title">CSS Writing Modes Level 3</h1>
   
    <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Editor’s Draft,
-    <time class="dt-updated" datetime="2015-06-01">1 June 2015</time></span></h2>
+    <time class="dt-updated" datetime="2015-07-05">5 July 2015</time></span></h2>
   
    <div data-fill-with="spec-metadata">
     <dl>
@@ -158,6 +158,7 @@ a#bikeshed.pending [fill=blue] { animation-name: fill; } --></style></head>
      <dt>Test Suite:
      <dd><a href="http://test.csswg.org/suites/css-writing-modes-3_dev/nightly-unstable/">http://test.csswg.org/suites/css-writing-modes-3_dev/nightly-unstable/</a>
      <dt>Issue Tracking:
+     <dd><a href="https://github.com/w3c/csswg-drafts/issues/">GitHub</a>
      <dd><a href="#issues-index">Inline In Spec</a>
      <dd><span><a href="http://www.w3.org/Style/CSS/Tracker/products/30">http://www.w3.org/Style/CSS/Tracker/products/30</a></span>
      <dt class="editor">Editors:
@@ -922,8 +923,7 @@ Embeddings and Overrides: the <a class="property" data-link-type="propdesc" href
   effectively insert the corresponding Unicode bidi control codes
   into the text stream at the start and end of the inline element
   before passing the paragraph to the Unicode bidirectional algorithm for reordering.
-  (See <a href="#bidi-control-codes">§2.4.2 
-CSS–Unicode Bidi Control Translation, Text Reordering</a>.)
+  (See <a href="#bidi-control-codes">§2.4.2 CSS–Unicode Bidi Control Translation, Text Reordering</a>.)
 
   </p>
    <table class="data">
@@ -1496,10 +1496,8 @@ Block Flow Direction: the <a class="property" data-link-type="propdesc" href="#p
      <tr>
       <th>Canonical order:
       <td>n/a</table>
-  
-   <p class="issue" id="issue-33f3f58e"><a class="self-link" href="#issue-33f3f58e"></a><a href="https://lists.w3.org/Archives/Public/www-style/2015Apr/0387.html">Proposal to defer orthogonal table cells</a> not resolved yet
 
-  </p>
+  
    <p>This property specifies whether lines of text are laid out horizontally
     or vertically and the direction in which blocks progress. Possible
     values:</p>
@@ -3432,7 +3430,7 @@ Auto-sizing Block Containers in Orthogonal Flows</span><a class="self-link" href
       <li>If <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-multicol-1/#propdef-column-count">column-count</a> is not <a class="css" data-link-type="maybe" href="http://dev.w3.org/csswg/css-multicol-1/#valdef-column-count-auto">auto</a> and <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-multicol-1/#propdef-column-width">column-width</a> is <a class="css" data-link-type="maybe" href="http://dev.w3.org/csswg/css-multicol-1/#valdef-column-count-auto">auto</a>,
       calculate the used <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-multicol-1/#propdef-column-width">column-width</a> with the same formula,
       except replace <var>constraint</var> with
-      <var>constraint</var> − (<a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-multicol-1/#propdef-column-count">column-count</a> − 1) × <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-multicol-1/#propdef-column-gap">column-gap</a>.
+      <var>constraint</var> − (<a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-multicol-1/#propdef-column-count">column-count</a> − 1) × <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-grid-1/#propdef-column-gap">column-gap</a>.
 
       
       <li>If <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-multicol-1/#propdef-column-count">column-count</a> and <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-multicol-1/#propdef-column-width">column-width</a> are both non-<a class="css" data-link-type="maybe" href="http://dev.w3.org/csswg/css-multicol-1/#valdef-column-count-auto">auto</a>,
@@ -3470,7 +3468,7 @@ Auto-sizing Block Containers in Orthogonal Flows</span><a class="self-link" href
     The used <a data-link-type="dfn" href="#inline-size">inline size</a> of the resulting multi-column element is then calculated:
     if the content neither line-wraps nor fragments within the multi-column element,
     then the used <a data-link-type="dfn" href="#inline-size">inline size</a> is the <a data-link-type="dfn" href="http://dev.w3.org/csswg/css-sizing-3/#max_content-inline-size">max-content inline size</a> of the box’s contents;
-    else it is calculated from the used <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-multicol-1/#propdef-column-width">column-width</a>, <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-multicol-1/#propdef-column-count">column-count</a>, and <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-multicol-1/#propdef-column-gap">column-gap</a>.
+    else it is calculated from the used <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-multicol-1/#propdef-column-width">column-width</a>, <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-multicol-1/#propdef-column-count">column-count</a>, and <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-grid-1/#propdef-column-gap">column-gap</a>.
 
   </p>
    <p>
@@ -3938,7 +3936,7 @@ Text Run Rules</span><a class="self-link" href="#text-combine-runs"></a></h4>
    <p class="note" role="note">The above paragraph is at-risk. Comments from implementors are welcome.</p>
 
   
-   <div class="example" id="example-1578c311"><a class="self-link" href="#example-1578c311"></a>
+   <div class="example" id="example-95932934"><a class="self-link" href="#example-95932934"></a>
     
     <p>For example, given the rule
 </p>
@@ -3954,7 +3952,7 @@ Text Run Rules</span><a class="self-link" href="#text-combine-runs"></a></h4>
     and therefore are considered part of a sequence of four combinable digits interrupted by a box boundary.
     However in these cases:
     </p>
-    <pre>12&lt;tcy>&lt;span>34>&lt;/span>&lt;/tcy>12&lt;tcy>&lt;span>&lt;/span>34&lt;/tcy>
+    <pre>12&lt;tcy>&lt;span>34&lt;/span>&lt;/tcy>12&lt;tcy>&lt;span>&lt;/span>34&lt;/tcy>
 12&lt;tcy>34&lt;span>&lt;/span>&lt;/tcy></pre>
     
     
@@ -4639,6 +4637,10 @@ Non-experimental implementations</span><a class="self-link" href="#testing"></a>
      <li><a href="http://dev.w3.org/csswg/css-fonts-3/#valdef-font-variant-position-sub">sub</a>
      <li><a href="http://dev.w3.org/csswg/css-fonts-3/#valdef-font-variant-position-super">super</a>
     </ul>
+   <li><a data-link-type="biblio" href="#biblio-css-grid-1">[css-grid-1]</a> defines the following terms:
+    <ul>
+     <li><a href="http://dev.w3.org/csswg/css-grid-1/#propdef-column-gap">column-gap</a>
+    </ul>
    <li><a data-link-type="biblio" href="#biblio-css-masking-1">[css-masking-1]</a> defines the following terms:
     <ul>
      <li><a href="http://dev.w3.org/fxtf/masking/#funcdef-rect">rect()</a>
@@ -4647,7 +4649,6 @@ Non-experimental implementations</span><a class="self-link" href="#testing"></a>
     <ul>
      <li><a href="http://dev.w3.org/csswg/css-multicol-1/#valdef-column-width-auto">auto</a>
      <li><a href="http://dev.w3.org/csswg/css-multicol-1/#propdef-column-count">column-count</a>
-     <li><a href="http://dev.w3.org/csswg/css-multicol-1/#propdef-column-gap">column-gap</a>
      <li><a href="http://dev.w3.org/csswg/css-multicol-1/#propdef-column-width">column-width</a>
     </ul>
    <li><a data-link-type="biblio" href="#biblio-css-position-3">[css-position-3]</a> defines the following terms:
@@ -4731,7 +4732,7 @@ Non-experimental implementations</span><a class="self-link" href="#testing"></a>
    <dt id="biblio-svg11"><a class="self-link" href="#biblio-svg11"></a>[SVG11]
    <dd>Erik Dahlström; et al. <a href="http://www.w3.org/TR/SVG11/">Scalable Vector Graphics (SVG) 1.1 (Second Edition)</a>. 16 August 2011. REC. URL: <a href="http://www.w3.org/TR/SVG11/">http://www.w3.org/TR/SVG11/</a>
    <dt id="biblio-svg2"><a class="self-link" href="#biblio-svg2"></a>[SVG2]
-   <dd>Nikos Andronikos; et al. <a href="http://www.w3.org/TR/SVG2/">Scalable Vector Graphics (SVG) 2</a>. 9 April 2015. WD. URL: <a href="http://www.w3.org/TR/SVG2/">http://www.w3.org/TR/SVG2/</a>
+   <dd>Nikos Andronikos; et al. <a href="http://www.w3.org/TR/SVG2/">Scalable Vector Graphics (SVG) 2</a>. 9 July 2015. WD. URL: <a href="http://www.w3.org/TR/SVG2/">http://www.w3.org/TR/SVG2/</a>
    <dt id="biblio-uax11"><a class="self-link" href="#biblio-uax11"></a>[UAX11]
    <dd>Asmus Freytag. <a href="http://www.unicode.org/unicode/reports/tr11/tr11-8.html">East Asian Width</a>. 23 March 2001. Unicode Standard Annex #11. URL: <a href="http://www.unicode.org/unicode/reports/tr11/tr11-8.html">http://www.unicode.org/unicode/reports/tr11/tr11-8.html</a>
    <dt id="biblio-uax24"><a class="self-link" href="#biblio-uax24"></a>[UAX24]
@@ -4758,6 +4759,8 @@ Non-experimental implementations</span><a class="self-link" href="#testing"></a>
    <dd>Tab Atkins Jr.; Elika Etemad; Rossen Atanassov. <a href="http://www.w3.org/TR/css-flexbox-1/">CSS Flexible Box Layout Module Level 1</a>. 14 May 2015. LCWD. URL: <a href="http://www.w3.org/TR/css-flexbox-1/">http://www.w3.org/TR/css-flexbox-1/</a>
    <dt id="biblio-css-fonts-3"><a class="self-link" href="#biblio-css-fonts-3"></a>[CSS-FONTS-3]
    <dd>John Daggett. <a href="http://www.w3.org/TR/css-fonts-3/">CSS Fonts Module Level 3</a>. 3 October 2013. CR. URL: <a href="http://www.w3.org/TR/css-fonts-3/">http://www.w3.org/TR/css-fonts-3/</a>
+   <dt id="biblio-css-grid-1"><a class="self-link" href="#biblio-css-grid-1"></a>[CSS-GRID-1]
+   <dd>Tab Atkins Jr.; Elika Etemad; Rossen Atanassov. <a href="http://www.w3.org/TR/css-grid-1/">CSS Grid Layout Module Level 1</a>. 17 March 2015. WD. URL: <a href="http://www.w3.org/TR/css-grid-1/">http://www.w3.org/TR/css-grid-1/</a>
    <dt id="biblio-css-masking-1"><a class="self-link" href="#biblio-css-masking-1"></a>[CSS-MASKING-1]
    <dd>Dirk Schulze; Brian Birtles; Tab Atkins Jr.. <a href="http://www.w3.org/TR/css-masking-1/">CSS Masking Module Level 1</a>. 26 August 2014. CR. URL: <a href="http://www.w3.org/TR/css-masking-1/">http://www.w3.org/TR/css-masking-1/</a>
    <dt id="biblio-css-multicol-1"><a class="self-link" href="#biblio-css-multicol-1"></a>[CSS-MULTICOL-1]
@@ -4875,9 +4878,6 @@ Non-experimental implementations</span><a class="self-link" href="#testing"></a>
   </table>
   <h2 class="no-num heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
   <div style="counter-reset:issue">
-   <div class="issue"><a href="https://lists.w3.org/Archives/Public/www-style/2015Apr/0387.html">Proposal to defer orthogonal table cells</a> not resolved yet
-
-  <a href="#issue-33f3f58e"> ↵ </a></div>
    <div class="issue">propagation of <a class="property" data-link-type="propdesc" href="#propdef-direction">direction</a> from &lt;body> <a href="https://readable-email.org/list/www-style/topic/re-css-writing-modes-css21-propagation-of-direction-from-body">www-style</a>
 
 <a href="#issue-80ce7177"> ↵ </a></div>
@@ -4904,5 +4904,5 @@ Non-experimental implementations</span><a class="self-link" href="#testing"></a>
 
     <a href="#issue-bddd6a30"> ↵ </a></div>
    <div class="issue"><a href="https://lists.w3.org/Archives/Public/www-style/2015Apr/0212.html">Defer proposal in ML</a> not resolved yet<a href="#issue-b26496e6"> ↵ </a></div>
-  </div><a id='bikeshed' class='success' title='Bikeshed Succeeded' href='/csswg/bikeshed/css-writing-modes-3/'><svg width='24' height='24' viewbox='0 0 100 100'><g stroke="blue" stroke-width="6" fill="none"><path fill="blue" stroke="none" d="M 5 95 L 5 35 L 50 10 L 50 95"/><path ad="M 1 37 L 54 8"/><path fill="blue" stroke="none" d="M 1 40 v -6 l 60 -32 v 6 z" /><circle cx="75" cy="79" r="15" /><circle fill="blue" stroke="none" cx="75" cy="79" r="4" /><path d="M 75 79 L 65 49 L 55 49" /><path d="M 67 55 L 48 69" /></g></svg></a></body>
+  </div><a class='warning' href='/csswg/bikeshed/css-writing-modes-3/' id='bikeshed' title='Bikeshed Warnings'><svg height='24' viewbox='0 0 100 100' width='24'><g stroke="blue" stroke-width="6" fill="none"><path fill="blue" stroke="none" d="M 5 95 L 5 35 L 50 10 L 50 95"/><path ad="M 1 37 L 54 8"/><path fill="blue" stroke="none" d="M 1 40 v -6 l 60 -32 v 6 z" /><circle cx="75" cy="79" r="15" /><circle fill="blue" stroke="none" cx="75" cy="79" r="4" /><path d="M 75 79 L 65 49 L 55 49" /><path d="M 67 55 L 48 69" /></g></svg></a></body>
 </html>

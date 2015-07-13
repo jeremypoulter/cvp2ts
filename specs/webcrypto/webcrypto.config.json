@@ -7,15 +7,18 @@
     "dontExtract": true,
     "dontExtractReason": "definitions of IDL require manual editing, about which see comment in IDL file",
     "helpers1": [
+        "Crypto",
+        "CryptoKey",
+        "SubtleCrypto"
     ],
     "instances": {
-        "Crypto": "null",
-        "CryptoKey": "null",
-        "GlobalCrypto": "null",
-        "SubtleCrypto": "null",
-        "Window": "null",
+        "Crypto": "getCrypto()",
+        "GlobalCrypto": "window",
+        "SubtleCrypto": "getSubtleCrypto()",
+        "Window": "window",
         "WorkerGlobalScope": "null"
     },
     "instancesAsync": {
+        "CryptoKey": "getCryptoKeyAsync(test)"
     }
 }

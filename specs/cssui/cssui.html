@@ -8,7 +8,10 @@
   <title>CSS Basic User Interface Module Level 3 (CSS3 UI)</title>
   
   
-  <meta content="[workstatus]" name="csswg-work-status">
+  <meta content="testing" name="csswg-work-status">
+  
+  
+  <meta content="ED" name="w3c-status">
   
   
   <link href="../default.css" rel="stylesheet" type="text/css">
@@ -72,139 +75,67 @@
 
 
 
-  <style>/* http://prismjs.com/download.html?themes=prism&languages=clike */
-/**
- * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
- * @author Lea Verou
- */
 
-code[class*="language-"],
-pre[class*="language-"] {
-	color: black;
-	text-shadow: 0 1px white;
-	font-family: Consolas, Monaco, 'Andale Mono', monospace;
-	direction: ltr;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	line-height: 1.5;
 
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
 
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-}
-
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-	text-shadow: none;
-	background: #b3d4fc;
-}
-
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
-	text-shadow: none;
-	background: #b3d4fc;
-}
-
-@media print {
-	code[class*="language-"],
-	pre[class*="language-"] {
-		text-shadow: none;
-	}
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #f5f2f0;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	color: slategray;
-}
-
-.token.punctuation {
-	color: #999;
-}
-
-.namespace {
-	opacity: .7;
-}
-
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.deleted {
-	color: #905;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-	color: #690;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string {
-	color: #a67f59;
-	background: hsla(0, 0%, 100%, .5);
-}
-
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-	color: #07a;
-}
-
-.token.function {
-	color: #DD4A68;
-}
-
-.token.regex,
-.token.important,
-.token.variable {
-	color: #e90;
-}
-
-.token.important {
-	font-weight: bold;
-}
-
-.token.entity {
-	cursor: help;
-}
-</style>
+  <style>.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #ffffff; }
+.highlight .c { color: #708090 } /* Comment */
+.highlight .k { color: #990055 } /* Keyword */
+.highlight .l { color: #669900 } /* Literal */
+.highlight .n { color: #0077aa } /* Name */
+.highlight .o { color: #999999 } /* Operator */
+.highlight .p { color: #999999 } /* Punctuation */
+.highlight .cm { color: #708090 } /* Comment.Multiline */
+.highlight .cp { color: #708090 } /* Comment.Preproc */
+.highlight .c1 { color: #708090 } /* Comment.Single */
+.highlight .cs { color: #708090 } /* Comment.Special */
+.highlight .kc { color: #990055 } /* Keyword.Constant */
+.highlight .kd { color: #990055 } /* Keyword.Declaration */
+.highlight .kn { color: #990055 } /* Keyword.Namespace */
+.highlight .kp { color: #990055 } /* Keyword.Pseudo */
+.highlight .kr { color: #990055 } /* Keyword.Reserved */
+.highlight .kt { color: #990055 } /* Keyword.Type */
+.highlight .ld { color: #669900 } /* Literal.Date */
+.highlight .m { color: #990055 } /* Literal.Number */
+.highlight .s { color: #669900 } /* Literal.String */
+.highlight .na { color: #0077aa } /* Name.Attribute */
+.highlight .nc { color: #0077aa } /* Name.Class */
+.highlight .no { color: #0077aa } /* Name.Constant */
+.highlight .nd { color: #0077aa } /* Name.Decorator */
+.highlight .ni { color: #0077aa } /* Name.Entity */
+.highlight .ne { color: #0077aa } /* Name.Exception */
+.highlight .nf { color: #0077aa } /* Name.Function */
+.highlight .nl { color: #0077aa } /* Name.Label */
+.highlight .nn { color: #0077aa } /* Name.Namespace */
+.highlight .py { color: #0077aa } /* Name.Property */
+.highlight .nt { color: #0077aa } /* Name.Tag */
+.highlight .nv { color: #0077aa } /* Name.Variable */
+.highlight .ow { color: #999999 } /* Operator.Word */
+.highlight .mb { color: #990055 } /* Literal.Number.Bin */
+.highlight .mf { color: #990055 } /* Literal.Number.Float */
+.highlight .mh { color: #990055 } /* Literal.Number.Hex */
+.highlight .mi { color: #990055 } /* Literal.Number.Integer */
+.highlight .mo { color: #990055 } /* Literal.Number.Oct */
+.highlight .sb { color: #669900 } /* Literal.String.Backtick */
+.highlight .sc { color: #669900 } /* Literal.String.Char */
+.highlight .sd { color: #669900 } /* Literal.String.Doc */
+.highlight .s2 { color: #669900 } /* Literal.String.Double */
+.highlight .se { color: #669900 } /* Literal.String.Escape */
+.highlight .sh { color: #669900 } /* Literal.String.Heredoc */
+.highlight .si { color: #669900 } /* Literal.String.Interpol */
+.highlight .sx { color: #669900 } /* Literal.String.Other */
+.highlight .sr { color: #669900 } /* Literal.String.Regex */
+.highlight .s1 { color: #669900 } /* Literal.String.Single */
+.highlight .ss { color: #669900 } /* Literal.String.Symbol */
+.highlight .vc { color: #0077aa } /* Name.Variable.Class */
+.highlight .vg { color: #0077aa } /* Name.Variable.Global */
+.highlight .vi { color: #0077aa } /* Name.Variable.Instance */
+.highlight .il { color: #990055 } /* Literal.Number.Integer.Long */
+        .highlight { background: hsl(24, 20%, 95%); }
+        pre.highlight { padding: 1em; margin: .5em 0; overflow: auto; }
+        :not(pre).highlight { padding: .1em; border-radius: .3em; }
+        </style>
  </head>
  
 
@@ -220,7 +151,7 @@ pre[class*="language-"] {
    <h1 class="p-name no-ref" id="title">CSS Basic User Interface Module Level 3 (CSS3 UI)</h1>
   
    <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Editor’s Draft,
-    <time class="dt-updated" datetime="2015-06-02">2 June 2015</time></span></h2>
+    <time class="dt-updated" datetime="2015-07-07">7 July 2015</time></span></h2>
   
    <div data-fill-with="spec-metadata">
     <dl>
@@ -229,16 +160,17 @@ pre[class*="language-"] {
      <dt>Latest version:
      <dd><a href="http://www.w3.org/TR/css3-ui/">http://www.w3.org/TR/css3-ui/</a>
      <dt>Previous Versions:
-     <dd><a href="http://www.w3.org/TR/2012/WD-css3-ui-20120117/" rel="previous">http://www.w3.org/TR/2012/WD-css3-ui-20120117/</a>
+     <dd><a href="http://www.w3.org/TR/2015/WD-css3-ui-20150707/" rel="previous">http://www.w3.org/TR/2015/WD-css3-ui-20150707/</a>
      <dt>Feedback:
      <dd><span><a href="mailto:www-style@w3.org?subject=%5Bcss-ui%5D%20YOUR%20TOPIC%20HERE">www-style@w3.org</a> with subject line “<kbd>[css-ui] <var>… message topic …</var></kbd>” (<a href="http://lists.w3.org/Archives/Public/www-style/" rel="discussion">archives</a>)</span>
      <dt>Test Suite:
      <dd><a href="http://test.csswg.org/suites/css-ui-3_dev/nightly-unstable/">http://test.csswg.org/suites/css-ui-3_dev/nightly-unstable/</a>
-     <dt class="editor">Editors:
-     <dd class="editor p-author h-card vcard"><a class="p-name fn u-url url" href="http://tantek.com">Tantek Çelik</a> (<a class="p-org org" href="http://www.mozilla.org">Mozilla</a>) <a class="u-email email" href="mailto:tantek@cs.stanford.edu">tantek@cs.stanford.edu</a>
-     <dd class="editor p-author h-card vcard"><a class="p-name fn u-url url" href="http://florian.rivoal.net">Florian Rivoal</a> (<span class="p-org org">Invited Expert</span>) <a class="u-email email" href="mailto:florian@rivoal.net">florian@rivoal.net</a>
      <dt>Issue Tracking:
+     <dd><a href="https://github.com/w3c/csswg-drafts/issues/">GitHub</a>
      <dd><span><a href="https://wiki.csswg.org/spec/css3-ui">https://wiki.csswg.org/spec/css3-ui</a></span>
+     <dt class="editor">Editors:
+     <dd class="editor p-author h-card vcard"><a class="p-name fn u-url url" href="http://tantek.com">Tantek Çelik</a> (<a class="p-org org" href="https://www.mozilla.org/en-US/">Mozilla</a>) <a class="u-email email" href="mailto:tantek@cs.stanford.edu">tantek@cs.stanford.edu</a>
+     <dd class="editor p-author h-card vcard"><a class="p-name fn u-url url" href="http://florian.rivoal.net">Florian Rivoal</a> (<span class="p-org org">Invited Expert</span>) <a class="u-email email" href="mailto:florian@rivoal.net">florian@rivoal.net</a>
     </dl>
    </div>
   
@@ -258,9 +190,9 @@ pre[class*="language-"] {
 
 properties and values that are proposed for CSS level 3
 to style HTML and XML (including XHTML).
-It includes and extends user interface related features from the selectors,
-properties and values of CSS level 2 revision 1 and Selectors specifications.
-It uses various selectors,
+It includes and extends user interface related features from the
+properties and values of CSS level 2 revision 1.
+It uses various
 properties and values to style basic user interface elements in a document.</p>
 
 <a href="http://www.w3.org/TR/CSS/">CSS</a> is a language for describing the rendering of structured documents 
@@ -316,11 +248,10 @@ on screen, on paper, in speech, etc.</div>
    <p>The following features are at-risk, and may be dropped during the CR period:
 </p>
    <ul>
-    <li><a class="property" data-link-type="propdesc" href="#propdef-box-sizing">box-sizing</a> property value: padding-box
-    <li><a class="property" data-link-type="propdesc" href="#propdef-caret-color">caret-color</a> property
-    <li><a class="property" data-link-type="propdesc" href="#propdef-text-overflow">text-overflow</a> property value: <a class="production css" data-link-type="type" href="http://dev.w3.org/csswg/css-values-3/#string-value">&lt;string></a>
-    <li><a class="property" data-link-type="propdesc" href="#propdef-text-overflow">text-overflow</a> property 2-value syntax and definition
-    <li>constraints on <a class="property" data-link-type="propdesc" href="#propdef-outline-offset">outline-offset</a> property negative values
+    <li>The <a class="property" data-link-type="propdesc" href="#propdef-caret-color">caret-color</a> property
+    <li>The <a href="#overflow-string">&lt;string></a> value of the <a class="property" data-link-type="propdesc" href="#propdef-text-overflow">text-overflow</a> property
+    <li>The 2-value syntax of the <a class="property" data-link-type="propdesc" href="#propdef-text-overflow">text-overflow</a> property
+    <li>Constraints on <a href="#negative-offset">negative values</a> of the <a class="property" data-link-type="propdesc" href="#propdef-outline-offset">outline-offset</a> property being expressed with MUST rather than with SHOULD
    </ul></div>
 
 
@@ -376,9 +307,6 @@ on screen, on paper, in speech, etc.</div>
      </ul>
     <li><a href="#acknowledgments"><span class="secno"></span> <span class="content">Appendix A. Acknowledgments</span></a>
     <li><a href="#changes"><span class="secno"></span> <span class="content">Appendix B. Changes</span></a>
-     <ul class="toc">
-      <li><a href="#changes-list"><span class="secno"></span> <span class="content">List of substantial changes</span></a>
-     </ul>
     <li><a href="#security-privacy-considerations"><span class="secno"></span> <span class="content">Appendix C. Considerations for Security and Privacy</span></a>
     <li><a href="#default-style-sheet"><span class="secno"></span> <span class="content">Appendix D. Default style sheet additions for HTML</span></a>
     <li><a href="#test-suite"><span class="secno"></span> <span class="content">Appendix E: Test Suite</span></a>
@@ -488,7 +416,6 @@ of Cascading Style Sheets, level 2, revision 1 <a data-link-type="biblio" href="
       <th>Value:
       <td>
 content-box |
-padding-box |
 border-box
 
      
@@ -540,24 +467,6 @@ apply to the width and height respectively of the content box of the element.
 The padding and border of the element are laid out
 and drawn outside the specified width and height.
 
-    <dt><dfn class="css" data-dfn-for="box-sizing" data-dfn-type="value" data-export="" id="valdef-box-sizing-padding-box">padding-box<a class="self-link" href="#valdef-box-sizing-padding-box"></a></dfn>
-
-    <dd>
-Length and percentages values for width and height (and respective min/max properties)
-on this element determine the padding box of the element.
-That is, any padding specified on the element is laid out
-and drawn inside this specified width and height.
-The content width and height are calculated by
-subtracting the padding widths of the respective sides
-from the specified <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-width">width</a> and
-<a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-height">height</a> properties.
-As the content width and height
-<a href="http://www.w3.org/TR/CSS21/visudet.html#the-width-property">
-cannot be negative</a> (<a data-link-type="biblio" href="#biblio-css21">[CSS21]</a>, section 10.2),
-this computation is floored at 0.
-Used values, as exposed for instance through <code class="idl"><a data-link-type="idl" href="http://dev.w3.org/csswg/cssom-1/#dom-window-getcomputedstyleelt-pseudoelt">getComputedStyle()</a></code>, also refer to the padding box.
-
-
     <dt><dfn class="css" data-dfn-for="box-sizing" data-dfn-type="value" data-export="" id="valdef-box-sizing-border-box">border-box<a class="self-link" href="#valdef-box-sizing-border-box"></a></dfn>
 
     <dd>Length and percentages values for width and height (and respective min/max properties)
@@ -571,7 +480,7 @@ and <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/
 As the content width and height
 <a href="http://www.w3.org/TR/CSS21/visudet.html#the-width-property">cannot be negative</a> (<a data-link-type="biblio" href="#biblio-css21">[CSS21]</a>, section 10.2),
 this computation is floored at 0.
-Used values, as exposed for instance through <code class="idl"><a data-link-type="idl" href="http://dev.w3.org/csswg/cssom-1/#dom-window-getcomputedstyleelt-pseudoelt">getComputedStyle()</a></code>, also refer to the border box.
+Used values, as exposed for instance through getComputedStyle(), also refer to the border box.
 
 
      <p class="note" role="note">Note: This is the behavior of width and height as commonly implemented
@@ -597,31 +506,26 @@ and always sets the size of the content box.</p>
      <tr>
       <th>
       <th><a class="css" data-link-type="propdesc" href="#propdef-box-sizing">box-sizing: content-box</a>
-      <th><a class="css" data-link-type="propdesc" href="#propdef-box-sizing">box-sizing: padding-box</a>
       <th><a class="css" data-link-type="propdesc" href="#propdef-box-sizing">box-sizing: border-box</a>
 
      <tr>
       <td><dfn data-dfn-type="dfn" data-noexport="" id="min-inner-width">min inner width<a class="self-link" href="#min-inner-width"></a></dfn>
       <td><a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-min-width">min-width</a>
-      <td>max(0, <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-min-width">min-width</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-left">padding-left</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-right">padding-right</a>)
       <td>max(0, <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-min-width">min-width</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-left">padding-left</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-right">padding-right</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-backgrounds-3/#border-left-width">border-left-width</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-backgrounds-3/#border-right-width">border-right-width</a>)
 
      <tr>
       <td><dfn data-dfn-type="dfn" data-noexport="" id="max-inner-width">max inner width<a class="self-link" href="#max-inner-width"></a></dfn>
       <td><a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-max-width">max-width</a>
-      <td>max(0, <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-max-width">max-width</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-left">padding-left</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-right">padding-right</a>)
       <td>max(0, <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-max-width">max-width</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-left">padding-left</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-right">padding-right</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-backgrounds-3/#border-left-width">border-left-width</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-backgrounds-3/#border-right-width">border-right-width</a>)
 
      <tr>
       <td><dfn data-dfn-type="dfn" data-noexport="" id="min-inner-height">min inner height<a class="self-link" href="#min-inner-height"></a></dfn>
       <td><a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-min-height">min-height</a>
-      <td>max(0, <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-min-height">min-height</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-top">padding-top</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-bottom">padding-bottom</a>)
       <td>max(0, <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-min-height">min-height</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-top">padding-top</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-bottom">padding-bottom</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-backgrounds-3/#border-top-width">border-top-width</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-backgrounds-3/#border-bottom-width">border-bottom-width</a>)
 
      <tr>
       <td><dfn data-dfn-type="dfn" data-noexport="" id="max-inner-height">max inner height<a class="self-link" href="#max-inner-height"></a></dfn>
       <td><a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-max-height">max-height</a>
-      <td>max(0, <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-max-height">max-height</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-top">padding-top</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-bottom">padding-bottom</a>)
       <td>max(0, <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-max-height">max-height</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-top">padding-top</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-bottom">padding-bottom</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-backgrounds-3/#border-top-width">border-top-width</a> − <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-backgrounds-3/#border-bottom-width">border-bottom-width</a>)
 </table>
 
@@ -634,7 +538,7 @@ and always sets the size of the content box.</p>
     <li>In <a href="http://www.w3.org/TR/CSS21/visudet.html#blockwidth">10.3.3</a>, the second <q>width</q> in the following phrase is to be interpreted as <a data-link-type="dfn" href="http://dev.w3.org/csswg/css2/box.html#content-width">content width</a>: <q>If <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-width">width</a> is not <span class="css">auto</span> and <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-backgrounds-3/#border-left-width">border-left-width</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-left">padding-left</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-width">width</a> + [...]</q>
 
 
-    <li>In <a href="http://www.w3.org/TR/CSS21/visudet.html#abs-non-replaced-width">10.3.7</a>, <q>width</q> is to be interpreted as <a data-link-type="dfn" href="http://dev.w3.org/csswg/css2/box.html#content-width">content width</a> in the following equation: <q><a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-position-3/#propdef-left">left</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-margin-left">margin-left</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-backgrounds-3/#border-left-width">border-left-width</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-left">padding-left</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-width">width</a> + [...]</q>
+    <li>In <a href="http://www.w3.org/TR/CSS21/visudet.html#abs-non-replaced-width">10.3.7</a>, <q>width</q> is to be interpreted as <a data-link-type="dfn" href="http://dev.w3.org/csswg/css2/box.html#content-width">content width</a> in the following equation: <q><a class="property" data-link-type="propdesc" href="http://www.w3.org/TR/CSS21/visuren.html#position-props">left</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-margin-left">margin-left</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-backgrounds-3/#border-left-width">border-left-width</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-left">padding-left</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-width">width</a> + [...]</q>
 
 
     <li>In <a href="http://www.w3.org/TR/CSS21/visudet.html#min-max-widths">10.4</a>, <q>width</q>, <q>height</q>, <q>min-width</q>, <q>max-width</q>, <q>min-height</q> and <q>max-height</q> are respectively to be interpreted as <a data-link-type="dfn" href="http://dev.w3.org/csswg/css2/box.html#content-width">content width</a>, <a data-link-type="dfn" href="http://dev.w3.org/csswg/css2/box.html#content-height">content height</a>, <a data-link-type="dfn" href="#min-inner-width">min inner width</a>, <a data-link-type="dfn" href="#max-inner-width">max inner width</a>, <a data-link-type="dfn" href="#min-inner-height">min inner height</a> and <a data-link-type="dfn" href="#max-inner-height">max inner height</a> in the following phrases:
@@ -656,7 +560,7 @@ and always sets the size of the content box.</p>
      </ol>
 
 
-    <li>In <a href="http://www.w3.org/TR/CSS21/visudet.html#abs-non-replaced-height">10.6.4</a>, <q>height</q> is to be interpreted as <a data-link-type="dfn" href="http://dev.w3.org/csswg/css2/box.html#content-height">content height</a> in the following equation: <q><a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-position-3/#propdef-top">top</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-margin-top">margin-top</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-backgrounds-3/#border-top-width">border-top-width</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-top">padding-top</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-height">height</a> + [...]</q>
+    <li>In <a href="http://www.w3.org/TR/CSS21/visudet.html#abs-non-replaced-height">10.6.4</a>, <q>height</q> is to be interpreted as <a data-link-type="dfn" href="http://dev.w3.org/csswg/css2/box.html#content-height">content height</a> in the following equation: <q><a class="property" data-link-type="propdesc" href="http://www.w3.org/TR/CSS21/visuren.html#position-props">top</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-margin-top">margin-top</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-backgrounds-3/#border-top-width">border-top-width</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/box.html#propdef-padding-top">padding-top</a> + <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css2/visudet.html#propdef-height">height</a> + [...]</q>
 
 
     <li>In <a href="http://www.w3.org/TR/CSS21/visudet.html#min-max-heights">10.7</a>, <q>width</q>, <q>height</q>, <q>min-height</q> and <q>max-height</q> are respectively to be interpreted as <a data-link-type="dfn" href="http://dev.w3.org/csswg/css2/box.html#content-width">content width</a>, <a data-link-type="dfn" href="http://dev.w3.org/csswg/css2/box.html#content-height">content height</a>, <a data-link-type="dfn" href="#min-inner-height">min inner height</a> and <a data-link-type="dfn" href="#max-inner-height">max inner height</a> in the following phrases:
@@ -688,27 +592,25 @@ which would otherwise require additional markup.</p>
 
     <p>sample CSS:</p>
 
-    <pre><code class="lang-css">div.container {
-  width:38em;
-  border:1em solid black;
-}
+    <pre><code class="lang-css highlight"><span class="nt">div</span><span class="nc">.container</span> <span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span><span class="m">38em</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span><span class="m">1em</span> <span class="k">solid</span> <span class="nb">black</span><span class="p">;</span>
+<span class="p">}</span>
 
-div.split {
-  box-sizing:border-box;
-  width:50%;
-  border:1em silver ridge;
-  float:left;
-}
-</code></pre>
+<span class="nt">div</span><span class="nc">.split</span> <span class="p">{</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span><span class="m">50%</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span><span class="m">1em</span> <span class="nb">silver</span> <span class="k">ridge</span><span class="p">;</span>
+  <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+<span class="p">}</span></code></pre>
 
 
     <p>sample HTML fragment:</p>
 
-    <pre><code class="lang-markup">&lt;div class="container">
-&lt;div class="split">This div occupies the left half.&lt;/div>
-&lt;div class="split">This div occupies the right half.&lt;/div>
-&lt;/div>
-</code></pre>
+    <pre><code class="lang-markup highlight"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">></span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"split"</span><span class="nt">></span>This div occupies the left half.<span class="nt">&lt;/div></span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"split"</span><span class="nt">></span>This div occupies the right half.<span class="nt">&lt;/div></span>
+<span class="nt">&lt;/div></span></code></pre>
 
 
     <p>demonstration of sample CSS and HTML:</p>
@@ -718,9 +620,6 @@ div.split {
      <div style="box-sizing:border-box; width:50%; border:1em silver ridge; float:left">This div should occupy the right half.</div>The two divs above should appear side by side, each (including borders) 50% of the content width of their container. If instead they are stacked one on top of the other then your browser does not support <a class="property" data-link-type="propdesc" href="#propdef-box-sizing">box-sizing</a>.
 </div>
 </div>
-
-
-   <p class="note" role="note">Note: The <a class="css" data-link-type="maybe" href="#valdef-box-sizing-padding-box">padding-box</a> value is at risk.</p>
 
 
    <h2 class="heading settled" data-level="4" id="outline-props"><span class="secno">4. </span><span class="content">Outline properties</span><a class="self-link" href="#outline-props"></a></h2>
@@ -749,7 +648,13 @@ ways:</p>
 
 
    <p><strong class="advisement">
-Keyboard users depend on outline on elements in the :focus state for interaction with the page, thus authors must not make the outline invisible on such elements without making sure an alternative highlighting mechanism is provided.
+Keyboard users,
+in particular people with disabilities
+who may not be able to interact with the page in any other fashion,
+depend on the outline being visible
+on elements in the :focus state,
+thus authors must not make the outline invisible on such elements
+without making sure an alternative highlighting mechanism is provided.
 </strong></p>
 
 
@@ -1291,7 +1196,7 @@ rather than open on some sides
 
 
    <p>The parts of the outline are not required to be rectangular.
-To the extent that the outline follows the border edge,
+To the extent that the outline follows the <a data-link-type="dfn" href="http://www.w3.org/TR/CSS21/box.html#border-edge">border edge</a>,
 it should follow the <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-backgrounds-3/#border-radius">border-radius</a> curve.</p>
 
 
@@ -1377,8 +1282,7 @@ or how outlines are drawn for boxes that are partially obscured behind other ele
 </p>
     <p>Here’s an example of drawing a thick outline around a BUTTON element:</p>
 
-    <pre><code class="lang-css">button { outline: thick solid }
-</code></pre>
+    <pre><code class="lang-css highlight"><span class="nt">button</span> <span class="p">{</span> <span class="k">outline</span><span class="o">:</span> <span class="k">thick</span> <span class="k">solid</span> <span class="p">}</span></code></pre>
 </div>
 
 
@@ -1398,9 +1302,8 @@ The focus is the subject of user interaction in a document
 and a thick red line when it is active,
 the following rules can be used:</p>
 
-    <pre><code class="lang-css">:focus  { outline: thick solid black }
-:active { outline: thick solid red }
-</code></pre>
+    <pre><code class="lang-css highlight"><span class="nd">:focus</span>  <span class="p">{</span> <span class="k">outline</span><span class="o">:</span> <span class="k">thick</span> <span class="k">solid</span> <span class="nb">black</span> <span class="p">}</span>
+<span class="nd">:active</span> <span class="p">{</span> <span class="k">outline</span><span class="o">:</span> <span class="k">thick</span> <span class="k">solid</span> <span class="nb">red</span> <span class="p">}</span></code></pre>
 </div>
 
 
@@ -1412,8 +1315,8 @@ it may well overlap other elements on the page.</p>
    <h3 class="heading settled" data-level="4.5" id="outline-offset"><span class="secno">4.5. </span><span class="content"><a class="property" data-link-type="propdesc" href="#propdef-outline-offset">outline-offset</a> property</span><a class="self-link" href="#outline-offset"></a></h3>
 
 
-   <p>By default, the outline is drawn starting just outside the border edge.
-However, it is possible to offset the outline and draw it beyond the border edge.</p>
+   <p>By default, the outline is drawn starting just outside the <a data-link-type="dfn" href="http://www.w3.org/TR/CSS21/box.html#border-edge">border edge</a>.
+However, it is possible to offset the outline and draw it beyond the <a data-link-type="dfn" href="http://www.w3.org/TR/CSS21/box.html#border-edge">border edge</a>.</p>
 
 
    <table class="propdef">
@@ -1468,7 +1371,7 @@ However, it is possible to offset the outline and draw it beyond the border edge
 
    <p>If the computed value of <a class="property" data-link-type="propdesc" href="#propdef-outline-offset">outline-offset</a>
 is anything other than 0,
-then the outline is outset from the border edge by that amount.</p>
+then the outline is outset from the <a data-link-type="dfn" href="http://www.w3.org/TR/CSS21/box.html#border-edge">border edge</a> by that amount.</p>
 
 
    <div class="example" id="example-8c7e0106"><a class="self-link" href="#example-8c7e0106"></a>
@@ -1480,12 +1383,11 @@ to leave 2 pixels of space between a focus outline
 and the element that has the focus or is active,
 the following rule can be used:</p>
 
-    <pre><code class="lang-css">:focus,:active  { outline-offset: 2px }
-</code></pre>
+    <pre><code class="lang-css highlight"><span class="nd">:focus</span><span class="o">,</span><span class="nd">:active</span>  <span class="p">{</span> <span class="k">outline</span><span class="o">-</span><span class="n">offset</span><span class="o">:</span> <span class="m">2px</span> <span class="p">}</span></code></pre>
 </div>
 
 
-   <p>Negative values must cause the outline
+   <p id="negative-offset">Negative values must cause the outline
 to shrink into the border box.
 Both the height and the width of outside of the shape
 drawn by the outline must not become smaller
@@ -1496,7 +1398,9 @@ User Agents must apply this constraint
 independently in each dimension.
 If the outline is drawn as multiple disconnected shapes,
 this constraint applies to each shape separately.
-Negative value constraints are an at risk feature due to
+
+</p>
+   <p class="note" role="note">Note: Negative value constraints are an at risk feature due to
 <a href="https://lists.w3.org/Archives/Public/www-style/2014Dec/0033.html">interoperability problems</a>, and thus might be dropped from a must to a should.</p>
 
 
@@ -1539,7 +1443,7 @@ and if so, along which axis/axes.</p>
 
      <tr>
       <th>Applies to:
-      <td>elements with <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-overflow-3/#propdef-overflow">overflow</a> other than visible
+      <td>elements with <a class="property" data-link-type="propdesc" href="http://www.w3.org/TR/CSS21/visufx.html#propdef-overflow">overflow</a> other than visible
      
 
      <tr>
@@ -1594,8 +1498,8 @@ to allow the user to adjust only the height of the element.
 
 
    <p>Currently it is possible to control the appearance of the scrolling mechanism (if any)
-on an element using the <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-overflow-3/#propdef-overflow">overflow</a> property
-(e.g. <code class="lang-css">overflow: scroll</code> vs. <code class="lang-css">overflow: hidden</code> etc.).
+on an element using the <a class="property" data-link-type="propdesc" href="http://www.w3.org/TR/CSS21/visufx.html#propdef-overflow">overflow</a> property
+(e.g. <code class="lang-css highlight"><span class="nt">overflow</span><span class="o">:</span> <span class="nt">scroll</span></code> vs. <code class="lang-css highlight"><span class="nt">overflow</span><span class="o">:</span> <span class="nt">hidden</span></code> etc.).
 The purpose of the <a class="property" data-link-type="propdesc" href="#propdef-resize">resize</a> property
 is to also allow control over the appearance and function of the resizing mechanism
 (e.g. a resize box or widget) on the element.</p>
@@ -1609,8 +1513,8 @@ to determine the size of the element.</p>
 
 
    <p>The <a class="property" data-link-type="propdesc" href="#propdef-resize">resize</a> property applies to elements
-whose computed <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-overflow-3/#propdef-overflow">overflow</a> value
-is something other than <a class="css" data-link-type="maybe" href="http://dev.w3.org/csswg/css-overflow-3/#valdef-overflow-visible">visible</a>.</p>
+whose computed <a class="property" data-link-type="propdesc" href="http://www.w3.org/TR/CSS21/visufx.html#propdef-overflow">overflow</a> value
+is something other than <a class="css" data-link-type="maybe" href="http://www.w3.org/TR/CSS21/visufx.html#propdef-overflow">visible</a>.</p>
 
 
    <p>The effect of the <a class="property" data-link-type="propdesc" href="#propdef-resize">resize</a> property on generated content is undefined. Implementations should not apply the <a class="property" data-link-type="propdesc" href="#propdef-resize">resize</a> property to generated content.</p>
@@ -1636,8 +1540,8 @@ only the corresponding property is set, not both.</p>
 (i.e. altering the top left of the element or altering the bottom right)
 may depend on a number of CSS layout factors
 including whether the element is absolutely positioned,
-whether it is positioned using the <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-position-3/#propdef-right">right</a>
-and <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-position-3/#propdef-bottom">bottom</a> properties,
+whether it is positioned using the <a class="property" data-link-type="propdesc" href="http://www.w3.org/TR/CSS21/visuren.html#position-props">right</a>
+and <a class="property" data-link-type="propdesc" href="http://www.w3.org/TR/CSS21/visuren.html#position-props">bottom</a> properties,
 whether the language of the element is right-to-left etc.
 The UA should consider the direction of resizing
 (as determined by CSS layout),
@@ -1672,13 +1576,12 @@ user resizing of that element.</p>
 to make iframes scrollable <em>and</em> resizable,
 the following rule can be used:</p>
 
-    <pre><code class="lang-css">iframe,object[type^="text/"],
-object[type$="+xml"],object[type="application/xml"]
-{
-  overflow:auto;
-  resize:both;
-}
-</code></pre>
+    <pre><code class="lang-css highlight"><span class="nt">iframe</span><span class="o">,</span><span class="nt">object</span><span class="o">[</span><span class="nt">type</span><span class="o">^=</span><span class="s2">"text/"</span><span class="o">],</span>
+<span class="nt">object</span><span class="o">[</span><span class="nt">type</span><span class="o">$=</span><span class="s2">"+xml"</span><span class="o">],</span><span class="nt">object</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">"application/xml"</span><span class="o">]</span>
+<span class="p">{</span>
+  <span class="k">overflow</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span>
+  <span class="n">resize</span><span class="o">:</span><span class="k">both</span><span class="p">;</span>
+<span class="p">}</span></code></pre>
 </div>
 
 
@@ -1705,7 +1608,7 @@ object[type$="+xml"],object[type="application/xml"]
       <td> [
 clip |
 ellipsis |
-<a class="production css" data-link-type="type" href="http://dev.w3.org/csswg/css-values-3/#string-value" title="Expands to: ">&lt;string></a>
+<a class="production css" data-link-type="type" href="http://dev.w3.org/csswg/css-values-3/#string-value">&lt;string></a>
 ]{1,2}
 
      
@@ -1757,24 +1660,24 @@ ellipsis |
    <p>This property specifies rendering when inline content overflows
 its line box edge
 in the inline progression direction of its block container element ("the block")
-that has <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-overflow-3/#propdef-overflow">overflow</a>
-other than <a class="css" data-link-type="maybe" href="http://dev.w3.org/csswg/css-overflow-3/#valdef-overflow-visible">visible</a>.</p>
+that has <a class="property" data-link-type="propdesc" href="http://www.w3.org/TR/CSS21/visufx.html#propdef-overflow">overflow</a>
+other than <a class="css" data-link-type="maybe" href="http://www.w3.org/TR/CSS21/visufx.html#propdef-overflow">visible</a>.</p>
 
 
    <p>Text can overflow for example when it is prevented from wrapping
-(e.g. due to <code class="lang-css">white-space: nowrap</code>
+(e.g. due to <code class="lang-css highlight"><span class="nt">white-space</span><span class="o">:</span> <span class="nt">nowrap</span></code>
 or a single word is too long to fit).
 Values have the following meanings:</p>
 
 
    <dl class="valuedef">
   
-    <dt><dfn data-dfn-for="overflow" data-dfn-type="dfn" data-noexport="" id="clip">clip<a class="self-link" href="#clip"></a></dfn>
+    <dt id="overflow-clip"><a class="self-link" href="#overflow-clip"></a><dfn data-dfn-for="overflow" data-dfn-type="dfn" data-noexport="" id="clip">clip<a class="self-link" href="#clip"></a></dfn>
     
     <dd>Clip inline content that overflows its block container element. Characters may be only partially rendered.
 
   
-    <dt><dfn data-dfn-for="overflow" data-dfn-type="dfn" data-noexport="" id="ellipsis">ellipsis<a class="self-link" href="#ellipsis"></a></dfn>
+    <dt id="overflow-ellipsis"><a class="self-link" href="#overflow-ellipsis"></a><dfn data-dfn-for="overflow" data-dfn-type="dfn" data-noexport="" id="ellipsis">ellipsis<a class="self-link" href="#ellipsis"></a></dfn>
     
     <dd>
 Render an ellipsis character (U+2026)
@@ -1784,7 +1687,7 @@ ellipsis character,
 or three dots "..." if the ellipsis character is unavailable.
 
 
-    <dt><a class="production css" data-link-type="type" href="http://dev.w3.org/csswg/css-values-3/#string-value" title="Expands to: ">&lt;string></a>
+    <dt id="overflow-string"><a class="self-link" href="#overflow-string"></a><a class="production css" data-link-type="type" href="http://dev.w3.org/csswg/css-values-3/#string-value" title="Expands to: ">&lt;string></a>
    
     <dd>
 Render the given string to represent clipped inline content.
@@ -1851,7 +1754,7 @@ Ellipsing occurs after relative positioning and other graphical transformations.
 If there is insufficient space for the ellipsis,
 then clip the rendering of the ellipsis itself
 (on the same side that neutral characters on the line
-would have otherwise been clipped with the <a class="css" data-link-type="maybe" href="http://dev.w3.org/csswg/css-overflow-3/#valdef-overflow-clip">clip</a> value).
+would have otherwise been clipped with the <span class="css">text-overflow:clip</span> value).
 </ul>
 
 
@@ -1861,7 +1764,7 @@ would have otherwise been clipped with the <a class="css" data-link-type="maybe"
 
     <li>When the user is interacting with content
 (e.g. editing, selecting, scrolling),
-the user agent may treat text-overflow <span class="css">ellipsis</span> or string values as <a class="css" data-link-type="maybe" href="http://dev.w3.org/csswg/css-overflow-3/#valdef-overflow-clip">clip</a>.
+the user agent may treat text-overflow <span class="css">ellipsis</span> or string values as <span class="css">text-overflow:clip</span>.
 
 
     <li>Selecting the ellipsis should select the ellipsed text.
@@ -1872,7 +1775,7 @@ Behavior of partially-selected ellipsed text is up to the UA.
 </ul>
 
 
-   <div class="example" id="example-4d792064"><a class="self-link" href="#example-4d792064"></a>
+   <div class="example" id="example-bff7c1fa"><a class="self-link" href="#example-bff7c1fa"></a>
     <p style="display:none">Example(s):
 </p>
     <h4 class="no-num no-toc heading settled" id="text-overflow-examples"><span class="content">text-overflow examples</span><a class="self-link" href="#text-overflow-examples"></a></h4>
@@ -1884,9 +1787,9 @@ that has text which overflows its dimensions:</p>
 
     <p>sample CSS for a div:</p>
 
-    <pre><code class="lang-css">div {  font-family:Helvetica,sans-serif; line-height:1.1;
-  width:3.1em; padding:.2em; border:solid .1em black; margin:1em 0;
-}</code></pre>
+    <pre><code class="lang-css highlight"><span class="nt">div</span> <span class="p">{</span>  <span class="k">font-family</span><span class="o">:</span><span class="n">Helvetica</span><span class="o">,</span><span class="k">sans-serif</span><span class="p">;</span> <span class="k">line-height</span><span class="o">:</span><span class="m">1</span><span class="o">.</span><span class="m">1</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span><span class="m">3.1em</span><span class="p">;</span> <span class="k">padding</span><span class="o">:.</span><span class="m">2em</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span><span class="k">solid</span> <span class="m">.1em</span> <span class="nb">black</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span><span class="m">1em</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre>
 
 
     <p>sample HTML fragments, renderings, and your browser:</p>
@@ -1903,16 +1806,15 @@ that has text which overflows its dimensions:</p>
       <tr>
 
        <td>
-        <pre><code class="lang-markup">&lt;div>
+        <pre><code class="lang-markup highlight"><span class="nt">&lt;div></span>
 CSS IS AWESOME, YES
-&lt;/div>
-</code></pre>
+<span class="nt">&lt;/div></span></code></pre>
 
 
 
        <td>
 
-        <object data="cssisawesome.png" type="image/png">
+        <object data="images/cssisawesome.png" type="image/png">
 First, a box with text drawing outside of it.
 </object>
 
@@ -1929,15 +1831,14 @@ First, a box with text drawing outside of it.
       <tr>
 
        <td>
-        <pre><code class="lang-markup">&lt;div style="<strong>text-overflow:clip;</strong> overflow:hidden">
+        <pre><code class="lang-markup highlight"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"text-overflow:clip; overflow:hidden"</span><span class="nt">></span>
 CSS IS AWESOME, YES
-&lt;/div>
-</code></pre>
+<span class="nt">&lt;/div></span></code></pre>
 
 
        <td>
 
-        <object data="cssisaweso.png" type="image/png">
+        <object data="images/cssisaweso.png" type="image/png">
 Second, a similar box with the text clipped outside the box.
 </object>
 
@@ -1953,15 +1854,14 @@ Second, a similar box with the text clipped outside the box.
       <tr>
 
        <td>
-        <pre><code class="lang-markup">&lt;div style="<strong>text-overflow:ellipsis;</strong> overflow:hidden">
+        <pre><code class="lang-markup highlight"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"text-overflow:ellipsis; overflow:hidden"</span><span class="nt">></span>
 CSS IS AWESOME, YES
-&lt;/div>
-</code></pre>
+<span class="nt">&lt;/div></span></code></pre>
 
 
        <td>
 
-        <object data="cssisaw.png" type="image/png">
+        <object data="images/cssisaw.png" type="image/png">
 Third, a similar box with an ellipsis representing the clipped text.
 </object>
 
@@ -1979,17 +1879,16 @@ Third, a similar box with an ellipsis representing the clipped text.
       <tr>
 
        <td>
-        <pre><code class="lang-markup">&lt;div style="<strong>text-overflow:ellipsis;</strong> overflow:hidden">
+        <pre><code class="lang-markup highlight"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"text-overflow:ellipsis; overflow:hidden"</span><span class="nt">></span>
 NESTED
- &lt;p>PARAGRAPH&lt;/p>
+ <span class="nt">&lt;p></span>PARAGRAPH<span class="nt">&lt;/p></span>
 WON’T ELLIPSE.
-&lt;/div>
-</code></pre>
+<span class="nt">&lt;/div></span></code></pre>
 
 
        <td>
 
-        <object data="nes.png" type="image/png">
+        <object data="images/nes.png" type="image/png">
 Fourth, a box with a nested paragraph demonstrating anonymous block boxes equivalency and non-inheritance into a nested element.
 </object>
 
@@ -2012,7 +1911,7 @@ WON’T ELLIPSE.</div>
 
    <p class="note" role="note">Note: the side of the line that the ellipsis is placed depends on the <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-writing-modes-3/#propdef-direction">direction</a> of the block.
 E.g. an overflow hidden right-to-left
-(<code class="lang-css">direction: rtl</code>)
+(<code class="lang-css highlight"><span class="nt">direction</span><span class="o">:</span> <span class="nt">rtl</span></code>)
 block clips inline content on the <a data-link-type="dfn" href="http://dev.w3.org/csswg/css-writing-modes-3/#left">left</a> side,
 thus would place a text-overflow ellipsis on the <a data-link-type="dfn" href="http://dev.w3.org/csswg/css-writing-modes-3/#left">left</a>
 to represent that clipped content.</p>
@@ -2023,7 +1922,7 @@ to represent that clipped content.</p>
    <h4 class="no-num no-toc heading settled" id="ellipsis-scrolling"><span class="content">ellipsis interaction with scrolling interfaces</span><a class="self-link" href="#ellipsis-scrolling"></a></h4>
 
 
-   <p>This section applies to elements with text-overflow other than <a class="css" data-link-type="maybe" href="http://dev.w3.org/csswg/css-overflow-3/#valdef-overflow-clip">clip</a>
+   <p>This section applies to elements with text-overflow other than <span class="css">text-overflow:clip</span>
 (non-clip text-overflow)
 and overflow:scroll.</p>
 
@@ -2061,25 +1960,23 @@ to demonstrate the above described behavior.</p>
 
     <p>sample CSS:</p>
 
-    <pre><code class="lang-css">div.crawlbar {
-  text-overflow: ellipsis;
-  height: 2em;
-  overflow: scroll;
-  white-space: nowrap;
-  width: 15em;
-  border:1em solid black;
-}
-</code></pre>
+    <pre><code class="lang-css highlight"><span class="nt">div</span><span class="nc">.crawlbar</span> <span class="p">{</span>
+  <span class="k">text</span><span class="o">-</span><span class="k">overflow</span><span class="o">:</span> <span class="n">ellipsis</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">2em</span><span class="p">;</span>
+  <span class="k">overflow</span><span class="o">:</span> <span class="k">scroll</span><span class="p">;</span>
+  <span class="k">white-space</span><span class="o">:</span> <span class="k">nowrap</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">15em</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span><span class="m">1em</span> <span class="k">solid</span> <span class="nb">black</span><span class="p">;</span>
+<span class="p">}</span></code></pre>
 
 
     <p>sample HTML fragment:</p>
 
-    <pre><code class="lang-markup">&lt;div class="crawlbar">
+    <pre><code class="lang-markup highlight"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"crawlbar"</span><span class="nt">></span>
 CSS is awesome, especially when you can scroll
 to see extra text instead of just
 having it overlap other text by default.
-&lt;/div>
-</code></pre>
+<span class="nt">&lt;/div></span></code></pre>
 
 
     <p>demonstration of sample CSS and HTML:</p>
@@ -2201,8 +2098,11 @@ then only the end ellipsis/string should be rendered.</p>
 </table>
 
 
-This property specifies the type of cursor to be displayed for the pointing device
-when within the element’s border-box.
+   <p>This property specifies the type of cursor to be displayed for the pointing device
+when within the element’s <a data-link-type="dfn" href="http://www.w3.org/TR/CSS21/box.html#border-edge">border edge</a>.</p>
+
+
+   <p class="note" role="note">Note: As per <a data-link-type="biblio" href="#biblio-css3-background">[CSS3-BACKGROUND]</a>, the <a data-link-type="dfn" href="http://www.w3.org/TR/CSS21/box.html#border-edge">border edge</a> is affected by <a class="property" data-link-type="propdesc" href="http://dev.w3.org/csswg/css-backgrounds-3/#border-radius">border-radius</a>.</p>
 
 
    <p>User agents may ignore the cursor property over native user-agent controls such as scrollbars, resizers, or other native UI widgets e.g. those that may be used inside some user agent specific implementations of form elements.</p>
@@ -2267,7 +2167,7 @@ even though the lack of an open specification
 makes it impossible to have a normative requirement
 about these formats.
 Some information on these formats can be found
-<a href="http://en.wikipedia.org/wiki/ICO_%28file_format%29">on Wikipedia</a>.</p>
+<a href="https://en.wikipedia.org/wiki/ICO_%28file_format%29">on Wikipedia</a>.</p>
 
 
        <p>The <a data-link-type="dfn" href="http://dev.w3.org/csswg/css-images-3/#default-object-size">default object size</a> for cursor images is
@@ -2524,11 +2424,6 @@ often rendered as a magnifying glass with a "+" or "-" in the center of the glas
 </dl>
 
 
-   <p>The UA may treat unsupported values as <span class="css">auto</span>.
-E.g. on platforms that do not have a concept of a <span class="css">context-menu</span> cursor,
-the UA may render <a class="css" data-link-type="maybe" href="http://dev.w3.org/csswg/css-cascade-4/#valdef-all-default">default</a> or whatever is appropriate.</p>
-
-
    <div class="example" id="example-4a59cfe4"><a class="self-link" href="#example-4a59cfe4"></a>
 
 
@@ -2537,13 +2432,12 @@ the UA may render <a class="css" data-link-type="maybe" href="http://dev.w3.org/
 
     <p>Here is an example of using several cursor values.</p>
 
-    <pre><code class="lang-css">:link,:visited {
-    cursor: url(example.svg#linkcursor),
-            url(hyper.cur),
-            url(hyper.png) 2 3,
-            pointer
-}
-</code></pre>
+    <pre><code class="lang-css highlight"><span class="nd">:link</span><span class="o">,</span><span class="nd">:visited</span> <span class="p">{</span>
+    <span class="k">cursor</span><span class="o">:</span> <span class="sx">url(example.svg#linkcursor)</span><span class="o">,</span>
+            <span class="sx">url(hyper.cur)</span><span class="o">,</span>
+            <span class="sx">url(hyper.png)</span> <span class="m">2</span> <span class="m">3</span><span class="o">,</span>
+            <span class="k">pointer</span>
+<span class="p">}</span></code></pre>
 
 
     <p>This example sets the cursor on all hyperlinks (whether visited or not)
@@ -3105,7 +2999,7 @@ possibly based on the currentColor, background, shadows, etc.
 
    <div class="example" id="example-24147f22"><a class="self-link" href="#example-24147f22"></a>
 Example: a textarea with
-<code class="lang-css">caret-color:#00aacc;</code>
+<code class="lang-css highlight"><span class="nt">caret-color</span><span class="o">:</span><span class="nf">#00aacc</span><span class="o">;</span></code>
 
 
     <textarea style="caret-color:#00aacc;">caret-color:#00aacc
@@ -3246,32 +3140,31 @@ whose directional focus navigation is set in such a way
 to navigate the focus clockwise (or counter-clockwise) around the diamond shape
 when the user chooses to navigate directionally.</p>
 
-    <pre><code class="lang-css">button { position:absolute }
+    <pre><code class="lang-css highlight"><span class="nt">button</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span><span class="k">absolute</span> <span class="p">}</span>
 
-button#b1 {
-  top:0; left:50%;
-  nav-right:#b2; nav-left:#b4;
-  nav-down:#b2; nav-up:#b4;
-}
+<span class="nt">button</span><span class="nf">#b1</span> <span class="p">{</span>
+  <span class="k">top</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">left</span><span class="o">:</span><span class="m">50%</span><span class="p">;</span>
+  <span class="n">nav</span><span class="o">-</span><span class="k">right</span><span class="o">:</span><span class="m">#b2</span><span class="p">;</span> <span class="n">nav</span><span class="o">-</span><span class="k">left</span><span class="o">:</span><span class="m">#b4</span><span class="p">;</span>
+  <span class="n">nav</span><span class="o">-</span><span class="n">down</span><span class="o">:</span><span class="m">#b2</span><span class="p">;</span> <span class="n">nav</span><span class="o">-</span><span class="n">up</span><span class="o">:</span><span class="m">#b4</span><span class="p">;</span>
+<span class="p">}</span>
 
-button#b2 {
-  top:50%; left:100%;
-  nav-right:#b3; nav-left:#b1;
-  nav-down:#b3; nav-up:#b1;
-}
+<span class="nt">button</span><span class="nf">#b2</span> <span class="p">{</span>
+  <span class="k">top</span><span class="o">:</span><span class="m">50%</span><span class="p">;</span> <span class="k">left</span><span class="o">:</span><span class="m">100%</span><span class="p">;</span>
+  <span class="n">nav</span><span class="o">-</span><span class="k">right</span><span class="o">:</span><span class="m">#b3</span><span class="p">;</span> <span class="n">nav</span><span class="o">-</span><span class="k">left</span><span class="o">:</span><span class="m">#b1</span><span class="p">;</span>
+  <span class="n">nav</span><span class="o">-</span><span class="n">down</span><span class="o">:</span><span class="m">#b3</span><span class="p">;</span> <span class="n">nav</span><span class="o">-</span><span class="n">up</span><span class="o">:</span><span class="m">#b1</span><span class="p">;</span>
+<span class="p">}</span>
 
-button#b3 {
-  top:100%; left:50%;
-  nav-right:#b4; nav-left:#b2;
-  nav-down:#b4; nav-up:#b2;
-}
+<span class="nt">button</span><span class="nf">#b3</span> <span class="p">{</span>
+  <span class="k">top</span><span class="o">:</span><span class="m">100%</span><span class="p">;</span> <span class="k">left</span><span class="o">:</span><span class="m">50%</span><span class="p">;</span>
+  <span class="n">nav</span><span class="o">-</span><span class="k">right</span><span class="o">:</span><span class="m">#b4</span><span class="p">;</span> <span class="n">nav</span><span class="o">-</span><span class="k">left</span><span class="o">:</span><span class="m">#b2</span><span class="p">;</span>
+  <span class="n">nav</span><span class="o">-</span><span class="n">down</span><span class="o">:</span><span class="m">#b4</span><span class="p">;</span> <span class="n">nav</span><span class="o">-</span><span class="n">up</span><span class="o">:</span><span class="m">#b2</span><span class="p">;</span>
+<span class="p">}</span>
 
-button#b4 {
-  top:50%; left:0;
-  nav-right:#b1; nav-left:#b3;
-  nav-down:#b1; nav-up:#b3;
-}
-</code></pre>
+<span class="nt">button</span><span class="nf">#b4</span> <span class="p">{</span>
+  <span class="k">top</span><span class="o">:</span><span class="m">50%</span><span class="p">;</span> <span class="k">left</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+  <span class="n">nav</span><span class="o">-</span><span class="k">right</span><span class="o">:</span><span class="m">#b1</span><span class="p">;</span> <span class="n">nav</span><span class="o">-</span><span class="k">left</span><span class="o">:</span><span class="m">#b3</span><span class="p">;</span>
+  <span class="n">nav</span><span class="o">-</span><span class="n">down</span><span class="o">:</span><span class="m">#b1</span><span class="p">;</span> <span class="n">nav</span><span class="o">-</span><span class="n">up</span><span class="o">:</span><span class="m">#b3</span><span class="p">;</span>
+<span class="p">}</span></code></pre>
 
 
     <p>Whatever markup sequence the buttons may have
@@ -3292,8 +3185,7 @@ it is still important to ensure focus navigation behaviors which relate reasonab
     <p>This example shows how to make navigating left from the button with id "foo" move the focus to the element with id "bar" within the frame named "sidebar".</p>
 
 
-    <pre><code class="lang-css">button#foo { nav-left: #bar "sidebar"; }
-</code></pre>
+    <pre><code class="lang-css highlight"><span class="nt">button</span><span class="nf">#foo</span> <span class="p">{</span> <span class="n">nav</span><span class="o">-</span><span class="k">left</span><span class="o">:</span> <span class="m">#bar</span> <span class="s2">"sidebar"</span><span class="p">;</span> <span class="p">}</span></code></pre>
 </div>
 
 
@@ -3321,9 +3213,8 @@ it is still important to ensure focus navigation behaviors which relate reasonab
 
     <p>Example: user preference
 </p>
-    <pre><code class="lang-css">input[type=password] {    ime-mode: auto !important;
-}
-</code></pre>
+    <pre><code class="lang-css highlight"><span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">password</span><span class="o">]</span> <span class="p">{</span>    <span class="n">ime</span><span class="o">-</span><span class="n">mode</span><span class="o">:</span> <span class="k">auto</span><span class="err"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span></code></pre>
 </div>
 
 
@@ -3423,47 +3314,11 @@ and
    <p>This appendix is <em>informative</em>.</p>
 
 
-   <p>In general this draft contains
-editorial/grammatical/spelling corrections,
-and a few new informative examples.
-This appendix describes functional changes from the
-<a href="http://www.w3.org/TR/2012/WD-css3-ui-20120117/">Working Draft (WD) of 17 Jan 2012</a>
-that were made to reflect implementer adoption (or lack thereof), as well as implementer innovations.
-In particular, changes since the previous draft fall into one of
-three categories:</p>
+   <p>This appendix describes functional changes from the
+<a href="http://www.w3.org/TR/2015/CR-css-ui-3-20150707/">Candidate Recommendation (CR) of 7 Jul 2015</a>.</p>
 
 
-   <ul>
-
-    <li>Minor refinements to features based on implementation experience.
- 
-
-
-    <li>Dropping features that were not implemented,
-or were insufficiently implemented to exit CR.
- 
-
-    <li>Adding a small number of new but already interoperably
-implemented features.
- 
-</ul>
-
-
-   <h3 class="no-num heading settled" id="changes-list"><span class="content">List of substantial changes</span><a class="self-link" href="#changes-list"></a></h3>
-
-
-   <ul>
-
-    <li><a class="property" data-link-type="propdesc" href="#propdef-box-sizing">box-sizing</a> effects on CSS 2.1 width and height computations specified much more explicitly.
-
-    <li><a class="property" data-link-type="propdesc" href="#propdef-cursor">cursor</a> image formats normatively required.
-
-    <li><a class="property" data-link-type="propdesc" href="#propdef-caret-color">caret-color</a> is inherited and animatable.
-
-    <li>New informative appendix on Considerations for Security and Privacy.
-
-</ul>
-
+   <p><em>No changes so far.</em></p>
 
 
    <h2 class="no-num heading settled" id="security-privacy-considerations"><span class="content">Appendix C. Considerations for Security and Privacy</span><a class="self-link" href="#security-privacy-considerations"></a></h2>
@@ -3594,123 +3449,122 @@ for editors of specifications to informatively answer.</p>
    <p>Potential additions to the base style sheet to express HTML form controls, and a few dynamic presentation attributes:</p>
 
 
-   <pre class="lang-css">:enabled:focus {
- outline: 2px inset;
-}
+   <pre class="lang-css highlight"><span class="nd">:enabled:focus</span> <span class="p">{</span>
+ <span class="k">outline</span><span class="o">:</span> <span class="m">2px</span> <span class="k">inset</span><span class="p">;</span>
+<span class="p">}</span>
 
-button,
-input[type=button],
-input[type=reset],
-input[type=submit],
-input[type=checkbox],
-input[type=radio],
-textarea,
-input,
-input[type=text],
-input[type=hidden],
-input[type=password],
-input[type=image]
-{
- display: inline-block;
- white-space: nowrap;
-}
+<span class="nt">button</span><span class="o">,</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">button</span><span class="o">],</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">reset</span><span class="o">],</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">submit</span><span class="o">],</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">checkbox</span><span class="o">],</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">radio</span><span class="o">],</span>
+<span class="nt">textarea</span><span class="o">,</span>
+<span class="nt">input</span><span class="o">,</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">text</span><span class="o">],</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">hidden</span><span class="o">],</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">password</span><span class="o">],</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">image</span><span class="o">]</span>
+<span class="p">{</span>
+ <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+ <span class="k">white-space</span><span class="o">:</span> <span class="k">nowrap</span><span class="p">;</span>
+<span class="p">}</span>
 
-button
-{
-/* white space handling of BUTTON tags in particular */
- white-space:normal;
-}
+<span class="nt">button</span>
+<span class="p">{</span>
+<span class="c">/* white space handling of BUTTON tags in particular */</span>
+ <span class="k">white-space</span><span class="o">:</span><span class="k">normal</span><span class="p">;</span>
+<span class="p">}</span>
 
-input[type=reset]:lang(en)
-{
-/* default content of HTML input type=reset button, per language */
- content: "Reset";
-}
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">reset</span><span class="o">]</span><span class="nd">:lang</span><span class="o">(</span><span class="nt">en</span><span class="o">)</span>
+<span class="p">{</span>
+<span class="c">/* default content of HTML input type=reset button, per language */</span>
+ <span class="k">content</span><span class="o">:</span> <span class="s2">"Reset"</span><span class="p">;</span>
+<span class="p">}</span>
 
-input[type=submit]:lang(en)
-{
-/* default content of HTML input type=submit button, per language */
- content: "Submit";
-}
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">submit</span><span class="o">]</span><span class="nd">:lang</span><span class="o">(</span><span class="nt">en</span><span class="o">)</span>
+<span class="p">{</span>
+<span class="c">/* default content of HTML input type=submit button, per language */</span>
+ <span class="k">content</span><span class="o">:</span> <span class="s2">"Submit"</span><span class="p">;</span>
+<span class="p">}</span>
 
-/* UAs should use language-specific Reset/Submit rules for others. */
+<span class="c">/* UAs should use language-specific Reset/Submit rules for others. */</span>
 
-input[type=button],
-input[type=reset][value],
-input[type=submit][value]
-{
-/* text content/labels of HTML "input" buttons */
- content: attr(value);
-}
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">button</span><span class="o">],</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">reset</span><span class="o">][</span><span class="nt">value</span><span class="o">],</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">submit</span><span class="o">][</span><span class="nt">value</span><span class="o">]</span>
+<span class="p">{</span>
+<span class="c">/* text content/labels of HTML "input" buttons */</span>
+ <span class="k">content</span><span class="o">:</span> <span class="n">attr</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>
+<span class="p">}</span>
 
-textarea
-{
-/* white space handling of TEXTAREA tags in particular */
- white-space:pre-wrap;
-}
+<span class="nt">textarea</span>
+<span class="p">{</span>
+<span class="c">/* white space handling of TEXTAREA tags in particular */</span>
+ <span class="k">white-space</span><span class="o">:</span><span class="n">pre</span><span class="o">-</span><span class="n">wrap</span><span class="p">;</span>
+ <span class="n">resize</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span>
+<span class="p">}</span>
 
-input[type=hidden]
-{
-/* appearance of the HTML hidden text field in particular */
- display: none;
-}
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">hidden</span><span class="o">]</span>
+<span class="p">{</span>
+<span class="c">/* appearance of the HTML hidden text field in particular */</span>
+ <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
 
-input[type=image]
-{
- display: inline-block;
- content: attr(src,url);
- border: none;
-}
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">image</span><span class="o">]</span>
+<span class="p">{</span>
+ <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+ <span class="k">content</span><span class="o">:</span> <span class="n">attr</span><span class="p">(</span><span class="n">src</span><span class="o">,</span><span class="k">url</span><span class="p">);</span>
+ <span class="k">border</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
 
-select[size]
-{
-/* HTML4/XHTML1 &lt;select> w/ size more than 1 - appearance of list */
- display: inline-block;
- height: attr(size,em);
-}
+<span class="nt">select</span><span class="o">[</span><span class="nt">size</span><span class="o">]</span>
+<span class="p">{</span>
+<span class="c">/* HTML4/XHTML1 &lt;select> w/ size more than 1 - appearance of list */</span>
+ <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+ <span class="k">height</span><span class="o">:</span> <span class="n">attr</span><span class="p">(</span><span class="k">size</span><span class="o">,</span><span class="n">em</span><span class="p">);</span>
+<span class="p">}</span>
 
-select,select[size=1]
-{
-/* HTML4/XHTML1 &lt;select> without size, or size=1 - popup-menu */
- display: inline-block;
- height: 1em;
- overflow: hidden;
-}
+<span class="nt">select</span><span class="o">,</span><span class="nt">select</span><span class="o">[</span><span class="nt">size</span><span class="o">=</span><span class="nt">1</span><span class="o">]</span>
+<span class="p">{</span>
+<span class="c">/* HTML4/XHTML1 &lt;select> without size, or size=1 - popup-menu */</span>
+ <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+ <span class="k">height</span><span class="o">:</span> <span class="m">1em</span><span class="p">;</span>
+ <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+<span class="p">}</span>
 
-select[size]:active
-{
-/* active HTML &lt;select> w/ size more than 1 - appearance of active list */
- display: inline-block;
-}
+<span class="nt">select</span><span class="o">[</span><span class="nt">size</span><span class="o">]</span><span class="nd">:active</span>
+<span class="p">{</span>
+<span class="c">/* active HTML &lt;select> w/ size more than 1 - appearance of active list */</span>
+ <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+<span class="p">}</span>
 
-optgroup,option
-{
- display: block;
- white-space: nowrap;
-}
+<span class="nt">optgroup</span><span class="o">,</span><span class="nt">option</span>
+<span class="p">{</span>
+ <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+ <span class="k">white-space</span><span class="o">:</span> <span class="k">nowrap</span><span class="p">;</span>
+<span class="p">}</span>
 
-optgroup[label],option[label]
-{
- content: attr(label);
-}
+<span class="nt">optgroup</span><span class="o">[</span><span class="nt">label</span><span class="o">],</span><span class="nt">option</span><span class="o">[</span><span class="nt">label</span><span class="o">]</span>
+<span class="p">{</span>
+ <span class="k">content</span><span class="o">:</span> <span class="n">attr</span><span class="p">(</span><span class="n">label</span><span class="p">);</span>
+<span class="p">}</span>
 
-option[selected]::before
-{
- display: inline;
- content: check;
-}
+<span class="nt">option</span><span class="o">[</span><span class="nt">selected</span><span class="o">]:</span><span class="nd">:before</span>
+<span class="p">{</span>
+ <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="p">;</span>
+ <span class="k">content</span><span class="o">:</span> <span class="n">check</span><span class="p">;</span>
+<span class="p">}</span>
 
-/* Though FRAME resizing is not directly addressed by this specification,
-   the following rules may provide an approximation of reasonable behavior. */
+<span class="c">/* Though FRAME resizing is not directly addressed by this specification,</span>
+<span class="c">   the following rules may provide an approximation of reasonable behavior. */</span>
 
-/*
+<span class="c">/*</span>
 
-frame { resize:both }
-frame[noresize] { resize:none }
+<span class="c">frame { resize:both }</span>
+<span class="c">frame[noresize] { resize:none }</span>
 
-*/
-
-</pre>
+<span class="c">*/</span></pre>
 
 
 
@@ -3917,12 +3771,21 @@ Non-experimental implementations</span><a class="self-link" href="#testing"></a>
    <li>outline-offset, <a href="#propdef-outline-offset">4.5</a>
    <li>outline-style, <a href="#propdef-outline-style">4.3</a>
    <li>outline-width, <a href="#propdef-outline-width">4.2</a>
-   <li>padding-box, <a href="#valdef-box-sizing-padding-box">3.1</a>
    <li>resize, <a href="#propdef-resize">5.1</a>
    <li>text-overflow, <a href="#propdef-text-overflow">5.2</a>
   </ul>
   <h3 class="no-num heading settled" id="index-defined-elsewhere"><span class="content">Terms defined by reference</span><a class="self-link" href="#index-defined-elsewhere"></a></h3>
   <ul class="indexlist">
+   <li><a data-link-type="biblio" href="#biblio-css21">[CSS21]</a> defines the following terms:
+    <ul>
+     <li><a href="http://www.w3.org/TR/CSS21/box.html#border-edge">border edge</a>
+     <li><a href="http://www.w3.org/TR/CSS21/visuren.html#position-props">bottom</a>
+     <li><a href="http://www.w3.org/TR/CSS21/visuren.html#position-props">left</a>
+     <li><a href="http://www.w3.org/TR/CSS21/visufx.html#propdef-overflow">overflow</a>
+     <li><a href="http://www.w3.org/TR/CSS21/visuren.html#position-props">right</a>
+     <li><a href="http://www.w3.org/TR/CSS21/visuren.html#position-props">top</a>
+     <li><a href="http://www.w3.org/TR/CSS21/visufx.html#propdef-overflow">visible</a>
+    </ul>
    <li><a data-link-type="biblio" href="#biblio-css-backgrounds-3">[css-backgrounds-3]</a> defines the following terms:
     <ul>
      <li><a href="http://dev.w3.org/csswg/css-backgrounds-3/#background-image">background-image</a>
@@ -3935,10 +3798,6 @@ Non-experimental implementations</span><a class="self-link" href="#testing"></a>
      <li><a href="http://dev.w3.org/csswg/css-backgrounds-3/#border-width">border-width</a>
      <li><a href="http://dev.w3.org/csswg/css-backgrounds-3/#solid">solid</a>
     </ul>
-   <li><a data-link-type="biblio" href="#biblio-css-cascade-4">[css-cascade-4]</a> defines the following terms:
-    <ul>
-     <li><a href="http://dev.w3.org/csswg/css-cascade-4/#valdef-all-default">default</a>
-    </ul>
    <li><a data-link-type="biblio" href="#biblio-css-color-3">[css-color-3]</a> defines the following terms:
     <ul>
      <li><a href="http://dev.w3.org/csswg/css-color-3/#valuea-def-color">&lt;color></a>
@@ -3950,19 +3809,6 @@ Non-experimental implementations</span><a class="self-link" href="#testing"></a>
      <li><a href="http://dev.w3.org/csswg/css-images-3/#concrete-object-size">concrete object size</a>
      <li><a href="http://dev.w3.org/csswg/css-images-3/#default-object-size">default object size</a>
      <li><a href="http://dev.w3.org/csswg/css-images-3/#default-sizing-algorithm">default sizing algorithm</a>
-    </ul>
-   <li><a data-link-type="biblio" href="#biblio-css-overflow-3">[css-overflow-3]</a> defines the following terms:
-    <ul>
-     <li><a href="http://dev.w3.org/csswg/css-overflow-3/#valdef-overflow-clip">clip</a>
-     <li><a href="http://dev.w3.org/csswg/css-overflow-3/#propdef-overflow">overflow</a>
-     <li><a href="http://dev.w3.org/csswg/css-overflow-3/#valdef-overflow-visible">visible</a>
-    </ul>
-   <li><a data-link-type="biblio" href="#biblio-css-position-3">[css-position-3]</a> defines the following terms:
-    <ul>
-     <li><a href="http://dev.w3.org/csswg/css-position-3/#propdef-bottom">bottom</a>
-     <li><a href="http://dev.w3.org/csswg/css-position-3/#propdef-left">left</a>
-     <li><a href="http://dev.w3.org/csswg/css-position-3/#propdef-right">right</a>
-     <li><a href="http://dev.w3.org/csswg/css-position-3/#propdef-top">top</a>
     </ul>
    <li><a data-link-type="biblio" href="#biblio-css-values-3">[css-values-3]</a> defines the following terms:
     <ul>
@@ -4000,10 +3846,6 @@ Non-experimental implementations</span><a class="self-link" href="#testing"></a>
      <li><a href="http://dev.w3.org/csswg/css2/visufx.html#propdef-visibility">visibility</a>
      <li><a href="http://dev.w3.org/csswg/css2/visudet.html#propdef-width">width</a>
     </ul>
-   <li><a data-link-type="biblio" href="#biblio-cssom-1">[cssom-1]</a> defines the following terms:
-    <ul>
-     <li><a href="http://dev.w3.org/csswg/cssom-1/#dom-window-getcomputedstyleelt-pseudoelt">getComputedStyle(elt, pseudoElt)</a>
-    </ul>
   </ul>
   <h2 class="no-num heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
@@ -4022,26 +3864,16 @@ Non-experimental implementations</span><a class="self-link" href="#testing"></a>
    <dd>Mark Davis. <a href="http://www.unicode.org/unicode/reports/tr29/tr29-9.html">Text Boundaries</a>. 25 March 2005. Unicode Standard Annex #29. URL: <a href="http://www.unicode.org/unicode/reports/tr29/tr29-9.html">http://www.unicode.org/unicode/reports/tr29/tr29-9.html</a>
    <dt id="biblio-css-backgrounds-3"><a class="self-link" href="#biblio-css-backgrounds-3"></a>[CSS-BACKGROUNDS-3]
    <dd>CSS Backgrounds and Borders Module Level 3 URL: <a href="http://www.w3.org/TR/css3-background/">http://www.w3.org/TR/css3-background/</a>
-   <dt id="biblio-css-cascade-4"><a class="self-link" href="#biblio-css-cascade-4"></a>[CSS-CASCADE-4]
-   <dd>Elika Etemad; Tab Atkins Jr.. <a href="http://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 21 April 2015. WD. URL: <a href="http://www.w3.org/TR/css-cascade-4/">http://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-color-3"><a class="self-link" href="#biblio-css-color-3"></a>[CSS-COLOR-3]
    <dd>CSS Color Module Level 3 URL: <a href="http://www.w3.org/TR/css3-color/">http://www.w3.org/TR/css3-color/</a>
    <dt id="biblio-css-images-3"><a class="self-link" href="#biblio-css-images-3"></a>[CSS-IMAGES-3]
    <dd>CSS Image Values and Replaced Content Module Level 3 URL: <a href="http://www.w3.org/TR/css3-images/">http://www.w3.org/TR/css3-images/</a>
-   <dt id="biblio-css-overflow-3"><a class="self-link" href="#biblio-css-overflow-3"></a>[CSS-OVERFLOW-3]
-   <dd>David Baron. <a href="http://www.w3.org/TR/css-overflow-3/">CSS Overflow Module Level 3</a>. 18 April 2013. WD. URL: <a href="http://www.w3.org/TR/css-overflow-3/">http://www.w3.org/TR/css-overflow-3/</a>
-   <dt id="biblio-css-position-3"><a class="self-link" href="#biblio-css-position-3"></a>[CSS-POSITION-3]
-   <dd>CSS Positioned Layout Module Level 3 URL: <a href="http://www.w3.org/TR/css3-positioning/">http://www.w3.org/TR/css3-positioning/</a>
    <dt id="biblio-css-values-3"><a class="self-link" href="#biblio-css-values-3"></a>[CSS-VALUES-3]
    <dd>CSS Values and Units Module Level 3 URL: <a href="http://www.w3.org/TR/css3-values/">http://www.w3.org/TR/css3-values/</a>
    <dt id="biblio-css-writing-modes-3"><a class="self-link" href="#biblio-css-writing-modes-3"></a>[CSS-WRITING-MODES-3]
    <dd>Elika Etemad; Koji Ishii. <a href="http://www.w3.org/TR/css-writing-modes-3/">CSS Writing Modes Level 3</a>. 20 March 2014. CR. URL: <a href="http://www.w3.org/TR/css-writing-modes-3/">http://www.w3.org/TR/css-writing-modes-3/</a>
    <dt id="biblio-css3-writing-modes"><a class="self-link" href="#biblio-css3-writing-modes"></a>[CSS3-WRITING-MODES]
    <dd>Elika Etemad; Koji Ishii. <a href="http://www.w3.org/TR/css-writing-modes-3/">CSS Writing Modes Level 3</a>. 20 March 2014. CR. URL: <a href="http://www.w3.org/TR/css-writing-modes-3/">http://www.w3.org/TR/css-writing-modes-3/</a>
-   <dt id="biblio-css4-images"><a class="self-link" href="#biblio-css4-images"></a>[CSS4-IMAGES]
-   <dd>Elika Etemad; Tab Atkins Jr.. <a href="http://www.w3.org/TR/css4-images/">CSS Image Values and Replaced Content Module Level 4</a>. 11 September 2012. WD. URL: <a href="http://www.w3.org/TR/css4-images/">http://www.w3.org/TR/css4-images/</a>
-   <dt id="biblio-cssom-1"><a class="self-link" href="#biblio-cssom-1"></a>[CSSOM-1]
-   <dd>CSS Object Model Level 1 URL: <a href="http://www.w3.org/TR/cssom/">http://www.w3.org/TR/cssom/</a>
    <dt id="biblio-rfc2119"><a class="self-link" href="#biblio-rfc2119"></a>[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
    <dt id="biblio-svg-integration"><a class="self-link" href="#biblio-svg-integration"></a>[SVG-INTEGRATION]
@@ -4059,6 +3891,10 @@ Non-experimental implementations</span><a class="self-link" href="#testing"></a>
    <dd>Tantek Çelik; et al. <a href="http://www.w3.org/TR/css3-selectors/">Selectors Level 3</a>. 29 September 2011. REC. URL: <a href="http://www.w3.org/TR/css3-selectors/">http://www.w3.org/TR/css3-selectors/</a>
    <dt id="biblio-svg10"><a class="self-link" href="#biblio-svg10"></a>[SVG10]
    <dd>Jon Ferraiolo. <a href="http://www.w3.org/TR/SVG/">Scalable Vector Graphics (SVG) 1.0 Specification</a>. 4 September 2001. REC. URL: <a href="http://www.w3.org/TR/SVG/">http://www.w3.org/TR/SVG/</a>
+   <dt id="biblio-css3-background"><a class="self-link" href="#biblio-css3-background"></a>[CSS3-BACKGROUND]
+   <dd>Bert Bos; Elika Etemad; Brad Kemper. <a href="http://www.w3.org/TR/css3-background/">CSS Backgrounds and Borders Module Level 3</a>. 9 September 2014. CR. URL: <a href="http://www.w3.org/TR/css3-background/">http://www.w3.org/TR/css3-background/</a>
+   <dt id="biblio-css4-images"><a class="self-link" href="#biblio-css4-images"></a>[CSS4-IMAGES]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="http://www.w3.org/TR/css4-images/">CSS Image Values and Replaced Content Module Level 4</a>. 11 September 2012. WD. URL: <a href="http://www.w3.org/TR/css4-images/">http://www.w3.org/TR/css4-images/</a>
    <dt id="biblio-html5"><a class="self-link" href="#biblio-html5"></a>[HTML5]
    <dd>Ian Hickson; et al. <a href="http://www.w3.org/TR/html5/">HTML5</a>. 28 October 2014. REC. URL: <a href="http://www.w3.org/TR/html5/">http://www.w3.org/TR/html5/</a>
   </dl>
@@ -4079,7 +3915,6 @@ Non-experimental implementations</span><a class="self-link" href="#testing"></a>
     <tr>
      <th scope="row"><a class="css" data-link-type="property" href="#propdef-box-sizing">box-sizing</a>
      <td>content-box |
-padding-box |
 border-box
      <td>content-box
      <td>all elements that accept width or height
@@ -4234,506 +4069,5 @@ ellipsis |
      <td>interactive
      <td>no
      <td>as specified
-  </table>
-  <script>self = (typeof window !== 'undefined')
-	? window   // if in browser
-	: (
-		(typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope)
-		? self // if in worker
-		: {}   // if in node js
-	);
-
-/**
- * Prism: Lightweight, robust, elegant syntax highlighting
- * MIT license http://www.opensource.org/licenses/mit-license.php/
- * @author Lea Verou http://lea.verou.me
- */
-
-var Prism = (function(){
-
-// Private helper vars
-var lang = /\blang(?:uage)?-(?!\*)(\w+)\b/i;
-
-var _ = self.Prism = {
-	util: {
-		encode: function (tokens) {
-			if (tokens instanceof Token) {
-				return new Token(tokens.type, _.util.encode(tokens.content), tokens.alias);
-			} else if (_.util.type(tokens) === 'Array') {
-				return tokens.map(_.util.encode);
-			} else {
-				return tokens.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/\u00a0/g, ' ');
-			}
-		},
-
-		type: function (o) {
-			return Object.prototype.toString.call(o).match(/\[object (\w+)\]/)[1];
-		},
-
-		// Deep clone a language definition (e.g. to extend it)
-		clone: function (o) {
-			var type = _.util.type(o);
-
-			switch (type) {
-				case 'Object':
-					var clone = {};
-
-					for (var key in o) {
-						if (o.hasOwnProperty(key)) {
-							clone[key] = _.util.clone(o[key]);
-						}
-					}
-
-					return clone;
-
-				case 'Array':
-					return o.slice();
-			}
-
-			return o;
-		}
-	},
-
-	languages: {
-		extend: function (id, redef) {
-			var lang = _.util.clone(_.languages[id]);
-
-			for (var key in redef) {
-				lang[key] = redef[key];
-			}
-
-			return lang;
-		},
-
-		// Insert a token before another token in a language literal
-		insertBefore: function (inside, before, insert, root) {
-			root = root || _.languages;
-			var grammar = root[inside];
-			var ret = {};
-
-			for (var token in grammar) {
-
-				if (grammar.hasOwnProperty(token)) {
-
-					if (token == before) {
-
-						for (var newToken in insert) {
-
-							if (insert.hasOwnProperty(newToken)) {
-								ret[newToken] = insert[newToken];
-							}
-						}
-					}
-
-					ret[token] = grammar[token];
-				}
-			}
-
-			return root[inside] = ret;
-		},
-
-		// Traverse a language definition with Depth First Search
-		DFS: function(o, callback, type) {
-			for (var i in o) {
-				if (o.hasOwnProperty(i)) {
-					callback.call(o, i, o[i], type || i);
-
-					if (_.util.type(o[i]) === 'Object') {
-						_.languages.DFS(o[i], callback);
-					} else if (_.util.type(o[i]) === 'Array') {
-						_.languages.DFS(o[i], callback, i);
-					}
-				}
-			}
-		}
-	},
-
-	highlightAll: function(async, callback) {
-		var elements = document.querySelectorAll('code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code');
-		for (var i=0, element; element = elements[i++];) {
-			if (element.classList.contains("idl")) {
-				// Bikeshed handles IDL blocks already.
-				continue;
-			}
-			_.highlightElement(element, async === true, callback);
-		}
-
-		var elements = document.querySelectorAll('pre[class*="language-"], [class*="language-"] pre, pre[class*="lang-"], [class*="lang-"] pre');
-		for (var i=0, element; element = elements[i++];) {
-			if (element.firstElementChild && element.firstElementChild.tagName.toLowerCase() == "code") {
-				// Already handled by the previous loop
-				continue;
-			}
-			if (element.classList.contains("idl")) {
-				// Bikeshed handles IDL blocks already.
-				continue;
-			}
-			_.highlightElement(element, async === true, callback);
-		}
-	},
-
-	highlightElement: function(element, async, callback) {
-		// Find language
-		var language, grammar, parent = element;
-
-		while (parent && !lang.test(parent.className)) {
-			parent = parent.parentNode;
-		}
-
-		if (parent) {
-			language = (parent.className.match(lang) || [,''])[1];
-			grammar = _.languages[language];
-		}
-
-		if (!grammar) {
-			return;
-		}
-
-		// Set language on the element, if not present
-		element.className = element.className.replace(lang, '').replace(/\s+/g, ' ') + ' language-' + language;
-
-		// Set language on the parent, for styling
-		parent = element.parentNode;
-
-		if (/pre/i.test(parent.nodeName)) {
-			parent.className = parent.className.replace(lang, '').replace(/\s+/g, ' ') + ' language-' + language;
-		}
-
-		var code = element.textContent;
-
-		if(!code) {
-			return;
-		}
-
-		var env = {
-			element: element,
-			language: language,
-			grammar: grammar,
-			code: code
-		};
-
-		_.hooks.run('before-highlight', env);
-
-		if (async && self.Worker) {
-			var worker = new Worker(_.filename);
-
-			worker.onmessage = function(evt) {
-				env.highlightedCode = Token.stringify(JSON.parse(evt.data), language);
-
-				_.hooks.run('before-insert', env);
-
-				env.element.innerHTML = env.highlightedCode;
-
-				callback && callback.call(env.element);
-				_.hooks.run('after-highlight', env);
-			};
-
-			worker.postMessage(JSON.stringify({
-				language: env.language,
-				code: env.code
-			}));
-		}
-		else {
-			env.highlightedCode = _.highlight(env.code, env.grammar, env.language)
-
-			_.hooks.run('before-insert', env);
-
-			env.element.innerHTML = env.highlightedCode;
-
-			callback && callback.call(element);
-
-			_.hooks.run('after-highlight', env);
-		}
-	},
-
-	highlight: function (text, grammar, language) {
-		var tokens = _.tokenize(text, grammar);
-		return Token.stringify(_.util.encode(tokens), language);
-	},
-
-	tokenize: function(text, grammar, language) {
-		var Token = _.Token;
-
-		var strarr = [text];
-
-		var rest = grammar.rest;
-
-		if (rest) {
-			for (var token in rest) {
-				grammar[token] = rest[token];
-			}
-
-			delete grammar.rest;
-		}
-
-		tokenloop: for (var token in grammar) {
-			if(!grammar.hasOwnProperty(token) || !grammar[token]) {
-				continue;
-			}
-
-			var patterns = grammar[token];
-			patterns = (_.util.type(patterns) === "Array") ? patterns : [patterns];
-
-			for (var j = 0; j < patterns.length; ++j) {
-				var pattern = patterns[j],
-					inside = pattern.inside,
-					lookbehind = !!pattern.lookbehind,
-					lookbehindLength = 0,
-					alias = pattern.alias;
-
-				pattern = pattern.pattern || pattern;
-
-				for (var i=0; i<strarr.length; i++) { // Don’t cache length as it changes during the loop
-
-					var str = strarr[i];
-
-					if (strarr.length > text.length) {
-						// Something went terribly wrong, ABORT, ABORT!
-						break tokenloop;
-					}
-
-					if (str instanceof Token) {
-						continue;
-					}
-
-					pattern.lastIndex = 0;
-
-					var match = pattern.exec(str);
-
-					if (match) {
-						if(lookbehind) {
-							lookbehindLength = match[1].length;
-						}
-
-						var from = match.index - 1 + lookbehindLength,
-							match = match[0].slice(lookbehindLength),
-							len = match.length,
-							to = from + len,
-							before = str.slice(0, from + 1),
-							after = str.slice(to + 1);
-
-						var args = [i, 1];
-
-						if (before) {
-							args.push(before);
-						}
-
-						var wrapped = new Token(token, inside? _.tokenize(match, inside) : match, alias);
-
-						args.push(wrapped);
-
-						if (after) {
-							args.push(after);
-						}
-
-						Array.prototype.splice.apply(strarr, args);
-					}
-				}
-			}
-		}
-
-		return strarr;
-	},
-
-	hooks: {
-		all: {},
-
-		add: function (name, callback) {
-			var hooks = _.hooks.all;
-
-			hooks[name] = hooks[name] || [];
-
-			hooks[name].push(callback);
-		},
-
-		run: function (name, env) {
-			var callbacks = _.hooks.all[name];
-
-			if (!callbacks || !callbacks.length) {
-				return;
-			}
-
-			for (var i=0, callback; callback = callbacks[i++];) {
-				callback(env);
-			}
-		}
-	}
-};
-
-var Token = _.Token = function(type, content, alias) {
-	this.type = type;
-	this.content = content;
-	this.alias = alias;
-};
-
-Token.stringify = function(o, language, parent) {
-	if (typeof o == 'string') {
-		return o;
-	}
-
-	if (Object.prototype.toString.call(o) == '[object Array]') {
-		return o.map(function(element) {
-			return Token.stringify(element, language, o);
-		}).join('');
-	}
-
-	var env = {
-		type: o.type,
-		content: Token.stringify(o.content, language, parent),
-		tag: 'span',
-		classes: ['token', o.type],
-		attributes: {},
-		language: language,
-		parent: parent
-	};
-
-	if (env.type == 'comment') {
-		env.attributes['spellcheck'] = 'true';
-	}
-
-	if (o.alias) {
-		var aliases = _.util.type(o.alias) === 'Array' ? o.alias : [o.alias];
-		Array.prototype.push.apply(env.classes, aliases);
-	}
-
-	_.hooks.run('wrap', env);
-
-	var attributes = '';
-
-	for (var name in env.attributes) {
-		attributes += name + '="' + (env.attributes[name] || '') + '"';
-	}
-
-	return '<' + env.tag + ' class="' + env.classes.join(' ') + '" ' + attributes + '>' + env.content + '</' + env.tag + '>';
-
-};
-
-if (!self.document) {
-	if (!self.addEventListener) {
-		// in Node.js
-		return self.Prism;
-	}
- 	// In worker
-	self.addEventListener('message', function(evt) {
-		var message = JSON.parse(evt.data),
-		    lang = message.language,
-		    code = message.code;
-
-		self.postMessage(JSON.stringify(_.util.encode(_.tokenize(code, _.languages[lang]))));
-		self.close();
-	}, false);
-
-	return self.Prism;
-}
-
-// Get current script and highlight
-var script = document.getElementsByTagName('script');
-
-script = script[script.length - 1];
-
-if (script) {
-	_.filename = script.src;
-
-	if (document.addEventListener && !script.hasAttribute('data-manual')) {
-		document.addEventListener('DOMContentLoaded', _.highlightAll);
-	}
-}
-
-return self.Prism;
-
-})();
-
-if (typeof module !== 'undefined' && module.exports) {
-	module.exports = Prism;
-}
-;
-Prism.languages.markup = {
-	'comment': /<!--[\w\W]*?-->/g,
-	'prolog': /<\?.+?\?>/,
-	'doctype': /<!DOCTYPE.+?>/,
-	'cdata': /<!\[CDATA\[[\w\W]*?]]>/i,
-	'tag': {
-		pattern: /<\/?[\w:-]+\s*(?:\s+[\w:-]+(?:=(?:("|')(\\?[\w\W])*?\1|[^\s'">=]+))?\s*)*\/?>/gi,
-		inside: {
-			'tag': {
-				pattern: /^<\/?[\w:-]+/i,
-				inside: {
-					'punctuation': /^<\/?/,
-					'namespace': /^[\w-]+?:/
-				}
-			},
-			'attr-value': {
-				pattern: /=(?:('|")[\w\W]*?(\1)|[^\s>]+)/gi,
-				inside: {
-					'punctuation': /=|>|"/g
-				}
-			},
-			'punctuation': /\/?>/g,
-			'attr-name': {
-				pattern: /[\w:-]+/g,
-				inside: {
-					'namespace': /^[\w-]+?:/
-				}
-			}
-
-		}
-	},
-	'entity': /\&#?[\da-z]{1,8};/gi
-};
-
-// Plugin to make entity title show the real entity, idea by Roman Komarov
-Prism.hooks.add('wrap', function(env) {
-
-	if (env.type === 'entity') {
-		env.attributes['title'] = env.content.replace(/&amp;/, '&');
-	}
-});
-;
-Prism.languages.css = {
-	'comment': /\/\*[\w\W]*?\*\//g,
-	'atrule': {
-		pattern: /@[\w-]+?.*?(;|(?=\s*{))/gi,
-		inside: {
-			'punctuation': /[;:]/g
-		}
-	},
-	'url': /url\((["']?).*?\1\)/gi,
-	'selector': /[^\{\}\s][^\{\};]*(?=\s*\{)/g,
-	'property': /(\b|\B)[\w-]+(?=\s*:)/ig,
-	'string': /("|')(\\?.)*?\1/g,
-	'important': /\B!important\b/gi,
-	'punctuation': /[\{\};:]/g,
-	'function': /[-a-z0-9]+(?=\()/ig
-};
-
-if (Prism.languages.markup) {
-	Prism.languages.insertBefore('markup', 'tag', {
-		'style': {
-			pattern: /<style[\w\W]*?>[\w\W]*?<\/style>/ig,
-			inside: {
-				'tag': {
-					pattern: /<style[\w\W]*?>|<\/style>/ig,
-					inside: Prism.languages.markup.tag.inside
-				},
-				rest: Prism.languages.css
-			}
-		}
-	});
-};
-Prism.languages.css.selector = {
-	pattern: /[^\{\}\s][^\{\}]*(?=\s*\{)/g,
-	inside: {
-		'pseudo-element': /:(?:after|before|first-letter|first-line|selection)|::[-\w]+/g,
-		'pseudo-class': /:[-\w]+(?:\(.*\))?/g,
-		'class': /\.[-:\.\w]+/g,
-		'id': /#[-:\.\w]+/g
-	}
-};
-
-Prism.languages.insertBefore('css', 'ignore', {
-	'hexcode': /#[\da-f]{3,6}/gi,
-	'entity': /\\[\da-f]{1,8}/gi,
-	'number': /[\d%\.]+/g
-});;
-</script></body>
+  </table></body>
 </html>

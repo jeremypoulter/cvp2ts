@@ -889,28 +889,7 @@
           "union": false,
           "idlType": "void"
         },
-        "name": "clear",
-        "arguments": [],
-        "extAttrs": []
-      },
-      {
-        "type": "operation",
-        "getter": false,
-        "setter": false,
-        "creator": false,
-        "deleter": false,
-        "legacycaller": false,
-        "static": false,
-        "stringifier": false,
-        "idlType": {
-          "sequence": false,
-          "generic": null,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "any"
-        },
-        "name": "delete",
+        "name": "forEach",
         "arguments": [
           {
             "optional": false,
@@ -922,59 +901,9 @@
               "nullable": false,
               "array": false,
               "union": false,
-              "idlType": "BufferSource"
+              "idlType": "any"
             },
-            "name": "source"
-          }
-        ],
-        "extAttrs": []
-      },
-      {
-        "type": "operation",
-        "getter": false,
-        "setter": false,
-        "creator": false,
-        "deleter": false,
-        "legacycaller": false,
-        "static": false,
-        "stringifier": false,
-        "idlType": {
-          "sequence": false,
-          "generic": null,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "any"
-        },
-        "name": "set",
-        "arguments": [
-          {
-            "optional": false,
-            "variadic": false,
-            "extAttrs": [],
-            "idlType": {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "BufferSource"
-            },
-            "name": "source"
-          },
-          {
-            "optional": false,
-            "variadic": false,
-            "extAttrs": [],
-            "idlType": {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "MediaKeyStatus"
-            },
-            "name": "status"
+            "name": "callback"
           }
         ],
         "extAttrs": []
