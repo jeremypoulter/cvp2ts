@@ -1,0 +1,27 @@
+{
+  "name": "cvp2ts",
+  "version": "1.0.0",
+  "description": "Testing for CVP-2/VidiPath HTML 5 APIs",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremypoulter/cvp2ts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremypoulter/cvp2ts/issues"
+  },
+  "homepage": "https://github.com/jeremypoulter/cvp2ts#readme",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "lodash": "^3.10.1",
+    "webidl2": "^2.0.11"
+  }
+}
