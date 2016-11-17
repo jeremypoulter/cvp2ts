@@ -77,11 +77,12 @@ Extracting WebIDL from a fetched specification may be skipped according to confi
 
 In order to perform a clean build, perform the following steps:
 
-<pre>
-  % make clean
-  % make
-  % make MANIFEST.json
-</pre>
+```
+npm install
+make clean
+make
+make MANIFEST.json
+```
 
 Normally rebuilding the `MANIFEST.json` file is not required unless some test has changed (or been added or removed). Note that rebuilding `MANIFEST.json` requires a committed git repository (if one is being used).
 
@@ -113,22 +114,56 @@ If it is desired that the server and client run on separated devices, then the n
 
  * At present, `cvp2ts` is being developed using the following versions of tools:
 
-<pre>
-    $ node --version
-    v0.10.26
+```
+$ node --version
+v7.1.0
 
-    $ npm --version
-    1.4.3
+$ npm --version
+3.10.9
 
-    $ npm ls --parseable true --long true cheerio | awk -F: '{print $2}'
-    cheerio@0.19.0
+$ npm ls
+cheerio@0.19.0
 
-    $ npm ls --parseable true --long true webidl2 | awk -F: '{print $2}'
-    webidl2@2.0.10
+$ npm ls --parseable true --long true webidl2 | awk -F: '{print $2}'
+cvp2ts@1.0.0 D:\Users\Jeremy\Documents\Dev\JeremyPoulter\cvp2ts
++-- cheerio@0.22.0
+| +-- css-select@1.2.0
+| | +-- boolbase@1.0.0
+| | +-- css-what@2.1.0
+| | +-- domutils@1.5.1
+| | `-- nth-check@1.0.1
+| +-- dom-serializer@0.1.0
+| | `-- domelementtype@1.1.3
+| +-- entities@1.1.1
+| +-- htmlparser2@3.9.2
+| | +-- domelementtype@1.3.0
+| | +-- domhandler@2.3.0
+| | +-- inherits@2.0.3
+| | `-- readable-stream@2.2.2
+| |   +-- buffer-shims@1.0.0
+| |   +-- core-util-is@1.0.2
+| |   +-- isarray@1.0.0
+| |   +-- process-nextick-args@1.0.7
+| |   +-- string_decoder@0.10.31
+| |   `-- util-deprecate@1.0.2
+| +-- lodash.assignin@4.2.0
+| +-- lodash.bind@4.2.1
+| +-- lodash.defaults@4.2.0
+| +-- lodash.filter@4.6.0
+| +-- lodash.flatten@4.4.0
+| +-- lodash.foreach@4.5.0
+| +-- lodash.map@4.6.0
+| +-- lodash.merge@4.6.0
+| +-- lodash.pick@4.4.0
+| +-- lodash.reduce@4.6.0
+| +-- lodash.reject@4.6.0
+| `-- lodash.some@4.6.0
++-- lodash@3.10.1
+`-- webidl2@2.0.11
 
-    $ python -V
-    Python 2.7.9
-</pre>
+$ python -V
+Python 3.5.2
+```
 
 ## Issues
 
