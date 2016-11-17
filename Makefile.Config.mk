@@ -23,6 +23,12 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# Helpers for debugging the Node.js utils
+NODE_DEBUG = --inspect=9222 --debug-brk
+
+# Comment out to show make commands
+V=@
+
 # commands
 CP		= cp
 ECHO		= echo

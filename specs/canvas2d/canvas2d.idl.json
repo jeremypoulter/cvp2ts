@@ -1,5 +1,44 @@
 [
   {
+    "type": "typedef",
+    "typeExtAttrs": [],
+    "idlType": {
+      "sequence": false,
+      "generic": null,
+      "nullable": false,
+      "array": false,
+      "union": true,
+      "idlType": [
+        {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "HTMLImageElement"
+        },
+        {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "HTMLVideoElement"
+        },
+        {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "HTMLCanvasElement"
+        }
+      ]
+    },
+    "name": "CanvasImageSource",
+    "extAttrs": []
+  },
+  {
     "type": "interface",
     "name": "CanvasRenderingContext2D",
     "partial": false,
@@ -741,33 +780,8 @@
               "generic": null,
               "nullable": false,
               "array": false,
-              "union": true,
-              "idlType": [
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLImageElement"
-                },
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLCanvasElement"
-                },
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLVideoElement"
-                }
-              ]
+              "union": false,
+              "idlType": "CanvasImageSource"
             },
             "name": "image"
           },
@@ -780,7 +794,7 @@
                 "arguments": null,
                 "rhs": {
                   "type": "identifier",
-                  "value": "Emptytring"
+                  "value": "EmptyString"
                 }
               }
             ],
@@ -1489,33 +1503,8 @@
               "generic": null,
               "nullable": false,
               "array": false,
-              "union": true,
-              "idlType": [
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLImageElement"
-                },
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLCanvasElement"
-                },
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLVideoElement"
-                }
-              ]
+              "union": false,
+              "idlType": "CanvasImageSource"
             },
             "name": "image"
           },
@@ -1578,33 +1567,8 @@
               "generic": null,
               "nullable": false,
               "array": false,
-              "union": true,
-              "idlType": [
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLImageElement"
-                },
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLCanvasElement"
-                },
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLVideoElement"
-                }
-              ]
+              "union": false,
+              "idlType": "CanvasImageSource"
             },
             "name": "image"
           },
@@ -1695,33 +1659,8 @@
               "generic": null,
               "nullable": false,
               "array": false,
-              "union": true,
-              "idlType": [
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLImageElement"
-                },
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLCanvasElement"
-                },
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLVideoElement"
-                }
-              ]
+              "union": false,
+              "idlType": "CanvasImageSource"
             },
             "name": "image"
           },
@@ -2157,62 +2096,6 @@
               "idlType": "double"
             },
             "name": "dy"
-          },
-          {
-            "optional": false,
-            "variadic": false,
-            "extAttrs": [],
-            "idlType": {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "name": "dirtyX"
-          },
-          {
-            "optional": false,
-            "variadic": false,
-            "extAttrs": [],
-            "idlType": {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "name": "dirtyY"
-          },
-          {
-            "optional": false,
-            "variadic": false,
-            "extAttrs": [],
-            "idlType": {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "name": "dirtyWidth"
-          },
-          {
-            "optional": false,
-            "variadic": false,
-            "extAttrs": [],
-            "idlType": {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "name": "dirtyHeight"
           }
         ],
         "extAttrs": []
@@ -2277,6 +2160,62 @@
               "idlType": "double"
             },
             "name": "dy"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "name": "dirtyX"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "name": "dirtyY"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "name": "dirtyWidth"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "name": "dirtyHeight"
           }
         ],
         "extAttrs": []
@@ -3099,7 +3038,7 @@
               "union": false,
               "idlType": "boolean"
             },
-            "name": "anticlockwise",
+            "name": "counterclockwise",
             "default": {
               "type": "boolean",
               "value": false

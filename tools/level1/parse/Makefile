@@ -35,7 +35,7 @@ outfiles	:= $(foreach spec, $(SPECS_L1), $(SPECDIR)/$(spec)/$(spec).$(OUTSUFFIX)
 all: $(outfiles)
 
 %.$(OUTSUFFIX): %.$(INSUFFIX) %.$(CONFIGSUFFIX)
-	@$(NODE) $(TOOL) $(TOOLFLAGS) $(PARSEFLAGS) --config $(@D)/$(*F).$(CONFIGSUFFIX) $< $@
+	$(V)$(NODE) $(TOOL) $(TOOLFLAGS) $(PARSEFLAGS) --config $(@D)/$(*F).$(CONFIGSUFFIX) $< $@
 
 clean:
 	@$(CLEANTOOL) --phase parse $(outfiles)

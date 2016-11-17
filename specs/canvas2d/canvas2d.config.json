@@ -1,6 +1,6 @@
 {
     "spec": "canvas2d",
-    "source": "http://www.w3.org/html/wg/drafts/2dcontext/html5_canvas_CR/",
+    "source": "http://www.w3.org/TR/2dcontext/",
     "levels": [ 1 ],
     "local": "canvas2d.html",
     "helpers1": [

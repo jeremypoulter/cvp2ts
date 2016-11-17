@@ -1,7 +1,7 @@
 {
     "spec": "html5",
     "specVersion": "5.0",
-    "source": "http://www.w3.org/html/wg/drafts/html/CR/single-page.html",
+    "source": "https://www.w3.org/TR/html5/single-page.html",
     "levels": [ 1 ],
     "local": "html5.html",
     "helpers1": [

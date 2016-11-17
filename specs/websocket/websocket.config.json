@@ -1,6 +1,6 @@
 {
     "spec": "websocket",
-    "source": "http://dev.w3.org/html5/websockets/",
+    "source": "https://www.w3.org/TR/websockets/",
     "levels": [ 1 ],
     "local": "websocket.html",
     "helpers1": [],

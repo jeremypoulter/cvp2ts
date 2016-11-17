@@ -112,6 +112,7 @@
                 setTimeout(function() { $.onFatalException('Unknown method response!'); }, 0);
         },
         onHeadResponse : function(response) {
+            var spec = $.options['spec'];
             var fetchRequired = !!$.options['force'];
             if (response.statusCode == 200) {
                 var lastModifiedCurrent = Date.parse(response.headers['last-modified']);
@@ -134,8 +135,9 @@
                     }
                 }
                 $.lastModifiedCurrent = lastModifiedCurrent;
+            } else {
+                console.warn('[I]: ' + 'Unexpected HTTP code for ' + spec + ' from ' + url.format($.url) + ' ('+response.statusCode+')');
             }
-            var spec = $.options['spec'];
             if (fetchRequired) {
                 if ($.options['verbose'])
                     console.warn('[I]: ' + 'Fetching spec ' + spec + ' from ' + url.format($.url) + ' ...');

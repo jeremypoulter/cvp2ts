@@ -4,3 +4,6 @@
 # ignored files
 *~
 *.orig
+
+node_modules/
+.vscode

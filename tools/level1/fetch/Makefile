@@ -34,7 +34,7 @@ outfiles	:= $(foreach spec, $(SPECS_L1), $(SPECDIR)/$(spec)/$(spec).$(OUTSUFFIX)
 all: $(outfiles)
 
 %.$(OUTSUFFIX): FORCE %.$(CONFIGSUFFIX)
-	@$(NODE) $(TOOL) $(TOOLFLAGS) $(FETCHFLAGS) --config $(@D)/$(*F).$(CONFIGSUFFIX) $@.lm $@
+	$(V)$(NODE) $(TOOL) $(TOOLFLAGS) $(FETCHFLAGS) --config $(@D)/$(*F).$(CONFIGSUFFIX) $@.lm $@
 
 FORCE:
 
