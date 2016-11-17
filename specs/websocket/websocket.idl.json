@@ -1,14 +1,5 @@
 [
   {
-    "type": "enum",
-    "name": "BinaryType",
-    "values": [
-      "blob",
-      "arraybuffer"
-    ],
-    "extAttrs": []
-  },
-  {
     "type": "interface",
     "name": "WebSocket",
     "partial": false,
@@ -277,7 +268,7 @@
           "nullable": false,
           "array": false,
           "union": false,
-          "idlType": "BinaryType"
+          "idlType": "DOMString"
         },
         "name": "binaryType",
         "extAttrs": []
@@ -481,18 +472,6 @@
             "name": "protocols"
           }
         ]
-      },
-      {
-        "name": "Exposed",
-        "arguments": null,
-        "rhs": {
-          "type": "identifier",
-          "value": "Window"
-        }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
       }
     ]
   },
@@ -587,18 +566,6 @@
             "name": "eventInitDict"
           }
         ]
-      },
-      {
-        "name": "Exposed",
-        "arguments": null,
-        "rhs": {
-          "type": "identifier",
-          "value": "Window"
-        }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
       }
     ]
   },
@@ -610,6 +577,7 @@
       {
         "type": "field",
         "name": "wasClean",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -623,6 +591,7 @@
       {
         "type": "field",
         "name": "code",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -636,6 +605,7 @@
       {
         "type": "field",
         "name": "reason",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,

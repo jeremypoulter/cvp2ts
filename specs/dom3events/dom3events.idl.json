@@ -84,6 +84,7 @@
       {
         "type": "field",
         "name": "view",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -100,6 +101,7 @@
       {
         "type": "field",
         "name": "detail",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -186,6 +188,7 @@
       {
         "type": "field",
         "name": "relatedTarget",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -477,6 +480,7 @@
       {
         "type": "field",
         "name": "screenX",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -494,6 +498,7 @@
       {
         "type": "field",
         "name": "screenY",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -511,6 +516,7 @@
       {
         "type": "field",
         "name": "clientX",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -528,6 +534,7 @@
       {
         "type": "field",
         "name": "clientY",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -545,6 +552,7 @@
       {
         "type": "field",
         "name": "ctrlKey",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -562,6 +570,7 @@
       {
         "type": "field",
         "name": "shiftKey",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -579,6 +588,7 @@
       {
         "type": "field",
         "name": "altKey",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -596,6 +606,7 @@
       {
         "type": "field",
         "name": "metaKey",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -613,6 +624,7 @@
       {
         "type": "field",
         "name": "button",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -630,6 +642,7 @@
       {
         "type": "field",
         "name": "buttons",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -647,6 +660,7 @@
       {
         "type": "field",
         "name": "relatedTarget",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -816,6 +830,7 @@
       {
         "type": "field",
         "name": "deltaX",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -833,6 +848,7 @@
       {
         "type": "field",
         "name": "deltaY",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -850,6 +866,7 @@
       {
         "type": "field",
         "name": "deltaZ",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -867,6 +884,7 @@
       {
         "type": "field",
         "name": "deltaMode",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -970,6 +988,7 @@
       {
         "type": "field",
         "name": "data",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -987,6 +1006,7 @@
       {
         "type": "field",
         "name": "isComposing",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1289,6 +1309,7 @@
       {
         "type": "field",
         "name": "key",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1306,6 +1327,7 @@
       {
         "type": "field",
         "name": "code",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1323,6 +1345,7 @@
       {
         "type": "field",
         "name": "location",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1340,6 +1363,7 @@
       {
         "type": "field",
         "name": "ctrlKey",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1357,6 +1381,7 @@
       {
         "type": "field",
         "name": "shiftKey",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1374,6 +1399,7 @@
       {
         "type": "field",
         "name": "altKey",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1391,6 +1417,7 @@
       {
         "type": "field",
         "name": "metaKey",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1408,6 +1435,7 @@
       {
         "type": "field",
         "name": "repeat",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1425,6 +1453,7 @@
       {
         "type": "field",
         "name": "isComposing",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1511,6 +1540,7 @@
       {
         "type": "field",
         "name": "data",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -2660,6 +2690,7 @@
       {
         "type": "field",
         "name": "charCode",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -2677,6 +2708,7 @@
       {
         "type": "field",
         "name": "keyCode",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -2694,6 +2726,7 @@
       {
         "type": "field",
         "name": "which",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,

@@ -306,10 +306,13 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": [
-          "Window",
-          "Worker"
-        ]
+        "rhs": {
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
+        }
       }
     ]
   },
@@ -465,10 +468,13 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": [
-          "Window",
-          "Worker"
-        ]
+        "rhs": {
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
+        }
       }
     ]
   },
@@ -599,191 +605,14 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": [
-          "Window",
-          "Worker"
-        ]
+        "rhs": {
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
+        }
       }
     ]
-  },
-  {
-    "type": "interface",
-    "name": "PortCollection",
-    "partial": false,
-    "members": [
-      {
-        "type": "operation",
-        "getter": false,
-        "setter": false,
-        "creator": false,
-        "deleter": false,
-        "legacycaller": false,
-        "static": false,
-        "stringifier": false,
-        "idlType": {
-          "sequence": false,
-          "generic": null,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "void"
-        },
-        "name": "add",
-        "arguments": [
-          {
-            "optional": false,
-            "variadic": false,
-            "extAttrs": [],
-            "idlType": {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "MessagePort"
-            },
-            "name": "port"
-          }
-        ],
-        "extAttrs": []
-      },
-      {
-        "type": "operation",
-        "getter": false,
-        "setter": false,
-        "creator": false,
-        "deleter": false,
-        "legacycaller": false,
-        "static": false,
-        "stringifier": false,
-        "idlType": {
-          "sequence": false,
-          "generic": null,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "void"
-        },
-        "name": "remove",
-        "arguments": [
-          {
-            "optional": false,
-            "variadic": false,
-            "extAttrs": [],
-            "idlType": {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "MessagePort"
-            },
-            "name": "port"
-          }
-        ],
-        "extAttrs": []
-      },
-      {
-        "type": "operation",
-        "getter": false,
-        "setter": false,
-        "creator": false,
-        "deleter": false,
-        "legacycaller": false,
-        "static": false,
-        "stringifier": false,
-        "idlType": {
-          "sequence": false,
-          "generic": null,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "void"
-        },
-        "name": "clear",
-        "arguments": [],
-        "extAttrs": []
-      },
-      {
-        "type": "operation",
-        "getter": false,
-        "setter": false,
-        "creator": false,
-        "deleter": false,
-        "legacycaller": false,
-        "static": false,
-        "stringifier": false,
-        "idlType": {
-          "sequence": false,
-          "generic": null,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "void"
-        },
-        "name": "iterate",
-        "arguments": [
-          {
-            "optional": false,
-            "variadic": false,
-            "extAttrs": [],
-            "idlType": {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "PortCollectionCallback"
-            },
-            "name": "callback"
-          }
-        ],
-        "extAttrs": []
-      }
-    ],
-    "inheritance": null,
-    "extAttrs": [
-      {
-        "name": "Constructor",
-        "arguments": null
-      },
-      {
-        "name": "Exposed",
-        "arguments": null,
-        "rhs": [
-          "Window",
-          "Worker"
-        ]
-      }
-    ]
-  },
-  {
-    "type": "callback",
-    "name": "PortCollectionCallback",
-    "idlType": {
-      "sequence": false,
-      "generic": null,
-      "nullable": false,
-      "array": false,
-      "union": false,
-      "idlType": "void"
-    },
-    "arguments": [
-      {
-        "optional": false,
-        "variadic": false,
-        "extAttrs": [],
-        "idlType": {
-          "sequence": false,
-          "generic": null,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "MessagePort"
-        },
-        "name": "port"
-      }
-    ],
-    "extAttrs": []
   }
 ]

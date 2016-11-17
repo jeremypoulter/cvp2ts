@@ -1,6 +1,6 @@
 {
     "spec": "file",
-    "source": "https://w3c.github.io/FileAPI/",
+    "source": "https://www.w3.org/TR/FileAPI/",
     "levels": [ 1 ],
     "local": "file.html",
     "helpers1": [

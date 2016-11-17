@@ -195,18 +195,6 @@
             "name": "eventSourceInitDict"
           }
         ]
-      },
-      {
-        "name": "Exposed",
-        "arguments": null,
-        "rhs": {
-          "type": "identifier",
-          "value": "Window"
-        }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
       }
     ]
   },
@@ -218,6 +206,7 @@
       {
         "type": "field",
         "name": "withCredentials",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,

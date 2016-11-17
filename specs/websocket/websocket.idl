@@ -1,6 +1,5 @@
 
-enum BinaryType { "blob", "arraybuffer" };
-[Constructor(DOMString url, optional (DOMString or DOMString[]) protocols), Exposed=Window,Worker]
+[Constructor(DOMString url, optional (DOMString or DOMString[]) protocols)]
 interface WebSocket : EventTarget {
   readonly attribute DOMString url;
 
@@ -22,14 +21,14 @@ interface WebSocket : EventTarget {
 
   // messaging
            attribute EventHandler onmessage;
-           attribute BinaryType binaryType;
+           attribute DOMString binaryType;
   void send(DOMString data);
   void send(Blob data);
   void send(ArrayBuffer data);
   void send(ArrayBufferView data);
 };
 
-[Constructor(DOMString type, optional CloseEventInit eventInitDict), Exposed=Window,Worker]
+[Constructor(DOMString type, optional CloseEventInit eventInitDict)]
 interface CloseEvent : Event {
   readonly attribute boolean wasClean;
   readonly attribute unsigned short code;

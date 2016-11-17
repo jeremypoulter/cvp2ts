@@ -768,6 +768,7 @@
       {
         "type": "field",
         "name": "bubbles",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -785,6 +786,7 @@
       {
         "type": "field",
         "name": "cancelable",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -961,6 +963,7 @@
       {
         "type": "field",
         "name": "detail",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1915,6 +1918,7 @@
       {
         "type": "field",
         "name": "childList",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1932,6 +1936,7 @@
       {
         "type": "field",
         "name": "attributes",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1945,6 +1950,7 @@
       {
         "type": "field",
         "name": "characterData",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1958,6 +1964,7 @@
       {
         "type": "field",
         "name": "subtree",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1975,6 +1982,7 @@
       {
         "type": "field",
         "name": "attributeOldValue",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -1988,6 +1996,7 @@
       {
         "type": "field",
         "name": "characterDataOldValue",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -2001,6 +2010,7 @@
       {
         "type": "field",
         "name": "attributeFilter",
+        "required": false,
         "idlType": {
           "sequence": true,
           "generic": "sequence",

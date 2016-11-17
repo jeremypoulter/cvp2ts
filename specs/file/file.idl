@@ -18,9 +18,9 @@
     };
 
     dictionary BlobPropertyBag {
-		
+    
       DOMString type = "";
-	
+  
     };
     
 
@@ -40,7 +40,7 @@ dictionary FilePropertyBag {
       long long lastModified;
   
 };
-	  
+    
 
 
     [Exposed=Window,Worker] interface FileList {
@@ -51,52 +51,52 @@ dictionary FilePropertyBag {
 
 
 
-	[Constructor, Exposed=Window,Worker]
-	interface FileReader: EventTarget {
+  [Constructor, Exposed=Window,Worker]
+  interface FileReader: EventTarget {
 
-	  // async read methods
-	  void readAsArrayBuffer(Blob blob);
-	  void readAsText(Blob blob, optional DOMString label);
-	  void readAsDataURL(Blob blob);
+    // async read methods
+    void readAsArrayBuffer(Blob blob);
+    void readAsText(Blob blob, optional DOMString label);
+    void readAsDataURL(Blob blob);
 
-	  void abort();
+    void abort();
 
-	  // states
-	  const unsigned short EMPTY = 0;
-	  const unsigned short LOADING = 1;
-	  const unsigned short DONE = 2;
-
-
-	  readonly attribute unsigned short readyState;
-
-	  // File or Blob data
-	  readonly attribute (DOMString or ArrayBuffer)? result;
-
-	  readonly attribute DOMError? error;
-
-	  // event handler attributes
-	  attribute EventHandler onloadstart;
-	  attribute EventHandler onprogress;
-	  attribute EventHandler onload;
-	  attribute EventHandler onabort;
-	  attribute EventHandler onerror;
-	  attribute EventHandler onloadend;
-
-	};
-	  
+    // states
+    const unsigned short EMPTY = 0;
+    const unsigned short LOADING = 1;
+    const unsigned short DONE = 2;
 
 
+    readonly attribute unsigned short readyState;
 
-	[Constructor, Exposed=Worker]
-	interface FileReaderSync {
+    // File or Blob data
+    readonly attribute (DOMString or ArrayBuffer)? result;
 
-	  // Synchronously return strings
+    readonly attribute DOMError? error;
 
-	  ArrayBuffer readAsArrayBuffer(Blob blob); 
-	  DOMString readAsText(Blob blob, optional DOMString label);
-	  DOMString readAsDataURL(Blob blob);
-	};
-	
+    // event handler attributes
+    attribute EventHandler onloadstart;
+    attribute EventHandler onprogress;
+    attribute EventHandler onload;
+    attribute EventHandler onabort;
+    attribute EventHandler onerror;
+    attribute EventHandler onloadend;
+
+  };
+    
+
+
+
+  [Constructor, Exposed=Worker]
+  interface FileReaderSync {
+
+    // Synchronously return strings
+
+    ArrayBuffer readAsArrayBuffer(Blob blob); 
+    DOMString readAsText(Blob blob, optional DOMString label);
+    DOMString readAsDataURL(Blob blob);
+  };
+  
 
 
 

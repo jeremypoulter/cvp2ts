@@ -203,6 +203,7 @@
       {
         "type": "field",
         "name": "alpha",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -220,6 +221,7 @@
       {
         "type": "field",
         "name": "depth",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -237,6 +239,7 @@
       {
         "type": "field",
         "name": "stencil",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -254,6 +257,7 @@
       {
         "type": "field",
         "name": "antialias",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -271,6 +275,7 @@
       {
         "type": "field",
         "name": "premultipliedAlpha",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -288,6 +293,7 @@
       {
         "type": "field",
         "name": "preserveDrawingBuffer",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -305,6 +311,7 @@
       {
         "type": "field",
         "name": "preferLowPowerToHighPerformance",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -322,6 +329,7 @@
       {
         "type": "field",
         "name": "failIfMajorPerformanceCaveat",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -12603,6 +12611,7 @@
       {
         "type": "field",
         "name": "statusMessage",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,

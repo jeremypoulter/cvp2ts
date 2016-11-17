@@ -1,5 +1,45 @@
 [
   {
+    "type": "typedef",
+    "typeExtAttrs": [],
+    "idlType": {
+      "sequence": false,
+      "generic": null,
+      "nullable": false,
+      "array": false,
+      "union": true,
+      "idlType": [
+        {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "HTMLImageElement"
+        },
+        {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "HTMLVideoElement"
+        },
+        {
+          "sequence": false,
+          "generic": null,
+          "nullable": false,
+          "array": false,
+          "union": false,
+          "idlType": "HTMLCanvasElement"
+        }
+      ]
+    },
+    "name": "CanvasImageSource",
+    "extAttrs": [],
+    "spec": "canvas2d"
+  },
+  {
     "type": "interface",
     "name": "CanvasRenderingContext2D",
     "partial": false,
@@ -741,33 +781,8 @@
               "generic": null,
               "nullable": false,
               "array": false,
-              "union": true,
-              "idlType": [
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLImageElement"
-                },
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLCanvasElement"
-                },
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLVideoElement"
-                }
-              ]
+              "union": false,
+              "idlType": "CanvasImageSource"
             },
             "name": "image"
           },
@@ -780,7 +795,7 @@
                 "arguments": null,
                 "rhs": {
                   "type": "identifier",
-                  "value": "Emptytring"
+                  "value": "EmptyString"
                 }
               }
             ],
@@ -1489,33 +1504,8 @@
               "generic": null,
               "nullable": false,
               "array": false,
-              "union": true,
-              "idlType": [
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLImageElement"
-                },
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLCanvasElement"
-                },
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLVideoElement"
-                }
-              ]
+              "union": false,
+              "idlType": "CanvasImageSource"
             },
             "name": "image"
           },
@@ -1578,33 +1568,8 @@
               "generic": null,
               "nullable": false,
               "array": false,
-              "union": true,
-              "idlType": [
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLImageElement"
-                },
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLCanvasElement"
-                },
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLVideoElement"
-                }
-              ]
+              "union": false,
+              "idlType": "CanvasImageSource"
             },
             "name": "image"
           },
@@ -1695,33 +1660,8 @@
               "generic": null,
               "nullable": false,
               "array": false,
-              "union": true,
-              "idlType": [
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLImageElement"
-                },
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLCanvasElement"
-                },
-                {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "array": false,
-                  "union": false,
-                  "idlType": "HTMLVideoElement"
-                }
-              ]
+              "union": false,
+              "idlType": "CanvasImageSource"
             },
             "name": "image"
           },
@@ -2157,62 +2097,6 @@
               "idlType": "double"
             },
             "name": "dy"
-          },
-          {
-            "optional": false,
-            "variadic": false,
-            "extAttrs": [],
-            "idlType": {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "name": "dirtyX"
-          },
-          {
-            "optional": false,
-            "variadic": false,
-            "extAttrs": [],
-            "idlType": {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "name": "dirtyY"
-          },
-          {
-            "optional": false,
-            "variadic": false,
-            "extAttrs": [],
-            "idlType": {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "name": "dirtyWidth"
-          },
-          {
-            "optional": false,
-            "variadic": false,
-            "extAttrs": [],
-            "idlType": {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "name": "dirtyHeight"
           }
         ],
         "extAttrs": []
@@ -2277,6 +2161,62 @@
               "idlType": "double"
             },
             "name": "dy"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "name": "dirtyX"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "name": "dirtyY"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "name": "dirtyWidth"
+          },
+          {
+            "optional": false,
+            "variadic": false,
+            "extAttrs": [],
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "array": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "name": "dirtyHeight"
           }
         ],
         "extAttrs": []
@@ -3103,7 +3043,7 @@
               "union": false,
               "idlType": "boolean"
             },
-            "name": "anticlockwise",
+            "name": "counterclockwise",
             "default": {
               "type": "boolean",
               "value": false
@@ -3413,6 +3353,7 @@
       {
         "type": "field",
         "name": "style",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -3430,6 +3371,7 @@
       {
         "type": "field",
         "name": "weight",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -3447,6 +3389,7 @@
       {
         "type": "field",
         "name": "stretch",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -3464,6 +3407,7 @@
       {
         "type": "field",
         "name": "unicodeRange",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -3481,6 +3425,7 @@
       {
         "type": "field",
         "name": "variant",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -3498,6 +3443,7 @@
       {
         "type": "field",
         "name": "featureSettings",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -3812,6 +3758,7 @@
       {
         "type": "field",
         "name": "fontfaces",
+        "required": false,
         "idlType": {
           "sequence": true,
           "generic": "sequence",
@@ -4495,7 +4442,7 @@
             "variadic": false,
             "extAttrs": [],
             "idlType": {
-              "sequence": true,
+              "sequence": false,
               "generic": null,
               "nullable": false,
               "array": false,
@@ -9652,6 +9599,7 @@
       {
         "type": "field",
         "name": "prototype",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -9668,6 +9616,7 @@
       {
         "type": "field",
         "name": "extends",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -9772,6 +9721,7 @@
       {
         "type": "field",
         "name": "view",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -9788,6 +9738,7 @@
       {
         "type": "field",
         "name": "detail",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -9876,6 +9827,7 @@
       {
         "type": "field",
         "name": "relatedTarget",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10169,6 +10121,7 @@
       {
         "type": "field",
         "name": "screenX",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10186,6 +10139,7 @@
       {
         "type": "field",
         "name": "screenY",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10203,6 +10157,7 @@
       {
         "type": "field",
         "name": "clientX",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10220,6 +10175,7 @@
       {
         "type": "field",
         "name": "clientY",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10237,6 +10193,7 @@
       {
         "type": "field",
         "name": "ctrlKey",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10254,6 +10211,7 @@
       {
         "type": "field",
         "name": "shiftKey",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10271,6 +10229,7 @@
       {
         "type": "field",
         "name": "altKey",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10288,6 +10247,7 @@
       {
         "type": "field",
         "name": "metaKey",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10305,6 +10265,7 @@
       {
         "type": "field",
         "name": "button",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10322,6 +10283,7 @@
       {
         "type": "field",
         "name": "buttons",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10339,6 +10301,7 @@
       {
         "type": "field",
         "name": "relatedTarget",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10510,6 +10473,7 @@
       {
         "type": "field",
         "name": "deltaX",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10527,6 +10491,7 @@
       {
         "type": "field",
         "name": "deltaY",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10544,6 +10509,7 @@
       {
         "type": "field",
         "name": "deltaZ",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10561,6 +10527,7 @@
       {
         "type": "field",
         "name": "deltaMode",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10666,6 +10633,7 @@
       {
         "type": "field",
         "name": "data",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10683,6 +10651,7 @@
       {
         "type": "field",
         "name": "isComposing",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -10987,6 +10956,7 @@
       {
         "type": "field",
         "name": "key",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -11004,6 +10974,7 @@
       {
         "type": "field",
         "name": "code",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -11021,6 +10992,7 @@
       {
         "type": "field",
         "name": "location",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -11038,6 +11010,7 @@
       {
         "type": "field",
         "name": "ctrlKey",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -11055,6 +11028,7 @@
       {
         "type": "field",
         "name": "shiftKey",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -11072,6 +11046,7 @@
       {
         "type": "field",
         "name": "altKey",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -11089,6 +11064,7 @@
       {
         "type": "field",
         "name": "metaKey",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -11106,6 +11082,7 @@
       {
         "type": "field",
         "name": "repeat",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -11123,6 +11100,7 @@
       {
         "type": "field",
         "name": "isComposing",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -11211,6 +11189,7 @@
       {
         "type": "field",
         "name": "data",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -12369,6 +12348,7 @@
       {
         "type": "field",
         "name": "charCode",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -12386,6 +12366,7 @@
       {
         "type": "field",
         "name": "keyCode",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -12403,6 +12384,7 @@
       {
         "type": "field",
         "name": "which",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -13455,6 +13437,7 @@
       {
         "type": "field",
         "name": "bubbles",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -13472,6 +13455,7 @@
       {
         "type": "field",
         "name": "cancelable",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -13650,6 +13634,7 @@
       {
         "type": "field",
         "name": "detail",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -14625,6 +14610,7 @@
       {
         "type": "field",
         "name": "childList",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -14642,6 +14628,7 @@
       {
         "type": "field",
         "name": "attributes",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -14655,6 +14642,7 @@
       {
         "type": "field",
         "name": "characterData",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -14668,6 +14656,7 @@
       {
         "type": "field",
         "name": "subtree",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -14685,6 +14674,7 @@
       {
         "type": "field",
         "name": "attributeOldValue",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -14698,6 +14688,7 @@
       {
         "type": "field",
         "name": "characterDataOldValue",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -14711,6 +14702,7 @@
       {
         "type": "field",
         "name": "attributeFilter",
+        "required": false,
         "idlType": {
           "sequence": true,
           "generic": "sequence",
@@ -28695,6 +28687,7 @@
       {
         "type": "field",
         "name": "fatal",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -28712,6 +28705,7 @@
       {
         "type": "field",
         "name": "ignoreBOM",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -28739,6 +28733,7 @@
       {
         "type": "field",
         "name": "stream",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -28948,6 +28943,7 @@
       {
         "type": "field",
         "name": "stream",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -53083,18 +53079,6 @@
             "name": "eventSourceInitDict"
           }
         ]
-      },
-      {
-        "name": "Exposed",
-        "arguments": null,
-        "rhs": {
-          "type": "identifier",
-          "value": "Window"
-        }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
       }
     ],
     "spec": "sse"
@@ -53107,6 +53091,7 @@
       {
         "type": "field",
         "name": "withCredentials",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -64455,10 +64440,13 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": [
-          "Window",
-          "Worker"
-        ]
+        "rhs": {
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
+        }
       }
     ],
     "spec": "webcrypto"
@@ -64664,10 +64652,13 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": [
-          "Window",
-          "Worker"
-        ]
+        "rhs": {
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
+        }
       }
     ],
     "spec": "webcrypto"
@@ -65704,10 +65695,13 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": [
-          "Window",
-          "Worker"
-        ]
+        "rhs": {
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
+        }
       }
     ],
     "spec": "webcrypto"
@@ -67376,6 +67370,7 @@
       {
         "type": "field",
         "name": "alpha",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -67393,6 +67388,7 @@
       {
         "type": "field",
         "name": "depth",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -67410,6 +67406,7 @@
       {
         "type": "field",
         "name": "stencil",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -67427,6 +67424,7 @@
       {
         "type": "field",
         "name": "antialias",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -67444,6 +67442,7 @@
       {
         "type": "field",
         "name": "premultipliedAlpha",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -67461,6 +67460,7 @@
       {
         "type": "field",
         "name": "preserveDrawingBuffer",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -67478,6 +67478,7 @@
       {
         "type": "field",
         "name": "preferLowPowerToHighPerformance",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -67495,6 +67496,7 @@
       {
         "type": "field",
         "name": "failIfMajorPerformanceCaveat",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -79793,6 +79795,7 @@
       {
         "type": "field",
         "name": "statusMessage",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -80115,10 +80118,13 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": [
-          "Window",
-          "Worker"
-        ]
+        "rhs": {
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
+        }
       }
     ],
     "spec": "webmessage"
@@ -80276,10 +80282,13 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": [
-          "Window",
-          "Worker"
-        ]
+        "rhs": {
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
+        }
       }
     ],
     "spec": "webmessage"
@@ -80411,205 +80420,16 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": [
-          "Window",
-          "Worker"
-        ]
+        "rhs": {
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
+        }
       }
     ],
     "spec": "webmessage"
-  },
-  {
-    "type": "interface",
-    "name": "PortCollection",
-    "partial": false,
-    "members": [
-      {
-        "type": "operation",
-        "getter": false,
-        "setter": false,
-        "creator": false,
-        "deleter": false,
-        "legacycaller": false,
-        "static": false,
-        "stringifier": false,
-        "idlType": {
-          "sequence": false,
-          "generic": null,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "void"
-        },
-        "name": "add",
-        "arguments": [
-          {
-            "optional": false,
-            "variadic": false,
-            "extAttrs": [],
-            "idlType": {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "MessagePort"
-            },
-            "name": "port"
-          }
-        ],
-        "extAttrs": []
-      },
-      {
-        "type": "operation",
-        "getter": false,
-        "setter": false,
-        "creator": false,
-        "deleter": false,
-        "legacycaller": false,
-        "static": false,
-        "stringifier": false,
-        "idlType": {
-          "sequence": false,
-          "generic": null,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "void"
-        },
-        "name": "remove",
-        "arguments": [
-          {
-            "optional": false,
-            "variadic": false,
-            "extAttrs": [],
-            "idlType": {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "MessagePort"
-            },
-            "name": "port"
-          }
-        ],
-        "extAttrs": []
-      },
-      {
-        "type": "operation",
-        "getter": false,
-        "setter": false,
-        "creator": false,
-        "deleter": false,
-        "legacycaller": false,
-        "static": false,
-        "stringifier": false,
-        "idlType": {
-          "sequence": false,
-          "generic": null,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "void"
-        },
-        "name": "clear",
-        "arguments": [],
-        "extAttrs": []
-      },
-      {
-        "type": "operation",
-        "getter": false,
-        "setter": false,
-        "creator": false,
-        "deleter": false,
-        "legacycaller": false,
-        "static": false,
-        "stringifier": false,
-        "idlType": {
-          "sequence": false,
-          "generic": null,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "void"
-        },
-        "name": "iterate",
-        "arguments": [
-          {
-            "optional": false,
-            "variadic": false,
-            "extAttrs": [],
-            "idlType": {
-              "sequence": false,
-              "generic": null,
-              "nullable": false,
-              "array": false,
-              "union": false,
-              "idlType": "PortCollectionCallback"
-            },
-            "name": "callback"
-          }
-        ],
-        "extAttrs": []
-      }
-    ],
-    "inheritance": null,
-    "extAttrs": [
-      {
-        "name": "Constructor",
-        "arguments": null
-      },
-      {
-        "name": "Exposed",
-        "arguments": null,
-        "rhs": [
-          "Window",
-          "Worker"
-        ]
-      }
-    ],
-    "spec": "webmessage"
-  },
-  {
-    "type": "callback",
-    "name": "PortCollectionCallback",
-    "idlType": {
-      "sequence": false,
-      "generic": null,
-      "nullable": false,
-      "array": false,
-      "union": false,
-      "idlType": "void"
-    },
-    "arguments": [
-      {
-        "optional": false,
-        "variadic": false,
-        "extAttrs": [],
-        "idlType": {
-          "sequence": false,
-          "generic": null,
-          "nullable": false,
-          "array": false,
-          "union": false,
-          "idlType": "MessagePort"
-        },
-        "name": "port"
-      }
-    ],
-    "extAttrs": [],
-    "spec": "webmessage"
-  },
-  {
-    "type": "enum",
-    "name": "BinaryType",
-    "values": [
-      "blob",
-      "arraybuffer"
-    ],
-    "extAttrs": [],
-    "spec": "websocket"
   },
   {
     "type": "interface",
@@ -80880,7 +80700,7 @@
           "nullable": false,
           "array": false,
           "union": false,
-          "idlType": "BinaryType"
+          "idlType": "DOMString"
         },
         "name": "binaryType",
         "extAttrs": []
@@ -81084,18 +80904,6 @@
             "name": "protocols"
           }
         ]
-      },
-      {
-        "name": "Exposed",
-        "arguments": null,
-        "rhs": {
-          "type": "identifier",
-          "value": "Window"
-        }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
       }
     ],
     "spec": "websocket"
@@ -81191,18 +80999,6 @@
             "name": "eventInitDict"
           }
         ]
-      },
-      {
-        "name": "Exposed",
-        "arguments": null,
-        "rhs": {
-          "type": "identifier",
-          "value": "Window"
-        }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
       }
     ],
     "spec": "websocket"
@@ -81215,6 +81011,7 @@
       {
         "type": "field",
         "name": "wasClean",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -81228,6 +81025,7 @@
       {
         "type": "field",
         "name": "code",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -81241,6 +81039,7 @@
       {
         "type": "field",
         "name": "reason",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -81677,6 +81476,7 @@
       {
         "type": "field",
         "name": "key",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -81690,6 +81490,7 @@
       {
         "type": "field",
         "name": "oldValue",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -81703,6 +81504,7 @@
       {
         "type": "field",
         "name": "newValue",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -81716,6 +81518,7 @@
       {
         "type": "field",
         "name": "url",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -81729,6 +81532,7 @@
       {
         "type": "field",
         "name": "storageArea",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -81972,13 +81776,20 @@
         "name": "Global",
         "arguments": null,
         "rhs": {
-          "type": "identifier",
-          "value": "Worker"
+          "type": "identifier-list",
+          "value": [
+            "Worker",
+            "DedicatedWorker"
+          ]
         }
       },
       {
-        "name": "DedicatedWorker",
-        "arguments": null
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": {
+          "type": "identifier",
+          "value": "DedicatedWorker"
+        }
       }
     ],
     "spec": "webworkers"
@@ -82046,13 +81857,20 @@
         "name": "Global",
         "arguments": null,
         "rhs": {
-          "type": "identifier",
-          "value": "Worker"
+          "type": "identifier-list",
+          "value": [
+            "Worker",
+            "SharedWorker"
+          ]
         }
       },
       {
-        "name": "SharedWorker",
-        "arguments": null
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": {
+          "type": "identifier",
+          "value": "SharedWorker"
+        }
       }
     ],
     "spec": "webworkers"
@@ -82090,13 +81908,12 @@
         "name": "Exposed",
         "arguments": null,
         "rhs": {
-          "type": "identifier",
-          "value": "Window"
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
         }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
       }
     ],
     "spec": "webworkers"
@@ -82227,13 +82044,12 @@
         "name": "Exposed",
         "arguments": null,
         "rhs": {
-          "type": "identifier",
-          "value": "Window"
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
         }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
       }
     ],
     "spec": "webworkers"
@@ -82307,13 +82123,12 @@
         "name": "Exposed",
         "arguments": null,
         "rhs": {
-          "type": "identifier",
-          "value": "Window"
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
         }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
       }
     ],
     "spec": "webworkers"

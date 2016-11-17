@@ -414,6 +414,7 @@
       {
         "type": "field",
         "name": "key",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -427,6 +428,7 @@
       {
         "type": "field",
         "name": "oldValue",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -440,6 +442,7 @@
       {
         "type": "field",
         "name": "newValue",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -453,6 +456,7 @@
       {
         "type": "field",
         "name": "url",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -466,6 +470,7 @@
       {
         "type": "field",
         "name": "storageArea",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,

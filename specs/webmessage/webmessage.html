@@ -1,4 +1,10 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html lang="en-GB-x-Hixie"><title>HTML5 Web Messaging</title><style type="text/css">
+<!DOCTYPE html>
+<html lang="en-US" typeof="bibo:Document w3p:REC" prefix="bibo: http://purl.org/ontology/bibo/ w3p: http://www.w3.org/2001/02pd/rec54#">
+<head>
+<meta property="dc:language" content="en" lang="">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HTML5 Web Messaging</title>
+<style type="text/css">
    pre { margin-left: 2em; white-space: pre-wrap; }
    h2 { margin: 3em 0 1em 0; }
    h3 { margin: 2.5em 0 1em 0; }
@@ -67,7 +73,7 @@
    h1 + h2, hr + h2.no-toc { page-break-before: auto; }
 
    p  > span:not([title=""]):not([class="XXX"]):not([class="impl"]):not([class="note"]),
-   li > span:not([title=""]):not([class="XXX"]):not([class="impl"]):not([class="note"]), { border-bottom: solid #9999CC; }
+   li > span:not([title=""]):not([class="XXX"]):not([class="impl"]):not([class="note"]) { border-bottom: solid #9999CC; }
 
    div.head { margin: 0 0 1em; padding: 1em 0 0 0; }
    div.head p { margin: 0; }
@@ -170,7 +176,7 @@
      height: auto;
      width: auto;
      padding: 0.5em 0.75em;
-     font: small sans-serif, Droid Sans Fallback;
+     font: small sans-serif, 'Droid Sans Fallback';
      background: #DDDDDD;
      color: black;
      border: outset 0.2em;
@@ -192,57 +198,55 @@
    fieldset > :last-child { margin-bottom: 0; }
    fieldset p { margin: 0.5em 0; }
 
-  </style><link rel="stylesheet" href="http://www.w3.org/StyleSheets/TR/W3C-ED" type="text/css"><meta content="noindex" name="robots"><script type="text/javascript">
-   function getCookie(name) {
-     var params = location.search.substr(1).split("&");
-     for (var index = 0; index < params.length; index++) {
-       if (params[index] == name)
-         return "1";
-       var data = params[index].split("=");
-       if (data[0] == name)
-         return unescape(data[1]);
-     }
-     var cookies = document.cookie.split("; ");
-     for (var index = 0; index < cookies.length; index++) {
-       var data = cookies[index].split("=");
-       if (data[0] == name)
-         return unescape(data[1]);
-     }
-     return null;
-   }
-  </script><body>
+  </style><link href="http://www.w3.org/StyleSheets/TR/W3C-REC" rel="stylesheet"><meta content="noindex" name="robots">
+</head>
+<body>
   <div class="head" id="head">
-   <p><a href="http://www.w3.org/"><img width="72" src="http://www.w3.org/Icons/w3c_home" alt="W3C" height="48"></a></p>
+   <p><a href="http://www.w3.org/"><img alt="W3C" height="48" src="http://www.w3.org/Icons/w3c_home" width="72"></a></p>
 
    <h1>HTML5 Web Messaging</h1>
-   
-   <h2 class="no-num no-toc" id="editor-s-draft-10-mar-2015">Editor's Draft 10 March 2015</h2>
-   <dl><dt>Latest Published Version:</dt>
+
+   <h2 class="no-num no-toc" id="pr-december-2014">W3C Recommendation 19 May 2015</h2>
+   <div id="notice-20151024" style="border: solid black 1px; padding: 0.5em; background: #FFB;">
+     <p style="margin-bottom: 0;"><strong>Document Status Update 2015-10-24</strong>: This paragraph is informative. The URL of the latest Editor's Draft has been modified. Please look at <a href="http://w3c.github.io/webmessaging/">http://w3c.github.io/webmessaging/</a> for the latest changes.</p>
+   </div>
+   <dl>
+    <dt>This Version:</dt>
+    <dd><a href="http://www.w3.org/TR/2015/REC-webmessaging-20150519/">http://www.w3.org/TR/2015/REC-webmessaging-20150519/</a></dd>
+    <dt>Latest Published Version:</dt>
     <dd><a href="http://www.w3.org/TR/webmessaging/">http://www.w3.org/TR/webmessaging/</a></dd>
     <dt>Latest Editor's Draft:</dt>
-    <dd><a href="http://dev.w3.org/html5/postmsg/" class="latest-link">http://dev.w3.org/html5/postmsg/</a></dd>
-
+    <dd><a class="latest-link" href="http://w3c.github.io/webmessaging/">http://w3c.github.io/webmessaging/</a></dd>
+    <dt>Test suite:</dt>
+    <dd><a href="https://github.com/w3c/web-platform-tests/tree/master/webmessaging">https://github.com/w3c/web-platform-tests/tree/master/webmessaging</a></dd>
+    <dt>Implementation report:</dt>
+    <dd><a href="https://w3c.github.io/test-results/webmessaging/all">https://w3c.github.io/test-results/webmessaging/all</a></dd>
 
     <dt>Previous Versions:</dt>
+    <dd><a href="http://www.w3.org/TR/2015/PR-webmessaging-20150407/">http://www.w3.org/TR/2015/PR-webmessaging-20150407/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2012/CR-webmessaging-20120501/">http://www.w3.org/TR/2012/CR-webmessaging-20120501/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2012/WD-webmessaging-20120313/">http://www.w3.org/TR/2012/WD-webmessaging-20120313/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2011/WD-webmessaging-20111020/">http://www.w3.org/TR/2011/WD-webmessaging-20111020/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2011/WD-webmessaging-20110317/">http://www.w3.org/TR/2011/WD-webmessaging-20110317/</a></dd>
     <dd><a href="http://www.w3.org/TR/2010/WD-webmessaging-20101118/">http://www.w3.org/TR/2010/WD-webmessaging-20101118/</a></dd>
 <!-- :ZZZ -->
     <dt>Editor:</dt>
     <dd><a href="mailto:ian@hixie.ch">Ian Hickson</a>, Google, Inc.</dd>
-   </dl><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>
-   &copy; 2015 <a href="http://www.w3.org/"><abbr title="World Wide
-   Web Consortium">W3C</abbr></a><sup>&reg;</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts
-   Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research
-   Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>), All Rights Reserved. W3C
-   <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
-   <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>
-   and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document
-   use</a> rules apply.</p>
+   </dl>
+   <p>
+      Please check the <a href="https://www.w3.org/2008/webapps/wiki/Errata/WebMessaging"><strong>errata</strong></a> for any errors or issues reported since publication.
+    </p>
+    <p>
+      The English version of this specification is the only normative version. Non-normative <a href="http://www.w3.org/Consortium/Translation/">translations</a> may also be available.
+    </p>
 
+      <p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2015 <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+        (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+        <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
 
    <!-- UNDER NO CIRCUMSTANCES IS THE FOLLOWING PARAGRAPH TO BE REMOVED OR EDITED WITHOUT TALKING TO IAN FIRST -->
    <p class="alt">The bulk of the text of this specification is also
-   available in the WHATWG <a href="http://www.whatwg.org/specs/web-apps/current-work/complete.html#comms">Web Applications 1.0</a> specification, under a license that permits
-   reuse of the specification text.</p>
+   available in the WHATWG <a href="https://html.spec.whatwg.org/multipage/comms.html">HTML</a> specification, under a license that permits reuse of the specification text.</p>
    <!-- UNDER NO CIRCUMSTANCES IS THE PRECEDING PARAGRAPH TO BE REMOVED OR EDITED WITHOUT TALKING TO IAN FIRST -->
 
 
@@ -253,118 +257,52 @@
   <p>This specification defines two mechanisms for communicating
   between browsing contexts in HTML documents.</p>
 
+
   <h2 class="no-num no-toc" id="status-of-this-document">Status of This document</h2>
 
-  
-  
-
-  <p><em>This section describes the status of this document at the
-  time of its publication. Other documents may supersede this
-  document. A list of current W3C publications and the
-
-  most recently formally published <!-- DO NOT CHANGE THIS BACK TO THE STANDARD BOILERPLATE, AS IT IS INACCURATE -->
-
-  revision of this technical report can be found in the <a href="http://www.w3.org/TR/">W3C technical reports index</a> at
-  http://www.w3.org/TR/.</em></p>
-
-
-  
-
-  <p>If you wish to make comments regarding this document, you can
-  enter feedback using this form:</p>
-
-  <form action="http://www.whatwg.org/specs/web-apps/current-work/file-spam.cgi" method="post">
-   <fieldset><legend>Feedback Comments</legend>
-    <input value="top" name="id" type="hidden"><input value="Web Messaging (editor: Ian Hickson)" name="component" type="hidden"><input value="html" name="response" type="hidden"><p><label for="feedbackBox">Please enter your feedback, carefully
-    indicating the title of the section for which you are submitting
-    feedback, quoting the text that's wrong today if appropriate. If
-    you're suggesting a new feature, it's really important to say
-    <em>what</em> the problem you're trying to solve is. That's more
-    important than the solution, in fact.</label></p>
-    <p><textarea name="text" rows="10" id="feedbackBox" cols="79"></textarea></p>
-    <p class="note">Please don't use section numbers as these tend to
-    change rapidly and make your feedback harder to understand.</p>
-    <script type="text/javascript">
-    function checkFeedbackForm(form) {
-      if (form.elements.text.value.match(/^ *</)) {
-        alert('Please don\'t start your feedback with an angle bracket, instead explain what topic your feedback is about first.');
-        return true;
-      } else if (form.elements.text.value.match(/ [^ ]+ [^ ]+ [^ ]+ [^ ]+ /)) {
-        if (form.elements.text.value.match(/^Please enter your feedback, carefully/)) {
-          alert('Please enter your feedback, explaining what is wrong, and without repeating the instructions. Thanks!');
-          return true;
-        } else if (form.elements.text.value.match(/ [^ ]+ [^ ]+ [^ ]+ [^ ]+ /)) {
-          form.action = "http://www.whatwg.org/specs/web-apps/current-work/file-bug.cgi";
-          return true;
-        } else {
-          alert('Please include significantly more detail about exactly what problem you are trying to solve.');
-          return false;
-        }
-      }
-    }
-    </script><p>
-     <input value="Submit feedback" onclick="return checkFeedbackForm(form)" type="submit"><small>(Note: Your IP address and user agent will be publicly recorded for spam prevention purposes.)</small>
-    </p>
-   </fieldset></form>
-
-  
-  <p>You can also e-mail feedback to <a href="mailto:public-webapps@w3.org">public-webapps@w3.org</a> (<a href="mailto:public-webapps-request@w3.org?subject=subscribe">subscribe</a>,
-  <a href="http://lists.w3.org/Archives/Public/public-webapps/">archives</a>),
-  or <a href="mailto:whatwg@whatwg.org">whatwg@whatwg.org</a> (<a href="http://lists.whatwg.org/listinfo.cgi/whatwg-whatwg.org">subscribe</a>,
-  <a href="http://lists.whatwg.org/pipermail/whatwg-whatwg.org/">archives</a>).
-  All feedback is welcome.</p>
-
-  
-  <p>Implementors should be aware that this specification is not
-  stable. <strong>Implementors who are not taking part in the
-  discussions are likely to find the specification changing out from
-  under them in incompatible ways.</strong> Vendors interested in
-  implementing this specification before it eventually reaches the
-  Candidate Recommendation stage should join the aforementioned
-  mailing lists and take part in the discussions.</p>
-
-  <div id="multipage-common">
-  </div>
-
-   <p>The latest
-  stable version of the editor's draft of this specification is always
-  available on <a href="http://dev.w3.org/html5/postmsg/">the W3C CVS server</a>
-  and in the <a href="http://svn.whatwg.org/webapps/">WHATWG
-  Subversion repository</a>. The <a href="http://www.whatwg.org/specs/web-apps/current-work/complete.html">latest
-  editor's working copy</a> (which may contain unfinished text in the
-  process of being prepared) contains the latest draft text of this
-  specification (amongst others). For more details, please see the <a href="http://wiki.whatwg.org/wiki/FAQ#What_are_the_various_versions_of_the_spec.3F">WHATWG
-  FAQ</a>.</p>
-
-  <p>Notifications of changes to this specification are sent along
-  with notifications of changes to related specifications using the
-  following mechanisms:</p>
-  <dl><dt>E-mail notifications of changes</dt>
-   <dd>Commit-Watchers mailing list (complete source diffs): <a href="http://lists.whatwg.org/listinfo.cgi/commit-watchers-whatwg.org">http://lists.whatwg.org/listinfo.cgi/commit-watchers-whatwg.org</a></dd>
-   <dt>Browsable version-control record of all changes:</dt>
-   <dd>CVSWeb interface with side-by-side diffs: <a href="http://dev.w3.org/cvsweb/html5/">http://dev.w3.org/cvsweb/html5/</a></dd>
-   <dd>Annotated summary with unified diffs: <a href="http://html5.org/tools/web-apps-tracker">http://html5.org/tools/web-apps-tracker</a></dd>
-   <dd>Raw Subversion interface: <code>svn checkout http://svn.whatwg.org/webapps/</code></dd>
-  </dl><p>The W3C <a href="http://www.w3.org/2008/webapps/">Web Applications
-  Working Group</a> is the W3C working group responsible for this
-  specification's progress along the W3C Recommendation track.
-  This specification is the 10 March 2015 Editor's Draft.
+  <p>
+   <em>This section describes the status of this document at the time of its publication.
+       Other documents may supersede this document. A list of current <abbr title="World Wide Web Consortium">W3C</abbr> publications and the
+       latest revision of this technical report can be found in the <a href="http://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> technical reports index</a> at
+          http://www.w3.org/TR/.</em>
   </p>
 
-  
-  
-  <p>This document was produced by a group operating under the <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/">5
-  February 2004 W3C Patent Policy</a>. W3C maintains a <a rel="disclosure" href="http://www.w3.org/2004/01/pp-impl/42538/status">public list of
-  any patent disclosures</a> made in connection with the deliverables
-  of the group; that page also includes instructions for disclosing a
-  patent. An individual who has actual knowledge of a patent which the
-  individual believes contains <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential
-  Claim(s)</a> must disclose the information in accordance with <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section
-  6 of the W3C Patent Policy</a>.</p>
+  <p>This specification is the Recommendation of HTML5 Web Messaging. </p>
 
+  <p>
+   This document was published by the <a href="http://www.w3.org/2008/webapps/">Web Applications Working Group</a> as a Recommendation. Please see the Working Group's <a href="https://github.com/w3c/web-platform-tests/tree/master/webmessaging">Test Suite</a> and
+   <a href="https://w3c.github.io/test-results/webmessaging/all">Implementation Report</a>.
+  </p>
+
+  <p>This specification's bugs and issues are managed in
+   <a href="https://www.w3.org/Bugs/Public/describecomponents.cgi?product=WebAppsWG">our public bug database</a>.
+   You can also e-mail feedback to <a href="mailto:public-webapps@w3.org">public-webapps@w3.org</a> (<a href="mailto:public-webapps-request@w3.org?subject=subscribe">subscribe</a>,
+   <a href="http://lists.w3.org/Archives/Public/public-webapps/">archives</a>),
+   or <a href="mailto:whatwg@whatwg.org">whatwg@whatwg.org</a>
+   (<a href="mailto:whatwg-subscribe@whatwg.org">subscribe</a>,
+   <a href="https://lists.w3.org/Archives/Public/public-whatwg-archive/">archives</a>).
+   All feedback is welcome.
+  </p>
+  <p>
+    By publishing this Recommendation, W3C expects the functionality specified in this Recommendation will not be affected by changes to DOM4, Web IDL or Web Workers as those specifications proceed to Recommendation. </p>
+
+  <p>
+    This document has been reviewed by <abbr title="World Wide Web Consortium">W3C</abbr> Members, by software developers, and by other <abbr title="World Wide Web Consortium">W3C</abbr> groups and interested parties, and is endorsed by the Director as a <abbr title="World Wide Web Consortium">W3C</abbr>
+    Recommendation. It is a stable document and may be used as reference material or cited from another document.
+    <abbr title="World Wide Web Consortium">W3C</abbr>'s role in making the Recommendation is to draw attention to the specification and to promote its widespread deployment. This enhances the functionality and interoperability of the Web.
+  </p>
+
+  <p>
+    This document was produced by a group operating under the <a id="sotd_patent" property="w3p:patentRules" href="http://www.w3.org/Consortium/Patent-Policy-20040205/">
+      5 February 2004 <abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy</a>.
+    <abbr title="World Wide Web Consortium">W3C</abbr> maintains a <a href="http://www.w3.org/2004/01/pp-impl/42538/status" rel="disclosure"> public list of any patent disclosures </a> made in connection with the deliverables of the group; that page also includes instructions for disclosing a patent. An individual who has actual knowledge of a patent which the individual believes contains <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential"> Essential Claim(s) </a>
+    must disclose the information in accordance with <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure"> section 6 of the
+      <abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy</a>.
+  </p>
+  <p>This document is governed by the <a id="w3c_process_revision" href="http://www.w3.org/2005/10/Process-20051014/">14 October 2005 W3C Process Document</a>. </p>
 
   <h2 class="no-num no-toc" id="contents">Table of Contents</h2>
-  
+
 
 <ol class="toc">
  <li><a href="#conformance-requirements"><span class="secno">1 </span>Conformance requirements</a>
@@ -389,8 +327,7 @@
      <li><a href="#ports-as-the-basis-of-abstracting-out-service-implementations"><span class="secno">5.1.3 </span>Ports as the basis of abstracting out service implementations</a></ol></li>
    <li><a href="#message-channels"><span class="secno">5.2 </span>Message channels</a></li>
    <li><a href="#message-ports"><span class="secno">5.3 </span>Message ports</a></li>
-   <li><a href="#broadcasting-to-many-ports"><span class="secno">5.4 </span>Broadcasting to many ports</a></li>
-   <li><a href="#ports-and-garbage-collection"><span class="secno">5.5 </span>Ports and garbage collection</a></ol></li>
+   <li><a href="#ports-and-garbage-collection"><span class="secno">5.4 </span>Ports and garbage collection</a></ol></li>
  <li><a href="#references" class="no-num">References</a></li>
  <li><a href="#acknowledgements" class="no-num">Acknowledgements</a></ol>
 
@@ -585,7 +522,7 @@ dictionary <dfn id="messageeventinit">MessageEventInit</dfn> : <span>EventInit</
   <a href="#web-messaging">cross-document messaging</a> and <a href="#channel-messaging">channel messaging</a>, the
   <code><a href="#messageport">MessagePort</a></code> array being sent, if any.</p>
 
-  <p>The <dfn id="dom-messageevent-initmessageevent"><code>initMessageEvent()</code></dfn> method must initialise the event in a manner analogous to the similarly-named <code id="the-messageevent-interfaces:dom-event-initevent"><a href="http://www.w3.org/TR/html5/infrastructure.html#dom-event-initevent">initEvent()</a></code> method. <a href="#refsDOM">[DOM]</a></p>
+  <p>The <dfn id="dom-messageevent-initmessageevent"><code>initMessageEvent()</code></dfn> method must initialise the event in a manner analogous to the similarly-named <code id="the-messageevent-interfaces:dom-event-initevent"><a href="http://www.w3.org/TR/dom/#dom-event-initevent">initEvent()</a></code> method. <a href="#refsDOM">[DOM]</a></p>
   </div>
 
 
@@ -1386,112 +1323,7 @@ interface <dfn id="messageport">MessagePort</dfn> : <span>EventTarget</span> {
 
   </div>
 
-
-  <h3 id="broadcasting-to-many-ports"><span class="secno">5.4 </span>Broadcasting to many ports</h3>
-
-  <p class="critical">The API described in this section is controversial, as, in an attempt to solve
-  an architectural memory leak, it instead exposes the details of Garbage Collection. This is a
-  lose-lose scenario. A better solution is really needed here.</p>
-
-  <p>Broadcasting to many ports is in principle relatively simple: keep an array of
-  <code><a href="#messageport">MessagePort</a></code> objects to send messages to, and iterate through the array to send a
-  message. However, this has one rather unfortunate effect: it prevents the ports from being garbage
-  collected, even if the other side has gone away.</p>
-
-  <p>To avoid this problem, the <code><a href="#portcollection">PortCollection</a></code> object can be used. It acts as an opaque
-  array of <code><a href="#messageport">MessagePort</a></code> objects, thus allowing the objects to be garbage collected when
-  they stop being relevant, while still allowing scripts to iterate over the
-  <code><a href="#messageport">MessagePort</a></code> objects.</p>
-
-  <pre class="idl">[<a href="#dom-portcollection" title="dom-PortCollection">Constructor</a>, Exposed=(Window,Worker)]
-interface <dfn id="portcollection">PortCollection</dfn> {
-  void <a href="#dom-portcollection-add" title="dom-PortCollection-add">add</a>(<a href="#messageport">MessagePort</a> port);
-  void <a href="#dom-portcollection-remove" title="dom-PortCollection-remove">remove</a>(<a href="#messageport">MessagePort</a> port);
-  void <a href="#dom-portcollection-clear" title="dom-PortCollection-clear">clear</a>();
-  void <a href="#dom-portcollection-iterate" title="dom-PortCollection-iterate">iterate</a>(<a href="#portcollectioncallback">PortCollectionCallback</a> callback);
-};
-
-callback <dfn id="portcollectioncallback">PortCollectionCallback</dfn> = void (<a href="#messageport">MessagePort</a> port);</pre>
-
-  <dl class="domintro"><dt><var title="">portCollection</var> = new <code title="dom-PortCollection"><a href="#dom-portcollection">PortCollection</a></code>()</dt>
-
-   <dd>
-
-    <p>Returns a new empty <code><a href="#portcollection">PortCollection</a></code> object.</p>
-
-   </dd>
-
-   <dt><var title="">portCollection</var> . <code title="dom-PortCollection-add"><a href="#dom-portcollection-add">add</a></code>(<var title="">port</var>)</dt>
-
-   <dd>
-
-    <p>Adds <var title="">port</var> to the collection, if it isn't already present.</p>
-
-   </dd>
-
-   <dt><var title="">portCollection</var> . <code title="dom-PortCollection-remove"><a href="#dom-portcollection-remove">remove</a></code>(<var title="">port</var>)</dt>
-
-   <dd>
-
-    <p>Removes <var title="">port</var> from the collection, if it is present.</p>
-
-   </dd>
-
-   <dt><var title="">portCollection</var> . <code title="dom-PortCollection-clear"><a href="#dom-portcollection-clear">clear</a></code>()</dt>
-
-   <dd>
-
-    <p>Removes all ports from the collection.</p>
-
-   </dd>
-
-   <dt><var title="">portCollection</var> . <code title="dom-PortCollection-iterate"><a href="#dom-portcollection-iterate">iterate</a></code>(<var title="">callback</var>)</dt>
-
-   <dd>
-
-    <p>Calls <var title="">callback</var> for each port in the collection.</p>
-
-   </dd>
-
-  </dl><div class="impl">
-
-  <p>A <code><a href="#portcollection">PortCollection</a></code> object has an initially empty <dfn id="concept-portcollection-list" title="concept-PortCollection-list">list of ports</dfn>. When a <code><a href="#messageport">MessagePort</a></code> object in
-  a <a href="#concept-portcollection-list" title="concept-PortCollection-list">list of ports</a> is garbage collected, it must be
-  silently removed from that <a href="#concept-portcollection-list" title="concept-PortCollection-list">list of ports</a>. Objects
-  in a <a href="#concept-portcollection-list" title="concept-PortCollection-list">list of ports</a> are ordered chronologically by
-  the time at which they were most recently added; the least-recently added <code><a href="#messageport">MessagePort</a></code>
-  object is the first in the list, and the most-recently added <code><a href="#messageport">MessagePort</a></code> is the last
-  in the list.</p>
-
-  <p>The <dfn id="dom-portcollection" title="dom-PortCollection"><code>PortCollection()</code></dfn> constructor must return
-  a new <code><a href="#portcollection">PortCollection</a></code> object (with an empty <a href="#concept-portcollection-list" title="concept-PortCollection-list">list of ports</a>).</p>
-
-  <p>The <dfn id="dom-portcollection-add" title="dom-PortCollection-add"><code>add()</code></dfn> method must add the
-  <code><a href="#messageport">MessagePort</a></code> given by the argument to the <code><a href="#portcollection">PortCollection</a></code> object's <a href="#concept-portcollection-list" title="concept-PortCollection-list">list of ports</a>, unless the <code><a href="#messageport">MessagePort</a></code> is
-  already in the <a href="#concept-portcollection-list" title="concept-PortCollection-list">list of ports</a>, in which case the
-  method does nothing. (Calling this method with a port already in the list does not move the port
-  to the end of the list.)</p>
-
-  <p>The <dfn id="dom-portcollection-remove" title="dom-PortCollection-remove"><code>remove()</code></dfn> method must remove the
-  <code><a href="#messageport">MessagePort</a></code> given by the argument from the <code><a href="#portcollection">PortCollection</a></code> object's <a href="#concept-portcollection-list" title="concept-PortCollection-list">list of ports</a>, unless the <code><a href="#messageport">MessagePort</a></code> is
-  not in the <a href="#concept-portcollection-list" title="concept-PortCollection-list">list of ports</a>, in which case the
-  method does nothing.</p>
-
-  <p>The <dfn id="dom-portcollection-clear" title="dom-PortCollection-clear"><code>clear()</code></dfn> method must remove all
-  <code><a href="#messageport">MessagePort</a></code> objects from the <code><a href="#portcollection">PortCollection</a></code> object's <a href="#concept-portcollection-list" title="concept-PortCollection-list">list of ports</a>, returning it to the initial empty state.
-  If the <a href="#concept-portcollection-list" title="concept-PortCollection-list">list of ports</a> is already empty, the method
-  does nothing.</p>
-
-  <p>The <dfn id="dom-portcollection-iterate" title="dom-PortCollection-iterate"><code>iterate()</code></dfn> method must invoke its
-  <code><a href="#portcollectioncallback">PortCollectionCallback</a></code> argument once for each <code><a href="#messageport">MessagePort</a></code> object in the
-  object's <a href="#concept-portcollection-list" title="concept-PortCollection-list">list of ports</a>, in the order defined
-  above, with each invocation being passed the corresponding <code><a href="#messageport">MessagePort</a></code> object as the
-  callback's sole argument.</p>
-
-  </div>
-
-
-  <h3 id="ports-and-garbage-collection"><span class="secno">5.5 </span>Ports and garbage collection</h3>
+  <h3 id="ports-and-garbage-collection"><span class="secno">5.4 </span>Ports and garbage collection</h3>
 
   <div class="impl">
 
@@ -1515,13 +1347,6 @@ callback <dfn id="portcollectioncallback">PortCollectionCallback</dfn> = void (<
   object, or while the <code><a href="#messageport">MessagePort</a></code> object's <a href="#port-message-queue">port message queue</a> is enabled
   and not empty.</p> 
 
-  
-
-  <p>There are no strong references from a <code><a href="#portcollection">PortCollection</a></code> object to its
-  <code><a href="#messageport">MessagePort</a></code> objects. (That is in fact the whole point of <code><a href="#portcollection">PortCollection</a></code>
-  objects: they allow for <code><a href="#messageport">MessagePort</a></code> objects to be referenced without preventing them
-  from being garbage collected.)</p>
-
   </div>
 
   <p class="note">Authors are strongly encouraged to explicitly close <code><a href="#messageport">MessagePort</a></code>
@@ -1538,19 +1363,24 @@ callback <dfn id="portcollectioncallback">PortCollectionCallback</dfn> = void (<
   
 
   <dl><dt id="refsDOM">[DOM]</dt>
-   <dd><cite><a href="http://dom.spec.whatwg.org/">DOM</a></cite>, A. van Kesteren, A. Gregor, Ms2ger. WHATWG.</dd>
+   <dd>Anne van Kesteren; Aryeh Gregor; Ms2ger; Alex Russell; Robin Berjon. <a href="http://www.w3.org/TR/dom/"><cite>W3C DOM4</cite></a>. 10 July 2014. W3C Last Call Working Draft. URL: <a href="http://www.w3.org/TR/dom/">http://www.w3.org/TR/dom/</a></dd>
 
    <dt id="refsHTML">[HTML]</dt>
-   <dd><cite><a href="//www.whatwg.org/specs/web-apps/current-work/">HTML</a></cite>, I. Hickson. WHATWG.</dd>
+   <dd>Ian Hickson; Robin Berjon; Steve Faulkner; Travis Leithead; Erika Doyle Navara; Edward O'Connor; Silvia Pfeiffer. <a href="http://www.w3.org/TR/html5/"><cite>HTML5</cite></a>. 28 October 2014. W3C Recommendation. URL: <a href="http://www.w3.org/TR/html5/">http://www.w3.org/TR/html5/</a></dd>
 
    <dt id="refsRFC2119">[RFC2119]</dt>
    <dd><cite><a href="http://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a></cite>, S. Bradner. IETF.</dd>
 
    <dt id="refsWEBIDL">[WEBIDL]</dt>
-   <dd><cite><a href="http://dev.w3.org/2006/webapi/WebIDL/">Web IDL</a></cite>, C. McCormack. W3C.</dd>
+   <dd>Cameron McCormack. <a href="http://www.w3.org/TR/WebIDL/"><cite>Web IDL</cite></a>. 19 April 2012. W3C Candidate Recommendation. URL: <a href="http://www.w3.org/TR/WebIDL/">http://www.w3.org/TR/WebIDL/</a>
+
+   <dt id="refsWORKERS">[WORKERS]</dt>
+   <dd>Ian Hickson. <a href="http://www.w3.org/TR/workers/"><cite>Web Workers</cite></a>. 01 May 2012. W3C Candidate Recommendation. URL: <a href="http://www.w3.org/TR/workers/">http://www.w3.org/TR/workers/</a>
 
   </dl><h2 class="no-num" id="acknowledgements">Acknowledgements</h2>
 
-  <p>For a full list of acknowledgements, please see the <a href="http://whatwg.org/html">WHATWG HTML standard</a>.</p>
+  <p>For a full list of acknowledgements, please see the HTML specification. <a href="#refsHTML">[HTML]</a></p>
+</body>
+</html>
 
- 
+

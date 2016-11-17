@@ -1,6 +1,6 @@
 {
     "spec": "webmessage",
-    "source": "http://dev.w3.org/html5/postmsg/",
+    "source": "https://www.w3.org/TR/webmessaging/",
     "levels": [ 1 ],
     "local": "webmessage.html",
     "helpers1": [],

@@ -1,6 +1,6 @@
 {
     "spec": "sse",
-    "source": "http://dev.w3.org/html5/eventsource/",
+    "source": "https://www.w3.org/TR/eventsource/",
     "levels": [ 1 ],
     "local": "sse.html",
     "helpers1": [

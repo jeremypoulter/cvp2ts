@@ -1,51 +1,53 @@
 
-[Exposed=Worker] 
-interface WorkerGlobalScope : EventTarget {
+[Exposed=Worker] interface WorkerGlobalScope : EventTarget {
   readonly attribute WorkerGlobalScope self;
   readonly attribute WorkerLocation location;
 
   void close();
-           attribute OnErrorEventHandler onerror;
-           attribute EventHandler onlanguagechange;
-           attribute EventHandler onoffline;
-           attribute EventHandler ononline;
+  attribute OnErrorEventHandler onerror;
+  attribute EventHandler onlanguagechange;
+  attribute EventHandler onoffline;
+  attribute EventHandler ononline;
+
+  // also has additional members in a partial interface
 };
 
-[Global=Worker,DedicatedWorker]
+
+[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]
 /*sealed*/ interface DedicatedWorkerGlobalScope : WorkerGlobalScope {
   void postMessage(any message, optional sequence<Transferable> transfer);
-           attribute EventHandler onmessage;
+  attribute EventHandler onmessage;
 };
 
-[Global=Worker,SharedWorker]
+[Global=(Worker,SharedWorker),Exposed=SharedWorker]
 /*sealed*/ interface SharedWorkerGlobalScope : WorkerGlobalScope {
   readonly attribute DOMString name;
   readonly attribute ApplicationCache applicationCache;
-           attribute EventHandler onconnect;
+  attribute EventHandler onconnect;
 };
 
-[NoInterfaceObject, Exposed=Window,Worker]
+[NoInterfaceObject, Exposed=(Window,Worker)]
 interface AbstractWorker {
-           attribute EventHandler onerror;
+    attribute EventHandler onerror;
 };
 
-[Constructor(DOMString scriptURL), Exposed=Window,Worker]
+[Constructor(DOMString scriptURL), Exposed=(Window,Worker)]
 interface Worker : EventTarget {
   void terminate();
 
   void postMessage(any message, optional sequence<Transferable> transfer);
-           attribute EventHandler onmessage;
+  attribute EventHandler onmessage;
 };
 Worker implements AbstractWorker;
 
-[Constructor(DOMString scriptURL, optional DOMString name), Exposed=Window,Worker]
+[Constructor(DOMString scriptURL, optional DOMString name), Exposed=(Window,Worker)]
 interface SharedWorker : EventTarget {
   readonly attribute MessagePort port;
 };
 SharedWorker implements AbstractWorker;
 
 [Exposed=Worker]
-partial interface WorkerGlobalScope {
+partial interface WorkerGlobalScope { // not obsolete
   void importScripts(DOMString... urls);
   readonly attribute WorkerNavigator navigator;
 };

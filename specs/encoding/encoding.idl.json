@@ -21,6 +21,7 @@
       {
         "type": "field",
         "name": "fatal",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -38,6 +39,7 @@
       {
         "type": "field",
         "name": "ignoreBOM",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -64,6 +66,7 @@
       {
         "type": "field",
         "name": "stream",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,
@@ -271,6 +274,7 @@
       {
         "type": "field",
         "name": "stream",
+        "required": false,
         "idlType": {
           "sequence": false,
           "generic": null,

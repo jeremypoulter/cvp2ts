@@ -226,13 +226,20 @@
         "name": "Global",
         "arguments": null,
         "rhs": {
-          "type": "identifier",
-          "value": "Worker"
+          "type": "identifier-list",
+          "value": [
+            "Worker",
+            "DedicatedWorker"
+          ]
         }
       },
       {
-        "name": "DedicatedWorker",
-        "arguments": null
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": {
+          "type": "identifier",
+          "value": "DedicatedWorker"
+        }
       }
     ]
   },
@@ -299,13 +306,20 @@
         "name": "Global",
         "arguments": null,
         "rhs": {
-          "type": "identifier",
-          "value": "Worker"
+          "type": "identifier-list",
+          "value": [
+            "Worker",
+            "SharedWorker"
+          ]
         }
       },
       {
-        "name": "SharedWorker",
-        "arguments": null
+        "name": "Exposed",
+        "arguments": null,
+        "rhs": {
+          "type": "identifier",
+          "value": "SharedWorker"
+        }
       }
     ]
   },
@@ -342,13 +356,12 @@
         "name": "Exposed",
         "arguments": null,
         "rhs": {
-          "type": "identifier",
-          "value": "Window"
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
         }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
       }
     ]
   },
@@ -478,13 +491,12 @@
         "name": "Exposed",
         "arguments": null,
         "rhs": {
-          "type": "identifier",
-          "value": "Window"
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
         }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
       }
     ]
   },
@@ -556,13 +568,12 @@
         "name": "Exposed",
         "arguments": null,
         "rhs": {
-          "type": "identifier",
-          "value": "Window"
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
         }
-      },
-      {
-        "name": "Worker",
-        "arguments": null
       }
     ]
   },

@@ -106,10 +106,13 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": [
-          "Window",
-          "Worker"
-        ]
+        "rhs": {
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
+        }
       }
     ]
   },
@@ -308,10 +311,13 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": [
-          "Window",
-          "Worker"
-        ]
+        "rhs": {
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
+        }
       }
     ]
   },
@@ -1346,10 +1352,13 @@
       {
         "name": "Exposed",
         "arguments": null,
-        "rhs": [
-          "Window",
-          "Worker"
-        ]
+        "rhs": {
+          "type": "identifier-list",
+          "value": [
+            "Window",
+            "Worker"
+          ]
+        }
       }
     ]
   },
