@@ -1,6 +1,6 @@
 {
     "spec": "cors",
-    "source": "https://www.w3.org/TR/2014/REC-cors-20140116/",
+    "source": "https://www.w3.org/TR/cors/",
     "levels": [ 3 ],
     "local": "cors.html",
     "dontFetch": true,

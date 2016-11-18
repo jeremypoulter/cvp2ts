@@ -1,6 +1,6 @@
 {
     "spec": "cssom",
-    "source": "http://dev.w3.org/csswg/cssom/",
+    "source": "https://www.w3.org/TR/cssom-1/",
     "levels": [ 1 ],
     "local": "cssom.html",
     "dontFetch": true,

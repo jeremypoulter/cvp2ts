@@ -1,6 +1,6 @@
 {
     "spec": "cssattr",
-    "source": "http://www.w3.org/TR/2013/REC-css-style-attr-20131107/",
+    "source": "https://www.w3.org/TR/css-style-attr/",
     "levels": [ 2 ],
     "local": "cssattr.html",
     "dontFetch": true,

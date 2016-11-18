@@ -1,6 +1,6 @@
 {
     "spec": "csstransform",
-    "source": "http://dev.w3.org/csswg/css-transforms/",
+    "source": "https://www.w3.org/TR/css-transforms/",
     "levels": [ 2 ],
     "local": "csstransform.html",
     "dontExtract": true,

@@ -1,6 +1,6 @@
 {
     "spec": "mse",
-    "source": "http://w3c.github.io/media-source/",
+    "source": "https://www.w3.org/TR/media-source/",
     "levels": [ 1 ],
     "local": "mse.html",
     "dontFetch": true,

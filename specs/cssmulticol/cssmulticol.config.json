@@ -1,6 +1,6 @@
 {
     "spec": "cssmulticol",
-    "source": "http://dev.w3.org/csswg/css-multicol/",
+    "source": "https://www.w3.org/TR/css-multicol/",
     "levels": [ 2 ],
     "local": "cssmulticol.html",
     "dontExtract": true,

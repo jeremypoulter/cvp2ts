@@ -1,6 +1,6 @@
 {
     "spec": "csstransition",
-    "source": "http://dev.w3.org/csswg/css-transitions/",
+    "source": "https://www.w3.org/TR/css-transitions/",
     "levels": [ 2 ],
     "local": "csstransition.html",
     "dontExtract": true,

@@ -1,6 +1,6 @@
 {
     "spec": "webmessage",
-    "source": "https://www.w3.org/TR/webmessaging/",
+    "source": "https://www.w3.org/TR/2015/PR-webmessaging-20150407/",
     "levels": [ 1 ],
     "local": "webmessage.html",
     "helpers1": [],

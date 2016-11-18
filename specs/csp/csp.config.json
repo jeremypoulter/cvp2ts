@@ -1,6 +1,6 @@
 {
     "spec": "csp",
-    "source": "https://www.w3.org/TR/2012/CR-CSP-20121115/",
+    "source": "https://www.w3.org/TR/CSP/",
     "levels": [ 3 ],
     "local": "csp.html",
     "dontExtract": true,

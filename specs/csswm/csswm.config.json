@@ -1,6 +1,6 @@
 {
     "spec": "csswm",
-    "source": "http://dev.w3.org/csswg/css-writing-modes-3/",
+    "source": "https://www.w3.org/TR/css-writing-modes-3/",
     "levels": [ 2 ],
     "local": "csswm.html",
     "dontExtract": true,

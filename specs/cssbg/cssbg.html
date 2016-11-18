@@ -12,16 +12,16 @@
   <meta content="CSS Backgrounds and Borders Module Level 3"
    name=dcterms.title>
   <meta content=text name=dcterms.type>
-  <meta content=2014-08-13 name=dcterms.date>
+  <meta content=2014-09-09 name=dcterms.date>
   <meta content="Bert Bos" name=dcterms.creator>
   <meta content="Elika J. Etemad" name=dcterms.creator>
   <meta content="Brad Kemper" name=dcterms.creator>
   <meta content=W3C name=dcterms.publisher>
-  <meta content="http://dev.w3.org/csswg/css3-background/"
+  <meta content="http://www.w3.org/TR/2014/CR-css3-background-20140909/"
    name=dcterms.identifier>
   <link href="#contents" rel=contents>
   <link href="#index" rel=index>
-  <link href="../default.css" rel=stylesheet type="text/css">
+  <link href="default.css" rel=stylesheet type="text/css">
   <style type="text/css">
     .prod { font-family: inherit; font-size: inherit }
     pre.prod { white-space: pre-wrap; margin: 1em 0 1em 2em }
@@ -30,11 +30,8 @@
     #box-shadow-samples td { background: white; color: black; }
     .css::before, .css::after, .property::before, .property::after { content: none !important;}
   </style>
-  <link href="http://www.w3.org/StyleSheets/TR/W3C-ED.css" rel=stylesheet
+  <link href="http://www.w3.org/StyleSheets/TR/W3C-CR.css" rel=stylesheet
    type="text/css">
-  <script defer=defer
-   src="http://test.csswg.org/harness/annotate.js#css-backgrounds-3_dev"
-   type="text/javascript"></script>
 
  <body>
   <div class=head> <!--begin-logo-->
@@ -43,13 +40,13 @@
 
    <h1>CSS Backgrounds and Borders Module Level 3</h1>
 
-   <h2 class="no-num no-toc">Editor's Draft 13 August 2014</h2>
+   <h2 class="no-num no-toc">W3C Candidate Recommendation 9 September 2014</h2>
 
    <dl>
     <dt>This version:
 
     <dd><a
-     href="http://dev.w3.org/csswg/css3-background/">http://dev.w3.org/csswg/css3-background/</a>
+     href="http://www.w3.org/TR/2014/CR-css3-background-20140909/">http://www.w3.org/TR/2014/CR-css3-background-20140909/</a>
 
     <dt>Latest version:
 
@@ -64,7 +61,7 @@
     <dt>Previous version:
 
     <dd><a
-     href="http://www.w3.org/TR/2014/WD-css3-background-20140116/">http://www.w3.org/TR/2014/WD-css3-background-20140116/</a>
+     href="http://www.w3.org/TR/2014/WD-css3-background-20140204/">http://www.w3.org/TR/2014/WD-css3-background-20140204/</a>
 
     <dt>Issue Tracking:
 
@@ -86,12 +83,12 @@
      href="http://www.w3.org/">W3C</a>)
 
     <dd><a href="http://fantasai.inkedblade.net/contact">Elika J. Etemad</a>
-     (Mozilla)
+     (Invited Expert)
 
     <dd><a href="mailto:brad.kemper@gmail.com">Brad Kemper</a> (Invited
      Expert)
 
-    <dt>Latest test suite:
+    <dt>Latest test suite / interoperability report:
 
     <dd><a
      href="http://test.csswg.org/suites/css3-background/nightly-unstable/">http://test.csswg.org/suites/css3-background/nightly-unstable/</a>
@@ -136,24 +133,33 @@
   <h2 class="no-num no-toc" id=status>Status of this document</h2>
   <!--begin-status-->
 
-  <p>This is a public copy of the editors' draft. It is provided for
-   discussion only and may change at any moment. Its publication here does
-   not imply endorsement of its contents by W3C. Don't cite this document
-   other than as work in progress.
+  <p><em>This section describes the status of this document at the time of
+   its publication. Other documents may supersede this document. A list of
+   current W3C publications and the latest revision of this technical report
+   can be found in the <a href="http://www.w3.org/TR/">W3C technical reports
+   index at http://www.w3.org/TR/.</a></em>
 
-  <p>The (<a
+  <p>This document was produced by the <a
+   href="http://www.w3.org/Style/CSS/members">CSS Working Group</a> as a <a
+   href="http://www.w3.org/Consortium/Process/tr#RecsCR">Candidate
+   Recommendation.</a>
+
+  <p>A Candidate Recommendation is a document that has been widely reviewed
+   and is ready for implementation. W3C encourages everybody to implement
+   this specification and return comments to the (<a
    href="http://lists.w3.org/Archives/Public/www-style/">archived</a>) public
    mailing list <a
    href="mailto:www-style@w3.org?Subject=%5Bcss3-background%5D%20PUT%20SUBJECT%20HERE">
    www-style@w3.org</a> (see <a
-   href="http://www.w3.org/Mail/Request">instructions</a>) is preferred for
-   discussion of this specification. When sending e-mail, please put the text
-   “css3-background” in the subject, preferably like this:
-   “[<!---->css3-background<!---->] <em>…summary of comment…</em>”
+   href="http://www.w3.org/Mail/Request">instructions</a>). When sending
+   e-mail, please put the text “css3-background” in the subject,
+   preferably like this: “[<!---->css3-background<!---->] <em>…summary of
+   comment…</em>”
 
-  <p>This document was produced by the <a
-   href="http://www.w3.org/Style/CSS/members">CSS Working Group</a> (part of
-   the <a href="http://www.w3.org/Style/">Style Activity</a>).
+  <p>Publication as a Candidate Recommendation does not imply endorsement by
+   the W3C Membership. This is a draft document and may be updated, replaced
+   or obsoleted by other documents at any time. It is inappropriate to cite
+   this document as other than work in progress.
 
   <p>This document was produced by a group operating under the <a
    href="http://www.w3.org/Consortium/Patent-Policy-20040205/">5 February
@@ -163,10 +169,14 @@
    connection with the deliverables of the group; that page also includes
    instructions for disclosing a patent. An individual who has actual
    knowledge of a patent which the individual believes contains <a
-   href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential
-   Claim(s)</a> must disclose the information in accordance with <a
-   href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section
-   6 of the W3C Patent Policy</a>.</p>
+   href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">
+   Essential Claim(s)</a> must disclose the information in accordance with <a
+   href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">
+   section 6 of the W3C Patent Policy</a>.
+
+  <p>This document is governed by the <a
+   href="http://www.w3.org/2005/10/Process-20051014/"
+   id="w3c_process_revision">14 October 2005 W3C Process Document</a>.</p>
   <!--end-status-->
 
   <p>The following features are at-risk and may be dropped at the end of the
@@ -179,8 +189,8 @@
    this module. A <a href="http://www.w3.org/Style/CSS/Test/">test suite</a>
    and implementation report for CSS Backgrounds and Borders Level 3 will be
    developed during the Candidate Recommendation phase, which will last a
-   minimum of three months, and at least until 25 July 2012. See the section
-   <a href="#exit">“CR exit criteria”</a> for more details.
+   minimum of three months, and at least until 9 December 2014. See the
+   section <a href="#exit">“CR exit criteria”</a> for more details.
 
   <p>The changes to this specification since the previous drafts are listed
    in the <a href="#changes">“Changes”</a> section.
@@ -475,9 +485,9 @@
 
   <h3 id=value-types><span class=secno>2.2. </span> Value Types</h3>
 
-  <p>The <dfn id=image><var>&lt;image&gt;</var></dfn> value type is
+  <p>The <dfn id=ltimagegt><var>&lt;image&gt;</var></dfn> value type is
    defined by this specification as <code class=prod><a
-   href="#image"><var>&lt;image&gt;</var></a> =
+   href="#ltimagegt"><var>&lt;image&gt;</var></a> =
    <var>&lt;uri&gt;</var></code>. Other value types are defined in CSS
    Level 2 Revision 1 <a href="#ref-CSS21"
    rel=biblioentry>[CSS21]<!--{{!CSS21}}--></a>. Other CSS modules may expand
@@ -487,7 +497,7 @@
    used in this specification. Similarly, <a href="#ref-CSS3-IMAGES"
    rel=biblioentry>[CSS3-IMAGES]<!--{{CSS3-IMAGES}}--></a>, when combined
    with this module, expands the definition of <a
-   href="#image"><var>&lt;image&gt;</var></a> as used in this
+   href="#ltimagegt"><var>&lt;image&gt;</var></a> as used in this
    specification.
 
   <p>In addition to the property-specific values listed in their definitions,
@@ -658,8 +668,8 @@ background-repeat: no-repeat<strong>, no-repeat, no-repeat</strong>;
     <tr>
      <th><a href="#values">Value</a>:
 
-     <td><a href="#bg-image"><var>&lt;bg-image&gt;</var></a> [ , <a
-      href="#bg-image"><var>&lt;bg-image&gt;</var></a> ]*
+     <td><a href="#ltbg-imagegt"><var>&lt;bg-image&gt;</var></a> [ , <a
+      href="#ltbg-imagegt"><var>&lt;bg-image&gt;</var></a> ]*
 
     <tr>
      <th>Initial:
@@ -701,8 +711,8 @@ background-repeat: no-repeat<strong>, no-repeat, no-repeat</strong>;
    drawn with the first specified one on top (closest to the user) and each
    subsequent image behind the previous one. Where
 
-  <pre class=prod><dfn id=bg-image><var>&lt;bg-image&gt;</var></dfn> = <a
-   href="#image"><var>&lt;image&gt;</var></a> | none</pre>
+  <pre class=prod><dfn id=ltbg-imagegt><var>&lt;bg-image&gt;</var></dfn> = <a
+   href="#ltimagegt"><var>&lt;image&gt;</var></a> | none</pre>
 
   <p>A value of <dfn id=none
    title="''none''!!'background-image' value">‘<code
@@ -770,8 +780,8 @@ div { background-image: url(tl.png), url(tr.png) }
     <tr>
      <th><a href="#values">Value</a>:
 
-     <td><a href="#repeat-style"><var>&lt;repeat-style&gt;</var></a> [ ,
-      <a href="#repeat-style"><var>&lt;repeat-style&gt;</var></a> ]*
+     <td><a href="#ltrepeat-stylegt"><var>&lt;repeat-style&gt;</var></a> [ ,
+      <a href="#ltrepeat-stylegt"><var>&lt;repeat-style&gt;</var></a> ]*
 
     <tr>
      <th>Initial:
@@ -814,10 +824,10 @@ div { background-image: url(tl.png), url(tr.png) }
    href="#the-background-position">positioned</a>. Where
 
   <pre class=prod><dfn
-   id=repeat-style><var>&lt;repeat-style&gt;</var></dfn> = repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2}</pre>
+   id=ltrepeat-stylegt><var>&lt;repeat-style&gt;</var></dfn> = repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2}</pre>
 
   <p>Single values for <a
-   href="#repeat-style"><var>&lt;repeat-style&gt;</var></a> have the
+   href="#ltrepeat-stylegt"><var>&lt;repeat-style&gt;</var></a> have the
    following meanings:
 
   <dl>
@@ -846,7 +856,7 @@ div { background-image: url(tl.png), url(tr.png) }
    <dd> Computes to ‘<code class=css>no-repeat no-repeat</code>’
   </dl>
 
-  <p>If a <a href="#repeat-style"><var>&lt;repeat-style&gt;</var></a>
+  <p>If a <a href="#ltrepeat-stylegt"><var>&lt;repeat-style&gt;</var></a>
    value has two keywords, the first one is for the horizontal direction, the
    second for the vertical one, as follows:
 
@@ -964,8 +974,8 @@ body {
     <tr>
      <th><a href="#values">Value</a>:
 
-     <td><a href="#attachment"><var>&lt;attachment&gt;</var></a> [ , <a
-      href="#attachment"><var>&lt;attachment&gt;</var></a> ]*
+     <td><a href="#ltattachmentgt"><var>&lt;attachment&gt;</var></a> [ , <a
+      href="#ltattachmentgt"><var>&lt;attachment&gt;</var></a> ]*
 
     <tr>
      <th>Initial:
@@ -1012,7 +1022,7 @@ body {
    comma-separated list of &lt;attachment&gt; keywords where
 
   <pre class=prod><dfn
-   id=attachment><var>&lt;attachment&gt;</var></dfn> = scroll | fixed | local</pre>
+   id=ltattachmentgt><var>&lt;attachment&gt;</var></dfn> = scroll | fixed | local</pre>
 
   <dl>
    <dt><dfn id=fixed0>fixed</dfn>
@@ -1110,8 +1120,8 @@ h1 {
     <tr>
      <th><a href="#values">Value</a>:
 
-     <td><a href="#position"><var>&lt;position&gt;</var></a> [ , <a
-      href="#position"><var>&lt;position&gt;</var></a> ]*
+     <td><a href="#ltpositiongt"><var>&lt;position&gt;</var></a> [ , <a
+      href="#ltpositiongt"><var>&lt;position&gt;</var></a> ]*
 
     <tr>
      <th>Initial:
@@ -1166,7 +1176,7 @@ h1 {
 
   <p>Where
 
-  <pre class=prod><dfn id=position><var>&lt;position&gt;</var></dfn> = [
+  <pre class=prod><dfn id=ltpositiongt><var>&lt;position&gt;</var></dfn> = [
   [ left | center | right | top | bottom | <var>&lt;percentage&gt;</var> | <var>&lt;length&gt;</var> ]
 |
   [ left | center | right | <var>&lt;percentage&gt;</var> | <var>&lt;length&gt;</var> ]
@@ -1350,8 +1360,8 @@ body {
     <tr>
      <th><a href="#values">Value</a>:
 
-     <td><a href="#box"><var>&lt;box&gt;</var></a> [ , <a
-      href="#box"><var>&lt;box&gt;</var></a> ]*
+     <td><a href="#ltboxgt"><var>&lt;box&gt;</var></a> [ , <a
+      href="#ltboxgt"><var>&lt;box&gt;</var></a> ]*
 
     <tr>
      <th>Initial:
@@ -1394,7 +1404,7 @@ body {
    painted. The syntax of the property is given with
 
   <pre class=prod><dfn
-   id=box><var>&lt;box&gt;</var></dfn> = border-box | padding-box | content-box</pre>
+   id=ltboxgt><var>&lt;box&gt;</var></dfn> = border-box | padding-box | content-box</pre>
 
   <p>Values have the following meanings:
 
@@ -1453,8 +1463,8 @@ body {
     <tr>
      <th><a href="#values">Value</a>:
 
-     <td><a href="#box"><var>&lt;box&gt;</var></a> [ , <a
-      href="#box"><var>&lt;box&gt;</var></a> ]*
+     <td><a href="#ltboxgt"><var>&lt;box&gt;</var></a> [ , <a
+      href="#ltboxgt"><var>&lt;box&gt;</var></a> ]*
 
     <tr>
      <th>Initial:
@@ -1556,8 +1566,8 @@ body {
     <tr>
      <th><a href="#values">Value</a>:
 
-     <td><a href="#bg-size"><var>&lt;bg-size&gt;</var></a> [ , <a
-      href="#bg-size"><var>&lt;bg-size&gt;</var></a> ]*
+     <td><a href="#ltbg-sizegt"><var>&lt;bg-size&gt;</var></a> [ , <a
+      href="#ltbg-sizegt"><var>&lt;bg-size&gt;</var></a> ]*
 
     <tr>
      <th>Initial:
@@ -1606,7 +1616,7 @@ body {
   <p>Specifies the size of the background images. Where
 
   <pre class=prod><dfn
-   id=bg-size><var>&lt;bg-size&gt;</var></dfn> = [ <var>&lt;length&gt;</var> | <var>&lt;percentage&gt;</var> | auto ]{1,2} | cover | contain</pre>
+   id=ltbg-sizegt><var>&lt;bg-size&gt;</var></dfn> = [ <var>&lt;length&gt;</var> | <var>&lt;percentage&gt;</var> | auto ]{1,2} | cover | contain</pre>
 
   <p>Values have the following meanings:
 
@@ -1806,8 +1816,8 @@ div {
     <tr>
      <th><a href="#values">Value</a>:
 
-     <td>[ <a href="#bg-layer"><var>&lt;bg-layer&gt;</var></a> , ]* <a
-      href="#final-bg-layer"><var>&lt;final-bg-layer&gt;</var></a>
+     <td>[ <a href="#ltbg-layergt"><var>&lt;bg-layer&gt;</var></a> , ]* <a
+      href="#ltfinal-bg-layergt"><var>&lt;final-bg-layer&gt;</var></a>
 
     <tr>
      <th>Initial:
@@ -1847,28 +1857,28 @@ div {
 
   <p>Where
 
-  <pre class=prod><dfn id=bg-layer><var>&lt;bg-layer&gt;</var></dfn> = <a
-   href="#bg-image"><var>&lt;bg-image&gt;</var></a> || <a
-   href="#position"><var>&lt;position&gt;</var></a> [ / <a
-   href="#bg-size"><var>&lt;bg-size&gt;</var></a> ]? || <a
-   href="#repeat-style"><var>&lt;repeat-style&gt;</var></a> || <a
-   href="#attachment"><var>&lt;attachment&gt;</var></a> || <a
-   href="#box"><var>&lt;box&gt;</var></a> || <a
-   href="#box"><var>&lt;box&gt;</var></a></pre>
+  <pre class=prod><dfn id=ltbg-layergt><var>&lt;bg-layer&gt;</var></dfn> = <a
+   href="#ltbg-imagegt"><var>&lt;bg-image&gt;</var></a> || <a
+   href="#ltpositiongt"><var>&lt;position&gt;</var></a> [ / <a
+   href="#ltbg-sizegt"><var>&lt;bg-size&gt;</var></a> ]? || <a
+   href="#ltrepeat-stylegt"><var>&lt;repeat-style&gt;</var></a> || <a
+   href="#ltattachmentgt"><var>&lt;attachment&gt;</var></a> || <a
+   href="#ltboxgt"><var>&lt;box&gt;</var></a> || <a
+   href="#ltboxgt"><var>&lt;box&gt;</var></a></pre>
 
   <pre class=prod><dfn
-   id=final-bg-layer><var>&lt;final-bg-layer&gt;</var></dfn> = <a
-   href="#bg-image"><var>&lt;bg-image&gt;</var></a> || <a
-   href="#position"><var>&lt;position&gt;</var></a> [ / <a
-   href="#bg-size"><var>&lt;bg-size&gt;</var></a> ]? || <a
-   href="#repeat-style"><var>&lt;repeat-style&gt;</var></a> || <a
-   href="#attachment"><var>&lt;attachment&gt;</var></a> || <a
-   href="#box"><var>&lt;box&gt;</var></a> || <a
-   href="#box"><var>&lt;box&gt;</var></a> || <var>&lt;'background-color'&gt;</var></pre>
+   id=ltfinal-bg-layergt><var>&lt;final-bg-layer&gt;</var></dfn> = <a
+   href="#ltbg-imagegt"><var>&lt;bg-image&gt;</var></a> || <a
+   href="#ltpositiongt"><var>&lt;position&gt;</var></a> [ / <a
+   href="#ltbg-sizegt"><var>&lt;bg-size&gt;</var></a> ]? || <a
+   href="#ltrepeat-stylegt"><var>&lt;repeat-style&gt;</var></a> || <a
+   href="#ltattachmentgt"><var>&lt;attachment&gt;</var></a> || <a
+   href="#ltboxgt"><var>&lt;box&gt;</var></a> || <a
+   href="#ltboxgt"><var>&lt;box&gt;</var></a> || <var>&lt;'background-color'&gt;</var></pre>
 
   <p class=note>Note that a color is permitted in <a
-   href="#final-bg-layer"><var>&lt;final-bg-layer&gt;</var></a>, but not
-   in <a href="#bg-layer"><var>&lt;bg-layer&gt;</var></a>.
+   href="#ltfinal-bg-layergt"><var>&lt;final-bg-layer&gt;</var></a>, but not
+   in <a href="#ltbg-layergt"><var>&lt;bg-layer&gt;</var></a>.
 
   <p>The ‘<a href="#background"><code
    class=property>background</code></a>’ property is a shorthand property
@@ -1894,7 +1904,7 @@ div {
    class=property>background-color</code></a>’ is set to the specified
    color, if any, else set to its initial value.
 
-  <p>If one <a href="#box"><var>&lt;box&gt;</var></a> value is present
+  <p>If one <a href="#ltboxgt"><var>&lt;box&gt;</var></a> value is present
    then it sets both ‘<a href="#background-origin"><code
    class=property>background-origin</code></a>’ and ‘<a
    href="#background-clip"><code class=property>background-clip</code></a>’
@@ -2233,7 +2243,7 @@ background-color:      white;
     <tr>
      <th><a href="#values">Value</a>:
 
-     <td><a href="#line-style"><var>&lt;line-style&gt;</var></a>
+     <td><a href="#ltline-stylegt"><var>&lt;line-style&gt;</var></a>
 
     <tr>
      <th>Initial:
@@ -2281,7 +2291,7 @@ background-color:      white;
     <tr>
      <th><a href="#values">Value</a>:
 
-     <td><a href="#line-style"><var>&lt;line-style&gt;</var></a>{1,4}
+     <td><a href="#ltline-stylegt"><var>&lt;line-style&gt;</var></a>{1,4}
 
     <tr>
      <th>Initial:
@@ -2331,7 +2341,7 @@ background-color:      white;
   <p>Where
 
   <pre class=prod><dfn
-   id=line-style><var>&lt;line-style&gt;</var></dfn> = none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset</pre>
+   id=ltline-stylegt><var>&lt;line-style&gt;</var></dfn> = none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset</pre>
 
   <p>Values have the following meanings:
 
@@ -2435,7 +2445,7 @@ background-color:      white;
     <tr>
      <th><a href="#values">Value</a>:
 
-     <td><a href="#line-width"><var>&lt;line-width&gt;</var></a>
+     <td><a href="#ltline-widthgt"><var>&lt;line-width&gt;</var></a>
 
     <tr>
      <th>Initial:
@@ -2486,7 +2496,7 @@ background-color:      white;
     <tr>
      <th><a href="#values">Value</a>:
 
-     <td><a href="#line-width"><var>&lt;line-width&gt;</var></a>{1,4}
+     <td><a href="#ltline-widthgt"><var>&lt;line-width&gt;</var></a>{1,4}
 
     <tr>
      <th>Initial:
@@ -2527,7 +2537,7 @@ background-color:      white;
   <p>These properties set the thickness of the border. Where
 
   <pre class=prod><dfn
-   id=line-width><var>&lt;line-width&gt;</var></dfn> = <var>&lt;length&gt;</var> | thin | medium | thick</pre>
+   id=ltline-widthgt><var>&lt;line-width&gt;</var></dfn> = <var>&lt;length&gt;</var> | thin | medium | thick</pre>
 
   <p>The lengths corresponding to ‘<code class=css>thin</code>’, ‘<code
    class=css>medium</code>’ and ‘<code class=css>thick</code>’ are not
@@ -2568,8 +2578,8 @@ background-color:      white;
     <tr>
      <th><a href="#values">Value</a>:
 
-     <td><a href="#line-width"><var>&lt;line-width&gt;</var></a> || <a
-      href="#line-style"><var>&lt;line-style&gt;</var></a> ||
+     <td><a href="#ltline-widthgt"><var>&lt;line-width&gt;</var></a> || <a
+      href="#ltline-stylegt"><var>&lt;line-style&gt;</var></a> ||
       <var>&lt;color&gt;</var>
 
     <tr>
@@ -2622,8 +2632,8 @@ background-color:      white;
     <tr>
      <th><a href="#values">Value</a>:
 
-     <td><a href="#line-width"><var>&lt;line-width&gt;</var></a> || <a
-      href="#line-style"><var>&lt;line-style&gt;</var></a> ||
+     <td><a href="#ltline-widthgt"><var>&lt;line-width&gt;</var></a> || <a
+      href="#ltline-stylegt"><var>&lt;line-style&gt;</var></a> ||
       <var>&lt;color&gt;</var>
 
     <tr>
@@ -3238,7 +3248,7 @@ DIV {
     <tr>
      <th><a href="#values">Value</a>:
 
-     <td>none | <a href="#image"><var>&lt;image&gt;</var></a>
+     <td>none | <a href="#ltimagegt"><var>&lt;image&gt;</var></a>
 
     <tr>
      <th>Initial:
@@ -3911,8 +3921,8 @@ DIV {
     <tr>
      <th><a href="#values">Value</a>:
 
-     <td>none | <a href="#shadow"><var>&lt;shadow&gt;</var></a> [ , <a
-      href="#shadow"><var>&lt;shadow&gt;</var></a> ]*
+     <td>none | <a href="#ltshadowgt"><var>&lt;shadow&gt;</var></a> [ , <a
+      href="#ltshadowgt"><var>&lt;shadow&gt;</var></a> ]*
 
     <tr>
      <th>Initial:
@@ -3957,7 +3967,7 @@ DIV {
    class=property>box-shadow</code></a>’ property attaches one or more
    drop-shadows to the box. The property takes a comma-separated list of
    shadows, ordered front to back. Each shadow is given as a <a
-   href="#shadow"><var>&lt;shadow&gt;</var></a>, represented by 2-4
+   href="#ltshadowgt"><var>&lt;shadow&gt;</var></a>, represented by 2-4
    length values, an optional color, and an optional ‘<a
    href="#inset"><code class=css>inset</code></a>’ keyword. Omitted lengths
    are 0; omitted colors default to the value of the ‘<code
@@ -3965,10 +3975,10 @@ DIV {
 
   <pre class=prod>
   <dfn
-   id=shadow><var>&lt;shadow&gt;</var></dfn> = inset? &amp;&amp; <var>&lt;length&gt;</var>{2,4} &amp;&amp; <var>&lt;color&gt;</var>?</pre>
+   id=ltshadowgt><var>&lt;shadow&gt;</var></dfn> = inset? &amp;&amp; <var>&lt;length&gt;</var>{2,4} &amp;&amp; <var>&lt;color&gt;</var>?</pre>
 
   <p>The components of each <a
-   href="#shadow"><var>&lt;shadow&gt;</var></a> are interpreted as
+   href="#ltshadowgt"><var>&lt;shadow&gt;</var></a> are interpreted as
    follows:
 
   <dl>
@@ -4717,12 +4727,12 @@ DIV {
 
    <li><a href="#the-background-position">Section 3.6</a>: Renamed
     &lt;bg-position&gt; production to <a
-    href="#position"><i>&lt;position&gt;</i></a> for easier re-use in
+    href="#ltpositiongt"><i>&lt;position&gt;</i></a> for easier re-use in
     other specifications and recast the grammar to be more verbose but easier
     to understand.
     <blockquote>
      <pre class=prod><del>bg-position</del><a
-      href="#position"><ins>&lt;position&gt;</ins></a> = [
+      href="#ltpositiongt"><ins>&lt;position&gt;</ins></a> = [
   [ <ins>left | center | right |</ins> top | bottom <ins>| <var>&lt;percentage&gt;</var> | <var>&lt;length&gt;</var></ins> ]
 |
   [ left | center | right | <var>&lt;percentage&gt;</var> | <var>&lt;length&gt;</var> ]
@@ -5624,7 +5634,7 @@ DIV {
   <!--begin-index-->
 
   <ul class=indexlist>
-   <li><var>&lt;attachment&gt;</var>, <a href="#attachment"
+   <li><var>&lt;attachment&gt;</var>, <a href="#ltattachmentgt"
     title="section 3.5."><strong>3.5.</strong></a>
 
    <li>authoring tool, <a href="#authoring-tool"
@@ -5681,13 +5691,13 @@ DIV {
    <li>background-size, <a href="#background-size"
     title="section 3.9."><strong>3.9.</strong></a>
 
-   <li><var>&lt;bg-image&gt;</var>, <a href="#bg-image"
+   <li><var>&lt;bg-image&gt;</var>, <a href="#ltbg-imagegt"
     title="section 3.3."><strong>3.3.</strong></a>
 
-   <li><var>&lt;bg-layer&gt;</var>, <a href="#bg-layer"
+   <li><var>&lt;bg-layer&gt;</var>, <a href="#ltbg-layergt"
     title="section 3.10."><strong>3.10.</strong></a>
 
-   <li><var>&lt;bg-size&gt;</var>, <a href="#bg-size"
+   <li><var>&lt;bg-size&gt;</var>, <a href="#ltbg-sizegt"
     title="section 3.9."><strong>3.9.</strong></a>
 
    <li>blur radius, <a href="#blur-radius"
@@ -5804,7 +5814,7 @@ DIV {
       title="section 3.6."><strong>3.6.</strong></a>
     </ul>
 
-   <li><var>&lt;box&gt;</var>, <a href="#box"
+   <li><var>&lt;box&gt;</var>, <a href="#ltboxgt"
     title="section 3.7."><strong>3.7.</strong></a>
 
    <li>box-shadow, <a href="#box-shadow"
@@ -5855,7 +5865,7 @@ DIV {
    <li>‘<code class=css>fill</code>’, <a href="#border-image-slice-fill"
     title="section 6.2."><strong>6.2.</strong></a>
 
-   <li><var>&lt;final-bg-layer&gt;</var>, <a href="#final-bg-layer"
+   <li><var>&lt;final-bg-layer&gt;</var>, <a href="#ltfinal-bg-layergt"
     title="section 3.10."><strong>3.10.</strong></a>
 
    <li>fixed, <a href="#fixed0"
@@ -5873,7 +5883,7 @@ DIV {
    <li>horizontal offset, <a href="#horizontal-offset"
     title="section 7.1."><strong>7.1.</strong></a>
 
-   <li><var>&lt;image&gt;</var>, <a href="#image"
+   <li><var>&lt;image&gt;</var>, <a href="#ltimagegt"
     title="section 2.2."><strong>2.2.</strong></a>
 
    <li>inner box-shadow, <a href="#inner-box-shadow"
@@ -5890,10 +5900,10 @@ DIV {
       title="section 3.6."><strong>3.6.</strong></a>
     </ul>
 
-   <li><var>&lt;line-style&gt;</var>, <a href="#line-style"
+   <li><var>&lt;line-style&gt;</var>, <a href="#ltline-stylegt"
     title="section 4.2."><strong>4.2.</strong></a>
 
-   <li><var>&lt;line-width&gt;</var>, <a href="#line-width"
+   <li><var>&lt;line-width&gt;</var>, <a href="#ltline-widthgt"
     title="section 4.3."><strong>4.3.</strong></a>
 
    <li>local, <a href="#local0"
@@ -5932,7 +5942,7 @@ DIV {
       title="section 3.8."><strong>3.8.</strong></a>
     </ul>
 
-   <li><var>&lt;position&gt;</var>, <a href="#position"
+   <li><var>&lt;position&gt;</var>, <a href="#ltpositiongt"
     title="section 3.6."><strong>3.6.</strong></a>
 
    <li>renderer, <a href="#renderer"
@@ -5947,7 +5957,7 @@ DIV {
       title="section 6.5."><strong>6.5.</strong></a>
     </ul>
 
-   <li><var>&lt;repeat-style&gt;</var>, <a href="#repeat-style"
+   <li><var>&lt;repeat-style&gt;</var>, <a href="#ltrepeat-stylegt"
     title="section 3.4."><strong>3.4.</strong></a>
 
    <li>‘<code class=css>repeat-x</code>’, <a href="#repeat-x"
@@ -5980,7 +5990,7 @@ DIV {
    <li>‘<code class=css>scroll</code>’, <a href="#scroll"
     title="section 3.5."><strong>3.5.</strong></a>
 
-   <li><var>&lt;shadow&gt;</var>, <a href="#shadow"
+   <li><var>&lt;shadow&gt;</var>, <a href="#ltshadowgt"
     title="section 7.1."><strong>7.1.</strong></a>
 
    <li>‘<code class=css>solid</code>’, <a href="#solid"

@@ -1,6 +1,6 @@
 {
     "spec": "cssbg",
-    "source": "http://dev.w3.org/csswg/css-backgrounds/",
+    "source": "https://www.w3.org/TR/css-backgrounds/",
     "levels": [ 2 ],
     "local": "cssbg.html",
     "dontExtract": true,

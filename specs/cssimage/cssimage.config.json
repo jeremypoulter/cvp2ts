@@ -1,6 +1,6 @@
 {
     "spec": "cssimage",
-    "source": "http://dev.w3.org/csswg/css-images-3/",
+    "source": "https://www.w3.org/TR/css3-images/",
     "levels": [ 2 ],
     "local": "cssimage.html",
     "dontExtract": true,
