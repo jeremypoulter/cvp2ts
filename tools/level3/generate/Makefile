@@ -35,7 +35,7 @@ all: $(outfiles)
 
 %.$(OUTSUFFIX): %.$(CONFIGSUFFIX)
 	@if [ ! -d $(TESTDIR)/$(*F) ]; then mkdir -p $(TESTDIR)/$(*F); fi;
-	@$(NODE) $(TOOL) $(TOOLFLAGS) $(GENERATEFLAGS) --config $(@D)/$(*F).$(CONFIGSUFFIX) --testDirectory $(TESTDIR)/$(*F)
+	$(V)$(NODE) $(TOOL) $(TOOLFLAGS) $(GENERATEFLAGS) --config $(@D)/$(*F).$(CONFIGSUFFIX) --testDirectory $(TESTDIR)/$(*F)
 	@if [ -d $(SPECDIR)/$(*F)/helpers ]; then \
 	    $(CP) -R $(SPECDIR)/$(*F)/helpers $(TESTDIR)/$(*F) ; \
 	fi;
