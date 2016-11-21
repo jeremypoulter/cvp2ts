@@ -1,6 +1,6 @@
 "use strict";
 function getCSSMarginRule() {
-    var e = document.createElement('style'); 
+    var e = document.createElement('style');
     e.textContent = '@page { @top-left { content: "top left"; }';
     document.head.appendChild(e);
     var pageRule = e.sheet.cssRules[0];

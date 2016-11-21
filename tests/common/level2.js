@@ -1,7 +1,7 @@
 // DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER
-//  
-// Copyright (C) 2014, Cable Television Laboratories, Inc. & Skynav, Inc. 
-//  
+//
+// Copyright (C) 2014, Cable Television Laboratories, Inc. & Skynav, Inc.
+//
 // Redistribution and use in source and binary forms, with or without modification, are
 // permitted provided that the following conditions are met:
 //

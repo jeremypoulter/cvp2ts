@@ -1,6 +1,6 @@
 "use strict";
 function getCSSStyleRule() {
-    var e = document.createElement('style'); 
+    var e = document.createElement('style');
     document.head.appendChild(e);
     var s = e.sheet;
     s.insertRule('#id {}',0);
